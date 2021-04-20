@@ -55,11 +55,4 @@ At the moment, you can encode context in the Causal Map app simply by creating a
 
 - Context: Science_Experiment
 
-At the moment, all hashtags are printed on the Print map, and that’s it. Soon, you will be able to search by and filter for contexts, and display them in different ways. 
-
- 
-
-|      |      |      |
-| ---- | ---- | ---- |
-|      |      |      |
-|      |      |      |
+At the moment, all hashtags are printed on the Print map. You can also search by and filter for contexts. 

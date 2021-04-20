@@ -5,7 +5,7 @@ date: "`r Sys.Date()`"
 site: bookdown::bookdown_site
 output: bookdown::gitbook
 documentclass: book
-bibliography: [packages.bib,book.bib,"My library.bib"]
+bibliography: [packages.bib,zotero.bib]
 biblio-style: apalike
 link-citations: true
 description: "Guide to Causal Mapping"
