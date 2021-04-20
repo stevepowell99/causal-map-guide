@@ -1,0 +1,12 @@
+# Certainty and trust 
+
+In causal maps, sometimes it is enough that your links simply mean that “Source S claims that this influences/influenced that”, but sometimes you need richer ways to capture the relationship between causal factors. 
+
+- Certainty: Source S is certain, or not so certain, that C influences E.
+
+- Trust: the analyst has reason to believe that this particular claim, or all claims from source S, is particularly trustworthy or untrustworthy.
+
+In the Causal Map coding style, we record this information for each link using just one attribute: “Certainty”. 
+
+In the simplest version of QuIP coding (Copestake et al., 2019) you don’t need to think about these concepts. Behind the scenes, the app records Certainty = 1 for each link, but you don’t ever need to see or think about that. In the Causal Map app, just code a link and everything “just works”, so you can either **skip this section**, or read it to understand how simple approaches fit into a more general framework.
+

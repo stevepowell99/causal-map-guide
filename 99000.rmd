@@ -1,0 +1,100 @@
+# Appendix: Publications and references
+
+## Publications
+
+Causal Map is quite new, but we're working hard publishing our ideas. Here is some relevant prior work. 
+
+[Copestake, J., Morsink, M., & Remnant, F. (2019). Attributing Development Impact: the Qualitative Impact Protocol case book. March 21, Online.](https://practicalactionpublishing.com/book/105/attributing-development-impact)
+
+[Powell, S. (2019). Theories of Change: Making Value Explicit. Journal of MultiDisciplinary Evaluation, 15(32), 53–54.](https://journals.sfu.ca/jmde/index.php/jmde_1/article/view/563)
+
+[Powell, S. (2019). Supplement to Theories of Change: Making Value Explicit. Journal of MultiDisciplinary Evaluation, 15(32), 53–54.](https://journals.sfu.ca/jmde/index.php/jmde_1/article/view/561)
+
+[Powell, S. (2018). The Book of Why. The New Science of Cause and Effect. Pearl, Judea, and Dana Mackenzie. 2018. Hachette UK. JMDE Journal of MultiDisciplinary Evaluation, 13, 47–54.](https://journals.sfu.ca/jmde/index.php/jmde_1/article/view/507)
+
+Powell, S. (2019). Supplement to Theories of Change: Making Value Explicit. _Journal of MultiDisciplinary Evaluation_, _15_(32), 53–54.
+
+## Presentations
+
+* [European Evaluation Society 2018 - presentation on Value in Theories of Change](https://drive.google.com/file/d/1FdiOs85iZCqZU6MdU3Lb5kgDOxq36G3b/view?usp=sharing)
+* [UK Evaluation Society 2018 - presentation on Judea Pearl and Theories of Change](https://drive.google.com/file/d/1A2gIYmechpCot2QQc0TRWGlFg9r4jsz4/view?usp=sharing)
+* [American Evaluation Association 2017 - A graphical language for evaluation](http://comm.eval.org/viewdocument/theorymaker-a-graphical-language)
+
+## Longer blog posts
+
+* [When an interview beats an RCT (with cartoon!)](http://www.pogol.net/public/article-evidence.html)
+* [Scandal or yawn? Simpson’s Paradox hits the IFRC](http://www.pogol.net/_ideas/posts/2019-01-14-scandal-or-yawn-simpsons-paradox-hits-the-ifrc/)
+* [Value for Money](http://pogol.net/public/article-equity.html) Steve’s first take on the VfM approach by Julian King and OPM, from a Theorymaker perspective.
+* [Evaluation Paradoxes – blog post at AEA365](https://aea365.org/blog/theories-of-eval-tig-week-evaluation-paradoxes-by-steve-powell/)
+* [Various posts on LinkedIn](https://www.linkedin.com/in/stevepowell99/detail/recent-activity/posts/)
+
+## ResearchGate
+
+[James Copestake](https://www.researchgate.net/profile/James_Copestake) 
+
+[Fiona Remnant](https://www.researchgate.net/profile/Fiona_Remnant)
+
+[Steve Powell](https://www.researchgate.net/profile/Steve_Powell2)
+
+
+
+## Resources and apps
+
+* [Slides about theories of change and causal mapping](http://slides.theorymaker.info/)
+* [The original Theorymaker app](http://www.pogol.net/_causal_mapping/theorymaker.info)
+* [Help for the original Theorymaker](http://help.theorymaker.info/)
+
+## Bibliography of selected causal mapping approaches
+
+Ackermann, F., & Eden, C. (2004). Using Causal mapping: individual and group; traditional and new. *Systems Modelling: Theory and Practice*, 127–145. 
+
+
+Ackermann, F., Howick, S., Quigley, J., Walls, L., & Houghton, T. (2014). Systemic risk elicitation: Using causal maps to engage stakeholders and build a comprehensive view of risks. *European Journal of Operational Research*, *238*(1), 290–299. https://doi.org/10.1016/j.ejor.2014.03.035
+
+Axelrod, R. (1976). The Cognitive Mapping Approach to Decision Making. In *Structure of Decision : The Cognitive Maps of Political Elites* (Issue May 2019).
+
+Axelrod, R. (1976). The Analysis of Cognitive Maps. In *Structure of Decision : The Cognitive Maps of Political Elites* (Issue May 2019).
+
+Axelrod, R. (1976). The cognitive mapping approach to decision making. *Structure of Decision*, 221–250.
+
+Chaib-Draa, B., & Desharnais, J. (1998). A relational model of cognitive maps. *International Journal of Human Computer Studies*, *49*(2), 181–200. https://doi.org/10.1006/ijhc.1998.0201
+
+Copestake, J., Morsink, M., & Remnant, F. (2019). *Attributing Development Impact: the Qualitative Impact Protocol case book*. March 21, Online.
+
+Goodier, C., Austin, S., Soetanto, R., & Dainty, A. (2010). Causal mapping and scenario building with multiple organisations. *Futures*, *42*(3), 219–229. https://doi.org/10.1016/j.futures.2009.11.007
+
+Jackson, K. M., & Trochim, W. M. K. (2002). Concept Mapping as an Alternative Approach for the Analysis of Open-Ended Survey Responses. *Organizational Research Methods*, *5*(4), 307–336. https://doi.org/10.1177/109442802237114
+
+Krentel, A., & Aunger, R. (2012). Causal chain mapping: A novel method to analyse treatment compliance decisions relating to lymphatic filariasis elimination in Alor, Indonesia. *Health Policy and Planning*, *27*(5), 384–395. https://doi.org/10.1093/heapol/czr048
+
+Laukkanen, M. (1994). Comparative Cause Mapping of Organizational Cognitions. *Organization Science*, *5*(3), 322–343. https://doi.org/10.1287/orsc.5.3.322
+
+Laukkanen, M. (2012). Comparative Causal Mapping and CMAP3 Software in Qualitative Studies | Laukkanen | Forum Qualitative Sozialforschung / Forum: Qualitative Social Research. *Qualitative Research*, *13*(2), volume 13. http://www.qualitative-research.net/index.php/fqs/article/view/1846/3371
+
+Laukkanen, M., & Eriksson, P. (2013). New designs and software for cognitive causal mapping. *Qualitative Research in Organizations and Management: An International Journal*, *8*(2), 122–147. https://doi.org/10.1108/QROM-08-2011-1003
+
+Mapping, P. S., & Incentive, R. H. (2020). *Participatory Systems Mapping in action —Supporting the evaluation of the Renewable Heat Incentive*. *17*.
+
+Maps, T. C., & Elites, P. (1918). *Chapter Title : Decision for Neoimperialism : The Deliberations of the British Eastern Committee in 1918 Chapter Author ( s ): Robert Axelrod Book Title : Structure of Decision : The Cognitive Maps of Political Elites Book Editor ( s ): Robert Axelrod Pub*.
+
+Markiczy, L., & Goldberg, J. (1995). A method for eliciting and comparing causal maps. *Journal of Management*, *21*(2), 305–333.
+
+Nadkarni, S., & Shenoy, P. P. (2004). *Nadkarni and Shenoy 2004 -A causal mapping approach.pdf*. *38*(2).
+
+Nadkarni, S., & Shenoy, P. P. (2001). Bayesian network approach to making inferences in causal maps. *European Journal of Operational Research*, *128*(3), 479–498. https://doi.org/10.1016/S0377-2217(99)00368-9
+
+Penn, A., & Barbrook-Johnson, P. (2019). *Participatory Systems Mapping: a practical guide*. 1–4. https://www.cecan.ac.uk/sites/default/files/2019-03/PSM Workshop method.pdf
+
+Pidd, M. (n.d.). Systems Modeling. In *Elements*.
+
+Srivastava, R. P., Buche, M. W., & Roberts, T. L. (2011). Belief Function Approach to Evidential Reasoning in Causal Maps. *Causal Mapping for Research in Information Technology*, 109–141. https://doi.org/10.4018/9781591403968.ch005
+
+Sterman, J. (2001). System dynamics modeling. *California Management Review*. http://trafficlight.bitdefender.com/info?url=http%3A//www.systemdynamics.org/conferences/2002/proceed/papers/CAREVIEW/C2STERMA.PDF&language=en_US
+
+Wallis, S. E. (2019). The missing piece of the integrative studies puzzle. *Interdisciplinary Science Reviews*, *44*(3–4), 402–429. https://doi.org/10.1080/03080188.2019.1680145
+
+Wallis, S. E. (2020). Understanding and improving the usefulness of conceptual systems: An Integrative Propositional Analysis-based perspective on levels of structure and emergence. *Systems Research and Behavioral Science*, *February*, 1–22. https://doi.org/10.1002/sres.2680
+
+Wallis, S. E., & Wright, B. (2019). Integrative propositional analysis for understanding and reducing poverty. *Kybernetes*, *48*(6), 1264–1277. https://doi.org/10.1108/K-03-2018-0136
+
+

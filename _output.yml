@@ -1,0 +1,28 @@
+bookdown::bs4_book:
+  theme:
+    primary: "#637238"
+bookdown::gitbook:
+  includes:
+    in_header: header.html
+    before_body: google_body_tag.html
+  anchor_sections: true
+  css: style.css
+  number_sections: no
+  config:
+    search: yes
+    toc_depth: 3
+    toc:
+      collapse: section
+      before: |
+        <li><a href="./">Guide to Causal Mapping</a></li>
+      after: |
+        <li><a href="https://causalmap.app" target="blank">Causal Map</a></li>
+    download: ["pdf","epub"]
+bookdown::pdf_book:
+  includes:
+    in_header: preamble.tex
+  latex_engine: xelatex
+  citation_package: natbib
+  papersize: a5
+  keep_tex: yes
+bookdown::epub_book: default

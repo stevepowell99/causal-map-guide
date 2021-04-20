@@ -1,0 +1,59 @@
+---
+title: "Guide to Causal Mapping"
+author: "Steve Powell & Causal Map Ltd"
+date: "`r Sys.Date()`"
+site: bookdown::bookdown_site
+output: bookdown::gitbook
+documentclass: book
+bibliography: [packages.bib,book.bib,"My library.bib"]
+biblio-style: apalike
+link-citations: true
+description: "Guide to Causal Mapping"
+---
+
+```{r setup,echo=F}
+# markroot <- "c:/Users/steve/Dropbox/Apps/Blot/Causal Map documentation"
+# markroot <- "c:/Users/steve/Dropbox/Projects/textApp/app/assets/"
+markroot <- "c:/Users/steve/Dropbox/Projects/textApp/app/git_assets"
+
+show_mark <- function(fil) htmltools::tags$div(htmltools::tags$p("From the inline help",class="show_mark_p"),shiny::includeMarkdown(file.path(markroot,fil)),class="show_mark")
+def_list = list()
+thm_list = list()
+knitr::knit_hooks$set(engine = function(before, options) {
+    if ( before ) {
+        if ( options$engine == "theorem" ) {
+            thm_list[[options$label]] <<- options$name
+        } else if ( options$engine == "definition" ) {
+            def_list[[options$label]] <<- options$name
+        }
+    }
+    NULL
+}) 
+
+```
+
+# Overview
+
+![img](_assets/simplify.png)
+
+If you want to find out more about causal mapping and/or the [Causal Map app](https://causalmap.app), this Guide is for you.
+
+The Guide is ideal for people who have already completed the [QuIP](https://bathsdr.org/about-the-quip/) Lead Evaluator training and would like some more background to coding. It is also useful if you are not using QuIP or have never heard of it.
+
+::: {.focus}
+💻: This symbol marks sections in this Guide which are specifically about the Causal Map app. The rest of the Guide is about causal mapping in general. The sections about using the app stand alone and can be skipped.
+:::
+
+This Guide is in three parts:
+
+1)  Basic causal mapping, corresponding to the features in the Standard package in the Causal Map app.
+
+2)  Advanced causal mapping, corresponding to the features in the Extra package in the Causal Map app.
+
+3)  Spotlight featured articles, Showcase presentations of uses of causal mapping, and FAQs and troubleshooting.
+
+Versions of this Guide:
+
+-   [web version](https://guide.causalmap.app/) (updated most frequently)
+-   [PDF](https://guide.causalmap.app/Guide-to-causal-mapping.pdf)
+-   [epub](https://guide.causalmap.app/Guide-to-causal-mapping.epub)

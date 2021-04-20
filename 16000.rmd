@@ -1,0 +1,177 @@
+# Spotlight: Time in causal mapping. How to code it
+
+ 
+
+Many of the questions we want to answer when doing causal mapping have to do with time. Of course, there is always some kind of flow of time through our causal maps, because effects come after causes. But the actual “timings” – specific time points or periods associated with particular things – can take almost any order. In causal mapping, we don’t have any fixed set of options in order to allow the analyst to capture causal stories free form, without any preconceptions. In quantitative research, time appears in research designs in quite straightforward ways, usually as a continuous variable (which may be left continuous or transformed into a discrete variable with values like “before” and “after”); research conclusions can be, for example, “the dependent variables decreased over time”. Often it will miss stories which are not linear, for example when things get better, then worse, then better again. When designing research to analyse with causal mapping, we may also have a research design which already anticipates temporal questions, for example we want to compare people’s causal maps before and after some intervention. However, the really exciting (and for the analyst, really demanding) potential of causal mapping is to identify temporal aspects to stories which only emerge when listening to the respondents. 
+
+ 
+
+## Temporal features which can emerge without explicit coding of time
+
+
+
+It is useful to note some common patterns and features which can emerge even before we have any system to explicitly code timings: 
+
+- Some factors might have a particular time point or period, e.g. “the Launch of the London Olympics”. Or they might be things which repeat, like “Start of the school year”. We often see causal links between repeating or generic events, like “Good start to school year ➜ Good progress in first semester”. These are about generic or circular time. Some maps may include factors with fixed timepoints as well as ones with generic timepoints.
+
+- Some factors might be about background conditions and are not events at all, e.g. “unemployment”. Or they might be continuous variables like “level of aggression” or “client satisfaction”. 
+
+- When all factors are in a *single chain*, then there is a very simple time progression through the whole map, and we know for any two factors that one is before or after (or simultaneous with) the other. However, this is quite rare. 
+
+- There is a big distinction between maps which do or do not contain any loops. We call maps without loops *acyclic*. Maps with loops can be used to capture things like feedback, creating vicious and virtuous circles. 
+
+A very common case is when respondents report an intervention or some other event as a cause, a factor which influences other factors. Those consequence factors might only be mentioned as a consequence of the event, or they might also be mentioned (but perhaps less often or with less emphasis) before the event.
+
+For example:
+
+*“Before the training, my skills were ok, and they improved with self-study, but after the training they were much better”*
+
+This could be coded in various different ways, but perhaps most simply like this:
+
+Self-study ➜ skills
+
+Training ➜ skills
+
+All causal coding automatically contains temporal information, because the consequences (at least in some sense) happen after the influences. In many cases, this is all we need. For example, looking at the downstream consequences of “Training” may be enough to qualitatively answer questions about “What was the effect of the training”: we can look at the map *downstream* of it, especially looking at effects on factors we are particularly interested in (usually some kind of outcome like “student progress”), and compare this with the rest of the map; and we can look *upstream* of important factors to compare how much of any positive influence on them can be traced back to the intervention as opposed to other factors. 
+
+When we think about influences and consequences in this way we can often ask and answer questions about time and effect without ever mentioning time or temporal aspects explicitly. 
+
+The rest of this paper deals with other cases when this is not enough.
+
+## Temporal information attached to additional data
+
+
+
+The statements we process when doing causal mapping usually have [additional data](https://causalmapdocumentation.blot.im/search?q=additional+data) attached to them, for example respondent ID and gender, question number, etc. In some cases, the research may have been **planned** (and the data explicitly gathered) with temporal questions in mind, so that we have *temporal* additional data. For example, we might have gathered data at separate time points, before and after an intervention and then in a longer-term follow-up. In this case, for every statement, we know from its additional data which of these three timepoints it belongs to. This way, it is possible (if desired) to use the same set of factor labels for all of the timepoints but quickly and automatically identify just those causal links which are associated with just one time point (because they come from statements which were actually made at that time point); or we can compare maps between timepoints, etc. 
+
+Alternatively, we may have asked respondents *questions* which concern time. For example, we might have some questions which are explicitly about: 
+
+- one single timepoint (like the launch of something) 
+
+- a specific period (like the time after a launch)
+
+- generic or circular time (like “start of the school year” or “after a child is born”).
+
+If we have a number of questions which share some of these aspects (for example several questions about “start of the school year” and several about “rest of the school year”), we can add an additional data field to capture this information (for example a field called “school year time” with two possible values “start” and “rest”). This additional data for each statement can be referred to by the analyst when coding, and can be used to filter the causal map as described above. It could also be indicated in the map itself, e.g. by using different colours for links associated with claims from different time points.
+
+We may have planned our research with temporal questions in mind, and so our additional data already has neat fields to capture temporal data. In other cases we may decide during the analysis that we need to make use of temporal information which is *implicit* in the additional data – for example, we may be able to work out from the interview number when an interview was held, and so we might want to go back to the additional data and add something like “interview week” as an explicit additional data field. 
+
+## Recording temporal information in causal links
+
+
+
+The analyst may decide that the temporal aspects of the *links* in the emerging story are particularly important. Sometimes it is enough to merely mention them in each causal link, for example to attach a hashtag like “before intervention” to a link – perhaps *without* recording any temporal information in the factor labels. Sometimes a more systematic approach is required, for example to establish two hashtags “before intervention” and “after intervention”. (It might even be required that the hashtag always be applied to every coding, though this is not necessary). So, for example, the statement:
+
+“Oh, before the intervention, as soon as we had a discussion on a difficult theme, we’d get into an argument, but now we don’t, we actually make decisions instead!”
+
+might be coded as follows. Here, the text in brackets after the arrow is understood as being attached to the link, not to the factor labels:
+
+Family discussion on difficult theme ➜(#before intervention) Family gets into argument
+
+Family discussion on difficult theme ➜(#after intervention) Family makes decision
+
+Text like this can actually be displayed on the links in the resulting causal maps if desired. 
+
+Note that the factor labels are written in a way that they make sense for either application; they don’t also need to include temporal information. 
+
+If we are also coding other aspects of the causal links like strength or direction, we might even code like this, where the very same pair of factors is involved in each case, and the difference is stored only in the links:
+
+Family discussion on difficult theme ➜(#before intervention; high probability) Family gets into argument
+
+Family discussion on difficult theme ➜(#after intervention; low probability) Family gets into argument
+
+This is just an example; temporal information might not be coded simply as the names of discrete phases like “before” and “after”; for example, hashtags like “rapid” or “unchanging” or “repeated” are also possible. 
+
+## Recording temporal information in factor labels
+
+
+
+Likewise, the analyst may decide that the temporal aspects of the *factors* in the emerging story are particularly important. 
+
+Coding temporal aspects within *links* may be more suitable when there is an overall causal structure which does not itself change much over time, whereas coding temporal aspects within *factor* labels may be more suitable when respondents are thinking in terms of different (although maybe similar) sets of causal factors time which differ in time. 
+
+How to code temporal information in factor labels?
+
+Sometimes it is enough to merely mention them in a factor label, for example “improved concentration after intervention” in an ad-hoc way. Sometimes a more systematic approach is required. There are several possibilities.
+
+### Use a hashtag or flag
+
+It might be enough to simply use a consistent set of [flags](https://causalmapdocumentation.blot.im/search?q=flag), appearing anywhere in the factor label, for example: 
+
+“Oh, before the intervention, as soon as we had a discussion on a difficult theme, we’d get into an argument, but now we don’t, we actually make decisions instead!”
+
+… might be coded like this, where the hashtags are understood as being attached to the link, not the factor labels:
+
+Family discussion on difficult theme #before-intervention ➜ Family gets into argument #before-intervention
+
+Family discussion on difficult theme #after-intervention ➜ Family makes decision #after-intervention
+
+This way, as the flags are unique and searchable, it would be possible to show a map consisting only of #after-intervention factors. 
+
+Sometimes a more systematic approach is required, for example to establish two hashtags “#before-intervention” and “after-intervention” which are used systematically.
+
+### Use components in hierarchical coding 
+
+This approach allows us to filter just for factors with or without one or more specific hashtags. However, what if we want to zoom out to a causal map which does not make this distinction, because we want to see family processes in general, regardless of timepoint? We would like to be able to make a higher-level factor “Family discussion … “ which generalises from the specific timepoints. We can do that by making the timepoints into [components](https://causalmapdocumentation.blot.im/search?q=component) in hierarchical coding style:
+
+Family discussion on difficult theme; before-intervention ➜ Family gets into argument; before-intervention
+
+Family discussion on difficult theme; after-intervention ➜ Family makes decision; after-intervention
+
+This way, when we zoom out to view only first-level factors, all the causal links to and from the specific factors for the two timepoints will be rerouted to the top-level factor, to give a time-independent overview. Effectively we create “virtual” factors like Family discussion on difficult theme and so on
+
+### Use higher-level temporal components in hierarchical coding
+
+Another approach is to do this the other way round, with factors like these. 
+
+Family stressors before intervention; discussions on difficult themes
+
+Family stressors before intervention; bedtime
+
+Family behaviours before intervention; making decisions
+
+Family behaviours before intervention; getting into arguments
+
+Family stressors after intervention; discussions on difficult themes
+
+Family stressors after intervention; bedtime
+
+Family behaviours after intervention; making decisions
+
+Family behaviours after intervention; getting into arguments
+
+Here, the temporal aspect is moved to the top of the hierarchy, so we could zoom out to create “virtual” factors like Family stressors before intervention and so on.
+
+These components can also be mixed in with any other components used during coding, for example components for different regions, contexts or genders. 
+
+ 
+
+All of these suggestions can in principle be mixed in with one another, but the analyst is advised to be very careful not to make things too complicated. 
+
+The temporal aspects mentioned here are just examples; temporal information might not be coded simply as the names of discrete phases like “before” and “after”; for example, concepts like “rapid” or “unchanging” or “repeated” are also possible. 
+
+ 
+
+### But what if factor labels themselves express changes?
+
+We have already recommended using heterogeneous, "in-vivo" factor labels and to resist the temptation to formulate all factor labels in a strictly similar way: when in doubt, stick fairly close to the actual language your sources use (so-called "in-vivo" coding) , and don’t be *too* worried if your factor labels are different from one another grammatically. In particular, this means that sometimes you may find yourself using some labels which express a *difference*, even a difference over time, like “improvement in X” and some which do not. It can get confusing using these kinds of labels at the same time as some of the temporal approaches mentioned here. But, we argue, that is the way we humans think about how things work, as a heterogenous pile of fragments of connected causal information. This is always a balancing act, but we encourage you to side with your respondents and try to capture what they are saying rather than impose a schema. 
+
+## Analysing and displaying the results of temporal coding
+
+
+
+All the usual tools are available to us to analyse and display these results. For example, we can:
+
+- make tables of frequencies of factors or links broken down by hashtag
+
+- show submaps for 
+
+o  one or more values of a temporally relevant additional data field 
+
+o  and/or one or more temporally relevant link hashtags
+
+o  and/or one or more temporally relevant factor label flags/hashtags
+
+- and/or we can zoom in or out if we have used hierarchical coding with one or more temporally relevant components.
+
+In particular, if a small number (2, 3, 4) temporal categories (like, “before, during, after” or “year 1, year 2, year 3” have been used in additional data fields, and/or when coding links and/or when coding factors, it is possible to arrange the above kinds of output in a left-to-right, storytelling fashion. For example, three simple, top-level maps for three time periods can be displayed in a row. Or, the time periods can form the columns of a data table showing for example how different factors were mentioned with different frequency at different times. In the simplest case, as mentioned on page 2 of this paper, the map itself forms a left-to-right causal story, which can be read, with some caveats, according to a schema like “this happened, which made this happen, which made this happen”.

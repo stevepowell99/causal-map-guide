@@ -1,0 +1,11 @@
+# Analysis: text analysis
+
+ 
+
+## 💻 Text analysis in the app
+
+ 
+
+```{r,echo=F}
+show_mark("Interface/rightcard-Text-tab.md")
+```
