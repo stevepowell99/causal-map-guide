@@ -85,6 +85,9 @@ Sometimes, we might know that all the information in one particular chain came f
 In any case, part of the point of causal mapping is the synthetic surprises which we can discover by piecing together fragments of causal information which were *not* necessarily provided in this way. This is the situation every evaluator is in when piecing together information from, say, experts for Phase 1 and experts for Phase 2. We just always have to be aware of the transitivity trap. 
 
 
+## Transitivity trap, or identity trap?
+
+We can talk about the *identity trap* as more fundamental than the transitivity trap. It comes down to saying, how can you be sure that the way in which this factor is exemplified in one particular context is the same as the way that this similar seeming factor is exemplified in a different context: whether to use "the same" factor to code two different things.
 
 
 
