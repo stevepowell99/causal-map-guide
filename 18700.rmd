@@ -44,7 +44,7 @@ In the first approach you simply enter the text of each statement in a single co
 
 Here is an example file which you can use as a template. 
 
-[statements.csv](https://causalmapdocumentation.blot.im/[Downloads]/statements.csv)
+[statements.csv](https://drive.google.com/file/d/18R64W4JH4d0u7Vi3qBHC12oLcnJk_Gam/view?usp=drive_web)
 
 
 
@@ -54,7 +54,7 @@ Then you usually have a second table giving more details of each respondent, for
 
 Here is an example file which you can use as a template. 
 
-[respondents.csv](https://causalmapdocumentation.blot.im/[Downloads]/respondents.csv)
+[respondents.csv](https://drive.google.com/file/d/18RNhRhbgyTGCdX_0t6N_n9qXPjxB5L8n/view?usp=drive_web)
 
 
 ##### Table 3: questions
@@ -63,7 +63,7 @@ This third table give you more details about each question, for example question
 
 Here is an example file which you can use as a template. 
 
-[questions.csv](https://causalmapdocumentation.blot.im/[Downloads]/questions.csv)
+[questions.csv](hhttps://drive.google.com/file/d/18Rvsib_Lhl0Dfz6OvIkUlBn6V4CJbkxA/view?usp=drive_web)
 
 #### One big table
 
@@ -71,7 +71,7 @@ The second approach is to combine all of this information into a single table, w
 
 Here is an example file which you can use as a template. 
 
-[allstatements.csv](https://causalmapdocumentation.blot.im/[Downloads]/allstatements.csv)
+[allstatements.csv](https://drive.google.com/file/d/18QTzZysgHCgQYY7qizPGUoKur2dLksmf/view?usp=drive_web)
  
 
 

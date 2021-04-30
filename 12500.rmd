@@ -14,6 +14,18 @@ This number is shown in the "Evidence" column. A large number does *not* necessa
 
 Subtotals are provided for each From factor; it can be useful to compare the amount of evidence for the impact of each From factor.
 
+These numbers are not very useful on their own. But they are useful for comparisons. 
+
+If you look at the robustness of the path from interventions B and C to an outcome E, one thing you can do is compare the sum of the score for the two sets of paths and compare it with the overall score. If the overall score is more or less the same as the larger of the score for B and the score for C, you can assume that the (evidence for the) intervention paths overlap - so if the score for B is larger, you could say that C uses many of the same paths. But if the overall score is more like the sum of the two, you can deduce that the interventions work more independently. So for example if you are already funding intervention B, and you have to decide whether to fund C or D, and your causal map says that the score from C to E and from D to E are similar, you'd want to look at the pairs - you'd want to look at B plus C to E and compare it with B plus D to E. B + D might have a much larger score than C +D, because C shares many paths with B, but D doesn't. So you'd want to fund D, as the combination of B and D would be more robust.  
+
+Note as usual in causal mapping, this argument can be posed either in terms of evidence or in terms of actual effects. If you think of the Ns in the individual links as the number of pieces of evidence, you can say funding B plus D is a better bet because there is more independent evidence that it works. If you think of the Ns as a score for the robustness of the causal link, or the number of separate mechanisms which explain such a link, then you would choose D because the best bet is that there is a more robust effect on O across more different pathways. 
+
+
+This is a funky way of looking at interaction effects. 
+
+Of course, in principle you can see all of this just by looking at the maps and to what extent B, C and D share paths to O. But sometimes it is hard to see and this metric anchors a narrative description in actual numbers.
+
+
 ## Problem
 
 **How to summarise, given a heap of causal information about what causes what, the \*quantity\* of evidence that one particular factor influences another particular factor?** 
