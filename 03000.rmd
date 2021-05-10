@@ -199,7 +199,13 @@ In the multi-edit pane, you can edit factor names and merge factors, but you can
 show_mark("Interface/leftcard-Editfactorlabels-tab.md")
 ```
 
+### Codebook
 
+The Codebook pane lists factor names, their corresponding IDs and allows for notes to be created in relation to a factor.
+
+```{r,echo=F}
+show_mark("Interface/leftcard-Codebook-tab.md")
+```
 #### Viewing your statements
 
 
