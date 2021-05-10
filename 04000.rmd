@@ -119,6 +119,10 @@ Solution 2: merge them
 
 If you use more advanced coding styles involving “strength”, detailed in the “Extra” section of this Guide, you can avoid this by just using one factor like Better health.
 
+Alternatively, 'Health Improved' and 'Health got Worse' could be coded as 'Health Improved' and '~Health Improved' respectively, with '~' indicating the 'opposite' of an improvement in health. The app will then treat links to Health Improved and ~Health Improved separately.
+[More information on this can be found here.](#combining-opposites)
+
+
 ## Formulating factors as desirable
 
 If possible, especially when conducting evaluations or research for policy purposes, try to formulate these semi-quantitative factors so that for each one, *more* of it can be broadly thought of as *more desirable*, e.g. Health, Wellbeing; and failing that, as something *undesirable*, e.g. Psychosocial Stress, Mortality. Including factors which primarily code something undesirable as well as factors which primarily code something desirable, is often very natural, but you might sometimes have to think more carefully when making reports and summaries. 
