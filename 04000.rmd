@@ -35,6 +35,23 @@ show_mark("Interface/create-and-edit-links.md")
 
 After beginning to create links between factors, one will notice already-coded factors will appear in the dropdown menus in the to and from factor boxes. For added convenience, the most frequently coded factors will appear at the top of this list.
 
+## Using memos and hashtags
+
+Qualitative coding usually involves making notes and memos, and you can do this in Causal Map too. 
+
+Hashtags are available as a special kind of memo when coding a link: you can use them to provide any kind of additional information:
+
+- where a link is only relevant in a particular context
+- where a link is only a hypothesis
+- where a link is only projected for the future
+- to tag links you want to come back and review
+- to add other qualifying information like "source seems unsure".
+
+As usual in Causal Map, you can apply one or more hashtags, and you can either select existing hashtags or create new ones on the fly. 
+
+Later, you can [filter the map](https://guide.causalmap.app/analysis.html#filtering-the-map-by-link-hashtag-memo) to show only links containing specific hashtags (or parts of hashtags), and also for links which do *not* contain specific hashtags or parts of hashtags.
+
+
 ## Formulating labels (semi-quantitative factors)
 
 Remember that in general, factor names are case sensitive. So <u>funding</u> is **not the same as** <u>Funding</u>.
@@ -45,7 +62,7 @@ You can use emojis 😍 and other special characters in your factor labels howev
 Also, semi-colons ';' you can use them if you want, but note that they have a special meaning in the app.
 
 
-#### Safe emojis
+### Safe emojis
 
 These symbols are safe to use (you can copy them from here):
 ▶ ⊕ ⊖ ◨ ◪ ♥ ↺ ֍
