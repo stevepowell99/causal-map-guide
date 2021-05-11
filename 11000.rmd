@@ -6,7 +6,12 @@ The main “Code & View” tab has been described earlier. You will spend nearly
 
 ### Exporting
 
-You can always export all your data in different formats at any time using the buttons in the File tab.
+As well as exporting your map as a png or svg from the maps in the Code & View tab, in the `Download` tab you can always export all your data in different formats:
+
+- your original text/statements,  nodes, edges (including the fragments of your text/statements which you highlighted as causal claims), metadata like respondent data, as csv files (actually, all bundled together into an excel file with different tabs). The node and edge data is in a standard format with "from" and "to" edge columns pointing to node ID column.
+- all your statements, source by source, in the form of an HTML book
+- an interactive map as an HTML widget which could be embedded in a web page.
+
 
 ## The *File* button
 
@@ -70,11 +75,11 @@ It is also possible to create larger groups of users. Ask us for help with this:
 
 
 
-## The Upload and Fix tab: uploading and tweaking your data
+## The Upload and Fix tab: uploading/importing and tweaking your data
 
 The documentation is work in progress. 
 
-### Uploading statements and additional data as one file
+### Uploading/importing statements and additional data as one file
 
 The only data you need to provide is a table of statements as a .csv file. Your .csv files must have a header row with the names of the fields. 
 
@@ -114,7 +119,7 @@ Probably, each respondent belongs to one “village”, each village to one regi
 
 In each case, the app also adds a “statement ID” field, numbering the statements 1, 2, 3 etc. to help keep track of them. 
 
-#### Preparing and uploading your .csv file
+#### Preparing and uploading/importing your .csv file
 
 You provide this table, and any other tables you might need,[see below](#viewing-and-manually-editing-your-data), as .csv files. You can save any spreadsheet as a .csv file from Microsoft Excel and other spreadsheet programmes https://www.google.com/search?q=create+a+csv+file.
 
@@ -176,13 +181,13 @@ You can delete rows by right-clicking on the row or rows and selecting “remove
 
 Remember to press Update when you have finished manually editing data.
 
-### Uploading/appending more statements
+### Uploading/importing additional statements ("appending statements")
 
 You can add additional statements to your existing statements by repeating the process above but being sure to click “Append”. If your data includes additional data fields, they will be matched with existing fields if they exist already and otherwise new fields will be imported; NA or “missing data” will be shown for these fields for the *existing* respondents. 
 
 You can also upload additional statements for existing respondents – they might be for example answers to additional questions, or additional answers to existing questions. As long as you click “append”, it is not possible to “overwrite” existing data in this way; all data is treated as new.
 
-### Uploading Source/Respondent and Question data separately
+### Uploading/importing Source (Respondent) and Question data separately
 
 Often it isn’t convenient to provide this whole table yourself. Often you think in terms of smaller sub-tables. For example you might have one table just with the statements and the respondents (say, there are 20 statements per respondent and 10 respondents, so a total of 200 statements), and another table with 20 rows giving information about each respondent, say with just the field “Village” or maybe with more fields. The app can help you combine this data with the statements. Here is an example.
 
@@ -246,7 +251,7 @@ You can upload new additional data at any time. Plus, if you want to *change* ex
 
 ### Downloading Source/Respondent and Question data separately
 
-From the same panels, you can download the data as a csv file. If you want, you can then make larger edits in the csv file and upload the file again as described above. Remember that if you downloaded a table from the Sources table, you must upload it in the same place (click the “Sources” button first); the same goes for the Questions table.
+From the same panels, you can download the data as a csv file. If you want, you can then make larger edits in the csv file and upload the file again as described above. Remember that if you downloaded a table from the Sources table, you must upload/import it in the same place (click the “Sources” button first); the same goes for the Questions table.
 
 
 
@@ -305,7 +310,7 @@ There are various tools for cleaning and fixing your imported data.
 
 Note that this way, you don’t enter your additional data straight away. It is more efficient to add it using the Upload and Fix tab. You can do this any time, and all-at-once or in stages.
 
-### Importing from Word or other text files.
+### Uploading/Importing from Word or other text files.
 
 #### The easiest way
 
@@ -427,7 +432,7 @@ To complete this kind of non-QuIP import of closed question and/or ranked organi
 
 ### Appending data
 
-You can continue to upload more data in the same way, remembering to click the “append” checkbox. However, you should only upload datasets containing complete data for one or more individual respondents: don’t upload a partial questionnaire for an individual respondent, or you may get unpredictable results. 
+You can continue to upload/import more data in the same way, remembering to click the “append” checkbox. However, you should only upload datasets containing complete data for one or more individual respondents: don’t upload a partial questionnaire for an individual respondent, or you may get unpredictable results. 
 
 On the other hand, it is fine if the questions are slightly or even completely different for each respondent, e.g. you can finish with individual interviews and then start uploading focus group data, for which some questions are the same and some are different. And it’s OK to have a few respondents who have additional questions just for them.
 

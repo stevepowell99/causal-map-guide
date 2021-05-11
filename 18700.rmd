@@ -28,7 +28,7 @@ Please see our T&Cs at https://causalmap.app/terms-and-conditions-for-the-causal
 
 ### How do I prepare my data from a QuIP project for import into Causal Map?
 
-There isn't an official QUIP way but uploading data into Causal Map should be pretty simple. 
+There isn't an official QUIP way but uploading/importing data into Causal Map should be pretty simple. 
 
 It does depend on how you actually collect your data, for example from word files or ODK or similar. 
 
@@ -36,7 +36,7 @@ There are basically two approaches but other variants are possible too.
 
 #### Separate tables
 
-The first table is uploaded to the app as the main statements table and the other two tables can easily be added after that. 
+The first table is uploaded/imported to the app as the main statements table and the other two tables can easily be added after that. 
 
 ##### Table 1: statements
 
