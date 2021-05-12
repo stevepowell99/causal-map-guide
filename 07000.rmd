@@ -16,5 +16,5 @@ This analysis function is a powerful tool which enables you to view full causal 
 
 Using our OrgX example, there is a clear causal path from the ‘Social Cash Transfer’ to ‘Increased Purchasing Power’. The complexities of this causal path are best seen and shown by using path tracing, as it simplifies the map and highlights the intervening factors between the two factors. 
 
-Also, path tracing is the prerequisite for calculating the “Quantity of Evidence”, [see later](#quantifying-causal-evidence).
+Also, path tracing is the prerequisite for calculating Robustness, [see later](#quantifying-causal-evidence).
 
