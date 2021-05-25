@@ -1,4 +1,4 @@
-# "Barebones" causal mapping 
+# Coding opposites
 
 In the first part of this Guide we have dealt only with undifferentiated links which simply say "C causally influences/influenced E" or more precisely "Source S claims/believes that C causally influences/influenced E". We call this "barebones style" causal mapping. There is nothing more to this kind of causal map than links between factors. No other features are used. 
 
@@ -61,7 +61,7 @@ When you press "combine opposites",
 
 
 
-the app tries to combine any pairs of factors which are opposites. It looks at all the factors which begin with a ~ and it, taking off the ~ where there was one. But it only does this if there is in fact such an opposite already coded in the file as currently filtered, otherwise there wouldn't be any point. 
+the app tries to combine any pairs of factors which are opposites. It looks at all the factors which begin with a ~ and takes off the ~ where there was one. But it only does this if there is in fact such an opposite already coded in the file as currently filtered, otherwise there wouldn't be any point. 
 
 
 ![](_assets/121008.png)
@@ -86,15 +86,15 @@ When using hierarchical coding, the sign "~" may appear at the start of a factor
 
 Here is a similar story, now coded hierarchically. In this example, we only see `~` at the beginning of the factors, not yet within them.
 
-![image-20210520204204501](G:/My Drive/Projects/causal-map-guide/_assets/image-20210520204204501.png)
+![image-20210520204204501](_assets/image-20210520204204501.png)
 
 When you press "combine opposites", the app tries to combine any pairs of factors which are opposites. It looks at all the factors which begin with a ~ and *flips each component*, taking off the ~ where there was one, and inserting one where there was not. But again it only does this if there is in fact such an opposite already coded in the file as currently filtered, otherwise there wouldn't be any point, because there is nothing to combine. 
 
-![image-20210520204312492](G:/My Drive/Projects/causal-map-guide/_assets/image-20210520204312492.png)
+![image-20210520204312492](_assets/image-20210520204312492.png)
 
 Here is the same example, but also "zoomed out" to the top level.
 
-![image-20210520204412557](G:/My Drive/Projects/causal-map-guide/_assets/image-20210520204412557.png)
+![image-20210520204412557](_assets/image-20210520204412557.png)
 
 A quantitative social scientist might solve this problem by flipping the polarity of the negative examples, coding them as positive but using minus strengths for the connections. So smoking influences good health but with a minus strength. However this always seems somehow unsatisfactory and is complicated to do. It is particularly unsatisfactory when *both* ends of the arrow are flipped in this way so that we code the influence of being unfit on being unhappy as a green arrow from fitness to health!
 
@@ -130,25 +130,25 @@ Smoking, which is an example of unhealthy behaviour, is the opposite of not smok
 
 So here we add one more causal claim to our above example, at the bottom:
 
-![image-20210520221327950](G:/My Drive/Projects/causal-map-guide/_assets/image-20210520221327950.png)
+![image-20210520221327950](_assets/image-20210520221327950.png)
 
 The healthy habit of not smoking leads to being fit.
 
 So the app correctly detects that not smoking is the opposite of smoking:
 
-![image-20210520221457238](G:/My Drive/Projects/causal-map-guide/_assets/image-20210520221457238.png)
+![image-20210520221457238](_assets/image-20210520221457238.png)
 
 The two arrows at bottom left (one all green, one all pink) show that there is one example of this particular healthy habit leading to fitness, and the complementary example in which the opposite of this habit leads to the opposite of fitness.
 
 Zoomed out to the top level:
 
-![image-20210520221754476](G:/My Drive/Projects/causal-map-guide/_assets/image-20210520221754476.png)
+![image-20210520221754476](_assets/image-20210520221754476.png)
 
 The app makes it easy to code opposites; while coding, when you have loaded any factor into either of the boxes, pressing the "flip" button above will flip the factor into its opposite.
 
-![image-20210520222023504](G:/My Drive/Projects/causal-map-guide/_assets/image-20210520222023504.png)
+![image-20210520222023504](_assets/image-20210520222023504.png)
 
-![image-20210520222347827](G:/My Drive/Projects/causal-map-guide/_assets/image-20210520222347827.png)
+![image-20210520222347827](_assets/image-20210520222347827.png)
 
 
 
@@ -187,7 +187,7 @@ The problem of course, comes when we get factors which in this way are coded dif
 
 (There is a related issue about the extent that these are referring to the same thing, for example, are we talking about one household here or several households or a whole country or whatever, and if each respondent is talking about their own household, can we merge this information, etc ....)
 
-With a strength-based way of variable based way of coding, we can encode them with a single variable and differing strengths.
+With a strength-based variable-based way of coding, we can encode them with a single variable and differing strengths.
 Whereas with propositional coding, it might somehow be a common variable but it's coded with two different labels. And we had no formal way of connecting increased income with decreased income. 
 
 (We can imagine almost a social history of measurement and the social construction of variables in the sense of Wittgenstein's
