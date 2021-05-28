@@ -5,3 +5,13 @@ _publish.R
 _book
 _bookdown_files
 rsconnect
+
+Guide-to-causal-mapping.Rmd
+
+Guide-to-causal-mapping.html
+
+Guide-to-causal-mapping.knit.md
+
+Guide-to-causal-mapping.utf8.md
+
+*.log
