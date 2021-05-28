@@ -119,6 +119,7 @@ Why would I use this table?
 
 These tables provide a snapshot of the overall trends of change across the domains, so they can be a helpful introduction and “easing in” to the findings - before diving deeper into the causal stories! The closed question responses can also provide interesting insights when compared to the open-ended responses, especially in cases where they might differ. 
 
+A full list of closed question responses can be found [here](https://drive.google.com/drive/folders/1wvifDQ0BXmAjSudTRUv9i_4JURpphD4v)
  
 
 ### QuIP-specific: Ranking 
