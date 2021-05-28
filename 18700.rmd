@@ -42,37 +42,25 @@ The first table is uploaded/imported to the app as the main statements table and
 
 In the first approach you simply enter the text of each statement in a single column of a spreadsheet file with the heading "text". One row per statement. statement is usually round about a paragraph but it could be as short as a sentence or several paragraphs if that's convenient. then you'd usually have two more columns one for respondent ID and one for question ID. That means for each statement you know the respondent and the question.  
 
-Here is an example file which you can use as a template. 
-
-[statements.csv](https://drive.google.com/file/d/18R64W4JH4d0u7Vi3qBHC12oLcnJk_Gam/view?usp=drive_web)
-
-
 
 ##### Table 2: respondents
 
 Then you usually have a second table giving more details of each respondent, for example gender.
-
-Here is an example file which you can use as a template. 
-
-[respondents.csv](https://drive.google.com/file/d/18RNhRhbgyTGCdX_0t6N_n9qXPjxB5L8n/view?usp=drive_web)
 
 
 ##### Table 3: questions
 
 This third table give you more details about each question, for example question text. 
 
-Here is an example file which you can use as a template. 
-
-[questions.csv](hhttps://drive.google.com/file/d/18Rvsib_Lhl0Dfz6OvIkUlBn6V4CJbkxA/view?usp=drive_web)
 
 #### One big table
 
 The second approach is to combine all of this information into a single table, which you just upload as the main statements table and that's it. In this approach any additional columns like gender or question text have to be added to the main table so they are quite repetitive. So if respondents 1 2 and 3 are all female and they have 20 statements each then you will see the word female 60 times in a column called "gender". 
 
-Here is an example file which you can use as a template. 
+##Downloads
 
-[allstatements.csv](https://drive.google.com/file/d/18QTzZysgHCgQYY7qizPGUoKur2dLksmf/view?usp=drive_web)
- 
+Example files, which can be used as templates, can be found and downloaded [here](https://drive.google.com/drive/folders/1wvifDQ0BXmAjSudTRUv9i_4JURpphD4v)
+
 
 
 ## Known bugs
