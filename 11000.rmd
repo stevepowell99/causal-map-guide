@@ -83,6 +83,8 @@ The documentation is work in progress.
 
 The only data you need to provide is a table of statements as a .csv file. Your .csv files must have a header row with the names of the fields. 
 
+Example files, which can be used as templates, can be found and downloaded [here](https://drive.google.com/drive/folders/1wvifDQ0BXmAjSudTRUv9i_4JURpphD4v).
+
 The statements are the texts which appear one by one by one in the Code & View tab, for you to read and code. Each statement is one row in your .csv file. 
 
 If you want to import interviews which are several pages each, you should break each interview into several statements. Ideally a statement consists of between one and five paragraphs – enough to fit on the left-hand side of the Code & View tab when it is displayed there. Usually your text breaks up naturally into sections, for example the interviews might be responses to a number of questions, so your statements might consist of one or a few paragraphs for each question. 

@@ -62,7 +62,7 @@ This third table give you more details about each question, for example question
 
 The second approach is to combine all of this information into a single table, which you just upload as the main statements table and that's it. In this approach any additional columns like gender or question text have to be added to the main table so they are quite repetitive. So if respondents 1 2 and 3 are all female and they have 20 statements each then you will see the word female 60 times in a column called "gender". 
 
-##Downloads
+## Downloads
 
 Example files, which can be used as templates, can be found and downloaded [here](https://drive.google.com/drive/folders/1wvifDQ0BXmAjSudTRUv9i_4JURpphD4v)
 
