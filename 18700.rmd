@@ -7,9 +7,6 @@
 
 If you highlight a very short piece of text which happens to appear (exactly the same) more than once in the statement, it is always the **first** occurrence of this piece of text which is actually highlighted. 
 
-### When I paste a table into Word, I get lots of extra lines and it doesn't look very nice
-
-Immediately after pasting, press Ctrl on your computer keyboard and then select the second option, or just press Ctrl, wait a moment, and press M.
 
 ### Help, I've forgotten one statement and need to add it!
 
@@ -23,6 +20,14 @@ However, you'll have to manually update the additional data for this table. So a
 ### Security at Causal Map
 
 Please see our T&Cs at https://causalmap.app/terms-and-conditions-for-the-causal-map-app/
+
+### I've signed up but haven't recieved a confirmation code?
+
+Firstly, the best thing to do is double check you have entered your email correctly - if your email is correct, then try sending the code again. Make sure to also check your junk/spam email folder. If none of these things work email us at hello@causalmap.
+
+### Does Causal Map offer a free trial?
+
+Yes, you can sign up for a 15 day free trial [here](https://causalmap.app/free-trial)
 
 ## QuIP questions
 
