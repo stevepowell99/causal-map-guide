@@ -23,6 +23,8 @@ show_mark("Interface/rightcard-Interactive-tab.md")
 show_mark("Interface/show-factor-search-combo.md")
 ```
 
+**Why would I use this filter?**
+This analysis function is particularly useful for searching for important factors such as intervention activities or intended programme outcomes. This filter is best applied once you know which factors are of importance or interest.
 
 
 

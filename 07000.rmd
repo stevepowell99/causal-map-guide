@@ -10,7 +10,22 @@ Choose your desired **path length** by selecting a number from the Downstream st
 
 A path length of 1 will only show the one step in the causal chain from/to your chosen factor, i.e. A ➜ B. A path length of 2 will also show the next step in the causal chain (if there is one!), i.e. A ➜ B ➜ C. The maximum path length/number of steps is 8, however, most causal chains are typically shorter than this. 
 
-Why would I use this filter?
+For a more visual representation:
+The following examples demonstrate how applying different upstream and downstream step filters affect the causal pathways presented in the map.
+
+**Searching for factor ‘B’**
+The default: one step upstream – one step downstream
+
+
+![ABC](_assets/abc.png) 
+
+One step upstream – zero steps downstream
+![ABC](_assets/ab.png) 
+One step upstream – two steps downstream
+![ABC](_assets/abcd.png) 
+
+
+**Why would I use this filter?**
 
 This analysis function is a powerful tool which enables you to view full causal pathways and to interrogate the relationships between specific causal factors.
 
