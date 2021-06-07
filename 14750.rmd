@@ -1,4 +1,4 @@
-# Compatible and incompatible factors in storylines
+# Spotlight: Compatible and incompatible factors in storylines
 
 Sets of diverging storylines can also be seen as examples of causal maps, as they are networks of events or situations connected by links which are at least in a weak sense causal.
 
