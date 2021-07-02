@@ -306,6 +306,12 @@ There are various tools for cleaning and fixing your imported data.
 
 ![image-20210115220744955](_assets/image-20210115220744955.png) 
 
+Suppose you find you have misspelt the name of a village in your statements. You can simply search for this name within your statements and edit each occurrence of it manually. But, if you have already coded some or all of those statements and some of your quotes also include that name, you would have to also go through the quotes and manually edit all of those. 
+
+This tool saves you the effort - you can replace individual words or phrases with others throughout your file (in both the statement texts and any quotes). 
+
+However, this tool will not help you very much if you do not have specific words or phrases which you want to change, for example if you just want to retrospectively tidy or anonymise your texts. 
+
  
 
 ### Adding new statements one-by-one manually using the "new statement" button
@@ -361,17 +367,17 @@ This section is specifically about importing from a QuIP-style spreadsheet. This
 - Rows whose question code does not include a "$" will be imported only as additional data, not as statements.
 - A new question ID will be constructed from the question code together with the question text.
 
-First save the main data sheet as a .csv, then press button X to import it. What if you have FGD data too?
-
+First save the main data sheet as a .csv, then press button X to import it. 
 Here you can upload all your statements at the start of a file. 
 
-Your csv file must have column headers: 
+Your csv file must have just four columns, with column headers in this order: 
 
 - `text`, containing the answers
 - `#SourceID`, containing the respondent ID 
 - `#QuestionID`, containing the respondent ID, 
 - `Question`, containing the question text 
 
+(Actually the names of the columns does not matter, only the order.)
 
 Your Question IDs may include the following characters:
 
@@ -411,9 +417,20 @@ Closed question data, common in QuIP studies, are additional data fields which c
 - no change
 - stayed the same
 
-etc. This kind of data is automatically recoded into +, - and 0, and displayed in the Tables panel if you select “closed questions”. 
+etc. 
 
- ![image-20210115220840260](_assets/image-20210115220840260.png) 
+The current list of recodes is [here](https://www.dropbox.com/s/j8mn0i7w2ahtw56/quip-recodes.csv?dl=0).
+
+
+This kind of data is automatically recoded into +, - and 0, and displayed in the Tables panel if you select “closed questions”. 
+
+![image-20210115220840260](_assets/image-20210115220840260.png) 
+
+You can use the second column in this table in the Upload & Fix tab to mark a selection of additional data fields as “closed”. 
+
+![image-20210115220821933](_assets/image-20210115220821933.png)
+
+
 
 
 ### Importing closed question data, and ranked organisation data, without using QuIP-style import
@@ -441,12 +458,11 @@ On the other hand, it is fine if the questions are slightly or even completely d
 Don’t use the same question id for different question texts. So for example if you have $A1 for individual interviews “how old are you”, if you want to use a different text (e.g. “what is your average age”) for focus groups, use a different question ID e.g. $A1h (if you used $A1, then “what is your average age” would become the question text for the individuals too). 
 
  
+### Type
 
-### Closed questions
+An additional data field which you name "#Type" can be used with a special filter to distinguish focus groups ("FG") from individual interviews ("II"). This column must contain either "FG" or "II" and nothing else. 
 
-![image-20210115220821933](_assets/image-20210115220821933.png)
-
-You can use the second column in this table to mark a selection of additional data fields as “closed”. [See above](#closed-questions).
+You can import a #Type column as part of a normal data import. If you are doing a QuIP data import, you will have to add this column afterwards in the Upload & Fix tab, in the "Sources" panel.
 
  
 

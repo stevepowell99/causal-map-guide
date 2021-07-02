@@ -200,11 +200,124 @@
 	"buffers":
 	[
 		{
-			"file": "/C/Users/steve/Downloads/test.txt",
+			"contents": "\nRaquel de Luis Iglesias\nRaquel de Luis Iglesias\n\n25 minutes ago\nYou mentioned that you can upload any type of text. But is this a tool that works best with specific sets of data? For instance, would 200 interviews be too much information?\nShow 3 replies\nMartha Bicket\nMartha Bicket\n\n28 minutes ago\n(How easily do you think policy analysts or stakeholders would be able to interact with this software themselves?)\nShow 3 replies\nMartha Bicket\nMartha Bicket\n\n29 minutes ago\nIn your case studies or other work, do you have any examples of evaluation stakeholders themselves using the maps (e.g. after the evaluation)?\nShow 1 reply\nKatie Bigmore\nKatie Bigmore\n\n30 minutes ago\nPls summarise possible challenges to overcome as new user of causal mapping app. What are the Min requirements that need to be in place to allow this tool to be used quickly and effectively ?\nShow 1 reply\nAsk a question\n\nquickly and effectively ?\nShow 1 reply\nViolet Owen\nViolet Owen\n\n42 minutes ago\nIs it possible to generate the labels for the casual mapping collectively, as part of a co-designed or participatory process?\nShow 2 replies\nGiel Ton\nGiel Ton\n\n43 minutes ago\nDid the causal mapping exercise lead to 'surprising' insights; that you had not expected or anticipated?\nShow 2 replies\nJonas Norén\nJonas Norén\n\nan hour ago\nHi, How is the encoding conducted? Is it a manual process or does the software help with that?\nShow 2 replies\n\n\n",
+			"redo_stack":
+			[
+				[
+					21,
+					1,
+					"insert",
+					{
+						"characters": "07510881300"
+					},
+					"CwAAALMDAAAAAAAAswMAAAAAAAABAAAAMLIDAAAAAAAAsgMAAAAAAAABAAAAMLEDAAAAAAAAsQMAAAAAAAABAAAAM7ADAAAAAAAAsAMAAAAAAAABAAAAMa8DAAAAAAAArwMAAAAAAAABAAAAOK4DAAAAAAAArgMAAAAAAAABAAAAOK0DAAAAAAAArQMAAAAAAAABAAAAMKwDAAAAAAAArAMAAAAAAAABAAAAMasDAAAAAAAAqwMAAAAAAAABAAAANaoDAAAAAAAAqgMAAAAAAAABAAAAN6kDAAAAAAAAqQMAAAAAAAABAAAAMA",
+					"BAAAAAAAAAABAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAPC/AAAAAAEAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA8L8AAAAAAQAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAADwvwAAAAABAAAAtAMAAAAAAAC0AwAAAAAAAAAAAAAAAPC/"
+				],
+				[
+					20,
+					1,
+					"left_delete",
+					null,
+					"AgAAAKkDAAAAAAAAqgMAAAAAAAAAAAAAqgMAAAAAAACrAwAAAAAAAAAAAAA",
+					"BAAAAAAAAAABAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAPC/AAAAAAEAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA8L8AAAAAAQAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAADwvwAAAAABAAAAqQMAAAAAAACpAwAAAAAAAAAAAAAAAPC/"
+				],
+				[
+					17,
+					1,
+					"insert",
+					{
+						"characters": "07510881300gg"
+					},
+					"DQAAAKoDAAAAAAAAqgMAAAAAAAABAAAAZ6kDAAAAAAAAqQMAAAAAAAABAAAAZ6gDAAAAAAAAqAMAAAAAAAABAAAAMKcDAAAAAAAApwMAAAAAAAABAAAAMKYDAAAAAAAApgMAAAAAAAABAAAAM6UDAAAAAAAApQMAAAAAAAABAAAAMaQDAAAAAAAApAMAAAAAAAABAAAAOKMDAAAAAAAAowMAAAAAAAABAAAAOKIDAAAAAAAAogMAAAAAAAABAAAAMKEDAAAAAAAAoQMAAAAAAAABAAAAMaADAAAAAAAAoAMAAAAAAAABAAAANZ8DAAAAAAAAnwMAAAAAAAABAAAAN54DAAAAAAAAngMAAAAAAAABAAAAMA",
+					"BAAAAAAAAAABAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAPC/AAAAAAEAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA8L8AAAAAAQAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAADwvwAAAAABAAAAqwMAAAAAAACrAwAAAAAAAAAAAAAAAPC/"
+				],
+				[
+					16,
+					1,
+					"left_delete",
+					null,
+					"AgAAAJ4DAAAAAAAAnwMAAAAAAAAAAAAAnwMAAAAAAACgAwAAAAAAAAAAAAA",
+					"BAAAAAAAAAABAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAPC/AAAAAAEAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA8L8AAAAAAQAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAADwvwAAAAABAAAAngMAAAAAAACeAwAAAAAAAAAAAAAAAPC/"
+				],
+				[
+					13,
+					1,
+					"insert",
+					{
+						"characters": "07510881300gg"
+					},
+					"DQAAAJ8DAAAAAAAAnwMAAAAAAAABAAAAZ54DAAAAAAAAngMAAAAAAAABAAAAZ50DAAAAAAAAnQMAAAAAAAABAAAAMJwDAAAAAAAAnAMAAAAAAAABAAAAMJsDAAAAAAAAmwMAAAAAAAABAAAAM5oDAAAAAAAAmgMAAAAAAAABAAAAMZkDAAAAAAAAmQMAAAAAAAABAAAAOJgDAAAAAAAAmAMAAAAAAAABAAAAOJcDAAAAAAAAlwMAAAAAAAABAAAAMJYDAAAAAAAAlgMAAAAAAAABAAAAMZUDAAAAAAAAlQMAAAAAAAABAAAANZQDAAAAAAAAlAMAAAAAAAABAAAAN5MDAAAAAAAAkwMAAAAAAAABAAAAMA",
+					"BAAAAAAAAAABAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAPC/AAAAAAEAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA8L8AAAAAAQAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAADwvwAAAAABAAAAoAMAAAAAAACgAwAAAAAAAAAAAAAAAPC/"
+				],
+				[
+					12,
+					1,
+					"left_delete",
+					null,
+					"AgAAAJMDAAAAAAAAlAMAAAAAAAAAAAAAlAMAAAAAAACVAwAAAAAAAAAAAAA",
+					"BAAAAAAAAAABAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAPC/AAAAAAEAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA8L8AAAAAAQAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAADwvwAAAAABAAAAkwMAAAAAAACTAwAAAAAAAAAAAAAAAPC/"
+				],
+				[
+					9,
+					1,
+					"insert",
+					{
+						"characters": "07510881300gg"
+					},
+					"DQAAAJQDAAAAAAAAlAMAAAAAAAABAAAAZ5MDAAAAAAAAkwMAAAAAAAABAAAAZ5IDAAAAAAAAkgMAAAAAAAABAAAAMJEDAAAAAAAAkQMAAAAAAAABAAAAMJADAAAAAAAAkAMAAAAAAAABAAAAM48DAAAAAAAAjwMAAAAAAAABAAAAMY4DAAAAAAAAjgMAAAAAAAABAAAAOI0DAAAAAAAAjQMAAAAAAAABAAAAOIwDAAAAAAAAjAMAAAAAAAABAAAAMIsDAAAAAAAAiwMAAAAAAAABAAAAMYoDAAAAAAAAigMAAAAAAAABAAAANYkDAAAAAAAAiQMAAAAAAAABAAAAN4gDAAAAAAAAiAMAAAAAAAABAAAAMA",
+					"BAAAAAAAAAABAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAPC/AAAAAAEAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA8L8AAAAAAQAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAADwvwAAAAABAAAAlQMAAAAAAACVAwAAAAAAAAAAAAAAAPC/"
+				],
+				[
+					8,
+					1,
+					"left_delete",
+					null,
+					"AgAAAIgDAAAAAAAAiQMAAAAAAAAAAAAAiQMAAAAAAACKAwAAAAAAAAAAAAA",
+					"BAAAAAAAAAABAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAPC/AAAAAAEAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA8L8AAAAAAQAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAADwvwAAAAABAAAAiAMAAAAAAACIAwAAAAAAAAAAAAAAAPC/"
+				],
+				[
+					5,
+					1,
+					"insert",
+					{
+						"characters": "07510881300gg"
+					},
+					"DQAAAIkDAAAAAAAAiQMAAAAAAAABAAAAZ4gDAAAAAAAAiAMAAAAAAAABAAAAZ4cDAAAAAAAAhwMAAAAAAAABAAAAMIYDAAAAAAAAhgMAAAAAAAABAAAAMIUDAAAAAAAAhQMAAAAAAAABAAAAM4QDAAAAAAAAhAMAAAAAAAABAAAAMYMDAAAAAAAAgwMAAAAAAAABAAAAOIIDAAAAAAAAggMAAAAAAAABAAAAOIEDAAAAAAAAgQMAAAAAAAABAAAAMIADAAAAAAAAgAMAAAAAAAABAAAAMX8DAAAAAAAAfwMAAAAAAAABAAAANX4DAAAAAAAAfgMAAAAAAAABAAAAN30DAAAAAAAAfQMAAAAAAAABAAAAMA",
+					"BAAAAAAAAAABAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAPC/AAAAAAEAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA8L8AAAAAAQAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAADwvwAAAAABAAAAigMAAAAAAACKAwAAAAAAAAAAAAAAAPC/"
+				]
+			],
 			"settings":
 			{
-				"buffer_size": 10823815,
-				"encoding": "UTF-8",
+				"buffer_size": 1417,
+				"line_ending": "Windows"
+			},
+			"undo_stack":
+			[
+				[
+					2,
+					1,
+					"insert",
+					{
+						"characters": "gg"
+					},
+					"AgAAAH0DAAAAAAAAfgMAAAAAAAAAAAAAfgMAAAAAAAB/AwAAAAAAAAAAAAA",
+					"BAAAAAAAAAABAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAPC/AAAAAAEAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA8L8AAAAAAQAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAADwvwAAAAABAAAAfQMAAAAAAAB9AwAAAAAAAAAAAAAAAPC/"
+				],
+				[
+					4,
+					2,
+					"left_delete",
+					null,
+					"AgAAAH4DAAAAAAAAfgMAAAAAAAABAAAAZ30DAAAAAAAAfQMAAAAAAAABAAAAZw",
+					"BAAAAAAAAAABAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAPC/AAAAAAEAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA8L8AAAAAAQAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAADwvwAAAAABAAAAfwMAAAAAAAB/AwAAAAAAAAAAAAAAAPC/"
+				]
+			]
+		},
+		{
+			"contents": "\nRaquel de Luis Iglesias\nMartha Bicket\nKatie Bigmore\nViolet Owen\nGiel Ton\nJonas Norén\n",
+			"settings":
+			{
+				"buffer_size": 86,
 				"line_ending": "Windows"
 			}
 		}
@@ -220,6 +333,14 @@
 		"last_filter": "",
 		"selected_items":
 		[
+			[
+				"pastry",
+				"Text Pastry: From 1 To X"
+			],
+			[
+				"wr",
+				"Word Wrap: Toggle"
+			],
 			[
 				"wrap",
 				"Word Wrap: Toggle"
@@ -239,10 +360,6 @@
 			[
 				"cit",
 				"Citer: Search"
-			],
-			[
-				"wr",
-				"Word Wrap: Toggle"
 			],
 			[
 				"link",
@@ -383,10 +500,6 @@
 			[
 				"bro",
 				"Browse Mode: Right Sidebar"
-			],
-			[
-				"pastry",
-				"Text Pastry: Menu"
 			],
 			[
 				"insta",
@@ -753,29 +866,32 @@
 	],
 	"file_history":
 	[
+		"/C/Users/steve/Dropbox/Projects/causal-map-guide/12500.rmd",
+		"/C/Users/steve/Desktop/stevekeys.ahk",
+		"/C/Users/steve/Dropbox/Projects/causal-map-guide/11000.rmd",
+		"/C/Users/steve/Dropbox/Projects/causal-map-guide/12100.rmd",
+		"/G/.shortcut-targets-by-id/1NTh-BwdtThH24FDGED9zkJ4XRzdzbwP5/Causal Map/App files/package versions.txt",
+		"/C/Users/steve/AppData/Local/rstudio/log/rsession-user.log",
+		"/C/Users/steve/Downloads/logs.txt",
+		"/C/Users/steve/Dropbox/Projects/causal-map-guide/14800.rmd",
+		"/C/Users/steve/Dropbox/Projects/CausalMapViewer/config.yml",
+		"/C/Users/steve/Dropbox/Projects/causal-map-guide/18700.rmd",
 		"/C/Users/steve/Downloads/test.txt",
 		"/G/My Drive/test.txt",
 		"/G/.shortcut-targets-by-id/1NTh-BwdtThH24FDGED9zkJ4XRzdzbwP5/Causal Map/Projects/test.txt",
-		"/C/Users/steve/Dropbox/Projects/causal-map-guide/12100.rmd",
 		"/C/Users/steve/Dropbox/Projects/textApp/app/git_assets/Interface/_assets/image-20210115221010548.png",
 		"/G/My Drive/test kill.txt",
 		"/C/Users/steve/Dropbox/Projects/textApp/app/www/styles/app-styles.css",
-		"/C/Users/steve/AppData/Local/rstudio/log/rsession-user.log",
-		"/C/Users/steve/Dropbox/Projects/causal-map-guide/11000.rmd",
 		"/C/Users/steve/Dropbox/Projects/causal-map-guide/04000.rmd",
-		"/C/Users/steve/Desktop/stevekeys.ahk",
 		"/C/Users/steve/AppData/Local/rstudio/log/rdesktop.log",
 		"/C/Users/steve/Dropbox/Projects/textApp/app/git_assets/Interface/search-links-combo.md",
-		"/C/Users/steve/Dropbox/Projects/causal-map-guide/18700.rmd",
 		"/C/Users/steve/Dropbox/Projects/causal-map-guide/16500.rmd",
 		"/C/Users/steve/Dropbox/Projects/causal-map-guide/16000.rmd",
 		"/C/Users/steve/Dropbox/Projects/causal-map-guide/14700.rmd",
 		"/C/Users/steve/Dropbox/Projects/causal-map-guide/15300.rmd",
 		"/C/Users/steve/Dropbox/Projects/causal-map-guide/10501.rmd",
-		"/C/Users/steve/Dropbox/Projects/causal-map-guide/12500.rmd",
 		"/C/Users/steve/Downloads/graphml-examplecoded-2021-04-28.graphml",
 		"/C/Users/steve/Documents/.Renviron",
-		"/C/Users/steve/Downloads/logs.txt",
 		"/C/Users/steve/Downloads/invite.ics",
 		"/G/.shortcut-targets-by-id/1NTh-BwdtThH24FDGED9zkJ4XRzdzbwP5/Causal Map/storytree/~$ory Survey two-pager.docx",
 		"/C/Users/steve/Dropbox/Projects/our-story/app/assets/help.md",
@@ -877,14 +993,11 @@
 		"/C/Users/steve/Dropbox/Apps/Blot/Causal Map documentation/Interface/[main tab]show-links-search-combo.md",
 		"/C/Users/steve/Dropbox/Apps/Blot/Causal Map documentation/Interface/[main tab]show-factor-search-combo.md",
 		"/C/Users/steve/Dropbox/Apps/Blot/Causal Map documentation/Interface/[main tab]rightcard-Quotes-tab.md",
-		"/C/Users/steve/Dropbox/Apps/Blot/Causal Map documentation/Interface/[upload tab]additional-pivot.md",
-		"/C/Users/steve/Dropbox/Projects/textApp/app/app-sync/logfile-.csv",
-		"/C/Users/steve/Dropbox/Apps/Blot/Causal Map documentation/Interface/[start]logging-on.md",
-		"/C/Users/steve/Dropbox/Apps/Blot/Causal Map documentation/Interface/[main tab]rightcard-QoE-tab.md"
+		"/C/Users/steve/Dropbox/Apps/Blot/Causal Map documentation/Interface/[upload tab]additional-pivot.md"
 	],
 	"find":
 	{
-		"height": 41.0
+		"height": 32.0
 	},
 	"find_in_files":
 	{
@@ -915,6 +1028,19 @@
 		"case_sensitive": true,
 		"find_history":
 		[
+			"L⭕NAC",
+			"LONAC",
+			";",
+			"building",
+			"Outcome ",
+			"\n",
+			"FG",
+			"#Type",
+			"Type",
+			"\n#o::\t\nSetTitleMatchMode, 2\nIfWinExist, Dynalist\n    {\n    WinActivate \n    Send ^o\n    Send Inbox\n    Send {Enter}\n    Sleep 1000\n    Send ^{Home}\n    Send {Enter}\n    }\nelse\n    Run, C:\\Users\\steve\\AppData\\Local\\Dynalist\\Dynalist.exe\nreturn",
+			"arning",
+			"households",
+			"https://drive.google.com/drive/folders/1wvifDQ0BXmAjSudTRUv9i_4JURpphD4v",
 			"G:/My Drive/Projects/causal-map-guide/",
 			"“",
 			"”",
@@ -1029,20 +1155,7 @@
 			"\"",
 			"1111",
 			"8000",
-			"https://demo.causalmap.app",
-			"shinyjs",
-			"btn-",
-			"intro_",
-			" \t ",
-			"odi2",
-			"simon",
-			"\n#",
-			"p2",
-			"hub",
-			"college",
-			"Doctor",
-			"\"",
-			"~"
+			"https://demo.causalmap.app"
 		],
 		"highlight": true,
 		"in_selection": false,
@@ -1122,24 +1235,25 @@
 			"page_current"
 		],
 		"reverse": false,
+		"scrollbar_highlights": true,
 		"show_context": true,
 		"use_buffer2": true,
+		"use_gitignore": true,
 		"whole_word": false,
 		"wrap": true
 	},
 	"groups":
 	[
 		{
-			"selected": 0,
 			"sheets":
 			[
 				{
 					"buffer": 0,
-					"file": "/C/Users/steve/Downloads/test.txt",
+					"selected": true,
 					"semi_transient": false,
 					"settings":
 					{
-						"buffer_size": 10823815,
+						"buffer_size": 1417,
 						"regions":
 						{
 						},
@@ -1147,18 +1261,49 @@
 						[
 							[
 								0,
-								10823815
+								0
 							]
 						],
 						"settings":
 						{
-							"syntax": "Packages/MarkdownEditing/Markdown.sublime-syntax"
+							"auto_name": "",
+							"syntax": "Packages/Text/Plain text.tmLanguage"
 						},
 						"translation.x": 0.0,
 						"translation.y": 0.0,
 						"zoom_level": 1.0
 					},
 					"stack_index": 0,
+					"stack_multiselect": false,
+					"type": "text"
+				},
+				{
+					"buffer": 1,
+					"semi_transient": false,
+					"settings":
+					{
+						"buffer_size": 86,
+						"regions":
+						{
+						},
+						"selection":
+						[
+							[
+								86,
+								86
+							]
+						],
+						"settings":
+						{
+							"auto_name": "",
+							"syntax": "Packages/Text/Plain text.tmLanguage"
+						},
+						"translation.x": 0.0,
+						"translation.y": 0.0,
+						"zoom_level": 1.0
+					},
+					"stack_index": 1,
+					"stack_multiselect": false,
 					"type": "text"
 				}
 			]
@@ -1166,7 +1311,7 @@
 	],
 	"incremental_find":
 	{
-		"height": 41.0
+		"height": 32.0
 	},
 	"input":
 	{
@@ -1215,7 +1360,7 @@
 	"project": "causal-map-guide.sublime-project",
 	"replace":
 	{
-		"height": 78.0
+		"height": 60.0
 	},
 	"save_all_on_build": true,
 	"select_file":

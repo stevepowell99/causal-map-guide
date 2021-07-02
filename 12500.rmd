@@ -185,3 +185,10 @@ A causal evidence map; quantity of evidence that D ➜ O is 3.
 It is also possible to extend the semantics such that *Quantity of evidence / Number of mentions* can also be used to confer a weighting, such that for example claims from some particular sources, for example focus groups or experts, are immediately encoded with QE =2, opening also the possibility of non-integer (but still positive) QE like .5. 
 
 
+### Hierarchical 
+
+(Work in progress)
+
+Remember that when tracing length >1, if you zoom factors first, Robustness can be less than you expect because you are jumping from a thing to itself...
+
+If you zoom first, Robustness can also be *more* when length>1 because you include all the paths between generic intermediaries.
