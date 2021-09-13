@@ -44,16 +44,15 @@ The Guide is ideal for people who have already completed the [QuIP](https://bath
 💻: This symbol marks sections in this Guide which are specifically about the Causal Map app. The rest of the Guide is about causal mapping in general. The sections about using the app stand alone and can be skipped.
 :::
 
+This Guide accompanies the new version of Causal Map and is valid from September 2021. 
+
+The [old version of this Guide](http://guide2.causalmap.app.s3-website.eu-west-2.amazonaws.com/) covers the old version of Causal Map which is hosted at go.causalmap.app. 
+
 This Guide is in three parts:
 
-1)  Basic causal mapping, corresponding to the features in the Standard package in the Causal Map app.
+1)  Basic causal mapping.
 
-2)  Advanced causal mapping, corresponding to the features in the Extra package in the Causal Map app.
+2)  Advanced causal mapping.
 
 3)  Spotlight featured articles, Showcase presentations of uses of causal mapping, and FAQs and troubleshooting.
 
-Versions of this Guide:
-
--   [web version](https://guide.causalmap.app/) (updated most frequently)
--   [PDF](https://guide.causalmap.app/Guide-to-causal-mapping.pdf)
--   [epub](https://guide.causalmap.app/Guide-to-causal-mapping.epub)

@@ -1,6 +1,6 @@
 # Analysis: comparing maps between particular groups{#comparing}
 
-## Filtering by respondent group 
+## Filtering by respondent group
 
 We code a causal map on the basis of text data. That text data can be usefully broken up into statements, usually of a length between a paragraph and a page. Each statement usually has "**additional data**" associated with it, for example the ID or gender of the respondent, the text of a question to which this statement is an answer, the page and name of the document from which this statement comes, etc. When we code a causal claim within a statement, we can associate the resulting link with the additional data. That means that for every link, we should know the additional data, e.g. the gender of the respondent, etc. 
 
