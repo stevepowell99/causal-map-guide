@@ -1,4 +1,4 @@
-# Causal maps, systems maps, what's the difference? Does it matter?
+# 🧠 Causal maps, systems maps, what's the difference? Does it matter?
 
 There are many approaches to mapping what-causes-what in which the resulting map is called a "systems map". 
 

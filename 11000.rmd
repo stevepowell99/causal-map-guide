@@ -13,7 +13,7 @@ As well as exporting your map as a png or svg from the maps in the Code & View t
 - an interactive map as an HTML widget which could be embedded in a web page.
 
 
-## The *File* button
+## The *Files* button
 
 Press the File button at the top right of the app to switch to a different file, restore from a backup, and share and lock your file.
 
@@ -32,29 +32,8 @@ The menu shows you all the files you can edit or view.
 
 If you want to merge another file into the current one, just select the other file from the menu and press `Merge`. 
 
-### Backups
-
-Every time you open a project, an auto backup is made. 
-
-Every time you choose to press “Save”, a different kind of backup is made, called a user backup. 
-
-If you click on "backups" in the File tab then choose a backup, you switch from your current project to the backup you selected. In detail: the current project is saved in the backups folder as "project name_replaced_backup current date and time" and the backup you clicked on becomes the current one with the existing project name. The old backup remains. 
-
-The system saves up to 20 auto backups (usually ones make when you load up at the start), 20 user-created backups when you deliberately press the save_project button, and ten of these "replaced" backups: up to 60 backups altogether.
-
-In summary:
-
-- the app saves your work as you go along. If you just close your browser, you should always find your last coding or edits are restored when you revisit your project later.
-
-- Also, the app makes an auto backup of your file every time you log on. 
-
-- If you are making some changes which you are bit nervous about, or want to record a snapshot, press the save button in the sidebar at any time you want to make a "user backup". 
-
-- The app stores the last 20 user backups and the last 20 auto backups, and you can restore any of them at any time using the File button at the top right of the app. 
 
 ### Sharing and locking{#sharing}
-
-![](_assets/110001.png)
 
 Here you can share your file with others.
 
@@ -75,9 +54,6 @@ It is also possible to create larger groups of users. Ask us for help with this:
 
 
 
-## The Upload and Fix tab: uploading/importing and tweaking your data
-
-The documentation is work in progress. 
 
 ### Uploading/importing statements and additional data as one file
 

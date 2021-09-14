@@ -1,14 +1,10 @@
 # Signing up and signing in at Causal Map
 
-Start your journey at https://causalmap.shinyapps.io/CausalMap2/.
-
-![](https://vimeo.com/596519456)
+nStart your journey at https://causalmap.shinyapps.io/CausalMap2/.
 
 The first time you use the app you will see a screen like this:
 
 
-
-![img](_assets/https%3A%2F%2Fs3-us-west-2.amazonaws.com%2Fsecure.notion-static.com%2F67cbd52c-7392-4162-a464-0a41f63cb18d%2FUntitled.png)
 
 You can sign in with a Google account.
 

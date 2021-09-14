@@ -1,6 +1,3 @@
-bookdown::bs4_book:
-  theme:
-    primary: "#637238"
 bookdown::gitbook:
   includes:
     in_header: header.html

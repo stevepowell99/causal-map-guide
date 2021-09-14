@@ -1,4 +1,4 @@
-# Spotlight: Cases, variables and percentages in causal mapping?
+# 🧠 Spotlight: Cases, variables and percentages in causal mapping?
 
 In causal mapping we tend to in most cases steer away from any kind of "75% said ..." statements. It isn't just that we don't tend to use representative samples. 
 

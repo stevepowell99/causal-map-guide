@@ -1,4 +1,4 @@
-# Spotlight: Context in causal mapping: how to code it
+# 🧠 Spotlight: Context in causal mapping: how to code it
 
 In this section, we’ll look at “Context” as it appears to us at Bath SDR and at Causal Map when we do actual (qualitative) causal mapping: taking causal claims which real-life stakeholders actually make and trying to encode them in as systematic a way as possible. We believe that doing qualitative causal mapping is a really good testbed for theoretical ideas in evaluation and social science: do they fit with what people actually say?
 

@@ -36,23 +36,18 @@ knitr::knit_hooks$set(engine = function(before, options) {
 
 ![img](_assets/simplify.png)
 
-If you want to find out more about causal mapping and/or the [Causal Map app](https://causalmap.app), this Guide is for you.
+This Guide is for you if:
 
-The Guide is ideal for people who have already completed the [QuIP](https://bathsdr.org/about-the-quip/) Lead Evaluator training and would like some more background to coding. It is also useful if you are not using QuIP or have never heard of it.
+- you want to find out more about causal mapping as an approach (look for this symbol 🧠)
+- you want to find out more about the [Causal Map app](https://causalmap.app/) (look for this symbol 💻)
+- you are on, or have completed, the [QuIP](https://bathsdr.org/about-the-quip/) Lead Evaluator training
+
+------
 
 ::: {.focus}
-💻: This symbol marks sections in this Guide which are specifically about the Causal Map app. The rest of the Guide is about causal mapping in general. The sections about using the app stand alone and can be skipped.
+
+This Guide accompanies Causal Map 2, the new version of Causal Map, and is valid from September 2021. 
+
+The [old version of this Guide](http://guide2.causalmap.app.s3-website.eu-west-2.amazonaws.com/) covers the old version of Causal Map (the one hosted at go.causalmap.app). 
+
 :::
-
-This Guide accompanies the new version of Causal Map and is valid from September 2021. 
-
-The [old version of this Guide](http://guide2.causalmap.app.s3-website.eu-west-2.amazonaws.com/) covers the old version of Causal Map which is hosted at go.causalmap.app. 
-
-This Guide is in three parts:
-
-1)  Basic causal mapping.
-
-2)  Advanced causal mapping.
-
-3)  Spotlight featured articles, Showcase presentations of uses of causal mapping, and FAQs and troubleshooting.
-

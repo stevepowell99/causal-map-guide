@@ -2,18 +2,19 @@
 
 ## The left-hand side
 
-### **Getting data into the app**
+### Getting data into the app
 
 - Upload a map in the form of an Excel file (.xls or .xlsx).
 - in the file chooser, select any files to which you have access, which include an anonymised dataset from a [QuIP](http://bathsdr.org/) study
 - follow a direct link sent to you by someone else to view a file with pre-defined filters applied and which you can then explore for yourself.
 - view maps created in the legacy version of [Causal Map](http://causalmap.app/).
 
-### **Commands and buttons**
+
+### Commands and buttons to apply filters to your map
 
 The left-hand side of the app really only contains the text in the Advanced Editor (which you can view if you want, but close the window if it scares you).
 
-![img](_assets/https%3A%2F%2Fs3-us-west-2.amazonaws.com%2Fsecure.notion-static.com%2F0abfe47a-79ec-4ba4-ba5a-037adbb742a7%2FUntitled.png)
+![image-20210914103354673](_assets/image-20210914103354673.png)
 
 The text window uses a simple syntax for filtering and manipulating the maps and tables.
 
@@ -21,25 +22,39 @@ Nearly all the other buttons on the left-hand side are just ways to manipulate t
 
 The way these buttons work is still evolving, we are open to your suggestions!
 
-If the text in the text window already uses a specific command, the corresponding button in the left gets a thin dotted red border to remind you.
+### Do some coding (view one statement) or do some analysis (view many statements)?
 
-See also the [geek-level instructions](https://www.notion.so/Typing-filters-in-the-Advanced-Editor-54b4b98d4ce647e68eea1b03b0796a2b).
+![](_assets/00600-tour0.png)
+
+These buttons add the correct filters to either view just one statement or many statements. 
+
+When you are coding, you will want to view just one statement, and when you want to explore and analyse the entire causal map or sections of it, you will want to view many statements. 
+
+(Even when you are viewing one statement, it is still possible to apply filters for example if the map associated with this one statement is quite large.)
 
 ### Top row
 
 Most people like to hide these filters when they are coding, so they hide the filters using the toggle.
 
-Shortcut buttons. Quick ways to add filters without going through a dialog panel.
+![image-20210914103505559](_assets/image-20210914103505559.png)
 
-![img](_assets/https%3A%2F%2Fs3-us-west-2.amazonaws.com%2Fsecure.notion-static.com%2Facbfd9f1-4370-41da-902d-de0080588681%2FUntitled.png)
+But for analysing your map, you will want to open the filters panel.
 
-#### The filter buttons
+#### Shortcut buttons
 
-are in three sections: analysis, conditional formats and simple formats. See the section on [filters](https://www.notion.so/All-the-filters-f0df745a7448496583f6e3361d67b828).
+These buttons offer quick ways to add filters without going through a dialog panel.
 
-## **The right hand side**
+### The filter buttons
+
+are in three sections: analysis, conditional formats and simple formats. See the section on [filters](xx).
+
+## The right hand side
+
+![image-20210914103654314](_assets/image-20210914103654314.png)
+
+
 
 - Interactive: An interactive version of the map in which the elements can be moved around and also the upstream and downstream factors are highlighted when the user mouses over them.
 - Print: A print-quality version of the map with advanced layout.
 - Factor editor: this is the same as the old Multi-edit Panel
-- Tables showing lists of factors, links and various metrics and which can be filtered and reorganised in marvellous ways.
+- Then come several tables showing lists of factors, links and various metrics and which can be filtered and reorganised in marvellous ways.

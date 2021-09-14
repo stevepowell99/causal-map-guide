@@ -1,4 +1,4 @@
-# (PART) Outline of Causal Mapping {-}
+# (PART) Causal Mapping: introduct {-}
 
 # Causal Mapping - Definitions and Glossary{#glossary}
 
@@ -82,3 +82,11 @@ Financial support ➜ Able to go to school
 
 
 This first part of the Guide covers all the basic ideas of causal mapping. The second part covers some additional ideas, which correspond to the features enabled for those with "Extra" subscriptions to the Causal Map app.
+
+Bundle:
+
+Any links between any pair of factors can be called the original links; these links can be bundled so they visually look like one. The "simple bundle" is just all of the links bundled into one bundle, but you can also create more than one bundle if you e.g. bundle by source_id. Once you bundle the links, you can point to the bundle and say, look, a bundle. But if someone calls it a link that is ok too, providing we are clear that this link aka bundle may contain several original links.
+
+File: "File" specifically for what we used to call "projects" within the app.
+
+Hybrid format: Where some rows are statements and some are metadata

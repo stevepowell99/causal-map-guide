@@ -1,4 +1,4 @@
-# Analysis: comparing maps between particular groups{#comparing}
+# 🧠 Analysis: comparing maps between particular groups{#comparing}
 
 ## Filtering by respondent group
 
@@ -13,8 +13,6 @@ It is easy to filter a causal map by this additional data. This idea goes back a
 There may still be a bewildering hairball of links. We can apply techniques like [hierarchical coding](https://causalmapdocumentation.blot.im/simplifying-causal-maps-with-hierarchical-coding) to “zoom out” of the map, or simply show only the most frequent factors. This map shows the top five factors for women: 
 
  ![Causal Map](_assets/women.png)
-
- 
 
 And this map shows only the top five factors for men (there were far fewer men in this project). 
 
@@ -32,7 +30,6 @@ These are important problems:
 
 One solution is to display only features which are distinctive for each group. This means the map for this group, which usually includes all links coded for statements from that group, now excludes any of those links if the factor at each end of the link is not **distinctive** for that group. The factor “increased income” is **distinctive** for men if it is mentioned significantly more often by men than by women taking into account the baseline, i.e. the total number of times men mentioned any factor at all. (For example, maybe there are more men than women, or they talk more, or both.) 
 
- 
 
 A slightly more technical discussion, which can be skipped:
 
@@ -43,9 +40,6 @@ A slightly more technical discussion, which can be skipped:
 
 *Given a filtered set of statements, do the usual calculation to get what links would have been shown in the normal view, i.e. which links are coded in the current statements, i.e. create the variable shown vs not-shown for each link. Group all the links into co-terminal bundles (with the same from and to factor). Create the table which has IDs of bundles in the rows and two columns, the number of shown links and the number of not-shown links within each bundle. Run a chi squared test on this table and mark a bundle as "distinctive" if the standardised residual for the "shown" cell is greater than a given cut-off value.*
 
-
-
-
 This idea takes a bit of getting used to. A distinctive map for a group filters out all links between pairs of factors which are both not distinctive for that group. That is the same thing as saying that it shows all the factors which are distinctive for that group, plus factors which are linked to those factors. 
 
 Why don’t we just stop there, and simply display only the factors which are distinctive for a group? Why do we add factors which they are linked to, even if not distinctive? The trouble is that there might be a factor which was very distinctive for the group, but was not linked to any other factors which were distinctive, and would therefore disappear from the map (or we would have to display it floating on its own, which is not appropriate for a map of causal *connections*). In practice this step does not make much difference, and it is usually acceptable to think of a distinctive map as simply a map consisting of factors which are distinctive for that group. 
@@ -53,9 +47,6 @@ Why don’t we just stop there, and simply display only the factors which are di
 It is also possible, especially with smaller maps, that there are no links which are distinctive for a particular additional data field like gender. This suggests that there are no very interesting differences between the groups. It is also possible that there is a distinctive map for one group, e.g. women but not for men, or vice versa.
 
  
-
-
-
 To continue the example, we can follow the algorithm and produce the distinctive maps for men and women. These maps even without any further filtering are interesting and readable in their own right, but as there are around 40 factors in each map, here we show the maps filtered further for only the most frequent factors. 
 
 Distinctive map for women, showing the top seven factors.  
@@ -78,13 +69,4 @@ To repeat, the “distinctive map” for a group is *not* a good summary of ever
 
 When [filtering statements](#filtering-the-map-by-statement-source-question) it is easy, for example, to show the causal map just for specific **groups**, e.g. the female respondents, for which the additional data field “gender” is equal to “female”: you can cycle through the values using the arrow buttons, and you can flip through the statements for each group using the “previous” and “next” buttons in the statement pager. 
 
-We use exactly the same interface to display distinctive maps too. Once a group is selected in the statement filter, use the slider to show the map **distinctive for that group**.
-
-You can use it to answer questions like: what are the main big stories which the women told us which the men didn't? (Or vice versa.) 
-
-For example, if you filter as usual to show the claims made by women, and then move the slider towards the right, the map starts to get simpler, showing only claims made frequently by women and infrequently by men. The further you slide, the more extreme this filter becomes. 
-
-All the other filters and tools work as usual on maps filtered in this way, e.g. you can search within the distinctive map for women for statements containing a particular word, or you can show only the most frequent factors or links.
-
-The Tables tab now also displays findings based on filters, asking ‘Do the respondents, sections, etc which contributed to the map as currently filtered differ from those which did not contribute?’
 

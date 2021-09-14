@@ -1,4 +1,4 @@
-# Coding opposites
+# 🧠 Coding opposites
 
 In the first part of this Guide we have dealt only with undifferentiated links which simply say "C causally influences/influenced E" or more precisely "Source S claims/believes that C causally influences/influenced E". We call this "barebones style" causal mapping. There is nothing more to this kind of causal map than links between factors. No other features are used. 
 

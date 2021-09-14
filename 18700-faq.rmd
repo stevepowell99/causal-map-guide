@@ -1,0 +1,129 @@
+# 💻 FAQs: Causal Map questions and troubleshooting{.hi}
+
+## Frequently asked questions
+
+### When I highlight a single word or very short phrase, why is the same word highlighted but in a different part of the statement?
+
+If you highlight a very short piece of text which happens to appear (exactly the same) more than once in the statement, it is always the **first** occurrence of this piece of text which is actually highlighted. 
+
+
+### Security at Causal Map
+
+Please see our T&Cs at https://causalmap.app/terms-and-conditions-for-the-causal-map-app/
+
+### I've signed up but haven't recieved a confirmation code?
+
+Firstly, the best thing to do is double check you have entered your email correctly - if your email is correct, then try sending the code again. Make sure to also check your junk/spam email folder. If none of these things work email us at hello@causalmap.
+
+
+## QuIP questions
+
+### How do I prepare my data from a QuIP project for import into Causal Map?
+
+There isn't an official QUIP way but uploading/importing data into Causal Map should be pretty simple. 
+
+It does depend on how you actually collect your data, for example from word files or ODK or similar. 
+
+There are basically two approaches but other variants are possible too.
+
+#### Separate tables
+
+The first table is uploaded/imported to the app as the main statements table and the other two tables can easily be added after that. 
+
+##### Table 1: statements
+
+In the first approach you simply enter the text of each statement in a single column of a spreadsheet file with the heading "text". One row per statement. statement is usually round about a paragraph but it could be as short as a sentence or several paragraphs if that's convenient. then you'd usually have two more columns one for respondent ID and one for question ID. That means for each statement you know the respondent and the question.  
+
+
+##### Table 2: respondents
+
+Then you usually have a second table giving more details of each respondent, for example gender.
+
+
+##### Table 3: questions
+
+This third table give you more details about each question, for example question text. 
+
+
+#### One big table
+
+The second approach is to combine all of this information into a single table, which you just upload as the main statements table and that's it. In this approach any additional columns like gender or question text have to be added to the main table so they are quite repetitive. So if respondents 1 2 and 3 are all female and they have 20 statements each then you will see the word female 60 times in a column called "gender". 
+
+## Downloads
+
+Example files, which can be used as templates, can be found and downloaded [here](https://drive.google.com/drive/folders/1wvifDQ0BXmAjSudTRUv9i_4JURpphD4v)
+
+
+
+### Can I create more than one link at a time?
+
+Yes. You can create multiple links at a time just by putting more than one factor in either or both boxes.
+
+
+### How do I link two existing chains?
+
+To link a chain a --> b --> c to a chain d --> e, highlight the part of the statement which provides the evidence and then code a link from c to d using the dropdowns as usual. 
+
+
+
+## Setting Up
+
+- How do I import my old maps into Causal Map 2?
+
+- I made changes to file access with the Files panel, but they aren't working
+
+  Refresh the browser.
+
+
+
+## Coding
+
+- When I highlight a single word or very short phrase, why is the same word highlighted but in a different part of the statement?
+
+  If you highlight a very short piece of text which happens to appear (exactly the same) more than once in the statement, it is always the **first** occurrence of this piece of text which is actually highlighted.
+
+- Can I add a statement after I have uploaded my data?
+
+  Yes, just press the blue '+' button in the 'Code & View' tab, then press the orange pencil button to type or paste your statement. Your new statement will be added at the end, as your last statement in your data. However, you’ll have to manually update the additional data for this table. So as a second step, go to the 'Upload & Fix' tab, scroll down to the new statement at the bottom of the table on the right hand side, and you’ll see that your additional data fields are missing for this row - so you’ll have to copy and paste these details as appropriate, for example by copying an appropriate row from elsewhere in the table.
+
+- Can I edit more than one link at a time?
+
+  No, currently you can only edit one link at a time.
+
+- Can I add a statement after I have uploaded my data?
+
+  Yes, simply add multiple factors in the factor label boxes.
+
+- Can I autofill influence factor label if its the same as the last consequence factor?
+
+  Yes, that is called chaining links! You can chain links by clicking the chain icon, after you have saved your previous link. If you would like more guidance check out this video [LINK].
+
+- Are there any shortcuts I should know about?
+
+  There are plenty of shortcuts in Causal Map, to learn the basics watch this video [LINK]. Know the basics already? Then check out this more extensive video [LINK]
+
+  ## Known Bugs
+
+- When I switch between files, I can’t highlight text inside statements in order to code them
+
+  Sorry, yes we’re working on it. For now, you’ll have to refresh your browser and load up the project again.
+
+- When I hover over a link the quotes panel does not appear.
+
+  Hover over a new link and then go back to the link with the quote you want to view. You might need to do this as the quotes panel will only reappear once it has been closed and you can do this by hovering over a new link.
+
+- The edit panel is not opening when I click on the link I want to edit.
+
+  If the panel won’t open, try clicking on the map background or on a different link and then click on the one you wanted to edit. You might need to do this because the edit panel only opens up again, after it has been closed.
+
+- When I want to visit the app again after a while, I go to the tab with go.causalmap.app and refresh it, but I just get a box which tells me to refresh again.
+
+  Yes, we know, it is really annoying. Our authentication provider is very picky. You can usually fix this by hitting Refresh a few times, if not please just close the tab and open a new one, and visit go.causalmap.app from there.
+
+- When I highlight text which overlaps with a previously highlighted section no new highlight appears.
+
+  Unfortunately there is no easy fix for this bug but it is just cosmetic. You can check you have highlighted the right section by checking the text box below the factor label boxes contains the text you want to highlight. Once you have saved the link the highlight will appear on the statement.
+
+- If a respondent makes the same causal claim twice, should I code it twice?  
+
+  If they are just repeating the same point, don't bother. But if they are bringing different evidence for the same link, code it twice.

@@ -1,5 +1,7 @@
 # (PART) The new Causal Map platform {-}
 
+# Welcome to Causal Map 2!
+
 **Read this especially if you have been using the legacy version of Causal Map (CM1) at go.causalmap.app**
 
 We will continue to maintain the legacy version until all users have happily transitioned to the new platform, [Causal Map 2](https://causalmap.shinyapps.io/CausalMap2/) (CM2).
@@ -8,9 +10,7 @@ You may also have been using the Causal Map **Viewer** at (https://causalmap.shi
 
 All your files (and other files you had access to) from CM1 are accessible from within CM2. You will find them in the file chooser dropdown menu as before, but preceded by `cm1/...`
 
-![image-20210913130309942](_assets/image-20210913130309942.png)
-
-![Untitled](https://s3-us-west-2.amazonaws.com/secure.notion-static.com/a540b735-f967-4957-99e6-e8a43a16e822/Untitled.png)
+![image-20210914103154772](_assets/image-20210914103154772.png)
 
 You can view and analyse these files in CM2 without needing to do anything.
 
@@ -20,8 +20,8 @@ If you are still coding a file in CM1, changes you make will be visible from CM2
 
 If you want, you can save a CM1 file in the new CM2 format so that you can continue to edit it in CM2 (as long as you have *edit* or c*opy*, not just *view*, authorisation to the original file). 
 
-![image-20210913130404994](_assets/image-20210913130404994.png)
+![image-20210914103228048](_assets/image-20210914103228048.png)
 
 This creates a new file which is no longer connected to the original file.
 
-Now take a [quick tour of the app]().https://twitter.com/CausalMap)
+The following sections will take you on a 🗺 quick tour of the app.

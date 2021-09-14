@@ -2,7 +2,7 @@
 bibliography: references.bib
 ---
 
-# Spotlight: Different kinds of question chaining, with QuIP and ParEvo as illustrations
+# 🧠 Spotlight: Different kinds of question chaining, with QuIP and ParEvo as illustrations
 
 We can build a causal map by just asking people, separately or together, for causal statements around a theme.
 

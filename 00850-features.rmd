@@ -34,17 +34,13 @@
 
 - Much easier to import and manage your data
 
-- You can import a standard-format Excel file into cm2, and download it again, and edit it, and upload it again ("round-tripping"). We managed to do this with Becky's Mozambique file. You can also include any 
+- You can import a standard-format Excel file into cm2, and download it again, and edit it, and upload it again ("round-tripping"). You can also include any additional fields aka columns you want and they will be imported and available for searching, conditional formatting etc. 
 
-  additional fields
+- Build a map by importing any combination of tables or just some of them - factors, links, sources, questions & statements, in any order at any time and it should all just work
 
-   aka columns you want and they will be imported and available for searching, conditional formatting etc. I think this is a pretty big deal and should (eventually) mean that people can play around and reimport their own data without having to bother us for help.
+- You can edit the tables directly
 
-  - build a map by importing any combination of tables or just some of them - factors, links, sources, questions & statements, in any order at any time and it should all just work.
-
-- You can edit the tables directly.
-
-- The URL in your browser always points to the map and filters you are using right now, so a) if you refresh your browser or go away for a while, you can always come back to where you left off, and b) you can share or save the link for later.
+/*- The URL in your browser always points to the map and filters you are using right now, so a) if you refresh your browser or go away for a while, you can always come back to where you left off, and b) you can share or save the link for later*/
 
 - A Google Chat room for support
 

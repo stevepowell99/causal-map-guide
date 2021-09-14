@@ -1,0 +1,7 @@
+# Using the Factor Editor and Advanced Editor - keyboard shortcuts
+
+For more information about working with the Ace editor, visit [https://ace.c9.io/#nav=about](https://ace.c9.io/#nav=about).
+
+Ace provides the following keyboard shortcuts to streamline the coding process.
+
+Thanks to [Trivantis](https://www.trivantis.com/help/Lectora_Online/4.8/en/HelpHTMLs/Content/16.html) for the list.
