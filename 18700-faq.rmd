@@ -2,9 +2,10 @@
 
 ## Frequently asked questions
 
-### When I highlight a single word or very short phrase, why is the same word highlighted but in a different part of the statement?
-
+<details><summary>When I highlight a single word or very short phrase, why is the same word highlighted but in a different part of the statement?</summary>
 If you highlight a very short piece of text which happens to appear (exactly the same) more than once in the statement, it is always the **first** occurrence of this piece of text which is actually highlighted. 
+</details>
+
 
 
 ### Security at Causal Map

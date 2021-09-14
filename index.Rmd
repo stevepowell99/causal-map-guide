@@ -3,38 +3,17 @@ title: "Guide to Causal Mapping"
 author: "Steve Powell & Causal Map Ltd"
 date: "`r Sys.Date()`"
 site: bookdown::bookdown_site
-output: bookdown::gitbook
+output: bookdown::bs4_book
 documentclass: book
-bibliography: [packages.bib,zotero.bib]
-biblio-style: apalike
+url: https://causalmap.app
+cover-image: "_assets/image-20210520221329966.png"
 link-citations: true
 description: "Guide to Causal Mapping"
 ---
 
-```{r setup,echo=F}
-# markroot <- "c:/Users/steve/Dropbox/Apps/Blot/Causal Map documentation"
-# markroot <- "c:/Users/steve/Dropbox/Projects/textApp/app/assets/"
-markroot <- "c:/Users/steve/Dropbox/Projects/textApp/app/git_assets"
-
-show_mark <- function(fil) htmltools::tags$div(htmltools::tags$p("From the inline help",class="show_mark_p"),shiny::includeMarkdown(file.path(markroot,fil)),class="show_mark")
-def_list = list()
-thm_list = list()
-knitr::knit_hooks$set(engine = function(before, options) {
-    if ( before ) {
-        if ( options$engine == "theorem" ) {
-            thm_list[[options$label]] <<- options$name
-        } else if ( options$engine == "definition" ) {
-            def_list[[options$label]] <<- options$name
-        }
-    }
-    NULL
-}) 
-
-```
-
 # Overview
 
-![img](_assets/simplify.png)
+![img](_assets/simplify.png){width=770px}
 
 This Guide is for you if:
 

@@ -102,9 +102,6 @@ Not all causal information is always retained: Infrequent factors which are eith
 
 # 💻 Simplifying (zooming out, and filtering out less frequent links and factors) in the app
 
-```{r,echo=F}
-show_mark("Interface/show-zoom-combo.md")
-```
 
 **Why would I use this filter?**
 An unfiltered causal map can be quite overwhelming to begin with as it is presenting all the causal links which have been coded, so this filter can be a good place to start. By filtering out links/factors which have only been mentioned once or twice, the map becomes more manageable, easier to make sense of, and displays only the most frequent stories of change/causal pathways. 

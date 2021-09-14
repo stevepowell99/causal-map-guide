@@ -1,4 +1,4 @@
-# 🧠 Spotlight: Time in causal mapping. How to code it
+# 🧠 Spotlight: Coding time in causal mapping
 
  
 

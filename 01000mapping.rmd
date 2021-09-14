@@ -1,4 +1,4 @@
-# (PART) Causal Mapping: introduct {-}
+# (PART) Intro to Causal Mapping{-}
 
 # Causal Mapping - Definitions and Glossary{#glossary}
 

@@ -1,3 +1,7 @@
+bookdown::bs4_book:
+  theme:
+    primary: "#6dc4c8"
+  number_sections: no
 bookdown::gitbook:
   includes:
     in_header: header.html

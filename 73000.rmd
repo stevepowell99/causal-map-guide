@@ -2,17 +2,20 @@
 
 Causal Map is powered by our free / opensource R package [CausalMapFunctions](https://stevepowell99.github.io/CausalMapFunctions/), where you can also find out about the commands to use in this Viewer.
 
-# A set of functions for manipulating and simplifying causal maps.
+## A set of functions for manipulating and simplifying causal maps.
 
 Load example data:
 
-`devtools::install_github("stevepowell99/CausalMapFunctions")
+````
+devtools::install_github("stevepowell99/CausalMapFunctions")
 library(CausalMapFunctions)
-cashTransferMap`
-
+cashTransferMap
+````
 Visualise it:
 
-`cashTransferMap %>% make_vn`
+````
+cashTransferMap %>% make_vn
+````
 
 These functions are used in the [Causal Map Viewer](https://causalmap.shinyapps.io/CausalMapViewer/) and are similar to those used in the [Causal Map app](http://causalmap.app/). In our roadmap, these functions will eventually replace their counterparts in the Causal Map app.
 
