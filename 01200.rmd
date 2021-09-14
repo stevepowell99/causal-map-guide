@@ -2,19 +2,10 @@
 bibliography: references.bib
 ---
 
-# Causal mapping {#mapping}
+# Causal mapping for evaluators{#mapping}
 
 > Causal mapping: a way to understand how people think; and perhaps to understand how the world works
 
-## Summary
-
-Causal maps are used by a wide range of research and practitioner teams around the world in a variety of disciplines, from management science to ecology and programme evaluation, who employ a number of methods to construct and interpret them. While one group of such methods is actually called "causal mapping", there are many similar methods which go by a wide variety of names. The aim of this section is to point out the similarities and highlight some of the differences, in the hope that bringing these various approaches into one big tent could increase mutual learning.
-
-This definition *could* cover diagrams representing causal connections between variables which are measured in a strictly quantitative way and would therefore also include a wide variety of important approaches from Structural Equation Models (Bollen & Long, 1993) to the modern and general approaches to causation in statistics centred around Directed Acyclic Graphs (DAGs) and the work of Judea Pearl [@pearl2018]. However the phrase "causal mapping" is usually reserved for qualitative or merely semi-quantitative approaches and we will follow that restriction here, while noting that many ideas from these quantitative approaches have implications for their qualitative cousins (Powell, 2018).
-
-This definition is still very wide, covering as it does applications as diverse as "Theories of Change" in programme evaluation and management, and systems modelling in ecology (Moon et al., 2019). The phrase "causal mapping" goes back at least to [@axelrod2015]), based in turn on Kelly's personal construct theory [@kellyPersonalConstructTheory1955]. The idea of wanting to understand the behaviour of actors in terms of internal 'maps' of the word which they carry around with them goes back further, to Kurt Lewin (Lewin, 1982) and the field theorists. Causal mapping in this sense, used widely in project management and political science, is loosely based on "concept mapping" and "cognitive mapping", and sometimes the three terms are used interchangeably, though the latter two are usually understood to be broader, including maps in which the links between factors are not necessarily causal and are therefore not causal maps.
-
-Literature on the theory and practice of causal mapping includes a few canonical works like Axelrod [@axelrod2015]. Already by 1990 Anne Huff had edited a book presenting some of the wide variety of concept mapping approaches in use in the U.S. at the time (Huff, 1990), including causal maps and argument maps. However, literature on causal mapping tends to be dispersed between disciplines, such that causal mapping is "invented" once again in one discipline or another every few years.
 
 ## Causal mapping for evaluators
 

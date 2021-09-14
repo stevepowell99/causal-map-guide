@@ -16,3 +16,12 @@ So, you’ve taken a look at the **[features of the app](https://causalmap.app/t
   - only have a relatively small map which you can manage with traditional tools for drawing network diagrams (e.g. PowerPoint, [kumu.io](http://kumu.io) etc.)
   - need to analyse quantitative data and/or need to do precise mathematical modelling, e.g. of future states of a system under certain conditions
   - would like to sketch out a plan (e.g. Theory of Change or similar) without much reference to the different sources underpinning each link
+
+## Prerequisites for using the app
+
+The app is tested on Chrome and Firefox on Mac and Windows, and Safari on Mac, and the new Edge on Windows, and it should work fine on Chrome, Chromium and Firefox on Linux. 
+
+You need a screen with a large resolution, preferably HD or better. It won’t work well on tablet or phone. You will probably want to zoom out to about 90% (in Chrome, press Ctrl – once or twice) to make sure everything fits on the screen. You may also like to view the app "full screen" – how to do this depends on your browser and operating system; on Chrome on Windows, press F11.
+
+As Causal Map is a web application, you will also need a reasonably reliable internet connection. 
+

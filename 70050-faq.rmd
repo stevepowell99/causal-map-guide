@@ -8,13 +8,13 @@ If you highlight a very short piece of text which happens to appear (exactly the
 
 
 
-### Security at Causal Map
-
+<details><summary>Is there a security audit for Causal Map?</summary>
 Please see our T&Cs at https://causalmap.app/terms-and-conditions-for-the-causal-map-app/
+</details>
 
-### I've signed up but haven't recieved a confirmation code?
-
+<details><summary>I've signed up but haven't recieved a confirmation code?</summary>
 Firstly, the best thing to do is double check you have entered your email correctly - if your email is correct, then try sending the code again. Make sure to also check your junk/spam email folder. If none of these things work email us at hello@causalmap.
+</details>
 
 
 ## QuIP questions

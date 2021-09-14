@@ -1,4 +1,4 @@
-# Interactive view and print view
+# Analysing maps: Overview
 
 Various kinds of software are available to simplify the task of viewing and filtering a causal map, especially for larger maps. For example, [gephi.org](http://gephi.org) is a good choice for very rapidly manipulating even very large maps - much larger than Causal Map can handle.
 
@@ -6,16 +6,6 @@ A causal map can be filtered to show only some parts of it. Some submaps are wel
 
 An related approach is to specify one set of Source factors and another set of Target factors and to display only the links along paths which lead from a Source factor to a Target factor. This is called an “etiograph” in a seminal organisational analysis of Utrecht Jazz Orchestra (Bougon, Weick, & Binkhorst, 1977).
 
-## 💻 Viewing the interactive map
 
 
 
-This map has many features. You can:
-
-- Drag the factors around
-- Copy a map as an image by right-clicking on it.
-- Save a PNG image by pressing the button at bottom right.
-- Hover over factors to highlight the connected links and factors.
-- Hover over factors to display basic information about them and delete them from the entire map.
-- Hover over links to see the associated quote and other information.
-- Click on links to edit or delete them them.

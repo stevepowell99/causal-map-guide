@@ -28,6 +28,10 @@ C60 M0 Y53 K0
 R0 G255 B175
 #00ffaf
 */
+
+.header-section-number{
+  display:none;
+}
 p.caption {
   color: #bbb;
   margin-top: 10px;

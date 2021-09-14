@@ -5,6 +5,7 @@ date: "`r Sys.Date()`"
 site: bookdown::bookdown_site
 output: bookdown::bs4_book
 documentclass: book
+bibliography: [zotero.bib]
 url: https://causalmap.app
 cover-image: "_assets/image-20210520221329966.png"
 link-citations: true
@@ -23,7 +24,7 @@ This Guide is for you if:
 
 ------
 
-::: {.focus}
+::: {.rmdnote}
 
 This Guide accompanies Causal Map 2, the new version of Causal Map, and is valid from September 2021. 
 

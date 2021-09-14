@@ -1,18 +1,4 @@
-# (PART) Intro to Causal Mapping{-}
-
-# Causal Mapping - Definitions and Glossary{#glossary}
-
-
-## What is a causal map? What is causal mapping?
-
-A **causal map** is a diagram, a graphical structure, in which nodes (which we call "factors") are joined by directed edges or arrows (which we call "links"), so that a link from factor C to factor E means that, in some sense, C causally influences E. Causal maps are used by many research and practitioner teams around the world in a range of disciplines, who employ a variety of methods to construct and interpret them. While one group of such methods is actually called “causal mapping”, there are many similar methods which go by a wide variety of names. 
-
-At the same time, the term "**causal mapping**" is often used as a name for a specific kind of *data collection* method, along with suggestions for analysis. (However, it is possible to have a causal *map* without anyone having intentionally done any causal *mapping*, using information gathered for other purposes.) There are a vast variety of possibilities, with seemingly every author having their own suggestions, from individual interview (Ackermann & Eden, 2004) to reusing open-ended questionnaire questions (Jackson & Trochim, 2002). We distinguish two main kinds of causal mapping:
-
-- Individual respondents are deliberately asked for information about causal links, for example via open questions at the end of a questionnaire or via a series of interviews in which people are directly asked questions of the form “what causes what?” or “what contributed to this event?” For example in QuIP, respondents are asked for causes of changes, and then for causes of the causes, etc. We call this **unmerged** causal mapping because the information from different sources is not yet merged into a single map. When analysing the data, we try to read what the different sources tell us, and bit by bit (“inductively”) try to identify the common elements in their narratives, such as “Health” and “Amount of exercise”. Different respondents will, of course, not always use exactly the same phrases and it is a really exciting and creative challenge to create and curate this list of causal factors: a special kind of *causal* qualitative data analysis. This is your job as causal mapping analyst. For example, if Mo says “Feeling good about the future is one thing that increases your wellbeing”, is this element “feeling good about the future” the same as “confidence in the future” which Sara mentioned? Should we encode them both as the same thing, and if so, what shall we call it? Positive view of future? Does that cover both cases? The Causal Map app is designed for this kind of causal mapping.
-
-
-- A group of people are deliberately asked about causal links and this information is merged straight away into an overall picture, as a participatory process with the group (Penn & Barbrook-Johnson, 2019). We call this **merged** causal mapping because information from different sources is already combined into one map. The Causal Map app can be useful here too, but it is not its primary use case. 
+# Glossary{#glossary}
 
 ## Generic terminology for qualitative causal mapping
 

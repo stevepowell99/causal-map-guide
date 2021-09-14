@@ -1,6 +1,4 @@
-# 💻 Uploading and updating data
-
-
+# Core tables in Causal Map
 
 ![image-20210913215748583](_assets/image-20210913215748583.png)
 

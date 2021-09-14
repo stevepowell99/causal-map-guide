@@ -54,7 +54,26 @@ are in three sections: analysis, conditional formats and simple formats. See the
 
 
 
-- Interactive: An interactive version of the map in which the elements can be moved around and also the upstream and downstream factors are highlighted when the user mouses over them.
-- Print: A print-quality version of the map with advanced layout.
-- Factor editor: this is the same as the old Multi-edit Panel
-- Then come several tables showing lists of factors, links and various metrics and which can be filtered and reorganised in marvellous ways.
+### Interactive View
+
+An interactive version of the map in which the elements can be moved around and also the upstream and downstream factors are highlighted when the user mouses over them.
+
+- Drag the factors around
+- Copy a map as an image by right-clicking on it.
+- Save a PNG image by pressing the button at bottom right.
+- Hover over factors to highlight the connected links and factors.
+- Hover over factors to display basic information about them and delete them from the entire map.
+- Hover over links to see the associated quote and other information.
+- Click on links to edit or delete them them.
+
+### Print View
+
+A print-quality version of the map with advanced layout.
+
+### Factor editor
+
+This is the same as the old Multi-edit Panel
+
+### Tables
+
+Several tables showing lists of factors, links and various metrics and which can be filtered and reorganised in marvellous ways.
