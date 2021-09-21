@@ -109,8 +109,7 @@ The buttons in this section apply conditional formats to the map after it has (o
 
 ### **Colours**
 
-- if you specify a fixed colour, everything will be set to that colour.
-- otherwise, if the field is numerical, the values of that field will be assigned to a colour gradient with the given low, medium and high colours. If you specify white or grey as the low point, the mid point will be ignored.
+- if the field is numerical, the values of that field will be assigned to a colour gradient with the given low, medium and high colours. If you specify white or grey as the low point, the mid point will be ignored.
 - otherwise, if the field is not numerical, the values of that field will be assigned random colours up to a maximum of eight.
 
 ## Simple formats

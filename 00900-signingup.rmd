@@ -1,6 +1,6 @@
-# Signing up and signing in at Causal Map
+# ⭐ Signing up and signing in at Causal Map
 
-nStart your journey at https://causalmap.shinyapps.io/CausalMap2/.
+Start your journey at https://causalmap.shinyapps.io/CausalMap2/.
 
 The first time you use the app you will see a screen like this:
 

@@ -2,7 +2,7 @@
 
 From simply creating a table showing the total links to and from each factor to a visual representation of each respondent's response to a closed question. The possibilities are large - and increase with the amount of additional data your project has.
 
-## Features common to all the tables
+## Features common to all the tables{#tables_common}
 
 Numerical tables are presented as *heatmap tables*. The higher the number, the darker the colour of the cell will be.
 
@@ -12,7 +12,7 @@ If you want to keep things simple, try creating a table using one of the quick p
 
 ![image-20210914081424695](_assets/image-20210914081424695.png)
 
-... and the filters relevant to each table are also accessible from within that table:
+... and the presets relevant to each table are also accessible from within that table:
 
 ![image-20210914081506509](_assets/image-20210914081506509.png)
 
@@ -36,13 +36,13 @@ You can also group the rows in the factor tables to show how the data presented 
 
 When you put a field in the `count` box, your table will get an extra final column called `total`:
 
-![image-20210914092140216](_assets/image-20210914092140216.png)
+![image-20210914092140216](_assets/image-20210914092140216.png){width=650px}
 
 ### Search
 
 You can search / filter the whole table using the box at top-right. And you can search  / filter individual columns using the individual boxes.  (These boxes are greyed out if all the values in the field are the same so there is nothing to search.)
 
-![image-20210914101220510](_assets/image-20210914101220510.png)
+![image-20210914101220510](_assets/image-20210914101220510.png){width=650px}
 
 You can search a column of numbers by using the slider, or by typing an equivalent range:
 
@@ -66,19 +66,40 @@ You can sort the whole table by any column by clicking on the appropriate header
 
 ### Factors
 
+What does this table show me?
+
+The factors table presents the factors applied during coding. There are columns for label, factor memo, and columns for any other fields you have provided, maybe "domain" for instance. The app also calculates some additional fields like 
+
+- `betweenness` (how central is the factor in the map?)
+- `in_degree` (how many links come in to this factor?)
+
+Why would I use this table?
+
+This table is an overview which can help us to understand which factors are reported most frequently, and to view and understand metadata like memos. As usual, this table responds to any filters you have applied on the left-hand side and can be additionally sorted and filtered.
+
 ### Mentions
 
 What does this table show me?
 
-The factors table presents the factors applied during coding (and which are relevant for the current filters) and the number of times they were reported as an influence factor and/or a consequence factor.
+This table is more useful than the Factors table for looking at how many times factors have been mentioned in links. In the Factors table, you can display how many links are coming in and out of each factor overall, but you can't for example ask how many different *sources* mentioned it, or in how many different districts.
+
+This table loads by default with a preset; you will nearly always use this table with one of the two preset buttons at the top left. (The underlying data, which you can view if you clear the Group by and Count boxes, is a bit hard to understand, because it contains four rows for each link.)  
+
+The Direction field shows you the number of times each factors was reported as an influence factor and/or a consequence factor.
 
 - From = how many times the factor was applied as an **influence** factor, i.e. leading to another factor.
 - To = how many times the factor was applied as a **consequence** factor, i.e. as a result of another factor.
-- The factors are listed with the most frequent first.
+- Either = how many times the factor was mentioned in **either** direction.
+
+Remember, in each case these counts depend on what you put in the Count box. You can count link_id (which gives us the overall count, the highest number) or statement_id, source_id, district etc (which usually give a lower number). 
+
+The other preset `influence * consequence, source count` displays influence factors in the rows and consequence factors in the columns. As usual you can change what is counted by selecting a different field in the `Count` box.
+
+
 
 Why would I use this table?
 
-This table is merely an overview which can help us to understand which factors are reported most frequently, and whether specific factors were more often cited as an influence or a consequence. To fully understand what the factors mean, they need to be seen in the context of the causal stories they appear in. This table can be useful for initial communication with the commissioner about which factor labels have been created and how often they have been applied, but do exercise caution when presenting this data as it only shows the factor in isolation, whereas QuIP is most interested in the relationships between factors.
+This table is merely an overview which can help us to understand which factors are reported most frequently, and whether specific factors were more often cited as an influence or a consequence. To fully understand what the factors mean, they need to be seen in the context of the causal stories they appear in. This table can be useful for initial communication about which factor labels have been created and how often they have been applied, but do exercise caution when presenting this data as it only shows the factor in isolation, whereas when doing causal mapping we are most interested in the relationships between factors.
 
 ### Links
 

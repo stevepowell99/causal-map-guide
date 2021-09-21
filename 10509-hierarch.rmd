@@ -1,4 +1,4 @@
-# Simplifying causal maps with hierarchical coding{#simplifying}
+# 📚 Simplifying causal maps with hierarchical coding{#simplifying}
 
  
 

@@ -1,4 +1,4 @@
-# 🗺 Quick tour of the app
+# ⭐ Quick tour of the app
 
 ## The left-hand side
 
@@ -7,7 +7,7 @@
 - Upload a map in the form of an Excel file (.xls or .xlsx).
 - in the file chooser, select any files to which you have access, which include an anonymised dataset from a [QuIP](http://bathsdr.org/) study
 - follow a direct link sent to you by someone else to view a file with pre-defined filters applied and which you can then explore for yourself.
-- view maps created in the legacy version of [Causal Map](http://causalmap.app/).
+- view maps created in the [legacy version of Causal Map](http://causalmap.app/).
 
 
 ### Commands and buttons to apply filters to your map
@@ -19,8 +19,6 @@ The left-hand side of the app really only contains the text in the Advanced Edit
 The text window uses a simple syntax for filtering and manipulating the maps and tables.
 
 Nearly all the other buttons on the left-hand side are just ways to manipulate this text. Each line in this window is a filter which manipulates the existing map in some way. The lines in the windows are applied successively to the original map to produce the final map which is then displayed.
-
-The way these buttons work is still evolving, we are open to your suggestions!
 
 ### Do some coding (view one statement) or do some analysis (view many statements)?
 
@@ -46,11 +44,11 @@ These buttons offer quick ways to add filters without going through a dialog pan
 
 ### The filter buttons
 
-are in three sections: analysis, conditional formats and simple formats. See the section on [filters](xx).
+are in three sections: analysis, conditional formats and simple formats. See the section on [filters](https://guide.causalmap.app/all-the-filters.html).
 
 ## The right hand side
 
-![image-20210914103654314](_assets/image-20210914103654314.png)
+![image-20210914103654314](_assets/image-20210914103654314.png){width=650px}
 
 
 
@@ -76,4 +74,4 @@ This is the same as the old Multi-edit Panel
 
 ### Tables
 
-Several tables showing lists of factors, links and various metrics and which can be filtered and reorganised in marvellous ways.
+Several tables showing lists of factors, links and various metrics and which can be filtered and reorganised in marvellous ways. See the section on [tables](https://guide.causalmap.app/all-the-tables.html).

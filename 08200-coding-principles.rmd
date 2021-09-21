@@ -1,81 +1,19 @@
-# Coding: creating factors and links
-
-Qualitative causal mapping involves taking passages of text, e.g. from interviews or documents, and identifying sections which make causal claims. We highlight each of these sections and specify a causal factor at each end of each link (for example Lost job or Went hungry). This means creating a new factor or reusing an existing one. Usually we create these factors inductively as we code, and revise and review and consolidate them as part of the process, as with any other kind of qualitative content analysis. This section is about how to create factors and their labels.
-
-In qualitative causal mapping, the central task is to identify factors and to formulate them in a way which is:
-
-- easy to understand even without a lot of context
-- concise (especially because the labels need to appear in maps)
-- suitable for re-use in other causal links
-- fits the intended interpretation of the causal links.
-
-Formulating factor labels is a special case of formulating tags or categories in ordinary qualitative coding. For example some coding assignments are inductive, in which the aim is to identify factors as they emerge from reading the texts, whereas other tasks may be more or less deductive or confirmatory, in which a more or less fixed codebook is given in advance.
-
-Choosing labels is particularly important when using Causal Map because the labels can do a lot of work for you:
-
-- they can help “flag” the factor to make it easier to find
-- they can help “flag” the factor to put it in a group with other factors
-- they can express how a factor is “nested” within other factors.
-
-In Causal Map, a factor *is* its label. Once you create a label, there is nothing else to add.
-
-## 💻 Create and edit links in the app
-
-Create and edit links
-
-
-To code a causal link, - With your mouse, highlight a piece of text within the statement which makes a causal claim.
-
-- Watch how that passage is copied for you into the “Quote” window below. (Usually you don't need to think about his window: you can edit the text if you really need to but it has to remain an exact quote of one part of the text or you will get a warning.) - Start to type the name of the influence factors at the **start** of the link(s) which you are going to make, in the first drop-down menu.
-
-- If there is an existing factor which matches what you want, you can select select it.
-
-- Otherwise you will create a new factor with the contents of what you have typed; finish what you have typed with a comma or a tab character if you want to continue to select or create another factor.
-
-- If you want to create more than one link, you can select or create additional factors in the same box.
-
-- When you have finished, press Enter.
-
-- Repeat the process in the other box to specify the factors at the **end** of the link (or ends of the links).
-
-- Press the green Save button which is now active.
-
-- The link is created in the Map window, colour-coded with the quote which is now highlighted on the left. If you mouse over the highlighted quote, the link in the map is activated.
-
-- Users with an 'Extra' subscription will see these two boxes: Pressing them adds '~' to the respective factors. This changes the meaning of the factor, for example ~raining is interpreted by the app as 'not raining'. This is allows for the creation of maps with positive (green) and negative (red) links.
-
-
-To edit an existing link, - Click on it in the Interactive Map - Make any adjustments in the left panel, e.g. change the influence factor (in the first box), and/or the consequence factor (in the second box). You can change the quoted text just by re-highlighting the correct passage in the statement panel above in the same way that you made the original highlight.
-
-- Press the green Save button.
-
-**NOTE**: your factor names should not contain semicolons **;**. Semicolons are special, they are used for hierarchical coding.
-
-After beginning to create links between factors, one will notice already-coded factors will appear in the dropdown menus in the to and from factor boxes. For added convenience, the most frequently coded factors will appear at the top of this list.
-
-## Using memos and hashtags
-
-Qualitative coding usually involves making notes and memos, and you can do this in Causal Map too.
-
-Hashtags are available as a special kind of memo when coding a link: you can use them to provide any kind of additional information:
-
-- where a link is only relevant in a particular context
-- where a link is only a hypothesis
-- where a link is only projected for the future
-- to tag links you want to come back and review
-- to add other qualifying information like “source seems unsure.”
-
-As usual in Causal Map, you can apply one or more hashtags, and you can either select existing hashtags or create new ones on the fly.
-
-Later, you can [filter the map](https://guide.causalmap.app/analysis.html#filtering-the-map-by-link-hashtag-memo) to show only links containing specific hashtags (or parts of hashtags), and also for links which do *not* contain specific hashtags or parts of hashtags.
-
-## Formulating labels (semi-quantitative factors)
+# 📚 Creating good factor labels
 
 Remember that in general, factor names are case sensitive. So funding is **not the same as** Funding.
 
 You can use emojis 😍 and other special characters in your factor labels.
 
 Also, semi-colons ‘;’ you can use them if you want, but note that they have a special meaning in the app.
+
+
+## Actor-focused labels
+
+Often you will find that it is easier and clearer if you formulate your labels to highlight who does what. So a formulation like "advocacy on renewables" might be better as "NGOs conduct advocacy campaign on renewables". If you do this, you may even find that you want to break this up into different actors, for example "**NGOs** conduct advocacy campaign on renewables" and "**Politicians** pay more attention to renewables". In particular, avoid using passive formulations like "Advocacy is carried out" or "Awareness is raised".
+
+## Formulating factors as "semi-quantitative"
+
+
 
 ### Relax! Use heterogeneous, “in-vivo” factor labels
 
@@ -153,7 +91,7 @@ We call these non-quantitative factors. We might try to reword them as semi-quan
 
 The diagram below is an acceptable causal map, even though the intervening two variables are an example of more qualitative rather than (semi-)quantitative labels. It tells us that the training did something to the teaching style, which did something relevant to the learning style, which improved student outcomes. We don’t have a theory about the “how” of any of the arrows, and we don’t (necessarily) suggest that teaching style or learning style are things which can be measured on a single scale from e.g. “less” to “more.”
 
-![img](_assets/https%3A%2F%2Fguide.causalmap.app%2F_assets%2Fimage-20210109114219605.png)
+![img]()
 
 ## Using flags in factor labels
 
@@ -161,7 +99,7 @@ Flags are just sequences of characters within a factor label to which you have g
 
 A quote like “family is better off now because of improved food availability”
 
-![https://guide.causalmap.app/_assets/image-20210109114200339.png](_assets/image-20210109114200339-16315605320862.png)
+![](_assets/image-20210109114200339-16315605320862.png)
 
 can be coded as a link from the causal factor:
 
@@ -264,40 +202,3 @@ If you have two factors like this which are very similar but not quite the same,
 
 Engagement with communities/NGOs
 
-### 🖥 How to do this in the app?
-
-### Editing factor labels in the Factor Editor
-
-Click inside the editor and retype the factor labels however you want. You can rewrite entire lines, but you can't delete or add lines.
-
-Then hit Update.
-
-**TIP**: press Ctrl F (Cmd F on Mac) to find or Ctrl H (Cmd alt F on Mac) to replace.
-
-**TIP**: Reformulate factor labels so that some common themes come *first*.
-
-**TIP**: Use flags like “Problem!” or “#innovation”, unique words which are easy to search for, to make it easy to find particular kinds of factor within the editor and elsewhere.
-
-**TIP**: Merge your factors. You have two or more factors which are more or less the same?
-
-- pick the best version, tweak it if necessary, and then copy the whole line
-- go to one of the other versions, and replace the label with the label you copied, taking care not to delete or add lines
-- repeat with any other similar lines, so that all the similar labels are now exactly the same
-- don't forget to press Update!
-- … these factors with the common label will all be combined into one
-
-## Splitting/recoding existing factors: Use the **Split** switch.
-
-
-Usually when you rename your factors, the names change everywhere. If you switch on “Split”, each factor you rename will be split into a new factor (with the new name which is used only for the links in the current view/filter), and the original factor which is unchanged. This is useful for example if you find you have merged some ideas together too quickly into one factor and you want to split it back into two.
-
-Suppose you have coded both “I bought a cow”“ and "I bought a sheep” as *bought livestock* and then you change your mind, you can go back to the statement with “I bought a cow”, and in this tab you switch on “Split” and recode *bought livestock* back to *bought cow*. If you didn't switch on “Split”, the other quote (“I bought a sheep”) would also be recoded as *bought cow*, which isn't what you want.
-
-Bear in mind that if you merge several factors into one, this may mean you get duplicate or triplicate links between the same pairs of factors.
-
-## Advanced editing tips
-
-- Go to the next mention of a selected word/sentence: **Ctrl K,or Cmd G on Mac**. Add SHIFT to these shortcuts to find the *previous* mention.
-- Add next occurrence of selected word/sentence to multi-selection: **Ctrl-Alt-Right,or Cmd-Option-Right on Mac**. Use **Ctrl-Alt-Left / Cmd-Option-Left** to add *previous* occurrence.
-- The app will help you consistently type words you have already used with autocomplete. Or just ignore it if you want.
-- Multicursor: Ctr alt Up/Down: edit multiple lines at once

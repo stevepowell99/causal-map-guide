@@ -25,56 +25,43 @@
 ## Additional new features in Causal Map 2
 
 - Anyone can use it, and it is free for small projects
-
-- Make your findings more visible with conditional formatting
-
-- Bundle links by stakeholder, by district, by question ...
-
-- Really nice infinite versioning, so you can restore any single change you ever made to a file from any timepoint. This isn't just backups, it is every single change.
-
-- Much easier to import and manage your data
-
-- You can import a standard-format Excel file into cm2, and download it again, and edit it, and upload it again ("round-tripping"). You can also include any additional fields aka columns you want and they will be imported and available for searching, conditional formatting etc. 
-
-- Build a map by importing any combination of tables or just some of them - factors, links, sources, questions & statements, in any order at any time and it should all just work
-
-- You can edit the tables directly
-
-/*- The URL in your browser always points to the map and filters you are using right now, so a) if you refresh your browser or go away for a while, you can always come back to where you left off, and b) you can share or save the link for later*/
-
-- A Google Chat room for support
-
-- Bundle factors
-
-- Bundle links by field
+- Conditional formatting makes your findings more visible
+- Bundle factors together to make your map neater and easier to read
+- Bundle links by attributes such as stakeholder, district, question and many more
+- Infinite versioning means you can restore any change made to a file from any timepoint. This isn't just backups, it is every single change
+- It is even easier to import and manage your data
+- You can import a standard-format Excel file into CM2, meaning you can download a file, edit it, and upload it again (this is called "round-tripping"). You can also include any additional fields or columns you want and they will be imported and available for searching, conditional formatting etc
+- Build a map by importing any combination of tables or just some of them - factors, links, sources, questions and statements, in any order, at any time
+- You can edit tables directly
+- If you refresh your browser or go away for a while, you can always come back to exactly where you left off. You can also share or save the link for later. This is because the URL in your browser always points to the map and filters you are using right now
 
 - Clickable legends and ordinary-language explanations of filters
 
 - All outputs recreatable from the filters
 
-- merging maps:
+- Merging maps means you can compare multiple maps:
 
-  - You can use the merge_map filter to temporarily merge other files into the current file if you wish. You can share a link to that merge and revisit it.  Viewing a merge of file A and file B will take longer, so you will probably want to save the merged file as a new file.
-  - The tables (factors, links etc) have a new field called factor_map_id etc, which you can use to visualise the merge e.g. by presenting links in a different colour according to their source.
+  - You can use the merge_map filter to temporarily merge other files into the current file if you wish. You can share a link to that merge and revisit it. Viewing a merge of file A and file B will take longer, so you will probably want to save the merged file as a new file
+  - The tables (factors, links etc) have a new field called factor_map_id etc, which you can use to visualise the merge e.g. by presenting links in a different colour according to their source
 
-- manage all your files at once with a comprehensive file manager from which you can restore, lock, delete, archive and share any file (not just the current file).
+- You can restore, lock, delete, archive and share any of your files
 
-- log in to the same or different maps from the same or different accounts, including from multiple browser tabs.
+- Log in to the same or different maps from the same or different accounts, including from multiple browser tabs
 
-- collaborate on a file in almost real time.
+- Collaborate on a file
 
-- view, filter, sort etc and directly edit all the tables - factors, links, sources, questions & statements - making up a map. These tables provide all the existing tables functionality plus more. So you will be able to do things like, say, find all the links with a certain hashtag and delete them.
+- View, filter, sort and directly edit all the tables - factors, links, sources, questions and statements - making up a map. These tables provide all the existing tables functionality plus more. So you will be able to do things like, say, find all the links with a certain hashtag and delete them
 
-- delete factors and edit and delete links directly from the interactive map
+- Delete factors and edit or delete links directly from the interactive map
 
-- create a new blank file
+- Create a new blank file
 
-- clone an existing file under a new name, containing all the current factors or only including the factors currently visible if you wish.
+- Clone an existing file under a new name, containing all the current factors or only including the factors currently visible
 
-- If border colours are not set, or all the same, borders are superfluous so the border size is set to zero in Print view
+- If border colours are not set, or all the same, borders automatically disappear (set to zero in Print View)
 
-- New colour scales which are colour-blind friendly and make sense when printed on black & white printers
+- New colour scales are colour-blind friendly and make sense when printed in black and white
 
 - Like Print View, if Interactive View is given a very big map with lots of links, it now bundles up the links so that it loads faster (you can still view a random quote from the bundle when you hover over a link)
-- When you edit a link, you are able to replace it with more than one link if you wish, e.g. you can edit a link A→B and replace it with A→B and A→C by typing both B and C in the consequence factor box. Actually, when you edit a link, CM2 loads up the details from the old link into the coding panel, and if you press 💾, the old link will be deleted and the new one added. You can cancel this process, as in cm1
-- Less than, greater than: The find factors, find links, find statements filters allow comparisons like greater than, so it is possible to do things like find statements with id greater than 100.
+- When you edit a link, you are able to replace it with more than one link if you wish, e.g. you can edit a link A→B and replace it with A→B and A→C by typing both B and C in the consequence factor box. Actually, when you edit a link, CM2 loads up the details from the old link into the coding panel, and if you press 💾, the old link will be deleted and the new one added. You can cancel this process, as in CM1
+- You can find greater than or less than a set value using the the find factors, find links, find statements filters, so it is possible to do things like find statements with id greater than 100

@@ -1,4 +1,4 @@
-# 🧠 Quantifying causal evidence
+# 📚 Quantifying causal evidence
 
 ## Summary{.hi} 
 

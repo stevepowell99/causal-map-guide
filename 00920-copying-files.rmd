@@ -1,0 +1,7 @@
+# ⭐ Making your own copy of a file
+
+Copying a file in Causal Map is easily done. Simply load the file you want to copy using the dropdown menu. Then click the 'file' button on the top left of your screen. You will then see the screen shown below with the details of your file.
+
+![image-20210916163253089](C:\Users\hanna\AppData\Roaming\Typora\typora-user-images\image-20210916163253089.png)
+
+Change the name of the file and click the 'copy and save as' button on the top right. This window will then close and you will be able to find the copy of your file in the dropdown list. Remember permissions are copied from file to file, so the same people can view and edit your copied map as the original.

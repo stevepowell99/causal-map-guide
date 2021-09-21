@@ -1,4 +1,4 @@
-# Core tables in Causal Map
+# Core tables in Causal Map{#core-tables}
 
 ![image-20210913215748583](_assets/image-20210913215748583.png)
 

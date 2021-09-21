@@ -2,6 +2,9 @@ bookdown::bs4_book:
   theme:
     primary: "#6dc4c8"
   css: style.css
+  repo:
+    base: https://github.com/stevepowell99/causal-map-guide
+    branch: master
 bookdown::gitbook:
   includes:
     in_header: header.html

@@ -1,4 +1,4 @@
-# The logic of Causal Map
+# The logic of the Causal Map filters
 
 ## Filters
 

@@ -1,5 +1,3 @@
-# (PART) Technical reference {-}
-
 # How Causal Map is hosted 
 
 The **Production version** of CM2 is at [https://causalmap.shinyapps.io/**CausalMap2**/](https://causalmap.shinyapps.io/CausalMap2/)

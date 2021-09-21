@@ -1,4 +1,4 @@
-# 🧠 Strength: Adding additional information like strength of a link in a causal map
+# 📚 Strength: Adding additional information like strength of a link in a causal map
 
 Let's keep it simple. 
 

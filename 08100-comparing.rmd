@@ -1,4 +1,4 @@
-# 🧠 Analysis: comparing maps between particular groups{#comparing}
+# 📚 Analysis: comparing maps between particular groups{#comparing}
 
 ## Filtering by respondent group
 
