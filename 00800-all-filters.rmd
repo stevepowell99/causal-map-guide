@@ -1,6 +1,47 @@
-# All the filters
+# 💻 All the filters{#filters}
 
-## Analysis
+## Intro: Commands and buttons to apply filters to your map
+
+The left-hand side of the app really only contains the text in the Advanced Editor (which you can view if you want, but close the window if it scares you).
+
+![advanced-editor](_assets/image-20210914103354673.png)
+
+The text window uses a simple syntax for filtering and manipulating the maps and tables.
+
+Nearly all the other buttons on the left-hand side are just ways to manipulate this text. Each line in this window is a filter which manipulates the existing map in some way. The lines in the windows are applied successively to the original map to produce the final map which is then displayed.
+
+## Statement Toggle: Do some coding (view one statement) or do some analysis (view many statements)?
+
+![#statement-toggle](_assets/00600-tour0.png)
+
+This pair of buttons add the correct filters to either view just one statement or many statements. 
+
+When you are coding, you will want to view just one statement, and when you want to explore and analyse the entire causal map or sections of it, you will want to view many statements. 
+
+(Even when you are viewing one statement, it is still possible to apply filters for example if the map associated with this one statement is quite large.)
+
+## Toggles to show and hide filters
+
+Most people like to hide these filters when they are coding, so they hide the filters using the toggle.
+
+![image-20210927121323395](_assets/image-20210927121323395.png)
+
+
+
+
+But for analysing your map, you will want to open one or the other.
+
+## Shortcut buttons
+
+![image-20210914103505559](_assets/image-20210914103505559.png)
+
+These buttons offer quick ways to add filters without going through a dialog panel.
+
+## The filter buttons
+
+are in three sections: analysis, conditional formats and simple formats. See the section on [filters](https://guide.causalmap.app/all-the-filters.html).
+
+### Analysis
 
 Top row: Active analysis buttons with explanation. Click to edit, move, delete
 
@@ -8,23 +49,30 @@ Bottom row: All analysis buttons. Click to activate another instance.
 
 These filters apply powerful filters which change the structure of the unfiltered map. Each filter can be applied more than once and they can (to some extent) be moved up and down.
 
-For example suppose you want to show only links from statements in which the word "women" appears. So you apply a `find statements` filter, you click the button in the bottom row. A dialog appears,
+For example suppose you want to show only links from statements in which the word "women" appears in the `text` of the statement. So you apply a `find statements` filter, you click the button with that name. A dialog appears,
 
+![image-20210929183023486](_assets/image-20210929183023486.png)
 
+you click `Apply filter` and a new button with a human-readable explanation appears in the top row in the left-hand panel. The corresponding button below it gets a green tick to show it is in use, but you can click it again to apply another, different statements filter, for example to find links from all statements in which "women" appears and which were mentioned by *men*:
 
-and a new button with a human-readable explanation appears in the top row. The button in the bottom row gets a green tick to show it is in use, but you can click it again to apply another, different statements filter, for example to find links from all statements in which "women" appears and which were mentioned by *men*.
+![image-20210929183317105](_assets/image-20210929183317105.png)
 
-### Find factors
+In this case, you are searching not the `text` of the statement but the `sex` of the source who made this statement.
 
-### Searching and filtering factors
+#### Find factors
 
+#### Searching and filtering factors
 
-Type to select factors which you want to find.
+To find factors which `contain` the word `Cash` in their `label`, click `find factors` and type to select factors which you want to find.
+
+![image-20210929183453016](_assets/image-20210929183453016.png)
 
 - Select one or more pre-existing factors. Press `enter` to accept
-- And/or just type fragments of text which might match several factors; type a comma to complete
+- And/or just type fragments of text like `Cash` which might match several factors; type a tab to complete
 
 The map changes:
+
+![image-20210929184054292](_assets/image-20210929184054292.png)
 
 - All factors matched by the search are, by default, *highlighted*.
 - Only the factors matched by the search and those upstream and downstream (left and right) of them are shown, as many steps as set by the `Upstream steps` and `Downstream steps` sliders.
@@ -33,7 +81,7 @@ Factors are only matched if the search term uses the same case, e.g. “Farming�
 
 For a more visual representation: The following examples demonstrate how applying different upstream and downstream step filters affect the causal pathways presented in the map.
 
-**Searching for factor ‘B’** The default: one step upstream – one step downstream
+**Searching for text ‘Cash’** 
 
 
 
@@ -47,7 +95,7 @@ One step upstream – two steps downstream
 
 **Why would I use this filter?** This analysis function is particularly useful for searching for important factors such as intervention activities or intended programme outcomes. This filter is best applied once you know which factors are of importance or interest.
 
-### Find statements, find links
+#### Find statements, find links
 
 These filters enable you to filter the causal map to factor in additional data or respondent/source characteristics.
 
@@ -57,13 +105,13 @@ Select an additional data field from the dropdown menu Find Statements. The opti
 
 Once you’ve selected your field, then type/select the specific criteria you want to filter by (i.e. individual respondent, age category, male/female) into the Filter by… search box. Use the arrows to the right of the search box to toggle between the different options. You can add more than one value (e.g. several age groups or several respondents).
 
-### Filtering statements
+#### Filtering statements
 
 - The second box is prepopulated with all the values for that field, for example education levels. You can select one or more values (e.g. several age groups or several respondents).
 - **TIP**: As well as selecting pre-existing values for your search, you can also just type fragments of text which might match several values. So for example, if you are searching question numbers, and you have the questions e1, e3 and e5, instead of selecting all of them you can just type “e”: all the values where this text appears are included in the filter. But be careful that this does not match other values which you did not intend.
 - **TIP**: You can use multiple filters all at the same time.
 
-### Remove brackets
+#### Remove brackets
 
 This filter hides any tags or other words written between different kinds of brackets. So instead of this:
 
@@ -75,7 +123,7 @@ you see this:
 
 
 
-### Trace paths / trace robustness
+#### Trace paths / trace robustness
 
 
 
@@ -91,11 +139,11 @@ A path length of 1 will only show the one step in the causal chain from/to your 
 
 
 
-### Bundle factors
+#### Bundle factors
 
 
 
-### Combine opposites
+#### Combine opposites
 
 
 

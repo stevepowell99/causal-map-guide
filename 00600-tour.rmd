@@ -1,6 +1,12 @@
-# ⭐ Quick tour of the app
+# ⚡ 💻 Quick tour of the app{#quick-tour}
 
-## The left-hand side
+The app has two parts, the [left-hand side](#lhs) and the [right-hand side](#rhs).
+
+You can get help at any time by clicking on the little blue info buttons like these:
+
+![image-20210927115203506](_assets/image-20210927115203506.png)
+
+## The left-hand side{#lhs}
 
 ### Getting data into the app
 
@@ -9,12 +15,11 @@
 - follow a direct link sent to you by someone else to view a file with pre-defined filters applied and which you can then explore for yourself.
 - view maps created in the [legacy version of Causal Map](http://causalmap.app/).
 
-
 ### Commands and buttons to apply filters to your map
 
 The left-hand side of the app really only contains the text in the Advanced Editor (which you can view if you want, but close the window if it scares you).
 
-![image-20210914103354673](_assets/image-20210914103354673.png)
+![advanced-editor](_assets/image-20210914103354673.png)
 
 The text window uses a simple syntax for filtering and manipulating the maps and tables.
 
@@ -22,7 +27,7 @@ Nearly all the other buttons on the left-hand side are just ways to manipulate t
 
 ### Do some coding (view one statement) or do some analysis (view many statements)?
 
-![](_assets/00600-tour0.png)
+![#statement-toggle](_assets/00600-tour0.png)
 
 These buttons add the correct filters to either view just one statement or many statements. 
 
@@ -46,7 +51,7 @@ These buttons offer quick ways to add filters without going through a dialog pan
 
 are in three sections: analysis, conditional formats and simple formats. See the section on [filters](https://guide.causalmap.app/all-the-filters.html).
 
-## The right hand side
+## The right hand side{#rhs}
 
 ![image-20210914103654314](_assets/image-20210914103654314.png){width=650px}
 

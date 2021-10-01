@@ -1,37 +1,20 @@
-# The logic of the Causal Map filters
+# What order to apply Causal Map filters?
 
 ## Filters
 
 **It's a really frequent problem that you do either a path tracing or a "find factors containing blah and two steps down etc" and then "select ..." to reduce number of factors or links, and then you get stupid islands of stuff which don't seem to be related.**
 
-But **if we enforce the rule that select filters come earlier**, you never get these islands and the resulting map makes sense as a product of the find or trace filter which you did. 
+If you ensure that your select filters come earlier, you never get these islands and the resulting map makes sense as a product of the find or trace filter which you did. 
 
-So I've enforced that ordering in CM2. Whatever you do, the app rearranges your filters for you.
+This might seem a bit back to front, because in your working steps you usually apply a Find and then try to simplify it. It is also a bit strange in the sense that the numbers on the Select filter aren't as easy to guess. But it works. 
 
-It might seem a bit back to front, because in your working steps you usually apply a Find and then try to simplify it, but I think we can get used to that. It is also a bit strange in the sense that the numbers on the Select filter aren't as easy to guess. But it works. 
+In the same vein, it often makes sense to put any "find links" or "find statements" filters, e.g. looking for a particular village, right at the start. 
 
-In the same vein, it makes sense to put any "find links" or "find statements" filters, e.g. looking for a particular village, right at the start. 
+Causal Map in any case enforces an ordering of the filters:
 
-Seeing as how all the link bundling and other formatting now comes at the end, that means we now have a fairly strict (auto-enforced) ordering:
+1) Analysis filters (each of these can appear more than once)
 
-- find statements
-- find links
-- select
-- all the actual transforms: zoom, combine opposites, bundle factors, trace paths, find factors
-- bundle_links
-- scale, label
-- wrap
-- color
-- set_print
+2) Conditional formatting filters (each of these can only appear once)
 
-I think with this ordering you can still create any map you could create before, so we haven't restricted ourselves. The flexibility within the ordering of the five transforming filters is still essential. But restricting the ordering where possible makes it easier to reconstruct stuff and addresses James' concern that it sometimes seems like magic where we get submaps from. 
+3) Simple filters (each of these can only appear once)
 
-Also, the app now enforces that you can't duplicate any of the following filters (there is never any reason to)
-
-- select
-- bundle_links
-- scale
-- label
-- wrap
-- color
-- set_print

@@ -1,4 +1,4 @@
-# 💻 ⭐ Coding: creating factors and links in the app
+# ⚡ 💻 The Coding Panel: creating factors and links
 
 Qualitative causal mapping involves taking passages of text, e.g. from interviews or documents, and identifying sections which make causal claims. We highlight each of these sections and specify a causal factor at each end of each link (for example Lost job or Went hungry). This means creating a new factor or reusing an existing one. Usually we create these factors inductively as we code, and revise and review and consolidate them as part of the process, as with any other kind of qualitative content analysis. This section is about how to create factors and their labels.
 

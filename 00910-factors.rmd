@@ -1,0 +1,12 @@
+# 💻 The Factors table
+
+What does this table show me?
+
+The factors table presents the factors applied during coding. There are columns for label, factor memo, and columns for any other fields you have provided, maybe "domain" for instance. The app also calculates some additional fields like 
+
+- `betweenness` (how central is the factor in the map?)
+- `in_degree` (how many links come in to this factor?)
+
+Why would I use this table?
+
+This table is an overview which can help us to understand which factors are reported most frequently, and to view and understand metadata like memos. As usual, this table responds to any filters you have applied on the left-hand side and can be additionally sorted and filtered.

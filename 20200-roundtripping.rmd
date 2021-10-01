@@ -1,0 +1,54 @@
+# 💻 Upload and appending data ("roundtripping"): examples{#roundtripping}
+
+Rather than providing a complicated interface for manipulating and adding data, Causal Map lets you upload data from an Excel file, download it again, allowing you to make adjustments or add data and upload again at any time.
+
+## General principles
+
+The 5 main tabs for the basic data are `factors`, `links`, `statements`, `sources`, `questions`.
+
+- the downloaded file has these 5 main tabs (as well as tabs to show all the data for the current view when you downloaded the file including calculated fields.)
+- all 5 standard tables can also have arbitrary additional columns/fields which users can use e.g. to filter, analyse their data.
+
+When re-uploading:
+
+- The app will read any tabs with any of these (lowercase) names: factors, links, statements, sources, questions and will ignore other tabs.
+- If any of these five tabs in your Excel file are *empty*, the app will **delete all the data** in the corresponding tables. 
+- If any of the five tabs are **missing** (you delete them completely) the app will just keep the old data when you upload. 
+- If you want to append data, just download the old file, add the rows you want and upload again.
+
+
+So to add new statements to an existing file where you have perhaps already done some coding: just download the file, add new rows in the statements tab, and upload again. 
+
+Each tab must have a header row with the names of the fields.
+
+Note that when you download a file:
+
+- Factors table: the `factor_id`  field is included. If you delete any of the rows, any links pointing to them will be deleted on upload. If you want to add more factors at the bottom of the table, leave the factor_id field blank for those rows and the app will add them on upload.
+- Links table: the `link_id`  field is not included and is not needed. 
+- Statements table: the `statement_id`  field is not included. Don't delete any of the rows. You can add more statements at the bottom of the table.
+- Sources table: the `source_id`  field is included. You can edit the `source_id`. If you want to add more rows, you must include a `source_id` for each row.
+- Questions table: the `question_id` field is included. You can edit the `question_id`. If you want to add more rows, you must include a `question_id` for each row.
+
+
+Here are some different use cases:
+
+1. Download any current file and do any of the following:
+   1. make any ordinary trivial edits like changing a name, and/or add ordinary columns/fields, upload
+   2. Same, but optionally delete any of the main 5 tabs. The app will use the old, existing data, just the same as if you had left the tabs untouched.
+   3. Add rows. Note this does **not** add linked entries in linked tables.
+   4. Delete rows. Note this does **not** delete linked entries in linked tables (except if you delete factors, any links to/from them will be deleted.)
+2. Upload a file containing only a statements tab, 
+   1. with a column text and optionally source_id, question_id and maybe other fields. Note this does not add the source and question ids to the source and question tables. 
+3. Upload a file containing only a links tab 
+   1. special case: it has just from_label and to_label columns (and no from or to columns but optionally others) and no factors tab 
+   2. usual case: it has a numerical from and to columns  which relate to a factors tab which has a factor_id column and a label column and usually a statement_id column.
+4. Upload just a sources and/or questions tab to add this data to an existing file.
+
+## Preparing and uploading/importing your .xlsx file
+
+Your statements and other data can have non-Latin characters like à, è, ù, б, ж, etc, the app should reproduce these perfectly.
+
+### What if you have merged cells so e.g. source_id spans many rows?
+
+[https://www.extendoffice.com/documents/excel/1139-excel-unmerge-cells-and-fill.html](https://www.extendoffice.com/documents/excel/1139-excel-unmerge-cells-and-fill.html)
+

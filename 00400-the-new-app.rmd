@@ -28,4 +28,5 @@ This creates a new file which is no longer connected to the original file.
 
 You will find that *coding* with the new platform is pretty much the same as coding in the old one.  The Factor Editor aka multi-editor is still there but on the right hand side. But when it comes to *analysis*, the new app can do much more.
 
-The rest of this [Guide](guide.causalmap.app) will take you on a 🗺 quick tour of the app.
+The rest of this [Guide](guide.causalmap.app) will take you on a 🗺 [quick tour](#quick-tour) of the app.
+

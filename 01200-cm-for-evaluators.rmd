@@ -2,7 +2,7 @@
 bibliography: references.bib
 ---
 
-# Causal mapping for evaluators{#mapping}
+# 📚 Causal mapping for evaluators{#mapping}
 
 > Causal mapping: a way to understand how people think; and perhaps to understand how the world works
 

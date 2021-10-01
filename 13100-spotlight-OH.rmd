@@ -1,4 +1,4 @@
-# Spotlight: Causal Mapping and Outcome Harvesting
+# 📚 Spotlight: Causal Mapping and Outcome Harvesting
 
 Causal mapping and Outcome Harvesting can complement each other in a number of ways, combining the particular strengths of OH, such as a clearly documented way to identify and validate specific claims of important changes, with the particular strengths of causal mapping, such as understanding how simple contribution/outcome stories can chain together into a bigger picture.
 

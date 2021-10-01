@@ -1,4 +1,4 @@
-# Typing filters in the Advanced Editor
+# 💻 Using the Advanced Editor to create and edit filters
 
 The commands are applied one by one in sequence, in a pipeline of commands, such that after each command, such as each command starts with the map defined by the previous line and produces a new one.
 

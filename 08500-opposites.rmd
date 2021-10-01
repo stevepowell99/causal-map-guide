@@ -44,6 +44,7 @@ We talk about *opposites* rather than positive/negative or plus/minus because th
 Where there is some kind of valence or sentiment involved, we do suggest using the `~` sign for the negative member of the pair. But it wouldn't make any difference to the app.
 
 So the same map would look like this, using `~` instead of `not`.
+
 ![](_assets/121007.png)
 
 Non-hierarchical coding with opposites is easy:
@@ -61,7 +62,7 @@ When you press "combine opposites",
 
 
 
-the app tries to combine any pairs of factors which are opposites. It looks at all the factors which begin with a ~ and takes off the ~ where there was one. But it only does this if there is in fact such an opposite already coded in the file as currently filtered, otherwise there wouldn't be any point. 
+the app tries to combine any pairs of factors which are opposites. It looks at all the factors which begin with a ~ and takes off the ~ where there was one - a process which we call "flipping" the factor. But it only does this if there is in fact such an opposite already coded in the file as currently filtered, otherwise there wouldn't be any point. 
 
 
 ![](_assets/121008.png)

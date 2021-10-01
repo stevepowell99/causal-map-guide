@@ -1,6 +1,4 @@
-# (PART) Showcase {-}
-
-# 💻 Showcase: how the Causal Map app has been used{#showcase}
+# Showcase: how the Causal Map app has been used{#showcase}
 
 ## Triple-Line
 
@@ -125,7 +123,7 @@ combining information from different reports.
 
 ![ff6196596cc415b9eec16a64ed3d02bb.png](_assets/ff6196596cc415b9eec16a64ed3d02bb.png)
 Generic theory of change 
- 
+
 An initial, generic theory of change used as a starting point for the qualitative analysis.  
 The coding process started out assuming a generic theory of change with the above, 
 generic, form. It gained more specific detail as the analysis proceeded and more specific 
@@ -146,7 +144,7 @@ Rather  than  coding  this  statement:  “Including  CEA  in  the  design  for 
 improved all the WASH outcomes” as a link between two monolithic causal factors, it was 
 coded as a link between two factors which are themselves made up of a number of more 
 generic elements. 
- 
+
 ![b08c8cb0fc79b3ef6dfe65d3e9a2493a.png](_assets/b08c8cb0fc79b3ef6dfe65d3e9a2493a.png)
 A more efficient way to code a quote from one of the main documents as a link between 
 two causal factors, each of which is hierarchically organised.  

@@ -1,0 +1,123 @@
+# 💻 Importing your data: special cases
+
+
+
+## Importing from other software
+
+We are aware of the initiative to make qualitative coding software interoperable, [https://www.qdasoftware.org/products-project-exchange/](https://www.qdasoftware.org/products-project-exchange/). Causal Map has quite a different model and at the moment we don’t provide this, but would do if there is a lot of interest.
+
+You can always export all your data at any time using the buttons in the File tab.
+
+### Exporting for import into kumu.io
+
+tbc
+
+### Exporting for import into NodeXL
+
+tbc
+
+### Importing existing causal coding
+
+You might already have causal information, for example in the form of node and edge lists, which you want to import. This is possible in Causal Map. 
+
+tbc
+
+### QuIP-specific: Importing from a QuIP spreadsheet
+
+This section is specifically about importing from a QuIP-style spreadsheet. This format has many rows, one for each answer, and includes the statements as one kind of answer; you can import statements and additional data from the same fieldwork file. The main differences to a normal import are:
+
+- Rows whose question code does not include a “$” will be imported only as additional data, not as statements.
+- A new question ID will be constructed from the question code together with the question text.
+
+First save the main data sheet as a .csv, then press button X to import it. Here you can upload all your statements at the start of a file.
+
+Your csv file must have just four columns, with column headers in this order:
+
+- `text`, containing the answers
+- `#SourceID`, containing the respondent ID
+- `#QuestionID`, containing the respondent ID,
+- `Question`, containing the question text
+
+(Actually the names of the columns does not matter, only the order.)
+
+Your Question IDs may include the following characters:
+
+A dollar `$` to be treated as a statement
+
+A star `*` to be treated as a closed question.
+
+A hash `#` to be treated as important additional data.
+
+Otherwise your question will be treated as unimportant additional data.
+
+You can mix these, so e.g.
+
+$*# Do you have a house
+
+Will be treated as a statement and as closed question (part of a block) and as important additional data.
+
+## Uploading closed question blocks
+
+If you give the app a single set of closed responses like better, worse then it can make tables like [this]
+
+And in particular it will recode a fixed set of words into + positive, - negative and 0 neutral
+
+this approach only makes sense if you have one larger set of questions with the same set of fixed reply options
+
+You supply this data in the form of user-defined fields in the Sources table, whose names contain a *. 
+
+You could still, if you want, import a whole bunch of different closed questions with different answer categories as custom fields in the Sources table. So just as you can have gender as a field, you could have "answer to closed question about how often do you go hungry (never/sometimes/often)" as a field; the point of that would be so that you can e.g. do analyses like show me only the maps of the women, or the people who often go hungry, or the women who often go hungry. The point of the so-called closed questions feature is just to organise and provide the answers to a whole block of questions together in one place.
+
+#### QuIP recodes for closed questions - live link
+
+Now with Spanish!
+
+[https://www.dropbox.com/s/rn5yl3kmjnkrgmd/quip-recodes.csv?dl=0](https://www.dropbox.com/s/rn5yl3kmjnkrgmd/quip-recodes.csv?dl=0) recodes = the live link
+
+
+Closed question data, common in QuIP studies, are additional data fields which contain closed responses like these:
+
+- better
+- get better
+- improved
+- a bad change
+- worse
+- no change
+- stayed the same
+
+etc.
+
+The current list of recodes is [here](https://www.dropbox.com/s/j8mn0i7w2ahtw56/quip-recodes.csv?dl=0).
+
+This kind of data is automatically recoded into +, - and 0, and displayed in the Tables panel if you select “closed questions.”
+
+
+
+## Uploading data in a hybrid format which includes statements and additional data in the same sheet
+
+Ask us for a clever Excel file which can restructure your data for you.
+
+These are the steps if you want to do it yourself:
+
+- paste the raw data into a tab in a new xlsc file
+- ctrl T to make into table, table name = raw
+- data / get data / from table, range
+- rename columns source_id etc
+- close & load
+- rightclick on raw / reference
+- rename as statements
+- filter contains $
+- rightclick on raw / reference
+- query / reference raw
+- rename as questions
+- delete columns except question_id and question_text
+- remove rows / remove duplicates
+- rightclick on raw / reference
+- rename as sources
+- filter: = Table.SelectRows(#"Added Custom", each not Text.StartsWith([question_id], "$") or Text.Contains([question_id], "*") or Text.Contains([question_id], "#"))
+- add column / custom column
+- q= [question_id]&"-"&[question_text]
+- remove those two columns
+- click transform / pivot column: pivot on q, text as values, don't aggregate
+- home/ close reload
+- close and copy the file, save the copy as xls

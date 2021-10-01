@@ -1,4 +1,4 @@
-# Causal Mapping: Definitions
+# 📚 Causal Mapping: Definitions
 
 ## What is a causal map? What is causal mapping?
 

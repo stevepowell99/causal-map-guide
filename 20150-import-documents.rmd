@@ -1,0 +1,22 @@
+# 💻 Uploading/Importing your statements from documents{#import-doc}
+
+The only data you need to provide is a table of statements as the only tab in an xlsx file. Your file must have a header row with the names of the fields.
+
+## Making a basic statements table
+
+If you want to import longer documents which are several pages each, you should break each document into many chunks or "statements". Ideally a statement consists of between one and five paragraphs – enough to fit on the left-hand side of the Code & View tab when it is displayed there. 
+
+Make a fresh spreadsheet file in Excel (or LibreOffice Calc or similar) 
+
+- Type the word “text” as column header in cell A1.
+- Select cell A2
+- Paste your text below in the A column, with between 1 sentence and 9 paragraphs in each cell. Note that if you want several paragraphs together in one cell, be careful when pasting.
+- Check the statements are the way you want them. You can ignore any formatting, pictures etc which might also have been pasted in because these will disappear in the next step.
+- Just the column "text" is enough, but optionally use the other columns for other metadata you might need, like this:
+
+![image-20210930112731572](_assets/image-20210930112731572.png)
+
+The statements are the texts which appear one by one by one in the Code & View tab, for you to read and code. Each statement is one row in your file.
+
+The (optional) column `source_id` is special, because it gives you an easy way to provide additional information about each source (e.g. year and country of publication) rather than having to copy this information into your this main statements file.
+

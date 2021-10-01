@@ -1,4 +1,4 @@
-# Is Causal Map for me?
+# 📚💻 Are Causal Map and causal mapping for me?
 
 
 So, you’ve taken a look at the **[features of the app](https://causalmap.app/the-app/)**, and you’re getting excited about creating maps – but is your project right for it?

@@ -1,4 +1,4 @@
-# Features of Causal Map
+# 💻 Features of Causal Map
 
 ## Main features of Causal Map
 

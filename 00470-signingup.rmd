@@ -1,4 +1,4 @@
-# ⭐ Signing up and signing in at Causal Map
+# ⚡ 💻 Signing up and signing in at Causal Map
 
 Start your journey at https://causalmap.shinyapps.io/CausalMap2/.
 

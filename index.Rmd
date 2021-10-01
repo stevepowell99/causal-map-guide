@@ -33,6 +33,26 @@ The [old version of this Guide](http://guide2.causalmap.app.s3-website.eu-west-2
 
 :::
 
+## Formatting in this guide…
+
+We display statements and quotes from them, respondents’ actual words, in quote marks:
+
+“Thanks to the financial support, I can now go to school”
+
+We display factor labels with underlines, like this:
+
+<u>Able to go to school</u>
+
+When we display whole coded causal claims which include an arrow, we don’t use the underlines:
+
+Financial support ➜ Able to go to school 
+
+This first part of the Guide covers all the basic ideas of causal mapping. The second part covers some additional ideas, which correspond to the features enabled for those with "Extra" subscriptions to the Causal Map app.
+
+## Videos
+
+Check out our small but growing library of [short, focussed training videos](https://causalmap.app/course/causal-map-basics/).
+
 ## License {.unnumbered}
 
 This guide is licensed to you under [Creative Commons Attribution-NonCommercial-NoDerivatives 4.0 International License](http://creativecommons.org/licenses/by-nc-nd/4.0/).

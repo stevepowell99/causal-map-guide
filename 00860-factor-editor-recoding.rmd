@@ -1,4 +1,4 @@
-# 💻 Recoding factors
+# 💻 The Factor Editor 
 
 ## Editing factor labels in the Factor Editor
 
