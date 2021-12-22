@@ -1,4 +1,6 @@
-# 💻 Using the Advanced Editor to create and edit filters
+# Using the Advanced Editor to create and edit filters{#advanced-editor}
+
+![NsNieBjXgE](_assets/NsNieBjXgE.gif){width=650}
 
 The commands are applied one by one in sequence, in a pipeline of commands, such that after each command, such as each command starts with the map defined by the previous line and produces a new one.
 

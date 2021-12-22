@@ -1,4 +1,4 @@
-# Causal mapping with Excel
+# Causal mapping with Excel{#xexcel}
 
 Now we are going to back to the basics of causal mapping. You don't need Causal Map App, or any other dedicated application, to do causal mapping. You can use Excel or any spreadsheet program.
 
@@ -14,5 +14,5 @@ You can download the example and play around with it or use it as a template for
 
 Also once in excel format causal map becomes compatible with other data visualisation tools like Gephi, and if you want to know more about that check out our video on using the causal map app alongside other data visualisation tools.
 
-The link: You can download this file [here](https://docs.google.com/spreadsheets/d/12eXQDJtvlLO6qRrwbxwvkchfdTNLSbjo/edit?usp=sharing&ouid=112812082380437768869&rtpof=true&sd=true)
+You can download this file [here](https://docs.google.com/spreadsheets/d/12eXQDJtvlLO6qRrwbxwvkchfdTNLSbjo/edit?usp=sharing&ouid=112812082380437768869&rtpof=true&sd=true).
 

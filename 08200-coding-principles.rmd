@@ -1,10 +1,14 @@
 # 📚 Creating good factor labels
 
-Remember that in general, factor names are case sensitive. So funding is **not the same as** Funding.
+```{r,echo=F}
+knitr::include_url("https://player.vimeo.com/video/580212681")
+```
+
+Remember that in general, factor names are case sensitive. So the app will not treat 'funding' and 'Funding' as the same.
 
 You can use emojis 😍 and other special characters in your factor labels.
 
-Also, semi-colons ‘;’ you can use them if you want, but note that they have a special meaning in the app.
+Also, semi-colons ‘;’ you can use them if you want, but note that the app will then treat this factor label as [hierarchical](#xhierarchical-coding).
 
 
 ## Actor-focused labels
@@ -91,27 +95,54 @@ We call these non-quantitative factors. We might try to reword them as semi-quan
 
 The diagram below is an acceptable causal map, even though the intervening two variables are an example of more qualitative rather than (semi-)quantitative labels. It tells us that the training did something to the teaching style, which did something relevant to the learning style, which improved student outcomes. We don’t have a theory about the “how” of any of the arrows, and we don’t (necessarily) suggest that teaching style or learning style are things which can be measured on a single scale from e.g. “less” to “more.”
 
-![img]()
+
 
 ## Using flags in factor labels
 
+Hierarchical coding is one way to structure your coding. However, sometimes you don't want to think in terms of a strict hierarchy, or maybe you have an additional set of themes which cut across that hierarchy. 
+
+Flags are useful in either of these cases.
+
 Flags are just sequences of characters within a factor label to which you have given a special meaning, and which are unique and easy to search for. These can include letters, emojis or phrases. You can do coding without any such flags if you want, but it can help when searching and filtering.
 
-A quote like “family is better off now because of improved food availability”
+A quote like “family situation is better now because of improved food availability” can be coded like this:
 
-![](_assets/image-20210109114200339-16315605320862.png)
+> More food --> Improved wellbeing 
 
-can be coded as a link from the causal factor:
+Now, maybe you are asked also to keep track of any aspects of the project which have to do with nutrition. Nutrition is not really part of your system of factors, but you would like to be able to construct some maps just to look at this aspect. So you can write this:
 
-(HN) More food
+> More food #nutrition --> Improved wellbeing  
 
-to the causal factor:
+Similarly,  if Improved Wellbeing is one of the desired outcomes of the project, we might want to reflect that by adding a flag "(Outcome)" like this. 
 
-(RW) Improved wellbeing [P]
+> More food --> Improved wellbeing (Outcome) 
 
-In this example, three optional flags have been used: the flags (HN) and (RW) are themes which these factors are associated with, [see later](https://guide.causalmap.app/creating.html#intervention-flags); and the flag [P] shows that this is a positive outcome. It is specifically marked as desirable.
+Then we can easily search for this and other desired outcomes.  
 
-Flags like "difficulty*" or “#problem” are good as the additional symbol makes them unique. A flag like “men” is not suitable because it is likely to appear elsewhere (e.g. as part of “women” or “management”).
+A flag like “men” is not suitable because it is likely to appear elsewhere (e.g. as part of “women” or “management”). To get round this, add additional characters like a hash: “#men”; this makes the flag unique. 
+
+If you use curved or square brackets around your flags, you can use one of the app filters to hide the flags for specific maps if desired.
+
+### Hanging flags{#xhanging-flags}
+
+A subtle trick is to use hanging flags which are additional hierarchical components. So rather than writing, say, 
+
+>More food #nutrition --> Improved wellbeing
+
+you write
+
+>More food; #nutrition --> Improved wellbeing 
+
+(note the `;` ), then  if you "zoom out" to the top level of the hierarchy, the flag will be neatly hidden:
+
+>More food --> Improved wellbeing 
+
+### Flags for bundling factors
+
+It is very convenient to use flags when you want to [bundle factors](#bundlefactors). This means you can easily collapse together one or more sets of factors sharing a common theme, regardless and independently of any hierarchical structure you are using.
+
+
+
 
 ### Intervention Flags
 
@@ -186,19 +217,9 @@ Even when doing inductive coding, some people formulate factors with a theory in
 
 Also, our recommended way of having your cake and eating it - keeping the detail but seeing the general trends too – is “hierarchical coding.” [See below](https://guide.causalmap.app/creating.html#simplifying-causal-maps-with-hierarchical-coding).
 
-### Recoding / merging multiple factors into one
+### Merging multiple factors into one
 
-In some cases you will simply decide, in the face of too many factors, to merge
+In some cases you will simply decide, in the face of too many factors, to merge `Engagement with communities` and `NGO engagement`into one, e.g. `Engagement`.
 
-Engagement with communities
-
-and
-
-NGO engagement
-
-… into one, e.g. Engagement.
-
-If you have two factors like this which are very similar but not quite the same, you can sometimes keep some detail by using a composite label which explicitly mentions both:
-
-Engagement with communities/NGOs
+If you have two factors like this which are very similar but not quite the same, you can sometimes keep some detail by using a composite label which explicitly mentions both i.e.`Engagement with communities/NGOs`.
 

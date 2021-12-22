@@ -80,3 +80,17 @@ text-align:right;
   font-size:x-small;
 }
 .book-part{border-bottom:2px solid #76f7ff55}
+
+
+details{
+  background-color: antiquewhite;
+      padding: 10px;
+    margin: 10px;
+    border-radius: 10px;
+}
+details summary{
+  background-color: white;
+}
+summary{
+margin-bottom:10px;
+}

@@ -46,7 +46,7 @@ Why don’t we just stop there, and simply display only the factors which are di
 
 It is also possible, especially with smaller maps, that there are no links which are distinctive for a particular additional data field like gender. This suggests that there are no very interesting differences between the groups. It is also possible that there is a distinctive map for one group, e.g. women but not for men, or vice versa.
 
- 
+
 To continue the example, we can follow the algorithm and produce the distinctive maps for men and women. These maps even without any further filtering are interesting and readable in their own right, but as there are around 40 factors in each map, here we show the maps filtered further for only the most frequent factors. 
 
 Distinctive map for women, showing the top seven factors.  
@@ -69,4 +69,23 @@ To repeat, the “distinctive map” for a group is *not* a good summary of ever
 
 When [filtering statements](#filtering-the-map-by-statement-source-question) it is easy, for example, to show the causal map just for specific **groups**, e.g. the female respondents, for which the additional data field “gender” is equal to “female”: you can cycle through the values using the arrow buttons, and you can flip through the statements for each group using the “previous” and “next” buttons in the statement pager. 
 
+## Percentages{#percent}
+
+![image-20211018181718019](_assets/image-20211018181718019.png)
+
+It's very useful to bundle many links between every pair of factors into different bundles, one for each gender, say, or one for each village. Then you can compare how many times this particular connection was mentioned by each group (if you count link_id) or how many sources in each group mentioned the connection (if you count source_id). You can print this number as the label for each link, or you can scale or colour the link according to it.
+
+However, if the base number of sources in each group is different -- for example, if there are many more women than men -- these numbers can be hard to deal with. In this situation, we recommend using percentages of the baseline for each group rather than absolute counts.
+
+There are many [caveats](#caveat-numbers) to using counts and percentages of mentions of causal links and factors in causal mapping, as they arise (or don't arise) during conversations and are not answers to questions directly asked of respondents.
+
+#### 💻 Percentages in the app
+
+
+
+The details of how to do make these calculations are quite open; at the moment, the app uses the relevant baseline within the current map. So if you want to display "source count", or the number of sources who mentioned each link, and bundle the links by gender, the app takes as the baseline *the source count for each gender in the current map*. So if 7 women and 5 men mentioned a connection between X and Y, and altogether 14 women and 10 men mentioned anything in the whole map, then the percentage will be 50% on each
+
+If you use percentages for labels, the label shows both the raw number and the percentage. 
+
+If you use percentages for colour or width of the links, the percentage is used rather than the raw number. 
 

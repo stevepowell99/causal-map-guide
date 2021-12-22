@@ -1,0 +1,18 @@
+# Collaborating at Causal Map
+
+## Collaboration
+
+At the moment, you can log in to the same or different maps from the same or different accounts, including from multiple browser tabs -- so you can have two maps open at once.
+
+Two different people *can* edit the same file. However at the moment the results can be unpredictable and we recommend working asynchronously (taking it in turns.) If you are viewing a file while someone else edits it, you will have to refresh to see any changes they made. 
+
+## Teams
+
+![image-20211106103853413](_assets/image-20211106103853413.png)
+
+- You can create one or more teams and make other people members of that team
+- Other people can include you in their teams
+- Each team has an owner and a name, and one or more members
+- The names of teams you are a member of appear in sha
+- There is a special team called `global`: sharing a file with `global` means that any user of Causal Map gets access.
+

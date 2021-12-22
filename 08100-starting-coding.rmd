@@ -1,0 +1,34 @@
+# ⚡Top tips if you have just starting coding{#top-tips}
+
+First of all, there's nothing to worry about, it's fun!
+
+The versioning / backups feature is amazing so you can always go back to any version of your file at any earlier time point.
+
+Also, the [Factor Editor](#factor-editor) makes it easy to rapidly change one or many factors. And you can do it either globally, i.e. changing one factor everywhere in the file, or you can do it for particular statements, if you press the Split checkbox.
+
+Zoom your browser out so everything fits on your screen. Try pressing Ctrl 0 or Cmd 0 to get normal view, then press Ctrl - or Cmd - once or twice if your eyes can stand it.
+
+Don't forget you can get more space while coding by pressing the little resize arrow at the top between left and right panels.
+
+Don't forget you can see additional information about each statement, and make memos on the statement or the source by clicking the info toggle. 
+
+Normally you'll want to keep the Filters panel closed because it takes space. 
+
+Don't bother coding the same link more than once for the same source, unless they bring up distinctively different evidence each time.
+
+It's okay not to code a statement at all. If there's nothing in it, or if people are just making vague and general statements.
+
+You'll find you're constantly shifting between sometimes creating new factors, and then going back and reviewing them and merging them and organising them in the [Factor Editor](#factor-editor). 
+
+Don't forget you can combine two or more factors into one. Just by pasting the same label over all of them.
+
+Don't forget when you want to search rapidly through already coded links through all of the statements, you can click on the rows in the [links table](#the-links-table) or the [statements table](#the-statements-table). To go back to the relevant statements directly. 
+
+Don't forget that the app always knows what question a particular link is in response to, so you don't need to try to sneak the question information somehow into the factors and links, unless you want to.
+
+Occasionally, someone will make a comment about something which is worth coding, even though there isn't actually a causal link. For example, they might make general comments about some outcome without saying what causes it. In this case just make a link like (no influence factor) --> some outcome. (But if you find you are doing this a lot, you might need to rethink your research design.)
+
+Don't forget while coding you can view the map from the One statement view or the Many statement view.
+
+If you are using [hierarchical/nested coding](#xhierarchical-coding) (and you probably should) don't forget you can see the whole map zoomed out to the top level: just press the appropriate button in the Filters panel.
+

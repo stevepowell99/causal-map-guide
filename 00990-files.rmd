@@ -1,3 +1,0 @@
-# 💻 The File Manager{#file-manager}
-
-![image-20210927120502982](_assets/image-20210927120502982.png)

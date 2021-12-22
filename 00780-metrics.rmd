@@ -1,0 +1,34 @@
+# The Metrics Table{#xmetrics}
+
+## Summary
+
+The metrics table displays a range of useful measurements about your data. These metrics respond to any filters that have been applied to your data, so consider whether you want to see these metrics `unfiltered` or `filtered`.
+
+
+
+![WTcXlasgYI](_assets/WTcXlasgYI.gif){width=650}
+
+## What the metrics mean
+
+There are quite a few metrics, some are more self-explanatory than others. The table below expands on the brief description given in the metrics table. 
+
+
+
+| Metric  | **Explanation**                                    |
+| ---------- | ------------------------------------------------------------ |
+| **size** | The total number of links in the map. |
+| **order** | The total number of factors in the map. |
+| **links_per_factor** | The average number of links per factor. Usually, you want to have plenty of links per factor. |
+| **n_statments** | The number of statements in the map. |
+| **n_words** | The total number of words in all the statements. |
+| **n_coded_words** | The number of words in coded phrases. |
+| **n_characters** | The number of characters in all statements. |
+| **links_per_statement** | The number of links per statement. |
+| **percent_coded** | The percentage of statements which have been coded. |
+| **adhesion** | The minimum edge connectivity or line connectivity. The minimum number of edges that if you deleted them would result in a disconnected map. If you have a disconnected map already, like most maps are, that number will be 0. However, if you have a map which loops, and all factors are both consequence and influence factors, that number will be 1. |
+| **component_count** | The number of unconnected components in the map. Do you have islands in your map? The app first identifies the components -- sets of factors which are all ("weakly", i.e. ignoring the direction of the links) connected to each other by some path; then counts how many separate components there are, i.e. none of the factors in one component are connected to any of the factors in the other component(s). |
+| **diameter** | The length of the longest geodesic or path between two factors. For example, the count for A->B->C->D would be three as it's three links from A to D. This takes into account the direction of the arrows. |
+| **reciprocity** | The proportion of mutual connections in the map. This calculates the proportion of factors in which both factors influence one another. The connection must be between two factors, feedback loops are not counted. |
+| **min_cut** | The minimum number of links that you would have to remove to split the map into two clusters. |
+| **mean_dist** | The mean number of links between all factors in the map. |
+

@@ -26,9 +26,9 @@ The higher level factors can, within the same coding scheme, themselves be used 
 
  
 
-We can “zoom out” of a causal map containing nested factors to show a simpler, higher-level structure as a summary. This is done by re-routing links to and from the lower-level factors into their higher-level parents. So zooming out from the 
+We can “zoom out” of a causal map containing nested factors to show a simpler, higher-level structure as a summary. This is done by re-routing links to and from the lower-level factors into their higher-level parents. 
 
-This then, loosely yet informatively and with certain caveats, accepting a loss of detail but affirming that the overall meaning is not distorted, we can deduce from the first example above the following causal map:
+So then, loosely yet informatively and with certain caveats, accepting a loss of detail but affirming that the overall meaning is not distorted, we can deduce from the first example above the following causal map:
 
 New intervention ➜ Healthy behaviour
 

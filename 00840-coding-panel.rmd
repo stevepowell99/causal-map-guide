@@ -1,11 +1,14 @@
-# ⚡ 💻 The Coding Panel: creating factors and links
+# ⚡ The Coding Panel: creating factors and links{#xcoding-panel}
 
 Qualitative causal mapping involves taking passages of text, e.g. from interviews or documents, and identifying sections which make causal claims. We highlight each of these sections and specify a causal factor at each end of each link (for example Lost job or Went hungry). This means creating a new factor or reusing an existing one. Usually we create these factors inductively as we code, and revise and review and consolidate them as part of the process, as with any other kind of qualitative content analysis. This section is about how to create factors and their labels.
 
-
 In Causal Map, a factor *is* its label. Once you create a label, there is nothing else to add.
 
-##  Create and edit links in the app
+##  Creating links in the app
+
+```{r,echo=F}
+knitr::include_url("https://player.vimeo.com/video/588851236")
+```
 
 To code a causal link, - With your mouse, highlight a piece of text within the statement which makes a causal claim.
 
@@ -25,19 +28,47 @@ To code a causal link, - With your mouse, highlight a piece of text within the s
 
 - The link is created in the Map window, colour-coded with the quote which is now highlighted on the left. If you mouse over the highlighted quote, the link in the map is activated.
 
-To edit an existing link, - Click on it in the Interactive Map - Make any adjustments in the left panel, e.g. change the influence factor (in the first box), and/or the consequence factor (in the second box). You can change the quoted text just by re-highlighting the correct passage in the statement panel above in the same way that you made the original highlight.
+For more information on how to edit an existing link [see here](#xedit-factor-and-links).
 
-- Press the green Save button.
+**NOTE**: factor names which contain semicolons **;**. get special treatment as they separate the different parts of *hierarchical* labels.
 
-**NOTE**: your factor names should not contain semicolons **;**. Semicolons are special, they are used for hierarchical coding.
+After beginning to create links between factors, one will notice already-coded factors will appear in the dropdown menus in the to and from factor boxes. For added convenience: 
 
-After beginning to create links between factors, one will notice already-coded factors will appear in the dropdown menus in the to and from factor boxes. For added convenience, the most frequently coded factors will appear at the top of this list.
+- the most frequently coded factors will appear at the top of this list
+- if you are using hierarchical coding, top-level components will appear to be selected even if you have not used them explicitly so far. For example, if you have used the factors `health; mental` and `health; physical`, the factor `health` will appear even if you never used it explicitly. You can then easily create new nested factors such as `health; spiritual`by selecting `health` and then typing `; spiritual` with a leading ";". The app will automatically join these for you into the factor `health; spiritual`. 
+- once you have selected an influence factor, the order of the choices available for the consequence factor will be silently updated, presenting at the top of the list the most frequently mentioned consequences of the influence factor you have chosen.
 
-## Using memos and hashtags
+##  Chaining Links{#xchaining-links}
+
+```{r,echo=F}
+knitr::include_url("https://player.vimeo.com/video/588881701")
+```
+
+Chaining links is easily done and useful when you have statement where one consequence leads to another, which leads to a third, and so on. To use this function simply click the chain icon below the consequence factor box and the app will automatically fill the influence box with the consequence from your previous link.
+
+![md0XWSnpLr](_assets/md0XWSnpLr.gif){width=650}
+
+
+
+ 
+
+## Using memos and hashtags{#xmemosandhashtags}
+
+### Memos{#xlink-memos}
 
 Qualitative coding usually involves making notes and memos, and you can do this in Causal Map too.
 
-Hashtags are available as a special kind of memo when coding a link: you can use them to provide any kind of additional information:
+This toggle opens both additional statement info, i.e. info for any fields which start with #, for example you might have a field #gender in your statements table, and also shows the boxes to edit the memos. (In this example, there is no additional information.)
+
+
+
+![esSnHL226V](_assets/esSnHL226V.gif)
+
+### Hashtags{#xhashtags}
+
+Hashtags are available as a special kind of memo when coding a link: you can use them to provide any kind of additional information, for example:
+
+
 
 - where a link is only relevant in a particular context
 - where a link is only a hypothesis

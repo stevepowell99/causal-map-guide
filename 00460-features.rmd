@@ -1,43 +1,50 @@
-# 💻 Features of Causal Map
+# Features of Causal Map
 
 ## Main features of Causal Map
 
 - Code causal claims in the form A –> B
 - Code multiple claims at once
-- Code additional claims as a continuation of previous claim (“chaining”)
-- Import data (and meta-data about your sources) in different formats
-- Add memos and hashtags
+- Code additional claims as a continuation of previous claim (“[chaining](#xchaining-links)")
+- [Import data](#ximport) (and meta-data about your sources) in different formats
+- Add [memos and hashtags](#xmemosandhashtags)
 - See a summary of all statements from a specific source
 - View additional information about each statement (e.g. question and respondent characteristics)
-- Create simple or hierarchical factor labels
-- Edit many factors and links at once in a powerful bulk editor
+- Create simple or [hierarchical factor labels](#xhierarchical-coding)
+- Edit many factors and links at once in a [powerful bulk editor](#factor-editor)
 - Filter the global map by: Current statement; Factor label; Link (quote, hashtag, memo etc); Statement (text, additional data e.g. respondent characteristics)
-- Trace paths from one set of factors to another
+- [Trace paths](#xrobustness) from one set of factors to another
 - Use the interactive viewer to edit your map
 - View and export print-quality maps
 - View all quotes for a specific view, and get a smart summary
-- Create detailed tables: Factors; Sample; Questions; Closed questions
-- Calculate **Robustness of Argument** for causal paths between sets of factors
-- Download/export your data in different formats
+- Create detailed [tables](#core-tables): Factors; Sample; Questions; Closed questions
+- Calculate [**Robustness of Argument**](#xrobustness) for causal paths between sets of factors
+- [Download/export](#xroundtripping) your data in different formats
 - Share files with others for viewing or editing
 - Code additional properties of links like strength and certainty, or mark pairs of factors which are opposite to one another
 
 ## Additional new features in Causal Map 2
 
 - Anyone can use it, and it is free for small projects
+
 - Conditional formatting makes your findings more visible
-- Bundle factors together to make your map neater and easier to read
-- Bundle links by attributes such as stakeholder, district, question and many more
+
+- [Bundle factors](#xbundlefactors) together to make your map neater and easier to read
+
+- [Bundle links](#bundlelinks) by attributes such as stakeholder, district, question and many more
+
 - Infinite versioning means you can restore any change made to a file from any timepoint. This isn't just backups, it is every single change
-- It is even easier to import and manage your data
-- You can import a standard-format Excel file into CM2, meaning you can download a file, edit it, and upload it again (this is called "round-tripping"). You can also include any additional fields or columns you want and they will be imported and available for searching, conditional formatting etc
+
+- It is easier to import and manage your data
+
+- You can import a standard-format Excel file into CM2, meaning you can download a file, edit it, and upload it again (this is called "[round-tripping](#xroundtripping)").  You can also include any additional fields or columns you want and they will be imported and available for searching, conditional formatting etc
+
 - Build a map by importing any combination of tables or just some of them - factors, links, sources, questions and statements, in any order, at any time
-- You can edit tables directly
-- If you refresh your browser or go away for a while, you can always come back to exactly where you left off. You can also share or save the link for later. This is because the URL in your browser always points to the map and filters you are using right now
+
+- All outputs transparently recreatable from the [filters](#advanced-editor)
+
+- Share or save links to maps and filters
 
 - Clickable legends and ordinary-language explanations of filters
-
-- All outputs recreatable from the filters
 
 - Merging maps means you can compare multiple maps:
 
@@ -48,20 +55,20 @@
 
 - Log in to the same or different maps from the same or different accounts, including from multiple browser tabs
 
-- Collaborate on a file
+- Collaborate on a file asynchronously
 
-- View, filter, sort and directly edit all the tables - factors, links, sources, questions and statements - making up a map. These tables provide all the existing tables functionality plus more. So you will be able to do things like, say, find all the links with a certain hashtag and delete them
+- View, filter and sort all the tables - factors, links, sources, questions and statements - making up a map. These tables provide all the existing tables functionality plus more. 
 
 - Delete factors and edit or delete links directly from the interactive map
 
 - Create a new blank file
 
-- Clone an existing file under a new name, containing all the current factors or only including the factors currently visible
-
-- If border colours are not set, or all the same, borders automatically disappear (set to zero in Print View)
+- [Clone an existing file](#xown-copy) under a new name, containing all the current factors or only including the factors currently visible
 
 - New colour scales are colour-blind friendly and make sense when printed in black and white
 
 - Like Print View, if Interactive View is given a very big map with lots of links, it now bundles up the links so that it loads faster (you can still view a random quote from the bundle when you hover over a link)
-- When you edit a link, you are able to replace it with more than one link if you wish, e.g. you can edit a link A→B and replace it with A→B and A→C by typing both B and C in the consequence factor box. Actually, when you edit a link, CM2 loads up the details from the old link into the coding panel, and if you press 💾, the old link will be deleted and the new one added. You can cancel this process, as in CM1
-- You can find greater than or less than a set value using the the find factors, find links, find statements filters, so it is possible to do things like find statements with id greater than 100
+
+- When you edit a link, you are able to replace it with more than one link if you wish, e.g. you can edit a link A→B and replace it with A→B and A→C by typing both B and C in the consequence factor box. 
+
+  

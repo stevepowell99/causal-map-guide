@@ -11,7 +11,7 @@ link-citations: true
 description: "Guide to Causal Mapping"
 ---
 
-# Overview
+# ⚡ Overview
 
 ![img](_assets/simplify.png){width=650px}
 
