@@ -1,5 +1,8 @@
 # Appendix: Publications and links
 
+
+
+
 ## Publications
 
 Causal Map is quite new, but we're working hard publishing our ideas. Here is some relevant prior work. 

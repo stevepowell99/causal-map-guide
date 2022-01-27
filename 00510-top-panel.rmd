@@ -70,6 +70,14 @@ The server which a shortlink takes you to is (obviously?) the one in the shortli
 
 Shortlinks also store information about when the link was created. 
 
+The [Gallery](#xga) includes all shortlinks, initially filtered to show just shortlinks for the current file.
+
+You can use markdown syntax to format your title, for example
+
+- Leave an empty line (press Enter *twice*) to create a new line
+- Use single stars around a word or phrase to get italics: `This will be in *italics*`
+- Use double single stars around a word or phrase to get bold: `This will be in **bold**`
+
 
 
 

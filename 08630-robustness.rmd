@@ -14,12 +14,12 @@ This will open the `trace robustness` panel which asks you to select how many st
 
 ![](_assets/image-20211025151626916.png){width=650}
 
-🧪 If you want you can also leave either (but not both) factor selectors blank, e.g.
+If you want you can also leave either (but not both) factor selectors blank, e.g.
 
 - to search from some specific factor or factors to "anywhere", or 
 -  to search from "anywhere" to some specific factor or factors.
 
-🧪 (However, at the moment you can not trace robustness if either factor selector is blank.)
+(However, at the moment you can not trace robustness if either factor selector is blank.)
 
 Once you click `apply filter` your map will appear, as below. Orange indicates the origin(s) of the path, purple the target factor(s) and green any factors in between.
 
@@ -65,7 +65,7 @@ Of course, in principle you can see all of this just by looking at the maps and 
 
 ## Tracing paths and calculating robustness *by field* {#xrobustness-by-field}
 
-### 🧪 Tracing paths by field, e.g. "by source"
+### Tracing paths by field, e.g. "by source"
 
 Don't fall into the [transitivity trap](#xtransitivity-trap)! 
 
@@ -77,7 +77,7 @@ By setting the field to `source_id` you only show links which are part of a comp
 
 Even these maps can still be misleading: you must not assume that any arbitrary path you can trace through the map was actually mentioned by one particular source. You only know that *each of its links* was *part of some path* which was mentioned in its entirety by some source.
 
-### 🧪 Calculating robustness by field, e.g. "by source"
+### Calculating robustness by field, e.g. "by source"
 
 
 Just because there is a lot of evidence for all the different parts of a path does not mean that any one source, or type of source, actually mentioned all those parts. 

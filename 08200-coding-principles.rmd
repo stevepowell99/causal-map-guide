@@ -4,6 +4,7 @@
 knitr::include_url("https://player.vimeo.com/video/580212681")
 ```
 
+
 Remember that in general, factor names are case sensitive. So the app will not treat 'funding' and 'Funding' as the same.
 
 You can use emojis 😍 and other special characters in your factor labels.
@@ -99,7 +100,7 @@ The diagram below is an acceptable causal map, even though the intervening two v
 
 ## Using flags in factor labels
 
-Hierarchical coding is one way to structure your coding. However, sometimes you don't want to think in terms of a strict hierarchy, or maybe you have an additional set of themes which cut across that hierarchy. 
+Hierarchical coding is one way to structure your coding. However, sometimes you don't want to think in terms of a strict hierarchy, or maybe you have an additional set of themes which cut across that hierarchy.
 
 Flags are useful in either of these cases.
 
@@ -107,35 +108,35 @@ Flags are just sequences of characters within a factor label to which you have g
 
 A quote like “family situation is better now because of improved food availability” can be coded like this:
 
-> More food --> Improved wellbeing 
+> More food --> Improved wellbeing
 
 Now, maybe you are asked also to keep track of any aspects of the project which have to do with nutrition. Nutrition is not really part of your system of factors, but you would like to be able to construct some maps just to look at this aspect. So you can write this:
 
 > More food #nutrition --> Improved wellbeing  
 
-Similarly,  if Improved Wellbeing is one of the desired outcomes of the project, we might want to reflect that by adding a flag "(Outcome)" like this. 
+Similarly,  if Improved Wellbeing is one of the desired outcomes of the project, we might want to reflect that by adding a flag "(Outcome)" like this.
 
-> More food --> Improved wellbeing (Outcome) 
+> More food --> Improved wellbeing (Outcome)
 
 Then we can easily search for this and other desired outcomes.  
 
-A flag like “men” is not suitable because it is likely to appear elsewhere (e.g. as part of “women” or “management”). To get round this, add additional characters like a hash: “#men”; this makes the flag unique. 
+A flag like “men” is not suitable because it is likely to appear elsewhere (e.g. as part of “women” or “management”). To get round this, add additional characters like a hash: “#men”; this makes the flag unique.
 
 If you use curved or square brackets around your flags, you can use one of the app filters to hide the flags for specific maps if desired.
 
 ### Hanging flags{#xhanging-flags}
 
-A subtle trick is to use hanging flags which are additional hierarchical components. So rather than writing, say, 
+A subtle trick is to use hanging flags which are additional hierarchical components. So rather than writing, say,
 
 >More food #nutrition --> Improved wellbeing
 
 you write
 
->More food; #nutrition --> Improved wellbeing 
+>More food; #nutrition --> Improved wellbeing
 
 (note the `;` ), then  if you "zoom out" to the top level of the hierarchy, the flag will be neatly hidden:
 
->More food --> Improved wellbeing 
+>More food --> Improved wellbeing
 
 ### Flags for bundling factors
 
@@ -222,4 +223,3 @@ Also, our recommended way of having your cake and eating it - keeping the detail
 In some cases you will simply decide, in the face of too many factors, to merge `Engagement with communities` and `NGO engagement`into one, e.g. `Engagement`.
 
 If you have two factors like this which are very similar but not quite the same, you can sometimes keep some detail by using a composite label which explicitly mentions both i.e.`Engagement with communities/NGOs`.
-

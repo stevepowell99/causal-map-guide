@@ -12,12 +12,12 @@ Conditional formatting gives you more options with links than with factors. It a
 - colour links
 - label links
 
-![image-20211015124001957](_assets/image-20211015124001957.png)
+![image-20211015124001957](_assets/image-20211015124001957.png){width=650}
 
 When you click one of the buttons, you are asked how you want to colour, scale or label the links - the choices are the same. 
 
 
-![image-20211015123343545](_assets/image-20211015123343545.png)
+![image-20211015123343545](_assets/image-20211015123343545.png){width=650}
 
 For example, to label the links you can 
 
@@ -27,17 +27,17 @@ For example, to label the links you can
 - print literally every source_id, including duplicates, on each link in a bundle of links (`literal: source_id`)
 - count the number of villages in which this link was mentioned, assuming you have a field like village_id (`count: village_id`)
 
-![image-20211125133948533](_assets/image-20211125133948533.png)
+![image-20211125133948533](_assets/image-20211125133948533.png){width=650}
 
 (Here is an [example](causalmap.shinyapps.io/CausalMap2/?s=165) of labelling the links with the IDs of the sources. This can be very useful if you want to know if the same people who mentioned one link mentioned another.)
 
 You can repeat this filter more than once - for example to label bundles of links by gender and by simple frequency: uncheck `Clear previous labels?`.
 
-![image-20211129183025439](_assets/image-20211129183025439.png)
+![image-20211129183025439](_assets/image-20211129183025439.png){width=650}
 
 You can also opt to add the name of the field to the label, so you could have a label like `Gender: Female, source_id: x12`.
 
-![image-20211129183301311](_assets/image-20211129183301311.png)
+![image-20211129183301311](_assets/image-20211129183301311.png){width=650}
 
 Similarly you might want to colour your links with a continuous scale of colours according to:
 
@@ -54,13 +54,41 @@ See also the special section on [conditional formatting with percentages](#perce
 
 Also, much of this formatting only makes sense in terms of bundles of links from one factor to another. The app will bundle the links for you in these cases.
 
-## Label factors{#xlabel-factors}
+#### Initials{#xinitials}
+
+Often it is useful to shorten the labels, for example you might have bundled your links by village and want to label the bundles with the names of the villages, but the village names are very long. Or you might have bundled your links by region and want to label the bundles with a list of the unique names of the villages in that region, but this might be quite a lot of text.  
+
+![image-20220113122430886](_assets/image-20220113122430886.png)
+
+In this case you can use the function `initials`. 
+
+![image-20220113124829327](_assets/image-20220113124829327.png)
+
+![image-20220113122358127](_assets/image-20220113122358127.png)
+
+This is especially useful when you do [conditional formatting with percentages](#percent)
+
+## Conditional formatting for factors
+
+### Colour text{#xcolour-text}
+
+You can now conditionally colour the text of your factor labels. For example, this can be useful to draw attention to [factors which are opposites](https://causalmap.shinyapps.io/CM2test/?s=651):
+
+![image-20220119192537202](_assets/image-20220119192537202.png)
+
+There is a dedicated shortcut button just for this:
+
+![image-20220121074508472](_assets/image-20220121074508472.png)
+
+### Label factors{#xlabel-factors}
 
 You can label your factors, as well as your [links](#xformattinglinks). Labelling your factors is a useful way of adding detail and clarity to your maps. Click on the label factors buttons to open up the filter panel. The app will then ask you to choose which label(s) to add to your l factors. Options include frequency, size, and zoom level.
 
 Normally you will want to add this additional information to the existing factor label, but if you want you can check the box to `Clear previous labels?`
 
-![image-20211108160835333](_assets/image-20211108160835333.png){width=650}
+You can now also choose whether or not to include the name of the field in your factor labels.
+
+![image-20220121072115390](_assets/image-20220121072115390.png)
 
 ## Bundle links{#bundlelinks}
 
@@ -87,137 +115,39 @@ Sometimes you might want to set a specific colour for all your factors, or links
 
 You can use any [html colour](https://www.w3schools.com/colors/colors_names.asp) like red, pink, aliceblue, beige ... and also hex colours like #eee, #00000033 etc.
 
-## 🧪 Mark links for continuity (Print View only)
-
-This filter is experimental and the details will certainly change. 
-
-The [transitivity trap](#xtransitivity-trap) can make it a challenge to interpret your maps. Some people (or somebody) said that improved hygiene led to reduction in mosquito environments, and some people  said reduction in mosquito environments led to improved health, but *was this the same or different people*?
-
-![image-20211215081735743](_assets/image-20211215081735743.png){width=650}
-
-Add the filter `mark links` (there is no button for it, you have to type it) provides the following diagnostics:
-
-![image-20211215081328481](_assets/image-20211215081328481.png){width=650}
-
-The incoming (bundles of) links to every factor (actually to every factor with outgoing links) are labelled a, b, etc, including when links are bundled e.g. by gender. Then the outgoing links are marked with say `a` if at least one of the sources who mentioned the outgoing link also mentioned link `a`. 
-
-So we can see that none of the people who said that improved hygiene led to reduction in mosquito environments also said that reduction in mosquito environments led to improved health: there is no label at all on the arrow going out of reduction in mosquito environments. There is no source continuity. 
-
-Note that the labels get re-used for each factor, so the `a`s and `b`s here are related:
-
-![image-20211215083702603](_assets/image-20211215083702603.png)
-
-but the `a`s here are not:
-
-![image-20211215083737009](_assets/image-20211215083737009.png)
-
-This also works with all the other fields, e.g. you can type `mark links field=statement_id` in order to test statement continuity, which is a stricter test of continuity. source_id is default so you don't need to type it specially.
-
-Yes, it is a bit difficult to communicate this in a report. But it is important for interpretation. Of course a chain without source continuity isn't an invalid chain per se, it's just something to be aware of. 
-
-We will probably also add a simpler metric for outgoing links which does not distinguish between the incoming links, something like "Percentage of sources who mentioned a link leaving factor F who mentioned any of the links entering F". This metric could be used to colour or scale the links, or perhaps be printed on the tail of the links.
-
-## 🧪 Show continuity
-
-### Summary
-
-![http://theorymaker.info/?permalink=transitivity](_assets/image-20211222121147473.png)
-
-Above, the links are labelled with the sources. 
-
-The ▭ open half-box at the end of the first link tells us that at least half but not all of these stories stop here: less than half the sources mentioned any link *out of* K. 
-
-The ◼ filled box at the start of the second link tells us that all of these stories are continuations: all these sources mentioned some link *into* K.
-
-The  ▂ filled half-box at the end of the second link tells us that at least half but not all of these stories continue: Bob mentioned some link out of L, but Carla did not. 
-
-The  ▢ open box on the link from L to N tells us that this story is not a continuation: Donna did not mention any link *into* L. 
-
-There is no UI for this filter yet. You can just type
-
-`show continuity`
-
-in the advanced editor. 
-
-----
-
-If you want to look at say statement continuity rather than source continuity (the default), type
-
-`show continuity field=statement_id`
-
-If you want to see numbers (see examples below) rather than symbols (see examples further below; symbols are the default) then type:
-
-`show continuity type=label`
-
-![image-20211216162518175](_assets/image-20211216162518175.png)
-
-Here, the 0.9 says that 90% of the sources mentioning the link to ~performed well also mention the link *from* ~performed well. The 1 says that 100% of the sources mentioning the link *from* ~performed well also mention the link *to* ~performed well. And the zeros below say that there is no source continuity at all. 
-
-What this doesn't tell you is, when there are more than one incoming link, which of them have sources which continue to the outgoing link (that is what the bs and cs are for in `mark_links`). It's just an aggregate.
-
-But what happens with filters which actually transform the map: zoom, bundle factors and combine opposites? Zoom can create its own version of the transitivity trap, if we [have](https://causalmap.shinyapps.io/CM2test/?s=415):
-
-> eating lemons --> health; no scurvy
-
-and
-
-> health; fitness --> fast runner
-
-![image-20211216190724734](_assets/image-20211216190724734.png)
-
-we should be very careful when concluding (when zooming)
-
-> eating lemons --> health --> fast runner
-
-... and indeed, [showing continuity](https://causalmap.shinyapps.io/CM2test/?s=416) highlights this error: 
-
-
-
-![image-20211216190609563](_assets/image-20211216190609563.png)
-
-### Showing continuity with arrowtypes
-
-Printing actual numbers (from 0 to 1) on the arrows can be very confusing. So the default is to use symbols. 
-
-- white box: 0
-- half white box: <= 0.5
-- half full box: > .5
-- full box: 1
-
-![image-20211220172600085](_assets/image-20211220172600085.png)
-
-![image-20211220171759409](_assets/image-20211220171759409.png){width=650}
-
-![image-20211216195218720](_assets/image-20211216195218720.png)
-
-![image-20211216200541572](_assets/image-20211216200541572.png)
-
-
-
 ## Calculated fields{#xcalculated-fields}
 
 The app adds some pre-calculated fields for you and adds them to the tables. 
 
 You can use these in various ways to construct filters. For example you can add `frequency` to your factor labels, or filter the map to show only bundles of links consisting of only one link (`find links field=source_frequency value=2 operator=less`).
 
-![image-20211210114813958](_assets/image-20211210114813958.png)
+![image-20211210114813958](_assets/image-20211210114813958.png){width=650}
 
 Some examples of calculated fields:
 
 ### Links table
 
 -  `simple_frequency` is just the number of links in each bundle
-- 🧪 `source_frequency` is the number of different sources in each bundle
+- `source_frequency` is the number of different sources in each bundle
 - `simple_bundle` which is just the influence and consequence labels strung together like this: "influence / consequence".
 - `before_id` gives the ids of any links immediately before the current link (i.e. which point *to* the factor at the *start* of the current link), and likewise for `after_id`. This information is useful when calculating source continuity.
 
 ### Factors table
 
--  `frequency` aka "degree" is the total number of incoming and outgoing links.
--  Other network statistics
-   -  `betweenness`
--  Fields for use with hierarchies:
-   -  `top_level_label` which gives just the top level for each factor. 
+-  betweenness: the number of paths going through the factor. Betweenness is a measure of how central a factor is in the map, how many paths go through it. Betweenness is similar to the frequency, but a factor with lots of links on the edge of the map will have a high frequency but won't have a high betweenness.
+- betweenness_rank: the rank of the betweenness.
+- in_degree: the number of incoming links.
+- out_degree: the number of outgoing links.
+- role: the number of incoming links minus the number of incoming links. High values are drivers, low values are outcomes
+- frequency: the number of links.
+- driver_score: how strongly is this factor a driver?
+- outcome_score: how strongly is this factor an outcome?
+- driver_rank: rank of driver_score.
+- outcome_rank: rank of outcome_score.
+- is_opposable: does the factor label contain a ~.
+- zoom_level: number of ; separators in factor label, plus 1.
+- top_level_label: the label of the factor's ultimate parent in the hierarchy, if any.
+- top_level_frequency: the number of links to and from the top level factor.
 
 ### When combining opposites
 

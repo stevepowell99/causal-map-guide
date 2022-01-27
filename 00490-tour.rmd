@@ -43,13 +43,17 @@ Most people like to hide these filters when they are coding, so they hide the fi
 
 But for analysing your map, you will want to open the filters panel.
 
-#### Shortcut buttons
+### Shortcut buttons
 
 These buttons offer quick ways to add filters without going through a dialog panel.
 
 ### The filter buttons
 
 There are in three sections: analysis, conditional formats and simple formats. See the section on [filters](https://guide.causalmap.app/all-the-filters.html).
+
+### Additional Information {#xadditional-informati}
+
+To see additional information about the statement you are currently viewing such as the `source_id` and `question_id` slide the info toggle.![image-20211220153438354](_assets/image-20211220153438354.png)
 
 ## The right hand side{#rhs}
 
@@ -59,7 +63,7 @@ There are in three sections: analysis, conditional formats and simple formats. S
 
 ### Interactive View{#not2}
 
-An interactive version of the map in which the elements can be moved around and also the upstream and downstream factors are highlighted when the user mouses over them.
+An interactive version of the map in which the elements can be moved around and also the upstream and downstream factors are highlighted when the user moves their mouse over them.
 
 ### Print View{#not}
 
@@ -72,3 +76,12 @@ Simply click on the factor you want to change and edit it. You can change one fa
 ### Tables
 
 Several tables showing lists of factors, links and various metrics and which can be filtered and reorganised in marvellous ways. See the section on [tables](https://guide.causalmap.app/all-the-tables.html).
+
+- [Files tab](#xfile-manager)
+
+- [Updates tab](#xupdates-tab)
+
+- [Data tab](#xdata-manager)
+
+- [Account tab](#account-tab)
+

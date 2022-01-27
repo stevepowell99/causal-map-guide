@@ -34,22 +34,25 @@ Factors are only matched if the search term uses the same case, e.g. “Farming�
 
 For a more visual representation: The following examples demonstrate how applying different upstream and downstream step filters affect the causal pathways presented in the map.
 
-**Searching for text ‘Cash’** 
+**Searching for text ‘Flooding’** 
+
+One step upstream – one step downstream:
+
+![image-20211228115855510](_assets/image-20211228115855510.png){width=650}
 
 
 
-One step upstream – zero steps downstream
+One step upstream – zero steps downstream:
+
+![image-20211228115935071](_assets/image-20211228115935071.png){width=650}
 
 
 
-One step upstream – two steps downstream
+This analysis function is particularly useful for searching for important factors such as intervention activities or intended programme outcomes and can be used in conjunction with [flags](#xflags).
 
+This also works when you include 0 steps upstream and 0 steps downstream:
 
-
-This analysis function is particularly useful for searching for important factors such as intervention activities or intended programme outcomes. This filter is best applied once you know which factors are of importance or interest.
-
-
-
+![image-20211228120112398](_assets/image-20211228120112398.png){width=650}
 
 ## Find statements, find links {#xfind-statements-links}
 
@@ -78,7 +81,7 @@ There are a lot of useful filters specifically for links. For example, rather th
 
 You can filter for links which contain (or do not contain) a certain hashtag. Note that if a specific link contains more than one hashtag, e.g. `doubtful` and `future` you can just that specific link by selecting that specific combination of hashtags from the dropdown, e.g. `doubtful, future`. 
 
-## 🧪 Highlight only
+## Highlight only
 
 Maybe you want to just highlight the factors or links you find, but not remove the others. You can do this with the advanced editor, adding `highlight_only=TRUE`:
 
@@ -109,11 +112,11 @@ you see this:
 ## Excluding factors, links, statements, sources and questions with `notcontains` and `notequals`
 
 
-![image-20211017203030093](_assets/image-20211017203030093.png)
+![image-20211017203030093](_assets/image-20211017203030093.png){width=650}
 
-![image-20211017203439458](_assets/image-20211017203439458.png)
+![image-20211017203439458](_assets/image-20211017203439458.png){width=650}
 
-![image-20211017203255902](_assets/image-20211017203255902.png)
+![image-20211017203255902](_assets/image-20211017203255902.png){width=650}
 
 Note how, logically enough, following a search for factors which do not contain a certain phrase, all the remaining factors have by default a coloured background.
 
@@ -124,9 +127,9 @@ You can exclude statements, sources etc in the same way. Or you could filter for
 
 ## Trace paths / trace robustness
 
-![image-20211017130102189](_assets/image-20211017130102189.png)
+![image-20211017130102189](_assets/image-20211017130102189.png){width=650}
 
-![image-20211016141204775](_assets/image-20211016141204775.png)
+![image-20211016141204775](_assets/image-20211016141204775.png){width=650}
 
 This analysis function is a powerful tool which enables you to view full causal pathways and to interrogate the relationships between specific causal factors. See the next section for more information on how to use the [tracing robustness](#xrobustness).
 

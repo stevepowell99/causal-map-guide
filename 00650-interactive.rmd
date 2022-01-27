@@ -9,7 +9,7 @@ An interactive version of the map in which the elements can be moved around and 
 - Hover over factors to display basic information about them and delete them from the entire map.
 - Hover over links to see the associated quote and other information.
 - Click on links to edit or delete them them.
-- Click on factors to focus on them.
+- Click on factors to focus on them, trace paths from/to them, edit their memo, or delete them.
 
 
 ![image-20211001175928850](_assets/focus.gif){width=650}
@@ -29,4 +29,10 @@ When you have  a lot of factors in your map, the selector in the top-right corne
 When you are viewing a single statement, the colour of the links corresponds to the colour of the highlighted sections of text.
 
 ![image-20211116082854960](_assets/image-20211116082854960.png)
+
+
+
+Tracing paths to a particular factor directly from the interactive map
+
+![](_assets/BhOlErDmwB.gif)
 

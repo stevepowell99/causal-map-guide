@@ -1,4 +1,4 @@
-# The Factor Editor{#xfactor-editor} 
+# The Factor Editor{#xfactor-editor}
 
 ## Editing factor labels in the Factor Editor
 
@@ -52,13 +52,21 @@ The Split checkbox applies to whatever is in the current view - so you can use i
 
 
 
-## The factor editor sidebar
+## The factor editor sidebar{#xfactor-editor-sidebar}
 
 The factor editor also has a sidebar, which shows more details for the factor currently under the cursor:
 
-- The label
-- Any memo
-- Lists of influence and consequence factors
-  - When hovering over the influence or consequence factors, the question_id and quote
+- The label (click on it to:
+  - edit the factor memo 
+  - focus on the factor
+  - delete the factor)
+
+- The memo, if there is one (click on it to edit or add a memo)
+- Lists of influence and consequence factors, with source and statement ids
+  - When hovering over the influence or consequence factors, see the whole original text from the corresponding statement
+  - Click on these boxes to edit the corresponding links directly
+- Note that the sidebar does show you for each factor in the current filter ALL the links / quotes relating to it, even ones which are not in the current filter. This is so you can make a decision about eg changing factor labels which takes into account all the uses of the factor. 
 
 ![image-20211001175928850](_assets/fe sidebar.gif)
+
+If you use emojis in your factor labels, especially emojis with skin colours, you may find it difficult to find the right place in the editor. Tip: put the emojis at the end of the label if possible.

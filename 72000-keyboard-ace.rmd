@@ -1,4 +1,15 @@
-# Keyboard shortcuts for the Factor Editor and Advanced Editor 
+# Keyboard shortcuts {#xkeybarod}
+
+## General
+
+There are only a couple of shortcuts so far:
+
+- Esc should get you out of any modal dialogue
+- Alt+q opens the Gallery
+
+
+
+## Factor Editor and Advanced Editor
 
 For more information about working with the Ace editor, visit [https://ace.c9.io/#nav=about](https://ace.c9.io/#nav=about).
 

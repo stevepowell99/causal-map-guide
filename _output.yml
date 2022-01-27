@@ -30,3 +30,4 @@ bookdown::pdf_book:
   papersize: a5
   keep_tex: yes
 bookdown::epub_book: default
+bookdown::word_document2: default

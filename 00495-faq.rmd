@@ -89,8 +89,8 @@ You use `unique` and `literal` when you don't want to do any counting, you want 
 <details><summary>When I highlight text which overlaps with a previously highlighted section no new highlight appears.</summary>
 Unfortunately there is no easy fix for this bug but it is just cosmetic. You can check you have highlighted the right section by checking the text box below the factor label boxes contains the text you want to highlight. Once you have saved the link the highlight will appear on the statement.</details>
 
-<details><summary>When I use literal labels on my links e.g. to list all the sources like "AM1; AM3; AM5", I can't use `wrap links` to wrap the link labels and insert line breaks, I just get some very long labels.</summary>
-This is just the way the Causal Map functions work, we will fix it sometime, sorry.</details>
+<details><summary>I'm getting an "Ajax error" when viewing tables.</summary>
+Have a look to see if the URL of the app has a lot of parts like this: https://causalmap.shinyapps.io/CM2test/_w_597d2a82/_w_cb49c050/_w_d5b8ca05/_w_6ed03ad1/_w_c1dcc701/_w_c9035090/. If it does, just visit the bare URL (https://causalmap.shinyapps.io/CausalMap2 or https://causalmap.shinyapps.io/CM2test) and start again from there.</details>
 
 
 ## QuIP questions

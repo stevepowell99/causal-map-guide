@@ -1,4 +1,4 @@
-# The Updates panel
+# The Updates tab{#xupdates-tab}
 
 In this panel, you can see updates about all the files you have access to. 
 

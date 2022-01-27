@@ -33,6 +33,10 @@ In Part 1 of this Guide we did in fact also introduce an additional convention, 
 
 This section presents a simple and powerful way of dealing with "negative" factors such as `poor health` which are in some sense the opposite of existing "positive" factors such as `good health`. 
 
+```{r,echo=F}
+knitr::include_url("https://player.vimeo.com/video/636997200")
+```
+
 In some kinds of causal mapping and systems diagramming, more sophisticated approaches are used in which the factors are considered to be variables and the links between them can have positive or negative strength. The approach we present here is a simpler alternative.
 
 Here is an example of quite barefoot QuIP-style coding in which we have not used strength at all. Nevertheless there are the beginnings of some ideas about (and issues with) polarity: for example, we have `fit`and `not fit`. 

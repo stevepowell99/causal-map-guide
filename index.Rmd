@@ -11,6 +11,11 @@ link-citations: true
 description: "Guide to Causal Mapping"
 ---
 
+```{r}
+knitr::opts_chunk$set(cache=T)
+library(tidyverse)
+```
+
 # ⚡ Overview
 
 ![img](_assets/simplify.png){width=650px}
@@ -25,33 +30,15 @@ This Guide is for you if:
 
 If you are in a hurry (and who isn't?), look for overview sections and subsections marked with a ⚡.
 
-::: {.rmdnote}
-
-This Guide accompanies Causal Map 2, the new version of Causal Map, and is valid from September 2021. 
-
-The [old version of this Guide](http://guide2.causalmap.app.s3-website.eu-west-2.amazonaws.com/) covers the old version of Causal Map (the one hosted at go.causalmap.app). 
-
-:::
-
-## Formatting in this guide…
-
-We display statements and quotes from them, respondents’ actual words, in quote marks:
-
-“Thanks to the financial support, I can now go to school”
-
-We display factor labels with underlines, like this:
-
-<u>Able to go to school</u>
-
-When we display whole coded causal claims which include an arrow, we don’t use the underlines:
-
-Financial support ➜ Able to go to school 
-
-This first part of the Guide covers all the basic ideas of causal mapping. The second part covers some additional ideas, which correspond to the features enabled for those with "Extra" subscriptions to the Causal Map app.
+Features marked 🧪are experimental and are implemented on the [test server](https://causalmap.shinyapps.io/CM2test) only.
 
 ## Videos
 
 Check out our small but growing library of [short, focussed training videos](https://causalmap.app/course/causal-map-basics/).
+
+## Quizzes
+
+Test your knowledge of causal mapping and the Causal Map app with our structured series of [quizzes](https://causalmap.shinyapps.io/Learning/).
 
 ## License {.unnumbered}
 

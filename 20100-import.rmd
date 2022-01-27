@@ -57,7 +57,11 @@ Your statements file must have at least one column with the text of the statemen
 
 ## Uploading from PDFs
 
-You can make a basic statements table from a set of PDF files using our [free utility](https://causalmap.shinyapps.io/pdf2excel/)  which will save you a lot of time. You can upload all your files at once and get an Excel file of the right format for uploading into Causal Map.  
+You can make a basic statements table from a set of PDF files using our [free utility](https://causalmap.shinyapps.io/pdf2excel/)  which will save you a lot of time. You can upload all your files at once and get an Excel file of the right format for uploading into Causal Map. 
+
+This works well on simple PDF files but may miss text which is in boxes and columns.  As an alternative you can export a PDF to Excel (one by one) [here ](https://www.adobe.com/uk/acrobat/online/pdf-to-excel.html). The resulting file is also full of pictures etc but does seem to contain all of the text, although in many columns. 80% of the time it identifies suitably large chunks of text, but sometimes you get very small fragments. 
+
+We provide another our [free utility](https://causalmap.shinyapps.io/pdf2excel/)  (Tool 2) which batch converts any number of these Adobe Excel files into an Excel file which you can upload to Causal Map.
 
 ## Making a basic statements table by hand
 

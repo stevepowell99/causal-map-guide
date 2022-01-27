@@ -31,7 +31,7 @@ What you can expect from your download:
 - Statements table: the `statement_id`  field is not included. 
   - Don't delete any of the rows, unless you know what you are doing.  (You can delete any rows after the currently last coded statement.)
   - You can add more statements at the bottom of the table.
--  🧪 Statements table on our Test server: the `statement_id` field IS included when you download a file.
+-  Statements table on our Test server: the `statement_id` field IS included when you download a file.
   - You can delete rows and reorder rows (by dragging them around in Excel). Don't change the `statement_id`.
     - Note: If you delete rows which had links, these links will become orphaned and will be displayed in the maps only when you do not filter by any `statement_id`. This probably isn't what you want -- you might want to delete the corresponding links too. If you choose to add new rows as well as deleting old rows, the `statement_id` of the new rows will be the row number, so make sure this is what you want -- will they then get "gifted" orphaned links?
 - Sources table: the `source_id`  field is included. 

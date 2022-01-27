@@ -10,7 +10,9 @@ See [here](#xfixed-colours).
 
 ## Wrap factor/link labels
 
-Changing the wrap length of your labels can help make your map clearer and easier to read. As with other sliders, you might find it helpful to keep the filter panel open whilst you select your label length!Click on the wrap factor/link labels buttons to open their respective filter panels. Simply adjust the slider to your chosen length for your labels. ![img](https://lh3.googleusercontent.com/I4TIZreXFvlVnwTbnbGTT5tUArPT7uCTKKIcw04Qaf-5rBhNEt4iOclOPhE-OfhNCuR0nQl1UjS8WvsAeFActSg-bqlPDIEruh58tnrnNVTJ1M-E8hgJYycyOFz8JA)
+Changing the wrap length of your labels can help make your map clearer and easier to read. As with other sliders, you might find it helpful to keep the filter panel open whilst you select your label length. Click on the wrap factor/link labels buttons to open their respective filter panels. Simply adjust the slider to your chosen length for your labels. ![img](https://lh3.googleusercontent.com/I4TIZreXFvlVnwTbnbGTT5tUArPT7uCTKKIcw04Qaf-5rBhNEt4iOclOPhE-OfhNCuR0nQl1UjS8WvsAeFActSg-bqlPDIEruh58tnrnNVTJ1M-E8hgJYycyOFz8JA)
+
+We have now fixed various bugs with wrapping link and factor labels.
 
 ## Cluster factors{#xcluster-factors}
 
