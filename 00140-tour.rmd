@@ -1,4 +1,10 @@
-# ⚡ Quick tour of the app{#quick-tour }
+#  Quick tour of the app{#quick-tour}
+
+```{r,echo=F}
+
+knitr::include_url("https://player.vimeo.com/video/674369121")
+
+```
 
 The app has two parts, the [left-hand side](#xlhs) and the [right-hand side](#rhs).
 
@@ -64,6 +70,8 @@ To see additional information about the statement you are currently viewing such
 ### Interactive View{#not2}
 
 An interactive version of the map in which the elements can be moved around and also the upstream and downstream factors are highlighted when the user moves their mouse over them.
+
+The Interactive View is designed to let you interact with and explore your map, whereas the main point of Print View is to get something high quality and static for including in reports.
 
 ### Print View{#not}
 

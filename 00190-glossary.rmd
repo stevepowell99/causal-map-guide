@@ -1,4 +1,4 @@
-# ⚡ 📚 Glossary{#glossary}
+#  📚 Glossary{#glossary}
 
 ## Generic terminology for causal mapping
 
@@ -9,6 +9,7 @@
 | **Bundle** | You can bundle links or factors. Bundling factors merges factors containing a chosen word or phrase. You can also bundle links which are between the same influence and consequence factors, which are usually mentioned in different statements by different sources. A thicker line or a label can be used to show the number of links in the bundle. |
 | **Causal links** | Causal links are the links between the consequence and influence factors. Each link represents a casual claim. |
 | **Combining opposites** | When we combine any pairs of factors which are opposites. This means merging two factors which are identical apart from one starts with a '~', to indicate a negative. On print view the link will show green and pink to indicate that both the positive and negative of the factor is true. |
+| **Contrary factor** | With a pair of opposite factors like `Progress` and `~Progress`, we call `Progress` the *ordinary* factor and we call `~Progress` the *contrary* factor. (We prefer this terminology to, say, "negative factor" as it has fewer unwanted connotations: contrary factors don't have to be bad.) |
 | **Consequence factor** | A causal factor at the end of a link, that has been influenced by another factor. |
 | **Field** | Additional data associated with a statement such as respondent ID number, respondent age or question number. |
 | **Flags** aka themes             | A recurring subject found within the factor labels i.e. farming or health. Often we use symbols like # to make sure that the flags are uniquely searchable. |

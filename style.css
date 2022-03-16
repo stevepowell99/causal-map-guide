@@ -79,17 +79,21 @@ text-align:right;
   float:right;
   font-size:x-small;
 }
-.book-part{border-bottom:2px solid #76f7ff55}
+.book-part{border-bottom:4px solid #76f7ff55;padding:4px;}
+.book-part{background-color: #76f7ff44;}
 
 
 details{
-  background-color: antiquewhite;
-      padding: 10px;
-    margin: 10px;
+  background-color: white;
+    margin: 10px 10px 0px 10px;
+      padding: 3px;
     border-radius: 10px;
+  border: 1px solid #6dc4c877;
 }
 details summary{
-  background-color: white;
+    padding: 5px;
+    border-radius: 3px;
+  background-color: #6dc4c877;
 }
 summary{
 margin-bottom:10px;

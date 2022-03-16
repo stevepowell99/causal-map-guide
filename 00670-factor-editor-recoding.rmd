@@ -1,8 +1,21 @@
 # The Factor Editor{#xfactor-editor}
 
+## Summary
+
+The Factor Editor is a great way to:
+
+- edit your factor labels in bulk
+- combine several factors into one
+- use the Split checkbox to edit only the factors you can see in the map as currently filtered, and leave untouched any other instances of the same factors in the rest of the map. 
+- using the sidebar, 
+  - see and edit your factor memos 
+  - see and edit every link to and from each factor
+
+
+
 ## Editing factor labels in the Factor Editor
 
-Click inside the editor and retype the factor labels however you want. You can rewrite entire lines, but you can't delete or add lines.
+Click inside the editor and retype the factor labels however you want. You can rewrite entire lines any way you want, but you can't delete or add lines.
 
 Then hit Update.
 
@@ -11,6 +24,8 @@ Then hit Update.
 **TIP**: press Ctrl F (Cmd F on Mac) to find or Ctrl H (Cmd alt F on Mac) to replace.
 
 **TIP**: Reformulate factor labels so that some common themes come *first*.
+
+**TIP**: The Factor Editor is especially useful with [hierarchical coding]({#xhierarchical-coding}).
 
 **TIP**: Use flags like “Problem!” or “#innovation”, unique words which are easy to search for, to make it easy to find particular kinds of factor within the editor and elsewhere.
 

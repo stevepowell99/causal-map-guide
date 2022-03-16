@@ -1,2 +1,2 @@
-# (PART) 💻 The app, panel by panel{-}
+# (PART) 💻 The rest of the app{-}
 

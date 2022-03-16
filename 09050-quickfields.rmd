@@ -77,15 +77,19 @@ You can combine more than one quick field at once:
 
 Quickfields become part of the factors table, you can even export them, but the values of the fields are always immediately overwritten if you change the labels. Values of fields derived from labels always take precedence, so there is no point roundtripping a quick field as it will be overwritten according to the labels. (You can always roundtrip other fields in the factors table which are not mentioned in the labels. So you can have a field called, say, `valence`, which is not mentioned in the factor labels in the form, say, `/ valence:high`).
 
-## Hiding quickfields
+## Hiding quickfields{#xhiding-quickfields}
 
-Quickfields can be hidden in labels using the `hide_quickfields` filter, to go from this:
+Quickfields can be hidden in labels using the `hide quickfields` filter, 
 
-![image-20220124103710109](_assets/image-20220124103710109.png)
+![image-20220210163307815](_assets/image-20220210163307815.png)
+
+to go from this:
+
+![image-20220124103710109](_assets/image-20220124103710109.png){width=650}
 
 to this:
 
-![image-20220124103637546](_assets/image-20220124103637546.png)
+![image-20220124103637546](_assets/image-20220124103637546.png){width=650}
 
 Slashes and spaces and any leading semicolon will be removed.
 

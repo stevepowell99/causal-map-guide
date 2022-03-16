@@ -1,4 +1,4 @@
-# ⚡ All the tables{#xall-tables}
+#  All the tables{#xall-tables}
 
 
 ```{r,echo=F}
@@ -86,3 +86,7 @@ Do you want some preformatted quotes for your report?
 Each table can also be shown as simple text for copying and pasting.
 
 If you want printable quotes for your report, there is a table preset for that. Or go manually to the links table, click the 🖨️ button to display Print View, and choose the columns you want. They will be shown in the Print View in the same order. Then just copy and paste using the "Copy" button.
+
+🧪 Filtering print view of tables
+
+Now you press the toggle for Print View in a table, you can still use the additional table filters to filter the information in your table. This can be really handy, for example for finding the right quote. Don't forget you can also include and exclude the fields which appear in Print View, and change their order, using the Show Columns box. Only the first 100 rows are shown.

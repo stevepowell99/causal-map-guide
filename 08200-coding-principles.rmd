@@ -102,6 +102,11 @@ The diagram below is an acceptable causal map, even though the intervening two v
 
 Hierarchical coding is one way to structure your coding. However, sometimes you don't want to think in terms of a strict hierarchy, or maybe you have an additional set of themes which cut across that hierarchy.
 
+````{r,echo=F}
+knitr::include_url("https://player.vimeo.com/video/671894620")
+
+````
+
 Flags are useful in either of these cases.
 
 Flags are just sequences of characters within a factor label to which you have given a special meaning, and which are unique and easy to search for. These can include letters, emojis or phrases. You can do coding without any such flags if you want, but it can help when searching and filtering.

@@ -1,4 +1,0 @@
-knitr::include_url("https://player.vimeo.com/video/596594094")
-knitr::include_url("https://player.vimeo.com/video/596519456")
-knitr::include_url("https://player.vimeo.com/video/596497752")
-knitr::include_url("https://player.vimeo.com/video/618270513")

@@ -19,8 +19,6 @@ If you want you can also leave either (but not both) factor selectors blank, e.g
 - to search from some specific factor or factors to "anywhere", or 
 -  to search from "anywhere" to some specific factor or factors.
 
-(However, at the moment you can not trace robustness if either factor selector is blank.)
-
 Once you click `apply filter` your map will appear, as below. Orange indicates the origin(s) of the path, purple the target factor(s) and green any factors in between.
 
 ![image-20211016141204775](_assets/image-20211016141204775.png){width=650}
@@ -63,9 +61,11 @@ If you look at the robustness of the path from interventions B and C to an outco
 
 Of course, in principle you can see all of this just by looking at the maps and to what extent B, C and D share paths to E. But sometimes it is hard to see and this metric anchors a narrative description in actual numbers.
 
-## Tracing paths and calculating robustness *by field* {#xrobustness-by-field}
+<!--## Tracing paths and calculating robustness *by field* {#xrobustness-by-field}
 
-### Tracing paths by field, e.g. "by source"
+### Tracing paths by field, e.g. "by source" 
+
+[🧪 this is superseded by [thread tracing](#xtracing-threads)]
 
 Don't fall into the [transitivity trap](#xtransitivity-trap)! 
 
@@ -90,5 +90,5 @@ For example you can put `source_id` in the box in order to count how many source
 
 This is important because it's usually more credible to ask how many people mentioned all the bits of some path than to ask how many pieces of evidence are there altogether.
 
-Or you could put `District` to find out, looking at each district individually, there is evidence (possibly assembled from different sources within that district) for the path.   
+Or you could put `District` to find out, looking at each district individually, there is evidence (possibly assembled from different sources within that district) for the path.   -->
 

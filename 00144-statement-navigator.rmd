@@ -1,4 +1,4 @@
-# ⚡ The Statement Navigator{#xstatement-nav}
+#  The Statement Navigator{#xstatement-nav}
 
 When you are looking at one statement at a time, you will see the navigation bar displayed below.
 

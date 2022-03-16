@@ -16,7 +16,7 @@ knitr::opts_chunk$set(cache=T)
 library(tidyverse)
 ```
 
-# ⚡ Overview
+# Overview
 
 ![img](_assets/simplify.png){width=650px}
 
@@ -28,19 +28,30 @@ This Guide is for you if:
 
 ------
 
-If you are in a hurry (and who isn't?), look for overview sections and subsections marked with a ⚡.
+If you are in a hurry (and who isn't?), just read the first part, Getting Started.
 
 Features marked 🧪are experimental and are implemented on the [test server](https://causalmap.shinyapps.io/CM2test) only.
 
 ## Videos
 
-Check out our small but growing library of [short, focussed training videos](https://causalmap.app/course/causal-map-basics/).
+Check out our growing library of [short, focussed training videos](https://guide.causalmap.app/video-list.html#xvideo-list).
 
 ## Quizzes
 
-Test your knowledge of causal mapping and the Causal Map app with our structured series of [quizzes](https://causalmap.shinyapps.io/Learning/).
+Test your knowledge of causal mapping and the Causal Map app with our structured series of [quizzes](https://causalmap.shinyapps.io/quizzes/).
 
 ## License {.unnumbered}
 
 This guide is licensed to you under [Creative Commons Attribution-NonCommercial-NoDerivatives 4.0 International License](http://creativecommons.org/licenses/by-nc-nd/4.0/).
 
+
+```{r,echo=F}
+if(T) readLines("Guide-to-causal-mapping.Rmd") %>% 
+  str_match(".*vimeo\\.com.*") %>% 
+  keep(~!is.na(.)) %>% 
+  unique %>% 
+  paste0("```{r,echo=F}\n",.,"\n```\n") %>% 
+  c("# Video list{#xvideo-list}\n\nThese videos are all included at different points in the Guide. If you love videos, here they are again in one place. Feel free to binge.",.) %>% 
+  writeLines("00195-video_list.rmd")
+
+```

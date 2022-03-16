@@ -27,3 +27,6 @@ You can create and edit the memos from interactive view:
 
 
 
+The factors table has some presets. For example, sometimes it can be useful to break down hierarchical labels into first, second, third levels and so on.
+
+![image-20220214121441722](_assets/image-20220214121441722.png)

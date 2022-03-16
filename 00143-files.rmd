@@ -1,4 +1,4 @@
-# ⚡ The File Manager{#xfile-manager}
+#  The File Manager{#xfile-manager}
 
 At the top of the page you will find information about your subscriptions, the files you have crested and any teams you manage.
 

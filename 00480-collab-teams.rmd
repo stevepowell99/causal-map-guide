@@ -1,10 +1,20 @@
 # Collaborating at Causal Map
 
-## Collaboration
+## 🧪 Collaboration 
 
-At the moment, you can log in to the same or different maps from the same or different accounts, including from multiple browser tabs -- so you can have two maps open at once.
+You and your colleagues can log in to the same or different maps from the same or different accounts^[depending on your subscription status], including from multiple browser tabs -- so you can have two maps open at once.
 
-Two different people *can* edit the same file. However at the moment the results can be unpredictable and we recommend working asynchronously (taking it in turns.) If you are viewing a file while someone else edits it, you will have to refresh to see any changes they made. 
+*Two different people cannot edit the same file at the same time*. If you open a file which someone else is editing, you will see a warning and the file will be opened for you in view-only (or copy-only) mode. ![image-20220129115019281](_assets/image-20220129115019281.png)
+
+To see any changes they make, you will have to refresh the browser tab. 
+
+Similarly, if you have a file open in one tab and open the same file in another tab, you will receive a warning and the second tab will be view-only.
+
+![image-20220129115103077](_assets/image-20220129115103077.png)
+
+Of course you can work asynchronously (taking it in turns to edit). 
+
+It is also possible to work on two or more separate files separately and then [merge them](xmerging-files).
 
 ## Teams
 

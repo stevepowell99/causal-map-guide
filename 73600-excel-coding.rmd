@@ -12,7 +12,13 @@ Optionally, on the statements tab the statement_id column works in a similar way
 
 You can download the example and play around with it or use it as a template for your own map. 
 
-Also once in excel format causal map becomes compatible with other data visualisation tools like Gephi, and if you want to know more about that check out our video on using the causal map app alongside other data visualisation tools.
+Also once in excel format causal map becomes compatible with other data visualisation tools like Gephi, and if you want to know more about that check out the video below video on using the causal map app alongside other data visualisation tools.
+
+```{r,echo=F}
+
+knitr::include_url("https://player.vimeo.com/video/599620015")
+
+```
 
 You can download this file [here](https://docs.google.com/spreadsheets/d/12eXQDJtvlLO6qRrwbxwvkchfdTNLSbjo/edit?usp=sharing&ouid=112812082380437768869&rtpof=true&sd=true).
 

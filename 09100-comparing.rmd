@@ -89,3 +89,12 @@ If you use percentages for labels, the label shows both the raw number and the p
 
 If you use percentages for colour or width of the links, the percentage is used rather than the raw number. 
 
+## Surprise{#xsurprise}
+
+The most interesting filter uses a function which we call `surprise`. [Here](https://causalmap.shinyapps.io/CausalMap2?s=802) is an example.
+
+![image-20220210094731470](_assets/image-20220210094731470.png)
+
+
+
+ We have bundled the links by name of District (1, 2, 3 or 4) and scaled the links by source count (count of the number of sources mentioning each link): but we have coloured the links by `surprise`. The bright green from poor weather conditions to poor farm production means that this route was particularly often mentioned in district 3 *even taking into account the number of times people in district 3 mentioned anything (in the whole filtered map)*. And the bright purple link for district 1 means the opposite.  Whereas for district 4, there are quite a lot of mentions but the pale colour shows us that this is not particularly surprising. Basically, using `surprise` means you can ignore the pale links and just look at the brightly coloured ones.

@@ -1,4 +1,4 @@
-# ⚡ How to upload and update your data -- Overview{#uploadandupdate}
+#  How to upload and update your data -- Overview{#uploadandupdate}
 
 The following section will answer your questions and direct you to the relevant sections whatever you are doing with your data, whether it is downloading, modifying or appending. If you are interested in a more in-depth explanation of uploading and updating data in the Causal Map app, please read the subsequent sections.
 

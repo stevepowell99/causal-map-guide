@@ -50,7 +50,7 @@ Or you might want to colour your links with a discrete scale of colours accordin
 
 The app works out for you if your scale is numerical or discrete, so you don't need to worry about that.
 
-See also the special section on [conditional formatting with percentages](#percent).
+See also the special sections on [conditional formatting with percentages](#percent) and [conditional formatting with surprise](#xsurprise).
 
 Also, much of this formatting only makes sense in terms of bundles of links from one factor to another. The app will bundle the links for you in these cases.
 
@@ -66,7 +66,7 @@ In this case you can use the function `initials`.
 
 ![image-20220113122358127](_assets/image-20220113122358127.png)
 
-This is especially useful when you do [conditional formatting with percentages](#percent)
+This is especially useful when you do [conditional formatting with surprise](#xsurprise).
 
 ## Conditional formatting for factors
 
@@ -148,6 +148,13 @@ Some examples of calculated fields:
 - zoom_level: number of ; separators in factor label, plus 1.
 - top_level_label: the label of the factor's ultimate parent in the hierarchy, if any.
 - top_level_frequency: the number of links to and from the top level factor.
+- is_in_hierarchy: whether the factor is part of any hierarchy or is just a "singleton" factor.
+
+You can use `is_in_hierarchy` to focus only on your hierarchical structure, eg you can add a filter 
+
+`find factors field=is_in_hierarchy value=true operator=equals`
+
+to exclude singletons.
 
 ### When combining opposites
 

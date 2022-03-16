@@ -1,4 +1,4 @@
-# ⚡ The top menu{#xtop-menu}
+#  The top menu{#xtop-menu}
 
 This section is all about how to manage using the top menu to help you deal with the currently loaded file. Hover over the icons to see what they do.
 
@@ -62,13 +62,13 @@ This panel shows a dropdown list of times when you made changes to the mapfile i
 
 ## Sharing a link using shortlinks{#xshortlinks}
 
-To share a link to a file click the orange arrow on the top panel. You can then add a title for this shortlink, to remind you of its content, but this is optional. The short link will be copied to your clipboard and anyone you send this to will be able to see your map with the current filters applied (providing they have the correct [permissions](#xpermissions)).
+To share a link to a file click the orange arrow on the top panel. You can then add a title for this shortlink, to remind you of its content, but this is optional. The short link will be copied to your clipboard and you can send it to someone else e.g. via email. Anyone who clicks on this link will be able to see your map with the current filters applied (providing they have the correct [permissions](#xpermissions)).
 
 ![6vEfSLFOlx](_assets/6vEfSLFOlx.gif){width=650}
 
 The server which a shortlink takes you to is (obviously?) the one in the shortlink itself. So https://causalmap.shinyapps.io/CM2test/?s=138 takes you to the Test server whereas if you change the server name to https://causalmap.shinyapps.io/CausalMap2?s=138 that will recreate the same filter on the Production server.
 
-Shortlinks also store information about when the link was created. 
+Shortlinks also store information about when the link was created and who by. 
 
 The [Gallery](#xga) includes all shortlinks, initially filtered to show just shortlinks for the current file.
 
@@ -85,7 +85,7 @@ You can use markdown syntax to format your title, for example
 
 ![image-20211115175648298](_assets/image-20211115175648298.png){width=650}
 
-The above buttons relate to uploading your data, see [this section](#xuploading-and-updating) for more information.
+The above buttons relate to uploading your data, see [this section](#ximport) for more information.
 
 ## Chat about this file
 

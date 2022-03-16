@@ -12,9 +12,19 @@ Uploading data in Causal Map is simply done. Click the upload icon, browse your 
 
 It is important that your file is in the right format to make it compatible with the app and the following section will show you how to format your file. 
 
+The video below shows you how to format and upload a set of statements for coding to the Causal Map App.
+
+```{r,echo=F}
+knitr::include_url("https://player.vimeo.com/video/637121851")
+```
+
+And click [here](https://causalmap.app/wp-content/uploads/2022/03/template-upload-2-2.xlsx) to download the excel template. 
+
 ## Formatting your file: The basics {#formattingyourfile}
 
-![image-20211001175928850](_assets/standardimport.gif){width=650}
+```{r,echo=F}
+knitr::include_url("https://player.vimeo.com/video/604138709")
+```
 
 When uploading data for coding the only data you **need** to upload to the app is a table of statements as an xlsx file. Your file must have a header row with the names of the fields; the name of the column with the actual responses must be `text`. 
 

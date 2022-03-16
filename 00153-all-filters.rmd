@@ -1,4 +1,4 @@
-# ⚡ Introduction to filters{#xintro-filters}
+#  Introduction to filters{#xintro-filters}
 
 ```{r,echo=F}
 knitr::include_url("https://player.vimeo.com/video/618270513")

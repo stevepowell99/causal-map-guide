@@ -49,6 +49,8 @@ Powell, S. (2019). Supplement to Theories of Change: Making Value Explicit. _Jou
 
 ## Bibliography of selected causal mapping approaches
 
+We also have a more complete [Zotero library on causal mapping](https://www.zotero.org/groups/2858107/causal-mapping/library). Here are some of the key papers.
+
 Ackermann, F., & Eden, C. (2004). Using Causal mapping: individual and group; traditional and new. *Systems Modelling: Theory and Practice*, 127–145. 
 
 
