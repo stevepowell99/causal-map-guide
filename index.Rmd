@@ -18,7 +18,10 @@ library(tidyverse)
 
 # Overview
 
-![img](_assets/simplify.png){width=650px}
+```{r,echo=F}
+
+knitr::include_url("https://player.vimeo.com/video/689223728")
+```
 
 This Guide is for you if:
 
@@ -38,7 +41,7 @@ Check out our growing library of [short, focussed training videos](https://guide
 
 ## Quizzes
 
-Test your knowledge of causal mapping and the Causal Map app with our structured series of [quizzes](https://causalmap.shinyapps.io/quizzes/).
+Test your knowledge of causal mapping and Causal Map with our structured series of [quizzes](https://causalmap.shinyapps.io/quizzes/).
 
 ## License {.unnumbered}
 

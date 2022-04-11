@@ -2,6 +2,10 @@
 
 These videos are all included at different points in the Guide. If you love videos, here they are again in one place. Feel free to binge.
 ```{r,echo=F}
+knitr::include_url("https://player.vimeo.com/video/689223728")
+```
+
+```{r,echo=F}
 knitr::include_url("https://player.vimeo.com/video/674369121")
 ```
 

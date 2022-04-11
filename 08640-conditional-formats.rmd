@@ -50,6 +50,20 @@ Or you might want to colour your links with a discrete scale of colours accordin
 
 The app works out for you if your scale is numerical or discrete, so you don't need to worry about that.
 
+🧪 The default discrete palette is https://colorbrewer2.org/#type=qualitative&scheme=Set1&n=9, but you can change the palette number like this:
+
+```
+color links field = #area fun=literal pal=6
+```
+or just
+```
+color links value = literal:#area pal=6
+```
+Palette 2 is a good choice if you don't like the paler colours in palette 1 (the default).
+
+
+
+
 See also the special sections on [conditional formatting with percentages](#percent) and [conditional formatting with surprise](#xsurprise).
 
 Also, much of this formatting only makes sense in terms of bundles of links from one factor to another. The app will bundle the links for you in these cases.

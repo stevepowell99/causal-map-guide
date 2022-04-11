@@ -106,3 +106,19 @@ This makes particular sense **when the lower levels of the hierarchy might diffe
 ## Current limitation
 
 When you use filters which merge factors together (zooming and bundling factors) the values of quickfields for any factors which are lost because they are nested into the higher levels is not available.    
+
+## Quickfields for factor labels versus hashtags for links
+
+It makes most sense to add dimensional information as described above when the distinctions are best understood as part of the causal structure, as part of the hierarchy of factors. For example:
+
+- You want to express two or more different dimensions within your factor system at the same time, e.g. both *time* and *theme*. 
+- There might be qualitative differences in the lower parts of the hierarchy, e.g.
+  - Approach /sport:football; dealing with penalties
+  - Approach /sport:swimming; different lengths 
+
+On the other hand, you might prefer to use **link hashtags rather than quickfields** if: 
+
+- The dimensions you want to record cut right across your entire factor system and don't apply to any particular part of it
+- You want to combine the information with information from your sources table. For example, you might have a set of 20 documents, 5 on each of 4 countries, and so in your links table (transferred automatically from the sources table) you already have a field called, say, #country; but sometimes a report on one country, say, China, makes causal claims about a different country, say France. In this case, you might want to add a hashtag #country:France to these links. 
+  - 🧪What should the app do in this case? Should it override the information in the #country column of the links table, which would have been `China` in this case, rewriting it as `France`?
+

@@ -1,0 +1,53 @@
+# Merging files{#xmerging-files}
+
+You want to merge files "foxtrot", "golf "and "hotel" into one. What you are going to do is create a blank file and then use the merge mapfile command to merge in the file foxtrot, and save the map as currently filtered (i.e. including all the contents of foxtrot which arrive via the filter), and then repeat for the others.
+
+1. Create a new file under a new name e.g. "my-merged-file"
+
+2. Type this in the Advanced Editor:
+
+   - `merge mapfile path=foxtrot`
+
+3. Press Save in the Advanced Editor
+
+4. Save the file as currently filtered: 
+
+   - Press Save As: ![](_assets/image-20220126194223383.png)
+   - Then press: ![image-20220126194329472](_assets/image-20220126194329472.png)
+
+5. You now have a file my-merged-file which has as its contents the file foxtrot.
+
+6. Repeat steps 2-4 exactly as above, but with the command `merge mapfile path=golf`. Your file my-merged-file will now contain both files, and all the tables will have a column `map_id` in the links table, which distinguishes the files, with the value 2 for foxtrot and 3 for golf.
+
+7. Repeat steps 2-4 exactly as above, but with the command `merge mapfile path=hotel`. Your file my-merged-file will now contain both files, and all the tables will have a column `map_id` in the links table which distinguishes the files, with the value 2 for foxtrot, 3 for golf and 4 for hotel.
+
+8. If you want, you can then visualise the different links like this (in this case, the files already had mostly common factors):
+
+   ![image-20220126195244445](_assets/image-20220126195244445.png)
+
+   The filters here were:
+
+   `bundle links field=map_id
+   scale links value=count:link_id
+   color links value=unique: map_id lo=#ffaaaa mid=#aaffaa hi=#aaaaff`
+
+You can verify the number of imported links like this:
+
+![image-20220126195813048](_assets/image-20220126195813048.png)
+
+🌶️🌶️🌶️Warning: that filter in the Advanced Editor will merge the data in every time it is used, either when you press Save or when creating a shortlink. So if in doubt, delete the filter as soon as you save the file "as currently filtered".
+
+If you wish, you can [roundtrip](#xroundtripping) the file to add a column called, say, `original map` in the links table next to the column `map_id` which contains names rather than numbers to make it easier to remember what is what. In any case you can use the `map_id` (or `original_map`) fields to filter and/or format the map however you like.
+
+Alternatively you could first download the constituent files to Excel (roundtripping) and provide a column (with the same name, e.g. "original_file") in at least the statements tabs in all the constituent files, before merging. You can also do that for the links tab. You can do it for sources, questions and factors too, but the identifiers would get coalesced if there were duplicates (which there might be by design) with the first map winning. 
+
+## Alternative method
+
+You can also create a blank file and merge in all the constituent files like this:
+
+```
+merge mapfile path=foxtrot
+merge mapfile path=golf
+merge mapfile path=hotel
+```
+remembering to then "save file as currently filtered". However using this method, the `map_id` columns will not be created for you.
