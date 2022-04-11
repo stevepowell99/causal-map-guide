@@ -1,0 +1,100 @@
+/*Dark blue:
+C94 M87 Y45 K59
+R31 G31 B54
+Hex: #1f1f36
+
+Light blue (in logo):
+C47 M0 Y11 K0
+R109 G196 B200
+#6dc4c8
+
+Light blue (highlight):
+C58 M0 Y25 K0
+R118 G247 B255
+#76f7ff
+
+Light yellow:
+C7 M0 Y66 K0
+R247 G237 B115
+#f7ed73
+
+Pink:
+C0 M58 Y3 K0
+R255 G143 B184
+#ff8fb8
+
+Mint green:
+C60 M0 Y53 K0
+R0 G255 B175
+#00ffaf
+*/
+
+.header-section-number{
+  display:none;
+}
+p.caption {
+  color: #bbb;
+  margin-top: 10px;
+}
+p code {
+  white-space: inherit;
+}
+pre {
+  word-break: normal;
+  word-wrap: normal;
+}
+pre code {
+  white-space: inherit;
+}
+
+.hi {
+  background-color:whitesmoke;
+  padding:10px;
+  border-radius:5px;
+}
+.hi::before{
+  content:"In the app";
+  float:right;
+}
+
+.focus{
+  border: 1px solid #6dc4c8;
+  border-radius: 5px;
+  margin-bottom: 10px;
+  padding: 15px;
+}
+
+.show_mark_p{
+float:right;
+text-align:right;
+}
+
+.show_mark{
+  background-color: #ccddee;
+  margin-bottom: 10px;
+  padding:5px;
+  border-radius: 5px;
+}
+.caption{
+  float:right;
+  font-size:x-small;
+}
+.book-part{border-bottom:4px solid #76f7ff55;padding:4px;}
+.book-part{background-color: #76f7ff44;}
+
+
+details{
+  background-color: white;
+    margin: 10px 10px 0px 10px;
+      padding: 3px;
+    border-radius: 10px;
+  border: 1px solid #6dc4c877;
+}
+details summary{
+    padding: 5px;
+    border-radius: 3px;
+  background-color: #6dc4c877;
+}
+summary{
+margin-bottom:10px;
+}

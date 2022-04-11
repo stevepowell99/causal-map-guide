@@ -1,0 +1,45 @@
+p.caption {
+  color: #777;
+  margin-top: 10px;
+}
+p code {
+  white-space: inherit;
+}
+pre {
+  word-break: normal;
+  word-wrap: normal;
+}
+pre code {
+  white-space: inherit;
+}
+
+.hi {
+  background-color:whitesmoke;
+  padding:10px;
+  border-radius:5px;
+}
+.hi::before{
+  content:"In the app";
+  float:right;
+}
+
+.focus{
+  background-color: pink;
+  margin-bottom: 10px;
+}
+
+.show_mark_p{
+float:right;
+text-align:right;
+}
+
+.show_mark{
+  background-color: #ccddee;
+  margin-bottom: 10px;
+  padding:5px;
+  border-radius: 5px;
+}
+.caption{
+  float:right;
+  font-size:x-small;
+}

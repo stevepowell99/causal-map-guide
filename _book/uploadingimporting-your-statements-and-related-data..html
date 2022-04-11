@@ -1,0 +1,377 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+<title>Chapter 45 💻 Uploading/Importing your statements and related data. | Guide to Causal Mapping</title>
+<meta name="author" content="Steve Powell &amp; Causal Map Ltd">
+<meta name="description" content="The only data you need to provide is a table of statements as the only tab in an xlsx file. Your file must have a header row with the names of the fields.  45.1 Making a basic statements table You...">
+<meta name="generator" content="bookdown 0.24.1 with bs4_book()">
+<meta property="og:title" content="Chapter 45 💻 Uploading/Importing your statements and related data. | Guide to Causal Mapping">
+<meta property="og:type" content="book">
+<meta property="og:url" content="https://causalmap.app/uploadingimporting-your-statements-and-related-data..html">
+<meta property="og:image" content="https://causalmap.app/_assets/image-20210520221329966.png">
+<meta property="og:description" content="The only data you need to provide is a table of statements as the only tab in an xlsx file. Your file must have a header row with the names of the fields.  45.1 Making a basic statements table You...">
+<meta name="twitter:card" content="summary">
+<meta name="twitter:title" content="Chapter 45 💻 Uploading/Importing your statements and related data. | Guide to Causal Mapping">
+<meta name="twitter:description" content="The only data you need to provide is a table of statements as the only tab in an xlsx file. Your file must have a header row with the names of the fields.  45.1 Making a basic statements table You...">
+<meta name="twitter:image" content="https://causalmap.app/_assets/image-20210520221329966.png">
+<!-- JS --><script src="https://cdnjs.cloudflare.com/ajax/libs/clipboard.js/2.0.6/clipboard.min.js" integrity="sha256-inc5kl9MA1hkeYUt+EC3BhlIgyp/2jDIyBLS6k3UxPI=" crossorigin="anonymous"></script><script src="https://cdnjs.cloudflare.com/ajax/libs/fuse.js/6.4.6/fuse.js" integrity="sha512-zv6Ywkjyktsohkbp9bb45V6tEMoWhzFzXis+LrMehmJZZSys19Yxf1dopHx7WzIKxr5tK2dVcYmaCk2uqdjF4A==" crossorigin="anonymous"></script><script src="https://kit.fontawesome.com/6ecbd6c532.js" crossorigin="anonymous"></script><script src="libs/header-attrs-2.11.2/header-attrs.js"></script><script src="libs/jquery-3.5.1/jquery-3.5.1.min.js"></script><meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+<link href="libs/bootstrap-4.5.3/bootstrap.min.css" rel="stylesheet">
+<script src="libs/bootstrap-4.5.3/bootstrap.bundle.min.js"></script><script src="libs/bs3compat-0.2.4.9000/tabs.js"></script><script src="libs/bs3compat-0.2.4.9000/bs3compat.js"></script><link href="libs/bs4_book-1.0.0/bs4_book.css" rel="stylesheet">
+<script src="libs/bs4_book-1.0.0/bs4_book.js"></script><script src="https://cdnjs.cloudflare.com/ajax/libs/autocomplete.js/0.38.0/autocomplete.jquery.min.js" integrity="sha512-GU9ayf+66Xx2TmpxqJpliWbT5PiGYxpaG8rfnBEk1LL8l1KGkRShhngwdXK1UgqhAzWpZHSiYPc09/NwDQIGyg==" crossorigin="anonymous"></script><script src="https://cdnjs.cloudflare.com/ajax/libs/mark.js/8.11.1/mark.min.js" integrity="sha512-5CYOlHXGh6QpOFA/TeTylKLWfB3ftPsde7AnmhuitiTX4K5SqCLBeKro6sPS8ilsz1Q4NRx3v8Ko2IBiszzdww==" crossorigin="anonymous"></script><!-- CSS --><link rel="stylesheet" href="style.css">
+</head>
+<body data-spy="scroll" data-target="#toc">
+
+<div class="container-fluid">
+<div class="row">
+  <header class="col-sm-12 col-lg-3 sidebar sidebar-book"><a class="sr-only sr-only-focusable" href="#content">Skip to main content</a>
+
+    <div class="d-flex align-items-start justify-content-between">
+      <h1>
+        <a href="index.html" title="">Guide to Causal Mapping</a>
+      </h1>
+      <button class="btn btn-outline-primary d-lg-none ml-2 mt-1" type="button" data-toggle="collapse" data-target="#main-nav" aria-expanded="true" aria-controls="main-nav"><i class="fas fa-bars"></i><span class="sr-only">Show table of contents</span></button>
+    </div>
+
+    <div id="main-nav" class="collapse-lg">
+      <form role="search">
+        <input id="search" class="form-control" type="search" placeholder="Search" aria-label="Search">
+</form>
+
+      <nav aria-label="Table of contents"><h2>Table of contents</h2>
+        <ul class="book-toc list-unstyled">
+<li><a class="" href="index.html"><span class="header-section-number">1</span> Overview</a></li>
+<li class="book-part">The new Causal Map platform</li>
+<li><a class="" href="welcome-to-causal-map-2.html"><span class="header-section-number">2</span> Welcome to Causal Map 2!</a></li>
+<li><a class="" href="are-causal-map-and-causal-mapping-for-me.html"><span class="header-section-number">3</span> 📚💻 Are Causal Map and causal mapping for me?</a></li>
+<li><a class="" href="features-of-causal-map.html"><span class="header-section-number">4</span> 💻 Features of Causal Map</a></li>
+<li><a class="" href="glossary.html"><span class="header-section-number">5</span> 📚 ⚡ Glossary</a></li>
+<li><a class="" href="signing-up-and-signing-in-at-causal-map.html"><span class="header-section-number">6</span> ⚡ 💻 Signing up and signing in at Causal Map</a></li>
+<li class="book-part">💻 The app, panel by panel</li>
+<li><a class="" href="quick-tour.html"><span class="header-section-number">7</span> ⚡ 💻 Quick tour of the app</a></li>
+<li><a class="" href="top-menu.html"><span class="header-section-number">8</span> ⚡ 💻 Managing your file with the top menu</a></li>
+<li><a class="" href="filters.html"><span class="header-section-number">9</span> 💻 All the filters</a></li>
+<li><a class="" href="the-coding-panel-creating-factors-and-links.html"><span class="header-section-number">10</span> ⚡ 💻 The Coding Panel: creating factors and links</a></li>
+<li><a class="" href="the-factor-editor.html"><span class="header-section-number">11</span> 💻 The Factor Editor</a></li>
+<li><a class="" href="all-the-tables.html"><span class="header-section-number">12</span> 💻 All the tables</a></li>
+<li><a class="" href="the-factors-table.html"><span class="header-section-number">13</span> 💻 The Factors table</a></li>
+<li><a class="" href="the-mentions-table.html"><span class="header-section-number">14</span> 💻 The Mentions Table</a></li>
+<li><a class="" href="the-links-table.html"><span class="header-section-number">15</span> 💻 The Links Table</a></li>
+<li><a class="" href="the-statements-table.html"><span class="header-section-number">16</span> 💻 The Statements Table</a></li>
+<li><a class="" href="the-sources-table.html"><span class="header-section-number">17</span> 💻 The Sources Table</a></li>
+<li><a class="" href="the-questions-table.html"><span class="header-section-number">18</span> 💻 The Questions Table</a></li>
+<li><a class="" href="the-closed-question-blocks-table.html"><span class="header-section-number">19</span> 💻 The Closed Question Blocks Table</a></li>
+<li><a class="" href="the-metrics-table.html"><span class="header-section-number">20</span> 💻 The Metrics Table</a></li>
+<li><a class="" href="file-manager.html"><span class="header-section-number">21</span> 💻 The File Manager</a></li>
+<li class="book-part">📚 What is Causal Mapping?</li>
+<li><a class="" href="causal-mapping-definitions.html"><span class="header-section-number">22</span> 📚 Causal Mapping: Definitions</a></li>
+<li><a class="" href="mapping.html"><span class="header-section-number">23</span> 📚 Causal mapping for evaluators</a></li>
+<li class="book-part">Creating maps</li>
+<li><a class="" href="creating-good-factor-labels.html"><span class="header-section-number">24</span> 📚 Creating good factor labels</a></li>
+<li><a class="" href="simplifying.html"><span class="header-section-number">25</span> 📚 Simplifying causal maps with hierarchical coding</a></li>
+<li><a class="" href="hierarchical-factors-in-causal-map.html"><span class="header-section-number">26</span> 💻 Hierarchical factors in Causal Map</a></li>
+<li><a class="" href="strength-adding-additional-information-like-strength-of-a-link-in-a-causal-map.html"><span class="header-section-number">27</span> 📚 Strength: Adding additional information like strength of a link in a causal map</a></li>
+<li><a class="" href="coding-opposites.html"><span class="header-section-number">28</span> 📚 Coding opposites</a></li>
+<li><a class="" href="robustness-quantifying-causal-evidence.html"><span class="header-section-number">29</span> 📚 Robustness: Quantifying causal evidence</a></li>
+<li class="book-part">Analysing maps</li>
+<li><a class="" href="analysing-maps-overview.html"><span class="header-section-number">30</span> Analysing maps: Overview</a></li>
+<li><a class="" href="comparing.html"><span class="header-section-number">31</span> 📚 Analysis: comparing maps between particular groups</a></li>
+<li><a class="" href="tricky-coding-challenges.html"><span class="header-section-number">32</span> 📚 Tricky coding challenges</a></li>
+<li class="book-part">Spotlights</li>
+<li><a class="" href="spotlight-causal-mapping-and-outcome-harvesting.html"><span class="header-section-number">33</span> 📚 Spotlight: Causal Mapping and Outcome Harvesting</a></li>
+<li><a class="" href="spotlight-context-in-causal-mapping-how-to-code-it.html"><span class="header-section-number">34</span> 📚 Spotlight: Context in causal mapping: how to code it</a></li>
+<li><a class="" href="spotlight-beware-the-transitivity-trap.html"><span class="header-section-number">35</span> 📚 Spotlight: Beware the transitivity trap</a></li>
+<li><a class="" href="spotlight-compatible-and-incompatible-factors-in-storylines.html"><span class="header-section-number">36</span> 📚 Spotlight: Compatible and incompatible factors in storylines</a></li>
+<li><a class="" href="spotlight-cases-variables-and-percentages-in-causal-mapping.html"><span class="header-section-number">37</span> 📚 Spotlight: Cases, variables and percentages in causal mapping?</a></li>
+<li><a class="" href="spotlight-different-kinds-of-question-chaining-with-quip-and-parevo-as-illustrations.html"><span class="header-section-number">38</span> 📚 Spotlight: Different kinds of question chaining, with QuIP and ParEvo as illustrations</a></li>
+<li><a class="" href="spotlight-the-last-minute-principle.html"><span class="header-section-number">39</span> 📚 Spotlight: The last minute principle</a></li>
+<li><a class="" href="causal-maps-systems-maps-whats-the-difference-does-it-matter.html"><span class="header-section-number">40</span> 📚 Causal maps, systems maps, what’s the difference? Does it matter?</a></li>
+<li><a class="" href="spotlight-coding-time-in-causal-mapping.html"><span class="header-section-number">41</span> 📚 Spotlight: Coding time in causal mapping</a></li>
+<li><a class="" href="spotlight-puzzles-in-causal-mapping.html"><span class="header-section-number">42</span> 📚 Spotlight: Puzzles in causal mapping</a></li>
+<li><a class="" href="showcase.html"><span class="header-section-number">43</span> Showcase: how the Causal Map app has been used</a></li>
+<li class="book-part">💻 Uploading and updating data</li>
+<li><a class="" href="core-tables.html"><span class="header-section-number">44</span> 💻 Core tables in Causal Map</a></li>
+<li><a class="active" href="uploadingimporting-your-statements-and-related-data..html"><span class="header-section-number">45</span> 💻 Uploading/Importing your statements and related data.</a></li>
+<li><a class="" href="uploadingimporting-your-statements-from-documents..html"><span class="header-section-number">46</span> 💻 Uploading/Importing your statements from documents.</a></li>
+<li><a class="" href="upload-and-roundtripping-examples.html"><span class="header-section-number">47</span> 💻 Upload and roundtripping: examples</a></li>
+<li><a class="" href="importing-your-data-special-cases.html"><span class="header-section-number">48</span> 💻 Importing your data: special cases</a></li>
+<li class="book-part">Technical reference</li>
+<li><a class="" href="how-causal-map-is-hosted.html"><span class="header-section-number">49</span> 💻 How Causal Map is hosted</a></li>
+<li><a class="" href="FAQs.html"><span class="header-section-number">50</span> 💻 ⚡ FAQs: Causal Map questions and troubleshooting</a></li>
+<li><a class="" href="what-order-to-apply-causal-map-filters.html"><span class="header-section-number">51</span> What order to apply Causal Map filters?</a></li>
+<li><a class="" href="using-the-advanced-editor-to-create-and-edit-filters.html"><span class="header-section-number">52</span> 💻 Using the Advanced Editor to create and edit filters</a></li>
+<li><a class="" href="keyboard-shortcuts-for-the-factor-editor-and-advanced-editor.html"><span class="header-section-number">53</span> 💻 Keyboard shortcuts for the Factor Editor and Advanced Editor</a></li>
+<li><a class="" href="causal-map-functions.html"><span class="header-section-number">54</span> Causal Map functions</a></li>
+<li><a class="" href="causal-mapping-with-excel.html"><span class="header-section-number">55</span> Causal mapping with Excel</a></li>
+<li class="book-part">Final section</li>
+<li><a class="" href="acknowledgements.html"><span class="header-section-number">56</span> Acknowledgements</a></li>
+<li><a class="" href="appendix-publications-and-links.html"><span class="header-section-number">57</span> Appendix: Publications and links</a></li>
+<li><a class="" href="references.html">References</a></li>
+</ul>
+
+        <div class="book-extra">
+          <p><a id="book-repo" href="https://github.com/stevepowell99/causal-map-guide">View book source <i class="fab fa-github"></i></a></p>
+        </div>
+      </nav>
+</div>
+  </header><main class="col-sm-12 col-md-9 col-lg-7" id="content"><div id="uploadingimporting-your-statements-and-related-data." class="section level1" number="45">
+<h1>
+<span class="header-section-number">45</span> 💻 Uploading/Importing your statements and related data.<a class="anchor" aria-label="anchor" href="#uploadingimporting-your-statements-and-related-data."><i class="fas fa-link"></i></a>
+</h1>
+<p>The only data you need to provide is a table of statements as the only tab in an xlsx file. Your file must have a header row with the names of the fields.</p>
+<div id="making-a-basic-statements-table" class="section level2" number="45.1">
+<h2>
+<span class="header-section-number">45.1</span> Making a basic statements table<a class="anchor" aria-label="anchor" href="#making-a-basic-statements-table"><i class="fas fa-link"></i></a>
+</h2>
+<p>You can create a table from a Word document.</p>
+<p>Each paragraph in your Word document will become one statement, so make sure your Word document is already structured so this will work for you. Delete any double paragraph breaks in Word (i.e. delete any empty paragraphs). If you want some short paragraphs to appear together as one longer statement, delete the paragraph breaks between them.</p>
+<p>Then</p>
+<ul>
+<li>Copy all the text from your document</li>
+<li>Create a fresh spreadsheet file in Excel (or LibreOffice Calc or similar) and select cell A2</li>
+<li>Paste your text.</li>
+<li>Type the word “text” as column header in cell A1.</li>
+<li>Check the statements are the way you want them. You can ignore any formatting, pictures etc which might also have been pasted in because these will disappear in the next step.</li>
+</ul>
+<p>The statements are the texts which appear one by one by one in the Code &amp; View tab, for you to read and code. Each statement is one row in your file.</p>
+<p>If you want to import interviews which are several pages each, you should break each interview into several statements. Ideally a statement consists of between one and five paragraphs – enough to fit on the left-hand side of the Code &amp; View tab when it is displayed there. Usually your text breaks up naturally into sections, for example the interviews might be responses to a number of questions, so your statements might consist of one or a few paragraphs for each question.</p>
+<p>We strongly recommend that you don’t try to import statements which are longer than 2500 characters or 500 words. It is harder to code very long statements.</p>
+<p>Your statements file must have at least one column with the text of the statements and the header for this column must be “text.” Other columns will be treated as additional data.</p>
+<p>The only required field in your data table is the text of each statement, like this.</p>
+<p><strong>text</strong></p>
+<hr>
+<p>Lorem ipsum …</p>
+<hr>
+<p>Ipsum lorem …</p>
+<hr>
+<p>Lorem sunt …</p>
+<hr>
+<p>Asdf …</p>
+<hr>
+<p>…</p>
+<hr>
+</div>
+<div id="dealing-with-additional-information" class="section level2" number="45.2">
+<h2>
+<span class="header-section-number">45.2</span> Dealing with additional information<a class="anchor" aria-label="anchor" href="#dealing-with-additional-information"><i class="fas fa-link"></i></a>
+</h2>
+<p>However you nearly always have additional information, first and foremost about the source, for example about the respondent who provided the information, or about the context of the information, e.g. if this statement was a response to a question, what is the question number, or the text of the question, or the name of the interviewer.</p>
+<div id="providing-additional-data-as-additional-fields-in-the-statements-table." class="section level3" number="45.2.1">
+<h3>
+<span class="header-section-number">45.2.1</span> Providing additional data as additional fields in the statements table.<a class="anchor" aria-label="anchor" href="#providing-additional-data-as-additional-fields-in-the-statements-table."><i class="fas fa-link"></i></a>
+</h3>
+<p>You can think of additional data as just any additional fields in the statements table. If you provide all of these fields when you import your data, that’s fine, there is nothing more to do. For example, you can import the table below instead of the table above. At the moment the app understands only text fields and numerical fields. It will treat dates and currency as ordinary numbers.</p>
+<p>Probably, each respondent belongs to one “village,” each village to one region and each village has one population figure. But the app does not need to know that.</p>
+<p>In each case, the app also adds a “statement ID” field, numbering the statements 1, 2, 3 etc. to help keep track of them.</p>
+<p>However, it is better to import additional data about your sources (and questions) using separate tables.</p>
+</div>
+<div id="uploadingimporting-source-respondent-and-question-data-separately" class="section level3" number="45.2.2">
+<h3>
+<span class="header-section-number">45.2.2</span> Uploading/importing Source (Respondent) and Question data separately<a class="anchor" aria-label="anchor" href="#uploadingimporting-source-respondent-and-question-data-separately"><i class="fas fa-link"></i></a>
+</h3>
+<p>Often it isn’t convenient to provide this whole table yourself. Often you think in terms of smaller sub-tables. For example you might have one table just with the statements and the respondents (say, there are 20 statements per respondent and 10 respondents, so a total of 200 statements), and another table with 20 rows giving information about each respondent, say with just the field “Village” or maybe with more fields. The app can help you combine this data with the statements. Here is an example.</p>
+<div id="deleting-rows" class="section level4" number="45.2.2.1">
+<h4>
+<span class="header-section-number">45.2.2.1</span> Deleting rows<a class="anchor" aria-label="anchor" href="#deleting-rows"><i class="fas fa-link"></i></a>
+</h4>
+<p>You can delete rows by right-clicking on the row or rows and selecting “remove row”. If you delete rows in the Sources or Questions tables, the data will be removed but the source or question ID will remain. It is not possible to add rows (even though this option appears to e available).</p>
+<p>Remember to press Update when you have finished manually editing data.</p>
+</div>
+</div>
+<div id="uploadingimporting-additional-statements-appending-statements" class="section level3" number="45.2.3">
+<h3>
+<span class="header-section-number">45.2.3</span> Uploading/importing additional statements (“appending statements”)<a class="anchor" aria-label="anchor" href="#uploadingimporting-additional-statements-appending-statements"><i class="fas fa-link"></i></a>
+</h3>
+<p>You can add additional statements to your existing statements by repeating the process above but being sure to click “Append”. If your data includes additional data fields, they will be matched with existing fields if they exist already and otherwise new fields will be imported; NA or “missing data” will be shown for these fields for the <em>existing</em> respondents.</p>
+<p>You can also upload additional statements for existing respondents – they might be for example answers to additional questions, or additional answers to existing questions. As long as you click “append”, it is not possible to “overwrite” existing data in this way; all data is treated as new.</p>
+</div>
+<div id="uploadingimporting-source-respondent-and-question-data-separately-1" class="section level3" number="45.2.4">
+<h3>
+<span class="header-section-number">45.2.4</span> Uploading/importing Source (Respondent) and Question data separately<a class="anchor" aria-label="anchor" href="#uploadingimporting-source-respondent-and-question-data-separately-1"><i class="fas fa-link"></i></a>
+</h3>
+<p>Often it isn’t convenient to provide this whole table yourself. Often you think in terms of smaller sub-tables. For example you might have one table just with the statements and the respondents (say, there are 20 statements per respondent and 10 respondents, so a total of 200 statements), and another table with 20 rows giving information about each respondent, say with just the field “Village” or maybe with more fields. The app can help you combine this data with the statements. Here is an example.</p>
+<p>Suppose you already uploaded just this table</p>
+<div class="inline-table"><table class="table table-sm">
+<thead><tr class="header">
+<th><strong>text</strong></th>
+<th><strong>#SourceID</strong></th>
+</tr></thead>
+<tbody>
+<tr class="odd">
+<td>Lorem ipsum</td>
+<td>1</td>
+</tr>
+<tr class="even">
+<td>Ipsum lorem</td>
+<td>1</td>
+</tr>
+<tr class="odd">
+<td>Lorem sunt</td>
+<td>1</td>
+</tr>
+<tr class="even">
+<td>asdf</td>
+<td>2</td>
+</tr>
+<tr class="odd">
+<td>…</td>
+<td>…</td>
+</tr>
+</tbody>
+</table></div>
+<p>The app already added an additional statement_id field for you.</p>
+<div class="inline-table"><table class="table table-sm">
+<thead><tr class="header">
+<th><strong>statement_id</strong></th>
+<th><strong>text</strong></th>
+<th><strong>#SourceID</strong></th>
+</tr></thead>
+<tbody>
+<tr class="odd">
+<td>1</td>
+<td>Lorem ipsum</td>
+<td>1</td>
+</tr>
+<tr class="even">
+<td>2</td>
+<td>Ipsum lorem</td>
+<td>1</td>
+</tr>
+<tr class="odd">
+<td>3</td>
+<td>Lorem sunt</td>
+<td>1</td>
+</tr>
+<tr class="even">
+<td>4</td>
+<td>asdf</td>
+<td>2</td>
+</tr>
+<tr class="odd">
+<td>…</td>
+<td>…</td>
+<td>…</td>
+</tr>
+</tbody>
+</table></div>
+<p>(Or, suppose you already imported QuIP data as described elsewhere.)</p>
+<p>Suppose you now have additional information about the <strong>sources</strong>, like this.</p>
+<div class="inline-table"><table class="table table-sm">
+<thead><tr class="header">
+<th><strong>#SourceID</strong></th>
+<th><strong>Village</strong></th>
+</tr></thead>
+<tbody>
+<tr class="odd">
+<td><strong>1</strong></td>
+<td>Bigville</td>
+</tr>
+<tr class="even">
+<td><strong>2</strong></td>
+<td>Smallville</td>
+</tr>
+<tr class="odd">
+<td><strong>3</strong></td>
+<td>Bigville</td>
+</tr>
+<tr class="even">
+<td><strong>…</strong></td>
+<td>…</td>
+</tr>
+</tbody>
+</table></div>
+<p>Upload this data by clicking “Sources” in the data editor on the right (where you will see any existing data for your sources) and then selecting your csv file.</p>
+<p>If you are uploading additional data about <em>Sources</em> remember to click the Sources button first. If you are uploading additional data about <em>Questions</em> remember to click the Questions button first.</p>
+<p>The app merges the information like this:</p>
+<div class="inline-table"><table class="table table-sm">
+<thead><tr class="header">
+<th><strong>statement_id</strong></th>
+<th><strong>Text</strong></th>
+<th><strong>#SourceID</strong></th>
+<th><strong>Village</strong></th>
+</tr></thead>
+<tbody>
+<tr class="odd">
+<td>1</td>
+<td>Lorem ipsum</td>
+<td>1</td>
+<td>Bigville</td>
+</tr>
+<tr class="even">
+<td>2</td>
+<td>Ipsum lorem</td>
+<td>1</td>
+<td>Bigville</td>
+</tr>
+<tr class="odd">
+<td>3</td>
+<td>Lorem sunt</td>
+<td>1</td>
+<td>Bigville</td>
+</tr>
+<tr class="even">
+<td>4</td>
+<td>Asdf</td>
+<td>2</td>
+<td>Smallville</td>
+</tr>
+<tr class="odd">
+<td>…</td>
+<td>…</td>
+<td>…</td>
+<td>…</td>
+</tr>
+</tbody>
+</table></div>
+<p>The procedure is exactly analogous for uploading additional information about your questions, for example question text, or questionnaire section.</p>
+<p>You can upload new additional data at any time. Plus, if you want to <em>change</em> existing source or question data, you just upload the appropriate new table which overwrites the previous data, e.g. if you find that some of your sources data is incorrect, you can either edit it manually in the table or you can upload a new version of the incorrect table and the old values will be overwritten and any new values, including values in new fields, will be added.</p>
+
+</div>
+</div>
+</div>
+  <div class="chapter-nav">
+<div class="prev"><a href="core-tables.html"><span class="header-section-number">44</span> 💻 Core tables in Causal Map</a></div>
+<div class="next"><a href="uploadingimporting-your-statements-from-documents..html"><span class="header-section-number">46</span> 💻 Uploading/Importing your statements from documents.</a></div>
+</div></main><div class="col-md-3 col-lg-2 d-none d-md-block sidebar sidebar-chapter">
+    <nav id="toc" data-toggle="toc" aria-label="On this page"><h2>On this page</h2>
+      <ul class="nav navbar-nav">
+<li><a class="nav-link" href="#uploadingimporting-your-statements-and-related-data."><span class="header-section-number">45</span> 💻 Uploading/Importing your statements and related data.</a></li>
+<li><a class="nav-link" href="#making-a-basic-statements-table"><span class="header-section-number">45.1</span> Making a basic statements table</a></li>
+<li>
+<a class="nav-link" href="#dealing-with-additional-information"><span class="header-section-number">45.2</span> Dealing with additional information</a><ul class="nav navbar-nav">
+<li><a class="nav-link" href="#providing-additional-data-as-additional-fields-in-the-statements-table."><span class="header-section-number">45.2.1</span> Providing additional data as additional fields in the statements table.</a></li>
+<li><a class="nav-link" href="#uploadingimporting-source-respondent-and-question-data-separately"><span class="header-section-number">45.2.2</span> Uploading/importing Source (Respondent) and Question data separately</a></li>
+<li><a class="nav-link" href="#uploadingimporting-additional-statements-appending-statements"><span class="header-section-number">45.2.3</span> Uploading/importing additional statements (“appending statements”)</a></li>
+<li><a class="nav-link" href="#uploadingimporting-source-respondent-and-question-data-separately-1"><span class="header-section-number">45.2.4</span> Uploading/importing Source (Respondent) and Question data separately</a></li>
+</ul>
+</li>
+</ul>
+
+      <div class="book-extra">
+        <ul class="list-unstyled">
+<li><a id="book-source" href="https://github.com/stevepowell99/causal-map-guide/blob/master/20100-import.rmd">View source <i class="fab fa-github"></i></a></li>
+          <li><a id="book-edit" href="https://github.com/stevepowell99/causal-map-guide/edit/master/20100-import.rmd">Edit this page <i class="fab fa-github"></i></a></li>
+        </ul>
+</div>
+    </nav>
+</div>
+
+</div>
+</div> <!-- .container -->
+
+<footer class="bg-primary text-light mt-5"><div class="container"><div class="row">
+
+  <div class="col-12 col-md-6 mt-3">
+    <p>"<strong>Guide to Causal Mapping</strong>" was written by Steve Powell &amp; Causal Map Ltd. It was last built on 2021-09-30.</p>
+  </div>
+
+  <div class="col-12 col-md-6 mt-3">
+    <p>This book was built by the <a class="text-light" href="https://bookdown.org">bookdown</a> R package.</p>
+  </div>
+
+</div></div>
+</footer>
+</body>
+</html>

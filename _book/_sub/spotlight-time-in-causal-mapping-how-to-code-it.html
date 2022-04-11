@@ -1,0 +1,600 @@
+<!DOCTYPE html>
+<html lang="" xml:lang="">
+<head>
+
+  <meta charset="utf-8" />
+  <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+  <title>Spotlight: Time in causal mapping. How to code it | Guide to Causal Mapping</title>
+  <meta name="description" content="Spotlight: Time in causal mapping. How to code it | Guide to Causal Mapping" />
+  <meta name="generator" content="bookdown 0.21.4 and GitBook 2.6.7" />
+
+  <meta property="og:title" content="Spotlight: Time in causal mapping. How to code it | Guide to Causal Mapping" />
+  <meta property="og:type" content="book" />
+  
+  
+  <meta property="og:description" content="Spotlight: Time in causal mapping. How to code it | Guide to Causal Mapping" />
+  
+
+  <meta name="twitter:card" content="summary" />
+  <meta name="twitter:title" content="Spotlight: Time in causal mapping. How to code it | Guide to Causal Mapping" />
+  
+  <meta name="twitter:description" content="Spotlight: Time in causal mapping. How to code it | Guide to Causal Mapping" />
+  
+
+<meta name="author" content="Steve Powell &amp; Causal Map Ltd" />
+
+
+<meta name="date" content="2021-08-05" />
+
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <meta name="apple-mobile-web-app-capable" content="yes" />
+  <meta name="apple-mobile-web-app-status-bar-style" content="black" />
+  
+  
+<link rel="prev" href="causal-maps-systems-maps-whats-the-difference-does-it-matter.html"/>
+<link rel="next" href="spotlight-puzzles-in-causal-mapping.html"/>
+<script src="libs/header-attrs-2.6.4/header-attrs.js"></script>
+<script src="libs/jquery-2.2.3/jquery.min.js"></script>
+<link href="libs/gitbook-2.6.7/css/style.css" rel="stylesheet" />
+<link href="libs/gitbook-2.6.7/css/plugin-table.css" rel="stylesheet" />
+<link href="libs/gitbook-2.6.7/css/plugin-bookdown.css" rel="stylesheet" />
+<link href="libs/gitbook-2.6.7/css/plugin-highlight.css" rel="stylesheet" />
+<link href="libs/gitbook-2.6.7/css/plugin-search.css" rel="stylesheet" />
+<link href="libs/gitbook-2.6.7/css/plugin-fontsettings.css" rel="stylesheet" />
+<link href="libs/gitbook-2.6.7/css/plugin-clipboard.css" rel="stylesheet" />
+
+
+
+
+
+
+
+
+
+<link href="libs/anchor-sections-1.0.1/anchor-sections.css" rel="stylesheet" />
+<script src="libs/anchor-sections-1.0.1/anchor-sections.js"></script>
+<link rel="shortcut icon" href="{favicon.ico}" />
+<!-- Google Tag Manager -->
+<script>(function(w,d,s,l,i){w[l]=w[l]||[];w[l].push({'gtm.start':
+new Date().getTime(),event:'gtm.js'});var f=d.getElementsByTagName(s)[0],
+j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
+'https://www.googletagmanager.com/gtm.js?id='+i+dl;f.parentNode.insertBefore(j,f);
+})(window,document,'script','dataLayer','GTM-5QDHBSC');</script>
+<!-- End Google Tag Manager -->
+
+
+
+<link rel="stylesheet" href="style.css" type="text/css" />
+</head>
+
+<body>
+
+
+
+  <div class="book without-animation with-summary font-size-2 font-family-1" data-basepath=".">
+
+    <div class="book-summary">
+      <nav role="navigation">
+
+<ul class="summary">
+<li><a href="./">Guide to Causal Mapping</a></li>
+
+<li class="divider"></li>
+<li class="chapter" data-level="" data-path="index.html"><a href="index.html"><i class="fa fa-check"></i>Overview</a></li>
+<li class="part"><span><b>I Outline of Causal Mapping</b></span></li>
+<li class="chapter" data-level="" data-path="glossary.html"><a href="glossary.html"><i class="fa fa-check"></i>Causal Mapping - Definitions and Glossary</a>
+<ul>
+<li class="chapter" data-level="" data-path="glossary.html"><a href="glossary.html#what-is-a-causal-map-what-is-causal-mapping"><i class="fa fa-check"></i>What is a causal map? What is causal mapping?</a></li>
+<li class="chapter" data-level="" data-path="glossary.html"><a href="glossary.html#generic-terminology-for-qualitative-causal-mapping"><i class="fa fa-check"></i>Generic terminology for qualitative causal mapping</a></li>
+<li class="chapter" data-level="" data-path="glossary.html"><a href="glossary.html#formatting-in-this-guide"><i class="fa fa-check"></i>Formatting in this guide…</a></li>
+</ul></li>
+<li class="chapter" data-level="" data-path="mapping.html"><a href="mapping.html"><i class="fa fa-check"></i>Causal mapping</a>
+<ul>
+<li class="chapter" data-level="" data-path="mapping.html"><a href="mapping.html#summary"><i class="fa fa-check"></i>Summary</a></li>
+<li class="chapter" data-level="" data-path="mapping.html"><a href="mapping.html#causal-mapping-for-evaluators"><i class="fa fa-check"></i>Causal mapping for evaluators</a></li>
+<li class="chapter" data-level="" data-path="mapping.html"><a href="mapping.html#features-which-causal-mapping-approaches-have-in-common"><i class="fa fa-check"></i>Features which causal mapping approaches have in common</a>
+<ul>
+<li class="chapter" data-level="" data-path="mapping.html"><a href="mapping.html#causality"><i class="fa fa-check"></i>Causality</a></li>
+<li class="chapter" data-level="" data-path="mapping.html"><a href="mapping.html#modularity"><i class="fa fa-check"></i>Modularity</a></li>
+</ul></li>
+<li class="chapter" data-level="" data-path="mapping.html"><a href="mapping.html#causal-maps-as-a-summary-of-qualitative-data-analysis-of-textual-causal-claims-for-each-link"><i class="fa fa-check"></i>Causal maps as a summary of qualitative data analysis of textual causal claims for each link</a></li>
+<li class="chapter" data-level="" data-path="mapping.html"><a href="mapping.html#causal-mapping-as-a-form-of-data-collection"><i class="fa fa-check"></i>Causal mapping as a form of data collection</a></li>
+<li class="chapter" data-level="" data-path="mapping.html"><a href="mapping.html#quip-as-a-form-of-causal-mapping"><i class="fa fa-check"></i>QuIP as a form of causal mapping</a>
+<ul>
+<li class="chapter" data-level="" data-path="mapping.html"><a href="mapping.html#quip-explanations-of-changes-do-not-themselves-also-have-to-be-changes"><i class="fa fa-check"></i>QuIP: explanations of changes do not themselves also have to be changes</a></li>
+</ul></li>
+<li class="chapter" data-level="" data-path="mapping.html"><a href="mapping.html#advantages-of-causal-mapping"><i class="fa fa-check"></i>Advantages of causal mapping</a>
+<ul>
+<li class="chapter" data-level="" data-path="mapping.html"><a href="mapping.html#induct"><i class="fa fa-check"></i>Induct</a></li>
+<li class="chapter" data-level="" data-path="mapping.html"><a href="mapping.html#discover"><i class="fa fa-check"></i>Discover</a></li>
+<li class="chapter" data-level="" data-path="mapping.html"><a href="mapping.html#distinguish"><i class="fa fa-check"></i>Distinguish</a></li>
+<li class="chapter" data-level="" data-path="mapping.html"><a href="mapping.html#present"><i class="fa fa-check"></i>Present</a></li>
+<li class="chapter" data-level="" data-path="mapping.html"><a href="mapping.html#query"><i class="fa fa-check"></i>Query</a></li>
+<li class="chapter" data-level="" data-path="mapping.html"><a href="mapping.html#quote"><i class="fa fa-check"></i>Quote</a></li>
+<li class="chapter" data-level="" data-path="mapping.html"><a href="mapping.html#reuse"><i class="fa fa-check"></i>Reuse</a></li>
+</ul></li>
+<li class="chapter" data-level="" data-path="mapping.html"><a href="mapping.html#when-to-use-causal-map"><i class="fa fa-check"></i>When to use Causal Map</a></li>
+</ul></li>
+<li class="chapter" data-level="" data-path="starting.html"><a href="starting.html"><i class="fa fa-check"></i>💻 Getting started with the Causal Map app</a>
+<ul>
+<li class="chapter" data-level="" data-path="starting.html"><a href="starting.html#prerequisites-for-using-the-app"><i class="fa fa-check"></i>Prerequisites for using the app</a></li>
+<li class="chapter" data-level="" data-path="starting.html"><a href="starting.html#features-of-causal-map"><i class="fa fa-check"></i>Features of Causal Map</a></li>
+<li class="chapter" data-level="" data-path="starting.html"><a href="starting.html#signing-up-and-logging-in"><i class="fa fa-check"></i>Signing up and logging in</a></li>
+<li class="chapter" data-level="" data-path="starting.html"><a href="starting.html#choosing-files"><i class="fa fa-check"></i>Choosing files</a></li>
+<li class="chapter" data-level="" data-path="starting.html"><a href="starting.html#working-collaboratively"><i class="fa fa-check"></i>Working collaboratively</a></li>
+<li class="chapter" data-level="" data-path="starting.html"><a href="starting.html#caveats"><i class="fa fa-check"></i>Caveats</a></li>
+<li class="chapter" data-level="" data-path="starting.html"><a href="starting.html#files"><i class="fa fa-check"></i>Files</a></li>
+<li class="chapter" data-level="" data-path="starting.html"><a href="starting.html#sharing-and-access"><i class="fa fa-check"></i>Sharing and access</a></li>
+<li class="chapter" data-level="" data-path="starting.html"><a href="starting.html#groups"><i class="fa fa-check"></i>Groups</a></li>
+<li class="chapter" data-level="" data-path="starting.html"><a href="starting.html#guests"><i class="fa fa-check"></i>Guests</a></li>
+<li class="chapter" data-level="" data-path="starting.html"><a href="starting.html#overview-of-the-app-the-tabs"><i class="fa fa-check"></i>💻 Overview of the app: The tabs</a></li>
+<li class="chapter" data-level="" data-path="starting.html"><a href="starting.html#overview-of-the-app-the-code-view-tab"><i class="fa fa-check"></i>💻 Overview of the app: The Code &amp; View tab</a>
+<ul>
+<li class="chapter" data-level="" data-path="starting.html"><a href="starting.html#the-navigation-bar-at-the-top"><i class="fa fa-check"></i>💻 The navigation bar (at the top)</a></li>
+<li class="chapter" data-level="" data-path="starting.html"><a href="starting.html#the-left-hand-panels"><i class="fa fa-check"></i>💻 The left-hand panels</a></li>
+<li class="chapter" data-level="" data-path="starting.html"><a href="starting.html#codebook"><i class="fa fa-check"></i>Codebook</a></li>
+<li class="chapter" data-level="" data-path="starting.html"><a href="starting.html#the-right-hand-panels"><i class="fa fa-check"></i>💻 The right-hand panels</a></li>
+</ul></li>
+</ul></li>
+<li class="chapter" data-level="" data-path="viewing.html"><a href="viewing.html"><i class="fa fa-check"></i>💻 Viewing the Causal Map app</a>
+<ul>
+<li class="chapter" data-level="" data-path="viewing.html"><a href="viewing.html#logging-in"><i class="fa fa-check"></i>Logging in</a></li>
+<li class="chapter" data-level="" data-path="viewing.html"><a href="viewing.html#choosing-files-1"><i class="fa fa-check"></i>Choosing files</a></li>
+<li class="chapter" data-level="" data-path="viewing.html"><a href="viewing.html#overview-of-the-app-the-code-view-tab-1"><i class="fa fa-check"></i>💻 Overview of the app: The Code &amp; View tab</a>
+<ul>
+<li class="chapter" data-level="" data-path="viewing.html"><a href="viewing.html#the-left-hand-panels-1"><i class="fa fa-check"></i>💻 The left-hand panels</a></li>
+<li class="chapter" data-level="" data-path="viewing.html"><a href="viewing.html#the-right-hand-panels-1"><i class="fa fa-check"></i>💻 The right-hand panels</a></li>
+</ul></li>
+</ul></li>
+<li class="chapter" data-level="" data-path="creating.html"><a href="creating.html"><i class="fa fa-check"></i>Coding: creating factors and links</a>
+<ul>
+<li class="chapter" data-level="" data-path="creating.html"><a href="creating.html#create-and-edit-links-in-the-app"><i class="fa fa-check"></i>💻 Create and edit links in the app</a></li>
+<li class="chapter" data-level="" data-path="creating.html"><a href="creating.html#using-memos-and-hashtags"><i class="fa fa-check"></i>Using memos and hashtags</a></li>
+<li class="chapter" data-level="" data-path="creating.html"><a href="creating.html#formulating-labels-semi-quantitative-factors"><i class="fa fa-check"></i>Formulating labels (semi-quantitative factors)</a>
+<ul>
+<li class="chapter" data-level="" data-path="creating.html"><a href="creating.html#safe-emojis"><i class="fa fa-check"></i>Safe emojis</a></li>
+<li class="chapter" data-level="" data-path="creating.html"><a href="creating.html#relax-use-heterogeneous-in-vivo-factor-labels"><i class="fa fa-check"></i>Relax! Use heterogeneous, “in-vivo” factor labels</a></li>
+<li class="chapter" data-level="" data-path="creating.html"><a href="creating.html#quip-specific-back-chaining"><i class="fa fa-check"></i>QuIP specific: back-chaining</a></li>
+<li class="chapter" data-level="" data-path="creating.html"><a href="creating.html#examples-of-semi-quantitative-factors"><i class="fa fa-check"></i>Examples of semi-quantitative factors</a></li>
+</ul></li>
+<li class="chapter" data-level="" data-path="creating.html"><a href="creating.html#opposed-pairs-of-causal-factors"><i class="fa fa-check"></i>Opposed pairs of causal factors</a></li>
+<li class="chapter" data-level="" data-path="creating.html"><a href="creating.html#formulating-factors-as-desirable"><i class="fa fa-check"></i>Formulating factors as desirable</a></li>
+<li class="chapter" data-level="" data-path="creating.html"><a href="creating.html#examples-of-non-quantitative-factors"><i class="fa fa-check"></i>Examples of non-quantitative factors</a></li>
+<li class="chapter" data-level="" data-path="creating.html"><a href="creating.html#using-flags-in-factor-labels"><i class="fa fa-check"></i>Using flags in factor labels</a>
+<ul>
+<li class="chapter" data-level="" data-path="creating.html"><a href="creating.html#intervention-flags"><i class="fa fa-check"></i>Intervention Flags</a></li>
+<li class="chapter" data-level="" data-path="creating.html"><a href="creating.html#outcome-flags"><i class="fa fa-check"></i>Outcome Flags</a></li>
+<li class="chapter" data-level="" data-path="creating.html"><a href="creating.html#coding-your-statements-in-context-referring-to-evidence-from-elsewhere"><i class="fa fa-check"></i>Coding your statements in context: referring to evidence from elsewhere</a></li>
+</ul></li>
+<li class="chapter" data-level="" data-path="creating.html"><a href="creating.html#consolidating-and-editing-factor-labels"><i class="fa fa-check"></i>Consolidating and editing factor labels</a>
+<ul>
+<li class="chapter" data-level="" data-path="creating.html"><a href="creating.html#recoding-merging-multiple-factors-into-one"><i class="fa fa-check"></i>Recoding / merging multiple factors into one</a></li>
+<li class="chapter" data-level="" data-path="creating.html"><a href="creating.html#how-to-do-this-in-the-app"><i class="fa fa-check"></i>🖥 How to do this in the app?</a></li>
+</ul></li>
+</ul></li>
+<li class="chapter" data-level="" data-path="analysis.html"><a href="analysis.html"><i class="fa fa-check"></i>Analysis: viewing and filtering the map</a>
+<ul>
+<li class="chapter" data-level="" data-path="analysis.html"><a href="analysis.html#viewing-the-interactive-map"><i class="fa fa-check"></i>💻 Viewing the interactive map</a></li>
+<li class="chapter" data-level="" data-path="analysis.html"><a href="analysis.html#filtering-the-map-factors"><i class="fa fa-check"></i>💻 Filtering the map: factors</a></li>
+<li class="chapter" data-level="" data-path="analysis.html"><a href="analysis.html#filtering-the-map-by-link-hashtag-memo"><i class="fa fa-check"></i>💻 Filtering the map by link, hashtag, memo…</a></li>
+<li class="chapter" data-level="" data-path="analysis.html"><a href="analysis.html#filtering-the-map-by-statement-source-question"><i class="fa fa-check"></i>💻 Filtering the map by statement, source, question…</a></li>
+<li class="chapter" data-level="" data-path="analysis.html"><a href="analysis.html#viewing-the-print-map"><i class="fa fa-check"></i>💻 Viewing the Print map</a></li>
+</ul></li>
+<li class="chapter" data-level="" data-path="tracing.html"><a href="tracing.html"><i class="fa fa-check"></i>Analysis: path tracing</a>
+<ul>
+<li class="chapter" data-level="" data-path="tracing.html"><a href="tracing.html#tracing-paths-in-the-app"><i class="fa fa-check"></i>💻 Tracing paths in the app</a></li>
+</ul></li>
+<li class="chapter" data-level="" data-path="comparing.html"><a href="comparing.html"><i class="fa fa-check"></i>Analysis: comparing maps between particular groups</a>
+<ul>
+<li class="chapter" data-level="" data-path="comparing.html"><a href="comparing.html#filtering-by-respondent-group"><i class="fa fa-check"></i>Filtering by respondent group</a></li>
+<li><a href="comparing.html#showing-distinctive-maps-for-each-group">Showing <em>distinctive maps</em> for each group</a></li>
+<li class="chapter" data-level="" data-path="comparing.html"><a href="comparing.html#filtering-statements-and-groups-for-comparisons-in-causal-map"><i class="fa fa-check"></i>💻 Filtering statements and groups for comparisons in Causal Map</a></li>
+</ul></li>
+<li class="chapter" data-level="" data-path="analysis-metrics.html"><a href="analysis-metrics.html"><i class="fa fa-check"></i>Analysis: metrics</a>
+<ul>
+<li class="chapter" data-level="" data-path="analysis-metrics.html"><a href="analysis-metrics.html#tables-in-the-app"><i class="fa fa-check"></i>💻 Tables in the app</a>
+<ul>
+<li class="chapter" data-level="" data-path="analysis-metrics.html"><a href="analysis-metrics.html#how-do-i-use-the-tables"><i class="fa fa-check"></i>How do I use the tables?</a></li>
+<li class="chapter" data-level="" data-path="analysis-metrics.html"><a href="analysis-metrics.html#factors"><i class="fa fa-check"></i>Factors</a></li>
+<li class="chapter" data-level="" data-path="analysis-metrics.html"><a href="analysis-metrics.html#sample"><i class="fa fa-check"></i>Sample</a></li>
+<li class="chapter" data-level="" data-path="analysis-metrics.html"><a href="analysis-metrics.html#differences"><i class="fa fa-check"></i>Differences</a></li>
+<li class="chapter" data-level="" data-path="analysis-metrics.html"><a href="analysis-metrics.html#sectionsquestions"><i class="fa fa-check"></i>Sections/questions</a></li>
+<li class="chapter" data-level="" data-path="analysis-metrics.html"><a href="analysis-metrics.html#quip-specific-closed-questions"><i class="fa fa-check"></i>QuIP-specific: Closed questions</a></li>
+<li class="chapter" data-level="" data-path="analysis-metrics.html"><a href="analysis-metrics.html#quip-specific-ranking"><i class="fa fa-check"></i>QuIP-specific: Ranking</a></li>
+</ul></li>
+</ul></li>
+<li class="chapter" data-level="" data-path="analysis-text-analysis.html"><a href="analysis-text-analysis.html"><i class="fa fa-check"></i>Analysis: text analysis</a>
+<ul>
+<li class="chapter" data-level="" data-path="analysis-text-analysis.html"><a href="analysis-text-analysis.html#text-analysis-in-the-app"><i class="fa fa-check"></i>💻 Text analysis in the app</a></li>
+</ul></li>
+<li class="chapter" data-level="" data-path="simplifying.html"><a href="simplifying.html"><i class="fa fa-check"></i>Simplifying causal maps with hierarchical coding</a>
+<ul>
+<li class="chapter" data-level="" data-path="simplifying.html"><a href="simplifying.html#summary-1"><i class="fa fa-check"></i>Summary</a></li>
+<li class="chapter" data-level="" data-path="simplifying.html"><a href="simplifying.html#introduction"><i class="fa fa-check"></i>Introduction</a></li>
+<li class="chapter" data-level="" data-path="simplifying.html"><a href="simplifying.html#interpretation-of-the-separator"><i class="fa fa-check"></i>Interpretation of the ; separator</a></li>
+<li class="chapter" data-level="" data-path="simplifying.html"><a href="simplifying.html#semi-quantitative-formulations-work-best"><i class="fa fa-check"></i>Semi-quantitative formulations work best</a></li>
+<li><a href="simplifying.html#higher-level-factors-are-generalisations">Higher-level factors are <em>generalisations</em></a></li>
+<li class="chapter" data-level="" data-path="simplifying.html"><a href="simplifying.html#hierarchical-coding-as-a-way-of-coping-with-a-large-number-of-factors"><i class="fa fa-check"></i>Hierarchical coding as a way of coping with a large number of factors</a></li>
+<li class="chapter" data-level="" data-path="simplifying.html"><a href="simplifying.html#themes"><i class="fa fa-check"></i>Themes</a></li>
+<li class="chapter" data-level="" data-path="simplifying.html"><a href="simplifying.html#re-usable-factor-components-as-text-flags"><i class="fa fa-check"></i>Re-usable factor components as text flags</a></li>
+<li class="chapter" data-level="" data-path="simplifying.html"><a href="simplifying.html#hierarchical-factors-in-causal-map"><i class="fa fa-check"></i>💻 Hierarchical factors in Causal Map</a>
+<ul>
+<li class="chapter" data-level="" data-path="simplifying.html"><a href="simplifying.html#creating-labels"><i class="fa fa-check"></i>💻 Creating labels</a></li>
+<li class="chapter" data-level="" data-path="simplifying.html"><a href="simplifying.html#relabelling"><i class="fa fa-check"></i>💻 Relabelling</a></li>
+<li class="chapter" data-level="" data-path="simplifying.html"><a href="simplifying.html#additional-functionality-in-the-create-edit-links-panel"><i class="fa fa-check"></i>💻 Additional functionality in the Create &amp; Edit Links panel</a></li>
+<li class="chapter" data-level="" data-path="simplifying.html"><a href="simplifying.html#search-with-nested-factors"><i class="fa fa-check"></i>💻 Search with nested factors</a></li>
+</ul></li>
+<li class="chapter" data-level="" data-path="simplifying.html"><a href="simplifying.html#zooming-out"><i class="fa fa-check"></i>Zooming out</a></li>
+<li class="chapter" data-level="" data-path="simplifying.html"><a href="simplifying.html#smart-simplification"><i class="fa fa-check"></i>Smart simplification</a></li>
+<li class="chapter" data-level="" data-path="simplifying.html"><a href="simplifying.html#simplifying-zooming-out-and-filtering-out-less-frequent-links-and-factors-in-the-app"><i class="fa fa-check"></i>💻 Simplifying (zooming out, and filtering out less frequent links and factors) in the app</a></li>
+</ul></li>
+<li class="chapter" data-level="" data-path="restoftheapp.html"><a href="restoftheapp.html"><i class="fa fa-check"></i>💻 The rest of the Causal Map app, tab by tab</a>
+<ul>
+<li><a href="restoftheapp.html#the-download-tab-exporting-your-files">The <em>Download</em> tab: Exporting your files</a>
+<ul>
+<li class="chapter" data-level="" data-path="restoftheapp.html"><a href="restoftheapp.html#exporting"><i class="fa fa-check"></i>Exporting</a></li>
+</ul></li>
+<li><a href="restoftheapp.html#the-file-button">The <em>File</em> button</a>
+<ul>
+<li class="chapter" data-level="" data-path="restoftheapp.html"><a href="restoftheapp.html#choosing-a-file"><i class="fa fa-check"></i>Choosing a file</a></li>
+<li class="chapter" data-level="" data-path="restoftheapp.html"><a href="restoftheapp.html#merging-another-file-into-the-current-one"><i class="fa fa-check"></i>Merging another file into the current one</a></li>
+<li class="chapter" data-level="" data-path="restoftheapp.html"><a href="restoftheapp.html#backups"><i class="fa fa-check"></i>Backups</a></li>
+<li class="chapter" data-level="" data-path="restoftheapp.html"><a href="restoftheapp.html#sharing"><i class="fa fa-check"></i>Sharing and locking</a></li>
+</ul></li>
+<li class="chapter" data-level="" data-path="restoftheapp.html"><a href="restoftheapp.html#the-upload-and-fix-tab-uploadingimporting-and-tweaking-your-data"><i class="fa fa-check"></i>The Upload and Fix tab: uploading/importing and tweaking your data</a>
+<ul>
+<li class="chapter" data-level="" data-path="restoftheapp.html"><a href="restoftheapp.html#uploadingimporting-statements-and-additional-data-as-one-file"><i class="fa fa-check"></i>Uploading/importing statements and additional data as one file</a></li>
+<li class="chapter" data-level="" data-path="restoftheapp.html"><a href="restoftheapp.html#what-are-the-sourceid-and-questionid-fields"><i class="fa fa-check"></i>What are the #SourceID and #QuestionID fields?</a></li>
+<li class="chapter" data-level="" data-path="restoftheapp.html"><a href="restoftheapp.html#viewing-and-manually-editing-your-data"><i class="fa fa-check"></i>Viewing and manually editing your data</a></li>
+<li class="chapter" data-level="" data-path="restoftheapp.html"><a href="restoftheapp.html#uploadingimporting-additional-statements-appending-statements"><i class="fa fa-check"></i>Uploading/importing additional statements (“appending statements”)</a></li>
+<li class="chapter" data-level="" data-path="restoftheapp.html"><a href="restoftheapp.html#uploadingimporting-source-respondent-and-question-data-separately"><i class="fa fa-check"></i>Uploading/importing Source (Respondent) and Question data separately</a></li>
+<li class="chapter" data-level="" data-path="restoftheapp.html"><a href="restoftheapp.html#downloading-sourcerespondent-and-question-data-separately"><i class="fa fa-check"></i>Downloading Source/Respondent and Question data separately</a></li>
+<li class="chapter" data-level="" data-path="restoftheapp.html"><a href="restoftheapp.html#additional-data-using-the-fields-editor"><i class="fa fa-check"></i>Additional data: using the fields editor</a></li>
+<li class="chapter" data-level="" data-path="restoftheapp.html"><a href="restoftheapp.html#additional-data-field-names"><i class="fa fa-check"></i>Additional data: Field names</a></li>
+<li class="chapter" data-level="" data-path="restoftheapp.html"><a href="restoftheapp.html#fixing-data-the-tools-panel"><i class="fa fa-check"></i>Fixing data: the tools panel</a></li>
+<li class="chapter" data-level="" data-path="restoftheapp.html"><a href="restoftheapp.html#adding-new-statements-one-by-one-manually-using-the-new-statement-button"><i class="fa fa-check"></i>Adding new statements one-by-one manually using the “new statement” button</a></li>
+<li class="chapter" data-level="" data-path="restoftheapp.html"><a href="restoftheapp.html#uploadingimporting-from-word-or-other-text-files."><i class="fa fa-check"></i>Uploading/Importing from Word or other text files.</a></li>
+<li class="chapter" data-level="" data-path="restoftheapp.html"><a href="restoftheapp.html#importing-from-other-software"><i class="fa fa-check"></i>Importing from other software</a></li>
+<li class="chapter" data-level="" data-path="restoftheapp.html"><a href="restoftheapp.html#quip-specific-importing-from-a-quip-spreadsheet"><i class="fa fa-check"></i>QuIP-specific: Importing from a QuIP spreadsheet</a></li>
+<li class="chapter" data-level="" data-path="restoftheapp.html"><a href="restoftheapp.html#closed-questions"><i class="fa fa-check"></i>Closed questions</a></li>
+<li class="chapter" data-level="" data-path="restoftheapp.html"><a href="restoftheapp.html#importing-closed-question-data-and-ranked-organisation-data-without-using-quip-style-import"><i class="fa fa-check"></i>Importing closed question data, and ranked organisation data, without using QuIP-style import</a></li>
+<li class="chapter" data-level="" data-path="restoftheapp.html"><a href="restoftheapp.html#appending-data"><i class="fa fa-check"></i>Appending data</a></li>
+<li class="chapter" data-level="" data-path="restoftheapp.html"><a href="restoftheapp.html#type"><i class="fa fa-check"></i>Type</a></li>
+</ul></li>
+</ul></li>
+<li class="part"><span><b>II Extra features</b></span></li>
+<li class="chapter" data-level="" data-path="adding-additional-information-like-strength-of-a-link-in-a-causal-map-lets-keep-it-simple.html"><a href="adding-additional-information-like-strength-of-a-link-in-a-causal-map-lets-keep-it-simple.html"><i class="fa fa-check"></i>Adding additional information like strength of a link in a causal map: let’s keep it simple</a></li>
+<li class="chapter" data-level="" data-path="coding-opposites.html"><a href="coding-opposites.html"><i class="fa fa-check"></i>Coding opposites</a>
+<ul>
+<li class="chapter" data-level="" data-path="coding-opposites.html"><a href="coding-opposites.html#combining-opposites"><i class="fa fa-check"></i>Combining opposites</a></li>
+<li class="chapter" data-level="" data-path="coding-opposites.html"><a href="coding-opposites.html#opposites-coding-within-a-hierarchy"><i class="fa fa-check"></i>Opposites coding within a hierarchy</a></li>
+<li class="chapter" data-level="" data-path="coding-opposites.html"><a href="coding-opposites.html#opposites-coding-within-components-of-a-hierarchy"><i class="fa fa-check"></i>Opposites coding within components of a hierarchy</a></li>
+<li class="chapter" data-level="" data-path="coding-opposites.html"><a href="coding-opposites.html#graded-factors-differences-of-degree"><i class="fa fa-check"></i>Graded factors: differences of degree</a></li>
+<li class="chapter" data-level="" data-path="coding-opposites.html"><a href="coding-opposites.html#philosophical-discursion-coding-with-propositions"><i class="fa fa-check"></i>Philosophical discursion: coding with propositions</a>
+<ul>
+<li class="chapter" data-level="" data-path="coding-opposites.html"><a href="coding-opposites.html#zero-influences."><i class="fa fa-check"></i>Zero influences.</a></li>
+</ul></li>
+</ul></li>
+<li class="chapter" data-level="" data-path="certainty-and-trust.html"><a href="certainty-and-trust.html"><i class="fa fa-check"></i>Certainty and trust</a></li>
+<li class="chapter" data-level="" data-path="quantifying-causal-evidence.html"><a href="quantifying-causal-evidence.html"><i class="fa fa-check"></i>Quantifying causal evidence</a>
+<ul>
+<li class="chapter" data-level="" data-path="quantifying-causal-evidence.html"><a href="quantifying-causal-evidence.html#summary-2"><i class="fa fa-check"></i>Summary</a></li>
+<li class="chapter" data-level="" data-path="quantifying-causal-evidence.html"><a href="quantifying-causal-evidence.html#problem"><i class="fa fa-check"></i>Problem</a></li>
+<li class="chapter" data-level="" data-path="quantifying-causal-evidence.html"><a href="quantifying-causal-evidence.html#prior-strategies"><i class="fa fa-check"></i>Prior strategies</a></li>
+<li class="chapter" data-level="" data-path="quantifying-causal-evidence.html"><a href="quantifying-causal-evidence.html#definitions"><i class="fa fa-check"></i>Definitions</a></li>
+<li class="chapter" data-level="" data-path="quantifying-causal-evidence.html"><a href="quantifying-causal-evidence.html#definition-of-causal-map"><i class="fa fa-check"></i>Definition of causal map</a></li>
+<li class="chapter" data-level="" data-path="quantifying-causal-evidence.html"><a href="quantifying-causal-evidence.html#definition-of-causal-evidence-map"><i class="fa fa-check"></i>Definition of causal evidence map</a></li>
+<li class="chapter" data-level="" data-path="quantifying-causal-evidence.html"><a href="quantifying-causal-evidence.html#cm-vs-cem"><i class="fa fa-check"></i>CM vs CEM</a></li>
+<li class="chapter" data-level="" data-path="quantifying-causal-evidence.html"><a href="quantifying-causal-evidence.html#multiple-links-number-of-mentions"><i class="fa fa-check"></i>Multiple links / number of mentions</a></li>
+<li class="chapter" data-level="" data-path="quantifying-causal-evidence.html"><a href="quantifying-causal-evidence.html#solution"><i class="fa fa-check"></i>Solution</a>
+<ul>
+<li class="chapter" data-level="" data-path="quantifying-causal-evidence.html"><a href="quantifying-causal-evidence.html#base-case"><i class="fa fa-check"></i>Base case</a></li>
+<li class="chapter" data-level="" data-path="quantifying-causal-evidence.html"><a href="quantifying-causal-evidence.html#problem-extend-this-simple-case-to-maps-with-intervening-factors-between-d-and-o."><i class="fa fa-check"></i>Problem: extend this simple case to maps with intervening factors between D and O.</a></li>
+<li class="chapter" data-level="" data-path="quantifying-causal-evidence.html"><a href="quantifying-causal-evidence.html#useful-reporting-metrics"><i class="fa fa-check"></i>Useful reporting metrics</a></li>
+<li class="chapter" data-level="" data-path="quantifying-causal-evidence.html"><a href="quantifying-causal-evidence.html#extension-weighting"><i class="fa fa-check"></i>Extension: weighting</a></li>
+<li class="chapter" data-level="" data-path="quantifying-causal-evidence.html"><a href="quantifying-causal-evidence.html#hierarchical"><i class="fa fa-check"></i>Hierarchical</a></li>
+</ul></li>
+</ul></li>
+<li class="chapter" data-level="" data-path="interesting-features.html"><a href="interesting-features.html"><i class="fa fa-check"></i>Interesting Features</a>
+<ul>
+<li class="chapter" data-level="" data-path="interesting-features.html"><a href="interesting-features.html#summary-3"><i class="fa fa-check"></i>Summary</a></li>
+</ul></li>
+<li class="part"><span><b>III Additional material</b></span></li>
+<li class="chapter" data-level="" data-path="spotlight-causal-mapping-and-outcome-harvesting.html"><a href="spotlight-causal-mapping-and-outcome-harvesting.html"><i class="fa fa-check"></i>Spotlight: Causal Mapping and Outcome Harvesting</a></li>
+<li class="chapter" data-level="" data-path="spotlight-context-in-causal-mapping-how-to-code-it.html"><a href="spotlight-context-in-causal-mapping-how-to-code-it.html"><i class="fa fa-check"></i>Spotlight: Context in causal mapping: how to code it</a>
+<ul>
+<li class="chapter" data-level="" data-path="spotlight-context-in-causal-mapping-how-to-code-it.html"><a href="spotlight-context-in-causal-mapping-how-to-code-it.html#using-context-in-the-causal-map-app"><i class="fa fa-check"></i>🖥 Using context in the Causal Map app</a></li>
+</ul></li>
+<li class="chapter" data-level="" data-path="spotlight-beware-the-transitivity-trap.html"><a href="spotlight-beware-the-transitivity-trap.html"><i class="fa fa-check"></i>Spotlight: Beware the transitivity trap</a>
+<ul>
+<li class="chapter" data-level="" data-path="spotlight-beware-the-transitivity-trap.html"><a href="spotlight-beware-the-transitivity-trap.html#the-transitivity-trap"><i class="fa fa-check"></i>The transitivity trap</a></li>
+<li class="chapter" data-level="" data-path="spotlight-beware-the-transitivity-trap.html"><a href="spotlight-beware-the-transitivity-trap.html#not-just-a-problem-for-causal-mapping"><i class="fa fa-check"></i>Not just a problem for causal mapping</a></li>
+<li class="chapter" data-level="" data-path="spotlight-beware-the-transitivity-trap.html"><a href="spotlight-beware-the-transitivity-trap.html#can-we-mitigate-the-trap-with-careful-elicitation-protocols"><i class="fa fa-check"></i>Can we mitigate the trap with careful elicitation protocols?</a></li>
+<li class="chapter" data-level="" data-path="spotlight-beware-the-transitivity-trap.html"><a href="spotlight-beware-the-transitivity-trap.html#transitivity-trap-or-identity-trap"><i class="fa fa-check"></i>Transitivity trap, or identity trap?</a></li>
+</ul></li>
+<li class="chapter" data-level="" data-path="spotlight-compatible-and-incompatible-factors-in-storylines.html"><a href="spotlight-compatible-and-incompatible-factors-in-storylines.html"><i class="fa fa-check"></i>Spotlight: Compatible and incompatible factors in storylines</a></li>
+<li class="chapter" data-level="" data-path="spotlight-cases-variables-and-percentages-in-causal-mapping.html"><a href="spotlight-cases-variables-and-percentages-in-causal-mapping.html"><i class="fa fa-check"></i>Spotlight: Cases, variables and percentages in causal mapping?</a></li>
+<li class="chapter" data-level="" data-path="spotlight-different-kinds-of-question-chaining-with-quip-and-parevo-as-illustrations.html"><a href="spotlight-different-kinds-of-question-chaining-with-quip-and-parevo-as-illustrations.html"><i class="fa fa-check"></i>Spotlight: Different kinds of question chaining, with QuIP and ParEvo as illustrations</a>
+<ul>
+<li class="chapter" data-level="" data-path="spotlight-different-kinds-of-question-chaining-with-quip-and-parevo-as-illustrations.html"><a href="spotlight-different-kinds-of-question-chaining-with-quip-and-parevo-as-illustrations.html#four-options-with-fixed-versus-variable-question-chaining"><i class="fa fa-check"></i>Four options with Fixed versus Variable question chaining</a></li>
+<li class="chapter" data-level="" data-path="spotlight-different-kinds-of-question-chaining-with-quip-and-parevo-as-illustrations.html"><a href="spotlight-different-kinds-of-question-chaining-with-quip-and-parevo-as-illustrations.html#single-versus-multiple"><i class="fa fa-check"></i>Single versus multiple</a></li>
+<li class="chapter" data-level="" data-path="spotlight-different-kinds-of-question-chaining-with-quip-and-parevo-as-illustrations.html"><a href="spotlight-different-kinds-of-question-chaining-with-quip-and-parevo-as-illustrations.html#future-in-past-past-in-future"><i class="fa fa-check"></i>Future in past, past in future</a></li>
+<li class="chapter" data-level="" data-path="spotlight-different-kinds-of-question-chaining-with-quip-and-parevo-as-illustrations.html"><a href="spotlight-different-kinds-of-question-chaining-with-quip-and-parevo-as-illustrations.html#closed-vs-open-questions"><i class="fa fa-check"></i>Closed vs open questions</a></li>
+<li class="chapter" data-level="" data-path="spotlight-different-kinds-of-question-chaining-with-quip-and-parevo-as-illustrations.html"><a href="spotlight-different-kinds-of-question-chaining-with-quip-and-parevo-as-illustrations.html#going-both-ways-bi-directional-chaining"><i class="fa fa-check"></i>Going both ways: bi-directional chaining</a></li>
+<li class="chapter" data-level="" data-path="spotlight-different-kinds-of-question-chaining-with-quip-and-parevo-as-illustrations.html"><a href="spotlight-different-kinds-of-question-chaining-with-quip-and-parevo-as-illustrations.html#evaluation"><i class="fa fa-check"></i>Evaluation</a></li>
+</ul></li>
+<li class="chapter" data-level="" data-path="spotlight-the-last-minute-principle-leave-the-evaluation-to-the-evaluator.html"><a href="spotlight-the-last-minute-principle-leave-the-evaluation-to-the-evaluator.html"><i class="fa fa-check"></i>Spotlight: The last minute principle. Leave the evaluation to the evaluator</a></li>
+<li class="chapter" data-level="" data-path="causal-maps-systems-maps-whats-the-difference-does-it-matter.html"><a href="causal-maps-systems-maps-whats-the-difference-does-it-matter.html"><i class="fa fa-check"></i>Causal maps, systems maps, what’s the difference? Does it matter?</a></li>
+<li class="chapter" data-level="" data-path="spotlight-time-in-causal-mapping-how-to-code-it.html"><a href="spotlight-time-in-causal-mapping-how-to-code-it.html"><i class="fa fa-check"></i>Spotlight: Time in causal mapping. How to code it</a>
+<ul>
+<li class="chapter" data-level="" data-path="spotlight-time-in-causal-mapping-how-to-code-it.html"><a href="spotlight-time-in-causal-mapping-how-to-code-it.html#temporal-features-which-can-emerge-without-explicit-coding-of-time"><i class="fa fa-check"></i>Temporal features which can emerge without explicit coding of time</a></li>
+<li class="chapter" data-level="" data-path="spotlight-time-in-causal-mapping-how-to-code-it.html"><a href="spotlight-time-in-causal-mapping-how-to-code-it.html#temporal-information-attached-to-additional-data"><i class="fa fa-check"></i>Temporal information attached to additional data</a></li>
+<li class="chapter" data-level="" data-path="spotlight-time-in-causal-mapping-how-to-code-it.html"><a href="spotlight-time-in-causal-mapping-how-to-code-it.html#recording-temporal-information-in-causal-links"><i class="fa fa-check"></i>Recording temporal information in causal links</a></li>
+<li class="chapter" data-level="" data-path="spotlight-time-in-causal-mapping-how-to-code-it.html"><a href="spotlight-time-in-causal-mapping-how-to-code-it.html#recording-temporal-information-in-factor-labels"><i class="fa fa-check"></i>Recording temporal information in factor labels</a>
+<ul>
+<li class="chapter" data-level="" data-path="spotlight-time-in-causal-mapping-how-to-code-it.html"><a href="spotlight-time-in-causal-mapping-how-to-code-it.html#use-a-hashtag-or-flag"><i class="fa fa-check"></i>Use a hashtag or flag</a></li>
+<li class="chapter" data-level="" data-path="spotlight-time-in-causal-mapping-how-to-code-it.html"><a href="spotlight-time-in-causal-mapping-how-to-code-it.html#use-components-in-hierarchical-coding"><i class="fa fa-check"></i>Use components in hierarchical coding</a></li>
+<li class="chapter" data-level="" data-path="spotlight-time-in-causal-mapping-how-to-code-it.html"><a href="spotlight-time-in-causal-mapping-how-to-code-it.html#use-higher-level-temporal-components-in-hierarchical-coding"><i class="fa fa-check"></i>Use higher-level temporal components in hierarchical coding</a></li>
+<li class="chapter" data-level="" data-path="spotlight-time-in-causal-mapping-how-to-code-it.html"><a href="spotlight-time-in-causal-mapping-how-to-code-it.html#but-what-if-factor-labels-themselves-express-changes"><i class="fa fa-check"></i>But what if factor labels themselves express changes?</a></li>
+</ul></li>
+<li class="chapter" data-level="" data-path="spotlight-time-in-causal-mapping-how-to-code-it.html"><a href="spotlight-time-in-causal-mapping-how-to-code-it.html#analysing-and-displaying-the-results-of-temporal-coding"><i class="fa fa-check"></i>Analysing and displaying the results of temporal coding</a></li>
+</ul></li>
+<li class="chapter" data-level="" data-path="spotlight-puzzles-in-causal-mapping.html"><a href="spotlight-puzzles-in-causal-mapping.html"><i class="fa fa-check"></i>Spotlight: Puzzles in causal mapping</a>
+<ul>
+<li class="chapter" data-level="" data-path="spotlight-puzzles-in-causal-mapping.html"><a href="spotlight-puzzles-in-causal-mapping.html#distinctive-groups"><i class="fa fa-check"></i>Distinctive Groups</a></li>
+<li class="chapter" data-level="" data-path="spotlight-puzzles-in-causal-mapping.html"><a href="spotlight-puzzles-in-causal-mapping.html#quantity-of-evidence"><i class="fa fa-check"></i>Quantity of Evidence</a></li>
+<li class="chapter" data-level="" data-path="spotlight-puzzles-in-causal-mapping.html"><a href="spotlight-puzzles-in-causal-mapping.html#joining-rules"><i class="fa fa-check"></i>Joining rules</a></li>
+<li class="chapter" data-level="" data-path="spotlight-puzzles-in-causal-mapping.html"><a href="spotlight-puzzles-in-causal-mapping.html#does-believing-that-x-influences-y-mean-you-have-to-believe-that-not-x-causes-not-y-causal-mapping-and-counterfactuals."><i class="fa fa-check"></i>Does believing that X influences Y mean you have to believe that not-X causes not-Y? Causal mapping and counterfactuals.</a></li>
+<li class="chapter" data-level="" data-path="spotlight-puzzles-in-causal-mapping.html"><a href="spotlight-puzzles-in-causal-mapping.html#homogenity-of-paths"><i class="fa fa-check"></i>Homogenity of paths</a></li>
+<li class="chapter" data-level="" data-path="spotlight-puzzles-in-causal-mapping.html"><a href="spotlight-puzzles-in-causal-mapping.html#non--solution-1"><i class="fa fa-check"></i>(non-) solution 1)</a></li>
+<li class="chapter" data-level="" data-path="spotlight-puzzles-in-causal-mapping.html"><a href="spotlight-puzzles-in-causal-mapping.html#solution-2"><i class="fa fa-check"></i>Solution 2)</a></li>
+<li class="chapter" data-level="" data-path="spotlight-puzzles-in-causal-mapping.html"><a href="spotlight-puzzles-in-causal-mapping.html#solution-3"><i class="fa fa-check"></i>Solution 3)</a></li>
+<li class="chapter" data-level="" data-path="spotlight-puzzles-in-causal-mapping.html"><a href="spotlight-puzzles-in-causal-mapping.html#solution-4"><i class="fa fa-check"></i>Solution 4)</a></li>
+<li class="chapter" data-level="" data-path="spotlight-puzzles-in-causal-mapping.html"><a href="spotlight-puzzles-in-causal-mapping.html#solution-5"><i class="fa fa-check"></i>Solution 5)</a></li>
+</ul></li>
+<li class="chapter" data-level="" data-path="showcase.html"><a href="showcase.html"><i class="fa fa-check"></i>💻 Showcase: how the Causal Map app has been used</a>
+<ul>
+<li class="chapter" data-level="" data-path="showcase.html"><a href="showcase.html#triple-line"><i class="fa fa-check"></i>Triple-Line</a></li>
+<li class="chapter" data-level="" data-path="showcase.html"><a href="showcase.html#voscur"><i class="fa fa-check"></i>VOSCUR</a></li>
+<li class="chapter" data-level="" data-path="showcase.html"><a href="showcase.html#power-to-change"><i class="fa fa-check"></i>Power to Change</a></li>
+<li class="chapter" data-level="" data-path="showcase.html"><a href="showcase.html#global-young-academy-tracing-the-paths-of-gyas-impact"><i class="fa fa-check"></i>Global Young Academy: Tracing the paths of GYA’s impact</a></li>
+<li class="chapter" data-level="" data-path="showcase.html"><a href="showcase.html#ifrc-nepal-meta-evaluation"><i class="fa fa-check"></i>IFRC Nepal Meta-evaluation</a>
+<ul>
+<li class="chapter" data-level="" data-path="showcase.html"><a href="showcase.html#background"><i class="fa fa-check"></i>Background</a></li>
+<li class="chapter" data-level="" data-path="showcase.html"><a href="showcase.html#method"><i class="fa fa-check"></i>Method</a></li>
+</ul></li>
+</ul></li>
+<li class="chapter" data-level="" data-path="faqs-causal-map-questions-and-troubleshooting.html"><a href="faqs-causal-map-questions-and-troubleshooting.html"><i class="fa fa-check"></i>💻 FAQs: Causal Map questions and troubleshooting</a>
+<ul>
+<li class="chapter" data-level="" data-path="faqs-causal-map-questions-and-troubleshooting.html"><a href="faqs-causal-map-questions-and-troubleshooting.html#frequently-asked-questions"><i class="fa fa-check"></i>Frequently asked questions</a>
+<ul>
+<li class="chapter" data-level="" data-path="faqs-causal-map-questions-and-troubleshooting.html"><a href="faqs-causal-map-questions-and-troubleshooting.html#when-i-highlight-a-single-word-or-very-short-phrase-why-is-the-same-word-highlighted-but-in-a-different-part-of-the-statement"><i class="fa fa-check"></i>When I highlight a single word or very short phrase, why is the same word highlighted but in a different part of the statement?</a></li>
+<li class="chapter" data-level="" data-path="faqs-causal-map-questions-and-troubleshooting.html"><a href="faqs-causal-map-questions-and-troubleshooting.html#help-ive-forgotten-one-statement-and-need-to-add-it"><i class="fa fa-check"></i>Help, I’ve forgotten one statement and need to add it!</a></li>
+<li class="chapter" data-level="" data-path="faqs-causal-map-questions-and-troubleshooting.html"><a href="faqs-causal-map-questions-and-troubleshooting.html#security-at-causal-map"><i class="fa fa-check"></i>Security at Causal Map</a></li>
+<li class="chapter" data-level="" data-path="faqs-causal-map-questions-and-troubleshooting.html"><a href="faqs-causal-map-questions-and-troubleshooting.html#ive-signed-up-but-havent-recieved-a-confirmation-code"><i class="fa fa-check"></i>I’ve signed up but haven’t recieved a confirmation code?</a></li>
+<li class="chapter" data-level="" data-path="faqs-causal-map-questions-and-troubleshooting.html"><a href="faqs-causal-map-questions-and-troubleshooting.html#does-causal-map-offer-a-free-trial"><i class="fa fa-check"></i>Does Causal Map offer a free trial?</a></li>
+</ul></li>
+<li class="chapter" data-level="" data-path="faqs-causal-map-questions-and-troubleshooting.html"><a href="faqs-causal-map-questions-and-troubleshooting.html#quip-questions"><i class="fa fa-check"></i>QuIP questions</a>
+<ul>
+<li class="chapter" data-level="" data-path="faqs-causal-map-questions-and-troubleshooting.html"><a href="faqs-causal-map-questions-and-troubleshooting.html#how-do-i-prepare-my-data-from-a-quip-project-for-import-into-causal-map"><i class="fa fa-check"></i>How do I prepare my data from a QuIP project for import into Causal Map?</a></li>
+</ul></li>
+<li class="chapter" data-level="" data-path="faqs-causal-map-questions-and-troubleshooting.html"><a href="faqs-causal-map-questions-and-troubleshooting.html#downloads"><i class="fa fa-check"></i>Downloads</a></li>
+<li class="chapter" data-level="" data-path="faqs-causal-map-questions-and-troubleshooting.html"><a href="faqs-causal-map-questions-and-troubleshooting.html#known-bugs"><i class="fa fa-check"></i>Known bugs</a>
+<ul>
+<li class="chapter" data-level="" data-path="faqs-causal-map-questions-and-troubleshooting.html"><a href="faqs-causal-map-questions-and-troubleshooting.html#when-i-want-to-visit-the-app-again-after-a-while-i-go-to-the-tab-with-go.causalmap.app-and-refresh-it-but-i-just-get-a-box-which-tells-me-to-refresh-again"><i class="fa fa-check"></i>When I want to visit the app again after a while, I go to the tab with go.causalmap.app and refresh it, but I just get a box which tells me to refresh again</a></li>
+<li class="chapter" data-level="" data-path="faqs-causal-map-questions-and-troubleshooting.html"><a href="faqs-causal-map-questions-and-troubleshooting.html#when-i-switch-between-files-i-cant-highlight-text-inside-statements-in-order-to-code-them"><i class="fa fa-check"></i>When I switch between files, I can’t highlight text inside statements in order to code them</a></li>
+<li class="chapter" data-level="" data-path="faqs-causal-map-questions-and-troubleshooting.html"><a href="faqs-causal-map-questions-and-troubleshooting.html#i-cant-make-the-quotes-panel-appear-when-i-hover-over-a-link"><i class="fa fa-check"></i>I can’t make the quotes panel appear when I hover over a link</a></li>
+<li class="chapter" data-level="" data-path="faqs-causal-map-questions-and-troubleshooting.html"><a href="faqs-causal-map-questions-and-troubleshooting.html#i-click-on-a-link-to-edit-it-but-the-edit-panel-does-not-open"><i class="fa fa-check"></i>I click on a link to edit it, but the edit panel does not open</a></li>
+</ul></li>
+<li class="chapter" data-level="" data-path="faqs-causal-map-questions-and-troubleshooting.html"><a href="faqs-causal-map-questions-and-troubleshooting.html#how-do-i"><i class="fa fa-check"></i>How do I …?</a>
+<ul>
+<li class="chapter" data-level="" data-path="faqs-causal-map-questions-and-troubleshooting.html"><a href="faqs-causal-map-questions-and-troubleshooting.html#can-i-create-more-than-one-link-at-a-time"><i class="fa fa-check"></i>Can I create more than one link at a time?</a></li>
+<li class="chapter" data-level="" data-path="faqs-causal-map-questions-and-troubleshooting.html"><a href="faqs-causal-map-questions-and-troubleshooting.html#can-i-edit-more-than-one-link-at-a-time"><i class="fa fa-check"></i>Can I edit more than one link at a time?</a></li>
+<li class="chapter" data-level="" data-path="faqs-causal-map-questions-and-troubleshooting.html"><a href="faqs-causal-map-questions-and-troubleshooting.html#how-do-i-link-two-existing-chains"><i class="fa fa-check"></i>How do I link two existing chains?</a></li>
+</ul></li>
+</ul></li>
+<li class="chapter" data-level="" data-path="acknowledgements.html"><a href="acknowledgements.html"><i class="fa fa-check"></i>Acknowledgements</a></li>
+<li class="chapter" data-level="" data-path="appendix-publications-and-references.html"><a href="appendix-publications-and-references.html"><i class="fa fa-check"></i>Appendix: Publications and references</a>
+<ul>
+<li class="chapter" data-level="" data-path="appendix-publications-and-references.html"><a href="appendix-publications-and-references.html#publications"><i class="fa fa-check"></i>Publications</a></li>
+<li class="chapter" data-level="" data-path="appendix-publications-and-references.html"><a href="appendix-publications-and-references.html#presentations"><i class="fa fa-check"></i>Presentations</a></li>
+<li class="chapter" data-level="" data-path="appendix-publications-and-references.html"><a href="appendix-publications-and-references.html#longer-blog-posts"><i class="fa fa-check"></i>Longer blog posts</a></li>
+<li class="chapter" data-level="" data-path="appendix-publications-and-references.html"><a href="appendix-publications-and-references.html#researchgate"><i class="fa fa-check"></i>ResearchGate</a></li>
+<li class="chapter" data-level="" data-path="appendix-publications-and-references.html"><a href="appendix-publications-and-references.html#resources-and-apps"><i class="fa fa-check"></i>Resources and apps</a></li>
+<li class="chapter" data-level="" data-path="appendix-publications-and-references.html"><a href="appendix-publications-and-references.html#bibliography-of-selected-causal-mapping-approaches"><i class="fa fa-check"></i>Bibliography of selected causal mapping approaches</a></li>
+</ul></li>
+<li class="chapter" data-level="" data-path="references.html"><a href="references.html"><i class="fa fa-check"></i>References</a></li>
+<li class="divider"></li>
+<li><a href="https://causalmap.app" target="blank">Causal Map</a></li>
+
+</ul>
+
+      </nav>
+    </div>
+
+    <div class="book-body">
+      <div class="body-inner">
+        <div class="book-header" role="navigation">
+          <h1>
+            <i class="fa fa-circle-o-notch fa-spin"></i><a href="./">Guide to Causal Mapping</a>
+          </h1>
+        </div>
+
+        <div class="page-wrapper" tabindex="-1" role="main">
+          <div class="page-inner">
+
+            <section class="normal" id="section-">
+<!-- Google Tag Manager (noscript) -->
+<noscript><iframe src="https://www.googletagmanager.com/ns.html?id=GTM-5QDHBSC"
+height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
+<!-- End Google Tag Manager (noscript) -->
+<div id="spotlight-time-in-causal-mapping.-how-to-code-it" class="section level1">
+<h1>Spotlight: Time in causal mapping. How to code it</h1>
+<p>Many of the questions we want to answer when doing causal mapping have to do with time. Of course, there is always some kind of flow of time through our causal maps, because effects come after causes. But the actual “timings” – specific time points or periods associated with particular things – can take almost any order. In causal mapping, we don’t have any fixed set of options in order to allow the analyst to capture causal stories free form, without any preconceptions. In quantitative research, time appears in research designs in quite straightforward ways, usually as a continuous variable (which may be left continuous or transformed into a discrete variable with values like “before” and “after”); research conclusions can be, for example, “the dependent variables decreased over time.” Often it will miss stories which are not linear, for example when things get better, then worse, then better again. When designing research to analyse with causal mapping, we may also have a research design which already anticipates temporal questions, for example we want to compare people’s causal maps before and after some intervention. However, the really exciting (and for the analyst, really demanding) potential of causal mapping is to identify temporal aspects to stories which only emerge when listening to the respondents.</p>
+<div id="temporal-features-which-can-emerge-without-explicit-coding-of-time" class="section level2">
+<h2>Temporal features which can emerge without explicit coding of time</h2>
+<p>It is useful to note some common patterns and features which can emerge even before we have any system to explicitly code timings:</p>
+<ul>
+<li><p>Some factors might have a particular time point or period, e.g. “the Launch of the London Olympics.” Or they might be things which repeat, like “Start of the school year.” We often see causal links between repeating or generic events, like “Good start to school year ➜ Good progress in first semester.” These are about generic or circular time. Some maps may include factors with fixed timepoints as well as ones with generic timepoints.</p></li>
+<li><p>Some factors might be about background conditions and are not events at all, e.g. “unemployment.” Or they might be continuous variables like “level of aggression” or “client satisfaction.”</p></li>
+<li><p>When all factors are in a <em>single chain</em>, then there is a very simple time progression through the whole map, and we know for any two factors that one is before or after (or simultaneous with) the other. However, this is quite rare.</p></li>
+<li><p>There is a big distinction between maps which do or do not contain any loops. We call maps without loops <em>acyclic</em>. Maps with loops can be used to capture things like feedback, creating vicious and virtuous circles.</p></li>
+</ul>
+<p>A very common case is when respondents report an intervention or some other event as a cause, a factor which influences other factors. Those consequence factors might only be mentioned as a consequence of the event, or they might also be mentioned (but perhaps less often or with less emphasis) before the event.</p>
+<p>For example:</p>
+<p><em>“Before the training, my skills were ok, and they improved with self-study, but after the training they were much better”</em></p>
+<p>This could be coded in various different ways, but perhaps most simply like this:</p>
+<p>Self-study ➜ skills</p>
+<p>Training ➜ skills</p>
+<p>All causal coding automatically contains temporal information, because the consequences (at least in some sense) happen after the influences. In many cases, this is all we need. For example, looking at the downstream consequences of “Training” may be enough to qualitatively answer questions about “What was the effect of the training”: we can look at the map <em>downstream</em> of it, especially looking at effects on factors we are particularly interested in (usually some kind of outcome like “student progress”), and compare this with the rest of the map; and we can look <em>upstream</em> of important factors to compare how much of any positive influence on them can be traced back to the intervention as opposed to other factors.</p>
+<p>When we think about influences and consequences in this way we can often ask and answer questions about time and effect without ever mentioning time or temporal aspects explicitly.</p>
+<p>The rest of this paper deals with other cases when this is not enough.</p>
+</div>
+<div id="temporal-information-attached-to-additional-data" class="section level2">
+<h2>Temporal information attached to additional data</h2>
+<p>The statements we process when doing causal mapping usually have <a href="https://causalmapdocumentation.blot.im/search?q=additional+data">additional data</a> attached to them, for example respondent ID and gender, question number, etc. In some cases, the research may have been <strong>planned</strong> (and the data explicitly gathered) with temporal questions in mind, so that we have <em>temporal</em> additional data. For example, we might have gathered data at separate time points, before and after an intervention and then in a longer-term follow-up. In this case, for every statement, we know from its additional data which of these three timepoints it belongs to. This way, it is possible (if desired) to use the same set of factor labels for all of the timepoints but quickly and automatically identify just those causal links which are associated with just one time point (because they come from statements which were actually made at that time point); or we can compare maps between timepoints, etc.</p>
+<p>Alternatively, we may have asked respondents <em>questions</em> which concern time. For example, we might have some questions which are explicitly about:</p>
+<ul>
+<li><p>one single timepoint (like the launch of something)</p></li>
+<li><p>a specific period (like the time after a launch)</p></li>
+<li><p>generic or circular time (like “start of the school year” or “after a child is born”).</p></li>
+</ul>
+<p>If we have a number of questions which share some of these aspects (for example several questions about “start of the school year” and several about “rest of the school year”), we can add an additional data field to capture this information (for example a field called “school year time” with two possible values “start” and “rest”). This additional data for each statement can be referred to by the analyst when coding, and can be used to filter the causal map as described above. It could also be indicated in the map itself, e.g. by using different colours for links associated with claims from different time points.</p>
+<p>We may have planned our research with temporal questions in mind, and so our additional data already has neat fields to capture temporal data. In other cases we may decide during the analysis that we need to make use of temporal information which is <em>implicit</em> in the additional data – for example, we may be able to work out from the interview number when an interview was held, and so we might want to go back to the additional data and add something like “interview week” as an explicit additional data field.</p>
+</div>
+<div id="recording-temporal-information-in-causal-links" class="section level2">
+<h2>Recording temporal information in causal links</h2>
+<p>The analyst may decide that the temporal aspects of the <em>links</em> in the emerging story are particularly important. Sometimes it is enough to merely mention them in each causal link, for example to attach a hashtag like “before intervention” to a link – perhaps <em>without</em> recording any temporal information in the factor labels. Sometimes a more systematic approach is required, for example to establish two hashtags “before intervention” and “after intervention.” (It might even be required that the hashtag always be applied to every coding, though this is not necessary). So, for example, the statement:</p>
+<p>“Oh, before the intervention, as soon as we had a discussion on a difficult theme, we’d get into an argument, but now we don’t, we actually make decisions instead!”</p>
+<p>might be coded as follows. Here, the text in brackets after the arrow is understood as being attached to the link, not to the factor labels:</p>
+<p>Family discussion on difficult theme ➜(#before intervention) Family gets into argument</p>
+<p>Family discussion on difficult theme ➜(#after intervention) Family makes decision</p>
+<p>Text like this can actually be displayed on the links in the resulting causal maps if desired.</p>
+<p>Note that the factor labels are written in a way that they make sense for either application; they don’t also need to include temporal information.</p>
+<p>If we are also coding other aspects of the causal links like strength or direction, we might even code like this, where the very same pair of factors is involved in each case, and the difference is stored only in the links:</p>
+<p>Family discussion on difficult theme ➜(#before intervention; high probability) Family gets into argument</p>
+<p>Family discussion on difficult theme ➜(#after intervention; low probability) Family gets into argument</p>
+<p>This is just an example; temporal information might not be coded simply as the names of discrete phases like “before” and “after”; for example, hashtags like “rapid” or “unchanging” or “repeated” are also possible.</p>
+</div>
+<div id="recording-temporal-information-in-factor-labels" class="section level2">
+<h2>Recording temporal information in factor labels</h2>
+<p>Likewise, the analyst may decide that the temporal aspects of the <em>factors</em> in the emerging story are particularly important.</p>
+<p>Coding temporal aspects within <em>links</em> may be more suitable when there is an overall causal structure which does not itself change much over time, whereas coding temporal aspects within <em>factor</em> labels may be more suitable when respondents are thinking in terms of different (although maybe similar) sets of causal factors time which differ in time.</p>
+<p>How to code temporal information in factor labels?</p>
+<p>Sometimes it is enough to merely mention them in a factor label, for example “improved concentration after intervention” in an ad-hoc way. Sometimes a more systematic approach is required. There are several possibilities.</p>
+<div id="use-a-hashtag-or-flag" class="section level3">
+<h3>Use a hashtag or flag</h3>
+<p>It might be enough to simply use a consistent set of <a href="https://causalmapdocumentation.blot.im/search?q=flag">flags</a>, appearing anywhere in the factor label, for example:</p>
+<p>“Oh, before the intervention, as soon as we had a discussion on a difficult theme, we’d get into an argument, but now we don’t, we actually make decisions instead!”</p>
+<p>… might be coded like this, where the hashtags are understood as being attached to the link, not the factor labels:</p>
+<p>Family discussion on difficult theme #before-intervention ➜ Family gets into argument #before-intervention</p>
+<p>Family discussion on difficult theme #after-intervention ➜ Family makes decision #after-intervention</p>
+<p>This way, as the flags are unique and searchable, it would be possible to show a map consisting only of #after-intervention factors.</p>
+<p>Sometimes a more systematic approach is required, for example to establish two hashtags “#before-intervention” and “after-intervention” which are used systematically.</p>
+</div>
+<div id="use-components-in-hierarchical-coding" class="section level3">
+<h3>Use components in hierarchical coding</h3>
+<p>This approach allows us to filter just for factors with or without one or more specific hashtags. However, what if we want to zoom out to a causal map which does not make this distinction, because we want to see family processes in general, regardless of timepoint? We would like to be able to make a higher-level factor “Family discussion … “ which generalises from the specific timepoints. We can do that by making the timepoints into <a href="https://causalmapdocumentation.blot.im/search?q=component">components</a> in hierarchical coding style:</p>
+<p>Family discussion on difficult theme; before-intervention ➜ Family gets into argument; before-intervention</p>
+<p>Family discussion on difficult theme; after-intervention ➜ Family makes decision; after-intervention</p>
+<p>This way, when we zoom out to view only first-level factors, all the causal links to and from the specific factors for the two timepoints will be rerouted to the top-level factor, to give a time-independent overview. Effectively we create “virtual” factors like Family discussion on difficult theme and so on</p>
+</div>
+<div id="use-higher-level-temporal-components-in-hierarchical-coding" class="section level3">
+<h3>Use higher-level temporal components in hierarchical coding</h3>
+<p>Another approach is to do this the other way round, with factors like these.</p>
+<p>Family stressors before intervention; discussions on difficult themes</p>
+<p>Family stressors before intervention; bedtime</p>
+<p>Family behaviours before intervention; making decisions</p>
+<p>Family behaviours before intervention; getting into arguments</p>
+<p>Family stressors after intervention; discussions on difficult themes</p>
+<p>Family stressors after intervention; bedtime</p>
+<p>Family behaviours after intervention; making decisions</p>
+<p>Family behaviours after intervention; getting into arguments</p>
+<p>Here, the temporal aspect is moved to the top of the hierarchy, so we could zoom out to create “virtual” factors like Family stressors before intervention and so on.</p>
+<p>These components can also be mixed in with any other components used during coding, for example components for different regions, contexts or genders.</p>
+<p>All of these suggestions can in principle be mixed in with one another, but the analyst is advised to be very careful not to make things too complicated.</p>
+<p>The temporal aspects mentioned here are just examples; temporal information might not be coded simply as the names of discrete phases like “before” and “after”; for example, concepts like “rapid” or “unchanging” or “repeated” are also possible.</p>
+</div>
+<div id="but-what-if-factor-labels-themselves-express-changes" class="section level3">
+<h3>But what if factor labels themselves express changes?</h3>
+<p>We have already recommended using heterogeneous, “in-vivo” factor labels and to resist the temptation to formulate all factor labels in a strictly similar way: when in doubt, stick fairly close to the actual language your sources use (so-called “in-vivo” coding) , and don’t be <em>too</em> worried if your factor labels are different from one another grammatically. In particular, this means that sometimes you may find yourself using some labels which express a <em>difference</em>, even a difference over time, like “improvement in X” and some which do not. It can get confusing using these kinds of labels at the same time as some of the temporal approaches mentioned here. But, we argue, that is the way we humans think about how things work, as a heterogenous pile of fragments of connected causal information. This is always a balancing act, but we encourage you to side with your respondents and try to capture what they are saying rather than impose a schema.</p>
+</div>
+</div>
+<div id="analysing-and-displaying-the-results-of-temporal-coding" class="section level2">
+<h2>Analysing and displaying the results of temporal coding</h2>
+<p>All the usual tools are available to us to analyse and display these results. For example, we can:</p>
+<ul>
+<li><p>make tables of frequencies of factors or links broken down by hashtag</p></li>
+<li><p>show submaps for</p></li>
+</ul>
+<p>o one or more values of a temporally relevant additional data field</p>
+<p>o and/or one or more temporally relevant link hashtags</p>
+<p>o and/or one or more temporally relevant factor label flags/hashtags</p>
+<ul>
+<li>and/or we can zoom in or out if we have used hierarchical coding with one or more temporally relevant components.</li>
+</ul>
+<p>In particular, if a small number (2, 3, 4) temporal categories (like, “before, during, after” or “year 1, year 2, year 3” have been used in additional data fields, and/or when coding links and/or when coding factors, it is possible to arrange the above kinds of output in a left-to-right, storytelling fashion. For example, three simple, top-level maps for three time periods can be displayed in a row. Or, the time periods can form the columns of a data table showing for example how different factors were mentioned with different frequency at different times. In the simplest case, as mentioned on page 2 of this paper, the map itself forms a left-to-right causal story, which can be read, with some caveats, according to a schema like “this happened, which made this happen, which made this happen.”</p>
+
+</div>
+</div>
+            </section>
+
+          </div>
+        </div>
+      </div>
+<a href="causal-maps-systems-maps-whats-the-difference-does-it-matter.html" class="navigation navigation-prev " aria-label="Previous page"><i class="fa fa-angle-left"></i></a>
+<a href="spotlight-puzzles-in-causal-mapping.html" class="navigation navigation-next " aria-label="Next page"><i class="fa fa-angle-right"></i></a>
+    </div>
+  </div>
+<script src="libs/gitbook-2.6.7/js/app.min.js"></script>
+<script src="libs/gitbook-2.6.7/js/lunr.js"></script>
+<script src="libs/gitbook-2.6.7/js/clipboard.min.js"></script>
+<script src="libs/gitbook-2.6.7/js/plugin-search.js"></script>
+<script src="libs/gitbook-2.6.7/js/plugin-sharing.js"></script>
+<script src="libs/gitbook-2.6.7/js/plugin-fontsettings.js"></script>
+<script src="libs/gitbook-2.6.7/js/plugin-bookdown.js"></script>
+<script src="libs/gitbook-2.6.7/js/jquery.highlight.js"></script>
+<script src="libs/gitbook-2.6.7/js/plugin-clipboard.js"></script>
+<script>
+gitbook.require(["gitbook"], function(gitbook) {
+gitbook.start({
+"sharing": {
+"github": false,
+"facebook": true,
+"twitter": true,
+"linkedin": false,
+"weibo": false,
+"instapaper": false,
+"vk": false,
+"all": ["facebook", "twitter", "linkedin", "weibo", "instapaper"]
+},
+"fontsettings": {
+"theme": "white",
+"family": "sans",
+"size": 2
+},
+"edit": {
+"link": null,
+"text": null
+},
+"history": {
+"link": null,
+"text": null
+},
+"view": {
+"link": null,
+"text": null
+},
+"download": ["Guide-to-causal-mapping.pdf"],
+"toc": {
+"collapse": "section"
+},
+"search": true,
+"toc_depth": 3
+});
+});
+</script>
+
+</body>
+
+</html>

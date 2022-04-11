@@ -1,0 +1,326 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+<title>Chapter 29 📚 Quantifying causal evidence | Guide to Causal Mapping</title>
+<meta name="author" content="Steve Powell &amp; Causal Map Ltd">
+<meta name="description" content="29.1 Summary In the app, in the Quantity of Evidence / Robustness of Argument panel Quantity of Evidence This tab appears when “Trace” is switched on in the Search and Filter Factors panel. It...">
+<meta name="generator" content="bookdown 0.24.1 with bs4_book()">
+<meta property="og:title" content="Chapter 29 📚 Quantifying causal evidence | Guide to Causal Mapping">
+<meta property="og:type" content="book">
+<meta property="og:url" content="https://causalmap.app/quantifying-causal-evidence.html">
+<meta property="og:image" content="https://causalmap.app/_assets/image-20210520221329966.png">
+<meta property="og:description" content="29.1 Summary In the app, in the Quantity of Evidence / Robustness of Argument panel Quantity of Evidence This tab appears when “Trace” is switched on in the Search and Filter Factors panel. It...">
+<meta name="twitter:card" content="summary">
+<meta name="twitter:title" content="Chapter 29 📚 Quantifying causal evidence | Guide to Causal Mapping">
+<meta name="twitter:description" content="29.1 Summary In the app, in the Quantity of Evidence / Robustness of Argument panel Quantity of Evidence This tab appears when “Trace” is switched on in the Search and Filter Factors panel. It...">
+<meta name="twitter:image" content="https://causalmap.app/_assets/image-20210520221329966.png">
+<!-- JS --><script src="https://cdnjs.cloudflare.com/ajax/libs/clipboard.js/2.0.6/clipboard.min.js" integrity="sha256-inc5kl9MA1hkeYUt+EC3BhlIgyp/2jDIyBLS6k3UxPI=" crossorigin="anonymous"></script><script src="https://cdnjs.cloudflare.com/ajax/libs/fuse.js/6.4.6/fuse.js" integrity="sha512-zv6Ywkjyktsohkbp9bb45V6tEMoWhzFzXis+LrMehmJZZSys19Yxf1dopHx7WzIKxr5tK2dVcYmaCk2uqdjF4A==" crossorigin="anonymous"></script><script src="https://kit.fontawesome.com/6ecbd6c532.js" crossorigin="anonymous"></script><script src="libs/header-attrs-2.11.2/header-attrs.js"></script><script src="libs/jquery-3.5.1/jquery-3.5.1.min.js"></script><meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+<link href="libs/bootstrap-4.5.3/bootstrap.min.css" rel="stylesheet">
+<script src="libs/bootstrap-4.5.3/bootstrap.bundle.min.js"></script><script src="libs/bs3compat-0.2.4.9000/tabs.js"></script><script src="libs/bs3compat-0.2.4.9000/bs3compat.js"></script><link href="libs/bs4_book-1.0.0/bs4_book.css" rel="stylesheet">
+<script src="libs/bs4_book-1.0.0/bs4_book.js"></script><script src="https://cdnjs.cloudflare.com/ajax/libs/autocomplete.js/0.38.0/autocomplete.jquery.min.js" integrity="sha512-GU9ayf+66Xx2TmpxqJpliWbT5PiGYxpaG8rfnBEk1LL8l1KGkRShhngwdXK1UgqhAzWpZHSiYPc09/NwDQIGyg==" crossorigin="anonymous"></script><script src="https://cdnjs.cloudflare.com/ajax/libs/mark.js/8.11.1/mark.min.js" integrity="sha512-5CYOlHXGh6QpOFA/TeTylKLWfB3ftPsde7AnmhuitiTX4K5SqCLBeKro6sPS8ilsz1Q4NRx3v8Ko2IBiszzdww==" crossorigin="anonymous"></script><!-- CSS --><link rel="stylesheet" href="style.css">
+</head>
+<body data-spy="scroll" data-target="#toc">
+
+<div class="container-fluid">
+<div class="row">
+  <header class="col-sm-12 col-lg-3 sidebar sidebar-book"><a class="sr-only sr-only-focusable" href="#content">Skip to main content</a>
+
+    <div class="d-flex align-items-start justify-content-between">
+      <h1>
+        <a href="index.html" title="">Guide to Causal Mapping</a>
+      </h1>
+      <button class="btn btn-outline-primary d-lg-none ml-2 mt-1" type="button" data-toggle="collapse" data-target="#main-nav" aria-expanded="true" aria-controls="main-nav"><i class="fas fa-bars"></i><span class="sr-only">Show table of contents</span></button>
+    </div>
+
+    <div id="main-nav" class="collapse-lg">
+      <form role="search">
+        <input id="search" class="form-control" type="search" placeholder="Search" aria-label="Search">
+</form>
+
+      <nav aria-label="Table of contents"><h2>Table of contents</h2>
+        <ul class="book-toc list-unstyled">
+<li><a class="" href="index.html"><span class="header-section-number">1</span> Overview</a></li>
+<li class="book-part">The new Causal Map platform</li>
+<li><a class="" href="welcome-to-causal-map-2.html"><span class="header-section-number">2</span> Welcome to Causal Map 2!</a></li>
+<li><a class="" href="are-causal-map-and-causal-mapping-for-me.html"><span class="header-section-number">3</span> 📚💻 Are Causal Map and causal mapping for me?</a></li>
+<li><a class="" href="features-of-causal-map.html"><span class="header-section-number">4</span> 💻 Features of Causal Map</a></li>
+<li><a class="" href="glossary.html"><span class="header-section-number">5</span> 📚 ⚡ Glossary</a></li>
+<li><a class="" href="signing-up-and-signing-in-at-causal-map.html"><span class="header-section-number">6</span> ⚡ 💻 Signing up and signing in at Causal Map</a></li>
+<li class="book-part">💻 The app, panel by panel</li>
+<li><a class="" href="quick-tour.html"><span class="header-section-number">7</span> ⚡ 💻 Quick tour of the app</a></li>
+<li><a class="" href="top-menu.html"><span class="header-section-number">8</span> ⚡ 💻 Managing your file with the top menu</a></li>
+<li><a class="" href="filters.html"><span class="header-section-number">9</span> 💻 All the filters</a></li>
+<li><a class="" href="the-coding-panel-creating-factors-and-links.html"><span class="header-section-number">10</span> ⚡ 💻 The Coding Panel: creating factors and links</a></li>
+<li><a class="" href="the-factor-editor.html"><span class="header-section-number">11</span> 💻 The Factor Editor</a></li>
+<li><a class="" href="all-the-tables.html"><span class="header-section-number">12</span> 💻 All the tables</a></li>
+<li><a class="" href="the-factors-table.html"><span class="header-section-number">13</span> 💻 The Factors table</a></li>
+<li><a class="" href="the-mentions-table.html"><span class="header-section-number">14</span> 💻 The Mentions Table</a></li>
+<li><a class="" href="the-links-table.html"><span class="header-section-number">15</span> 💻 The Links Table</a></li>
+<li><a class="" href="the-statements-table.html"><span class="header-section-number">16</span> 💻 The Statements Table</a></li>
+<li><a class="" href="the-sources-table.html"><span class="header-section-number">17</span> 💻 The Sources Table</a></li>
+<li><a class="" href="the-questions-table.html"><span class="header-section-number">18</span> 💻 The Questions Table</a></li>
+<li><a class="" href="the-closed-question-blocks-table.html"><span class="header-section-number">19</span> 💻 The Closed Question Blocks Table</a></li>
+<li><a class="" href="the-metrics-table.html"><span class="header-section-number">20</span> 💻 The Metrics Table</a></li>
+<li><a class="" href="file-manager.html"><span class="header-section-number">21</span> 💻 The File Manager</a></li>
+<li class="book-part">📚 What is Causal Mapping?</li>
+<li><a class="" href="causal-mapping-definitions.html"><span class="header-section-number">22</span> 📚 Causal Mapping: Definitions</a></li>
+<li><a class="" href="mapping.html"><span class="header-section-number">23</span> 📚 Causal mapping for evaluators</a></li>
+<li class="book-part">Creating maps</li>
+<li><a class="" href="creating-good-factor-labels.html"><span class="header-section-number">24</span> 📚 Creating good factor labels</a></li>
+<li><a class="" href="simplifying.html"><span class="header-section-number">25</span> 📚 Simplifying causal maps with hierarchical coding</a></li>
+<li><a class="" href="hierarchical-factors-in-causal-map.html"><span class="header-section-number">26</span> 💻 Hierarchical factors in Causal Map</a></li>
+<li><a class="" href="strength-adding-additional-information-like-strength-of-a-link-in-a-causal-map.html"><span class="header-section-number">27</span> 📚 Strength: Adding additional information like strength of a link in a causal map</a></li>
+<li><a class="" href="coding-opposites.html"><span class="header-section-number">28</span> 📚 Coding opposites</a></li>
+<li><a class="active" href="quantifying-causal-evidence.html"><span class="header-section-number">29</span> 📚 Quantifying causal evidence</a></li>
+<li class="book-part">Analysing maps</li>
+<li><a class="" href="analysing-maps-overview.html"><span class="header-section-number">30</span> Analysing maps: Overview</a></li>
+<li><a class="" href="comparing.html"><span class="header-section-number">31</span> 📚 Analysis: comparing maps between particular groups</a></li>
+<li><a class="" href="tricky-coding-challenges.html"><span class="header-section-number">32</span> 📚 Tricky coding challenges</a></li>
+<li class="book-part">Spotlights</li>
+<li><a class="" href="spotlight-causal-mapping-and-outcome-harvesting.html"><span class="header-section-number">33</span> 📚 Spotlight: Causal Mapping and Outcome Harvesting</a></li>
+<li><a class="" href="spotlight-context-in-causal-mapping-how-to-code-it.html"><span class="header-section-number">34</span> 📚 Spotlight: Context in causal mapping: how to code it</a></li>
+<li><a class="" href="spotlight-beware-the-transitivity-trap.html"><span class="header-section-number">35</span> 📚 Spotlight: Beware the transitivity trap</a></li>
+<li><a class="" href="spotlight-compatible-and-incompatible-factors-in-storylines.html"><span class="header-section-number">36</span> 📚 Spotlight: Compatible and incompatible factors in storylines</a></li>
+<li><a class="" href="spotlight-cases-variables-and-percentages-in-causal-mapping.html"><span class="header-section-number">37</span> 📚 Spotlight: Cases, variables and percentages in causal mapping?</a></li>
+<li><a class="" href="spotlight-different-kinds-of-question-chaining-with-quip-and-parevo-as-illustrations.html"><span class="header-section-number">38</span> 📚 Spotlight: Different kinds of question chaining, with QuIP and ParEvo as illustrations</a></li>
+<li><a class="" href="spotlight-the-last-minute-principle.html"><span class="header-section-number">39</span> 📚 Spotlight: The last minute principle</a></li>
+<li><a class="" href="causal-maps-systems-maps-whats-the-difference-does-it-matter.html"><span class="header-section-number">40</span> 📚 Causal maps, systems maps, what’s the difference? Does it matter?</a></li>
+<li><a class="" href="spotlight-coding-time-in-causal-mapping.html"><span class="header-section-number">41</span> 📚 Spotlight: Coding time in causal mapping</a></li>
+<li><a class="" href="spotlight-puzzles-in-causal-mapping.html"><span class="header-section-number">42</span> 📚 Spotlight: Puzzles in causal mapping</a></li>
+<li><a class="" href="showcase.html"><span class="header-section-number">43</span> Showcase: how the Causal Map app has been used</a></li>
+<li class="book-part">💻 Uploading and updating data</li>
+<li><a class="" href="core-tables.html"><span class="header-section-number">44</span> 💻 Core tables in Causal Map</a></li>
+<li><a class="" href="uploadingimporting-your-statements-and-related-data..html"><span class="header-section-number">45</span> 💻 Uploading/Importing your statements and related data.</a></li>
+<li><a class="" href="upload-and-roundtripping-examples.html"><span class="header-section-number">46</span> 💻 Upload and roundtripping: examples</a></li>
+<li><a class="" href="importing-your-data-special-cases.html"><span class="header-section-number">47</span> 💻 Importing your data: special cases</a></li>
+<li class="book-part">Technical reference</li>
+<li><a class="" href="how-causal-map-is-hosted.html"><span class="header-section-number">48</span> 💻 How Causal Map is hosted</a></li>
+<li><a class="" href="faqs-causal-map-questions-and-troubleshooting.html"><span class="header-section-number">49</span> 💻 ⚡ FAQs: Causal Map questions and troubleshooting</a></li>
+<li><a class="" href="the-logic-of-the-causal-map-filters.html"><span class="header-section-number">50</span> The logic of the Causal Map filters</a></li>
+<li><a class="" href="using-the-advanced-editor-to-create-and-edit-filters.html"><span class="header-section-number">51</span> 💻 Using the Advanced Editor to create and edit filters</a></li>
+<li><a class="" href="keyboard-shortcuts-for-the-factor-editor-and-advanced-editor.html"><span class="header-section-number">52</span> 💻 Keyboard shortcuts for the Factor Editor and Advanced Editor</a></li>
+<li><a class="" href="causal-map-functions.html"><span class="header-section-number">53</span> Causal Map functions</a></li>
+<li><a class="" href="causal-mapping-with-excel.html"><span class="header-section-number">54</span> Causal mapping with Excel</a></li>
+<li class="book-part">Final section</li>
+<li><a class="" href="acknowledgements.html"><span class="header-section-number">55</span> Acknowledgements</a></li>
+<li><a class="" href="appendix-publications-and-links.html"><span class="header-section-number">56</span> Appendix: Publications and links</a></li>
+<li><a class="" href="references.html">References</a></li>
+</ul>
+
+        <div class="book-extra">
+          <p><a id="book-repo" href="https://github.com/stevepowell99/causal-map-guide">View book source <i class="fab fa-github"></i></a></p>
+        </div>
+      </nav>
+</div>
+  </header><main class="col-sm-12 col-md-9 col-lg-7" id="content"><div id="quantifying-causal-evidence" class="section level1" number="29">
+<h1>
+<span class="header-section-number">29</span> 📚 Quantifying causal evidence<a class="anchor" aria-label="anchor" href="#quantifying-causal-evidence"><i class="fas fa-link"></i></a>
+</h1>
+<div id="summary-2" class="section level2 hi" number="29.1">
+<h2>
+<span class="header-section-number">29.1</span> Summary<a class="anchor" aria-label="anchor" href="#summary-2"><i class="fas fa-link"></i></a>
+</h2>
+<p>In the app, in the Quantity of Evidence / Robustness of Argument panel</p>
+<div class="figure">
+<img src="_assets/qoe.png" alt=""><p class="caption">Quantity of Evidence</p>
+</div>
+<p>This tab appears when “Trace” is switched on in the Search and Filter Factors panel.</p>
+<p>It calculates how much evidence there is for the causal path(s) from the factors identified in the From box to the factors identified in the To box. It identifies how many pieces of evidence (individual mentions of individual links) would have to be deleted so that there is no longer any path from the From factors to the To factors. A larger number means more evidence; more pieces would have to be deleted until we gave up the hypothesis that the From factors influence the To factors at all.</p>
+<p>This number is shown in the “Evidence” column. A large number does <em>not</em> necessarily mean that this path is <em>strong</em> in the sense that the From factors have a <em>large</em> effect on the To factors. It says there is plenty of evidence for the path, <em>whatever its strength</em>.</p>
+<p>Subtotals are provided for each From factor; it can be useful to compare the amount of evidence for the impact of each From factor.</p>
+<p>These numbers are not very useful on their own. But they are useful for comparisons.</p>
+<p>If you look at the robustness of the path from interventions B and C to an outcome E, one thing you can do is compare the sum of the score for the two sets of paths and compare it with the overall score. If the overall score is more or less the same as the larger of the score for B and the score for C, you can assume that the (evidence for the) intervention paths overlap - so if the score for B is larger, you could say that C uses many of the same paths. But if the overall score is more like the sum of the two, you can deduce that the interventions work more independently. So for example if you are already funding intervention B, and you have to decide whether to fund C or D, and your causal map says that the score from C to E and from D to E are similar, you’d want to look at the pairs - you’d want to look at B plus C to E and compare it with B plus D to E. B + D might have a much larger score than C +D, because C shares many paths with B, but D doesn’t. So you’d want to fund D, as the combination of B and D would be more robust.</p>
+<p>Note as usual in causal mapping, this argument can be posed either in terms of evidence or in terms of actual effects. If you think of the Ns in the individual links as the number of pieces of evidence, you can say funding B plus D is a better bet because there is more independent evidence that it works. If you think of the Ns as a score for the robustness of the causal link, or the number of separate mechanisms which explain such a link, then you would choose D because the best bet is that there is a more robust effect on O across more different pathways.</p>
+<p>This is a funky way of looking at interaction effects.</p>
+<p>Of course, in principle you can see all of this just by looking at the maps and to what extent B, C and D share paths to O. But sometimes it is hard to see and this metric anchors a narrative description in actual numbers.</p>
+</div>
+<div id="problem" class="section level2" number="29.2">
+<h2>
+<span class="header-section-number">29.2</span> Problem<a class="anchor" aria-label="anchor" href="#problem"><i class="fas fa-link"></i></a>
+</h2>
+<p><strong>How to summarise, given a heap of causal information about what causes what, the *quantity* of evidence that one particular factor influences another particular factor?</strong></p>
+<p>Conventional approaches calculate the influence on the Outcome of tweaking the Driver, which follows standard definitions of Impact and is the right way to do it when you have quantitative variables.</p>
+<p>One of the pioneers of causal mapping, Toulmin, was interested in the structure of arguments and asked what makes an argument plausible or reasonable (Toulmin, 1979).</p>
+<p>We arrive at a map like this simply by drawing an arrow for every evidenced causal claim that driver D causally influences outcome O. For each arrow, we have for example a separate sentence or paragraph in a document or interview transcript. In this case it is easy to count the evidence: there are three pieces of evidence that D causally influences O.</p>
+<p>To be sure it is interesting that two pieces of evidence come from one source, and one piece comes from another; we don’t want to lose sight of this fact, it might be important, but nevertheless the overall number three is important too.</p>
+<p>In this example we have no further important information to distinguish the “how” or “why” of each causal claim. If there had been further important information about, say, the mechanism or route in each case, then we would have captured this by including additional causal factors, for example additional influences or intervening stages.</p>
+<p>In real life, the situation is normally more complicated. An evaluator is usually confronted with a heap or web of fragments of argument about how a driver might influence an outcome. The point of this paper is to extend our simple intuition above (“there are three pieces of evidence”) about how to <em>count the quantity of evidence</em> to cases with intervening causal factors as in the next diagram.</p>
+<p><em>A causal evidence map in which the quantity of evidence that Our Driver influences Outcome = 6, and quantity of evidence that Some Other Driver influences Outcome = 1.</em></p>
+<p>Sometimes you can just glance at a map like this and see for example there are many lines straight from a driver to an outcome, and we can say “obviously there is a lot of evidence that the driver influences the outcome”. In this case, we can even say “obviously there is a lot more evidence that our intervention can causally influence the outcome than that other driver can”. But how can we formalise this, how can we “count” threads of evidence which may pass through multiple intermediate factors? How do we count the paths, especially when there are many of them and we can’t just “look and see”? (And later we will see that even in simple cases with just a few links, when some links may have a negative or “minus” influence, our ability to “just see” the answer is even more limited.)</p>
+<p><em>A causal evidence map in which quantity of evidence that Driver influences Outcome = 1.</em></p>
+<p>Here we propose the metric “quantity of evidence”, which can be thought of as the resilience of the web of arguments: what is the minimum number of causal claims you would have to <em>delete</em> in order to break any possible argument that D influences O? If your whole argument rests on a single link from K to L, even though you have many pieces of evidence from Driver to K and from L to Outcome, your argument would break if just that one link failed – hence, the quantity of evidence is just 1.</p>
+<p>It turns out that this number is the same as asking “how many completely separate paths (i.e. paths which don’t share any stretches at all) could we construct from D to O?”.</p>
+<p>The rest of this section is quite technical and can be skipped.</p>
+</div>
+<div id="prior-strategies" class="section level2" number="29.3">
+<h2>
+<span class="header-section-number">29.3</span> Prior strategies<a class="anchor" aria-label="anchor" href="#prior-strategies"><i class="fas fa-link"></i></a>
+</h2>
+<p>The problem of how to combine (sets of) causal claims has been addressed many times. Pose normative questions (how should/could groups make decisions?) and descriptive questions (how do groups actually make decisions).</p>
+<p>As far as we know, all solutions have been based on the idea of calculating values of the factors by propagation along the links.</p>
+<p>(B. Chaib-Draa &amp; Desharnais, 1998; Brahim Chaib-Draa, 2002), based on the work of Zhang, (W.-R. Zhang, Chen, &amp; Bezdek, 1989; W. R. Zhang, 1994) shows a way to combine different sets of claims using NPN logic. Factors take one of eight values like “neutral or negative” (Nadkarni &amp; Shenoy, 2001) use Bayesian networks which as noted by Chaib-Draa are not suited to maps which include loops or cycles.</p>
+</div>
+<div id="definitions" class="section level2" number="29.4">
+<h2>
+<span class="header-section-number">29.4</span> Definitions<a class="anchor" aria-label="anchor" href="#definitions"><i class="fas fa-link"></i></a>
+</h2>
+<p>We note that a first attempt to quantify amount of evidence would be simply to count all the different possible paths, i.e. (above) Driver ➜ B ➜ K ➜ L ➜ P ➜ Outcome, Driver ➜ C ➜ K ➜ L ➜ P ➜ Outcome, etc etc. In the above case, counting like this, there would be 3×4 = 12 paths. Yet it is easy to see that just one cut between K and L will break any and all the arguments, so 12 seems too many.</p>
+<p><strong>A better solution is proposed here based on the network property “maximum flow rate”. It is intuitive, and easy to understand and calculate.</strong></p>
+<p>Note, we are not aiming here to draw any conclusions about the <em>strength</em> of the influence which the driver has on the outcome but about the <em>quantity</em> of evidence that there is <em>some</em> influence.</p>
+<p>Also, everything we say here comes with the caveat “all other things being equal”: we are dealing only with the role played by the bare existence or non-existence of causal claims and their number, without regard to other, surely relevant issues like sources of bias, or context, etc.</p>
+<p>This is in fact the situation we are mostly in with the Qualitative Impact Protocol (QuI: a simple pile of causal claims from relatively homogenous sources with little other information which might influence which claim to prefer.</p>
+<p>Before looking at the solution, we’ll need to make a surprising distinction: QuIP maps, and some Causal Map maps, and Axelrod’s original maps, are mostly not causal maps but maps of <em>causal evidence,</em> or <em>causal evidence maps</em>.</p>
+</div>
+<div id="definition-of-causal-map" class="section level2" number="29.5">
+<h2>
+<span class="header-section-number">29.5</span> Definition of causal map<a class="anchor" aria-label="anchor" href="#definition-of-causal-map"><i class="fas fa-link"></i></a>
+</h2>
+<p>A <strong>causal map</strong> (CM) is defined as usual: a network formed by a set of directed edges aka <strong>links</strong> between pairs of nodes aka (causal) <strong>factors</strong>. Usual network conventions apply:</p>
+<p>- each factor appears only once;</p>
+<p>- there are no isolated factors with no links;</p>
+<p>- we only allow <em>one</em> link between any pair of factors. (If there are different mechanisms at work, we prefer to have the additional causal factors which govern these distinct mechanisms explicitly included in the map.)</p>
+<p>Semantics: an edge D ➜ O means “D causally influences O”.</p>
+<p>There are many possible kinds of causal map. Special cases would include SEMs, some project theories of change, FCM and others.</p>
+</div>
+<div id="definition-of-causal-evidence-map" class="section level2" number="29.6">
+<h2>
+<span class="header-section-number">29.6</span> Definition of causal evidence map<a class="anchor" aria-label="anchor" href="#definition-of-causal-evidence-map"><i class="fas fa-link"></i></a>
+</h2>
+<p>A <strong>causal evidence map</strong> (CEM) is a set of directed edges aka links between pairs of nodes aka (causal) factors; each link has the property “source ID” and may have additional properties.</p>
+<p>Semantics: an edge D ➜ O means “<strong>source S claims</strong> that D causally influences O”.</p>
+<p>A causal evidence map based on evidence from two sources.</p>
+<p>Axelrod’s original maps (Axelrod, 1976) are CEMs. His interest is in studying the decision processes of political leaders, usually just single sources; sometimes he calls them “concept maps” but also “causal maps”.</p>
+</div>
+<div id="cm-vs-cem" class="section level2" number="29.7">
+<h2>
+<span class="header-section-number">29.7</span> CM vs CEM<a class="anchor" aria-label="anchor" href="#cm-vs-cem"><i class="fas fa-link"></i></a>
+</h2>
+<p>A CEM has two possible tasks:</p>
+<ol style="list-style-type: decimal">
+<li><p>Simply to report what people think about what causes what.</p></li>
+<li><p>To help us (perhaps) draw conclusions about what causes what, which can conveniently be expresses as a causal map with the same or similar structure. One of the main tasks of a programme evaluator – or a judge – is to make the leap from CEM to CM: from “Expert source S told me that D ➜ O” to, with caveats, “D ➜ O”.</p></li>
+</ol>
+<p>So the most interesting task is the second: a CEM helps us draw conclusions about a closely related CM.</p>
+<p>QuIP is explicitly involved in both these tasks.</p>
+</div>
+<div id="multiple-links-number-of-mentions" class="section level2" number="29.8">
+<h2>
+<span class="header-section-number">29.8</span> Multiple links / number of mentions<a class="anchor" aria-label="anchor" href="#multiple-links-number-of-mentions"><i class="fas fa-link"></i></a>
+</h2>
+<p>We have specified that CMs are not allowed to have more than one link D ➜ O. For CEMs on the other hand, it is <em>usual</em> to include several links between pairs of factors, in order to encode the fact that different sources mentioned that link.</p>
+<p>We will trivially extend CEMs with a <strong>convention</strong>:</p>
+<p>- a map with n links D ➜ O is equivalent to the same map in which the n links are replaced by a single link with the additional property “Number of mentions” = n</p>
+<p>In visual displays, often the number n is displayed on the link. So the diagram above can be converted to this:</p>
+</div>
+<div id="solution" class="section level2" number="29.9">
+<h2>
+<span class="header-section-number">29.9</span> Solution<a class="anchor" aria-label="anchor" href="#solution"><i class="fas fa-link"></i></a>
+</h2>
+<p>Now we can suggest a solution to the problem above.</p>
+<div id="base-case" class="section level3" number="29.9.1">
+<h3>
+<span class="header-section-number">29.9.1</span> Base case<a class="anchor" aria-label="anchor" href="#base-case"><i class="fas fa-link"></i></a>
+</h3>
+<p>All other things being equal, we can formalise our intuition about the quantity of evidence provided by CEMS like this:</p>
+<p>- <strong>any non-zero number of links</strong> from D ➜ O in a CEM <strong>is</strong> <strong>some kind of evidence</strong> that indeed D actually influences O – from a Bayesian perspective, some information is better than no information</p>
+<p>- <strong>more links mean more evidence</strong>,</p>
+<p>- and (all other things being equal), given a CEM with n links from D ➜ O and m links from F ➜ O, if n&gt;m we would say that the <strong>evidence is stronger</strong> that D influences O than that F influences O. Note this is <em>not the same as saying that we have evidence that D to O is a stronger influence</em>; we haven’t even introduced a notation for strength of influence. Quantity of evidence for an influence is not the same as evidence for the strength of an influence.</p>
+<p>In practice, all things never are quite equal, and it is the job of the human evaluator to review this kind of evidence to see which, if any, conclusions about real-world causality can be drawn on the basis of a causal evidence map.</p>
+<p>Following these intuitions, we can define <strong>quantity of evidence</strong> for D ➜ O given a simple CEM consisting only of D, O, and n links between them as simply n.</p>
+<p>A causal evidence map; quantity of evidence that D ➜ O is 3.</p>
+</div>
+<div id="problem-extend-this-simple-case-to-maps-with-intervening-factors-between-d-and-o." class="section level3" number="29.9.2">
+<h3>
+<span class="header-section-number">29.9.2</span> Problem: extend this simple case to maps with intervening factors between D and O.<a class="anchor" aria-label="anchor" href="#problem-extend-this-simple-case-to-maps-with-intervening-factors-between-d-and-o."><i class="fas fa-link"></i></a>
+</h3>
+</div>
+<div id="useful-reporting-metrics" class="section level3" number="29.9.3">
+<h3>
+<span class="header-section-number">29.9.3</span> Useful reporting metrics<a class="anchor" aria-label="anchor" href="#useful-reporting-metrics"><i class="fas fa-link"></i></a>
+</h3>
+<p>- Overall quantity of evidence for the paths from all drivers to all outcomes</p>
+<p>- Individual quantity of evidence from each driver to all outcomes</p>
+<p>- Comparison of quantities of evidence from a pair of drivers (or sets of drivers) to all outcomes</p>
+<p>- Individual quantity of evidence from all drivers to each outcome</p>
+<p><strong>
+</strong></p>
+</div>
+<div id="extension-weighting" class="section level3" number="29.9.4">
+<h3>
+<span class="header-section-number">29.9.4</span> Extension: weighting<a class="anchor" aria-label="anchor" href="#extension-weighting"><i class="fas fa-link"></i></a>
+</h3>
+<p>It is also possible to extend the semantics such that <em>Quantity of evidence / Number of mentions</em> can also be used to confer a weighting, such that for example claims from some particular sources, for example focus groups or experts, are immediately encoded with QE =2, opening also the possibility of non-integer (but still positive) QE like .5.</p>
+</div>
+<div id="hierarchical" class="section level3" number="29.9.5">
+<h3>
+<span class="header-section-number">29.9.5</span> Hierarchical<a class="anchor" aria-label="anchor" href="#hierarchical"><i class="fas fa-link"></i></a>
+</h3>
+<p>(Work in progress)</p>
+<p>Remember that when tracing length &gt;1, if you zoom factors first, Robustness can be less than you expect because you are jumping from a thing to itself…</p>
+<p>If you zoom first, Robustness can also be <em>more</em> when length&gt;1 because you include all the paths between generic intermediaries.</p>
+
+</div>
+</div>
+</div>
+
+
+
+<div class="chapter-nav">
+<div class="prev"><a href="coding-opposites.html"><span class="header-section-number">28</span> 📚 Coding opposites</a></div>
+<div class="next"><a href="analysing-maps-overview.html"><span class="header-section-number">30</span> Analysing maps: Overview</a></div>
+</div></main><div class="col-md-3 col-lg-2 d-none d-md-block sidebar sidebar-chapter">
+    <nav id="toc" data-toggle="toc" aria-label="On this page"><h2>On this page</h2>
+      <ul class="nav navbar-nav">
+<li><a class="nav-link" href="#quantifying-causal-evidence"><span class="header-section-number">29</span> 📚 Quantifying causal evidence</a></li>
+<li><a class="nav-link" href="#summary-2"><span class="header-section-number">29.1</span> Summary</a></li>
+<li><a class="nav-link" href="#problem"><span class="header-section-number">29.2</span> Problem</a></li>
+<li><a class="nav-link" href="#prior-strategies"><span class="header-section-number">29.3</span> Prior strategies</a></li>
+<li><a class="nav-link" href="#definitions"><span class="header-section-number">29.4</span> Definitions</a></li>
+<li><a class="nav-link" href="#definition-of-causal-map"><span class="header-section-number">29.5</span> Definition of causal map</a></li>
+<li><a class="nav-link" href="#definition-of-causal-evidence-map"><span class="header-section-number">29.6</span> Definition of causal evidence map</a></li>
+<li><a class="nav-link" href="#cm-vs-cem"><span class="header-section-number">29.7</span> CM vs CEM</a></li>
+<li><a class="nav-link" href="#multiple-links-number-of-mentions"><span class="header-section-number">29.8</span> Multiple links / number of mentions</a></li>
+<li>
+<a class="nav-link" href="#solution"><span class="header-section-number">29.9</span> Solution</a><ul class="nav navbar-nav">
+<li><a class="nav-link" href="#base-case"><span class="header-section-number">29.9.1</span> Base case</a></li>
+<li><a class="nav-link" href="#problem-extend-this-simple-case-to-maps-with-intervening-factors-between-d-and-o."><span class="header-section-number">29.9.2</span> Problem: extend this simple case to maps with intervening factors between D and O.</a></li>
+<li><a class="nav-link" href="#useful-reporting-metrics"><span class="header-section-number">29.9.3</span> Useful reporting metrics</a></li>
+<li><a class="nav-link" href="#extension-weighting"><span class="header-section-number">29.9.4</span> Extension: weighting</a></li>
+<li><a class="nav-link" href="#hierarchical"><span class="header-section-number">29.9.5</span> Hierarchical</a></li>
+</ul>
+</li>
+</ul>
+
+      <div class="book-extra">
+        <ul class="list-unstyled">
+<li><a id="book-source" href="https://github.com/stevepowell99/causal-map-guide/blob/master/08600-robustness.rmd">View source <i class="fab fa-github"></i></a></li>
+          <li><a id="book-edit" href="https://github.com/stevepowell99/causal-map-guide/edit/master/08600-robustness.rmd">Edit this page <i class="fab fa-github"></i></a></li>
+        </ul>
+</div>
+    </nav>
+</div>
+</div>
+  
+
+  
+
+</div>
+ <!-- .container -->
+
+<footer class="bg-primary text-light mt-5"><div class="container"><div class="row">
+
+  <div class="col-12 col-md-6 mt-3">
+    <p>"<strong>Guide to Causal Mapping</strong>" was written by Steve Powell &amp; Causal Map Ltd. It was last built on 2021-09-28.</p>
+  </div>
+
+  <div class="col-12 col-md-6 mt-3">
+    <p>This book was built by the <a class="text-light" href="https://bookdown.org">bookdown</a> R package.</p>
+  </div>
+
+</div></div>
+</footer>
+</body>
+</html>

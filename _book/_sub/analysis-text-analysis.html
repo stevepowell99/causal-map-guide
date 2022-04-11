@@ -1,0 +1,509 @@
+<!DOCTYPE html>
+<html lang="" xml:lang="">
+<head>
+
+  <meta charset="utf-8" />
+  <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+  <title>Analysis: text analysis | Guide to Causal Mapping</title>
+  <meta name="description" content="Analysis: text analysis | Guide to Causal Mapping" />
+  <meta name="generator" content="bookdown 0.21.4 and GitBook 2.6.7" />
+
+  <meta property="og:title" content="Analysis: text analysis | Guide to Causal Mapping" />
+  <meta property="og:type" content="book" />
+  
+  
+  <meta property="og:description" content="Analysis: text analysis | Guide to Causal Mapping" />
+  
+
+  <meta name="twitter:card" content="summary" />
+  <meta name="twitter:title" content="Analysis: text analysis | Guide to Causal Mapping" />
+  
+  <meta name="twitter:description" content="Analysis: text analysis | Guide to Causal Mapping" />
+  
+
+<meta name="author" content="Steve Powell &amp; Causal Map Ltd" />
+
+
+<meta name="date" content="2021-08-05" />
+
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <meta name="apple-mobile-web-app-capable" content="yes" />
+  <meta name="apple-mobile-web-app-status-bar-style" content="black" />
+  
+  
+<link rel="prev" href="analysis-metrics.html"/>
+<link rel="next" href="simplifying.html"/>
+<script src="libs/header-attrs-2.6.4/header-attrs.js"></script>
+<script src="libs/jquery-2.2.3/jquery.min.js"></script>
+<link href="libs/gitbook-2.6.7/css/style.css" rel="stylesheet" />
+<link href="libs/gitbook-2.6.7/css/plugin-table.css" rel="stylesheet" />
+<link href="libs/gitbook-2.6.7/css/plugin-bookdown.css" rel="stylesheet" />
+<link href="libs/gitbook-2.6.7/css/plugin-highlight.css" rel="stylesheet" />
+<link href="libs/gitbook-2.6.7/css/plugin-search.css" rel="stylesheet" />
+<link href="libs/gitbook-2.6.7/css/plugin-fontsettings.css" rel="stylesheet" />
+<link href="libs/gitbook-2.6.7/css/plugin-clipboard.css" rel="stylesheet" />
+
+
+
+
+
+
+
+
+
+<link href="libs/anchor-sections-1.0.1/anchor-sections.css" rel="stylesheet" />
+<script src="libs/anchor-sections-1.0.1/anchor-sections.js"></script>
+<link rel="shortcut icon" href="{favicon.ico}" />
+<!-- Google Tag Manager -->
+<script>(function(w,d,s,l,i){w[l]=w[l]||[];w[l].push({'gtm.start':
+new Date().getTime(),event:'gtm.js'});var f=d.getElementsByTagName(s)[0],
+j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
+'https://www.googletagmanager.com/gtm.js?id='+i+dl;f.parentNode.insertBefore(j,f);
+})(window,document,'script','dataLayer','GTM-5QDHBSC');</script>
+<!-- End Google Tag Manager -->
+
+
+
+<link rel="stylesheet" href="style.css" type="text/css" />
+</head>
+
+<body>
+
+
+
+  <div class="book without-animation with-summary font-size-2 font-family-1" data-basepath=".">
+
+    <div class="book-summary">
+      <nav role="navigation">
+
+<ul class="summary">
+<li><a href="./">Guide to Causal Mapping</a></li>
+
+<li class="divider"></li>
+<li class="chapter" data-level="" data-path="index.html"><a href="index.html"><i class="fa fa-check"></i>Overview</a></li>
+<li class="part"><span><b>I Outline of Causal Mapping</b></span></li>
+<li class="chapter" data-level="" data-path="glossary.html"><a href="glossary.html"><i class="fa fa-check"></i>Causal Mapping - Definitions and Glossary</a>
+<ul>
+<li class="chapter" data-level="" data-path="glossary.html"><a href="glossary.html#what-is-a-causal-map-what-is-causal-mapping"><i class="fa fa-check"></i>What is a causal map? What is causal mapping?</a></li>
+<li class="chapter" data-level="" data-path="glossary.html"><a href="glossary.html#generic-terminology-for-qualitative-causal-mapping"><i class="fa fa-check"></i>Generic terminology for qualitative causal mapping</a></li>
+<li class="chapter" data-level="" data-path="glossary.html"><a href="glossary.html#formatting-in-this-guide"><i class="fa fa-check"></i>Formatting in this guide…</a></li>
+</ul></li>
+<li class="chapter" data-level="" data-path="mapping.html"><a href="mapping.html"><i class="fa fa-check"></i>Causal mapping</a>
+<ul>
+<li class="chapter" data-level="" data-path="mapping.html"><a href="mapping.html#summary"><i class="fa fa-check"></i>Summary</a></li>
+<li class="chapter" data-level="" data-path="mapping.html"><a href="mapping.html#causal-mapping-for-evaluators"><i class="fa fa-check"></i>Causal mapping for evaluators</a></li>
+<li class="chapter" data-level="" data-path="mapping.html"><a href="mapping.html#features-which-causal-mapping-approaches-have-in-common"><i class="fa fa-check"></i>Features which causal mapping approaches have in common</a>
+<ul>
+<li class="chapter" data-level="" data-path="mapping.html"><a href="mapping.html#causality"><i class="fa fa-check"></i>Causality</a></li>
+<li class="chapter" data-level="" data-path="mapping.html"><a href="mapping.html#modularity"><i class="fa fa-check"></i>Modularity</a></li>
+</ul></li>
+<li class="chapter" data-level="" data-path="mapping.html"><a href="mapping.html#causal-maps-as-a-summary-of-qualitative-data-analysis-of-textual-causal-claims-for-each-link"><i class="fa fa-check"></i>Causal maps as a summary of qualitative data analysis of textual causal claims for each link</a></li>
+<li class="chapter" data-level="" data-path="mapping.html"><a href="mapping.html#causal-mapping-as-a-form-of-data-collection"><i class="fa fa-check"></i>Causal mapping as a form of data collection</a></li>
+<li class="chapter" data-level="" data-path="mapping.html"><a href="mapping.html#quip-as-a-form-of-causal-mapping"><i class="fa fa-check"></i>QuIP as a form of causal mapping</a>
+<ul>
+<li class="chapter" data-level="" data-path="mapping.html"><a href="mapping.html#quip-explanations-of-changes-do-not-themselves-also-have-to-be-changes"><i class="fa fa-check"></i>QuIP: explanations of changes do not themselves also have to be changes</a></li>
+</ul></li>
+<li class="chapter" data-level="" data-path="mapping.html"><a href="mapping.html#advantages-of-causal-mapping"><i class="fa fa-check"></i>Advantages of causal mapping</a>
+<ul>
+<li class="chapter" data-level="" data-path="mapping.html"><a href="mapping.html#induct"><i class="fa fa-check"></i>Induct</a></li>
+<li class="chapter" data-level="" data-path="mapping.html"><a href="mapping.html#discover"><i class="fa fa-check"></i>Discover</a></li>
+<li class="chapter" data-level="" data-path="mapping.html"><a href="mapping.html#distinguish"><i class="fa fa-check"></i>Distinguish</a></li>
+<li class="chapter" data-level="" data-path="mapping.html"><a href="mapping.html#present"><i class="fa fa-check"></i>Present</a></li>
+<li class="chapter" data-level="" data-path="mapping.html"><a href="mapping.html#query"><i class="fa fa-check"></i>Query</a></li>
+<li class="chapter" data-level="" data-path="mapping.html"><a href="mapping.html#quote"><i class="fa fa-check"></i>Quote</a></li>
+<li class="chapter" data-level="" data-path="mapping.html"><a href="mapping.html#reuse"><i class="fa fa-check"></i>Reuse</a></li>
+</ul></li>
+<li class="chapter" data-level="" data-path="mapping.html"><a href="mapping.html#when-to-use-causal-map"><i class="fa fa-check"></i>When to use Causal Map</a></li>
+</ul></li>
+<li class="chapter" data-level="" data-path="starting.html"><a href="starting.html"><i class="fa fa-check"></i>💻 Getting started with the Causal Map app</a>
+<ul>
+<li class="chapter" data-level="" data-path="starting.html"><a href="starting.html#prerequisites-for-using-the-app"><i class="fa fa-check"></i>Prerequisites for using the app</a></li>
+<li class="chapter" data-level="" data-path="starting.html"><a href="starting.html#features-of-causal-map"><i class="fa fa-check"></i>Features of Causal Map</a></li>
+<li class="chapter" data-level="" data-path="starting.html"><a href="starting.html#signing-up-and-logging-in"><i class="fa fa-check"></i>Signing up and logging in</a></li>
+<li class="chapter" data-level="" data-path="starting.html"><a href="starting.html#choosing-files"><i class="fa fa-check"></i>Choosing files</a></li>
+<li class="chapter" data-level="" data-path="starting.html"><a href="starting.html#working-collaboratively"><i class="fa fa-check"></i>Working collaboratively</a></li>
+<li class="chapter" data-level="" data-path="starting.html"><a href="starting.html#caveats"><i class="fa fa-check"></i>Caveats</a></li>
+<li class="chapter" data-level="" data-path="starting.html"><a href="starting.html#files"><i class="fa fa-check"></i>Files</a></li>
+<li class="chapter" data-level="" data-path="starting.html"><a href="starting.html#sharing-and-access"><i class="fa fa-check"></i>Sharing and access</a></li>
+<li class="chapter" data-level="" data-path="starting.html"><a href="starting.html#groups"><i class="fa fa-check"></i>Groups</a></li>
+<li class="chapter" data-level="" data-path="starting.html"><a href="starting.html#guests"><i class="fa fa-check"></i>Guests</a></li>
+<li class="chapter" data-level="" data-path="starting.html"><a href="starting.html#overview-of-the-app-the-tabs"><i class="fa fa-check"></i>💻 Overview of the app: The tabs</a></li>
+<li class="chapter" data-level="" data-path="starting.html"><a href="starting.html#overview-of-the-app-the-code-view-tab"><i class="fa fa-check"></i>💻 Overview of the app: The Code &amp; View tab</a>
+<ul>
+<li class="chapter" data-level="" data-path="starting.html"><a href="starting.html#the-navigation-bar-at-the-top"><i class="fa fa-check"></i>💻 The navigation bar (at the top)</a></li>
+<li class="chapter" data-level="" data-path="starting.html"><a href="starting.html#the-left-hand-panels"><i class="fa fa-check"></i>💻 The left-hand panels</a></li>
+<li class="chapter" data-level="" data-path="starting.html"><a href="starting.html#codebook"><i class="fa fa-check"></i>Codebook</a></li>
+<li class="chapter" data-level="" data-path="starting.html"><a href="starting.html#the-right-hand-panels"><i class="fa fa-check"></i>💻 The right-hand panels</a></li>
+</ul></li>
+</ul></li>
+<li class="chapter" data-level="" data-path="viewing.html"><a href="viewing.html"><i class="fa fa-check"></i>💻 Viewing the Causal Map app</a>
+<ul>
+<li class="chapter" data-level="" data-path="viewing.html"><a href="viewing.html#logging-in"><i class="fa fa-check"></i>Logging in</a></li>
+<li class="chapter" data-level="" data-path="viewing.html"><a href="viewing.html#choosing-files-1"><i class="fa fa-check"></i>Choosing files</a></li>
+<li class="chapter" data-level="" data-path="viewing.html"><a href="viewing.html#overview-of-the-app-the-code-view-tab-1"><i class="fa fa-check"></i>💻 Overview of the app: The Code &amp; View tab</a>
+<ul>
+<li class="chapter" data-level="" data-path="viewing.html"><a href="viewing.html#the-left-hand-panels-1"><i class="fa fa-check"></i>💻 The left-hand panels</a></li>
+<li class="chapter" data-level="" data-path="viewing.html"><a href="viewing.html#the-right-hand-panels-1"><i class="fa fa-check"></i>💻 The right-hand panels</a></li>
+</ul></li>
+</ul></li>
+<li class="chapter" data-level="" data-path="creating.html"><a href="creating.html"><i class="fa fa-check"></i>Coding: creating factors and links</a>
+<ul>
+<li class="chapter" data-level="" data-path="creating.html"><a href="creating.html#create-and-edit-links-in-the-app"><i class="fa fa-check"></i>💻 Create and edit links in the app</a></li>
+<li class="chapter" data-level="" data-path="creating.html"><a href="creating.html#using-memos-and-hashtags"><i class="fa fa-check"></i>Using memos and hashtags</a></li>
+<li class="chapter" data-level="" data-path="creating.html"><a href="creating.html#formulating-labels-semi-quantitative-factors"><i class="fa fa-check"></i>Formulating labels (semi-quantitative factors)</a>
+<ul>
+<li class="chapter" data-level="" data-path="creating.html"><a href="creating.html#safe-emojis"><i class="fa fa-check"></i>Safe emojis</a></li>
+<li class="chapter" data-level="" data-path="creating.html"><a href="creating.html#relax-use-heterogeneous-in-vivo-factor-labels"><i class="fa fa-check"></i>Relax! Use heterogeneous, “in-vivo” factor labels</a></li>
+<li class="chapter" data-level="" data-path="creating.html"><a href="creating.html#quip-specific-back-chaining"><i class="fa fa-check"></i>QuIP specific: back-chaining</a></li>
+<li class="chapter" data-level="" data-path="creating.html"><a href="creating.html#examples-of-semi-quantitative-factors"><i class="fa fa-check"></i>Examples of semi-quantitative factors</a></li>
+</ul></li>
+<li class="chapter" data-level="" data-path="creating.html"><a href="creating.html#opposed-pairs-of-causal-factors"><i class="fa fa-check"></i>Opposed pairs of causal factors</a></li>
+<li class="chapter" data-level="" data-path="creating.html"><a href="creating.html#formulating-factors-as-desirable"><i class="fa fa-check"></i>Formulating factors as desirable</a></li>
+<li class="chapter" data-level="" data-path="creating.html"><a href="creating.html#examples-of-non-quantitative-factors"><i class="fa fa-check"></i>Examples of non-quantitative factors</a></li>
+<li class="chapter" data-level="" data-path="creating.html"><a href="creating.html#using-flags-in-factor-labels"><i class="fa fa-check"></i>Using flags in factor labels</a>
+<ul>
+<li class="chapter" data-level="" data-path="creating.html"><a href="creating.html#intervention-flags"><i class="fa fa-check"></i>Intervention Flags</a></li>
+<li class="chapter" data-level="" data-path="creating.html"><a href="creating.html#outcome-flags"><i class="fa fa-check"></i>Outcome Flags</a></li>
+<li class="chapter" data-level="" data-path="creating.html"><a href="creating.html#coding-your-statements-in-context-referring-to-evidence-from-elsewhere"><i class="fa fa-check"></i>Coding your statements in context: referring to evidence from elsewhere</a></li>
+</ul></li>
+<li class="chapter" data-level="" data-path="creating.html"><a href="creating.html#consolidating-and-editing-factor-labels"><i class="fa fa-check"></i>Consolidating and editing factor labels</a>
+<ul>
+<li class="chapter" data-level="" data-path="creating.html"><a href="creating.html#recoding-merging-multiple-factors-into-one"><i class="fa fa-check"></i>Recoding / merging multiple factors into one</a></li>
+<li class="chapter" data-level="" data-path="creating.html"><a href="creating.html#how-to-do-this-in-the-app"><i class="fa fa-check"></i>🖥 How to do this in the app?</a></li>
+</ul></li>
+</ul></li>
+<li class="chapter" data-level="" data-path="analysis.html"><a href="analysis.html"><i class="fa fa-check"></i>Analysis: viewing and filtering the map</a>
+<ul>
+<li class="chapter" data-level="" data-path="analysis.html"><a href="analysis.html#viewing-the-interactive-map"><i class="fa fa-check"></i>💻 Viewing the interactive map</a></li>
+<li class="chapter" data-level="" data-path="analysis.html"><a href="analysis.html#filtering-the-map-factors"><i class="fa fa-check"></i>💻 Filtering the map: factors</a></li>
+<li class="chapter" data-level="" data-path="analysis.html"><a href="analysis.html#filtering-the-map-by-link-hashtag-memo"><i class="fa fa-check"></i>💻 Filtering the map by link, hashtag, memo…</a></li>
+<li class="chapter" data-level="" data-path="analysis.html"><a href="analysis.html#filtering-the-map-by-statement-source-question"><i class="fa fa-check"></i>💻 Filtering the map by statement, source, question…</a></li>
+<li class="chapter" data-level="" data-path="analysis.html"><a href="analysis.html#viewing-the-print-map"><i class="fa fa-check"></i>💻 Viewing the Print map</a></li>
+</ul></li>
+<li class="chapter" data-level="" data-path="tracing.html"><a href="tracing.html"><i class="fa fa-check"></i>Analysis: path tracing</a>
+<ul>
+<li class="chapter" data-level="" data-path="tracing.html"><a href="tracing.html#tracing-paths-in-the-app"><i class="fa fa-check"></i>💻 Tracing paths in the app</a></li>
+</ul></li>
+<li class="chapter" data-level="" data-path="comparing.html"><a href="comparing.html"><i class="fa fa-check"></i>Analysis: comparing maps between particular groups</a>
+<ul>
+<li class="chapter" data-level="" data-path="comparing.html"><a href="comparing.html#filtering-by-respondent-group"><i class="fa fa-check"></i>Filtering by respondent group</a></li>
+<li><a href="comparing.html#showing-distinctive-maps-for-each-group">Showing <em>distinctive maps</em> for each group</a></li>
+<li class="chapter" data-level="" data-path="comparing.html"><a href="comparing.html#filtering-statements-and-groups-for-comparisons-in-causal-map"><i class="fa fa-check"></i>💻 Filtering statements and groups for comparisons in Causal Map</a></li>
+</ul></li>
+<li class="chapter" data-level="" data-path="analysis-metrics.html"><a href="analysis-metrics.html"><i class="fa fa-check"></i>Analysis: metrics</a>
+<ul>
+<li class="chapter" data-level="" data-path="analysis-metrics.html"><a href="analysis-metrics.html#tables-in-the-app"><i class="fa fa-check"></i>💻 Tables in the app</a>
+<ul>
+<li class="chapter" data-level="" data-path="analysis-metrics.html"><a href="analysis-metrics.html#how-do-i-use-the-tables"><i class="fa fa-check"></i>How do I use the tables?</a></li>
+<li class="chapter" data-level="" data-path="analysis-metrics.html"><a href="analysis-metrics.html#factors"><i class="fa fa-check"></i>Factors</a></li>
+<li class="chapter" data-level="" data-path="analysis-metrics.html"><a href="analysis-metrics.html#sample"><i class="fa fa-check"></i>Sample</a></li>
+<li class="chapter" data-level="" data-path="analysis-metrics.html"><a href="analysis-metrics.html#differences"><i class="fa fa-check"></i>Differences</a></li>
+<li class="chapter" data-level="" data-path="analysis-metrics.html"><a href="analysis-metrics.html#sectionsquestions"><i class="fa fa-check"></i>Sections/questions</a></li>
+<li class="chapter" data-level="" data-path="analysis-metrics.html"><a href="analysis-metrics.html#quip-specific-closed-questions"><i class="fa fa-check"></i>QuIP-specific: Closed questions</a></li>
+<li class="chapter" data-level="" data-path="analysis-metrics.html"><a href="analysis-metrics.html#quip-specific-ranking"><i class="fa fa-check"></i>QuIP-specific: Ranking</a></li>
+</ul></li>
+</ul></li>
+<li class="chapter" data-level="" data-path="analysis-text-analysis.html"><a href="analysis-text-analysis.html"><i class="fa fa-check"></i>Analysis: text analysis</a>
+<ul>
+<li class="chapter" data-level="" data-path="analysis-text-analysis.html"><a href="analysis-text-analysis.html#text-analysis-in-the-app"><i class="fa fa-check"></i>💻 Text analysis in the app</a></li>
+</ul></li>
+<li class="chapter" data-level="" data-path="simplifying.html"><a href="simplifying.html"><i class="fa fa-check"></i>Simplifying causal maps with hierarchical coding</a>
+<ul>
+<li class="chapter" data-level="" data-path="simplifying.html"><a href="simplifying.html#summary-1"><i class="fa fa-check"></i>Summary</a></li>
+<li class="chapter" data-level="" data-path="simplifying.html"><a href="simplifying.html#introduction"><i class="fa fa-check"></i>Introduction</a></li>
+<li class="chapter" data-level="" data-path="simplifying.html"><a href="simplifying.html#interpretation-of-the-separator"><i class="fa fa-check"></i>Interpretation of the ; separator</a></li>
+<li class="chapter" data-level="" data-path="simplifying.html"><a href="simplifying.html#semi-quantitative-formulations-work-best"><i class="fa fa-check"></i>Semi-quantitative formulations work best</a></li>
+<li><a href="simplifying.html#higher-level-factors-are-generalisations">Higher-level factors are <em>generalisations</em></a></li>
+<li class="chapter" data-level="" data-path="simplifying.html"><a href="simplifying.html#hierarchical-coding-as-a-way-of-coping-with-a-large-number-of-factors"><i class="fa fa-check"></i>Hierarchical coding as a way of coping with a large number of factors</a></li>
+<li class="chapter" data-level="" data-path="simplifying.html"><a href="simplifying.html#themes"><i class="fa fa-check"></i>Themes</a></li>
+<li class="chapter" data-level="" data-path="simplifying.html"><a href="simplifying.html#re-usable-factor-components-as-text-flags"><i class="fa fa-check"></i>Re-usable factor components as text flags</a></li>
+<li class="chapter" data-level="" data-path="simplifying.html"><a href="simplifying.html#hierarchical-factors-in-causal-map"><i class="fa fa-check"></i>💻 Hierarchical factors in Causal Map</a>
+<ul>
+<li class="chapter" data-level="" data-path="simplifying.html"><a href="simplifying.html#creating-labels"><i class="fa fa-check"></i>💻 Creating labels</a></li>
+<li class="chapter" data-level="" data-path="simplifying.html"><a href="simplifying.html#relabelling"><i class="fa fa-check"></i>💻 Relabelling</a></li>
+<li class="chapter" data-level="" data-path="simplifying.html"><a href="simplifying.html#additional-functionality-in-the-create-edit-links-panel"><i class="fa fa-check"></i>💻 Additional functionality in the Create &amp; Edit Links panel</a></li>
+<li class="chapter" data-level="" data-path="simplifying.html"><a href="simplifying.html#search-with-nested-factors"><i class="fa fa-check"></i>💻 Search with nested factors</a></li>
+</ul></li>
+<li class="chapter" data-level="" data-path="simplifying.html"><a href="simplifying.html#zooming-out"><i class="fa fa-check"></i>Zooming out</a></li>
+<li class="chapter" data-level="" data-path="simplifying.html"><a href="simplifying.html#smart-simplification"><i class="fa fa-check"></i>Smart simplification</a></li>
+<li class="chapter" data-level="" data-path="simplifying.html"><a href="simplifying.html#simplifying-zooming-out-and-filtering-out-less-frequent-links-and-factors-in-the-app"><i class="fa fa-check"></i>💻 Simplifying (zooming out, and filtering out less frequent links and factors) in the app</a></li>
+</ul></li>
+<li class="chapter" data-level="" data-path="restoftheapp.html"><a href="restoftheapp.html"><i class="fa fa-check"></i>💻 The rest of the Causal Map app, tab by tab</a>
+<ul>
+<li><a href="restoftheapp.html#the-download-tab-exporting-your-files">The <em>Download</em> tab: Exporting your files</a>
+<ul>
+<li class="chapter" data-level="" data-path="restoftheapp.html"><a href="restoftheapp.html#exporting"><i class="fa fa-check"></i>Exporting</a></li>
+</ul></li>
+<li><a href="restoftheapp.html#the-file-button">The <em>File</em> button</a>
+<ul>
+<li class="chapter" data-level="" data-path="restoftheapp.html"><a href="restoftheapp.html#choosing-a-file"><i class="fa fa-check"></i>Choosing a file</a></li>
+<li class="chapter" data-level="" data-path="restoftheapp.html"><a href="restoftheapp.html#merging-another-file-into-the-current-one"><i class="fa fa-check"></i>Merging another file into the current one</a></li>
+<li class="chapter" data-level="" data-path="restoftheapp.html"><a href="restoftheapp.html#backups"><i class="fa fa-check"></i>Backups</a></li>
+<li class="chapter" data-level="" data-path="restoftheapp.html"><a href="restoftheapp.html#sharing"><i class="fa fa-check"></i>Sharing and locking</a></li>
+</ul></li>
+<li class="chapter" data-level="" data-path="restoftheapp.html"><a href="restoftheapp.html#the-upload-and-fix-tab-uploadingimporting-and-tweaking-your-data"><i class="fa fa-check"></i>The Upload and Fix tab: uploading/importing and tweaking your data</a>
+<ul>
+<li class="chapter" data-level="" data-path="restoftheapp.html"><a href="restoftheapp.html#uploadingimporting-statements-and-additional-data-as-one-file"><i class="fa fa-check"></i>Uploading/importing statements and additional data as one file</a></li>
+<li class="chapter" data-level="" data-path="restoftheapp.html"><a href="restoftheapp.html#what-are-the-sourceid-and-questionid-fields"><i class="fa fa-check"></i>What are the #SourceID and #QuestionID fields?</a></li>
+<li class="chapter" data-level="" data-path="restoftheapp.html"><a href="restoftheapp.html#viewing-and-manually-editing-your-data"><i class="fa fa-check"></i>Viewing and manually editing your data</a></li>
+<li class="chapter" data-level="" data-path="restoftheapp.html"><a href="restoftheapp.html#uploadingimporting-additional-statements-appending-statements"><i class="fa fa-check"></i>Uploading/importing additional statements (“appending statements”)</a></li>
+<li class="chapter" data-level="" data-path="restoftheapp.html"><a href="restoftheapp.html#uploadingimporting-source-respondent-and-question-data-separately"><i class="fa fa-check"></i>Uploading/importing Source (Respondent) and Question data separately</a></li>
+<li class="chapter" data-level="" data-path="restoftheapp.html"><a href="restoftheapp.html#downloading-sourcerespondent-and-question-data-separately"><i class="fa fa-check"></i>Downloading Source/Respondent and Question data separately</a></li>
+<li class="chapter" data-level="" data-path="restoftheapp.html"><a href="restoftheapp.html#additional-data-using-the-fields-editor"><i class="fa fa-check"></i>Additional data: using the fields editor</a></li>
+<li class="chapter" data-level="" data-path="restoftheapp.html"><a href="restoftheapp.html#additional-data-field-names"><i class="fa fa-check"></i>Additional data: Field names</a></li>
+<li class="chapter" data-level="" data-path="restoftheapp.html"><a href="restoftheapp.html#fixing-data-the-tools-panel"><i class="fa fa-check"></i>Fixing data: the tools panel</a></li>
+<li class="chapter" data-level="" data-path="restoftheapp.html"><a href="restoftheapp.html#adding-new-statements-one-by-one-manually-using-the-new-statement-button"><i class="fa fa-check"></i>Adding new statements one-by-one manually using the “new statement” button</a></li>
+<li class="chapter" data-level="" data-path="restoftheapp.html"><a href="restoftheapp.html#uploadingimporting-from-word-or-other-text-files."><i class="fa fa-check"></i>Uploading/Importing from Word or other text files.</a></li>
+<li class="chapter" data-level="" data-path="restoftheapp.html"><a href="restoftheapp.html#importing-from-other-software"><i class="fa fa-check"></i>Importing from other software</a></li>
+<li class="chapter" data-level="" data-path="restoftheapp.html"><a href="restoftheapp.html#quip-specific-importing-from-a-quip-spreadsheet"><i class="fa fa-check"></i>QuIP-specific: Importing from a QuIP spreadsheet</a></li>
+<li class="chapter" data-level="" data-path="restoftheapp.html"><a href="restoftheapp.html#closed-questions"><i class="fa fa-check"></i>Closed questions</a></li>
+<li class="chapter" data-level="" data-path="restoftheapp.html"><a href="restoftheapp.html#importing-closed-question-data-and-ranked-organisation-data-without-using-quip-style-import"><i class="fa fa-check"></i>Importing closed question data, and ranked organisation data, without using QuIP-style import</a></li>
+<li class="chapter" data-level="" data-path="restoftheapp.html"><a href="restoftheapp.html#appending-data"><i class="fa fa-check"></i>Appending data</a></li>
+<li class="chapter" data-level="" data-path="restoftheapp.html"><a href="restoftheapp.html#type"><i class="fa fa-check"></i>Type</a></li>
+</ul></li>
+</ul></li>
+<li class="part"><span><b>II Extra features</b></span></li>
+<li class="chapter" data-level="" data-path="adding-additional-information-like-strength-of-a-link-in-a-causal-map-lets-keep-it-simple.html"><a href="adding-additional-information-like-strength-of-a-link-in-a-causal-map-lets-keep-it-simple.html"><i class="fa fa-check"></i>Adding additional information like strength of a link in a causal map: let’s keep it simple</a></li>
+<li class="chapter" data-level="" data-path="coding-opposites.html"><a href="coding-opposites.html"><i class="fa fa-check"></i>Coding opposites</a>
+<ul>
+<li class="chapter" data-level="" data-path="coding-opposites.html"><a href="coding-opposites.html#combining-opposites"><i class="fa fa-check"></i>Combining opposites</a></li>
+<li class="chapter" data-level="" data-path="coding-opposites.html"><a href="coding-opposites.html#opposites-coding-within-a-hierarchy"><i class="fa fa-check"></i>Opposites coding within a hierarchy</a></li>
+<li class="chapter" data-level="" data-path="coding-opposites.html"><a href="coding-opposites.html#opposites-coding-within-components-of-a-hierarchy"><i class="fa fa-check"></i>Opposites coding within components of a hierarchy</a></li>
+<li class="chapter" data-level="" data-path="coding-opposites.html"><a href="coding-opposites.html#graded-factors-differences-of-degree"><i class="fa fa-check"></i>Graded factors: differences of degree</a></li>
+<li class="chapter" data-level="" data-path="coding-opposites.html"><a href="coding-opposites.html#philosophical-discursion-coding-with-propositions"><i class="fa fa-check"></i>Philosophical discursion: coding with propositions</a>
+<ul>
+<li class="chapter" data-level="" data-path="coding-opposites.html"><a href="coding-opposites.html#zero-influences."><i class="fa fa-check"></i>Zero influences.</a></li>
+</ul></li>
+</ul></li>
+<li class="chapter" data-level="" data-path="certainty-and-trust.html"><a href="certainty-and-trust.html"><i class="fa fa-check"></i>Certainty and trust</a></li>
+<li class="chapter" data-level="" data-path="quantifying-causal-evidence.html"><a href="quantifying-causal-evidence.html"><i class="fa fa-check"></i>Quantifying causal evidence</a>
+<ul>
+<li class="chapter" data-level="" data-path="quantifying-causal-evidence.html"><a href="quantifying-causal-evidence.html#summary-2"><i class="fa fa-check"></i>Summary</a></li>
+<li class="chapter" data-level="" data-path="quantifying-causal-evidence.html"><a href="quantifying-causal-evidence.html#problem"><i class="fa fa-check"></i>Problem</a></li>
+<li class="chapter" data-level="" data-path="quantifying-causal-evidence.html"><a href="quantifying-causal-evidence.html#prior-strategies"><i class="fa fa-check"></i>Prior strategies</a></li>
+<li class="chapter" data-level="" data-path="quantifying-causal-evidence.html"><a href="quantifying-causal-evidence.html#definitions"><i class="fa fa-check"></i>Definitions</a></li>
+<li class="chapter" data-level="" data-path="quantifying-causal-evidence.html"><a href="quantifying-causal-evidence.html#definition-of-causal-map"><i class="fa fa-check"></i>Definition of causal map</a></li>
+<li class="chapter" data-level="" data-path="quantifying-causal-evidence.html"><a href="quantifying-causal-evidence.html#definition-of-causal-evidence-map"><i class="fa fa-check"></i>Definition of causal evidence map</a></li>
+<li class="chapter" data-level="" data-path="quantifying-causal-evidence.html"><a href="quantifying-causal-evidence.html#cm-vs-cem"><i class="fa fa-check"></i>CM vs CEM</a></li>
+<li class="chapter" data-level="" data-path="quantifying-causal-evidence.html"><a href="quantifying-causal-evidence.html#multiple-links-number-of-mentions"><i class="fa fa-check"></i>Multiple links / number of mentions</a></li>
+<li class="chapter" data-level="" data-path="quantifying-causal-evidence.html"><a href="quantifying-causal-evidence.html#solution"><i class="fa fa-check"></i>Solution</a>
+<ul>
+<li class="chapter" data-level="" data-path="quantifying-causal-evidence.html"><a href="quantifying-causal-evidence.html#base-case"><i class="fa fa-check"></i>Base case</a></li>
+<li class="chapter" data-level="" data-path="quantifying-causal-evidence.html"><a href="quantifying-causal-evidence.html#problem-extend-this-simple-case-to-maps-with-intervening-factors-between-d-and-o."><i class="fa fa-check"></i>Problem: extend this simple case to maps with intervening factors between D and O.</a></li>
+<li class="chapter" data-level="" data-path="quantifying-causal-evidence.html"><a href="quantifying-causal-evidence.html#useful-reporting-metrics"><i class="fa fa-check"></i>Useful reporting metrics</a></li>
+<li class="chapter" data-level="" data-path="quantifying-causal-evidence.html"><a href="quantifying-causal-evidence.html#extension-weighting"><i class="fa fa-check"></i>Extension: weighting</a></li>
+<li class="chapter" data-level="" data-path="quantifying-causal-evidence.html"><a href="quantifying-causal-evidence.html#hierarchical"><i class="fa fa-check"></i>Hierarchical</a></li>
+</ul></li>
+</ul></li>
+<li class="chapter" data-level="" data-path="interesting-features.html"><a href="interesting-features.html"><i class="fa fa-check"></i>Interesting Features</a>
+<ul>
+<li class="chapter" data-level="" data-path="interesting-features.html"><a href="interesting-features.html#summary-3"><i class="fa fa-check"></i>Summary</a></li>
+</ul></li>
+<li class="part"><span><b>III Additional material</b></span></li>
+<li class="chapter" data-level="" data-path="spotlight-causal-mapping-and-outcome-harvesting.html"><a href="spotlight-causal-mapping-and-outcome-harvesting.html"><i class="fa fa-check"></i>Spotlight: Causal Mapping and Outcome Harvesting</a></li>
+<li class="chapter" data-level="" data-path="spotlight-context-in-causal-mapping-how-to-code-it.html"><a href="spotlight-context-in-causal-mapping-how-to-code-it.html"><i class="fa fa-check"></i>Spotlight: Context in causal mapping: how to code it</a>
+<ul>
+<li class="chapter" data-level="" data-path="spotlight-context-in-causal-mapping-how-to-code-it.html"><a href="spotlight-context-in-causal-mapping-how-to-code-it.html#using-context-in-the-causal-map-app"><i class="fa fa-check"></i>🖥 Using context in the Causal Map app</a></li>
+</ul></li>
+<li class="chapter" data-level="" data-path="spotlight-beware-the-transitivity-trap.html"><a href="spotlight-beware-the-transitivity-trap.html"><i class="fa fa-check"></i>Spotlight: Beware the transitivity trap</a>
+<ul>
+<li class="chapter" data-level="" data-path="spotlight-beware-the-transitivity-trap.html"><a href="spotlight-beware-the-transitivity-trap.html#the-transitivity-trap"><i class="fa fa-check"></i>The transitivity trap</a></li>
+<li class="chapter" data-level="" data-path="spotlight-beware-the-transitivity-trap.html"><a href="spotlight-beware-the-transitivity-trap.html#not-just-a-problem-for-causal-mapping"><i class="fa fa-check"></i>Not just a problem for causal mapping</a></li>
+<li class="chapter" data-level="" data-path="spotlight-beware-the-transitivity-trap.html"><a href="spotlight-beware-the-transitivity-trap.html#can-we-mitigate-the-trap-with-careful-elicitation-protocols"><i class="fa fa-check"></i>Can we mitigate the trap with careful elicitation protocols?</a></li>
+<li class="chapter" data-level="" data-path="spotlight-beware-the-transitivity-trap.html"><a href="spotlight-beware-the-transitivity-trap.html#transitivity-trap-or-identity-trap"><i class="fa fa-check"></i>Transitivity trap, or identity trap?</a></li>
+</ul></li>
+<li class="chapter" data-level="" data-path="spotlight-compatible-and-incompatible-factors-in-storylines.html"><a href="spotlight-compatible-and-incompatible-factors-in-storylines.html"><i class="fa fa-check"></i>Spotlight: Compatible and incompatible factors in storylines</a></li>
+<li class="chapter" data-level="" data-path="spotlight-cases-variables-and-percentages-in-causal-mapping.html"><a href="spotlight-cases-variables-and-percentages-in-causal-mapping.html"><i class="fa fa-check"></i>Spotlight: Cases, variables and percentages in causal mapping?</a></li>
+<li class="chapter" data-level="" data-path="spotlight-different-kinds-of-question-chaining-with-quip-and-parevo-as-illustrations.html"><a href="spotlight-different-kinds-of-question-chaining-with-quip-and-parevo-as-illustrations.html"><i class="fa fa-check"></i>Spotlight: Different kinds of question chaining, with QuIP and ParEvo as illustrations</a>
+<ul>
+<li class="chapter" data-level="" data-path="spotlight-different-kinds-of-question-chaining-with-quip-and-parevo-as-illustrations.html"><a href="spotlight-different-kinds-of-question-chaining-with-quip-and-parevo-as-illustrations.html#four-options-with-fixed-versus-variable-question-chaining"><i class="fa fa-check"></i>Four options with Fixed versus Variable question chaining</a></li>
+<li class="chapter" data-level="" data-path="spotlight-different-kinds-of-question-chaining-with-quip-and-parevo-as-illustrations.html"><a href="spotlight-different-kinds-of-question-chaining-with-quip-and-parevo-as-illustrations.html#single-versus-multiple"><i class="fa fa-check"></i>Single versus multiple</a></li>
+<li class="chapter" data-level="" data-path="spotlight-different-kinds-of-question-chaining-with-quip-and-parevo-as-illustrations.html"><a href="spotlight-different-kinds-of-question-chaining-with-quip-and-parevo-as-illustrations.html#future-in-past-past-in-future"><i class="fa fa-check"></i>Future in past, past in future</a></li>
+<li class="chapter" data-level="" data-path="spotlight-different-kinds-of-question-chaining-with-quip-and-parevo-as-illustrations.html"><a href="spotlight-different-kinds-of-question-chaining-with-quip-and-parevo-as-illustrations.html#closed-vs-open-questions"><i class="fa fa-check"></i>Closed vs open questions</a></li>
+<li class="chapter" data-level="" data-path="spotlight-different-kinds-of-question-chaining-with-quip-and-parevo-as-illustrations.html"><a href="spotlight-different-kinds-of-question-chaining-with-quip-and-parevo-as-illustrations.html#going-both-ways-bi-directional-chaining"><i class="fa fa-check"></i>Going both ways: bi-directional chaining</a></li>
+<li class="chapter" data-level="" data-path="spotlight-different-kinds-of-question-chaining-with-quip-and-parevo-as-illustrations.html"><a href="spotlight-different-kinds-of-question-chaining-with-quip-and-parevo-as-illustrations.html#evaluation"><i class="fa fa-check"></i>Evaluation</a></li>
+</ul></li>
+<li class="chapter" data-level="" data-path="spotlight-the-last-minute-principle-leave-the-evaluation-to-the-evaluator.html"><a href="spotlight-the-last-minute-principle-leave-the-evaluation-to-the-evaluator.html"><i class="fa fa-check"></i>Spotlight: The last minute principle. Leave the evaluation to the evaluator</a></li>
+<li class="chapter" data-level="" data-path="causal-maps-systems-maps-whats-the-difference-does-it-matter.html"><a href="causal-maps-systems-maps-whats-the-difference-does-it-matter.html"><i class="fa fa-check"></i>Causal maps, systems maps, what’s the difference? Does it matter?</a></li>
+<li class="chapter" data-level="" data-path="spotlight-time-in-causal-mapping-how-to-code-it.html"><a href="spotlight-time-in-causal-mapping-how-to-code-it.html"><i class="fa fa-check"></i>Spotlight: Time in causal mapping. How to code it</a>
+<ul>
+<li class="chapter" data-level="" data-path="spotlight-time-in-causal-mapping-how-to-code-it.html"><a href="spotlight-time-in-causal-mapping-how-to-code-it.html#temporal-features-which-can-emerge-without-explicit-coding-of-time"><i class="fa fa-check"></i>Temporal features which can emerge without explicit coding of time</a></li>
+<li class="chapter" data-level="" data-path="spotlight-time-in-causal-mapping-how-to-code-it.html"><a href="spotlight-time-in-causal-mapping-how-to-code-it.html#temporal-information-attached-to-additional-data"><i class="fa fa-check"></i>Temporal information attached to additional data</a></li>
+<li class="chapter" data-level="" data-path="spotlight-time-in-causal-mapping-how-to-code-it.html"><a href="spotlight-time-in-causal-mapping-how-to-code-it.html#recording-temporal-information-in-causal-links"><i class="fa fa-check"></i>Recording temporal information in causal links</a></li>
+<li class="chapter" data-level="" data-path="spotlight-time-in-causal-mapping-how-to-code-it.html"><a href="spotlight-time-in-causal-mapping-how-to-code-it.html#recording-temporal-information-in-factor-labels"><i class="fa fa-check"></i>Recording temporal information in factor labels</a>
+<ul>
+<li class="chapter" data-level="" data-path="spotlight-time-in-causal-mapping-how-to-code-it.html"><a href="spotlight-time-in-causal-mapping-how-to-code-it.html#use-a-hashtag-or-flag"><i class="fa fa-check"></i>Use a hashtag or flag</a></li>
+<li class="chapter" data-level="" data-path="spotlight-time-in-causal-mapping-how-to-code-it.html"><a href="spotlight-time-in-causal-mapping-how-to-code-it.html#use-components-in-hierarchical-coding"><i class="fa fa-check"></i>Use components in hierarchical coding</a></li>
+<li class="chapter" data-level="" data-path="spotlight-time-in-causal-mapping-how-to-code-it.html"><a href="spotlight-time-in-causal-mapping-how-to-code-it.html#use-higher-level-temporal-components-in-hierarchical-coding"><i class="fa fa-check"></i>Use higher-level temporal components in hierarchical coding</a></li>
+<li class="chapter" data-level="" data-path="spotlight-time-in-causal-mapping-how-to-code-it.html"><a href="spotlight-time-in-causal-mapping-how-to-code-it.html#but-what-if-factor-labels-themselves-express-changes"><i class="fa fa-check"></i>But what if factor labels themselves express changes?</a></li>
+</ul></li>
+<li class="chapter" data-level="" data-path="spotlight-time-in-causal-mapping-how-to-code-it.html"><a href="spotlight-time-in-causal-mapping-how-to-code-it.html#analysing-and-displaying-the-results-of-temporal-coding"><i class="fa fa-check"></i>Analysing and displaying the results of temporal coding</a></li>
+</ul></li>
+<li class="chapter" data-level="" data-path="spotlight-puzzles-in-causal-mapping.html"><a href="spotlight-puzzles-in-causal-mapping.html"><i class="fa fa-check"></i>Spotlight: Puzzles in causal mapping</a>
+<ul>
+<li class="chapter" data-level="" data-path="spotlight-puzzles-in-causal-mapping.html"><a href="spotlight-puzzles-in-causal-mapping.html#distinctive-groups"><i class="fa fa-check"></i>Distinctive Groups</a></li>
+<li class="chapter" data-level="" data-path="spotlight-puzzles-in-causal-mapping.html"><a href="spotlight-puzzles-in-causal-mapping.html#quantity-of-evidence"><i class="fa fa-check"></i>Quantity of Evidence</a></li>
+<li class="chapter" data-level="" data-path="spotlight-puzzles-in-causal-mapping.html"><a href="spotlight-puzzles-in-causal-mapping.html#joining-rules"><i class="fa fa-check"></i>Joining rules</a></li>
+<li class="chapter" data-level="" data-path="spotlight-puzzles-in-causal-mapping.html"><a href="spotlight-puzzles-in-causal-mapping.html#does-believing-that-x-influences-y-mean-you-have-to-believe-that-not-x-causes-not-y-causal-mapping-and-counterfactuals."><i class="fa fa-check"></i>Does believing that X influences Y mean you have to believe that not-X causes not-Y? Causal mapping and counterfactuals.</a></li>
+<li class="chapter" data-level="" data-path="spotlight-puzzles-in-causal-mapping.html"><a href="spotlight-puzzles-in-causal-mapping.html#homogenity-of-paths"><i class="fa fa-check"></i>Homogenity of paths</a></li>
+<li class="chapter" data-level="" data-path="spotlight-puzzles-in-causal-mapping.html"><a href="spotlight-puzzles-in-causal-mapping.html#non--solution-1"><i class="fa fa-check"></i>(non-) solution 1)</a></li>
+<li class="chapter" data-level="" data-path="spotlight-puzzles-in-causal-mapping.html"><a href="spotlight-puzzles-in-causal-mapping.html#solution-2"><i class="fa fa-check"></i>Solution 2)</a></li>
+<li class="chapter" data-level="" data-path="spotlight-puzzles-in-causal-mapping.html"><a href="spotlight-puzzles-in-causal-mapping.html#solution-3"><i class="fa fa-check"></i>Solution 3)</a></li>
+<li class="chapter" data-level="" data-path="spotlight-puzzles-in-causal-mapping.html"><a href="spotlight-puzzles-in-causal-mapping.html#solution-4"><i class="fa fa-check"></i>Solution 4)</a></li>
+<li class="chapter" data-level="" data-path="spotlight-puzzles-in-causal-mapping.html"><a href="spotlight-puzzles-in-causal-mapping.html#solution-5"><i class="fa fa-check"></i>Solution 5)</a></li>
+</ul></li>
+<li class="chapter" data-level="" data-path="showcase.html"><a href="showcase.html"><i class="fa fa-check"></i>💻 Showcase: how the Causal Map app has been used</a>
+<ul>
+<li class="chapter" data-level="" data-path="showcase.html"><a href="showcase.html#triple-line"><i class="fa fa-check"></i>Triple-Line</a></li>
+<li class="chapter" data-level="" data-path="showcase.html"><a href="showcase.html#voscur"><i class="fa fa-check"></i>VOSCUR</a></li>
+<li class="chapter" data-level="" data-path="showcase.html"><a href="showcase.html#power-to-change"><i class="fa fa-check"></i>Power to Change</a></li>
+<li class="chapter" data-level="" data-path="showcase.html"><a href="showcase.html#global-young-academy-tracing-the-paths-of-gyas-impact"><i class="fa fa-check"></i>Global Young Academy: Tracing the paths of GYA’s impact</a></li>
+<li class="chapter" data-level="" data-path="showcase.html"><a href="showcase.html#ifrc-nepal-meta-evaluation"><i class="fa fa-check"></i>IFRC Nepal Meta-evaluation</a>
+<ul>
+<li class="chapter" data-level="" data-path="showcase.html"><a href="showcase.html#background"><i class="fa fa-check"></i>Background</a></li>
+<li class="chapter" data-level="" data-path="showcase.html"><a href="showcase.html#method"><i class="fa fa-check"></i>Method</a></li>
+</ul></li>
+</ul></li>
+<li class="chapter" data-level="" data-path="faqs-causal-map-questions-and-troubleshooting.html"><a href="faqs-causal-map-questions-and-troubleshooting.html"><i class="fa fa-check"></i>💻 FAQs: Causal Map questions and troubleshooting</a>
+<ul>
+<li class="chapter" data-level="" data-path="faqs-causal-map-questions-and-troubleshooting.html"><a href="faqs-causal-map-questions-and-troubleshooting.html#frequently-asked-questions"><i class="fa fa-check"></i>Frequently asked questions</a>
+<ul>
+<li class="chapter" data-level="" data-path="faqs-causal-map-questions-and-troubleshooting.html"><a href="faqs-causal-map-questions-and-troubleshooting.html#when-i-highlight-a-single-word-or-very-short-phrase-why-is-the-same-word-highlighted-but-in-a-different-part-of-the-statement"><i class="fa fa-check"></i>When I highlight a single word or very short phrase, why is the same word highlighted but in a different part of the statement?</a></li>
+<li class="chapter" data-level="" data-path="faqs-causal-map-questions-and-troubleshooting.html"><a href="faqs-causal-map-questions-and-troubleshooting.html#help-ive-forgotten-one-statement-and-need-to-add-it"><i class="fa fa-check"></i>Help, I’ve forgotten one statement and need to add it!</a></li>
+<li class="chapter" data-level="" data-path="faqs-causal-map-questions-and-troubleshooting.html"><a href="faqs-causal-map-questions-and-troubleshooting.html#security-at-causal-map"><i class="fa fa-check"></i>Security at Causal Map</a></li>
+<li class="chapter" data-level="" data-path="faqs-causal-map-questions-and-troubleshooting.html"><a href="faqs-causal-map-questions-and-troubleshooting.html#ive-signed-up-but-havent-recieved-a-confirmation-code"><i class="fa fa-check"></i>I’ve signed up but haven’t recieved a confirmation code?</a></li>
+<li class="chapter" data-level="" data-path="faqs-causal-map-questions-and-troubleshooting.html"><a href="faqs-causal-map-questions-and-troubleshooting.html#does-causal-map-offer-a-free-trial"><i class="fa fa-check"></i>Does Causal Map offer a free trial?</a></li>
+</ul></li>
+<li class="chapter" data-level="" data-path="faqs-causal-map-questions-and-troubleshooting.html"><a href="faqs-causal-map-questions-and-troubleshooting.html#quip-questions"><i class="fa fa-check"></i>QuIP questions</a>
+<ul>
+<li class="chapter" data-level="" data-path="faqs-causal-map-questions-and-troubleshooting.html"><a href="faqs-causal-map-questions-and-troubleshooting.html#how-do-i-prepare-my-data-from-a-quip-project-for-import-into-causal-map"><i class="fa fa-check"></i>How do I prepare my data from a QuIP project for import into Causal Map?</a></li>
+</ul></li>
+<li class="chapter" data-level="" data-path="faqs-causal-map-questions-and-troubleshooting.html"><a href="faqs-causal-map-questions-and-troubleshooting.html#downloads"><i class="fa fa-check"></i>Downloads</a></li>
+<li class="chapter" data-level="" data-path="faqs-causal-map-questions-and-troubleshooting.html"><a href="faqs-causal-map-questions-and-troubleshooting.html#known-bugs"><i class="fa fa-check"></i>Known bugs</a>
+<ul>
+<li class="chapter" data-level="" data-path="faqs-causal-map-questions-and-troubleshooting.html"><a href="faqs-causal-map-questions-and-troubleshooting.html#when-i-want-to-visit-the-app-again-after-a-while-i-go-to-the-tab-with-go.causalmap.app-and-refresh-it-but-i-just-get-a-box-which-tells-me-to-refresh-again"><i class="fa fa-check"></i>When I want to visit the app again after a while, I go to the tab with go.causalmap.app and refresh it, but I just get a box which tells me to refresh again</a></li>
+<li class="chapter" data-level="" data-path="faqs-causal-map-questions-and-troubleshooting.html"><a href="faqs-causal-map-questions-and-troubleshooting.html#when-i-switch-between-files-i-cant-highlight-text-inside-statements-in-order-to-code-them"><i class="fa fa-check"></i>When I switch between files, I can’t highlight text inside statements in order to code them</a></li>
+<li class="chapter" data-level="" data-path="faqs-causal-map-questions-and-troubleshooting.html"><a href="faqs-causal-map-questions-and-troubleshooting.html#i-cant-make-the-quotes-panel-appear-when-i-hover-over-a-link"><i class="fa fa-check"></i>I can’t make the quotes panel appear when I hover over a link</a></li>
+<li class="chapter" data-level="" data-path="faqs-causal-map-questions-and-troubleshooting.html"><a href="faqs-causal-map-questions-and-troubleshooting.html#i-click-on-a-link-to-edit-it-but-the-edit-panel-does-not-open"><i class="fa fa-check"></i>I click on a link to edit it, but the edit panel does not open</a></li>
+</ul></li>
+<li class="chapter" data-level="" data-path="faqs-causal-map-questions-and-troubleshooting.html"><a href="faqs-causal-map-questions-and-troubleshooting.html#how-do-i"><i class="fa fa-check"></i>How do I …?</a>
+<ul>
+<li class="chapter" data-level="" data-path="faqs-causal-map-questions-and-troubleshooting.html"><a href="faqs-causal-map-questions-and-troubleshooting.html#can-i-create-more-than-one-link-at-a-time"><i class="fa fa-check"></i>Can I create more than one link at a time?</a></li>
+<li class="chapter" data-level="" data-path="faqs-causal-map-questions-and-troubleshooting.html"><a href="faqs-causal-map-questions-and-troubleshooting.html#can-i-edit-more-than-one-link-at-a-time"><i class="fa fa-check"></i>Can I edit more than one link at a time?</a></li>
+<li class="chapter" data-level="" data-path="faqs-causal-map-questions-and-troubleshooting.html"><a href="faqs-causal-map-questions-and-troubleshooting.html#how-do-i-link-two-existing-chains"><i class="fa fa-check"></i>How do I link two existing chains?</a></li>
+</ul></li>
+</ul></li>
+<li class="chapter" data-level="" data-path="acknowledgements.html"><a href="acknowledgements.html"><i class="fa fa-check"></i>Acknowledgements</a></li>
+<li class="chapter" data-level="" data-path="appendix-publications-and-references.html"><a href="appendix-publications-and-references.html"><i class="fa fa-check"></i>Appendix: Publications and references</a>
+<ul>
+<li class="chapter" data-level="" data-path="appendix-publications-and-references.html"><a href="appendix-publications-and-references.html#publications"><i class="fa fa-check"></i>Publications</a></li>
+<li class="chapter" data-level="" data-path="appendix-publications-and-references.html"><a href="appendix-publications-and-references.html#presentations"><i class="fa fa-check"></i>Presentations</a></li>
+<li class="chapter" data-level="" data-path="appendix-publications-and-references.html"><a href="appendix-publications-and-references.html#longer-blog-posts"><i class="fa fa-check"></i>Longer blog posts</a></li>
+<li class="chapter" data-level="" data-path="appendix-publications-and-references.html"><a href="appendix-publications-and-references.html#researchgate"><i class="fa fa-check"></i>ResearchGate</a></li>
+<li class="chapter" data-level="" data-path="appendix-publications-and-references.html"><a href="appendix-publications-and-references.html#resources-and-apps"><i class="fa fa-check"></i>Resources and apps</a></li>
+<li class="chapter" data-level="" data-path="appendix-publications-and-references.html"><a href="appendix-publications-and-references.html#bibliography-of-selected-causal-mapping-approaches"><i class="fa fa-check"></i>Bibliography of selected causal mapping approaches</a></li>
+</ul></li>
+<li class="chapter" data-level="" data-path="references.html"><a href="references.html"><i class="fa fa-check"></i>References</a></li>
+<li class="divider"></li>
+<li><a href="https://causalmap.app" target="blank">Causal Map</a></li>
+
+</ul>
+
+      </nav>
+    </div>
+
+    <div class="book-body">
+      <div class="body-inner">
+        <div class="book-header" role="navigation">
+          <h1>
+            <i class="fa fa-circle-o-notch fa-spin"></i><a href="./">Guide to Causal Mapping</a>
+          </h1>
+        </div>
+
+        <div class="page-wrapper" tabindex="-1" role="main">
+          <div class="page-inner">
+
+            <section class="normal" id="section-">
+<!-- Google Tag Manager (noscript) -->
+<noscript><iframe src="https://www.googletagmanager.com/ns.html?id=GTM-5QDHBSC"
+height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
+<!-- End Google Tag Manager (noscript) -->
+<div id="analysis-text-analysis" class="section level1">
+<h1>Analysis: text analysis</h1>
+<div id="text-analysis-in-the-app" class="section level2">
+<h2>💻 Text analysis in the app</h2>
+<div class="show_mark">
+<p class="show_mark_p">From the inline help</p>
+<h3>Text Analysis</h3>
+
+<p><img src="data:image/png;base64,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" alt="drawing" width="256" height="386"/>    </p>
+
+<p>This panel shows analysis on the text you have uploaded to the app. Currently the most frequently used words are ordered and shown - for the entire map, and for the current filter. The analysis shown here is not just on coded quotes but on all the statements which you have uploaded to the app.
+The &#39;mean sentiment&#39; is also shown. This is a number indicating how &#39;positive&#39; or &#39;negative&#39; a respondent&#39;s response was. This is worked out by assigning a number to any word that has a positive/negative connotation in the statement. For example, use of the word &#39;nice&#39; is +3, &#39;bad&#39; is -3 etc.
+This shouldn&#39;t be treated as a definite answer to whether or not a statement implied a positive/negative response to the question - but it can give an idea.</p>
+
+</div>
+
+</div>
+</div>
+            </section>
+
+          </div>
+        </div>
+      </div>
+<a href="analysis-metrics.html" class="navigation navigation-prev " aria-label="Previous page"><i class="fa fa-angle-left"></i></a>
+<a href="simplifying.html" class="navigation navigation-next " aria-label="Next page"><i class="fa fa-angle-right"></i></a>
+    </div>
+  </div>
+<script src="libs/gitbook-2.6.7/js/app.min.js"></script>
+<script src="libs/gitbook-2.6.7/js/lunr.js"></script>
+<script src="libs/gitbook-2.6.7/js/clipboard.min.js"></script>
+<script src="libs/gitbook-2.6.7/js/plugin-search.js"></script>
+<script src="libs/gitbook-2.6.7/js/plugin-sharing.js"></script>
+<script src="libs/gitbook-2.6.7/js/plugin-fontsettings.js"></script>
+<script src="libs/gitbook-2.6.7/js/plugin-bookdown.js"></script>
+<script src="libs/gitbook-2.6.7/js/jquery.highlight.js"></script>
+<script src="libs/gitbook-2.6.7/js/plugin-clipboard.js"></script>
+<script>
+gitbook.require(["gitbook"], function(gitbook) {
+gitbook.start({
+"sharing": {
+"github": false,
+"facebook": true,
+"twitter": true,
+"linkedin": false,
+"weibo": false,
+"instapaper": false,
+"vk": false,
+"all": ["facebook", "twitter", "linkedin", "weibo", "instapaper"]
+},
+"fontsettings": {
+"theme": "white",
+"family": "sans",
+"size": 2
+},
+"edit": {
+"link": null,
+"text": null
+},
+"history": {
+"link": null,
+"text": null
+},
+"view": {
+"link": null,
+"text": null
+},
+"download": ["Guide-to-causal-mapping.pdf"],
+"toc": {
+"collapse": "section"
+},
+"search": true,
+"toc_depth": 3
+});
+});
+</script>
+
+</body>
+
+</html>

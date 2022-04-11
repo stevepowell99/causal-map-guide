@@ -1,0 +1,286 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+<title>Chapter 53 📚 Analysis: comparing maps between particular groups | Guide to Causal Mapping</title>
+<meta name="author" content="Steve Powell &amp; Causal Map Ltd">
+<meta name="description" content="53.1 Filtering by respondent group We code a causal map on the basis of text data. That text data can be usefully broken up into statements, usually of a length between a paragraph and a page....">
+<meta name="generator" content="bookdown 0.24 with bs4_book()">
+<meta property="og:title" content="Chapter 53 📚 Analysis: comparing maps between particular groups | Guide to Causal Mapping">
+<meta property="og:type" content="book">
+<meta property="og:url" content="https://causalmap.app/comparing.html">
+<meta property="og:image" content="https://causalmap.app/_assets/image-20210520221329966.png">
+<meta property="og:description" content="53.1 Filtering by respondent group We code a causal map on the basis of text data. That text data can be usefully broken up into statements, usually of a length between a paragraph and a page....">
+<meta name="twitter:card" content="summary">
+<meta name="twitter:title" content="Chapter 53 📚 Analysis: comparing maps between particular groups | Guide to Causal Mapping">
+<meta name="twitter:description" content="53.1 Filtering by respondent group We code a causal map on the basis of text data. That text data can be usefully broken up into statements, usually of a length between a paragraph and a page....">
+<meta name="twitter:image" content="https://causalmap.app/_assets/image-20210520221329966.png">
+<!-- JS --><script src="https://cdnjs.cloudflare.com/ajax/libs/clipboard.js/2.0.6/clipboard.min.js" integrity="sha256-inc5kl9MA1hkeYUt+EC3BhlIgyp/2jDIyBLS6k3UxPI=" crossorigin="anonymous"></script><script src="https://cdnjs.cloudflare.com/ajax/libs/fuse.js/6.4.6/fuse.js" integrity="sha512-zv6Ywkjyktsohkbp9bb45V6tEMoWhzFzXis+LrMehmJZZSys19Yxf1dopHx7WzIKxr5tK2dVcYmaCk2uqdjF4A==" crossorigin="anonymous"></script><script src="https://kit.fontawesome.com/6ecbd6c532.js" crossorigin="anonymous"></script><script src="libs/header-attrs-2.11/header-attrs.js"></script><script src="libs/jquery-3.6.0/jquery-3.6.0.min.js"></script><meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+<link href="libs/bootstrap-4.6.0/bootstrap.min.css" rel="stylesheet">
+<script src="libs/bootstrap-4.6.0/bootstrap.bundle.min.js"></script><script src="libs/bs3compat-0.3.1/transition.js"></script><script src="libs/bs3compat-0.3.1/tabs.js"></script><script src="libs/bs3compat-0.3.1/bs3compat.js"></script><link href="libs/bs4_book-1.0.0/bs4_book.css" rel="stylesheet">
+<script src="libs/bs4_book-1.0.0/bs4_book.js"></script><script src="https://cdnjs.cloudflare.com/ajax/libs/autocomplete.js/0.38.0/autocomplete.jquery.min.js" integrity="sha512-GU9ayf+66Xx2TmpxqJpliWbT5PiGYxpaG8rfnBEk1LL8l1KGkRShhngwdXK1UgqhAzWpZHSiYPc09/NwDQIGyg==" crossorigin="anonymous"></script><script src="https://cdnjs.cloudflare.com/ajax/libs/mark.js/8.11.1/mark.min.js" integrity="sha512-5CYOlHXGh6QpOFA/TeTylKLWfB3ftPsde7AnmhuitiTX4K5SqCLBeKro6sPS8ilsz1Q4NRx3v8Ko2IBiszzdww==" crossorigin="anonymous"></script><!-- CSS --><link rel="stylesheet" href="style.css">
+</head>
+<body data-spy="scroll" data-target="#toc">
+
+<div class="container-fluid">
+<div class="row">
+  <header class="col-sm-12 col-lg-3 sidebar sidebar-book"><a class="sr-only sr-only-focusable" href="#content">Skip to main content</a>
+
+    <div class="d-flex align-items-start justify-content-between">
+      <h1>
+        <a href="index.html" title="">Guide to Causal Mapping</a>
+      </h1>
+      <button class="btn btn-outline-primary d-lg-none ml-2 mt-1" type="button" data-toggle="collapse" data-target="#main-nav" aria-expanded="true" aria-controls="main-nav"><i class="fas fa-bars"></i><span class="sr-only">Show table of contents</span></button>
+    </div>
+
+    <div id="main-nav" class="collapse-lg">
+      <form role="search">
+        <input id="search" class="form-control" type="search" placeholder="Search" aria-label="Search">
+</form>
+
+      <nav aria-label="Table of contents"><h2>Table of contents</h2>
+        <ul class="book-toc list-unstyled">
+<li><a class="" href="index.html"><span class="header-section-number">1</span> Overview</a></li>
+<li class="book-part">💻 Getting Started</li>
+<li><a class="" href="prerequisites-for-using-the-app.html"><span class="header-section-number">2</span> Prerequisites for using the app</a></li>
+<li><a class="" href="x5.html"><span class="header-section-number">3</span> Your first 5 minutes with Causal Map</a></li>
+<li><a class="" href="signing-up-and-signing-in-at-causal-map.html"><span class="header-section-number">4</span> Signing up and signing in at Causal Map</a></li>
+<li><a class="" href="quick-tour.html"><span class="header-section-number">5</span> Quick tour of the app</a></li>
+<li><a class="" href="xtop-menu.html"><span class="header-section-number">6</span> The top menu</a></li>
+<li><a class="" href="gallery.html"><span class="header-section-number">7</span> The Gallery</a></li>
+<li><a class="" href="xfile-manager.html"><span class="header-section-number">8</span> The File Manager</a></li>
+<li><a class="" href="xstatement-nav.html"><span class="header-section-number">9</span> The Statement Navigator</a></li>
+<li><a class="" href="xcoding-panel.html"><span class="header-section-number">10</span> The Coding Panel: creating factors and links</a></li>
+<li><a class="" href="xinteractive-view.html"><span class="header-section-number">11</span> Interactive View</a></li>
+<li><a class="" href="print-view.html"><span class="header-section-number">12</span> Print view</a></li>
+<li><a class="" href="xall-tables.html"><span class="header-section-number">13</span> All the tables</a></li>
+<li><a class="" href="FAQs.html"><span class="header-section-number">14</span> FAQs: Causal Map questions and troubleshooting</a></li>
+<li><a class="" href="top-tips.html"><span class="header-section-number">15</span> Top tips if you have just starting coding</a></li>
+<li><a class="" href="xintro-filters.html"><span class="header-section-number">16</span> Introduction to filters</a></li>
+<li><a class="" href="uploadandupdate.html"><span class="header-section-number">17</span> How to upload and update your data – Overview</a></li>
+<li><a class="" href="glossary.html"><span class="header-section-number">18</span> 📚 Glossary</a></li>
+<li><a class="" href="xvideo-list.html"><span class="header-section-number">19</span> Video list</a></li>
+<li class="book-part">Introduction</li>
+<li><a class="" href="xinvite.html"><span class="header-section-number">20</span> Just received an invite to view something in Causal Map?</a></li>
+<li><a class="" href="moving-to-causal-map-2-from-causal-map-1.html"><span class="header-section-number">21</span> Moving to Causal Map 2 from Causal Map 1</a></li>
+<li><a class="" href="are-causal-map-and-causal-mapping-for-me.html"><span class="header-section-number">22</span> 📚 Are Causal Map and causal mapping for me?</a></li>
+<li><a class="" href="features-of-causal-map.html"><span class="header-section-number">23</span> Features of Causal Map</a></li>
+<li><a class="" href="collaborating-at-causal-map.html"><span class="header-section-number">24</span> Collaborating at Causal Map</a></li>
+<li class="book-part">💻 The rest of the app</li>
+<li><a class="" href="xfactor-editor.html"><span class="header-section-number">25</span> The Factor Editor</a></li>
+<li><a class="" href="xthe-mentions-table.html"><span class="header-section-number">26</span> The Mentions Table</a></li>
+<li><a class="" href="xthe-factors-table.html"><span class="header-section-number">27</span> The Factors table</a></li>
+<li><a class="" href="xthe-links-table.html"><span class="header-section-number">28</span> 🧪The Links Table</a></li>
+<li><a class="" href="xthe-bundles-table.html"><span class="header-section-number">29</span> The Bundles Table</a></li>
+<li><a class="" href="xthe-statements-table.html"><span class="header-section-number">30</span> The Statements Table</a></li>
+<li><a class="" href="xthe-sources-table.html"><span class="header-section-number">31</span> The Sources Table</a></li>
+<li><a class="" href="xthe-questions-table.html"><span class="header-section-number">32</span> The Questions Table</a></li>
+<li><a class="" href="xthe-closed-question-blocks-table.html"><span class="header-section-number">33</span> The Closed Question Blocks Table</a></li>
+<li><a class="" href="xmetrics.html"><span class="header-section-number">34</span> The Metrics Table</a></li>
+<li><a class="" href="xdata-manager.html"><span class="header-section-number">35</span> Data manager</a></li>
+<li><a class="" href="xupdates-tab.html"><span class="header-section-number">36</span> The Updates tab</a></li>
+<li class="book-part">📚💻 Creating maps</li>
+<li><a class="" href="creating-good-factor-labels.html"><span class="header-section-number">37</span> 📚 Creating good factor labels</a></li>
+<li><a class="" href="xedit-factor-and-links.html"><span class="header-section-number">38</span> Editing factors and links</a></li>
+<li><a class="" href="xsimplifying-with-hierarchical.html"><span class="header-section-number">39</span> 📚 Simplifying causal maps with hierarchical coding</a></li>
+<li><a class="" href="xhierarchical-coding.html"><span class="header-section-number">40</span> 💻 Hierarchical factors in Causal Map</a></li>
+<li><a class="" href="strength-adding-additional-information-like-strength-of-a-link-in-a-causal-map.html"><span class="header-section-number">41</span> 📚 Strength: Adding additional information like strength of a link in a causal map</a></li>
+<li><a class="" href="coding-opposites.html"><span class="header-section-number">42</span> 📚 Coding opposites</a></li>
+<li><a class="" href="plain-coding.html"><span class="header-section-number">43</span> 📚 🧪 Plain coding</a></li>
+<li><a class="" href="tricky-coding-challenges.html"><span class="header-section-number">44</span> 📚 Tricky coding challenges</a></li>
+<li class="book-part">💻Filters</li>
+<li><a class="" href="filters-overview.html"><span class="header-section-number">45</span> Filters – overview</a></li>
+<li><a class="" href="xrobustness.html"><span class="header-section-number">46</span> 📚 Tracing paths and calculating robustness</a></li>
+<li><a class="" href="conditional-formats.html"><span class="header-section-number">47</span> Conditional formats</a></li>
+<li><a class="" href="xsimple-formats.html"><span class="header-section-number">48</span> Simple formats</a></li>
+<li><a class="" href="what-is-the-logic-behind-the-causal-map-filters.html"><span class="header-section-number">49</span> What is the logic behind the Causal Map filters?</a></li>
+<li><a class="" href="xanalysis.html"><span class="header-section-number">50</span> Analysing causal maps</a></li>
+<li><a class="" href="xcontinuity.html"><span class="header-section-number">51</span> Continuity and tracing threads</a></li>
+<li><a class="" href="xquickfields.html"><span class="header-section-number">52</span> Quickfields</a></li>
+<li><a class="active" href="comparing.html"><span class="header-section-number">53</span> 📚 Analysis: comparing maps between particular groups</a></li>
+<li><a class="" href="cluster-sources.html"><span class="header-section-number">54</span> 📚 Clustering sources</a></li>
+<li><a class="" href="recalculate.html"><span class="header-section-number">55</span> Recalculate fields</a></li>
+<li><a class="" href="xinterpret.html"><span class="header-section-number">56</span> Interpreting your results</a></li>
+<li class="book-part">💻 Uploading and updating data</li>
+<li><a class="" href="core-tables.html"><span class="header-section-number">57</span> Core tables in Causal Map</a></li>
+<li><a class="" href="ximport.html"><span class="header-section-number">58</span> Uploading your data</a></li>
+<li><a class="" href="import-additional-data.html"><span class="header-section-number">59</span> Uploading additional data</a></li>
+<li><a class="" href="xroundtripping.html"><span class="header-section-number">60</span> Appending and fixing data (“roundtripping”)</a></li>
+<li><a class="" href="ximport-other.html"><span class="header-section-number">61</span> Importing your data: special cases</a></li>
+<li><a class="" href="xmerging-files.html"><span class="header-section-number">62</span> Merging files</a></li>
+<li><a class="" href="xcodebook.html"><span class="header-section-number">63</span> Importing a codebook of factors</a></li>
+<li class="book-part">📚💻Spotlights</li>
+<li><a class="" href="causal-mapping-definitions.html"><span class="header-section-number">64</span> 📚 Causal Mapping: Definitions</a></li>
+<li><a class="" href="mapping.html"><span class="header-section-number">65</span> 📚 Causal mapping for evaluators</a></li>
+<li><a class="" href="causal-mapping-and-outcome-harvesting.html"><span class="header-section-number">66</span> 📚 Causal Mapping and Outcome Harvesting</a></li>
+<li><a class="" href="context-in-causal-mapping-how-to-code-it.html"><span class="header-section-number">67</span> 📚 Context in causal mapping: how to code it</a></li>
+<li><a class="" href="xtransitivity-trap.html"><span class="header-section-number">68</span> 📚 Beware the transitivity trap</a></li>
+<li><a class="" href="smart-simplification.html"><span class="header-section-number">69</span> Smart simplification</a></li>
+<li><a class="" href="caveat-numbers.html"><span class="header-section-number">70</span> 📚 Cases, variables and percentages in causal mapping?</a></li>
+<li><a class="" href="different-kinds-of-question-chaining-with-quip-and-parevo-as-illustrations.html"><span class="header-section-number">71</span> 📚 Different kinds of question chaining, with QuIP and ParEvo as illustrations</a></li>
+<li><a class="" href="the-last-minute-principle.html"><span class="header-section-number">72</span> 📚 The last minute principle</a></li>
+<li><a class="" href="causal-maps-systems-maps-whats-the-difference-does-it-matter.html"><span class="header-section-number">73</span> 📚 Causal maps, systems maps, what’s the difference? Does it matter?</a></li>
+<li><a class="" href="coding-time-in-causal-mapping.html"><span class="header-section-number">74</span> 📚 Coding time in causal mapping</a></li>
+<li><a class="" href="more-about-coding-opposites.html"><span class="header-section-number">75</span> More about coding opposites</a></li>
+<li><a class="" href="puzzles-in-causal-mapping.html"><span class="header-section-number">76</span> 📚 Puzzles in causal mapping</a></li>
+<li><a class="" href="is-one-direction-enough.html"><span class="header-section-number">77</span> 📚 Is one direction enough?</a></li>
+<li><a class="" href="showcase.html"><span class="header-section-number">78</span> Showcase: how the Causal Map app has been used</a></li>
+<li class="book-part">💻 Technical reference</li>
+<li><a class="" href="appendix-filter-reference.html"><span class="header-section-number">79</span> Appendix: Filter reference</a></li>
+<li><a class="" href="how-causal-map-is-hosted.html"><span class="header-section-number">80</span> How Causal Map is hosted</a></li>
+<li><a class="" href="xconventions.html"><span class="header-section-number">81</span> Conventions</a></li>
+<li><a class="" href="screenshotting-your-maps.html"><span class="header-section-number">82</span> Screenshotting your maps</a></li>
+<li><a class="" href="reports-1.html"><span class="header-section-number">83</span> 🧪Reports</a></li>
+<li><a class="" href="advanced-editor.html"><span class="header-section-number">84</span> Using the Advanced Editor to create and edit filters</a></li>
+<li><a class="" href="xkeybarod.html"><span class="header-section-number">85</span> Keyboard shortcuts</a></li>
+<li><a class="" href="causal-map-functions.html"><span class="header-section-number">86</span> Causal Map functions</a></li>
+<li><a class="" href="xexcel.html"><span class="header-section-number">87</span> Causal mapping with Excel</a></li>
+<li><a class="" href="changelog.html"><span class="header-section-number">88</span> Recent changes</a></li>
+<li class="book-part">📚💻 Final section</li>
+<li><a class="" href="acknowledgements.html"><span class="header-section-number">89</span> Acknowledgements</a></li>
+<li><a class="" href="appendix-publications-and-links.html"><span class="header-section-number">90</span> Appendix: Publications and links</a></li>
+<li><a class="" href="references.html">References</a></li>
+</ul>
+
+        <div class="book-extra">
+          <p><a id="book-repo" href="https://github.com/stevepowell99/causal-map-guide">View book source <i class="fab fa-github"></i></a></p>
+        </div>
+      </nav>
+</div>
+  </header><main class="col-sm-12 col-md-9 col-lg-7" id="content"><div id="comparing" class="section level1" number="53">
+<h1>
+<span class="header-section-number">53</span> 📚 Analysis: comparing maps between particular groups<a class="anchor" aria-label="anchor" href="#comparing"><i class="fas fa-link"></i></a>
+</h1>
+<div id="filtering-by-respondent-group" class="section level2" number="53.1">
+<h2>
+<span class="header-section-number">53.1</span> Filtering by respondent group<a class="anchor" aria-label="anchor" href="#filtering-by-respondent-group"><i class="fas fa-link"></i></a>
+</h2>
+<p>We code a causal map on the basis of text data. That text data can be usefully broken up into statements, usually of a length between a paragraph and a page. Each statement usually has “<strong>additional data</strong>” associated with it, for example the ID or gender of the respondent, the text of a question to which this statement is an answer, the page and name of the document from which this statement comes, etc. When we code a causal claim within a statement, we can associate the resulting link with the additional data. That means that for every link, we should know the additional data, e.g. the gender of the respondent, etc.</p>
+<p>We call the set of statements corresponding to a particular value of a particular additional data field a “<strong>group</strong>”. This definition of “group” is quite broad and does not have to refer only to respondents, e.g. the group for “question 3” is the subset of all the data relevant to that question.</p>
+<p>It is easy to filter a causal map by this additional data. This idea goes back at least to (Ford &amp; Hegarty, 1984). For example, here is one map filtered to show all and only the links mentioned by with female respondents. We call these the <strong>per-value maps</strong>, e.g. the map consisting of all links mentioned by women. However, often the maps for different groups are quite similar as a large proportion of links are shared. When there are many links as in this example, the resulting filtered maps can be uninformative.</p>
+<div class="figure">
+<img src="_assets/image-20210115220243930.png" alt=""><p class="caption">image-20210115220243930</p>
+</div>
+<p>There may still be a bewildering hairball of links. We can apply techniques like <a href="https://causalmapdocumentation.blot.im/simplifying-causal-maps-with-hierarchical-coding">hierarchical coding</a> to “zoom out” of the map, or simply show only the most frequent factors. This map shows the top five factors for women:</p>
+<div class="figure">
+<img src="_assets/women.png" alt=""><p class="caption">Causal Map</p>
+</div>
+<p>And this map shows only the top five factors for men (there were far fewer men in this project).</p>
+<div class="figure">
+<img src="_assets/men.png" alt=""><p class="caption">Causal Map</p>
+</div>
+<p>This is disappointing. The maps are almost identical, though the frequencies are different. We might have a feeling that the men’s answers do indeed differ from the women’s, but how can we be sure? Does this pair of maps prove that there are no interesting differences?</p>
+<p>These are important problems:</p>
+<ul>
+<li><p>Which, if any, features of the map for one group are interestingly different from the map for another?</p></li>
+<li><p>Are there in fact any relevantly different sub-groups within our data? When we have many additional data fields (gender, age, education level, parental occupation, size of village as well as question number, interviewer ID, etc), how can we focus on the most interesting differences? Is it <em>worth our time</em> looking at separate maps for different sub-groups like different villages or genders?</p></li>
+</ul>
+</div>
+<div id="showing-distinctive-maps-for-each-group" class="section level2" number="53.2">
+<h2>
+<span class="header-section-number">53.2</span> Showing <em>distinctive maps</em> for each group<a class="anchor" aria-label="anchor" href="#showing-distinctive-maps-for-each-group"><i class="fas fa-link"></i></a>
+</h2>
+<p>One solution is to display only features which are distinctive for each group. This means the map for this group, which usually includes all links coded for statements from that group, now excludes any of those links if the factor at each end of the link is not <strong>distinctive</strong> for that group. The factor “increased income” is <strong>distinctive</strong> for men if it is mentioned significantly more often by men than by women taking into account the baseline, i.e. the total number of times men mentioned any factor at all. (For example, maybe there are more men than women, or they talk more, or both.)</p>
+<p>A slightly more technical discussion, which can be skipped:</p>
+<p><em>This means that for binary fields like (gender in this particular study), if there are links from factor F to factor G in the distinctive map for women, there cannot be any links between these factors for men. On the other hand, factor F may appear in both maps even though it is not distinctive for either group, but if it does so this is only because in each sub-map it is connected to a factor which is distinctive for that group.</em></p>
+<p><em>More generally, we look at whether the proportion of mentions of a given factor from a given group compared to all the mentions (i.e. including those by the other values of the same additional data field, e.g. the other villages, the other gender) is significantly higher than the baseline, i.e. the overall proportion of mentions of all factors by this group compared to the other values. Is (Mentions of factor F by this group / Mentions of factor F by all groups) significantly higher than (Mentions of any factor by this group / Mentions of any factor by any group)?</em></p>
+<p><em>Given a filtered set of statements, do the usual calculation to get what links would have been shown in the normal view, i.e. which links are coded in the current statements, i.e. create the variable shown vs not-shown for each link. Group all the links into co-terminal bundles (with the same from and to factor). Create the table which has IDs of bundles in the rows and two columns, the number of shown links and the number of not-shown links within each bundle. Run a chi squared test on this table and mark a bundle as “distinctive” if the standardised residual for the “shown” cell is greater than a given cut-off value.</em></p>
+<p>This idea takes a bit of getting used to. A distinctive map for a group filters out all links between pairs of factors which are both not distinctive for that group. That is the same thing as saying that it shows all the factors which are distinctive for that group, plus factors which are linked to those factors.</p>
+<p>Why don’t we just stop there, and simply display only the factors which are distinctive for a group? Why do we add factors which they are linked to, even if not distinctive? The trouble is that there might be a factor which was very distinctive for the group, but was not linked to any other factors which were distinctive, and would therefore disappear from the map (or we would have to display it floating on its own, which is not appropriate for a map of causal <em>connections</em>). In practice this step does not make much difference, and it is usually acceptable to think of a distinctive map as simply a map consisting of factors which are distinctive for that group.</p>
+<p>It is also possible, especially with smaller maps, that there are no links which are distinctive for a particular additional data field like gender. This suggests that there are no very interesting differences between the groups. It is also possible that there is a distinctive map for one group, e.g. women but not for men, or vice versa.</p>
+<p>To continue the example, we can follow the algorithm and produce the distinctive maps for men and women. These maps even without any further filtering are interesting and readable in their own right, but as there are around 40 factors in each map, here we show the maps filtered further for only the most frequent factors.</p>
+<p>Distinctive map for women, showing the top seven factors.</p>
+<div class="figure">
+<img src="_assets/image-20210115220338421.png" alt=""><p class="caption">image-20210115220338421</p>
+</div>
+<p>Distinctive map for men, showing the top seven factors, also filtering out a few links with just one mention:</p>
+<div class="figure">
+<img src="_assets/image-20210115220351694.png" alt=""><p class="caption">image-20210115220351694</p>
+</div>
+<p>Here, some of the paths in the map for men, from VSL to Increased savings and thence to Increased assets, would be certainly worth following up, as well as the paths to and from “Increased purchasing power” in the map for women.</p>
+<p>As usual, we should treat the maps just as a gateway into the data, an invitation to read and understand the quotes in more detail and in context.</p>
+<p>To repeat, the “distinctive map” for a group is <em>not</em> a good summary of everything that was said by that group. It is a good summary of what was said by that group more often than the other groups.</p>
+</div>
+<div id="filtering-statements-and-groups-for-comparisons-in-causal-map" class="section level2" number="53.3">
+<h2>
+<span class="header-section-number">53.3</span> 💻 Filtering statements and groups for comparisons in Causal Map<a class="anchor" aria-label="anchor" href="#filtering-statements-and-groups-for-comparisons-in-causal-map"><i class="fas fa-link"></i></a>
+</h2>
+<p>When <a href="#filtering-the-map-by-statement-source-question">filtering statements</a> it is easy, for example, to show the causal map just for specific <strong>groups</strong>, e.g. the female respondents, for which the additional data field “gender” is equal to “female”: you can cycle through the values using the arrow buttons, and you can flip through the statements for each group using the “previous” and “next” buttons in the statement pager.</p>
+</div>
+<div id="percent" class="section level2" number="53.4">
+<h2>
+<span class="header-section-number">53.4</span> Percentages<a class="anchor" aria-label="anchor" href="#percent"><i class="fas fa-link"></i></a>
+</h2>
+<div class="figure">
+<img src="_assets/image-20211018181718019.png" alt=""><p class="caption">image-20211018181718019</p>
+</div>
+<p>It’s very useful to bundle many links between every pair of factors into different bundles, one for each gender, say, or one for each village. Then you can compare how many times this particular connection was mentioned by each group (if you count link_id) or how many sources in each group mentioned the connection (if you count source_id). You can print this number as the label for each link, or you can scale or colour the link according to it.</p>
+<p>However, if the base number of sources in each group is different – for example, if there are many more women than men – these numbers can be hard to deal with. In this situation, we recommend using percentages of the baseline for each group rather than absolute counts.</p>
+<p>There are many <a href="caveat-numbers.html#caveat-numbers">caveats</a> to using counts and percentages of mentions of causal links and factors in causal mapping, as they arise (or don’t arise) during conversations and are not answers to questions directly asked of respondents.</p>
+<div id="percentages-in-the-app" class="section level4" number="53.4.0.1">
+<h4>
+<span class="header-section-number">53.4.0.1</span> 💻 Percentages in the app<a class="anchor" aria-label="anchor" href="#percentages-in-the-app"><i class="fas fa-link"></i></a>
+</h4>
+<p>The details of how to do make these calculations are quite open; at the moment, the app uses the relevant baseline within the current map. So if you want to display “source count”, or the number of sources who mentioned each link, and bundle the links by gender, the app takes as the baseline <em>the source count for each gender in the current map</em>. So if 7 women and 5 men mentioned a connection between X and Y, and altogether 14 women and 10 men mentioned anything in the whole map, then the percentage will be 50% on each.</p>
+<p>If you use percentages for labels, the label shows both the raw number and the percentage.</p>
+<p>If you use percentages for colour or width of the links, the percentage is used rather than the raw number.</p>
+<p>So for example you could use a filter like this</p>
+<pre><code>bundle links group=Sex
+label links value=percent: link_id
+color links value=unique: Sex</code></pre>
+</div>
+</div>
+<div id="xsurprise" class="section level2" number="53.5">
+<h2>
+<span class="header-section-number">53.5</span> Surprise<a class="anchor" aria-label="anchor" href="#xsurprise"><i class="fas fa-link"></i></a>
+</h2>
+<p>The most interesting filter uses a function which we call <code>surprise</code>. <a href="https://causalmap.shinyapps.io/CausalMap2?s=802">Here</a> is an example.</p>
+<div class="figure">
+<img src="_assets/image-20220210094731470.png" alt=""><p class="caption">image-20220210094731470</p>
+</div>
+<p>We have bundled the links by name of District (1, 2, 3 or 4) and scaled the links by source count (count of the number of sources mentioning each link): but we have coloured the links by <code>surprise</code>. The bright green from poor weather conditions to poor farm production means that this route was particularly often mentioned in district 3 <em>even taking into account the number of times people in district 3 mentioned anything (in the whole filtered map)</em>. And the bright purple link for district 1 means the opposite. Whereas for district 4, there are quite a lot of mentions but the pale colour shows us that this is not particularly surprising. Basically, using <code>surprise</code> means you can ignore the pale links and just look at the brightly coloured ones.</p>
+
+</div>
+</div>
+  <div class="chapter-nav">
+<div class="prev"><a href="xquickfields.html"><span class="header-section-number">52</span> Quickfields</a></div>
+<div class="next"><a href="cluster-sources.html"><span class="header-section-number">54</span> 📚 Clustering sources</a></div>
+</div></main><div class="col-md-3 col-lg-2 d-none d-md-block sidebar sidebar-chapter">
+    <nav id="toc" data-toggle="toc" aria-label="On this page"><h2>On this page</h2>
+      <ul class="nav navbar-nav">
+<li><a class="nav-link" href="#comparing"><span class="header-section-number">53</span> 📚 Analysis: comparing maps between particular groups</a></li>
+<li><a class="nav-link" href="#filtering-by-respondent-group"><span class="header-section-number">53.1</span> Filtering by respondent group</a></li>
+<li><a class="nav-link" href="#showing-distinctive-maps-for-each-group"><span class="header-section-number">53.2</span> Showing distinctive maps for each group</a></li>
+<li><a class="nav-link" href="#filtering-statements-and-groups-for-comparisons-in-causal-map"><span class="header-section-number">53.3</span> 💻 Filtering statements and groups for comparisons in Causal Map</a></li>
+<li><a class="nav-link" href="#percent"><span class="header-section-number">53.4</span> Percentages</a></li>
+<li><a class="nav-link" href="#xsurprise"><span class="header-section-number">53.5</span> Surprise</a></li>
+</ul>
+
+      <div class="book-extra">
+        <ul class="list-unstyled">
+<li><a id="book-source" href="https://github.com/stevepowell99/causal-map-guide/blob/master/09100-comparing.rmd">View source <i class="fab fa-github"></i></a></li>
+          <li><a id="book-edit" href="https://github.com/stevepowell99/causal-map-guide/edit/master/09100-comparing.rmd">Edit this page <i class="fab fa-github"></i></a></li>
+        </ul>
+</div>
+    </nav>
+</div>
+
+</div>
+</div> <!-- .container -->
+
+<footer class="bg-primary text-light mt-5"><div class="container"><div class="row">
+
+  <div class="col-12 col-md-6 mt-3">
+    <p>"<strong>Guide to Causal Mapping</strong>" was written by Steve Powell &amp; Causal Map Ltd. It was last built on 2022-04-11.</p>
+  </div>
+
+  <div class="col-12 col-md-6 mt-3">
+    <p>This book was built by the <a class="text-light" href="https://bookdown.org">bookdown</a> R package.</p>
+  </div>
+
+</div></div>
+</footer>
+</body>
+</html>

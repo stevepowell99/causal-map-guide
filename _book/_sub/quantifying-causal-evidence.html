@@ -1,0 +1,612 @@
+<!DOCTYPE html>
+<html lang="" xml:lang="">
+<head>
+
+  <meta charset="utf-8" />
+  <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+  <title>Quantifying causal evidence | Guide to Causal Mapping</title>
+  <meta name="description" content="Quantifying causal evidence | Guide to Causal Mapping" />
+  <meta name="generator" content="bookdown 0.21.4 and GitBook 2.6.7" />
+
+  <meta property="og:title" content="Quantifying causal evidence | Guide to Causal Mapping" />
+  <meta property="og:type" content="book" />
+  
+  
+  <meta property="og:description" content="Quantifying causal evidence | Guide to Causal Mapping" />
+  
+
+  <meta name="twitter:card" content="summary" />
+  <meta name="twitter:title" content="Quantifying causal evidence | Guide to Causal Mapping" />
+  
+  <meta name="twitter:description" content="Quantifying causal evidence | Guide to Causal Mapping" />
+  
+
+<meta name="author" content="Steve Powell &amp; Causal Map Ltd" />
+
+
+<meta name="date" content="2021-08-05" />
+
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <meta name="apple-mobile-web-app-capable" content="yes" />
+  <meta name="apple-mobile-web-app-status-bar-style" content="black" />
+  
+  
+<link rel="prev" href="certainty-and-trust.html"/>
+<link rel="next" href="interesting-features.html"/>
+<script src="libs/header-attrs-2.6.4/header-attrs.js"></script>
+<script src="libs/jquery-2.2.3/jquery.min.js"></script>
+<link href="libs/gitbook-2.6.7/css/style.css" rel="stylesheet" />
+<link href="libs/gitbook-2.6.7/css/plugin-table.css" rel="stylesheet" />
+<link href="libs/gitbook-2.6.7/css/plugin-bookdown.css" rel="stylesheet" />
+<link href="libs/gitbook-2.6.7/css/plugin-highlight.css" rel="stylesheet" />
+<link href="libs/gitbook-2.6.7/css/plugin-search.css" rel="stylesheet" />
+<link href="libs/gitbook-2.6.7/css/plugin-fontsettings.css" rel="stylesheet" />
+<link href="libs/gitbook-2.6.7/css/plugin-clipboard.css" rel="stylesheet" />
+
+
+
+
+
+
+
+
+
+<link href="libs/anchor-sections-1.0.1/anchor-sections.css" rel="stylesheet" />
+<script src="libs/anchor-sections-1.0.1/anchor-sections.js"></script>
+<link rel="shortcut icon" href="{favicon.ico}" />
+<!-- Google Tag Manager -->
+<script>(function(w,d,s,l,i){w[l]=w[l]||[];w[l].push({'gtm.start':
+new Date().getTime(),event:'gtm.js'});var f=d.getElementsByTagName(s)[0],
+j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
+'https://www.googletagmanager.com/gtm.js?id='+i+dl;f.parentNode.insertBefore(j,f);
+})(window,document,'script','dataLayer','GTM-5QDHBSC');</script>
+<!-- End Google Tag Manager -->
+
+
+
+<link rel="stylesheet" href="style.css" type="text/css" />
+</head>
+
+<body>
+
+
+
+  <div class="book without-animation with-summary font-size-2 font-family-1" data-basepath=".">
+
+    <div class="book-summary">
+      <nav role="navigation">
+
+<ul class="summary">
+<li><a href="./">Guide to Causal Mapping</a></li>
+
+<li class="divider"></li>
+<li class="chapter" data-level="" data-path="index.html"><a href="index.html"><i class="fa fa-check"></i>Overview</a></li>
+<li class="part"><span><b>I Outline of Causal Mapping</b></span></li>
+<li class="chapter" data-level="" data-path="glossary.html"><a href="glossary.html"><i class="fa fa-check"></i>Causal Mapping - Definitions and Glossary</a>
+<ul>
+<li class="chapter" data-level="" data-path="glossary.html"><a href="glossary.html#what-is-a-causal-map-what-is-causal-mapping"><i class="fa fa-check"></i>What is a causal map? What is causal mapping?</a></li>
+<li class="chapter" data-level="" data-path="glossary.html"><a href="glossary.html#generic-terminology-for-qualitative-causal-mapping"><i class="fa fa-check"></i>Generic terminology for qualitative causal mapping</a></li>
+<li class="chapter" data-level="" data-path="glossary.html"><a href="glossary.html#formatting-in-this-guide"><i class="fa fa-check"></i>Formatting in this guide…</a></li>
+</ul></li>
+<li class="chapter" data-level="" data-path="mapping.html"><a href="mapping.html"><i class="fa fa-check"></i>Causal mapping</a>
+<ul>
+<li class="chapter" data-level="" data-path="mapping.html"><a href="mapping.html#summary"><i class="fa fa-check"></i>Summary</a></li>
+<li class="chapter" data-level="" data-path="mapping.html"><a href="mapping.html#causal-mapping-for-evaluators"><i class="fa fa-check"></i>Causal mapping for evaluators</a></li>
+<li class="chapter" data-level="" data-path="mapping.html"><a href="mapping.html#features-which-causal-mapping-approaches-have-in-common"><i class="fa fa-check"></i>Features which causal mapping approaches have in common</a>
+<ul>
+<li class="chapter" data-level="" data-path="mapping.html"><a href="mapping.html#causality"><i class="fa fa-check"></i>Causality</a></li>
+<li class="chapter" data-level="" data-path="mapping.html"><a href="mapping.html#modularity"><i class="fa fa-check"></i>Modularity</a></li>
+</ul></li>
+<li class="chapter" data-level="" data-path="mapping.html"><a href="mapping.html#causal-maps-as-a-summary-of-qualitative-data-analysis-of-textual-causal-claims-for-each-link"><i class="fa fa-check"></i>Causal maps as a summary of qualitative data analysis of textual causal claims for each link</a></li>
+<li class="chapter" data-level="" data-path="mapping.html"><a href="mapping.html#causal-mapping-as-a-form-of-data-collection"><i class="fa fa-check"></i>Causal mapping as a form of data collection</a></li>
+<li class="chapter" data-level="" data-path="mapping.html"><a href="mapping.html#quip-as-a-form-of-causal-mapping"><i class="fa fa-check"></i>QuIP as a form of causal mapping</a>
+<ul>
+<li class="chapter" data-level="" data-path="mapping.html"><a href="mapping.html#quip-explanations-of-changes-do-not-themselves-also-have-to-be-changes"><i class="fa fa-check"></i>QuIP: explanations of changes do not themselves also have to be changes</a></li>
+</ul></li>
+<li class="chapter" data-level="" data-path="mapping.html"><a href="mapping.html#advantages-of-causal-mapping"><i class="fa fa-check"></i>Advantages of causal mapping</a>
+<ul>
+<li class="chapter" data-level="" data-path="mapping.html"><a href="mapping.html#induct"><i class="fa fa-check"></i>Induct</a></li>
+<li class="chapter" data-level="" data-path="mapping.html"><a href="mapping.html#discover"><i class="fa fa-check"></i>Discover</a></li>
+<li class="chapter" data-level="" data-path="mapping.html"><a href="mapping.html#distinguish"><i class="fa fa-check"></i>Distinguish</a></li>
+<li class="chapter" data-level="" data-path="mapping.html"><a href="mapping.html#present"><i class="fa fa-check"></i>Present</a></li>
+<li class="chapter" data-level="" data-path="mapping.html"><a href="mapping.html#query"><i class="fa fa-check"></i>Query</a></li>
+<li class="chapter" data-level="" data-path="mapping.html"><a href="mapping.html#quote"><i class="fa fa-check"></i>Quote</a></li>
+<li class="chapter" data-level="" data-path="mapping.html"><a href="mapping.html#reuse"><i class="fa fa-check"></i>Reuse</a></li>
+</ul></li>
+<li class="chapter" data-level="" data-path="mapping.html"><a href="mapping.html#when-to-use-causal-map"><i class="fa fa-check"></i>When to use Causal Map</a></li>
+</ul></li>
+<li class="chapter" data-level="" data-path="starting.html"><a href="starting.html"><i class="fa fa-check"></i>💻 Getting started with the Causal Map app</a>
+<ul>
+<li class="chapter" data-level="" data-path="starting.html"><a href="starting.html#prerequisites-for-using-the-app"><i class="fa fa-check"></i>Prerequisites for using the app</a></li>
+<li class="chapter" data-level="" data-path="starting.html"><a href="starting.html#features-of-causal-map"><i class="fa fa-check"></i>Features of Causal Map</a></li>
+<li class="chapter" data-level="" data-path="starting.html"><a href="starting.html#signing-up-and-logging-in"><i class="fa fa-check"></i>Signing up and logging in</a></li>
+<li class="chapter" data-level="" data-path="starting.html"><a href="starting.html#choosing-files"><i class="fa fa-check"></i>Choosing files</a></li>
+<li class="chapter" data-level="" data-path="starting.html"><a href="starting.html#working-collaboratively"><i class="fa fa-check"></i>Working collaboratively</a></li>
+<li class="chapter" data-level="" data-path="starting.html"><a href="starting.html#caveats"><i class="fa fa-check"></i>Caveats</a></li>
+<li class="chapter" data-level="" data-path="starting.html"><a href="starting.html#files"><i class="fa fa-check"></i>Files</a></li>
+<li class="chapter" data-level="" data-path="starting.html"><a href="starting.html#sharing-and-access"><i class="fa fa-check"></i>Sharing and access</a></li>
+<li class="chapter" data-level="" data-path="starting.html"><a href="starting.html#groups"><i class="fa fa-check"></i>Groups</a></li>
+<li class="chapter" data-level="" data-path="starting.html"><a href="starting.html#guests"><i class="fa fa-check"></i>Guests</a></li>
+<li class="chapter" data-level="" data-path="starting.html"><a href="starting.html#overview-of-the-app-the-tabs"><i class="fa fa-check"></i>💻 Overview of the app: The tabs</a></li>
+<li class="chapter" data-level="" data-path="starting.html"><a href="starting.html#overview-of-the-app-the-code-view-tab"><i class="fa fa-check"></i>💻 Overview of the app: The Code &amp; View tab</a>
+<ul>
+<li class="chapter" data-level="" data-path="starting.html"><a href="starting.html#the-navigation-bar-at-the-top"><i class="fa fa-check"></i>💻 The navigation bar (at the top)</a></li>
+<li class="chapter" data-level="" data-path="starting.html"><a href="starting.html#the-left-hand-panels"><i class="fa fa-check"></i>💻 The left-hand panels</a></li>
+<li class="chapter" data-level="" data-path="starting.html"><a href="starting.html#codebook"><i class="fa fa-check"></i>Codebook</a></li>
+<li class="chapter" data-level="" data-path="starting.html"><a href="starting.html#the-right-hand-panels"><i class="fa fa-check"></i>💻 The right-hand panels</a></li>
+</ul></li>
+</ul></li>
+<li class="chapter" data-level="" data-path="viewing.html"><a href="viewing.html"><i class="fa fa-check"></i>💻 Viewing the Causal Map app</a>
+<ul>
+<li class="chapter" data-level="" data-path="viewing.html"><a href="viewing.html#logging-in"><i class="fa fa-check"></i>Logging in</a></li>
+<li class="chapter" data-level="" data-path="viewing.html"><a href="viewing.html#choosing-files-1"><i class="fa fa-check"></i>Choosing files</a></li>
+<li class="chapter" data-level="" data-path="viewing.html"><a href="viewing.html#overview-of-the-app-the-code-view-tab-1"><i class="fa fa-check"></i>💻 Overview of the app: The Code &amp; View tab</a>
+<ul>
+<li class="chapter" data-level="" data-path="viewing.html"><a href="viewing.html#the-left-hand-panels-1"><i class="fa fa-check"></i>💻 The left-hand panels</a></li>
+<li class="chapter" data-level="" data-path="viewing.html"><a href="viewing.html#the-right-hand-panels-1"><i class="fa fa-check"></i>💻 The right-hand panels</a></li>
+</ul></li>
+</ul></li>
+<li class="chapter" data-level="" data-path="creating.html"><a href="creating.html"><i class="fa fa-check"></i>Coding: creating factors and links</a>
+<ul>
+<li class="chapter" data-level="" data-path="creating.html"><a href="creating.html#create-and-edit-links-in-the-app"><i class="fa fa-check"></i>💻 Create and edit links in the app</a></li>
+<li class="chapter" data-level="" data-path="creating.html"><a href="creating.html#using-memos-and-hashtags"><i class="fa fa-check"></i>Using memos and hashtags</a></li>
+<li class="chapter" data-level="" data-path="creating.html"><a href="creating.html#formulating-labels-semi-quantitative-factors"><i class="fa fa-check"></i>Formulating labels (semi-quantitative factors)</a>
+<ul>
+<li class="chapter" data-level="" data-path="creating.html"><a href="creating.html#safe-emojis"><i class="fa fa-check"></i>Safe emojis</a></li>
+<li class="chapter" data-level="" data-path="creating.html"><a href="creating.html#relax-use-heterogeneous-in-vivo-factor-labels"><i class="fa fa-check"></i>Relax! Use heterogeneous, “in-vivo” factor labels</a></li>
+<li class="chapter" data-level="" data-path="creating.html"><a href="creating.html#quip-specific-back-chaining"><i class="fa fa-check"></i>QuIP specific: back-chaining</a></li>
+<li class="chapter" data-level="" data-path="creating.html"><a href="creating.html#examples-of-semi-quantitative-factors"><i class="fa fa-check"></i>Examples of semi-quantitative factors</a></li>
+</ul></li>
+<li class="chapter" data-level="" data-path="creating.html"><a href="creating.html#opposed-pairs-of-causal-factors"><i class="fa fa-check"></i>Opposed pairs of causal factors</a></li>
+<li class="chapter" data-level="" data-path="creating.html"><a href="creating.html#formulating-factors-as-desirable"><i class="fa fa-check"></i>Formulating factors as desirable</a></li>
+<li class="chapter" data-level="" data-path="creating.html"><a href="creating.html#examples-of-non-quantitative-factors"><i class="fa fa-check"></i>Examples of non-quantitative factors</a></li>
+<li class="chapter" data-level="" data-path="creating.html"><a href="creating.html#using-flags-in-factor-labels"><i class="fa fa-check"></i>Using flags in factor labels</a>
+<ul>
+<li class="chapter" data-level="" data-path="creating.html"><a href="creating.html#intervention-flags"><i class="fa fa-check"></i>Intervention Flags</a></li>
+<li class="chapter" data-level="" data-path="creating.html"><a href="creating.html#outcome-flags"><i class="fa fa-check"></i>Outcome Flags</a></li>
+<li class="chapter" data-level="" data-path="creating.html"><a href="creating.html#coding-your-statements-in-context-referring-to-evidence-from-elsewhere"><i class="fa fa-check"></i>Coding your statements in context: referring to evidence from elsewhere</a></li>
+</ul></li>
+<li class="chapter" data-level="" data-path="creating.html"><a href="creating.html#consolidating-and-editing-factor-labels"><i class="fa fa-check"></i>Consolidating and editing factor labels</a>
+<ul>
+<li class="chapter" data-level="" data-path="creating.html"><a href="creating.html#recoding-merging-multiple-factors-into-one"><i class="fa fa-check"></i>Recoding / merging multiple factors into one</a></li>
+<li class="chapter" data-level="" data-path="creating.html"><a href="creating.html#how-to-do-this-in-the-app"><i class="fa fa-check"></i>🖥 How to do this in the app?</a></li>
+</ul></li>
+</ul></li>
+<li class="chapter" data-level="" data-path="analysis.html"><a href="analysis.html"><i class="fa fa-check"></i>Analysis: viewing and filtering the map</a>
+<ul>
+<li class="chapter" data-level="" data-path="analysis.html"><a href="analysis.html#viewing-the-interactive-map"><i class="fa fa-check"></i>💻 Viewing the interactive map</a></li>
+<li class="chapter" data-level="" data-path="analysis.html"><a href="analysis.html#filtering-the-map-factors"><i class="fa fa-check"></i>💻 Filtering the map: factors</a></li>
+<li class="chapter" data-level="" data-path="analysis.html"><a href="analysis.html#filtering-the-map-by-link-hashtag-memo"><i class="fa fa-check"></i>💻 Filtering the map by link, hashtag, memo…</a></li>
+<li class="chapter" data-level="" data-path="analysis.html"><a href="analysis.html#filtering-the-map-by-statement-source-question"><i class="fa fa-check"></i>💻 Filtering the map by statement, source, question…</a></li>
+<li class="chapter" data-level="" data-path="analysis.html"><a href="analysis.html#viewing-the-print-map"><i class="fa fa-check"></i>💻 Viewing the Print map</a></li>
+</ul></li>
+<li class="chapter" data-level="" data-path="tracing.html"><a href="tracing.html"><i class="fa fa-check"></i>Analysis: path tracing</a>
+<ul>
+<li class="chapter" data-level="" data-path="tracing.html"><a href="tracing.html#tracing-paths-in-the-app"><i class="fa fa-check"></i>💻 Tracing paths in the app</a></li>
+</ul></li>
+<li class="chapter" data-level="" data-path="comparing.html"><a href="comparing.html"><i class="fa fa-check"></i>Analysis: comparing maps between particular groups</a>
+<ul>
+<li class="chapter" data-level="" data-path="comparing.html"><a href="comparing.html#filtering-by-respondent-group"><i class="fa fa-check"></i>Filtering by respondent group</a></li>
+<li><a href="comparing.html#showing-distinctive-maps-for-each-group">Showing <em>distinctive maps</em> for each group</a></li>
+<li class="chapter" data-level="" data-path="comparing.html"><a href="comparing.html#filtering-statements-and-groups-for-comparisons-in-causal-map"><i class="fa fa-check"></i>💻 Filtering statements and groups for comparisons in Causal Map</a></li>
+</ul></li>
+<li class="chapter" data-level="" data-path="analysis-metrics.html"><a href="analysis-metrics.html"><i class="fa fa-check"></i>Analysis: metrics</a>
+<ul>
+<li class="chapter" data-level="" data-path="analysis-metrics.html"><a href="analysis-metrics.html#tables-in-the-app"><i class="fa fa-check"></i>💻 Tables in the app</a>
+<ul>
+<li class="chapter" data-level="" data-path="analysis-metrics.html"><a href="analysis-metrics.html#how-do-i-use-the-tables"><i class="fa fa-check"></i>How do I use the tables?</a></li>
+<li class="chapter" data-level="" data-path="analysis-metrics.html"><a href="analysis-metrics.html#factors"><i class="fa fa-check"></i>Factors</a></li>
+<li class="chapter" data-level="" data-path="analysis-metrics.html"><a href="analysis-metrics.html#sample"><i class="fa fa-check"></i>Sample</a></li>
+<li class="chapter" data-level="" data-path="analysis-metrics.html"><a href="analysis-metrics.html#differences"><i class="fa fa-check"></i>Differences</a></li>
+<li class="chapter" data-level="" data-path="analysis-metrics.html"><a href="analysis-metrics.html#sectionsquestions"><i class="fa fa-check"></i>Sections/questions</a></li>
+<li class="chapter" data-level="" data-path="analysis-metrics.html"><a href="analysis-metrics.html#quip-specific-closed-questions"><i class="fa fa-check"></i>QuIP-specific: Closed questions</a></li>
+<li class="chapter" data-level="" data-path="analysis-metrics.html"><a href="analysis-metrics.html#quip-specific-ranking"><i class="fa fa-check"></i>QuIP-specific: Ranking</a></li>
+</ul></li>
+</ul></li>
+<li class="chapter" data-level="" data-path="analysis-text-analysis.html"><a href="analysis-text-analysis.html"><i class="fa fa-check"></i>Analysis: text analysis</a>
+<ul>
+<li class="chapter" data-level="" data-path="analysis-text-analysis.html"><a href="analysis-text-analysis.html#text-analysis-in-the-app"><i class="fa fa-check"></i>💻 Text analysis in the app</a></li>
+</ul></li>
+<li class="chapter" data-level="" data-path="simplifying.html"><a href="simplifying.html"><i class="fa fa-check"></i>Simplifying causal maps with hierarchical coding</a>
+<ul>
+<li class="chapter" data-level="" data-path="simplifying.html"><a href="simplifying.html#summary-1"><i class="fa fa-check"></i>Summary</a></li>
+<li class="chapter" data-level="" data-path="simplifying.html"><a href="simplifying.html#introduction"><i class="fa fa-check"></i>Introduction</a></li>
+<li class="chapter" data-level="" data-path="simplifying.html"><a href="simplifying.html#interpretation-of-the-separator"><i class="fa fa-check"></i>Interpretation of the ; separator</a></li>
+<li class="chapter" data-level="" data-path="simplifying.html"><a href="simplifying.html#semi-quantitative-formulations-work-best"><i class="fa fa-check"></i>Semi-quantitative formulations work best</a></li>
+<li><a href="simplifying.html#higher-level-factors-are-generalisations">Higher-level factors are <em>generalisations</em></a></li>
+<li class="chapter" data-level="" data-path="simplifying.html"><a href="simplifying.html#hierarchical-coding-as-a-way-of-coping-with-a-large-number-of-factors"><i class="fa fa-check"></i>Hierarchical coding as a way of coping with a large number of factors</a></li>
+<li class="chapter" data-level="" data-path="simplifying.html"><a href="simplifying.html#themes"><i class="fa fa-check"></i>Themes</a></li>
+<li class="chapter" data-level="" data-path="simplifying.html"><a href="simplifying.html#re-usable-factor-components-as-text-flags"><i class="fa fa-check"></i>Re-usable factor components as text flags</a></li>
+<li class="chapter" data-level="" data-path="simplifying.html"><a href="simplifying.html#hierarchical-factors-in-causal-map"><i class="fa fa-check"></i>💻 Hierarchical factors in Causal Map</a>
+<ul>
+<li class="chapter" data-level="" data-path="simplifying.html"><a href="simplifying.html#creating-labels"><i class="fa fa-check"></i>💻 Creating labels</a></li>
+<li class="chapter" data-level="" data-path="simplifying.html"><a href="simplifying.html#relabelling"><i class="fa fa-check"></i>💻 Relabelling</a></li>
+<li class="chapter" data-level="" data-path="simplifying.html"><a href="simplifying.html#additional-functionality-in-the-create-edit-links-panel"><i class="fa fa-check"></i>💻 Additional functionality in the Create &amp; Edit Links panel</a></li>
+<li class="chapter" data-level="" data-path="simplifying.html"><a href="simplifying.html#search-with-nested-factors"><i class="fa fa-check"></i>💻 Search with nested factors</a></li>
+</ul></li>
+<li class="chapter" data-level="" data-path="simplifying.html"><a href="simplifying.html#zooming-out"><i class="fa fa-check"></i>Zooming out</a></li>
+<li class="chapter" data-level="" data-path="simplifying.html"><a href="simplifying.html#smart-simplification"><i class="fa fa-check"></i>Smart simplification</a></li>
+<li class="chapter" data-level="" data-path="simplifying.html"><a href="simplifying.html#simplifying-zooming-out-and-filtering-out-less-frequent-links-and-factors-in-the-app"><i class="fa fa-check"></i>💻 Simplifying (zooming out, and filtering out less frequent links and factors) in the app</a></li>
+</ul></li>
+<li class="chapter" data-level="" data-path="restoftheapp.html"><a href="restoftheapp.html"><i class="fa fa-check"></i>💻 The rest of the Causal Map app, tab by tab</a>
+<ul>
+<li><a href="restoftheapp.html#the-download-tab-exporting-your-files">The <em>Download</em> tab: Exporting your files</a>
+<ul>
+<li class="chapter" data-level="" data-path="restoftheapp.html"><a href="restoftheapp.html#exporting"><i class="fa fa-check"></i>Exporting</a></li>
+</ul></li>
+<li><a href="restoftheapp.html#the-file-button">The <em>File</em> button</a>
+<ul>
+<li class="chapter" data-level="" data-path="restoftheapp.html"><a href="restoftheapp.html#choosing-a-file"><i class="fa fa-check"></i>Choosing a file</a></li>
+<li class="chapter" data-level="" data-path="restoftheapp.html"><a href="restoftheapp.html#merging-another-file-into-the-current-one"><i class="fa fa-check"></i>Merging another file into the current one</a></li>
+<li class="chapter" data-level="" data-path="restoftheapp.html"><a href="restoftheapp.html#backups"><i class="fa fa-check"></i>Backups</a></li>
+<li class="chapter" data-level="" data-path="restoftheapp.html"><a href="restoftheapp.html#sharing"><i class="fa fa-check"></i>Sharing and locking</a></li>
+</ul></li>
+<li class="chapter" data-level="" data-path="restoftheapp.html"><a href="restoftheapp.html#the-upload-and-fix-tab-uploadingimporting-and-tweaking-your-data"><i class="fa fa-check"></i>The Upload and Fix tab: uploading/importing and tweaking your data</a>
+<ul>
+<li class="chapter" data-level="" data-path="restoftheapp.html"><a href="restoftheapp.html#uploadingimporting-statements-and-additional-data-as-one-file"><i class="fa fa-check"></i>Uploading/importing statements and additional data as one file</a></li>
+<li class="chapter" data-level="" data-path="restoftheapp.html"><a href="restoftheapp.html#what-are-the-sourceid-and-questionid-fields"><i class="fa fa-check"></i>What are the #SourceID and #QuestionID fields?</a></li>
+<li class="chapter" data-level="" data-path="restoftheapp.html"><a href="restoftheapp.html#viewing-and-manually-editing-your-data"><i class="fa fa-check"></i>Viewing and manually editing your data</a></li>
+<li class="chapter" data-level="" data-path="restoftheapp.html"><a href="restoftheapp.html#uploadingimporting-additional-statements-appending-statements"><i class="fa fa-check"></i>Uploading/importing additional statements (“appending statements”)</a></li>
+<li class="chapter" data-level="" data-path="restoftheapp.html"><a href="restoftheapp.html#uploadingimporting-source-respondent-and-question-data-separately"><i class="fa fa-check"></i>Uploading/importing Source (Respondent) and Question data separately</a></li>
+<li class="chapter" data-level="" data-path="restoftheapp.html"><a href="restoftheapp.html#downloading-sourcerespondent-and-question-data-separately"><i class="fa fa-check"></i>Downloading Source/Respondent and Question data separately</a></li>
+<li class="chapter" data-level="" data-path="restoftheapp.html"><a href="restoftheapp.html#additional-data-using-the-fields-editor"><i class="fa fa-check"></i>Additional data: using the fields editor</a></li>
+<li class="chapter" data-level="" data-path="restoftheapp.html"><a href="restoftheapp.html#additional-data-field-names"><i class="fa fa-check"></i>Additional data: Field names</a></li>
+<li class="chapter" data-level="" data-path="restoftheapp.html"><a href="restoftheapp.html#fixing-data-the-tools-panel"><i class="fa fa-check"></i>Fixing data: the tools panel</a></li>
+<li class="chapter" data-level="" data-path="restoftheapp.html"><a href="restoftheapp.html#adding-new-statements-one-by-one-manually-using-the-new-statement-button"><i class="fa fa-check"></i>Adding new statements one-by-one manually using the “new statement” button</a></li>
+<li class="chapter" data-level="" data-path="restoftheapp.html"><a href="restoftheapp.html#uploadingimporting-from-word-or-other-text-files."><i class="fa fa-check"></i>Uploading/Importing from Word or other text files.</a></li>
+<li class="chapter" data-level="" data-path="restoftheapp.html"><a href="restoftheapp.html#importing-from-other-software"><i class="fa fa-check"></i>Importing from other software</a></li>
+<li class="chapter" data-level="" data-path="restoftheapp.html"><a href="restoftheapp.html#quip-specific-importing-from-a-quip-spreadsheet"><i class="fa fa-check"></i>QuIP-specific: Importing from a QuIP spreadsheet</a></li>
+<li class="chapter" data-level="" data-path="restoftheapp.html"><a href="restoftheapp.html#closed-questions"><i class="fa fa-check"></i>Closed questions</a></li>
+<li class="chapter" data-level="" data-path="restoftheapp.html"><a href="restoftheapp.html#importing-closed-question-data-and-ranked-organisation-data-without-using-quip-style-import"><i class="fa fa-check"></i>Importing closed question data, and ranked organisation data, without using QuIP-style import</a></li>
+<li class="chapter" data-level="" data-path="restoftheapp.html"><a href="restoftheapp.html#appending-data"><i class="fa fa-check"></i>Appending data</a></li>
+<li class="chapter" data-level="" data-path="restoftheapp.html"><a href="restoftheapp.html#type"><i class="fa fa-check"></i>Type</a></li>
+</ul></li>
+</ul></li>
+<li class="part"><span><b>II Extra features</b></span></li>
+<li class="chapter" data-level="" data-path="adding-additional-information-like-strength-of-a-link-in-a-causal-map-lets-keep-it-simple.html"><a href="adding-additional-information-like-strength-of-a-link-in-a-causal-map-lets-keep-it-simple.html"><i class="fa fa-check"></i>Adding additional information like strength of a link in a causal map: let’s keep it simple</a></li>
+<li class="chapter" data-level="" data-path="coding-opposites.html"><a href="coding-opposites.html"><i class="fa fa-check"></i>Coding opposites</a>
+<ul>
+<li class="chapter" data-level="" data-path="coding-opposites.html"><a href="coding-opposites.html#combining-opposites"><i class="fa fa-check"></i>Combining opposites</a></li>
+<li class="chapter" data-level="" data-path="coding-opposites.html"><a href="coding-opposites.html#opposites-coding-within-a-hierarchy"><i class="fa fa-check"></i>Opposites coding within a hierarchy</a></li>
+<li class="chapter" data-level="" data-path="coding-opposites.html"><a href="coding-opposites.html#opposites-coding-within-components-of-a-hierarchy"><i class="fa fa-check"></i>Opposites coding within components of a hierarchy</a></li>
+<li class="chapter" data-level="" data-path="coding-opposites.html"><a href="coding-opposites.html#graded-factors-differences-of-degree"><i class="fa fa-check"></i>Graded factors: differences of degree</a></li>
+<li class="chapter" data-level="" data-path="coding-opposites.html"><a href="coding-opposites.html#philosophical-discursion-coding-with-propositions"><i class="fa fa-check"></i>Philosophical discursion: coding with propositions</a>
+<ul>
+<li class="chapter" data-level="" data-path="coding-opposites.html"><a href="coding-opposites.html#zero-influences."><i class="fa fa-check"></i>Zero influences.</a></li>
+</ul></li>
+</ul></li>
+<li class="chapter" data-level="" data-path="certainty-and-trust.html"><a href="certainty-and-trust.html"><i class="fa fa-check"></i>Certainty and trust</a></li>
+<li class="chapter" data-level="" data-path="quantifying-causal-evidence.html"><a href="quantifying-causal-evidence.html"><i class="fa fa-check"></i>Quantifying causal evidence</a>
+<ul>
+<li class="chapter" data-level="" data-path="quantifying-causal-evidence.html"><a href="quantifying-causal-evidence.html#summary-2"><i class="fa fa-check"></i>Summary</a></li>
+<li class="chapter" data-level="" data-path="quantifying-causal-evidence.html"><a href="quantifying-causal-evidence.html#problem"><i class="fa fa-check"></i>Problem</a></li>
+<li class="chapter" data-level="" data-path="quantifying-causal-evidence.html"><a href="quantifying-causal-evidence.html#prior-strategies"><i class="fa fa-check"></i>Prior strategies</a></li>
+<li class="chapter" data-level="" data-path="quantifying-causal-evidence.html"><a href="quantifying-causal-evidence.html#definitions"><i class="fa fa-check"></i>Definitions</a></li>
+<li class="chapter" data-level="" data-path="quantifying-causal-evidence.html"><a href="quantifying-causal-evidence.html#definition-of-causal-map"><i class="fa fa-check"></i>Definition of causal map</a></li>
+<li class="chapter" data-level="" data-path="quantifying-causal-evidence.html"><a href="quantifying-causal-evidence.html#definition-of-causal-evidence-map"><i class="fa fa-check"></i>Definition of causal evidence map</a></li>
+<li class="chapter" data-level="" data-path="quantifying-causal-evidence.html"><a href="quantifying-causal-evidence.html#cm-vs-cem"><i class="fa fa-check"></i>CM vs CEM</a></li>
+<li class="chapter" data-level="" data-path="quantifying-causal-evidence.html"><a href="quantifying-causal-evidence.html#multiple-links-number-of-mentions"><i class="fa fa-check"></i>Multiple links / number of mentions</a></li>
+<li class="chapter" data-level="" data-path="quantifying-causal-evidence.html"><a href="quantifying-causal-evidence.html#solution"><i class="fa fa-check"></i>Solution</a>
+<ul>
+<li class="chapter" data-level="" data-path="quantifying-causal-evidence.html"><a href="quantifying-causal-evidence.html#base-case"><i class="fa fa-check"></i>Base case</a></li>
+<li class="chapter" data-level="" data-path="quantifying-causal-evidence.html"><a href="quantifying-causal-evidence.html#problem-extend-this-simple-case-to-maps-with-intervening-factors-between-d-and-o."><i class="fa fa-check"></i>Problem: extend this simple case to maps with intervening factors between D and O.</a></li>
+<li class="chapter" data-level="" data-path="quantifying-causal-evidence.html"><a href="quantifying-causal-evidence.html#useful-reporting-metrics"><i class="fa fa-check"></i>Useful reporting metrics</a></li>
+<li class="chapter" data-level="" data-path="quantifying-causal-evidence.html"><a href="quantifying-causal-evidence.html#extension-weighting"><i class="fa fa-check"></i>Extension: weighting</a></li>
+<li class="chapter" data-level="" data-path="quantifying-causal-evidence.html"><a href="quantifying-causal-evidence.html#hierarchical"><i class="fa fa-check"></i>Hierarchical</a></li>
+</ul></li>
+</ul></li>
+<li class="chapter" data-level="" data-path="interesting-features.html"><a href="interesting-features.html"><i class="fa fa-check"></i>Interesting Features</a>
+<ul>
+<li class="chapter" data-level="" data-path="interesting-features.html"><a href="interesting-features.html#summary-3"><i class="fa fa-check"></i>Summary</a></li>
+</ul></li>
+<li class="part"><span><b>III Additional material</b></span></li>
+<li class="chapter" data-level="" data-path="spotlight-causal-mapping-and-outcome-harvesting.html"><a href="spotlight-causal-mapping-and-outcome-harvesting.html"><i class="fa fa-check"></i>Spotlight: Causal Mapping and Outcome Harvesting</a></li>
+<li class="chapter" data-level="" data-path="spotlight-context-in-causal-mapping-how-to-code-it.html"><a href="spotlight-context-in-causal-mapping-how-to-code-it.html"><i class="fa fa-check"></i>Spotlight: Context in causal mapping: how to code it</a>
+<ul>
+<li class="chapter" data-level="" data-path="spotlight-context-in-causal-mapping-how-to-code-it.html"><a href="spotlight-context-in-causal-mapping-how-to-code-it.html#using-context-in-the-causal-map-app"><i class="fa fa-check"></i>🖥 Using context in the Causal Map app</a></li>
+</ul></li>
+<li class="chapter" data-level="" data-path="spotlight-beware-the-transitivity-trap.html"><a href="spotlight-beware-the-transitivity-trap.html"><i class="fa fa-check"></i>Spotlight: Beware the transitivity trap</a>
+<ul>
+<li class="chapter" data-level="" data-path="spotlight-beware-the-transitivity-trap.html"><a href="spotlight-beware-the-transitivity-trap.html#the-transitivity-trap"><i class="fa fa-check"></i>The transitivity trap</a></li>
+<li class="chapter" data-level="" data-path="spotlight-beware-the-transitivity-trap.html"><a href="spotlight-beware-the-transitivity-trap.html#not-just-a-problem-for-causal-mapping"><i class="fa fa-check"></i>Not just a problem for causal mapping</a></li>
+<li class="chapter" data-level="" data-path="spotlight-beware-the-transitivity-trap.html"><a href="spotlight-beware-the-transitivity-trap.html#can-we-mitigate-the-trap-with-careful-elicitation-protocols"><i class="fa fa-check"></i>Can we mitigate the trap with careful elicitation protocols?</a></li>
+<li class="chapter" data-level="" data-path="spotlight-beware-the-transitivity-trap.html"><a href="spotlight-beware-the-transitivity-trap.html#transitivity-trap-or-identity-trap"><i class="fa fa-check"></i>Transitivity trap, or identity trap?</a></li>
+</ul></li>
+<li class="chapter" data-level="" data-path="spotlight-compatible-and-incompatible-factors-in-storylines.html"><a href="spotlight-compatible-and-incompatible-factors-in-storylines.html"><i class="fa fa-check"></i>Spotlight: Compatible and incompatible factors in storylines</a></li>
+<li class="chapter" data-level="" data-path="spotlight-cases-variables-and-percentages-in-causal-mapping.html"><a href="spotlight-cases-variables-and-percentages-in-causal-mapping.html"><i class="fa fa-check"></i>Spotlight: Cases, variables and percentages in causal mapping?</a></li>
+<li class="chapter" data-level="" data-path="spotlight-different-kinds-of-question-chaining-with-quip-and-parevo-as-illustrations.html"><a href="spotlight-different-kinds-of-question-chaining-with-quip-and-parevo-as-illustrations.html"><i class="fa fa-check"></i>Spotlight: Different kinds of question chaining, with QuIP and ParEvo as illustrations</a>
+<ul>
+<li class="chapter" data-level="" data-path="spotlight-different-kinds-of-question-chaining-with-quip-and-parevo-as-illustrations.html"><a href="spotlight-different-kinds-of-question-chaining-with-quip-and-parevo-as-illustrations.html#four-options-with-fixed-versus-variable-question-chaining"><i class="fa fa-check"></i>Four options with Fixed versus Variable question chaining</a></li>
+<li class="chapter" data-level="" data-path="spotlight-different-kinds-of-question-chaining-with-quip-and-parevo-as-illustrations.html"><a href="spotlight-different-kinds-of-question-chaining-with-quip-and-parevo-as-illustrations.html#single-versus-multiple"><i class="fa fa-check"></i>Single versus multiple</a></li>
+<li class="chapter" data-level="" data-path="spotlight-different-kinds-of-question-chaining-with-quip-and-parevo-as-illustrations.html"><a href="spotlight-different-kinds-of-question-chaining-with-quip-and-parevo-as-illustrations.html#future-in-past-past-in-future"><i class="fa fa-check"></i>Future in past, past in future</a></li>
+<li class="chapter" data-level="" data-path="spotlight-different-kinds-of-question-chaining-with-quip-and-parevo-as-illustrations.html"><a href="spotlight-different-kinds-of-question-chaining-with-quip-and-parevo-as-illustrations.html#closed-vs-open-questions"><i class="fa fa-check"></i>Closed vs open questions</a></li>
+<li class="chapter" data-level="" data-path="spotlight-different-kinds-of-question-chaining-with-quip-and-parevo-as-illustrations.html"><a href="spotlight-different-kinds-of-question-chaining-with-quip-and-parevo-as-illustrations.html#going-both-ways-bi-directional-chaining"><i class="fa fa-check"></i>Going both ways: bi-directional chaining</a></li>
+<li class="chapter" data-level="" data-path="spotlight-different-kinds-of-question-chaining-with-quip-and-parevo-as-illustrations.html"><a href="spotlight-different-kinds-of-question-chaining-with-quip-and-parevo-as-illustrations.html#evaluation"><i class="fa fa-check"></i>Evaluation</a></li>
+</ul></li>
+<li class="chapter" data-level="" data-path="spotlight-the-last-minute-principle-leave-the-evaluation-to-the-evaluator.html"><a href="spotlight-the-last-minute-principle-leave-the-evaluation-to-the-evaluator.html"><i class="fa fa-check"></i>Spotlight: The last minute principle. Leave the evaluation to the evaluator</a></li>
+<li class="chapter" data-level="" data-path="causal-maps-systems-maps-whats-the-difference-does-it-matter.html"><a href="causal-maps-systems-maps-whats-the-difference-does-it-matter.html"><i class="fa fa-check"></i>Causal maps, systems maps, what’s the difference? Does it matter?</a></li>
+<li class="chapter" data-level="" data-path="spotlight-time-in-causal-mapping-how-to-code-it.html"><a href="spotlight-time-in-causal-mapping-how-to-code-it.html"><i class="fa fa-check"></i>Spotlight: Time in causal mapping. How to code it</a>
+<ul>
+<li class="chapter" data-level="" data-path="spotlight-time-in-causal-mapping-how-to-code-it.html"><a href="spotlight-time-in-causal-mapping-how-to-code-it.html#temporal-features-which-can-emerge-without-explicit-coding-of-time"><i class="fa fa-check"></i>Temporal features which can emerge without explicit coding of time</a></li>
+<li class="chapter" data-level="" data-path="spotlight-time-in-causal-mapping-how-to-code-it.html"><a href="spotlight-time-in-causal-mapping-how-to-code-it.html#temporal-information-attached-to-additional-data"><i class="fa fa-check"></i>Temporal information attached to additional data</a></li>
+<li class="chapter" data-level="" data-path="spotlight-time-in-causal-mapping-how-to-code-it.html"><a href="spotlight-time-in-causal-mapping-how-to-code-it.html#recording-temporal-information-in-causal-links"><i class="fa fa-check"></i>Recording temporal information in causal links</a></li>
+<li class="chapter" data-level="" data-path="spotlight-time-in-causal-mapping-how-to-code-it.html"><a href="spotlight-time-in-causal-mapping-how-to-code-it.html#recording-temporal-information-in-factor-labels"><i class="fa fa-check"></i>Recording temporal information in factor labels</a>
+<ul>
+<li class="chapter" data-level="" data-path="spotlight-time-in-causal-mapping-how-to-code-it.html"><a href="spotlight-time-in-causal-mapping-how-to-code-it.html#use-a-hashtag-or-flag"><i class="fa fa-check"></i>Use a hashtag or flag</a></li>
+<li class="chapter" data-level="" data-path="spotlight-time-in-causal-mapping-how-to-code-it.html"><a href="spotlight-time-in-causal-mapping-how-to-code-it.html#use-components-in-hierarchical-coding"><i class="fa fa-check"></i>Use components in hierarchical coding</a></li>
+<li class="chapter" data-level="" data-path="spotlight-time-in-causal-mapping-how-to-code-it.html"><a href="spotlight-time-in-causal-mapping-how-to-code-it.html#use-higher-level-temporal-components-in-hierarchical-coding"><i class="fa fa-check"></i>Use higher-level temporal components in hierarchical coding</a></li>
+<li class="chapter" data-level="" data-path="spotlight-time-in-causal-mapping-how-to-code-it.html"><a href="spotlight-time-in-causal-mapping-how-to-code-it.html#but-what-if-factor-labels-themselves-express-changes"><i class="fa fa-check"></i>But what if factor labels themselves express changes?</a></li>
+</ul></li>
+<li class="chapter" data-level="" data-path="spotlight-time-in-causal-mapping-how-to-code-it.html"><a href="spotlight-time-in-causal-mapping-how-to-code-it.html#analysing-and-displaying-the-results-of-temporal-coding"><i class="fa fa-check"></i>Analysing and displaying the results of temporal coding</a></li>
+</ul></li>
+<li class="chapter" data-level="" data-path="spotlight-puzzles-in-causal-mapping.html"><a href="spotlight-puzzles-in-causal-mapping.html"><i class="fa fa-check"></i>Spotlight: Puzzles in causal mapping</a>
+<ul>
+<li class="chapter" data-level="" data-path="spotlight-puzzles-in-causal-mapping.html"><a href="spotlight-puzzles-in-causal-mapping.html#distinctive-groups"><i class="fa fa-check"></i>Distinctive Groups</a></li>
+<li class="chapter" data-level="" data-path="spotlight-puzzles-in-causal-mapping.html"><a href="spotlight-puzzles-in-causal-mapping.html#quantity-of-evidence"><i class="fa fa-check"></i>Quantity of Evidence</a></li>
+<li class="chapter" data-level="" data-path="spotlight-puzzles-in-causal-mapping.html"><a href="spotlight-puzzles-in-causal-mapping.html#joining-rules"><i class="fa fa-check"></i>Joining rules</a></li>
+<li class="chapter" data-level="" data-path="spotlight-puzzles-in-causal-mapping.html"><a href="spotlight-puzzles-in-causal-mapping.html#does-believing-that-x-influences-y-mean-you-have-to-believe-that-not-x-causes-not-y-causal-mapping-and-counterfactuals."><i class="fa fa-check"></i>Does believing that X influences Y mean you have to believe that not-X causes not-Y? Causal mapping and counterfactuals.</a></li>
+<li class="chapter" data-level="" data-path="spotlight-puzzles-in-causal-mapping.html"><a href="spotlight-puzzles-in-causal-mapping.html#homogenity-of-paths"><i class="fa fa-check"></i>Homogenity of paths</a></li>
+<li class="chapter" data-level="" data-path="spotlight-puzzles-in-causal-mapping.html"><a href="spotlight-puzzles-in-causal-mapping.html#non--solution-1"><i class="fa fa-check"></i>(non-) solution 1)</a></li>
+<li class="chapter" data-level="" data-path="spotlight-puzzles-in-causal-mapping.html"><a href="spotlight-puzzles-in-causal-mapping.html#solution-2"><i class="fa fa-check"></i>Solution 2)</a></li>
+<li class="chapter" data-level="" data-path="spotlight-puzzles-in-causal-mapping.html"><a href="spotlight-puzzles-in-causal-mapping.html#solution-3"><i class="fa fa-check"></i>Solution 3)</a></li>
+<li class="chapter" data-level="" data-path="spotlight-puzzles-in-causal-mapping.html"><a href="spotlight-puzzles-in-causal-mapping.html#solution-4"><i class="fa fa-check"></i>Solution 4)</a></li>
+<li class="chapter" data-level="" data-path="spotlight-puzzles-in-causal-mapping.html"><a href="spotlight-puzzles-in-causal-mapping.html#solution-5"><i class="fa fa-check"></i>Solution 5)</a></li>
+</ul></li>
+<li class="chapter" data-level="" data-path="showcase.html"><a href="showcase.html"><i class="fa fa-check"></i>💻 Showcase: how the Causal Map app has been used</a>
+<ul>
+<li class="chapter" data-level="" data-path="showcase.html"><a href="showcase.html#triple-line"><i class="fa fa-check"></i>Triple-Line</a></li>
+<li class="chapter" data-level="" data-path="showcase.html"><a href="showcase.html#voscur"><i class="fa fa-check"></i>VOSCUR</a></li>
+<li class="chapter" data-level="" data-path="showcase.html"><a href="showcase.html#power-to-change"><i class="fa fa-check"></i>Power to Change</a></li>
+<li class="chapter" data-level="" data-path="showcase.html"><a href="showcase.html#global-young-academy-tracing-the-paths-of-gyas-impact"><i class="fa fa-check"></i>Global Young Academy: Tracing the paths of GYA’s impact</a></li>
+<li class="chapter" data-level="" data-path="showcase.html"><a href="showcase.html#ifrc-nepal-meta-evaluation"><i class="fa fa-check"></i>IFRC Nepal Meta-evaluation</a>
+<ul>
+<li class="chapter" data-level="" data-path="showcase.html"><a href="showcase.html#background"><i class="fa fa-check"></i>Background</a></li>
+<li class="chapter" data-level="" data-path="showcase.html"><a href="showcase.html#method"><i class="fa fa-check"></i>Method</a></li>
+</ul></li>
+</ul></li>
+<li class="chapter" data-level="" data-path="faqs-causal-map-questions-and-troubleshooting.html"><a href="faqs-causal-map-questions-and-troubleshooting.html"><i class="fa fa-check"></i>💻 FAQs: Causal Map questions and troubleshooting</a>
+<ul>
+<li class="chapter" data-level="" data-path="faqs-causal-map-questions-and-troubleshooting.html"><a href="faqs-causal-map-questions-and-troubleshooting.html#frequently-asked-questions"><i class="fa fa-check"></i>Frequently asked questions</a>
+<ul>
+<li class="chapter" data-level="" data-path="faqs-causal-map-questions-and-troubleshooting.html"><a href="faqs-causal-map-questions-and-troubleshooting.html#when-i-highlight-a-single-word-or-very-short-phrase-why-is-the-same-word-highlighted-but-in-a-different-part-of-the-statement"><i class="fa fa-check"></i>When I highlight a single word or very short phrase, why is the same word highlighted but in a different part of the statement?</a></li>
+<li class="chapter" data-level="" data-path="faqs-causal-map-questions-and-troubleshooting.html"><a href="faqs-causal-map-questions-and-troubleshooting.html#help-ive-forgotten-one-statement-and-need-to-add-it"><i class="fa fa-check"></i>Help, I’ve forgotten one statement and need to add it!</a></li>
+<li class="chapter" data-level="" data-path="faqs-causal-map-questions-and-troubleshooting.html"><a href="faqs-causal-map-questions-and-troubleshooting.html#security-at-causal-map"><i class="fa fa-check"></i>Security at Causal Map</a></li>
+<li class="chapter" data-level="" data-path="faqs-causal-map-questions-and-troubleshooting.html"><a href="faqs-causal-map-questions-and-troubleshooting.html#ive-signed-up-but-havent-recieved-a-confirmation-code"><i class="fa fa-check"></i>I’ve signed up but haven’t recieved a confirmation code?</a></li>
+<li class="chapter" data-level="" data-path="faqs-causal-map-questions-and-troubleshooting.html"><a href="faqs-causal-map-questions-and-troubleshooting.html#does-causal-map-offer-a-free-trial"><i class="fa fa-check"></i>Does Causal Map offer a free trial?</a></li>
+</ul></li>
+<li class="chapter" data-level="" data-path="faqs-causal-map-questions-and-troubleshooting.html"><a href="faqs-causal-map-questions-and-troubleshooting.html#quip-questions"><i class="fa fa-check"></i>QuIP questions</a>
+<ul>
+<li class="chapter" data-level="" data-path="faqs-causal-map-questions-and-troubleshooting.html"><a href="faqs-causal-map-questions-and-troubleshooting.html#how-do-i-prepare-my-data-from-a-quip-project-for-import-into-causal-map"><i class="fa fa-check"></i>How do I prepare my data from a QuIP project for import into Causal Map?</a></li>
+</ul></li>
+<li class="chapter" data-level="" data-path="faqs-causal-map-questions-and-troubleshooting.html"><a href="faqs-causal-map-questions-and-troubleshooting.html#downloads"><i class="fa fa-check"></i>Downloads</a></li>
+<li class="chapter" data-level="" data-path="faqs-causal-map-questions-and-troubleshooting.html"><a href="faqs-causal-map-questions-and-troubleshooting.html#known-bugs"><i class="fa fa-check"></i>Known bugs</a>
+<ul>
+<li class="chapter" data-level="" data-path="faqs-causal-map-questions-and-troubleshooting.html"><a href="faqs-causal-map-questions-and-troubleshooting.html#when-i-want-to-visit-the-app-again-after-a-while-i-go-to-the-tab-with-go.causalmap.app-and-refresh-it-but-i-just-get-a-box-which-tells-me-to-refresh-again"><i class="fa fa-check"></i>When I want to visit the app again after a while, I go to the tab with go.causalmap.app and refresh it, but I just get a box which tells me to refresh again</a></li>
+<li class="chapter" data-level="" data-path="faqs-causal-map-questions-and-troubleshooting.html"><a href="faqs-causal-map-questions-and-troubleshooting.html#when-i-switch-between-files-i-cant-highlight-text-inside-statements-in-order-to-code-them"><i class="fa fa-check"></i>When I switch between files, I can’t highlight text inside statements in order to code them</a></li>
+<li class="chapter" data-level="" data-path="faqs-causal-map-questions-and-troubleshooting.html"><a href="faqs-causal-map-questions-and-troubleshooting.html#i-cant-make-the-quotes-panel-appear-when-i-hover-over-a-link"><i class="fa fa-check"></i>I can’t make the quotes panel appear when I hover over a link</a></li>
+<li class="chapter" data-level="" data-path="faqs-causal-map-questions-and-troubleshooting.html"><a href="faqs-causal-map-questions-and-troubleshooting.html#i-click-on-a-link-to-edit-it-but-the-edit-panel-does-not-open"><i class="fa fa-check"></i>I click on a link to edit it, but the edit panel does not open</a></li>
+</ul></li>
+<li class="chapter" data-level="" data-path="faqs-causal-map-questions-and-troubleshooting.html"><a href="faqs-causal-map-questions-and-troubleshooting.html#how-do-i"><i class="fa fa-check"></i>How do I …?</a>
+<ul>
+<li class="chapter" data-level="" data-path="faqs-causal-map-questions-and-troubleshooting.html"><a href="faqs-causal-map-questions-and-troubleshooting.html#can-i-create-more-than-one-link-at-a-time"><i class="fa fa-check"></i>Can I create more than one link at a time?</a></li>
+<li class="chapter" data-level="" data-path="faqs-causal-map-questions-and-troubleshooting.html"><a href="faqs-causal-map-questions-and-troubleshooting.html#can-i-edit-more-than-one-link-at-a-time"><i class="fa fa-check"></i>Can I edit more than one link at a time?</a></li>
+<li class="chapter" data-level="" data-path="faqs-causal-map-questions-and-troubleshooting.html"><a href="faqs-causal-map-questions-and-troubleshooting.html#how-do-i-link-two-existing-chains"><i class="fa fa-check"></i>How do I link two existing chains?</a></li>
+</ul></li>
+</ul></li>
+<li class="chapter" data-level="" data-path="acknowledgements.html"><a href="acknowledgements.html"><i class="fa fa-check"></i>Acknowledgements</a></li>
+<li class="chapter" data-level="" data-path="appendix-publications-and-references.html"><a href="appendix-publications-and-references.html"><i class="fa fa-check"></i>Appendix: Publications and references</a>
+<ul>
+<li class="chapter" data-level="" data-path="appendix-publications-and-references.html"><a href="appendix-publications-and-references.html#publications"><i class="fa fa-check"></i>Publications</a></li>
+<li class="chapter" data-level="" data-path="appendix-publications-and-references.html"><a href="appendix-publications-and-references.html#presentations"><i class="fa fa-check"></i>Presentations</a></li>
+<li class="chapter" data-level="" data-path="appendix-publications-and-references.html"><a href="appendix-publications-and-references.html#longer-blog-posts"><i class="fa fa-check"></i>Longer blog posts</a></li>
+<li class="chapter" data-level="" data-path="appendix-publications-and-references.html"><a href="appendix-publications-and-references.html#researchgate"><i class="fa fa-check"></i>ResearchGate</a></li>
+<li class="chapter" data-level="" data-path="appendix-publications-and-references.html"><a href="appendix-publications-and-references.html#resources-and-apps"><i class="fa fa-check"></i>Resources and apps</a></li>
+<li class="chapter" data-level="" data-path="appendix-publications-and-references.html"><a href="appendix-publications-and-references.html#bibliography-of-selected-causal-mapping-approaches"><i class="fa fa-check"></i>Bibliography of selected causal mapping approaches</a></li>
+</ul></li>
+<li class="chapter" data-level="" data-path="references.html"><a href="references.html"><i class="fa fa-check"></i>References</a></li>
+<li class="divider"></li>
+<li><a href="https://causalmap.app" target="blank">Causal Map</a></li>
+
+</ul>
+
+      </nav>
+    </div>
+
+    <div class="book-body">
+      <div class="body-inner">
+        <div class="book-header" role="navigation">
+          <h1>
+            <i class="fa fa-circle-o-notch fa-spin"></i><a href="./">Guide to Causal Mapping</a>
+          </h1>
+        </div>
+
+        <div class="page-wrapper" tabindex="-1" role="main">
+          <div class="page-inner">
+
+            <section class="normal" id="section-">
+<!-- Google Tag Manager (noscript) -->
+<noscript><iframe src="https://www.googletagmanager.com/ns.html?id=GTM-5QDHBSC"
+height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
+<!-- End Google Tag Manager (noscript) -->
+<div id="quantifying-causal-evidence" class="section level1">
+<h1>Quantifying causal evidence</h1>
+<div id="summary-2" class="section level2 hi">
+<h2>Summary</h2>
+<p>In the app, in the Quantity of Evidence / Robustness of Argument panel</p>
+<div class="figure">
+<img src="_assets/qoe.png" alt="" />
+<p class="caption">Quantity of Evidence</p>
+</div>
+<p>This tab appears when “Trace” is switched on in the Search and Filter Factors panel.</p>
+<p>It calculates how much evidence there is for the causal path(s) from the factors identified in the From box to the factors identified in the To box. It identifies how many pieces of evidence (individual mentions of individual links) would have to be deleted so that there is no longer any path from the From factors to the To factors. A larger number means more evidence; more pieces would have to be deleted until we gave up the hypothesis that the From factors influence the To factors at all.</p>
+<p>This number is shown in the “Evidence” column. A large number does <em>not</em> necessarily mean that this path is <em>strong</em> in the sense that the From factors have a <em>large</em> effect on the To factors. It says there is plenty of evidence for the path, <em>whatever its strength</em>.</p>
+<p>Subtotals are provided for each From factor; it can be useful to compare the amount of evidence for the impact of each From factor.</p>
+<p>These numbers are not very useful on their own. But they are useful for comparisons.</p>
+<p>If you look at the robustness of the path from interventions B and C to an outcome E, one thing you can do is compare the sum of the score for the two sets of paths and compare it with the overall score. If the overall score is more or less the same as the larger of the score for B and the score for C, you can assume that the (evidence for the) intervention paths overlap - so if the score for B is larger, you could say that C uses many of the same paths. But if the overall score is more like the sum of the two, you can deduce that the interventions work more independently. So for example if you are already funding intervention B, and you have to decide whether to fund C or D, and your causal map says that the score from C to E and from D to E are similar, you’d want to look at the pairs - you’d want to look at B plus C to E and compare it with B plus D to E. B + D might have a much larger score than C +D, because C shares many paths with B, but D doesn’t. So you’d want to fund D, as the combination of B and D would be more robust.</p>
+<p>Note as usual in causal mapping, this argument can be posed either in terms of evidence or in terms of actual effects. If you think of the Ns in the individual links as the number of pieces of evidence, you can say funding B plus D is a better bet because there is more independent evidence that it works. If you think of the Ns as a score for the robustness of the causal link, or the number of separate mechanisms which explain such a link, then you would choose D because the best bet is that there is a more robust effect on O across more different pathways.</p>
+<p>This is a funky way of looking at interaction effects.</p>
+<p>Of course, in principle you can see all of this just by looking at the maps and to what extent B, C and D share paths to O. But sometimes it is hard to see and this metric anchors a narrative description in actual numbers.</p>
+</div>
+<div id="problem" class="section level2">
+<h2>Problem</h2>
+<p><strong>How to summarise, given a heap of causal information about what causes what, the *quantity* of evidence that one particular factor influences another particular factor?</strong></p>
+<p>Conventional approaches calculate the influence on the Outcome of tweaking the Driver, which follows standard definitions of Impact and is the right way to do it when you have quantitative variables.</p>
+<p>One of the pioneers of causal mapping, Toulmin, was interested in the structure of arguments and asked what makes an argument plausible or reasonable (Toulmin, 1979).</p>
+<p>We arrive at a map like this simply by drawing an arrow for every evidenced causal claim that driver D causally influences outcome O. For each arrow, we have for example a separate sentence or paragraph in a document or interview transcript. In this case it is easy to count the evidence: there are three pieces of evidence that D causally influences O.</p>
+<p>To be sure it is interesting that two pieces of evidence come from one source, and one piece comes from another; we don’t want to lose sight of this fact, it might be important, but nevertheless the overall number three is important too.</p>
+<p>In this example we have no further important information to distinguish the “how” or “why” of each causal claim. If there had been further important information about, say, the mechanism or route in each case, then we would have captured this by including additional causal factors, for example additional influences or intervening stages.</p>
+<p>In real life, the situation is normally more complicated. An evaluator is usually confronted with a heap or web of fragments of argument about how a driver might influence an outcome. The point of this paper is to extend our simple intuition above (“there are three pieces of evidence”) about how to <em>count the quantity of evidence</em> to cases with intervening causal factors as in the next diagram.</p>
+<p><em>A causal evidence map in which the quantity of evidence that Our Driver influences Outcome = 6, and quantity of evidence that Some Other Driver influences Outcome = 1.</em></p>
+<p>Sometimes you can just glance at a map like this and see for example there are many lines straight from a driver to an outcome, and we can say “obviously there is a lot of evidence that the driver influences the outcome.” In this case, we can even say “obviously there is a lot more evidence that our intervention can causally influence the outcome than that other driver can.” But how can we formalise this, how can we “count” threads of evidence which may pass through multiple intermediate factors? How do we count the paths, especially when there are many of them and we can’t just “look and see?” (And later we will see that even in simple cases with just a few links, when some links may have a negative or “minus” influence, our ability to “just see” the answer is even more limited.)</p>
+<p><em>A causal evidence map in which quantity of evidence that Driver influences Outcome = 1.</em></p>
+<p>Here we propose the metric “quantity of evidence,” which can be thought of as the resilience of the web of arguments: what is the minimum number of causal claims you would have to <em>delete</em> in order to break any possible argument that D influences O? If your whole argument rests on a single link from K to L, even though you have many pieces of evidence from Driver to K and from L to Outcome, your argument would break if just that one link failed – hence, the quantity of evidence is just 1.</p>
+<p>It turns out that this number is the same as asking “how many completely separate paths (i.e. paths which don’t share any stretches at all) could we construct from D to O?”</p>
+<p>The rest of this section is quite technical and can be skipped.</p>
+</div>
+<div id="prior-strategies" class="section level2">
+<h2>Prior strategies</h2>
+<p>The problem of how to combine (sets of) causal claims has been addressed many times. Pose normative questions (how should/could groups make decisions?) and descriptive questions (how do groups actually make decisions).</p>
+<p>As far as we know, all solutions have been based on the idea of calculating values of the factors by propagation along the links.</p>
+<p>(B. Chaib-Draa &amp; Desharnais, 1998; Brahim Chaib-Draa, 2002), based on the work of Zhang, (W.-R. Zhang, Chen, &amp; Bezdek, 1989; W. R. Zhang, 1994) shows a way to combine different sets of claims using NPN logic. Factors take one of eight values like “neutral or negative” (Nadkarni &amp; Shenoy, 2001) use Bayesian networks which as noted by Chaib-Draa are not suited to maps which include loops or cycles.</p>
+</div>
+<div id="definitions" class="section level2">
+<h2>Definitions</h2>
+<p>We note that a first attempt to quantify amount of evidence would be simply to count all the different possible paths, i.e. (above) Driver ➜ B ➜ K ➜ L ➜ P ➜ Outcome, Driver ➜ C ➜ K ➜ L ➜ P ➜ Outcome, etc etc. In the above case, counting like this, there would be 3×4 = 12 paths. Yet it is easy to see that just one cut between K and L will break any and all the arguments, so 12 seems too many.</p>
+<p><strong>A better solution is proposed here based on the network property “maximum flow rate.” It is intuitive, and easy to understand and calculate.</strong></p>
+<p>Note, we are not aiming here to draw any conclusions about the <em>strength</em> of the influence which the driver has on the outcome but about the <em>quantity</em> of evidence that there is <em>some</em> influence.</p>
+<p>Also, everything we say here comes with the caveat “all other things being equal”: we are dealing only with the role played by the bare existence or non-existence of causal claims and their number, without regard to other, surely relevant issues like sources of bias, or context, etc.</p>
+<p>This is in fact the situation we are mostly in with the Qualitative Impact Protocol (QuI: a simple pile of causal claims from relatively homogenous sources with little other information which might influence which claim to prefer.</p>
+<p>Before looking at the solution, we’ll need to make a surprising distinction: QuIP maps, and some Causal Map maps, and Axelrod’s original maps, are mostly not causal maps but maps of <em>causal evidence,</em> or <em>causal evidence maps</em>.</p>
+</div>
+<div id="definition-of-causal-map" class="section level2">
+<h2>Definition of causal map</h2>
+<p>A <strong>causal map</strong> (CM) is defined as usual: a network formed by a set of directed edges aka <strong>links</strong> between pairs of nodes aka (causal) <strong>factors</strong>. Usual network conventions apply:</p>
+<p>- each factor appears only once;</p>
+<p>- there are no isolated factors with no links;</p>
+<p>- we only allow <em>one</em> link between any pair of factors. (If there are different mechanisms at work, we prefer to have the additional causal factors which govern these distinct mechanisms explicitly included in the map.)</p>
+<p>Semantics: an edge D ➜ O means “D causally influences O.”</p>
+<p>There are many possible kinds of causal map. Special cases would include SEMs, some project theories of change, FCM and others.</p>
+</div>
+<div id="definition-of-causal-evidence-map" class="section level2">
+<h2>Definition of causal evidence map</h2>
+<p>A <strong>causal evidence map</strong> (CEM) is a set of directed edges aka links between pairs of nodes aka (causal) factors; each link has the property “source ID” and may have additional properties.</p>
+<p>Semantics: an edge D ➜ O means “<strong>source S claims</strong> that D causally influences O.”</p>
+<p>A causal evidence map based on evidence from two sources.</p>
+<p>Axelrod’s original maps (Axelrod, 1976) are CEMs. His interest is in studying the decision processes of political leaders, usually just single sources; sometimes he calls them “concept maps” but also “causal maps.”</p>
+</div>
+<div id="cm-vs-cem" class="section level2">
+<h2>CM vs CEM</h2>
+<p>A CEM has two possible tasks:</p>
+<ol style="list-style-type: decimal">
+<li><p>Simply to report what people think about what causes what.</p></li>
+<li><p>To help us (perhaps) draw conclusions about what causes what, which can conveniently be expresses as a causal map with the same or similar structure. One of the main tasks of a programme evaluator – or a judge – is to make the leap from CEM to CM: from “Expert source S told me that D ➜ O” to, with caveats, “D ➜ O.”</p></li>
+</ol>
+<p>So the most interesting task is the second: a CEM helps us draw conclusions about a closely related CM.</p>
+<p>QuIP is explicitly involved in both these tasks.</p>
+</div>
+<div id="multiple-links-number-of-mentions" class="section level2">
+<h2>Multiple links / number of mentions</h2>
+<p>We have specified that CMs are not allowed to have more than one link D ➜ O. For CEMs on the other hand, it is <em>usual</em> to include several links between pairs of factors, in order to encode the fact that different sources mentioned that link.</p>
+<p>We will trivially extend CEMs with a <strong>convention</strong>:</p>
+<p>- a map with n links D ➜ O is equivalent to the same map in which the n links are replaced by a single link with the additional property “Number of mentions” = n</p>
+<p>In visual displays, often the number n is displayed on the link. So the diagram above can be converted to this:</p>
+</div>
+<div id="solution" class="section level2">
+<h2>Solution</h2>
+<p>Now we can suggest a solution to the problem above.</p>
+<div id="base-case" class="section level3">
+<h3>Base case</h3>
+<p>All other things being equal, we can formalise our intuition about the quantity of evidence provided by CEMS like this:</p>
+<p>- <strong>any non-zero number of links</strong> from D ➜ O in a CEM <strong>is</strong> <strong>some kind of evidence</strong> that indeed D actually influences O – from a Bayesian perspective, some information is better than no information</p>
+<p>- <strong>more links mean more evidence</strong>,</p>
+<p>- and (all other things being equal), given a CEM with n links from D ➜ O and m links from F ➜ O, if n&gt;m we would say that the <strong>evidence is stronger</strong> that D influences O than that F influences O. Note this is <em>not the same as saying that we have evidence that D to O is a stronger influence</em>; we haven’t even introduced a notation for strength of influence. Quantity of evidence for an influence is not the same as evidence for the strength of an influence.</p>
+<p>In practice, all things never are quite equal, and it is the job of the human evaluator to review this kind of evidence to see which, if any, conclusions about real-world causality can be drawn on the basis of a causal evidence map.</p>
+<p>Following these intuitions, we can define <strong>quantity of evidence</strong> for D ➜ O given a simple CEM consisting only of D, O, and n links between them as simply n.</p>
+<p>A causal evidence map; quantity of evidence that D ➜ O is 3.</p>
+</div>
+<div id="problem-extend-this-simple-case-to-maps-with-intervening-factors-between-d-and-o." class="section level3">
+<h3>Problem: extend this simple case to maps with intervening factors between D and O.</h3>
+</div>
+<div id="useful-reporting-metrics" class="section level3">
+<h3>Useful reporting metrics</h3>
+<p>- Overall quantity of evidence for the paths from all drivers to all outcomes</p>
+<p>- Individual quantity of evidence from each driver to all outcomes</p>
+<p>- Comparison of quantities of evidence from a pair of drivers (or sets of drivers) to all outcomes</p>
+<p>- Individual quantity of evidence from all drivers to each outcome</p>
+<p><strong>
+</strong></p>
+</div>
+<div id="extension-weighting" class="section level3">
+<h3>Extension: weighting</h3>
+<p>It is also possible to extend the semantics such that <em>Quantity of evidence / Number of mentions</em> can also be used to confer a weighting, such that for example claims from some particular sources, for example focus groups or experts, are immediately encoded with QE =2, opening also the possibility of non-integer (but still positive) QE like .5.</p>
+</div>
+<div id="hierarchical" class="section level3">
+<h3>Hierarchical</h3>
+<p>(Work in progress)</p>
+<p>Remember that when tracing length &gt;1, if you zoom factors first, Robustness can be less than you expect because you are jumping from a thing to itself…</p>
+<p>If you zoom first, Robustness can also be <em>more</em> when length&gt;1 because you include all the paths between generic intermediaries.</p>
+
+</div>
+</div>
+</div>
+            </section>
+
+          </div>
+        </div>
+      </div>
+<a href="certainty-and-trust.html" class="navigation navigation-prev " aria-label="Previous page"><i class="fa fa-angle-left"></i></a>
+<a href="interesting-features.html" class="navigation navigation-next " aria-label="Next page"><i class="fa fa-angle-right"></i></a>
+    </div>
+  </div>
+<script src="libs/gitbook-2.6.7/js/app.min.js"></script>
+<script src="libs/gitbook-2.6.7/js/lunr.js"></script>
+<script src="libs/gitbook-2.6.7/js/clipboard.min.js"></script>
+<script src="libs/gitbook-2.6.7/js/plugin-search.js"></script>
+<script src="libs/gitbook-2.6.7/js/plugin-sharing.js"></script>
+<script src="libs/gitbook-2.6.7/js/plugin-fontsettings.js"></script>
+<script src="libs/gitbook-2.6.7/js/plugin-bookdown.js"></script>
+<script src="libs/gitbook-2.6.7/js/jquery.highlight.js"></script>
+<script src="libs/gitbook-2.6.7/js/plugin-clipboard.js"></script>
+<script>
+gitbook.require(["gitbook"], function(gitbook) {
+gitbook.start({
+"sharing": {
+"github": false,
+"facebook": true,
+"twitter": true,
+"linkedin": false,
+"weibo": false,
+"instapaper": false,
+"vk": false,
+"all": ["facebook", "twitter", "linkedin", "weibo", "instapaper"]
+},
+"fontsettings": {
+"theme": "white",
+"family": "sans",
+"size": 2
+},
+"edit": {
+"link": null,
+"text": null
+},
+"history": {
+"link": null,
+"text": null
+},
+"view": {
+"link": null,
+"text": null
+},
+"download": ["Guide-to-causal-mapping.pdf"],
+"toc": {
+"collapse": "section"
+},
+"search": true,
+"toc_depth": 3
+});
+});
+</script>
+
+</body>
+
+</html>
