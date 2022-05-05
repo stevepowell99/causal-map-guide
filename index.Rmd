@@ -33,7 +33,7 @@ This Guide is for you if:
 
 - you want to find out more about causal mapping as an approach (look for the "book" symbol 📚)
 - you want to find out more about the [Causal Map app](https://causalmap.app/) (look for the "computer" symbol 💻)
-- you are on, or have completed, the [QuIP](https://bathsdr.org/about-the-quip/) Lead Evaluator training
+- you are on, or have completed, the [QuIP](https://bathsdr.org/about-the-quip/) Lead Evaluator training.
 
 ------
 
