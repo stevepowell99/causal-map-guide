@@ -1,8 +1,16 @@
+---
+bibliography: references.bib
+---
+
 # 📚 Causal Mapping: Definitions
+
+![image-20220422114728230](_assets/image-20220422114728230.png){width=650}
+
+
 
 ## What is a causal map? What is causal mapping?
 
-A **causal map** is a diagram, a graphical structure, in which nodes (which we call "factors") are joined by directed edges or arrows (which we call "links"), so that a link from factor C to factor E means that, in some sense, C causally influences E. Causal maps are used by many research and practitioner teams around the world in a range of disciplines, who employ a variety of methods to construct and interpret them. While one group of such methods is actually called “causal mapping”, there are many similar methods which go by a wide variety of names. 
+A **causal map** is a diagram, a graphical structure, in which nodes (which we call "factors") are joined by directed edges or arrows (which we call "links"), so that a link from factor C to factor E means that, in some sense, someone claims that C causally influences E. Causal maps are used by many research and practitioner teams around the world in a range of disciplines, who employ a variety of methods to construct and interpret them. While one group of such methods is actually called “causal mapping”, there are many similar methods which go by a wide variety of names. 
 
 At the same time, the term "**causal mapping**" is often used as a name for a specific kind of *data collection* method, along with suggestions for analysis. (However, it is possible to have a causal *map* without anyone having intentionally done any causal *mapping*, using information gathered for other purposes.) There are a vast variety of possibilities, with seemingly every author having their own suggestions, from individual interview (Ackermann & Eden, 2004) to reusing open-ended questionnaire questions (Jackson & Trochim, 2002). We distinguish two main kinds of causal mapping:
 

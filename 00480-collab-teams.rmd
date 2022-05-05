@@ -1,6 +1,38 @@
 # Collaborating at Causal Map
 
-## 🧪 Collaboration 
+## 🧪 Collaboration: New functionality
+
+On the Tokyo server only, you and your colleagues can log in to the same or different maps from the same or different accounts^[depending on your subscription status], including from multiple browser tabs -- so you can have two maps open at once.
+
+*Now, two different people can edit the same file at the same time* (or you can even have the same file open yourself in two different browser tabs if you want). If the file was edited elsewhere since you last (re)loaded it, when making changes you will see a notification that your changes will be merged, but everything should just work, for example:
+
+- adding new codings / links / editing existing links 
+- deleting or editing links or factors
+
+When your changes are merged, you will have the latest version of everything. Your colleague might not yet have the changes you just made, but the next time *they* make an edit, they will be up to date.
+
+If your file is not up to date with the latest changes, this "refresh" button will be active (usually it is greyed-out). 
+
+![image-20220429140329155](_assets/image-20220429140329155.png)
+
+If you want, you can press the button to get the latest version, but if you are doing your own edits there is no need as you will see the latest version (plus your changes) when you save changes.
+
+We **don't yet support** doing any of these things while the file is open for in different sessions:
+
+- **using the factor editor** (The "Update" button will be greyed if the contents of the editor are not the newest version of the file -- but really, we don't anyway recommend doing any major reorganisation of your factor labels while someone else is working on the file at the same time!)
+- doing advanced file operations like merging or renaming files
+
+It is also still possible to work on two or more separate files separately and then [merge them](xmerging-files).
+
+Don't forget, if two or more colleagues are coding the same file at once, perhaps Jo is coding statements 1-100 and Sam is coding statements 101-200, you can get an overview of what (and how muc) has been coded in the Coding sub-tab of the Reports tab:
+
+![image-20220429144852621](_assets/image-20220429144852621.png)
+
+
+
+
+
+##  Collaboration: Standard functionality
 
 You and your colleagues can log in to the same or different maps from the same or different accounts^[depending on your subscription status], including from multiple browser tabs -- so you can have two maps open at once.
 

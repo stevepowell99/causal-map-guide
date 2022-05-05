@@ -1,0 +1,171 @@
+---
+bibliography: references.bib
+---
+
+# 📚 How to get to the shadow side: a problem with back-chaining
+
+>"The conscious mind knows nothing beyond the opposites and, as a result, has no knowledge of the thing that unites them. For this reason all uniting symbols have a redemptive significance." C.G. Jung, Archetypes & the Collective Unconscious, para. 285 
+
+----
+
+This kind of question,  
+
+> ... and what were the causal influences on *that*? ...
+>
+> ... and what led to / contributed to that happening? ...
+>
+> ... what were the main reasons for that ... ?
+
+repeated successively, is part of what we can call "causal back-chaining".
+
+It is a core part of the QuIP data-gathering approach, and now it is also a key part of how the StorySurvey "question bot" works.
+
+QuIP researchers are trained to do more than simply repeat this question and then stop. Even the StorySurvey question bot is more subtle than that. But at its core, this question, with light adaptations, gives us a single iterative step which can help construct an entire causal map. 
+
+This causal back-chaining algorithm is not perfect. It can't be: Causality is a vague concept with overlapping demands on it. It is homo sapiens' way of storing knowledge about which buttons to press but it is also part of our systems of judging, rewarding and punishing. Any algorithm we come up with for eliciting a causal map from a respondent will have flaws. We just have to do the best we can.
+
+One key problem with the algorithm, which we address here, is that it primes us to think of only things which were in a sense positive, which "pushed the consequence factor in the same direction". There might be good reasons for this in terms of legal and moral thinking, but if we want to find out more about "the complex web of causal factors affecting this outcome", it's simply a strong and unwanted bias which we need to remove.
+
+In a minute, we'll see an example of where the back-chaining algorithm falls down. First, here's a closely related example where it seems to work fine.
+
+
+
+## Concert example
+
+Jo wants to save up money for a concert. She succeeds. What was the cause of her success?
+
+- She saved the money from Uncle Nick
+- She saved nearly all her pocket money
+- **She gave up buying sweets**
+
+These are three factors which contribute to a (possibly implicit) numerical intermediate factor (amount of money saved) which is then dichotomised into "saved enough / didn't save enough".
+
+The third one, giving up buying sweets, seems like a natural answer even though you could say it's a counterfactual: nothing actually happens (she simply doesn't spend money on sweets) but if she hadn't given them up, she wouldn't have bought the ticket.
+
+Here, back-chaining is successful in implicitly identifying a negative factor *buying sweets*, which makes the outcome less likely. But it only succeeds in identifying it because it is contained within its opposite, giving up buying sweets, which "pushes the consequence factor" in the same direction as the others.
+
+## Football example
+
+Liverpool and Everton are 0-0 until almost the final whistle, and then Everton get a goal in the last minute. What were the causes of Everton's success? The pundits say:
+
+- Everton were more clinical in the final third
+- Closing down the Liverpool strikers 
+- ... etc
+
+Whereas, reasonably enough, if Liverpool had got the winning goal, the explanations would probably have been different, for example: 
+
+- Liverpool made more chances, and something had to go in
+- Greater width 
+- ... etc
+
+There's nothing wrong with this. But we have to be aware that the list of explanations given by the pundits is liable to flip at the last moment, depending on who gets that final goal. If we want to actually understand the causal dynamics of the game which was played, **we really need the contents of both lists**, the one where Liverpool win in the end, and the one where Everton win in the end, and we'd also like to know how these factors combine. 
+
+If we want to understand the game well enough to, say, advise a manager on a future encounter between the same clubs, it would be absurd to just pick one of the pundit lists we just mentioned, and throw the other list away. 
+
+## One solution: pairs of initial questions
+
+If we say that QuIP and StorySurvey can help understand the web of causal factors surrounding an intervention and/or an outcome, we have to do more than simple back-chaining, because we have to get at those negative factors too.
+
+One way we can do this is, say, ask a pair of initial questions:
+
+- What were the best moments of Liverpool's play, and what factors caused them, and what influenced those factors ...
+- What were the worst moments of Liverpool's play, and what factors caused them, and what influenced those factors ...
+
+we can even add:
+
+- What were the best moments of Everton's play, and what factors caused them, and what influenced those factors ... 
+- What were the worst moments of Everton's play, and what factors caused them, and what influenced those factors ... 
+
+This is a useful approach (and it's easy to do in StorySurvey). It's an interesting challenge to then combine, where appropriate, factors which are common to the different sets of answers, including factors in one set which are contrary to factors in another set (e.g. "Liverpool seizing chances" and "Liverpool not seizing chances"). In particular, in StorySurvey, when respondents are asking question Q, we sometimes also suggest to them existing factors which have emerged within answers to Question Q; should we also suggest to them factors which other respondents already mentioned when answering a different initial question?
+
+## Solving the deeper problem
+
+Using pairs of initial questions can really help. But it only solves our problem for the first step, the initial question. For each subsequent step, we get the same problem: asking simply "what were the influences on that ... " is biased to pick up the positive contributions but not the negative contributions.
+
+There are different kinds of "negative contribution", which overlap. 
+
+- Factors which are a *drain* on a consequence factor (eg when we are thinking of the consequence factor as a linear sum of different influences, like a bank account or a flood level) and pull it "downwards".
+  - For example, "lending money to little sister" in the Concert example above
+
+- Factors which were a *danger* to a consequence factor but never actually had a decisive effect on it
+  - For example, "This season, Liverpool are good at getting goals in the last five minutes" in the Football example above
+
+- ...
+
+## So what can we do?
+
+Can we add a "shadow side" to the back-chaining question armoury? It's possible to do in individual cases, but is there a general question form which can help us?
+
+### Counterfactual worlds
+
+How about this:
+
+> You mentioned X. If X had not happened, what would have been the reasons for it not happening?
+
+The trouble with this one is that it opens up a counterfactual world and if we back-chain from hypothetical events we might get even more hypothetical events ... We don't want to know about an alternative universe, we want to know about this one.
+
+### Best solution?
+
+So **my final suggestion is this**, our best attempt at an additional question for causal back-chaining which can also catch "opposite influences" - drains and dangers.
+
+> You mentioned X. Were there any "opposite influences" on X: factors which tried to make X not happen, or tried to make the opposite of X happen, or which were a drain on X, or might have blocked X? 
+
+It's a bit strange, but could it work? Does it work with these typical factors mentioned in a StorySurvey on the response to Covid-19?
+
+|                                       |
+| ------------------------------------- |
+| Pfizer Vaccine                        |
+| Money                                 |
+| Rapid vaccine rollout                 |
+| misinformation                        |
+| political motivations                 |
+| medical research                      |
+| development of vaccines               |
+| countries not sharing data            |
+| countries slow to react               |
+| secrecy surrounding virus             |
+| quick spread                          |
+| human deaths                          |
+| countries working together            |
+| human nature                          |
+| united people                         |
+| Early lockdowns                       |
+| The cdc eventually said to wear them. |
+
+We have to be careful not to label these drains, blocks and dangers (words which already have a negative sentiment) as "negative factors" (as I did above). This would be very confusing with factors which already have a positive rather than a negative sentiment, like "human deaths". You wouldn't naturally think of a factor which blocked or reduced human deaths as negative. That's why I suggest "*opposite* influences".
+
+The important thing is that back-chaining with shadow questions should only surface factors which are/were actually present, and should not open up a parallel universe.
+
+### Encoding the results
+
+When we back-chain using this "opposites back-chaining" question:
+
+> You mentioned "Lockdown happened": Were there any "opposite influences" on that: factors which tried to make it not happen, or tried to make the opposite of it happen, or which were a drain on it, or might have blocked it?
+
+and someone says "pressure from sceptics" we should could encode this as "Pressure from sceptics --> ~Lockdown happened" using our "Opposites symbol, `~`". After that, we can if we wish continue to back-chain from "Pressure from sceptics" in the normal way.
+
+But it's not quite clear that the Opposites Symbol is the right way to go. Because up to now, with "barefoot" coding, from any causal claim such as 
+
+> Source 1: Government intervened--> Lockdown happened
+
+we can infer not only the causal link but also the propositions at each end of the arrow:
+
+> Source 1: Government intervened
+
+and
+
+> Source 1: Lockdown happened
+
+whereas here, it isn't actually the case that our source claims that Early Lockdowns *didn't* happen. 
+
+## Conclusion
+
+Can we add this kind of shadow question (sometimes) into the StorySurvey question bot algorithm? What about QuIP?
+
+----
+
+## Finally ...
+
+I'm not arguing here for a variable-based approach as in quantitative causal analysis or systems dynamics. We don't need to think of the factors we identify as quantities which are eternally present within the context and simply vary over time. We are of course still thinking in terms of propositions rather than variables, which means in particular we can embrace *narratives*, e.g. we can include factors which only emerge half-way through the game (Mo Salah was sent off!) and which spawn a lot of other factors in their wake. 
+
+Also, I've used the word "blocker", which is sometimes used for a third, moderating factor F which changes the influence of a first factor C on a second factor E. But here, "blocker" simply means a factor C which endangers or drains a factor E, makes it less likely. Moderating factors are still not specifically captured by our algorithm, even when extended as suggest

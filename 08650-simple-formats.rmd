@@ -8,11 +8,21 @@ knitr::include_url("https://player.vimeo.com/video/651173445")
 
 
 
-## Fixed colours for links, factors and factor borders
+## Fixed colours for all links, factors and factor borders
+
+If you want to make all your factors, say, pink, just add the filter `color factors fixed=pink`
 
 See [here](#xfixed-colours).
 
+## Setting specific colours for links, factors and factor borders
 
+If you want specific factors to have specific colours, for example "Impact on wellbeing" should always be pink, you can do this by roundtripping: 
+
+![image-20220426200816492](_assets/image-20220426200816492.png)
+
+- Create the columns `color.background` and/or `color.border` in the `factors` tab, and type any [colour names](https://www.w3schools.com/tags/ref_colornames.asp) you want (red, blue, pink, green etc) in this column in the row corresponding to the factors you want coloured. You can also use hexadecimal colours like `#eeff55`. 
+
+This trick does not work with filters which manipulate the factor structure, if you zoom or combine opposites, as the app wouldn't know which colour you want. In this case, the colours applied in this way are unpredictable; you might want to restore standard colours eg just add the filter `color factors fixed=pink`.
 
 ## Wrap factor/link labels
 
@@ -36,9 +46,11 @@ Click on the cluster factors button to open the filter panel. Simply type in the
 
 ### Layout
 
-The setting “layout” makes a huge difference. Usually you will want “dot” layout which lays out your map in a left-to-right direction.
+The setting “layout” makes a huge difference. Usually you will want “dot” layout which lays out your map in a left-to-right direction. 
 
-However, other layouts can be useful, for example when you are looking just at the ego network for a single factor, i.e. just the factors immediately adjacent to it, searching just for that one factor and one step up or down, the “circo” layout can be very helpful.
+**Only the "dot" layout is fully supported.** However, **other layouts can be useful**, for example when you are looking just at the ego network for a single factor, i.e. just the factors immediately adjacent to it, searching just for that one factor and one step up or down, the “circo” layout can be very helpful. 
+
+Beware that the output from other layouts may not look as good as the default "dot" layout, and the tweaks like setting horizontal separation may not work with them.
 
 The screenshot below shows the circo print layout with 1 step up and 1 step down from Farm production.![img](https://lh5.googleusercontent.com/v2o1MhKbKXJjx85cDve0p0Rl6tbHQR-xvsAUhz6e8M95CD8IXQwsK0C-yzfrCHyM5u6_FQA-goHdTKnk-KuDBNBQCQaEu-ALjlARENLOg8eD6igucdMJLCotCe8xXg)
 

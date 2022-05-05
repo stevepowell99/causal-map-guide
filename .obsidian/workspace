@@ -1,0 +1,91 @@
+{
+  "main": {
+    "id": "67271e5862221a55",
+    "type": "split",
+    "children": [
+      {
+        "id": "ccb156b6cc5c53dd",
+        "type": "leaf",
+        "state": {
+          "type": "image",
+          "state": {
+            "file": "_book/_assets/file manager screenshot-16376049547992.png"
+          }
+        }
+      }
+    ],
+    "direction": "vertical"
+  },
+  "left": {
+    "id": "f960d935bc8e4c66",
+    "type": "split",
+    "children": [
+      {
+        "id": "6057a9c3f373e7f7",
+        "type": "tabs",
+        "children": [
+          {
+            "id": "939797c4ada60f48",
+            "type": "leaf",
+            "state": {
+              "type": "file-explorer",
+              "state": {}
+            }
+          },
+          {
+            "id": "946ad0216db9f3b6",
+            "type": "leaf",
+            "state": {
+              "type": "search",
+              "state": {
+                "query": "",
+                "matchingCase": false,
+                "explainSearch": false,
+                "collapseAll": false,
+                "extraContext": false,
+                "sortOrder": "alphabetical"
+              }
+            }
+          }
+        ]
+      }
+    ],
+    "direction": "horizontal",
+    "width": 300
+  },
+  "right": {
+    "id": "69513dce7fd5d122",
+    "type": "split",
+    "children": [
+      {
+        "id": "8fee678fed052aa5",
+        "type": "tabs",
+        "children": [
+          {
+            "id": "8cd132b5cea10cde",
+            "type": "leaf",
+            "state": {
+              "type": "backlink",
+              "state": {
+                "file": "_book/_assets/file manager screenshot-16376049547992.png",
+                "collapseAll": false,
+                "extraContext": false,
+                "sortOrder": "alphabetical",
+                "showSearch": false,
+                "searchQuery": "",
+                "backlinkCollapsed": false,
+                "unlinkedCollapsed": false
+              }
+            }
+          }
+        ]
+      }
+    ],
+    "direction": "horizontal",
+    "width": 300
+  },
+  "active": "ccb156b6cc5c53dd",
+  "lastOpenFiles": [
+    "_book/_assets/file manager screenshot-16376049547992.png"
+  ]
+}

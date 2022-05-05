@@ -41,7 +41,7 @@ Additionally (optionally), you may have a column in the statements table called 
 
 ![image-20211012141342985](_assets/image-20211012141342985.png){width=650}
 
-## Uploading from Word
+## Starting from a Word document
 
 You can create a table from a Microsoft Word document. 
 

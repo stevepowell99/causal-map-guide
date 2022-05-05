@@ -1,14 +1,11 @@
-# The Updates tab{#xupdates-tab}
+# 🧪Gamification{#xgamification}
 
-In this panel, you can see updates about all the files you have access to. 
+At the top right of the app, you will see some feedback on your progress in coding your file.
 
-With the toggle at the top, you can select whether to show:
+![image-20220430193751134](_assets/image-20220430193751134.png)
 
-- The most recent status for each file 
-- All updates for the currently loaded file 
-- All updates for all files
+These show you:
 
-You can also click on a row to load the corresponding file. 
-
-![file manager screenshot](_assets/file manager screenshot-16376049547992.png){width=650}
-
+- number of (top level) factors. You get a warning if this is more than100.
+- ratio of links to (top level) factors. You get a warning if this is less than 3.
+- percentage of statements which have been coded. You get a warning if this is less than 60%.

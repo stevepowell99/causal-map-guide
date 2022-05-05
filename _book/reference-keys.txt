@@ -76,7 +76,8 @@ features-of-causal-map
 main-features-of-causal-map
 additional-new-features-in-causal-map-2
 collaborating-at-causal-map
-collaboration
+collaboration-new-functionality
+collaboration-standard-functionality
 teams
 xfactor-editor
 summary
@@ -102,6 +103,7 @@ xmetrics
 summary-1
 what-the-metrics-mean
 xdata-manager
+xgamification
 xupdates-tab
 creating-good-factor-labels
 actor-focused-labels
@@ -140,6 +142,7 @@ search-with-nested-factors
 how-can-i-view-just-the-factors-where-i-have-applied-hierarchical-coding
 viewing-the-top-level-labels
 simplifying-zooming-out-and-filtering-out-less-frequent-links-and-factors-in-the-app
+smart-zooming
 strength-adding-additional-information-like-strength-of-a-link-in-a-causal-map
 coding-opposites
 summary-3
@@ -186,7 +189,8 @@ links-table
 factors-table
 when-combining-opposites
 xsimple-formats
-fixed-colours-for-links-factors-and-factor-borders
+fixed-colours-for-all-links-factors-and-factor-borders
+setting-specific-colours-for-links-factors-and-factor-borders
 wrap-factorlink-labels
 xcluster-factors
 set-print-format
@@ -195,7 +199,7 @@ what-is-the-logic-behind-the-causal-map-filters
 keeping-it-simple
 the-order-of-the-filters-with-calculated-fields
 xautocorrect
-where-do-these-islands-come-from
+where-do-these-islands-come-from-in-my-map
 xanalysis
 xcontinuity
 summary-6
@@ -239,7 +243,7 @@ special-case-closed-question-blocks
 ximport
 upload-summary
 formattingyourfile
-uploading-from-word
+starting-from-a-word-document
 uploading-from-pdfs
 making-a-basic-statements-table-by-hand
 import-additional-data
@@ -292,7 +296,6 @@ the-transitivity-trap
 not-just-a-problem-for-causal-mapping
 can-we-mitigate-the-trap-with-careful-elicitation-protocols
 transitivity-trap-or-identity-trap
-smart-simplification
 caveat-numbers
 different-kinds-of-question-chaining-with-quip-and-parevo-as-illustrations
 four-options-with-fixed-versus-variable-question-chaining
@@ -301,6 +304,17 @@ future-in-past-past-in-future
 closed-vs-open-questions
 going-both-ways-bi-directional-chaining
 evaluation
+how-to-get-to-the-shadow-side-a-problem-with-back-chaining
+concert-example
+football-example
+one-solution-pairs-of-initial-questions
+solving-the-deeper-problem
+so-what-can-we-do
+counterfactual-worlds
+best-solution
+encoding-the-results
+conclusion
+finally
 the-last-minute-principle
 causal-maps-systems-maps-whats-the-difference-does-it-matter
 what-is-the-difference-between-a-causal-map-and-a-systems-map

@@ -1,6 +1,12 @@
 ---
 title: "Guide to Causal Mapping"
-author: "Steve Powell & Causal Map Ltd"
+author:
+  - Steve Powell^[Causal Map Ltd., steve@causalmap.app]
+  - Fiona Remnant^[Causal Map Ltd., fiona@causalmap.app]
+  - James Copestake^[Bath University., hssjgc@bath.ac.uk]
+  - Hannah Mishan^[Causal Map Ltd., hannah@causalmap.app]
+  - Rebekah Arvard^[Bath SDR., rebekah@bathsdr.org]
+  - Samuel Goddard^[Causal Map Ltd., SamuelGoddard@outlook.com]
 date: "`r Sys.Date()`"
 site: bookdown::bookdown_site
 output: bookdown::bs4_book
@@ -25,8 +31,8 @@ knitr::include_url("https://player.vimeo.com/video/689223728")
 
 This Guide is for you if:
 
-- you want to find out more about causal mapping as an approach (look for this symbol 📚)
-- you want to find out more about the [Causal Map app](https://causalmap.app/) (look for this symbol 💻)
+- you want to find out more about causal mapping as an approach (look for the "book" symbol 📚)
+- you want to find out more about the [Causal Map app](https://causalmap.app/) (look for the "computer" symbol 💻)
 - you are on, or have completed, the [QuIP](https://bathsdr.org/about-the-quip/) Lead Evaluator training
 
 ------
@@ -37,7 +43,7 @@ Features marked 🧪are experimental and are implemented on the [test server](ht
 
 ## Videos
 
-Check out our growing library of [short, focussed training videos](https://guide.causalmap.app/video-list.html#xvideo-list).
+Check out our growing library of [short, focussed training videos](https://guide.causalmap.app/xvideo-list.html), none longer than four minutes!
 
 ## Quizzes
 
@@ -46,6 +52,8 @@ Test your knowledge of causal mapping and Causal Map with our structured series 
 ## License {.unnumbered}
 
 This guide is licensed to you under [Creative Commons Attribution-NonCommercial-NoDerivatives 4.0 International License](http://creativecommons.org/licenses/by-nc-nd/4.0/).
+
+
 
 
 ```{r,echo=F}

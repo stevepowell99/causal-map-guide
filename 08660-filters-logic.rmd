@@ -38,7 +38,7 @@ The app needs to delete preceding `label links` filters in some cases, but not i
 
 The point is to let you chain labels together if you want say source count and also gender, but to delete extraneous label links filters if you are *not* chaining the labels.
 
-## Where do these islands come from?
+## Where do these islands come from in my map?
 
 **It's a really frequent problem that you do either a path tracing or a "find factors containing blah and two steps down etc" and then "select ..." to reduce number of factors or links, and then you get islands of stuff which don't seem to be related.**
 
