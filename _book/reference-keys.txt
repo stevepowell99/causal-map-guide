@@ -142,7 +142,6 @@ search-with-nested-factors
 how-can-i-view-just-the-factors-where-i-have-applied-hierarchical-coding
 viewing-the-top-level-labels
 simplifying-zooming-out-and-filtering-out-less-frequent-links-and-factors-in-the-app
-smart-zooming
 strength-adding-additional-information-like-strength-of-a-link-in-a-causal-map
 coding-opposites
 summary-3
@@ -201,6 +200,7 @@ the-order-of-the-filters-with-calculated-fields
 xautocorrect
 where-do-these-islands-come-from-in-my-map
 xanalysis
+smart-zooming
 xcontinuity
 summary-6
 xtracing-threads
