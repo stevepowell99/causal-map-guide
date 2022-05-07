@@ -34,6 +34,12 @@ You can use source_count instead:
 zoom factors level=1 preserve_frequency = 5 frequency_field = source_count
 ```
 
+There is also a shortcut button to insert the most common filter for you:
+
+![image-20220507130144365](_assets/image-20220507130144365.png)
+
+
+
 One thing which is not yet clear is whether the resulting pair of factors "Health behaviour" and "Health behaviour; hand_washing" should be distinguished in any way. For example, perhaps it isn't obvious, looking at "Health behaviour", that this higher-level factor *excludes* in this case its actual daughter,  "Health behaviour; Hand washing".
 
 What the app does provide is the additional field in the factors table: `frequency preserved` . So if you want, you can highlight factors which are not rolled up, for example like this:
@@ -51,3 +57,9 @@ A section of the top-level map, zoomed out to level 1 (source counts are shown)
 And here is the same map but preserving factors with a source count above 20. This seems like a real improvement as some really concrete and important second-level factors are preserved, including for example the interesting link on the right between increased cost of living and amount of resources. We have chosen to highlight the preserved factors using a purple border.
 
 ![image-20220502120224063](_assets/image-20220502120224063.png)
+
+
+
+Probably the best way to do this is to use the option `frequency_other= (other)`. This appends " (other)" (or whatever else you type) on to the ends of the higher-level factor labels which have child factors which are *not* rolled up, like this:
+
+![image-20220507130411048](_assets/image-20220507130411048.png)
