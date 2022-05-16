@@ -4,7 +4,7 @@
 
 One feature we've been asked for most on Causal Map is **live collaborative coding**: if only two people could edit the same file at the same time! Well, we've now made that possible.
 
-![2 women sitting on window. Nguyen Thu Hoai https://unsplash.com/@thwhoai](_assets/photo-1580408377065-1da9909a26baixlib=rb-1.2.jpeg)
+![2 women sitting on window. Nguyen Thu Hoai https://unsplash.com/@thwhoai](_assets/photo-1580408377065-1da9909a26baixlib=rb-1.2.jpeg){width=650}
 
 Up until now, you and your colleagues can log in to the same or different maps from the same or different accounts^[depending on your subscription status], including from multiple browser tabs -- so you can have two maps open at once -- but you couldn't both edit the file at the same time. That's what we have enabled. (Or you can even have the same file open yourself in two different browser tabs if you want). 
 
