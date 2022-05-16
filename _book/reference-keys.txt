@@ -76,7 +76,7 @@ features-of-causal-map
 main-features-of-causal-map
 additional-new-features-in-causal-map-2
 collaborating-at-causal-map
-collaboration-new-functionality
+collaboration-new-functionality.
 details
 collaboration-standard-functionality
 teams
