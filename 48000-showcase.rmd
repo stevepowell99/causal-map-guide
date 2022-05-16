@@ -35,7 +35,7 @@ The Causal Map App contributed to the evaluation of the World Food Programme (WF
 
 ### Power to Change
 
-[Here](https://docs.google.com/file/d/1-QRmWwzctRYVowP7hD7buaGkQim8-0zq/view) is a brief presentation showcasing a recent project conducted by Bath SDR for Power to Change using Causal Map. To download this presentation [click here](https://docs.google.com/presentation/d//export/pptx).
+[Here](https://bathsdr.org/wp-content/uploads/2021/03/P2C-QuIP-Summary_Final_short.pdf) is a brief presentation showcasing a recent project conducted by Bath SDR for Power to Change using Causal Map.
 
 ![de1f66536036d0c064f913bf0cabe84e.png](_assets/de1f66536036d0c064f913bf0cabe84e.png)
 Path tracing was a useful tool when drawing out stories of change. 
@@ -98,7 +98,7 @@ women, mentioned training inputs and how they led to career opportunities.
 
 ### IFRC Nepal Meta-evaluation
 
-[Download the report](http://adore.ifrc.org/Download.aspx?FileId=313302) from the IFRC website.
+[Download the report](https://www.ifrc.org/media/13554) from the IFRC website.
 
 This report, written by Steve Powell, used an early version of Causal Map. 
 
