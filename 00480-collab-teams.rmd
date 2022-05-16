@@ -2,9 +2,17 @@
 
 ## 🧪 Collaboration: New functionality
 
-On the Tokyo server only, you and your colleagues can log in to the same or different maps from the same or different accounts^[depending on your subscription status], including from multiple browser tabs -- so you can have two maps open at once.
+One feature we've been asked for most on Causal Map is **live collaborative coding**: if only two people could edit the same file at the same time! Well, we've now made that possible.
 
-*Now, two different people can edit the same file at the same time* (or you can even have the same file open yourself in two different browser tabs if you want). If the file was edited elsewhere since you last (re)loaded it, when making changes you will see a notification that your changes will be merged, but everything should just work, for example:
+![2 women sitting on window. Nguyen Thu Hoai https://unsplash.com/@thwhoai](_assets/photo-1580408377065-1da9909a26baixlib=rb-1.2.jpeg)
+
+Up until now, you and your colleagues can log in to the same or different maps from the same or different accounts^[depending on your subscription status], including from multiple browser tabs -- so you can have two maps open at once -- but you couldn't both edit the file at the same time. That's what we have enabled. (Or you can even have the same file open yourself in two different browser tabs if you want). 
+
+This will probably later become a premium feature for subscribers to the Unlimited package only, but right now it is free for everyone on the [Tokyo server](https://causalmap.shinyapps.io/tokyo/) only -- let us know (hello@causalmap.app) if you have any questions or comments. 
+
+### Details
+
+If the file was edited elsewhere since you last (re)loaded it, when making changes you will see a notification that your changes will be merged, but everything should just work, for example:
 
 - adding new codings / links / editing existing links 
 - deleting or editing links or factors

@@ -33,7 +33,7 @@ You supply this data in the form of user-defined fields in the Sources table, wh
 
 You could still, if you want, import a whole bunch of different closed questions with different answer categories as custom fields in the Sources table. So just as you can have gender as a field, you could have "answer to closed question about how often do you go hungry (never/sometimes/often)" as a field. This means you could ask the app to only show the maps of the women, or the people who often go hungry, or the women who often go hungry. The point of the closed questions feature is to organise and provide the answers to a whole block of questions together in one place, to make analsying the data easier.
 
-### QuIP-specific: Importing from a QuIP spreadsheet{#ximport-quip}
+### QuIP-specific: Uploading hybrid format data (admin only){#ximport-quip}
 
 ```{r,echo=F}
 knitr::include_url("https://player.vimeo.com/video/664879474")
@@ -56,17 +56,18 @@ Your xslx file must have just four columns, with column headers in this order:
 
 Your Question IDs may include the following characters:
 
-A dollar `$` to be treated as a statement.
+- A dollar `$` to be treated as a statement.
 
-A star `*` to be treated as a closed question.
+- A star `*` to be treated as a closed question.
 
-A hash `#` to be treated as important additional data.
+- A hash `#` to be treated as important additional data.
 
-Otherwise your question will be treated as unimportant additional data.
+
+Otherwise your question will be treated as unimportant additional data. Also it is worth noting that all the columns of the `sources` table contain metadata about your sources and can for example be used to create filters (e.g. show me a map which only contains statements from people who live alone). Data whose `question_code` contains a `#` will also be shown in a few additional key place in the app such as the info panel.
 
 You can mix these, so e.g.
 
-`$*# Do you have a house?`
+`#$* Do you have a house?`
 
 Will be treated as a statement and as closed question (part of a block) and as important additional data. ![image-20211220160457936](_assets/image-20211220160457936.png){width=650}
 
@@ -78,52 +79,11 @@ Closed questions, as indicated by the `*` in the question_id, are imported into 
 
 ![image-20211220161646312](_assets/image-20211220161646312.png){width=650}
 
+Plus, the question_code may end with the characters "rank" to mark "ranking organisation" data. [There may be a bug currently such that this data will also be imported only if they are not treated as statements, ie the code should not contain a `$`].
 
-## QuIP-specific: uploading hybrid format data (admin only){#ximport-hybrid}
+To upload the quIP-style spreadsheet click on the purple upload button on the right-hand-side panel.
 
- ![image-20211104120600757](_assets/image-20211104120600757.png)
-
-This format is used by BathSDR for QuIP projects. This format has many rows, one for each answer, and includes the statements as one kind of answer; you can import statements and additional data from the same fieldwork file.  
-
-The app will only read the first tab in the Excel file, whatever its name. This tab must have a header row with the names of the fields:
-
-- `text`, containing the answers
-- `source_id`, containing the respondent ID
-- `question_code`, containing the question ID
-- `question_text`, containing the question text
-
-(Actually the names of the columns does not matter, only the order.)
-
-This hybrid data is split on import into three tables: `statements` `sources` and `questions`, depending on the contents of the `question_code` column.  These question codes may include the following characters:
-
-- A dollar `$` to be treated as a statement
-
-- A star `*` to be treated as a closed question.
-
-- A hash `#` to be treated as important additional data.
-
-Plus, the question_code may end with the characters "rank" to mark "ranking organisation" data. [There may be a bug currently such that this data will also be imported only if they are not treated as statements, ie the code should not contain a `$`]
-
-The three tables are produced as follows:
-
-1) `statements` table: Every row in the hybrid table whose `question_code` includes a `$` will be treated as a statement: added as a *row* in the `statements` table.
-
-2) `sources` table: Most rows in the hybrid table will also be treated as a metadata (e.g. the gender of the respondent): added as *columns* in the `sources` table, which has one row for each source and one column for each metadata field such as gender. Rows in the hybrid table are only **not** added to the sources table if they are purely statements: their `question_code` includes a `$` and they are not closed question data, i.e. their `question_code` does not include a `*`.  
-3) `questions` table: this lists all the unique questions, with the columns `question_code` and `question_text` and a new `question_id` which will be constructed from the question code together with the question text, e.g. "A1_Do you live alone". This means that any special characters in the question codes column will also be included in the question id column. 
-
-You can mix the special characters in the question codes, so e.g.
-
-> $*# A1
-
-... will be treated as 
-
-- a statement 
-- *and* as additional data about the sources, in particular as a closed question (part of a block of such questions) 
-- *and* as *important* additional data to be shown e.g. in the info panel.
-
-Note that all the columns of the `sources` table contain metadata about your sources and can for example be used to create filters (e.g. show me a map which only contains statements from people who live alone). Data whose `question_code` contains a # will also be shown in a few additional key place in the app such as the info panel.
-
-Closed question block data, and ranked organisation data, is stored in the app in the `sources` table: as additional columns of information about each source. 
+![chrome_c4eNUSYcjH](_assets/chrome_c4eNUSYcjH.png){width=650}
 
 #### QuIP recodes for closed questions - live link
 
@@ -131,7 +91,7 @@ Using this [table](https://www.dropbox.com/s/spiacrl67lqwvc9/quip-recodes.xlsx?d
 
 For example:
 
-![image-20211019155354881](_assets/image-20211019155354881.png)
+![image-20211019155354881](_assets/image-20211019155354881.png){width=650}
 
 This data will be displayed in the Tables panel if you select “closed questions.”
 
