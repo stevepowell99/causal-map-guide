@@ -49,7 +49,9 @@ Check out our growing library of [short, focussed training videos](https://guide
 
 Test your knowledge of causal mapping and Causal Map with our structured series of [quizzes](https://causalmap.shinyapps.io/quizzes/).
 
-## Projects to date
+## Selected projects to date
+
+These are some causal mapping projects completed with Causal Map - either directly by subscribers, or by [Bath SDR](https://bathsdr.org) working for clients, or conducted by Causal Map Ltd for the client.
 
 <iframe class="airtable-embed" src="https://airtable.com/embed/shrlHVXucgPfsNPnw?backgroundColor=red&viewControls=on" frameborder="0" onmousewheel="" width="100%" height="533" style="background: transparent; border: 1px solid #ccc;"></iframe>
 
