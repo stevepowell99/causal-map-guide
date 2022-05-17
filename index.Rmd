@@ -49,6 +49,10 @@ Check out our growing library of [short, focussed training videos](https://guide
 
 Test your knowledge of causal mapping and Causal Map with our structured series of [quizzes](https://causalmap.shinyapps.io/quizzes/).
 
+## Projects to date
+
+<iframe class="airtable-embed" src="https://airtable.com/embed/shrlHVXucgPfsNPnw?backgroundColor=red&viewControls=on" frameborder="0" onmousewheel="" width="100%" height="533" style="background: transparent; border: 1px solid #ccc;"></iframe>
+
 ## License {.unnumbered}
 
 This guide is licensed to you under [Creative Commons Attribution-NonCommercial-NoDerivatives 4.0 International License](http://creativecommons.org/licenses/by-nc-nd/4.0/).

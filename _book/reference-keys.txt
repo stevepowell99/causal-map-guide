@@ -1,6 +1,7 @@
 overview
 videos
 quizzes
+projects-to-date
 prerequisites-for-using-the-app
 x5
 signing-up-and-signing-in-at-causal-map
