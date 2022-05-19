@@ -81,7 +81,7 @@ Closed questions, as indicated by the `*` in the question_id, are imported into 
 
 Plus, the question_code may end with the characters "rank" to mark "ranking organisation" data. [There may be a bug currently such that this data will also be imported only if they are not treated as statements, ie the code should not contain a `$`].
 
-To upload the quIP-style spreadsheet click on the purple upload button on the right-hand-side panel.
+To upload the QuIP-style spreadsheet click on the purple upload button on the right-hand-side panel.
 
 ![chrome_c4eNUSYcjH](_assets/chrome_c4eNUSYcjH.png){width=650}
 
