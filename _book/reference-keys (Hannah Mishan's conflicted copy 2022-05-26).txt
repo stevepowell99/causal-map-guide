@@ -349,7 +349,7 @@ solution-3
 solution-4
 solution-5
 is-one-direction-enough
-showcase
+xshowcases
 reports
 voscur
 world-food-programme
