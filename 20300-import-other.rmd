@@ -33,7 +33,7 @@ You supply this data in the form of user-defined fields in the Sources table, wh
 
 You could still, if you want, import a whole bunch of different closed questions with different answer categories as custom fields in the Sources table. So just as you can have gender as a field, you could have "answer to closed question about how often do you go hungry (never/sometimes/often)" as a field. This means you could ask the app to only show the maps of the women, or the people who often go hungry, or the women who often go hungry. The point of the closed questions feature is to organise and provide the answers to a whole block of questions together in one place, to make analsying the data easier.
 
-### QuIP-specific: Uploading hybrid format data (admin only){#ximport-quip}
+### QuIP-specific: Uploading hybrid format data{#ximport-quip}
 
 ```{r,echo=F}
 knitr::include_url("https://player.vimeo.com/video/664879474")
