@@ -30,6 +30,7 @@ bookdown::gitbook:
 bookdown::pdf_book:
   includes:
     in_header: preamble.tex
+    before_body: google_body_tag.html
   latex_engine: xelatex
   citation_package: natbib
   papersize: a5
