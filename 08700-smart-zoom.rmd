@@ -50,16 +50,18 @@ color borders field="frequency_preserved" hi=red lo=white
 
 Here is a real-life example. 
 
-A section of the top-level map, zoomed out to level 1 (source counts are shown)
+A top-level map, zoomed out to level 1 (source counts are shown). As you can see this map is quite simple with no additional details.
 
-![image-20220502120138012](_assets/image-20220502120138012.png)
+![image-20220531124023142](_assets/image-20220531124023142.png){width=550}
 
-And here is the same map but preserving factors with a source count above 20. This seems like a real improvement as some really concrete and important second-level factors are preserved, including for example the interesting link on the right between increased cost of living and amount of resources. We have chosen to highlight the preserved factors using a purple border.
+And here is the same map but preserving factors with a source count above 5. This seems like a real improvement as some really concrete and important second-level factors are preserved, including for example that the training mentioned on 6 occasions was agricultural training and that fertiliser was mentioned as a driver of change. 
 
-![image-20220502120224063](_assets/image-20220502120224063.png)
+The factors with a purple border have been ‘rolled up’ and only their top-level label is visible. The other factors have been preserved and are displayed in full, as they have a frequency count higher than 5 or because they are a level one label and so cannot be ‘rolled up’.
+
+![image-20220531124143459](_assets/image-20220531124143459.png)
 
 
 
-Probably the best way to do this is to use the option `frequency_other= (other)`. This appends " (other)" (or whatever else you type) on to the ends of the higher-level factor labels which have child factors which are *not* rolled up, like this:
+Probably the best way to do this is to add "(other)", or whatever else you type, on to the ends of the higher-level factor labels which have larger child factors elsewhere in the map. Larger child factors are those which are *not* rolled up because they are so frequent, like 'New agricultural inputs; Fertiliser' in the below map. To do this add `frequency_other= (other)` in the advanced editor on the same line as your commands to preserve factors whilst zooming. This will create a map like below:
 
-![image-20220507130411048](_assets/image-20220507130411048.png)
+![image-20220531130328997](_assets/image-20220531130328997.png)

@@ -193,17 +193,18 @@
 <p>What the app does provide is the additional field in the factors table: <code>frequency preserved</code> . So if you want, you can highlight factors which are not rolled up, for example like this:</p>
 <pre><code>color borders field="frequency_preserved" hi=red lo=white</code></pre>
 <p>Here is a real-life example.</p>
-<p>A section of the top-level map, zoomed out to level 1 (source counts are shown)</p>
+<p>A top-level map, zoomed out to level 1 (source counts are shown). As you can see this map is quite simple with no additional details.</p>
 <div class="figure">
-<img src="_assets/image-20220502120138012.png" alt=""><p class="caption">image-20220502120138012</p>
+<img src="_assets/image-20220531124023142.png" width="550" alt=""><p class="caption">image-20220531124023142</p>
 </div>
-<p>And here is the same map but preserving factors with a source count above 20. This seems like a real improvement as some really concrete and important second-level factors are preserved, including for example the interesting link on the right between increased cost of living and amount of resources. We have chosen to highlight the preserved factors using a purple border.</p>
+<p>And here is the same map but preserving factors with a source count above 5. This seems like a real improvement as some really concrete and important second-level factors are preserved, including for example that the training mentioned on 6 occasions was agricultural training and that fertiliser was mentioned as a driver of change.</p>
+<p>The factors with a purple border have been ‘rolled up’ and only their top-level label is visible. The other factors have been preserved and are displayed in full, as they have a frequency count higher than 5 or because they are a level one label and so cannot be ‘rolled up’.</p>
 <div class="figure">
-<img src="_assets/image-20220502120224063.png" alt=""><p class="caption">image-20220502120224063</p>
+<img src="_assets/image-20220531124143459.png" alt=""><p class="caption">image-20220531124143459</p>
 </div>
-<p>Probably the best way to do this is to use the option <code>frequency_other= (other)</code>. This appends ” (other)” (or whatever else you type) on to the ends of the higher-level factor labels which have child factors which are <em>not</em> rolled up, like this:</p>
+<p>Probably the best way to do this is to add “(other)”, or whatever else you type, on to the ends of the higher-level factor labels which have larger child factors elsewhere in the map. Larger child factors are those which are <em>not</em> rolled up because they are so frequent, like ‘New agricultural inputs; Fertiliser’ in the below map. To do this add <code>frequency_other= (other)</code> in the advanced editor on the same line as your commands to preserve factors whilst zooming. This will create a map like below:</p>
 <div class="figure">
-<img src="_assets/image-20220507130411048.png" alt=""><p class="caption">image-20220507130411048</p>
+<img src="_assets/image-20220531130328997.png" alt=""><p class="caption">image-20220531130328997</p>
 </div>
 
 </div>
@@ -229,7 +230,7 @@
 <footer class="bg-primary text-light mt-5"><div class="container"><div class="row">
 
   <div class="col-12 col-md-6 mt-3">
-    <p>"<strong>Guide to Causal Mapping</strong>" was written by Steve Powell<a href="#fn1" class="footnote-ref" id="fnref1"><sup>1</sup></a>, Fiona Remnant<a href="#fn2" class="footnote-ref" id="fnref2"><sup>2</sup></a>, James Copestake<a href="#fn3" class="footnote-ref" id="fnref3"><sup>3</sup></a>, Hannah Mishan<a href="#fn4" class="footnote-ref" id="fnref4"><sup>4</sup></a>, Rebekah Arvard<a href="#fn5" class="footnote-ref" id="fnref5"><sup>5</sup></a>, Samuel Goddard<a href="#fn6" class="footnote-ref" id="fnref6"><sup>6</sup></a>. It was last built on 2022-06-06.</p>
+    <p>"<strong>Guide to Causal Mapping</strong>" was written by Steve Powell<a href="#fn1" class="footnote-ref" id="fnref1"><sup>1</sup></a>, Fiona Remnant<a href="#fn2" class="footnote-ref" id="fnref2"><sup>2</sup></a>, James Copestake<a href="#fn3" class="footnote-ref" id="fnref3"><sup>3</sup></a>, Hannah Mishan<a href="#fn4" class="footnote-ref" id="fnref4"><sup>4</sup></a>, Rebekah Arvard<a href="#fn5" class="footnote-ref" id="fnref5"><sup>5</sup></a>, Samuel Goddard<a href="#fn6" class="footnote-ref" id="fnref6"><sup>6</sup></a>. It was last built on 2022-06-09.</p>
   </div>
 
   <div class="col-12 col-md-6 mt-3">
