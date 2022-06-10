@@ -28,8 +28,6 @@ Powell, S. (2019). Supplement to Theories of Change: Making Value Explicit. _Jou
 
 * [When an interview beats an RCT (with cartoon!)](http://www.pogol.net/public/article-evidence.html)
 * [Scandal or yawn? Simpson’s Paradox hits the IFRC](http://www.pogol.net/_ideas/posts/2019-01-14-scandal-or-yawn-simpsons-paradox-hits-the-ifrc/)
-* [Value for Money](http://pogol.net/public/article-equity.html) Steve’s first take on the VfM approach by Julian King and OPM, from a Theorymaker perspective.
-*  if(T) readLines("Guide-to-causal-mapping.Rmd") %>%   str_match(".*vimeo\\.com.*") %>%   keep(~!is.na(.)) %>%   unique %>%   paste0("```{r,echo=F}\n",.,"\n```\n") %>%   c("# Video list{#xvideo-list}\n\nThese videos are all included at different points in the Guide. If you love videos, here they are again in one place. Feel free to binge.",.) %>%   writeLines("00195-video_list.rmd")​{r,echo=F}
 * [Various posts on LinkedIn](https://www.linkedin.com/in/stevepowell99/detail/recent-activity/posts/)
 
 ## ResearchGate
