@@ -1,4 +1,4 @@
-# Conditional formats
+# Conditional formats{#xconditional-formats}
 
 Conditional formats calculate and visualise information in your map.
 
@@ -50,24 +50,6 @@ Or you might want to colour your links with a discrete scale of colours accordin
 
 The app works out for you if your scale is numerical or discrete, so you don't need to worry about that.
 
-🧪 The default discrete palette is https://colorbrewer2.org/#type=qualitative&scheme=Set1&n=9, but you can change the palette number like this:
-
-```
-color links field = #area fun=literal pal=6
-```
-or just
-```
-color links value = literal:#area pal=6
-```
-Palette 2 is a good choice if you don't like the paler colours in palette 1 (the default).
-
-
-
-
-See also the special sections on [conditional formatting with percentages](#percent) and [conditional formatting with surprise](#xsurprise).
-
-Also, much of this formatting only makes sense in terms of bundles of links from one factor to another. The app will bundle the links for you in these cases.
-
 #### Initials{#xinitials}
 
 Often it is useful to shorten the labels, for example you might have bundled your links by village and want to label the bundles with the names of the villages, but the village names are very long. Or you might have bundled your links by region and want to label the bundles with a list of the unique names of the villages in that region, but this might be quite a lot of text.  
@@ -104,6 +86,7 @@ You can now also choose whether or not to include the name of the field in your 
 
 ![image-20220121072115390](_assets/image-20220121072115390.png)
 
+
 ## Bundle links{#bundlelinks}
 
 Similarly to bundling factors you can also bundle links. This is really helpful to keep your map neat and easy to read. To start with, you can simply bundle all the links between a pair of factors into the "simple bundle", represented as just one arrow; you will probably want to make the size or colour of this depend on the number of links in the bundle. 
@@ -128,6 +111,19 @@ Sometimes you might want to set a specific colour for all your factors, or links
 `color links fixed=coral`
 
 You can use any [html colour](https://www.w3schools.com/colors/colors_names.asp) like red, pink, aliceblue, beige ... and also hex colours like #eee, #00000033 etc.
+
+### Changing discrete palettes{#xdiscrete-palettes}
+
+The [default palette for discrete fields like gender or village](https://colorbrewer2.org/#type=qualitative&scheme=Set1&n=9) is nice, but maybe you want something different. With continuous fields like source count, you can specify the high, low and mid colours; now you can change the palette for discrete fields too, by adding `pal=6` or  `pal=3` like this:
+
+```
+color links field = #area fun=literal pal=6
+```
+
+Palette 2 is a good choice if you don't like the paler colours in palette 1 (the default).See also the special sections on [conditional formatting with percentages](#percent) and [conditional formatting with surprise](#xsurprise).
+
+Also, much of this formatting only makes sense in terms of bundles of links from one factor to another. The app will bundle the links for you in these cases.
+
 
 ## Calculated fields{#xcalculated-fields}
 

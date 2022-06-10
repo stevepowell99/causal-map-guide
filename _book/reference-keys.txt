@@ -49,6 +49,7 @@ search
 sorting
 reordering-columns
 xprint-view-tables
+filtering-print-view-of-tables
 FAQs
 logging-in
 setting-up
@@ -76,7 +77,7 @@ are-causal-map-and-causal-mapping-for-me
 features-of-causal-map
 main-features-of-causal-map
 additional-new-features-in-causal-map-2
-collaborating-at-causal-map
+collaboratio
 collaboration-new-functionality.
 details
 collaboration-standard-functionality
@@ -140,6 +141,7 @@ creating-labels
 relabelling
 additional-calculated-fields
 additional-functionality-in-the-create-edit-links-panel
+xquick-tails
 search-with-nested-factors
 how-can-i-view-just-the-factors-where-i-have-applied-hierarchical-coding
 viewing-the-top-level-labels
@@ -152,7 +154,7 @@ two-tone-links
 filtering
 xopposites-coding
 opposites-coding-within-components-of-a-hierarchy
-plain-coding
+pla
 summary-4
 what-the-app-does
 future
@@ -176,7 +178,7 @@ howtotracepathsandrobustness
 how-to-calculate-robustness
 analysingrobustness
 amount-of-overlap
-conditional-formats
+xconditional-formats
 xformatting-links
 xinitials
 conditional-formatting-for-factors
@@ -185,6 +187,7 @@ xlabel-factors
 bundlelinks
 colours
 xfixed-colours
+xdiscrete-palettes
 xcalculated-fields
 links-table
 factors-table
@@ -202,7 +205,7 @@ the-order-of-the-filters-with-calculated-fields
 xautocorrect
 where-do-these-islands-come-from-in-my-map
 xanalysis
-smart-zooming
+smart-zoom
 xcontinuity
 summary-6
 xtracing-threads
@@ -232,6 +235,9 @@ percent
 percentages-in-the-app
 xsurprise
 cluster-sources
+the-clustering-algorithm
+bundling-links-by-cluster
+finding-many-solutions-at-once
 recalculate
 xinterpret
 core-tables
@@ -366,8 +372,7 @@ how-causal-map-is-hosted
 xconventions
 formatting-in-this-guide
 screenshotting-your-maps
-reports-1
-new-reports-tab
+xreports
 sample
 hierarchy-1
 opposites
@@ -392,10 +397,20 @@ other
 causal-map-functions
 xexcel
 changelog
-version-0.76-2712022
+version-0.80-1062022
+smart-zoom-1
+collaboration
+reports-tab
+clustering-sources
+quickfields
+plain-coding
+new-palettes-for-conditional-formatting
+quick-tails
+filtering-print-view-of-tables-1
+version-0.78
 the-gallery
 continuity
-quickfields
+quickfields-1
 other-features
 version-0.75-27122021
 print-view-exporting-and-zooming

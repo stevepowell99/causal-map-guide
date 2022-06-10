@@ -1,6 +1,8 @@
-# 🧪Smart zooming
+# Smart zooming{#smart-zoom}
 
 ![image-20210115220039190](_assets/image-20210115220039190.png){width=650} 
+
+If you are using [hierarchical aka nested coding](#xsimplifying-with-hierarchical), you can use ordinary zooming to "zoom out" your map to give a simple, more general overview. But sometimes this can mean oversimplifying your map: there are lower-level factors which are so important and popular that it is unhelpful or even misleading to roll them up into a parent factor. Smart zooming solves that problem.
 
 Assuming we have a causal map which has used nested coding, as in the small map shown above, how do we take advantage of this coding to “zoom out”? 
 

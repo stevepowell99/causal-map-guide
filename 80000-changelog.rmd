@@ -1,6 +1,93 @@
 # Recent changes{#changelog}
 
-## Version 0.76, 27/1/2022
+## Version 0.80, 10/6/2022
+
+## [Smart zoom](#smart-zoom)
+
+If you are using [hierarchical aka nested coding](#xsimplifying-with-hierarchical), you can use ordinary zooming to "zoom out" your map to give a simple, more general overview. But sometimes this can mean oversimplifying your map: there are lower-level factors which are so important and popular that it is unhelpful or even misleading to roll them up into a parent factor. Smart zooming solves that problem.
+
+### [Collaboration](##collaboration)
+
+One feature we've been asked for most on Causal Map is **[live collaborative coding](https://guide.causalmap.app/collaborating-at-causal-map.html#details)**: if only two people could edit the same file at the same time! Well, we've now made that possible.
+
+### [Reports Tab](xreports) 
+
+Sometimes all the filters which are available in Causal Map can be bewildering and perhaps you just want to get your report finished already. The main purpose of this new tab is to provide an overview of a mapfile which makes sense and is immediately useful without any complicated searching or setting of filters. It provides for example sample description tables and some of the most useful tables which you can just copy and paste as needed. It's work in progress, so let us know what you want.
+
+### [Clustering sources](#cluster-sources)
+
+This new filter groups all the sources in the file (as currently filtered) into clustersof sources  which are similar in terms of the maps they tend to produce.  
+
+To use it, add a filter like this to the advanced editor:
+
+```
+cluster sources n_clusters=all
+```
+
+...
+So the maps for each cluster should be maximally different from one another. This filter adds corresponding fields to the sources table (and other tables like the links table) which you can use to filter and format your maps.
+
+### [Quickfields](#xquickfields)
+
+Quickfields are a special kind of [flag](#xflag) for factor labels. They are a *refinement* of flags for when you have a set of categories which is mutually exclusive, like before/after which are not attributes of your sources and which you don't want to include in your hierarchy of factors.
+
+You can add information about one or more such dimensions using a format like this:
+
+<u>Crops improved / time:before</u>
+
+<u>Crops improved / time:after</u>
+
+**A field (in this case, a field called `time`) will then be created in the factors table** which you can then use for example to filter the maps, to search, filter and organise the factors, links and mentions tables, and to format the maps.
+
+Example uses:
+
+- capturing time before/after
+- capturing factors which are explicitly or implicitly attributed to a particular project
+- capturing the valence of a factor e.g. when a subject explicitly says the liked or did not like the fact that they had more work
+- capturing things which apply only, say, to girls or only to boys
+- organising ideas within a hierarchy
+
+### [Plain coding](#plain-coding)
+
+Causal mapping doesn't usually deal with the kind of non-causal themes which are the focus of ordinary QDA (like in NVivo!). However sometimes it can be really useful to be able to simply note the presence of something without any causal connection. 
+
+We call this "plain coding". You can use it for:
+
+1. Noting the presence of something which is not mentioned as part of a causal link in the statement you are coding but does appear *elsewhere* as a causal factor as part of a causal link. 
+2. ...Or noting the presence of something which is "nothing but" a theme and never appears in causal coding.
+
+### [New palettes for conditional formatting](#xconditional-formats)
+
+The [default palette for discrete fields like gender or village](https://colorbrewer2.org/#type=qualitative&scheme=Set1&n=9) is nice, but maybe you want something different. With continuous fields like source count, you can specify the high, low and mid colours; now you can change the palette for discrete fields too, by adding `pal=6` or  `pal=3` like this:
+
+```
+color links field = #area fun=literal pal=6
+```
+
+Palette 2 is a good choice if you don't like the paler colours in palette 1 (the default).
+
+
+
+
+See also the special sections on [conditional formatting with percentages](#percent) and [conditional formatting with surprise](#xsurprise).
+
+
+
+### [Quick tails](#xquick-tails)
+
+### {#xquick-tails}
+
+![image-20211005153410088](C:\Users\steve\Dropbox\Projects\causal-map-guide\_80000-changelog\image-20211005153410088.png){width=350}
+
+Suppose you want to create a new factor “Health behaviour; wearing a mask” and you know there is an existing higher-level factor “Health behaviour”, you can select “Health behaviour” from the list and then just add “; wearing a mask” with a leading semi-colon. These two fragments will be combined into a new factor label. This is quicker and ensures you don’t end up with different spellings of the higher-level factors. 
+
+
+
+### Filtering print view of tables
+
+Have you ever tried pressing the toggle for Print View in a table? It provides you with a text version of text in your table. This can be really handy for example for getting a list of quotes related to your current map. Now, you use the additional table filters in combination with Print View to filter the information in your (text) table. This can be really handy, for example for finding the right quote. Don't forget you can also include and exclude the fields which appear in Print View, and change their order, using the Show Columns box. Only the first 100 rows are shown.
+
+## Version 0.78
 
 ### The Gallery
 

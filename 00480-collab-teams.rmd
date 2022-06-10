@@ -1,6 +1,6 @@
-# Collaborating at Causal Map
+# Collaborating at Causal Map{#collaboratio}
 
-## 🧪 Collaboration: New functionality.
+## Collaboration: New functionality.
 
 One feature we've been asked for most on Causal Map is **[live collaborative coding](https://guide.causalmap.app/collaborating-at-causal-map.html#details)**: if only two people could edit the same file at the same time! Well, we've now made that possible.
 

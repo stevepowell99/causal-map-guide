@@ -1,22 +1,59 @@
 # 📚 Clustering sources{#cluster-sources}
 
-🧪 This filter
+This new filter groups all the sources in the file (as currently filtered) into clusters of sources  which are similar in terms of the maps they tend to produce.  
+
+To use it, add a filter like this to the advanced editor:
 
 ```
-cluster sources n_clusters=all
+cluster sources n_clusters=4
 ```
 
-... groups all the sources in the file (as currently filtered) into clusters which are similar in terms of the maps they tend to produce. So the maps for each cluster should be maximally different from one another.
+![image-20220610094622754](C:\Users\steve\Dropbox\Projects\causal-map-guide\_09150-source_clusters\image-20220610094622754.png)
 
-This filter finds three separate solutions with two, three and four clusters. It's your job to decide which (if any) is the solution which is best and easiest to interpret.
+Here you can see the new field appearing in the Sources table. The clusters themselves get automatic names `a`, `b`, `c` as appropriate.  They don't mean anything in particular but you should explore each one to perhaps find your own names for them - perhaps "younger farmers" or "older urban residents". 
 
-In future we will provide output to crosstabulate the clusters with other key fields like gender and district, and to automatically produce maps for each cluster, surprise maps, differences tables, etc.
+
+
+
+![image-20220610080318416](C:\Users\steve\Dropbox\Projects\causal-map-guide\_09150-source_clusters\image-20220610080318416.png)
+
+In future we will provide output to automatically crosstabulate the clusters with other key fields like gender and district, and to automatically produce maps for each cluster, surprise maps, differences tables, etc., but you can already do this manually.
+
+Here the Sources table has been set up to list the sources according to cluster:
+
+
+![image-20220610092633091](C:\Users\steve\Dropbox\Projects\causal-map-guide\_09150-source_clusters\image-20220610092633091.png)
+
+## The clustering algorithm
 
 The algorithm is quite simple, it simply treats the links table for each source as a one-dimensional binary vector of length equal to the square of the number of factors. It's a binary vector, so multiple mentions of the same bundle of links by the same source are no different from a single mention.
+
+## Bundling links by cluster
+
+You can do anything with these new cluster fields that you can do with any original field like gender, district etc.
+
+Here's an example in which links are bundled and labelled by cluster, and then we also apply a "[surprise](#xsurprise)" filter to colour bundles mentioned by unexpectedly *many* sources in bright green, and to colour bundles mentioned by surprisingly *few* sources in bright purple: [causalmap.shinyapps.io/tokyo/?s=1177](causalmap.shinyapps.io/tokyo/?s=1177)
+
+![image-20220610081454933](C:\Users\steve\Dropbox\Projects\causal-map-guide\_09150-source_clusters\image-20220610081454933.png)
 
 
 
  
 
+## Finding many solutions at once
+
+You can ask for a specific number of clusters:
+
+```
+cluster sources n_clusters=5
+```
+
+But how are you going to know if you will get a more interesting set if you ask for five rather than four or three or seven clusters?
+
+This filter with `n_clusters=all` finds three separate solutions with two, three and four clusters all at once. It's your job to compare and decide which (if any) is the solution which is best and easiest to interpret.
+
+There is also a shortcut button to add this line to your current filters.
 
 
+
+(The cluster `a` when you have asked for )

@@ -1,12 +1,12 @@
-# 📚 🧪 Plain coding
+# 📚 Plain coding{#pla}
 
-## 🧪 Summary
+## Summary
 
 Causal mapping doesn't usually deal with the kind of non-causal themes which are the focus of ordinary QDA (like in NVivo!). However sometimes it can be really useful to be able to simply note the presence of something without any causal connection. 
 
-We call this "plain coding".
+We call this "plain coding". You can use it for:
 
-1. Noting the presence of something which appears elsewhere as a causal factor
+1. Noting the presence of something which is not mentioned as part of a causal link in the statement you are coding but does appear *elsewhere* as a causal factor as part of a causal link. 
 2. ...Or noting the presence of something which is "nothing but" a theme and never appears in causal coding.
 
 Causal Map makes this possible in a simple way: we define a "plain coding" as simply a link from a factor to itself with has the hashtag `#plain_coding`. 

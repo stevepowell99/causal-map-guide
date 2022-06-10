@@ -65,7 +65,7 @@ Of course, in principle you can see all of this just by looking at the maps and 
 
 ### Tracing paths by field, e.g. "by source" 
 
-[🧪 this is superseded by [thread tracing](#xtracing-threads)]
+[this is superseded by [thread tracing](#xtracing-threads)]
 
 Don't fall into the [transitivity trap](#xtransitivity-trap)! 
 

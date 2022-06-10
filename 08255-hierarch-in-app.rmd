@@ -55,21 +55,22 @@ The app [adds some fields](#xcalculated-fields) for using hierarchies. One of th
 Once you have created at least one hierarchical factor, i.e. one with a “;” in its label, the *influence factor* box and *consequence factor* box have some additional functionality to help you. 
 
 - Now, when you start to type, the list of existing factors which you can choose from is extended to include existing factor components, even if they have not (yet) been coded as such. This means it is easier to add new detail to existing or implied higher-level factors.
-- **Quick tails:**
+
+### Quick tails{#xquick-tails}
 
 ![image-20211005153410088](_assets/image-20211005153410088.png){width=350}
 
   - Suppose you want to create a new factor “Health behaviour; wearing a mask” and you know there is an existing higher-level factor “Health behaviour”, you can select “Health behaviour” from the list and then just add “; wearing a mask” with a leading semi-colon. These two fragments will be combined into a new factor label. This is quicker and ensures you don’t end up with different spellings of the higher-level factors. 
   - This second component can itself have a semi-colon, so you can do this: `health behaviour`  `; hand washing; before meals` . 
-  - 🧪 Also you can do this multiple times: 
-  `health behaviour`  `; washing hands;`  `; washing pots` . 
-  This can be useful when you have to code a list of things which are all examples of some higher-level idea.
-  This example will produce:
-  `health behaviour; washing hands` and `health behaviour; washing pots` . 
+  - Also you can do this multiple times: 
+    `health behaviour`  `; washing hands;`  `; washing pots` . 
+    This can be useful when you have to code a list of things which are all examples of some higher-level idea.
+    This example will produce:
+    `health behaviour; washing hands` and `health behaviour; washing pots` . 
   - It also works at deeper levels:
-  `health behaviour; washing`  `; hands;`  `; pots` . 
-  which will produce:
-  `health behaviour; washing hands;`  `health behaviour; washing; pots` . 
+    `health behaviour; washing`  `; hands;`  `; pots` . 
+    which will produce:
+    `health behaviour; washing hands;`  `health behaviour; washing; pots` . 
 
 
 ## Search with nested factors
