@@ -75,8 +75,6 @@ See also the special sections on [conditional formatting with percentages](#perc
 
 ### [Quick tails](#xquick-tails)
 
-### {#xquick-tails}
-
 ![image-20211005153410088](C:\Users\steve\Dropbox\Projects\causal-map-guide\_80000-changelog\image-20211005153410088.png){width=350}
 
 Suppose you want to create a new factor “Health behaviour; wearing a mask” and you know there is an existing higher-level factor “Health behaviour”, you can select “Health behaviour” from the list and then just add “; wearing a mask” with a leading semi-colon. These two fragments will be combined into a new factor label. This is quicker and ensures you don’t end up with different spellings of the higher-level factors. 
