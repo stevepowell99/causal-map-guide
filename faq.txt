@@ -6,8 +6,12 @@ Wait a little to return to the main screen. Then try to load your file. If you s
 
 
 
-///I can't log in!
-If you have the app open in more than one browser tab, close all those tabs and load the app again. If you still can't load it, contact our support team.
+/// Can't log in, getting an error about "failed to execute 'setitem' on 'storage'"
+immediately after you get the error, open the Chrome console by pressing ctrl shift J in Chrome,
+then at the blinking cursor, paste this: localStorage.clear();
+and refresh.
+If that doesn't work, please contact support at support@causalmap.app
+
 
 
 ## Setting Up
