@@ -19,6 +19,13 @@ If you want you can also leave either (but not both) factor selectors blank, e.g
 - to search from some specific factor or factors to "anywhere", or 
 -  to search from "anywhere" to some specific factor or factors.
 
+🧪 If you want to search from or to the **main** drivers and/or outcomes:
+
+- put "main_drivers" in the first box
+- and/or put "main_outcomes" in the second box.
+
+"main_drivers" uses an algorithm which identifies 1-3 factors with the highest `driver_score` , i.e. and likewise for outcomes. 
+
 Once you click `apply filter` your map will appear, as below. Orange indicates the origin(s) of the path, purple the target factor(s) and green any factors in between.
 
 ![image-20211016141204775](_assets/image-20211016141204775.png){width=650}

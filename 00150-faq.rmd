@@ -12,10 +12,8 @@ readLines("faq.txt") %>%
   paste0(collapse="\n") %>% 
   # str_replace("</details>","") %>% 
   cat
-# readLines("faq.txt") %>% 
-#   paste0(collapse="\n") %>% 
-#   cat
 
 ```
+
 
   

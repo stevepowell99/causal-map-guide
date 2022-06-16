@@ -22,5 +22,7 @@ To change the format of the print view, use the [set print filter](#xsimple-form
 
 You can now export your map as SVG using the export SVG button at bottom right.
 
+🧪 When you export an SVG image, a shortlink is automatically created for you. The ID of the shortlink is printed in grey at the bottom left of the image, and the link is also copied into your clipboard so you can paste it straight into a report if you want. Anyone who clicks on the shortlink will be taken to the app with the same image with the same filters.
+
 You can now change the size of the Print map by using the `+` and `-` (and `Reset`) buttons. You can also drag it around.
 
