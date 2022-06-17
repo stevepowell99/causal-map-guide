@@ -30,6 +30,15 @@ uploading-your-data
 chat-about-this-file
 gallery
 action-buttons
+the-new-dashboard-documentation-is-work-in-progress
+the-recommended-and-custom-shortlinks
+actions
+to-change-the-content-filter-tab-etc-of-an-existing-filter
+to-delete-an-existing-filter
+view-1226-overview
+to-delete-an-existing-filter-1
+view-1227-overview-and-smart-zoom
+to-delete-an-existing-filter-2
 xfile-manager
 xstatement-nav
 xcoding-panel

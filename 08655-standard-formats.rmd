@@ -1,10 +1,14 @@
-# Standard formats{#xstandard-formats}
+# 🧪 Standard formats{#xstandard-formats}
+
+
 
 
 
 ![chrome_1cSfClGmDN](_assets/chrome_1cSfClGmDN.gif)
 
 Some kinds of formatting make sense to have switched on most of the time, such as bundling links together. It can be a bit tiresome to keep reapplying standard formatting. So Causal Map provides a set of standard formats which you can apply just by clicking on Apply Standard Formats ![image-20220616141040028](_assets/image-20220616141040028.png) button.
+
+This is a useful convenience, but if you aren't interested, just ignore the rest of this section!
 
 All this does is paste those formats into the Advanced Editor, from where you can manipulate them with the buttons or directly in the Advanced Editor as you wish. You can reapply the standard formats at any time and they should overwrite most existing formatting. 
 
