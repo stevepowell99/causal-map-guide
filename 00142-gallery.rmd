@@ -1,31 +1,22 @@
-#  The Gallery{#gallery}
+#  The Dashboard{#dashboard}
 
-The Gallery loads as the app loads and gives you the opportunity to jump to another file and/or filter before loading the file which was already loading.
 
-You can use it as a dashboard from which you can check out and revisit your previous work and get ideas from others.
 
-You can also reach this dialog by pressing the 🏠 icon in the top menu, or with the key combination Alt+q. 
+![image-20220623080615272](_assets/image-20220623080615272.png)
 
-The Gallery contains the history of all the filters you used in the current session as well as filters from shortlinks saved by you or other users. Search to find the filters you need. For example, if you want to get some ideas for using the `combine opposites` filter, start to type "combine opposites " in the Search box on the left or (if you want to be more precise) in the search box above the `filter` column. This will show you examples from your own history or from when others have saved a filter in different projects. Then you can either load just that filter into your current file or go to see how that filter works in the file where it was used. 
+The Dashboard appears on the right as the app loads. (It is an easier-to-use version of the old "Gallery".) You can also reach the dashboard by pressing the 🏅 icon on the right, or with the key combination Alt+q. 
 
- ![CZcBr9xEVj](_assets/CZcBr9xEVj.gif)
+The Dashboard contains filters from shortlinks saved by you or other users.
 
-### Action buttons
+Any filters specific to the current file are listed first and labelled with a grey "person" icon, followed by standard filters which work on any file and are shown with a ⭐ and a yellow border.
 
-- Load & File: load this file and then load this filter
-- Load: Apply this filter to the current file. 
-  - Sometimes the filter might need some tweaking, especially if it refers to specifics like factor names or features of sources like "location" which are not the same in the two files.
-- Append: Add this filter at the bottom of the existing filters
-- Copy: Copy the link and filter for pasting into a document.
+### Actions
+
+Click on a shortlink to load the associated filters into the current file.
+
+- Copy: Copy the link and filter for pasting into a document or sending to someone.
+- Edit: Edit the filter - see below.
 - Hide: Hide this row in future from this table (the links will not be deleted).  You may want to use this button to clear unused shortlinks from your table. It has no effect on history filters.
-
-## 🧪 The new dashboard (documentation is work in progress)
-
-The dashboard when the app loads.
-
-You can also reach this dialog by pressing the 🏅 icon at top right, or with the key combination Alt+q. 
-
-The dashboard contains shortlinks saved by you and other users. 
 
 ### The Recommended and Custom shortlinks
 
@@ -33,11 +24,7 @@ Recommended filters can only be added / edited by admins.  They are not related 
 
 The Custom shortlinks are related to the current file. So they might for example contain filters which refer to factors or fields specific to the current file. If you send someone a Custom shortlink and they click on it, they are taken to that same file.
 
-### Actions
-
-Click on a shortlink to load the associated filters into the current file.
-
-#### To change the content (filter, tab etc) of an existing filter:
+#### To edit the content (filter, tab etc) of an existing filter:
 
 Set up the content the way you want it in the app, so it looks exactly the way it should when someone in the future clicks on the link. Then go to the filter which you want to update and press the edit button: 
 
@@ -49,23 +36,22 @@ In the modal dialog which opens, make sure you check this box. You can optionall
 
 ![image-20220616161209527](_assets/image-20220616161209527.png)
 
-If all you want to do is change the title, make sure the checkbox is not checked.
+If all you want to do is change the title, make sure the checkbox is **not** checked.
 
-#### To delete an existing filter:
+### Adding a shortlink
 
-Simply press the red X. There is no warning, so be careful!
+![image-20220623083918159](_assets/image-20220623083918159.png)
 
+Set your map or table up the way you want it then put an (optional) title and press Save. The shortlink will also be copied into your clipboard so you can paste it straight into a document or send it to someone else.
 
+### Jumping to a shortlink
 
-## View 1226: Overview
+![image-20220623083702198](_assets/image-20220623083702198.png)
 
-#### To delete an existing filter:
+If you know the number of a shortlink for the current file, just paste the number in this box and press the arrow.  
 
-Simply press the red X. There is no warning, so be careful!
+### Medals
 
-## View 1227: Overview and smart zoom
+![image-20220623080054435](_assets/image-20220623080054435.png)
 
-#### To delete an existing filter!
-
-Simply press the red X. There is no warning, so be careful!
-
+This section gives a whole load of medals to reflect all the work you've been doing and encourage you to try out new things. 

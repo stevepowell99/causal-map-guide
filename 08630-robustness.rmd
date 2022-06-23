@@ -19,7 +19,7 @@ If you want you can also leave either (but not both) factor selectors blank, e.g
 - to search from some specific factor or factors to "anywhere", or 
 -  to search from "anywhere" to some specific factor or factors.
 
-🧪 If you want to search from or to the **main** drivers and/or outcomes:
+If you want to search from or to the **main** drivers and/or outcomes:
 
 - put "main_drivers" in the first box
 - and/or put "main_outcomes" in the second box.

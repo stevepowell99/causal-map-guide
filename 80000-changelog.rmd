@@ -2,7 +2,7 @@
 
 ## Version 0.80, 10/6/2022
 
-## [Smart zoom](#smart-zoom)
+### [Smart zoom](#smart-zoom)
 
 If you are using [hierarchical aka nested coding](#xsimplifying-with-hierarchical), you can use ordinary zooming to "zoom out" your map to give a simple, more general overview. But sometimes this can mean oversimplifying your map: there are lower-level factors which are so important and popular that it is unhelpful or even misleading to roll them up into a parent factor. Smart zooming solves that problem.
 
@@ -10,9 +10,44 @@ If you are using [hierarchical aka nested coding](#xsimplifying-with-hierarchica
 
 One feature we've been asked for most on Causal Map is **[live collaborative coding](https://guide.causalmap.app/collaborating-at-causal-map.html#details)**: if only two people could edit the same file at the same time! Well, we've now made that possible.
 
+###  [The Dashboard](#dashboard)
+
+The Dashboard replaces the Gallery, which many people found hard to use. It still packs plenty of functionality! [Read](#dashboard) to find out more.
+
+![image-20220623080615272](_assets/image-20220623080615272.png)
+
 ### [Reports Tab](xreports) 
 
 Sometimes all the filters which are available in Causal Map can be bewildering and perhaps you just want to get your report finished already. The main purpose of this new tab is to provide an overview of a mapfile which makes sense and is immediately useful without any complicated searching or setting of filters. It provides for example sample description tables and some of the most useful tables which you can just copy and paste as needed. It's work in progress, so let us know what you want.
+
+### [Document coding score!](#xgamification)
+
+Coding a large file can be a daunting task. At the top right of the app, you will see some feedback on your progress in coding your file.
+
+![image-20220430193751134](_assets/image-20220430193751134.png)
+
+These show you:
+
+- number of (top level) factors. You get a warning if this is more than100. Ideally you'd have less than 10 or 20 top-level factors, enough so that you can remember most of them and could explain them to someone else without notes. Of course, each top-level factor might have subfactors, but again we'd recommend no more than say 10 lower-level factors within each higher-level factor. So, it doesn't really matter how many factors you have, but the number of top-level factors should be fairly small.
+- ratio of links to (top level) factors. You get a warning if this is less than 3. Ideally, each of your top level factors will be mentioned lots of times (including mentions of factors nested within them, like `Health behaviour; hand washing`) so they will have lots of links. If your factors don't have many links each, consider consolidating them.
+- percentage of statements which have been coded. You get a warning if this is less than 60%.
+
+
+
+### [Standard formats](#xstandard-formats)
+
+Some kinds of formatting make sense to have switched on most of the time, such as bundling links together and scaling them according to source count. It can be a bit tiresome to keep reapplying standard formatting. So Causal Map provides a set of standard formats which you can apply just by clicking on Apply Standard Formats ![image-20220616141040028](_assets/image-20220616141040028.png) button.
+
+
+
+### [Copying your map as a vector image](#copy-svg)
+
+You can now export your map as SVG using the export SVG button at bottom right.
+
+When you export an SVG image, a shortlink is automatically created for you. The ID of the shortlink is printed in grey at the bottom left of the image, and the link is also copied into your clipboard so you can paste it straight into a report if you want. Anyone who clicks on the shortlink will be taken to the app with the same image with the same filters.
+
+
+
 
 ### [Clustering sources](#cluster-sources)
 
@@ -79,11 +114,18 @@ See also the special sections on [conditional formatting with percentages](#perc
 
 Suppose you want to create a new factor “Health behaviour; wearing a mask” and you know there is an existing higher-level factor “Health behaviour”, you can select “Health behaviour” from the list and then just add “; wearing a mask” with a leading semi-colon. These two fragments will be combined into a new factor label. This is quicker and ensures you don’t end up with different spellings of the higher-level factors. 
 
+### [Search for main drivers and/or outcomes](#howtotracepathsandrobustness)
+
+If you want to search from or to the **main** drivers and/or outcomes:
+
+- put "main_drivers" in the first box
+- and/or put "main_outcomes" in the second box.
 
 
-### Filtering print view of tables
 
-Have you ever tried pressing the toggle for Print View in a table? It provides you with a text version of text in your table. This can be really handy for example for getting a list of quotes related to your current map. Now, you use the additional table filters in combination with Print View to filter the information in your (text) table. This can be really handy, for example for finding the right quote. Don't forget you can also include and exclude the fields which appear in Print View, and change their order, using the Show Columns box. Only the first 100 rows are shown.
+### [Filtering print view of tables](#xprint-view-tables)
+
+Have you ever tried pressing the toggle for Print View in a table? It provides you with a text version of text in your table. This can be really handy for example for getting a list of quotes related to your current map. Now, you use the additional table filters in combination with Print View to filter the information in your (text) table. Don't forget you can also include and exclude the fields which appear in Print View, and change their order, using the Show Columns box. Only the first 100 rows are shown.
 
 ## Version 0.78
 
