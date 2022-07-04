@@ -77,8 +77,7 @@ Use factor flags, including quickfields, to add extra information about the caus
 
 
 
-///Can I edit more than one link at a time?
-No, currently you can only edit one link at a time.
+ if(T) readLines("Guide-to-causal-mapping.Rmd") %>%   str_match(".*vimeo\\.com.*") %>%   keep(~!is.na(.)) %>%   unique %>%   paste0("```{r,echo=F}\n",.,"\n```\n") %>%   c("# Video list{#xvideo-list}\n\nThese videos are all included at different points in the Guide. If you love videos, here they are again in one place. Feel free to binge.",.) %>%   writeLines("00195-video_list.rmd")​{r,echo=F}
 
 
 ///Can I autofill influence factor label if its the same as the last consequence factor?
@@ -125,6 +124,8 @@ You use `unique` and `literal` when you don't want to do any counting, you want 
 ///When I highlight text which overlaps with a previously highlighted section no new highlight appears.
 Unfortunately there is no easy fix for this bug but it is just cosmetic. You can check you have highlighted the right section by checking the text box below the factor label boxes contains the text you want to highlight. Once you have saved the link the highlight will appear on the statement.
 
+///Depending on the size of the screen, when I go to press one of the tabs like the one with the question icon, the icon then changes position to go to the next level - which I then can't reach. Or the tabs flicker and slide around.
+Yes that's annoying. Just zoom out your browser e.g. by pressing ctrl -
 
 ///I'm getting an "Ajax error" when viewing tables.
 Have a look to see if the URL of the app has a lot of parts like this: [https://causalmap.shinyapps.io/CM2test/_w_741fed8d/_w_q4eeed8d/_w_346fed8d/](https://causalmap.shinyapps.io/CM2test/_w_741fed8d/_w_q4eeed8d/_w_346fed8d/). If it does, just visit the bare URL: (https://causalmap.shinyapps.io/CausalMap2 or https://causalmap.shinyapps.io/CM2test) and start again from there.

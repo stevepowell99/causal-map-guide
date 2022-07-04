@@ -14,15 +14,19 @@ Any filters specific to the current file are listed first and labelled with a gr
 
 Click on a shortlink to load the associated filters into the current file.
 
-- Copy: Copy the link and filter for pasting into a document or sending to someone.
+- Copy: Copy the link and filter for pasting into a document or sending to someone. 
 - Edit: Edit the filter - see below.
 - Hide: Hide this row in future from this table (the links will not be deleted).  You may want to use this button to clear unused shortlinks from your table. It has no effect on history filters.
 
-### The Recommended and Custom shortlinks
+### The Standard and Custom shortlinks
 
-Recommended filters can only be added / edited by admins.  They are not related to specific files but should be applicable to almost any file. (Though the shortlink does store the information about what file it was created in.) . If you send someone a Recommended shortlink and they click on it, they are always taken to the standard file.
+Standard views can only be added / edited by admins.  They are not related to specific files but should be applicable to almost any file.  If you send someone a Standard shortlink and they click on it, they are always taken to the standard file. That means, if you use a Standard view on some other file and want to send someone a link to that view on that other file, you need to create another shortlink.  This is also a protection for you, because Causal Map admins might occasionally refine the contents of Standard views, whereas if you make your own shortlink, only you can edit it later.
 
-The Custom shortlinks are related to the current file. So they might for example contain filters which refer to factors or fields specific to the current file. If you send someone a Custom shortlink and they click on it, they are taken to that same file.
+🧪 Views are not shown if they do not make sense for the current file, for example zooming views are not offered for files which do not contain hierarchical coding. 
+
+🧪 At the moment, on the Tokyo server, on all files except the standard coded file, the button to copy a shortlink to a standard filter is disabled.
+
+The Custom shortlinks are related to the current file. So they might for example contain filters which refer to factors or fields specific to the current file. If you send someone a Custom shortlink and they click on it, they are taken to that same file. 
 
 #### To edit the content (filter, tab etc) of an existing filter:
 
