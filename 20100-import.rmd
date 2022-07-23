@@ -1,8 +1,38 @@
 # Uploading your data{#ximport}
 
-## ⚡ Summary{#upload-summary}
+## 🧪Importing a simple, wide-format file{#upload-summary} 
 
-Uploading data in Causal Map is simply done. Click the upload icon, browse your computer and find the xlsx file you want to use. The app will import any tabs called "factors", "links", "statements", "sources" or "questions" and will ignore other tabs. 
+There are many ways to import data into Causal Map. Perhaps the simplest way to upload your data is in wide format. This is the kind of data you might often get if you have been using Google Forms. 
+
+In this format, you only need an Excel file with one tab; each row is all the data from one source. So many of the columns will probably be additional data like gender, etc.
+
+Press the blue upload button.
+
+![image-20220720115514616](_assets/image-20220720115514616.png)
+
+- The app will read the first tab and will ignore other tabs in the Excel file.
+
+- Each row is one source. 
+
+- Columns beginning with $ are treated as statements. 
+
+- Columns beginning with # are treated as important additional information.
+
+So this means that if you want a column to be treated as a statement, i.e. you want to code the answers in Causal Map, add a `$` at the beginning of the column name. 
+
+If you want a column to be treated as important additional data, i.e. you want the information to be easily identified for crosstabulation and other analyses in Causal Map, add a `#` at the beginning of the column name. 
+
+### Adding additional cases with wide-format files
+
+You can start coding your data even if you do not yet have all the cases/sources. When you get more data, simply add them to the bottom of the original file and upload again. You don't need to do "[roundtripping](#xroundtripping)". All your sources and statements will be overwritten but your coding (links and statements) will be untouched. The questions table will also be untouched. If you want to add information about your questions, for example adding question text as well as question id, you can use [roundtripping](#xroundtripping). 
+
+
+
+## Standard format
+
+Causal Map has a standard format for storing data which can be uploaded and downloaded as an Excel (xlsx) file. 
+
+Uploading data in Causal Map standard format is simply done. Click the upload icon, browse your computer and find the xlsx file you want to use. The app will import any tabs called "factors", "links", "statements", "sources" or "questions" and will ignore other tabs. 
 
 
 
@@ -20,7 +50,7 @@ knitr::include_url("https://player.vimeo.com/video/637121851")
 
 And click [here](https://causalmap.app/wp-content/uploads/2022/03/template-upload-2-2.xlsx) to download the excel template. 
 
-## Formatting your file: The basics {#formattingyourfile}
+### Formatting a Standard Format file: The basics {#formattingyourfile}
 
 ```{r,echo=F}
 knitr::include_url("https://player.vimeo.com/video/604138709")
@@ -41,7 +71,7 @@ Additionally (optionally), you may have a column in the statements table called 
 
 ![image-20211012141342985](_assets/image-20211012141342985.png){width=650}
 
-## Starting from a Word document
+### Starting from a Word document
 
 You can create a table from a Microsoft Word document. 
 
@@ -65,7 +95,7 @@ We strongly recommend that you don’t try to import statements which are longer
 
 Your statements file must have at least one column with the text of the statements and the header for this column must be “text.” Other columns will be treated as additional data.
 
-## Uploading from PDFs
+### Uploading from PDFs
 
 You can make a basic statements table from a set of PDF files using our [free utility](https://causalmap.shinyapps.io/pdf2excel/)  which will save you a lot of time. You can upload all your files at once and get an Excel file of the right format for uploading into Causal Map. 
 
@@ -73,7 +103,7 @@ This works well on simple PDF files but may miss text which is in boxes and colu
 
 We provide another our [free utility](https://causalmap.shinyapps.io/pdf2excel/)  (Tool 2) which batch converts any number of these Adobe Excel files into an Excel file which you can upload to Causal Map.
 
-## Making a basic statements table by hand
+### Making a basic statements table by hand
 
 If you want to import longer documents which are several pages each, you should break each document into many chunks or "statements". Ideally a statement consists of between one and five paragraphs – enough to fit on the left-hand side of the Code & View tab when it is displayed there. 
 

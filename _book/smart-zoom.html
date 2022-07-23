@@ -11,16 +11,16 @@
 <meta name="author" content="Hannah Mishan">
 <meta name="author" content="Rebekah Arvard">
 <meta name="author" content="Samuel Goddard">
-<meta name="description" content="image-20210115220039190 If you are using hierarchical aka nested coding, you can use ordinary zooming to “zoom out” your map to give a simple, more general overview. But sometimes this can mean...">
+<meta name="description" content="If you are using hierarchical aka nested coding, you can use ordinary zooming to “zoom out” your map to give a simple, more general overview. But sometimes this can mean oversimplifying your map:...">
 <meta name="generator" content="bookdown 0.26 with bs4_book()">
 <meta property="og:title" content="Chapter 53 Smart zooming | Guide to Causal Mapping">
 <meta property="og:type" content="book">
 <meta property="og:url" content="https://causalmap.app/smart-zoom.html">
 <meta property="og:image" content="https://causalmap.app/_assets/image-20210520221329966.png">
-<meta property="og:description" content="image-20210115220039190 If you are using hierarchical aka nested coding, you can use ordinary zooming to “zoom out” your map to give a simple, more general overview. But sometimes this can mean...">
+<meta property="og:description" content="If you are using hierarchical aka nested coding, you can use ordinary zooming to “zoom out” your map to give a simple, more general overview. But sometimes this can mean oversimplifying your map:...">
 <meta name="twitter:card" content="summary">
 <meta name="twitter:title" content="Chapter 53 Smart zooming | Guide to Causal Mapping">
-<meta name="twitter:description" content="image-20210115220039190 If you are using hierarchical aka nested coding, you can use ordinary zooming to “zoom out” your map to give a simple, more general overview. But sometimes this can mean...">
+<meta name="twitter:description" content="If you are using hierarchical aka nested coding, you can use ordinary zooming to “zoom out” your map to give a simple, more general overview. But sometimes this can mean oversimplifying your map:...">
 <meta name="twitter:image" content="https://causalmap.app/_assets/image-20210520221329966.png">
 <!-- JS --><script src="https://cdnjs.cloudflare.com/ajax/libs/clipboard.js/2.0.6/clipboard.min.js" integrity="sha256-inc5kl9MA1hkeYUt+EC3BhlIgyp/2jDIyBLS6k3UxPI=" crossorigin="anonymous"></script><script src="https://cdnjs.cloudflare.com/ajax/libs/fuse.js/6.4.6/fuse.js" integrity="sha512-zv6Ywkjyktsohkbp9bb45V6tEMoWhzFzXis+LrMehmJZZSys19Yxf1dopHx7WzIKxr5tK2dVcYmaCk2uqdjF4A==" crossorigin="anonymous"></script><script src="https://kit.fontawesome.com/6ecbd6c532.js" crossorigin="anonymous"></script><script src="libs/jquery-3.6.0/jquery-3.6.0.min.js"></script><meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
 <link href="libs/bootstrap-4.6.0/bootstrap.min.css" rel="stylesheet">
@@ -143,13 +143,13 @@
 <li><a class="" href="appendix-filter-reference.html"><span class="header-section-number">82</span> Appendix: Filter reference</a></li>
 <li><a class="" href="how-causal-map-is-hosted.html"><span class="header-section-number">83</span> How Causal Map is hosted</a></li>
 <li><a class="" href="xconventions.html"><span class="header-section-number">84</span> Conventions</a></li>
-<li><a class="" href="using-storysurvey-admin-interface.html"><span class="header-section-number">85</span> Using StorySurvey: admin interface</a></li>
+<li><a class="" href="screenshotting-your-maps.html"><span class="header-section-number">85</span> Screenshotting your maps</a></li>
 <li><a class="" href="xreports.html"><span class="header-section-number">86</span> Reports tab</a></li>
-<li><a class="" href="screenshotting-your-maps.html"><span class="header-section-number">87</span> Screenshotting your maps</a></li>
-<li><a class="" href="advanced-editor.html"><span class="header-section-number">88</span> Using the Advanced Editor to create and edit filters</a></li>
-<li><a class="" href="xkeyboard.html"><span class="header-section-number">89</span> Keyboard shortcuts</a></li>
-<li><a class="" href="causal-map-functions.html"><span class="header-section-number">90</span> Causal Map functions</a></li>
-<li><a class="" href="xexcel.html"><span class="header-section-number">91</span> Causal mapping with Excel</a></li>
+<li><a class="" href="advanced-editor.html"><span class="header-section-number">87</span> Using the Advanced Editor to create and edit filters</a></li>
+<li><a class="" href="xkeyboard.html"><span class="header-section-number">88</span> Keyboard shortcuts</a></li>
+<li><a class="" href="causal-map-functions.html"><span class="header-section-number">89</span> Causal Map functions</a></li>
+<li><a class="" href="xexcel.html"><span class="header-section-number">90</span> Causal mapping with Excel</a></li>
+<li><a class="" href="using-storysurvey-admin-interface.html"><span class="header-section-number">91</span> Using StorySurvey: admin interface</a></li>
 <li><a class="" href="changelog.html"><span class="header-section-number">92</span> Recent changes</a></li>
 <li class="book-part">📚💻 Final section</li>
 <li><a class="" href="acknowledgements.html"><span class="header-section-number">93</span> Acknowledgements</a></li>
@@ -166,22 +166,21 @@
 <h1>
 <span class="header-section-number">53</span> Smart zooming<a class="anchor" aria-label="anchor" href="#smart-zoom"><i class="fas fa-link"></i></a>
 </h1>
-<div class="figure">
-<img src="_assets/image-20210115220039190.png" width="650" alt=""><p class="caption">image-20210115220039190</p>
-</div>
 <p>If you are using <a href="xsimplifying-with-hierarchical.html#xsimplifying-with-hierarchical">hierarchical aka nested coding</a>, you can use ordinary zooming to “zoom out” your map to give a simple, more general overview. But sometimes this can mean oversimplifying your map: there are lower-level factors which are so important and popular that it is unhelpful or even misleading to roll them up into a parent factor. Smart zooming solves that problem.</p>
-<p>Assuming we have a causal map which has used nested coding, as in the small map shown above, how do we take advantage of this coding to “zoom out”?</p>
+<div class="figure">
+<img src="_assets/image-20220722115527701.png" width="650" alt=""><p class="caption">image-20220722115527701</p>
+</div>
+<p>Assuming we have a causal map which has used nested coding, as in the small but detailed map shown above, how do we take advantage of this coding to “zoom out”?</p>
 <p>Here is the same map, zoomed out to level 1 (i.e. there are no semi-colons at all).</p>
 <div class="figure">
-<img src="_assets/image-20210115220101258.png" width="650" alt=""><p class="caption">image-20210115220101258</p>
+<img src="_assets/image-20220722114438577.png" width="650" alt=""><p class="caption">image-20220722114438577</p>
 </div>
-<p>A weakness of hierarchical zooming is already visible in the example, so simplification goes one step further. In many cases we may be happy to see all the factors “rolled up” to the top level but in the above example, “Health behaviour; hand washing” dominates. “Health behaviour” itself is only mentioned once in the raw data, and there is only one other mention of it as a higher-level component, in relation to vaccinations. What can we do about this?</p>
-<p>Another way to simplify a causal map is just to hide factors and/or links which are mentioned less frequently. Often it is hard to view a full causal map, especially because of the presence of very many of what we could call “tiddlers”: factors with just one or two mentions. But this is unsatisfactory because it throws away information. This won’t help us, but can we combine the two approaches?</p>
-<p>A smarter approach is achievable with this simple algorithm: only “roll up” a nested factor into a higher-level factor if it has a frequency (simple frequency, or source count) lower than some cut-off value; otherwise, keep it separate.</p>
-<p>This is an improvement over zooming because it retains detail where it is necessary and removes it where it is not. It will roll up lots of infrequent, granular factors into their parents but only if they are infrequent; if you have a very granular factor like “health behaviour; hand washing” which actually has a lot of mentions, then it won’t get rolled up.</p>
+<p>A weakness of hierarchical zooming is already visible in the example, we have lost a lot of the important detail. In many cases we may be happy to see all the factors “rolled up” to the top level but in the above example, there are a variety of types of health behaviour discussed and this detail has been lost. So what can we do?</p>
+<p>A smarter approach is achievable with this smart zooming, which tells the app: only “roll up” a nested factor into a higher-level factor if it has a frequency (simple frequency, or source count) lower than some cut-off value; otherwise, keep it separate.</p>
+<p>This is an improvement over zooming because it keeps the detail where necessary and removes it where it is not. It will roll up infrequent factors into their parents but only if they are infrequent; if you have a very granular factor like “health behaviour; Use better toilets” which actually has a lot of mentions, then it won’t get rolled up.</p>
 <p>The above example can be rolled up to this:</p>
 <div class="figure">
-<img src="_assets/image-20210115220119217.png" width="650" alt=""><p class="caption">image-20210115220119217</p>
+<img src="_assets/image-20220722120253893.png" width="650" alt=""><p class="caption">image-20220722120253893</p>
 </div>
 <p>This is an improvement because it still has a small number of factors, retaining frequently-mentioned factors but wrapping up infrequently-mentioned detail into higher-level concepts.</p>
 <p>This isn’t available using the buttons yet but you can use the Advanced Editor. The code is:</p>
@@ -233,7 +232,7 @@
 <footer class="bg-primary text-light mt-5"><div class="container"><div class="row">
 
   <div class="col-12 col-md-6 mt-3">
-    <p>"<strong>Guide to Causal Mapping</strong>" was written by Steve Powell<a href="#fn1" class="footnote-ref" id="fnref1"><sup>1</sup></a>, Fiona Remnant<a href="#fn2" class="footnote-ref" id="fnref2"><sup>2</sup></a>, James Copestake<a href="#fn3" class="footnote-ref" id="fnref3"><sup>3</sup></a>, Hannah Mishan<a href="#fn4" class="footnote-ref" id="fnref4"><sup>4</sup></a>, Rebekah Arvard<a href="#fn5" class="footnote-ref" id="fnref5"><sup>5</sup></a>, Samuel Goddard<a href="#fn6" class="footnote-ref" id="fnref6"><sup>6</sup></a>. It was last built on 2022-07-04.</p>
+    <p>"<strong>Guide to Causal Mapping</strong>" was written by Steve Powell<a href="#fn1" class="footnote-ref" id="fnref1"><sup>1</sup></a>, Fiona Remnant<a href="#fn2" class="footnote-ref" id="fnref2"><sup>2</sup></a>, James Copestake<a href="#fn3" class="footnote-ref" id="fnref3"><sup>3</sup></a>, Hannah Mishan<a href="#fn4" class="footnote-ref" id="fnref4"><sup>4</sup></a>, Rebekah Arvard<a href="#fn5" class="footnote-ref" id="fnref5"><sup>5</sup></a>, Samuel Goddard<a href="#fn6" class="footnote-ref" id="fnref6"><sup>6</sup></a>. It was last built on 2022-07-23.</p>
   </div>
 
   <div class="col-12 col-md-6 mt-3">

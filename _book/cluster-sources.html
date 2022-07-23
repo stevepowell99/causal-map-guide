@@ -11,16 +11,16 @@
 <meta name="author" content="Hannah Mishan">
 <meta name="author" content="Rebekah Arvard">
 <meta name="author" content="Samuel Goddard">
-<meta name="description" content="This new filter groups all the sources in the file (as currently filtered) into clusters of sources which are similar in terms of the maps they tend to produce. To use it, add a filter like this...">
+<meta name="description" content="This new filter groups all the sources in the file (as currently filtered) into clusters of sources which are similar in terms of the maps they tend to produce.  57.1 Unfiltered clusters All...">
 <meta name="generator" content="bookdown 0.26 with bs4_book()">
 <meta property="og:title" content="Chapter 57 📚 Clustering sources | Guide to Causal Mapping">
 <meta property="og:type" content="book">
 <meta property="og:url" content="https://causalmap.app/cluster-sources.html">
 <meta property="og:image" content="https://causalmap.app/_assets/image-20210520221329966.png">
-<meta property="og:description" content="This new filter groups all the sources in the file (as currently filtered) into clusters of sources which are similar in terms of the maps they tend to produce. To use it, add a filter like this...">
+<meta property="og:description" content="This new filter groups all the sources in the file (as currently filtered) into clusters of sources which are similar in terms of the maps they tend to produce.  57.1 Unfiltered clusters All...">
 <meta name="twitter:card" content="summary">
 <meta name="twitter:title" content="Chapter 57 📚 Clustering sources | Guide to Causal Mapping">
-<meta name="twitter:description" content="This new filter groups all the sources in the file (as currently filtered) into clusters of sources which are similar in terms of the maps they tend to produce. To use it, add a filter like this...">
+<meta name="twitter:description" content="This new filter groups all the sources in the file (as currently filtered) into clusters of sources which are similar in terms of the maps they tend to produce.  57.1 Unfiltered clusters All...">
 <meta name="twitter:image" content="https://causalmap.app/_assets/image-20210520221329966.png">
 <!-- JS --><script src="https://cdnjs.cloudflare.com/ajax/libs/clipboard.js/2.0.6/clipboard.min.js" integrity="sha256-inc5kl9MA1hkeYUt+EC3BhlIgyp/2jDIyBLS6k3UxPI=" crossorigin="anonymous"></script><script src="https://cdnjs.cloudflare.com/ajax/libs/fuse.js/6.4.6/fuse.js" integrity="sha512-zv6Ywkjyktsohkbp9bb45V6tEMoWhzFzXis+LrMehmJZZSys19Yxf1dopHx7WzIKxr5tK2dVcYmaCk2uqdjF4A==" crossorigin="anonymous"></script><script src="https://kit.fontawesome.com/6ecbd6c532.js" crossorigin="anonymous"></script><script src="libs/jquery-3.6.0/jquery-3.6.0.min.js"></script><meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
 <link href="libs/bootstrap-4.6.0/bootstrap.min.css" rel="stylesheet">
@@ -143,13 +143,13 @@
 <li><a class="" href="appendix-filter-reference.html"><span class="header-section-number">82</span> Appendix: Filter reference</a></li>
 <li><a class="" href="how-causal-map-is-hosted.html"><span class="header-section-number">83</span> How Causal Map is hosted</a></li>
 <li><a class="" href="xconventions.html"><span class="header-section-number">84</span> Conventions</a></li>
-<li><a class="" href="using-storysurvey-admin-interface.html"><span class="header-section-number">85</span> Using StorySurvey: admin interface</a></li>
+<li><a class="" href="screenshotting-your-maps.html"><span class="header-section-number">85</span> Screenshotting your maps</a></li>
 <li><a class="" href="xreports.html"><span class="header-section-number">86</span> Reports tab</a></li>
-<li><a class="" href="screenshotting-your-maps.html"><span class="header-section-number">87</span> Screenshotting your maps</a></li>
-<li><a class="" href="advanced-editor.html"><span class="header-section-number">88</span> Using the Advanced Editor to create and edit filters</a></li>
-<li><a class="" href="xkeyboard.html"><span class="header-section-number">89</span> Keyboard shortcuts</a></li>
-<li><a class="" href="causal-map-functions.html"><span class="header-section-number">90</span> Causal Map functions</a></li>
-<li><a class="" href="xexcel.html"><span class="header-section-number">91</span> Causal mapping with Excel</a></li>
+<li><a class="" href="advanced-editor.html"><span class="header-section-number">87</span> Using the Advanced Editor to create and edit filters</a></li>
+<li><a class="" href="xkeyboard.html"><span class="header-section-number">88</span> Keyboard shortcuts</a></li>
+<li><a class="" href="causal-map-functions.html"><span class="header-section-number">89</span> Causal Map functions</a></li>
+<li><a class="" href="xexcel.html"><span class="header-section-number">90</span> Causal mapping with Excel</a></li>
+<li><a class="" href="using-storysurvey-admin-interface.html"><span class="header-section-number">91</span> Using StorySurvey: admin interface</a></li>
 <li><a class="" href="changelog.html"><span class="header-section-number">92</span> Recent changes</a></li>
 <li class="book-part">📚💻 Final section</li>
 <li><a class="" href="acknowledgements.html"><span class="header-section-number">93</span> Acknowledgements</a></li>
@@ -167,12 +167,34 @@
 <span class="header-section-number">57</span> 📚 Clustering sources<a class="anchor" aria-label="anchor" href="#cluster-sources"><i class="fas fa-link"></i></a>
 </h1>
 <p>This new filter groups all the sources in the file (as currently filtered) into clusters of sources which are similar in terms of the maps they tend to produce.</p>
+<div id="unfiltered-clusters" class="section level2" number="57.1">
+<h2>
+<span class="header-section-number">57.1</span> Unfiltered clusters<a class="anchor" aria-label="anchor" href="#unfiltered-clusters"><i class="fas fa-link"></i></a>
+</h2>
+<p>All mapfiles already have three fields in the sources table called</p>
+<ul>
+<li><code>#unfiltered_cluster2</code></li>
+<li><code>#unfiltered_cluster3</code></li>
+<li><code>#unfiltered_cluster4</code></li>
+</ul>
+<p>These are three attempts to find interesting sets of clusters - one set with only two clusters, one set with three and one set with four.</p>
+<p>You should pick the set which you find most interesting and concentrate on that.</p>
+<p>The clusters themselves get automatic names <code>a</code>, <code>b</code>, <code>c</code> etc as appropriate. So the set <code>#unfiltered_cluster2</code> has just two clusters called a and b. They don’t mean anything in particular but you should explore each one to perhaps find your own names for them - perhaps “mainly younger farmers” or “mainly older urban residents” or even something more imaginative like “stars” or “stragglers”.</p>
+<p>The most interesting output will be in the <code>Differences - sample</code> subtab of the <code>Reports</code> tab, where you should see some interesting differences in how members of the different cluster sets responded to different questions – that is the main point of the clusters.</p>
+<p>The <code>Sample</code> subtab of the Reports tab has, after the initial tables for each important field (those beginning with #), now has another longer section with tables of each important field cross-tabulated against the other. If you scroll down to the sections for <code>#unfiltered_cluster2</code>, - <code>#unfiltered_cluster3</code> etc, you will be able to see if these sets of clusters are easy to interpret in terms of the other fields. Ideally you’ll be able to, for example, understand the clusters as “mainly younger farmers” etc.</p>
+<p>It is always trivially possible to find at least one cluster set which differs in one link (i.e. in one simple link bundle) – though whether these differences are significant depends on the numbers involved. It is only interesting when we find common differences between clusters across several different links simultaneously, i.e. the people in cluster A mentioned this and that and this other thing.</p>
+</div>
+<div id="filtered-clusters" class="section level2" number="57.2">
+<h2>
+<span class="header-section-number">57.2</span> Filtered clusters<a class="anchor" aria-label="anchor" href="#filtered-clusters"><i class="fas fa-link"></i></a>
+</h2>
+<p>You can also cluster the sources remaining in a map as currently filtered, at the point at which you apply the filter <code>cluster sources</code>.</p>
 <p>To use it, add a filter like this to the advanced editor:</p>
 <pre><code>cluster sources n_clusters=4</code></pre>
 <div class="figure">
 <img src="C:%5CUsers%5Csteve%5CDropbox%5CProjects%5Ccausal-map-guide_09150-source_clusters%5Cimage-20220610094622754.png" alt=""><p class="caption">image-20220610094622754</p>
 </div>
-<p>Here you can see the new field appearing in the Sources table. The clusters themselves get automatic names <code>a</code>, <code>b</code>, <code>c</code> as appropriate. They don’t mean anything in particular but you should explore each one to perhaps find your own names for them - perhaps “younger farmers” or “older urban residents”.</p>
+<p>Here you can see the new field appearing in the Sources table.</p>
 <div class="figure">
 <img src="C:%5CUsers%5Csteve%5CDropbox%5CProjects%5Ccausal-map-guide_09150-source_clusters%5Cimage-20220610080318416.png" alt=""><p class="caption">image-20220610080318416</p>
 </div>
@@ -181,15 +203,16 @@
 <div class="figure">
 <img src="C:%5CUsers%5Csteve%5CDropbox%5CProjects%5Ccausal-map-guide_09150-source_clusters%5Cimage-20220610092633091.png" alt=""><p class="caption">image-20220610092633091</p>
 </div>
-<div id="the-clustering-algorithm" class="section level2" number="57.1">
+</div>
+<div id="the-clustering-algorithm" class="section level2" number="57.3">
 <h2>
-<span class="header-section-number">57.1</span> The clustering algorithm<a class="anchor" aria-label="anchor" href="#the-clustering-algorithm"><i class="fas fa-link"></i></a>
+<span class="header-section-number">57.3</span> The clustering algorithm<a class="anchor" aria-label="anchor" href="#the-clustering-algorithm"><i class="fas fa-link"></i></a>
 </h2>
 <p>The algorithm is quite simple, it simply treats the links table for each source as a one-dimensional binary vector of length equal to the square of the number of factors. It’s a binary vector, so multiple mentions of the same bundle of links by the same source are no different from a single mention.</p>
 </div>
-<div id="bundling-links-by-cluster" class="section level2" number="57.2">
+<div id="bundling-links-by-cluster" class="section level2" number="57.4">
 <h2>
-<span class="header-section-number">57.2</span> Bundling links by cluster<a class="anchor" aria-label="anchor" href="#bundling-links-by-cluster"><i class="fas fa-link"></i></a>
+<span class="header-section-number">57.4</span> Bundling links by cluster<a class="anchor" aria-label="anchor" href="#bundling-links-by-cluster"><i class="fas fa-link"></i></a>
 </h2>
 <p>You can do anything with these new cluster fields that you can do with any original field like gender, district etc.</p>
 <p>Here’s an example in which links are bundled and labelled by cluster, and then we also apply a “<a href="comparing.html#xsurprise">surprise</a>” filter to colour bundles mentioned by unexpectedly <em>many</em> sources in bright green, and to colour bundles mentioned by surprisingly <em>few</em> sources in bright purple: <a href="causalmap.shinyapps.io/tokyo/?s=1177">causalmap.shinyapps.io/tokyo/?s=1177</a></p>
@@ -197,16 +220,15 @@
 <img src="C:%5CUsers%5Csteve%5CDropbox%5CProjects%5Ccausal-map-guide_09150-source_clusters%5Cimage-20220610081454933.png" alt=""><p class="caption">image-20220610081454933</p>
 </div>
 </div>
-<div id="finding-many-solutions-at-once" class="section level2" number="57.3">
+<div id="finding-many-solutions-at-once" class="section level2" number="57.5">
 <h2>
-<span class="header-section-number">57.3</span> Finding many solutions at once<a class="anchor" aria-label="anchor" href="#finding-many-solutions-at-once"><i class="fas fa-link"></i></a>
+<span class="header-section-number">57.5</span> Finding many solutions at once<a class="anchor" aria-label="anchor" href="#finding-many-solutions-at-once"><i class="fas fa-link"></i></a>
 </h2>
 <p>You can ask for a specific number of clusters:</p>
 <pre><code>cluster sources n_clusters=5</code></pre>
 <p>But how are you going to know if you will get a more interesting set if you ask for five rather than four or three or seven clusters?</p>
 <p>This filter with <code>n_clusters=all</code> finds three separate solutions with two, three and four clusters all at once. It’s your job to compare and decide which (if any) is the solution which is best and easiest to interpret.</p>
 <p>There is also a shortcut button to add this line to your current filters.</p>
-<p>(The cluster <code>a</code> when you have asked for )</p>
 
 </div>
 </div>
@@ -217,9 +239,11 @@
     <nav id="toc" data-toggle="toc" aria-label="On this page"><h2>On this page</h2>
       <ul class="nav navbar-nav">
 <li><a class="nav-link" href="#cluster-sources"><span class="header-section-number">57</span> 📚 Clustering sources</a></li>
-<li><a class="nav-link" href="#the-clustering-algorithm"><span class="header-section-number">57.1</span> The clustering algorithm</a></li>
-<li><a class="nav-link" href="#bundling-links-by-cluster"><span class="header-section-number">57.2</span> Bundling links by cluster</a></li>
-<li><a class="nav-link" href="#finding-many-solutions-at-once"><span class="header-section-number">57.3</span> Finding many solutions at once</a></li>
+<li><a class="nav-link" href="#unfiltered-clusters"><span class="header-section-number">57.1</span> Unfiltered clusters</a></li>
+<li><a class="nav-link" href="#filtered-clusters"><span class="header-section-number">57.2</span> Filtered clusters</a></li>
+<li><a class="nav-link" href="#the-clustering-algorithm"><span class="header-section-number">57.3</span> The clustering algorithm</a></li>
+<li><a class="nav-link" href="#bundling-links-by-cluster"><span class="header-section-number">57.4</span> Bundling links by cluster</a></li>
+<li><a class="nav-link" href="#finding-many-solutions-at-once"><span class="header-section-number">57.5</span> Finding many solutions at once</a></li>
 </ul>
 
       <div class="book-extra">
@@ -237,7 +261,7 @@
 <footer class="bg-primary text-light mt-5"><div class="container"><div class="row">
 
   <div class="col-12 col-md-6 mt-3">
-    <p>"<strong>Guide to Causal Mapping</strong>" was written by Steve Powell<a href="#fn1" class="footnote-ref" id="fnref1"><sup>1</sup></a>, Fiona Remnant<a href="#fn2" class="footnote-ref" id="fnref2"><sup>2</sup></a>, James Copestake<a href="#fn3" class="footnote-ref" id="fnref3"><sup>3</sup></a>, Hannah Mishan<a href="#fn4" class="footnote-ref" id="fnref4"><sup>4</sup></a>, Rebekah Arvard<a href="#fn5" class="footnote-ref" id="fnref5"><sup>5</sup></a>, Samuel Goddard<a href="#fn6" class="footnote-ref" id="fnref6"><sup>6</sup></a>. It was last built on 2022-07-04.</p>
+    <p>"<strong>Guide to Causal Mapping</strong>" was written by Steve Powell<a href="#fn1" class="footnote-ref" id="fnref1"><sup>1</sup></a>, Fiona Remnant<a href="#fn2" class="footnote-ref" id="fnref2"><sup>2</sup></a>, James Copestake<a href="#fn3" class="footnote-ref" id="fnref3"><sup>3</sup></a>, Hannah Mishan<a href="#fn4" class="footnote-ref" id="fnref4"><sup>4</sup></a>, Rebekah Arvard<a href="#fn5" class="footnote-ref" id="fnref5"><sup>5</sup></a>, Samuel Goddard<a href="#fn6" class="footnote-ref" id="fnref6"><sup>6</sup></a>. It was last built on 2022-07-23.</p>
   </div>
 
   <div class="col-12 col-md-6 mt-3">

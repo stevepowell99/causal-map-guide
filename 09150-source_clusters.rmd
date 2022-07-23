@@ -2,6 +2,34 @@
 
 This new filter groups all the sources in the file (as currently filtered) into clusters of sources  which are similar in terms of the maps they tend to produce.  
 
+## Unfiltered clusters
+
+All mapfiles already have three fields in the sources table called 
+
+- `#unfiltered_cluster2`
+- `#unfiltered_cluster3`
+- `#unfiltered_cluster4`
+
+These are three attempts to find interesting sets of clusters - one set with only two clusters, one set with three and one set with four.
+
+You should pick the set which you find most interesting and concentrate on that.
+
+The clusters themselves get automatic names `a`, `b`, `c` etc as appropriate.  So the set `#unfiltered_cluster2` has just two clusters called a and b. They don't mean anything in particular but you should explore each one to perhaps find your own names for them - perhaps "mainly younger farmers" or "mainly older urban residents" or even something more imaginative like "stars" or "stragglers". 
+
+The most interesting output will be in the `Differences - sample` subtab of the `Reports` tab, where you should see some interesting differences in how members of the different cluster sets responded to different questions -- that is the main point of the clusters.
+
+The `Sample` subtab of the Reports tab has, after the initial tables for each important field (those beginning with #), now has another longer section with tables of each important field cross-tabulated against the other. If you scroll down to the sections for `#unfiltered_cluster2`, - `#unfiltered_cluster3` etc, you will be able to see if these sets of clusters are easy to interpret in terms of the other fields. Ideally you'll be able to, for example, understand the clusters as "mainly younger farmers" etc. 
+
+
+
+It is always trivially possible to find at least one cluster set which differs in one link (i.e. in one simple link bundle) -- though whether these differences are significant depends on the numbers involved. It is only interesting when we find common differences between clusters across several different links simultaneously, i.e. the people in cluster A mentioned this and that and this other thing.
+
+
+
+## Filtered clusters
+
+You can also cluster the sources remaining in a map as currently filtered, at the point at which you apply the filter `cluster sources`.
+
 To use it, add a filter like this to the advanced editor:
 
 ```
@@ -10,7 +38,7 @@ cluster sources n_clusters=4
 
 ![image-20220610094622754](C:\Users\steve\Dropbox\Projects\causal-map-guide\_09150-source_clusters\image-20220610094622754.png)
 
-Here you can see the new field appearing in the Sources table. The clusters themselves get automatic names `a`, `b`, `c` as appropriate.  They don't mean anything in particular but you should explore each one to perhaps find your own names for them - perhaps "younger farmers" or "older urban residents". 
+Here you can see the new field appearing in the Sources table. 
 
 
 
@@ -56,4 +84,3 @@ There is also a shortcut button to add this line to your current filters.
 
 
 
-(The cluster `a` when you have asked for )

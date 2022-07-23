@@ -1,26 +1,26 @@
 # Smart zooming{#smart-zoom}
 
-![image-20210115220039190](_assets/image-20210115220039190.png){width=650} 
-
 If you are using [hierarchical aka nested coding](#xsimplifying-with-hierarchical), you can use ordinary zooming to "zoom out" your map to give a simple, more general overview. But sometimes this can mean oversimplifying your map: there are lower-level factors which are so important and popular that it is unhelpful or even misleading to roll them up into a parent factor. Smart zooming solves that problem.
 
-Assuming we have a causal map which has used nested coding, as in the small map shown above, how do we take advantage of this coding to “zoom out”? 
+![image-20220722115527701](_assets/image-20220722115527701.png){width=650}
+
+
+
+Assuming we have a causal map which has used nested coding, as in the small but detailed map shown above, how do we take advantage of this coding to “zoom out”?  
 
 Here is the same map, zoomed out to level 1 (i.e. there are no semi-colons at all).
 
-![image-20210115220101258](_assets/image-20210115220101258.png){width=650} 
+![image-20220722114438577](_assets/image-20220722114438577.png){Width=650}
 
-A weakness of hierarchical zooming is already visible in the example, so simplification goes one step further. In many cases we may be happy to see all the factors “rolled up” to the top level but in the above example, “Health behaviour; hand washing” dominates. “Health behaviour” itself is only mentioned once in the raw data, and there is only one other mention of it as a higher-level component, in relation to vaccinations. What can we do about this? 
+A weakness of hierarchical zooming is already visible in the example, we have lost a lot of the important detail. In many cases we may be happy to see all the factors “rolled up” to the top level but in the above example, there are a variety of types of health behaviour discussed and this detail has been lost. So what can we do? 
 
-Another way to simplify a causal map is just to hide factors and/or links which are mentioned less frequently. Often it is hard to view a full causal map, especially because of the presence of very many of what we could call “tiddlers”: factors with just one or two mentions. But this is unsatisfactory because it throws away information. This won’t help us, but can we combine the two approaches?
+A smarter approach is achievable with this smart zooming, which tells the app: only "roll up" a nested factor into a higher-level factor if it has a frequency (simple frequency, or source count) lower than some cut-off value; otherwise, keep it separate. 
 
-A smarter approach is achievable with this simple algorithm: only "roll up" a nested factor into a higher-level factor if it has a frequency (simple frequency, or source count) lower than some cut-off value; otherwise, keep it separate. 
-
-This is an improvement over zooming because it retains detail where it is necessary and removes it where it is not. It will roll up lots of infrequent, granular factors into their parents but only if they are infrequent; if you have a very granular factor like "health behaviour; hand washing" which actually has a lot of mentions, then it won't get rolled up. 
+This is an improvement over zooming because it keeps the detail where necessary and removes it where it is not. It will roll up infrequent factors into their parents but only if they are infrequent; if you have a very granular factor like "health behaviour; Use better toilets" which actually has a lot of mentions, then it won't get rolled up. 
 
 The above example can be rolled up to this:
 
- ![image-20210115220119217](_assets/image-20210115220119217.png){width=650}
+![image-20220722120253893](_assets/image-20220722120253893.png){Width=650}
 
 This is an improvement because it still has a small number of factors, retaining frequently-mentioned factors but wrapping up infrequently-mentioned detail into higher-level concepts. 
 

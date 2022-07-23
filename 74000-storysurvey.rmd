@@ -34,6 +34,8 @@ TBC
 
 If you change the text of the questions and there are already answers recorded, these answers will become detached from the original questions.
 
+Each question can also have a short version which is used instead of the long question in the maps.
+
 ## Project recodes ace: The recodes advanced editor
 
 The tab you need is `Project recodes ace` which is the first tab.
@@ -59,6 +61,8 @@ As with Causal Map Factor Editor (CMFE), you have to save the changes you make i
 As soon as you use the search box or change its contents, the changes you made are lost if you didn't save them.
 
 Unlike with CMFE, all/only those lines which include a `;` are processed when you save. Each line like `X;Y` is treated as an instruction to recode Y as X, overwriting any existing recodes of Y.
+
+Unlike with CMFE, you cannot make edits to the daughters -- or rather, you can, but these changes are simply ignored. The only thing this editor does is recode existing factor labels into (new or existing) mother labels.
 
 That means that deleting lines from the editor doesn't do anything; they are simply ignored.
 
@@ -118,8 +122,9 @@ Sometimes it is convenient to include the original daughter label in a group lik
 
 The (unsearched) editor contains 
 
-- one line for each of the original daughters in the file, preceded by any mothers into which they are recoded.
+- of the original daughters in the file, preceded by any mothers into which they are recoded.
 - in addition, one additional line for each mother if it not also recoded into itself (see above)
+- one line for each question (which makes sense as these are also causal factors in the map) -- you *could* use this interface to recode these factors too, but don't!
 - The editor does NOT show any factors which have been hidden. 
 
 #### Sorting

@@ -45,6 +45,14 @@ Features marked 🧪are experimental and are implemented on the [test server](ht
 
 Check out our growing library of [short, focussed training videos](https://guide.causalmap.app/xvideo-list.html), none longer than four minutes!
 
+## Support chat
+
+- [WhatsApp group for Causal Map](https://chat.whatsapp.com/KwWn0lfpHuR0qJKtkuGZUA)
+
+- [Whatspp group for StorySurvey](https://chat.whatsapp.com/CdlkCKV8bP7ATYc4nioL0T)
+
+  ## 
+
 ## Quizzes
 
 Test your knowledge of causal mapping and Causal Map with our structured series of [quizzes](https://causalmap.shinyapps.io/quizzes/).
