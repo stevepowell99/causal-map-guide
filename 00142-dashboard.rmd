@@ -6,9 +6,26 @@
 
 The Dashboard appears on the right as the app loads. (It is an easier-to-use version of the old "Gallery".) You can also reach the dashboard by pressing the 🏅 icon on the right, or with the key combination Alt+q. 
 
-The Dashboard lists views of the current file saved by you or other users. These views save information about the currently applied filters as well as the specific tab you are looking at and, in the case of tables, the way you have set up the table as well. They also save the name of the current file.
+The Dashboard lists views of the current file saved by you or other users. 
 
-### Recommended views
+### What's in a View
+
+A View records information about the currently applied filters (analysis filters and formatting) as well as the specific tab you are looking at and, in the case of tables, the way you have set up the table as well. They also save the name of the current file.
+
+### Using a view 
+
+Click on:
+
+- a **row** to load the associated filters into the current file.
+- **the blue View number** to open the view in an other tab.
+- **`Copy` icon**: Copy the link and filter for pasting into a document or sending to someone. If you send someone a shortlink to a view, when they click on it they will be taken to the *same view of the current file* (providing you have given them View or Edit rights to the file).
+
+- **`Edit` icon**: Edit the view - see below.
+- **`Hide` icon**: Hide this row in future from this table.  You may want to use this button to clear unused views from your table. If you already shared this link with someone, it will still work even though it is hidden.
+
+### ⭐ Recommended views versus 🤵custom views
+
+#### ⭐ Recommended views
 
 When you first create or copy a file, Causal Map will create for you some recommended views. These are marked with a star. 
 
@@ -16,7 +33,7 @@ When you first create or copy a file, Causal Map will create for you some recomm
 - Some recommended views might not be shown in the list if they would not be relevant to the current file -- for example if you do not use hierarchical coding, views which are only relevant to zooming are not shown. Occasionally you might see them appear later as you add features to your file, for example if you add hierarchical coding. 
 - Occasionally you might see additional recommended views added to the list as we publish new ones.
 
-### Creating your own views
+#### 🤵 Custom views - create your own 
 
 You can create your own views for the current file at any time. 
 
@@ -28,25 +45,16 @@ Set your map or table up the way you want it then put an (optional) title and pr
 - If you put a title, the view will also appear in the list of views for the current file. 
 - If you don't put a title, it won't be listed, but the shortlink you created will always point to that same view. 
 
-### Sharing a view
 
-- If you send someone a shortlink to a view, when they click on it they will be taken to the same view of the same file (providing you have given them View or Edit rights to the file).
+## Complete views versus "Add-ons" 
 
-### Actions -- Click on:
+Complete views replace the existing view and all the filters, included for example analysis filters which change the map itself, for example show only the most frequent links, or zoom out to the top level of a hierarchy. If you are looking at the Advanced Editor, you will see that the entire contents of the editor are replaced.
 
-- a row to load the associated filters into the current file.
-- the blue number to open the view in an other tab.
-- `Copy` icon: Copy the link and filter for pasting into a document or sending to someone. 
-- `Edit` icon: Edit the filter - see below.
-- `Hide` icon: Hide this row in future from this table (the links will not be deleted).  You may want to use this button to clear unused views from your table. It has no effect on history filters.
+"Add-on" views are are added after any other existing filters and do not replace them. So you can use them for example to add a particular kind of formatting, like making all the links pink, or to add one instruction, like "remove all links mentioned only once".
 
-## "Add-on" views
+Complete views belong with the current file and you can edit them, whereas Add-ons exist separately of individual files (actually, they belong to `example-file`) and you can't edit them (unless you are an admin). 
 
-Normal views work like this: When you click on a view, you will see a version of the current file which usually included analysis filters which change the map itself, for example show only the most frequent links, or zoom out to the top level of a hierarchy. If you are looking at the Advanced Editor, you will see that the entire contents of the editor are replaced.
-
-"Add-on" views are a bit different because they are added after any other existing filters and do not replace them. 
-
-## To edit the content (filter, tab etc) of an existing filter:
+## To edit the content (filter, tab etc) of an existing view:
 
 Set up the content the way you want it in the app, so it looks exactly the way it should when someone in the future clicks on the link. Then go to the filter which you want to update and press the edit button: 
 
@@ -83,7 +91,7 @@ When you create a recommended view it should be applicable to almost any file, s
 
 Recommended views are then copied to every other file. Editors can then edit, rename etc that recommended filter in the other file. But that won't change the original filter in `example-file`.  Editors can hide a recommended filter in any other file except  `example-file`, and it won't come back.
 
-Addons work a bit differently - they can also only be created within  `example-file`, but they are not copied to other files. As admin, you can create your own addons just for individual files if you want, by not clicking "recommended" -- maybe useful if you have a lot of steps you want to repeat just within a particular file.
+Addons work a bit differently from complete views - they can also only be created within  `example-file`, but they are not copied to other files. As admin, you can create your own addons just for individual files if you want, by not clicking "recommended" -- maybe useful if you have a lot of steps you want to repeat just within a particular file.
 
 To "delete" an addon, edit it and delete the title. 
 
