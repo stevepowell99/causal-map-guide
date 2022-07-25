@@ -38,7 +38,7 @@ add-on-views
 to-edit-the-content-filter-tab-etc-of-an-existing-filter
 jumping-to-a-view
 medals
-for-admins-the-recommended-and-custom-shortlinks
+for-admins
 xfile-manager
 xstatement-nav
 xcoding-panel

@@ -6,7 +6,7 @@
 
 The Dashboard appears on the right as the app loads. (It is an easier-to-use version of the old "Gallery".) You can also reach the dashboard by pressing the 🏅 icon on the right, or with the key combination Alt+q. 
 
-The Dashboard lists views of the current file saved by you or other users. These views save information about the currently applied filters as well as the specific tab you are looking at and, in the case of tables, the way you have set up the table as well. They also save the name of the current fil
+The Dashboard lists views of the current file saved by you or other users. These views save information about the currently applied filters as well as the specific tab you are looking at and, in the case of tables, the way you have set up the table as well. They also save the name of the current file.
 
 ### Recommended views
 
@@ -75,7 +75,15 @@ If you know the number of a shortlink for the current file, just paste the numbe
 This section gives a whole load of medals to reflect all the work you've been doing and encourage you to try out new things. 
 
 
-## For admins: the Recommended and Custom shortlinks
+## For admins
 
-Recommended views can only be added / edited by admins.  They are not related to specific files but should be applicable to almost any file.  
+Recommended views can only be added / edited by admins, and only from `example-file`. 
+
+When you create a recommended view it should be applicable to almost any file, so don't use filters which refer to particular factor labels etc.  
+
+Recommended views are then copied to every other file. Editors can then edit, rename etc that recommended filter in the other file. But that won't change the original filter in `example-file`.  Editors can hide a recommended filter in any other file except  `example-file`, and it won't come back.
+
+Addons work a bit differently - they can also only be created within  `example-file`, but they are not copied to other files. As admin, you can create your own addons just for individual files if you want, by not clicking "recommended" -- maybe useful if you have a lot of steps you want to repeat just within a particular file.
+
+To "delete" an addon, edit it and delete the title. 
 
