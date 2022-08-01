@@ -2,7 +2,7 @@
 
 ## Reversible?
 
-Combining opposites is not quite reversible: that there is more information in the combined map than in the uncombined map. 
+Combining opposites is not quite reversible: there is more information in the uncombined map than in the combined map. 
 
 ![image-20211213101029192](_assets/image-20211213101029192.png)
 

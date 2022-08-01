@@ -2,7 +2,7 @@
 
 
 
-![image-20220623080615272](_assets/image-20220623080615272.png)
+![image-20220725094435395](_assets/image-20220725094435395.png)
 
 The Dashboard appears on the right as the app loads. (It is an easier-to-use version of the old "Gallery".) You can also reach the dashboard by pressing the 🏅 icon on the right, or with the key combination Alt+q. 
 
@@ -18,7 +18,7 @@ Click on:
 
 - a **row** to load the associated filters into the current file.
 - **the blue View number** to open the view in an other tab.
-- **`Copy` icon**: Copy the link and filter for pasting into a document or sending to someone. If you send someone a shortlink to a view, when they click on it they will be taken to the *same view of the current file* (providing you have given them View or Edit rights to the file).
+- **`Share` icon**: Copy the link and filter to your clipboard, for pasting into a document or sending to someone. If you send someone a shortlink to a view, when they click on it they will be taken to the *same view of the current file* (providing you have given them View or Edit rights to the file).
 
 - **`Edit` icon**: Edit the view - see below.
 - **`Hide` icon**: Hide this row in future from this table.  You may want to use this button to clear unused views from your table. If you already shared this link with someone, it will still work even though it is hidden.

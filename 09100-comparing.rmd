@@ -85,7 +85,7 @@ There are many [caveats](#caveat-numbers) to using counts and percentages of men
 
 The details of how to do make these calculations are quite open; at the moment, the app uses the relevant baseline within the current map. So if you want to display "source count", or the number of sources who mentioned each link, and bundle the links by gender, the app takes as the baseline *the source count for each gender in the current map*. So if 7 women and 5 men mentioned a connection between X and Y, and altogether 14 women and 10 men mentioned anything in the whole map, then the percentage will be 50% on each.
 
-If you use percentages for labels, the label shows both the raw number and the percentage. 
+If you use percentages for labels, the label shows the raw number, 🧪 the baseline, and the percentage. 
 
 If you use percentages for colour or width of the links, the percentage is used rather than the raw number. 
 
@@ -101,10 +101,16 @@ color links value=unique: Sex
 
 ## Surprise{#xsurprise}
 
-The most interesting filter uses a function which we call `surprise`. [Here](https://causalmap.shinyapps.io/CausalMap2?s=802) is an example.
+The most interesting filter uses a function which we call `surprise`. Here is an example: [2302](https://causalmap.shinyapps.io/CausalMap2?s=2302).
 
-![image-20220210094731470](_assets/image-20220210094731470.png)
+![image-20220801223501618](_assets/image-20220801223501618.png)
 
 
 
- We have bundled the links by name of District (1, 2, 3 or 4) and scaled the links by source count (count of the number of sources mentioning each link): but we have coloured the links by `surprise`. The bright green from poor weather conditions to poor farm production means that this route was particularly often mentioned in district 3 *even taking into account the number of times people in district 3 mentioned anything (in the whole filtered map)*. And the bright purple link for district 1 means the opposite.  Whereas for district 4, there are quite a lot of mentions but the pale colour shows us that this is not particularly surprising. Basically, using `surprise` means you can ignore the pale links and just look at the brightly coloured ones.
+We have bundled the links by name of District (1, 2, 3 or 4) and scaled the links by source count (count of the number of sources mentioning each link): but we have coloured the links by `surprise`. The bright green from poor weather conditions to poor farm production means that this route was particularly often mentioned in district 3 *even taking into account the number of times people in district 3 mentioned anything (in the whole filtered map)*. And the bright purple link for district 1 means the opposite.  Whereas for district 4, there are quite a lot of mentions but the pale colour shows us that this is not particularly surprising. Basically, using `surprise` means you can ignore the pale links and just look at the brightly coloured ones.
+
+We recommend adding the initial of the group and the percentage to the link labels.
+
+Sometimes you will see that the baseline is lower than the actual number in your dataset. This is because the percentage printout and the surprise calculation use the number in each group in the current map, not in the whole unfiltered map. 
+
+You might get tempted to think that if half the bundles are green for one group, the other bundles for the same group have to be correspondingly purple, but that isn't necessarily the case if you think about it.  

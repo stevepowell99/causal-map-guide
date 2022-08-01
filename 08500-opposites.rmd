@@ -157,3 +157,8 @@ The app makes it easy to code opposites; while coding, when you have loaded any 
 
 
 
+## Unpacking opposites
+
+Occasionally you might decide you'd prefer to view a file where you have used opposites coding but with ordinary-language labels like <u>unfit</u> rather than <u>~fit</u> - after all, it's easier to read. By all means, create another version of the file and manually recode your labels back again using the Factor Editor. Remember, you'll only want to recode factor labels which *start* with a `~`, not labels with a `~` elsewhere. We recommend in this case adding a * at the end of each such factor, so that someone viewing the file that this factor does have a conceptual opposite somewhere. 
+
+In this case of course you won't be able to combine opposites any more. 
