@@ -1,4 +1,4 @@
-he Factor Editor{#xfactor-editor}
+# The Factor Editor{#xfactor-editor}
 
 ## Summary
 
