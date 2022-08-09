@@ -4,23 +4,23 @@
 <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
 <meta charset="utf-8">
 <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
-<title>Chapter 40 💻 Hierarchical factors in Causal Map | Guide to Causal Mapping</title>
+<title>Chapter 41 💻 Hierarchical factors in Causal Map | Guide to Causal Mapping</title>
 <meta name="author" content="Steve Powell">
 <meta name="author" content="Fiona Remnant">
 <meta name="author" content="James Copestake">
 <meta name="author" content="Hannah Mishan">
 <meta name="author" content="Rebekah Arvard">
 <meta name="author" content="Samuel Goddard">
-<meta name="description" content="(This section is about implementing hierarchical coding in the Causal Map app. See also the previous section on hierarchical coding in general.)   40.1 Creating labels Factors can optionally be...">
+<meta name="description" content="(This section is about implementing hierarchical coding in the Causal Map app. See also the previous section on hierarchical coding in general.)   41.1 Creating labels Factors can optionally be...">
 <meta name="generator" content="bookdown 0.26 with bs4_book()">
-<meta property="og:title" content="Chapter 40 💻 Hierarchical factors in Causal Map | Guide to Causal Mapping">
+<meta property="og:title" content="Chapter 41 💻 Hierarchical factors in Causal Map | Guide to Causal Mapping">
 <meta property="og:type" content="book">
 <meta property="og:url" content="https://causalmap.app/xhierarchical-coding.html">
 <meta property="og:image" content="https://causalmap.app/_assets/image-20210520221329966.png">
-<meta property="og:description" content="(This section is about implementing hierarchical coding in the Causal Map app. See also the previous section on hierarchical coding in general.)   40.1 Creating labels Factors can optionally be...">
+<meta property="og:description" content="(This section is about implementing hierarchical coding in the Causal Map app. See also the previous section on hierarchical coding in general.)   41.1 Creating labels Factors can optionally be...">
 <meta name="twitter:card" content="summary">
-<meta name="twitter:title" content="Chapter 40 💻 Hierarchical factors in Causal Map | Guide to Causal Mapping">
-<meta name="twitter:description" content="(This section is about implementing hierarchical coding in the Causal Map app. See also the previous section on hierarchical coding in general.)   40.1 Creating labels Factors can optionally be...">
+<meta name="twitter:title" content="Chapter 41 💻 Hierarchical factors in Causal Map | Guide to Causal Mapping">
+<meta name="twitter:description" content="(This section is about implementing hierarchical coding in the Causal Map app. See also the previous section on hierarchical coding in general.)   41.1 Creating labels Factors can optionally be...">
 <meta name="twitter:image" content="https://causalmap.app/_assets/image-20210520221329966.png">
 <!-- JS --><script src="https://cdnjs.cloudflare.com/ajax/libs/clipboard.js/2.0.6/clipboard.min.js" integrity="sha256-inc5kl9MA1hkeYUt+EC3BhlIgyp/2jDIyBLS6k3UxPI=" crossorigin="anonymous"></script><script src="https://cdnjs.cloudflare.com/ajax/libs/fuse.js/6.4.6/fuse.js" integrity="sha512-zv6Ywkjyktsohkbp9bb45V6tEMoWhzFzXis+LrMehmJZZSys19Yxf1dopHx7WzIKxr5tK2dVcYmaCk2uqdjF4A==" crossorigin="anonymous"></script><script src="https://kit.fontawesome.com/6ecbd6c532.js" crossorigin="anonymous"></script><script src="libs/jquery-3.6.0/jquery-3.6.0.min.js"></script><meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
 <link href="libs/bootstrap-4.6.0/bootstrap.min.css" rel="stylesheet">
@@ -78,80 +78,81 @@
 <li><a class="" href="features-of-causal-map.html"><span class="header-section-number">23</span> Features of Causal Map</a></li>
 <li><a class="" href="collaboratio.html"><span class="header-section-number">24</span> Collaborating at Causal Map</a></li>
 <li class="book-part">💻 The rest of the app</li>
-<li><a class="" href="xthe-mentions-table.html"><span class="header-section-number">25</span> The Mentions Table</a></li>
-<li><a class="" href="xthe-factors-table.html"><span class="header-section-number">26</span> The Factors table</a></li>
-<li><a class="" href="xthe-links-table.html"><span class="header-section-number">27</span> The Links Table</a></li>
-<li><a class="" href="xthe-bundles-table.html"><span class="header-section-number">28</span> The Bundles Table</a></li>
-<li><a class="" href="xthe-statements-table.html"><span class="header-section-number">29</span> The Statements Table</a></li>
-<li><a class="" href="xthe-sources-table.html"><span class="header-section-number">30</span> The Sources Table</a></li>
-<li><a class="" href="xthe-questions-table.html"><span class="header-section-number">31</span> The Questions Table</a></li>
-<li><a class="" href="xthe-closed-question-blocks-table.html"><span class="header-section-number">32</span> The Closed Question Blocks Table</a></li>
-<li><a class="" href="xmetrics.html"><span class="header-section-number">33</span> The Metrics Table</a></li>
-<li><a class="" href="xdata-manager.html"><span class="header-section-number">34</span> Data manager</a></li>
-<li><a class="" href="xgamification.html"><span class="header-section-number">35</span> Document coding score!</a></li>
-<li><a class="" href="xupdates-tab.html"><span class="header-section-number">36</span> The Updates tab</a></li>
+<li><a class="" href="xfactor-editor.html"><span class="header-section-number">25</span> The Factor Editor</a></li>
+<li><a class="" href="xthe-mentions-table.html"><span class="header-section-number">26</span> The Mentions Table</a></li>
+<li><a class="" href="xthe-factors-table.html"><span class="header-section-number">27</span> The Factors table</a></li>
+<li><a class="" href="xthe-links-table.html"><span class="header-section-number">28</span> The Links Table</a></li>
+<li><a class="" href="xthe-bundles-table.html"><span class="header-section-number">29</span> The Bundles Table</a></li>
+<li><a class="" href="xthe-statements-table.html"><span class="header-section-number">30</span> The Statements Table</a></li>
+<li><a class="" href="xthe-sources-table.html"><span class="header-section-number">31</span> The Sources Table</a></li>
+<li><a class="" href="xthe-questions-table.html"><span class="header-section-number">32</span> The Questions Table</a></li>
+<li><a class="" href="xthe-closed-question-blocks-table.html"><span class="header-section-number">33</span> The Closed Question Blocks Table</a></li>
+<li><a class="" href="xmetrics.html"><span class="header-section-number">34</span> The Metrics Table</a></li>
+<li><a class="" href="xdata-manager.html"><span class="header-section-number">35</span> Data manager</a></li>
+<li><a class="" href="xgamification.html"><span class="header-section-number">36</span> Document coding score!</a></li>
+<li><a class="" href="xupdates-tab.html"><span class="header-section-number">37</span> The Updates tab</a></li>
 <li class="book-part">📚💻 Creating maps</li>
-<li><a class="" href="creating-good-factor-labels.html"><span class="header-section-number">37</span> 📚 Creating good factor labels</a></li>
-<li><a class="" href="xedit-factor-and-links.html"><span class="header-section-number">38</span> Editing factors and links</a></li>
-<li><a class="" href="xsimplifying-with-hierarchical.html"><span class="header-section-number">39</span> 📚 Simplifying causal maps with hierarchical coding</a></li>
-<li><a class="active" href="xhierarchical-coding.html"><span class="header-section-number">40</span> 💻 Hierarchical factors in Causal Map</a></li>
-<li><a class="" href="strength-adding-additional-information-like-strength-of-a-link-in-a-causal-map.html"><span class="header-section-number">41</span> 📚 Strength: Adding additional information like strength of a link in a causal map</a></li>
-<li><a class="" href="coding-opposites.html"><span class="header-section-number">42</span> 📚 Coding opposites</a></li>
-<li><a class="" href="xplain_coding.html"><span class="header-section-number">43</span> 📚 Plain coding</a></li>
-<li><a class="" href="tricky-coding-challenges.html"><span class="header-section-number">44</span> 📚 Tricky coding challenges</a></li>
+<li><a class="" href="creating-good-factor-labels.html"><span class="header-section-number">38</span> 📚 Creating good factor labels</a></li>
+<li><a class="" href="xedit-factor-and-links.html"><span class="header-section-number">39</span> Editing factors and links</a></li>
+<li><a class="" href="xsimplifying-with-hierarchical.html"><span class="header-section-number">40</span> 📚 Simplifying causal maps with hierarchical coding</a></li>
+<li><a class="active" href="xhierarchical-coding.html"><span class="header-section-number">41</span> 💻 Hierarchical factors in Causal Map</a></li>
+<li><a class="" href="strength-adding-additional-information-like-strength-of-a-link-in-a-causal-map.html"><span class="header-section-number">42</span> 📚 Strength: Adding additional information like strength of a link in a causal map</a></li>
+<li><a class="" href="coding-opposites.html"><span class="header-section-number">43</span> 📚 Coding opposites</a></li>
+<li><a class="" href="xplain_coding.html"><span class="header-section-number">44</span> 📚 Plain coding</a></li>
+<li><a class="" href="tricky-coding-challenges.html"><span class="header-section-number">45</span> 📚 Tricky coding challenges</a></li>
 <li class="book-part">💻Filters</li>
-<li><a class="" href="filters-overview.html"><span class="header-section-number">45</span> Filters – overview</a></li>
-<li><a class="" href="xrobustness.html"><span class="header-section-number">46</span> 📚 Tracing paths and calculating robustness</a></li>
-<li><a class="" href="xconditional-formats.html"><span class="header-section-number">47</span> Conditional formats</a></li>
-<li><a class="" href="xsimple-formats.html"><span class="header-section-number">48</span> Simple formats</a></li>
-<li><a class="" href="what-is-the-logic-behind-the-causal-map-filters.html"><span class="header-section-number">49</span> What is the logic behind the Causal Map filters?</a></li>
-<li><a class="" href="xanalysis.html"><span class="header-section-number">50</span> Analysing causal maps</a></li>
-<li><a class="" href="smart-zoom.html"><span class="header-section-number">51</span> Smart zooming</a></li>
-<li><a class="" href="xcontinuity.html"><span class="header-section-number">52</span> Continuity and tracing threads</a></li>
-<li><a class="" href="xquickfields.html"><span class="header-section-number">53</span> Quickfields</a></li>
-<li><a class="" href="comparing.html"><span class="header-section-number">54</span> 📚 Analysis: comparing maps between particular groups</a></li>
-<li><a class="" href="cluster-sources.html"><span class="header-section-number">55</span> 📚 Clustering sources</a></li>
-<li><a class="" href="recalculate.html"><span class="header-section-number">56</span> Recalculate fields</a></li>
-<li><a class="" href="xinterpret.html"><span class="header-section-number">57</span> Interpreting your results</a></li>
+<li><a class="" href="filters-overview.html"><span class="header-section-number">46</span> Filters – overview</a></li>
+<li><a class="" href="xrobustness.html"><span class="header-section-number">47</span> 📚 Tracing paths and calculating robustness</a></li>
+<li><a class="" href="xconditional-formats.html"><span class="header-section-number">48</span> Conditional formats</a></li>
+<li><a class="" href="xsimple-formats.html"><span class="header-section-number">49</span> Simple formats</a></li>
+<li><a class="" href="what-is-the-logic-behind-the-causal-map-filters.html"><span class="header-section-number">50</span> What is the logic behind the Causal Map filters?</a></li>
+<li><a class="" href="xanalysis.html"><span class="header-section-number">51</span> Analysing causal maps</a></li>
+<li><a class="" href="smart-zoom.html"><span class="header-section-number">52</span> Smart zooming</a></li>
+<li><a class="" href="xcontinuity.html"><span class="header-section-number">53</span> Continuity and tracing threads</a></li>
+<li><a class="" href="xquickfields.html"><span class="header-section-number">54</span> Quickfields</a></li>
+<li><a class="" href="comparing.html"><span class="header-section-number">55</span> 📚 Analysis: comparing maps between particular groups</a></li>
+<li><a class="" href="cluster-sources.html"><span class="header-section-number">56</span> 📚 Clustering sources</a></li>
+<li><a class="" href="recalculate.html"><span class="header-section-number">57</span> Recalculate fields</a></li>
+<li><a class="" href="xinterpret.html"><span class="header-section-number">58</span> Interpreting your results</a></li>
 <li class="book-part">💻 Uploading and updating data</li>
-<li><a class="" href="core-tables.html"><span class="header-section-number">58</span> Core tables in Causal Map</a></li>
-<li><a class="" href="ximport.html"><span class="header-section-number">59</span> Uploading your data</a></li>
-<li><a class="" href="import-additional-data.html"><span class="header-section-number">60</span> Uploading additional data</a></li>
-<li><a class="" href="xroundtripping.html"><span class="header-section-number">61</span> Appending and fixing data (“roundtripping”)</a></li>
-<li><a class="" href="ximport-other.html"><span class="header-section-number">62</span> Importing your data: special cases</a></li>
-<li><a class="" href="xmerging-files.html"><span class="header-section-number">63</span> Merging files</a></li>
-<li><a class="" href="xcodebook.html"><span class="header-section-number">64</span> Importing a codebook of factors</a></li>
+<li><a class="" href="core-tables.html"><span class="header-section-number">59</span> Core tables in Causal Map</a></li>
+<li><a class="" href="ximport.html"><span class="header-section-number">60</span> Uploading your data</a></li>
+<li><a class="" href="import-additional-data.html"><span class="header-section-number">61</span> Uploading additional data</a></li>
+<li><a class="" href="xroundtripping.html"><span class="header-section-number">62</span> Appending and fixing data (“roundtripping”)</a></li>
+<li><a class="" href="ximport-other.html"><span class="header-section-number">63</span> Importing your data: special cases</a></li>
+<li><a class="" href="xmerging-files.html"><span class="header-section-number">64</span> Merging files</a></li>
+<li><a class="" href="xcodebook.html"><span class="header-section-number">65</span> Importing a codebook of factors</a></li>
 <li class="book-part">📚💻Spotlights</li>
-<li><a class="" href="causal-mapping-definitions.html"><span class="header-section-number">65</span> 📚 Causal Mapping: Definitions</a></li>
-<li><a class="" href="mapping.html"><span class="header-section-number">66</span> 📚 Causal mapping for evaluators</a></li>
-<li><a class="" href="causal-mapping-and-outcome-harvesting.html"><span class="header-section-number">67</span> 📚 Causal Mapping and Outcome Harvesting</a></li>
-<li><a class="" href="context-in-causal-mapping-how-to-code-it.html"><span class="header-section-number">68</span> 📚 Context in causal mapping: how to code it</a></li>
-<li><a class="" href="xtransitivity-trap.html"><span class="header-section-number">69</span> 📚 Beware the transitivity trap</a></li>
-<li><a class="" href="caveat-numbers.html"><span class="header-section-number">70</span> 📚 Cases, variables and percentages in causal mapping?</a></li>
-<li><a class="" href="different-kinds-of-question-chaining-with-quip-and-parevo-as-illustrations.html"><span class="header-section-number">71</span> 📚 Different kinds of question chaining, with QuIP and ParEvo as illustrations</a></li>
-<li><a class="" href="how-to-get-to-the-shadow-side-a-problem-with-back-chaining.html"><span class="header-section-number">72</span> 📚 How to get to the shadow side: a problem with back-chaining</a></li>
-<li><a class="" href="the-last-minute-principle.html"><span class="header-section-number">73</span> 📚 The last minute principle</a></li>
-<li><a class="" href="causal-maps-systems-maps-whats-the-difference-does-it-matter.html"><span class="header-section-number">74</span> 📚 Causal maps, systems maps, what’s the difference? Does it matter?</a></li>
-<li><a class="" href="coding-time-in-causal-mapping.html"><span class="header-section-number">75</span> 📚 Coding time in causal mapping</a></li>
-<li><a class="" href="more-about-coding-opposites.html"><span class="header-section-number">76</span> More about coding opposites</a></li>
-<li><a class="" href="puzzles-in-causal-mapping.html"><span class="header-section-number">77</span> 📚 Puzzles in causal mapping</a></li>
-<li><a class="" href="is-one-direction-enough.html"><span class="header-section-number">78</span> 📚 Is one direction enough?</a></li>
-<li><a class="" href="xshowcases.html"><span class="header-section-number">79</span> Showcase: how the Causal Map app has been used</a></li>
+<li><a class="" href="causal-mapping-definitions.html"><span class="header-section-number">66</span> 📚 Causal Mapping: Definitions</a></li>
+<li><a class="" href="mapping.html"><span class="header-section-number">67</span> 📚 Causal mapping for evaluators</a></li>
+<li><a class="" href="causal-mapping-and-outcome-harvesting.html"><span class="header-section-number">68</span> 📚 Causal Mapping and Outcome Harvesting</a></li>
+<li><a class="" href="context-in-causal-mapping-how-to-code-it.html"><span class="header-section-number">69</span> 📚 Context in causal mapping: how to code it</a></li>
+<li><a class="" href="xtransitivity-trap.html"><span class="header-section-number">70</span> 📚 Beware the transitivity trap</a></li>
+<li><a class="" href="caveat-numbers.html"><span class="header-section-number">71</span> 📚 Cases, variables and percentages in causal mapping?</a></li>
+<li><a class="" href="different-kinds-of-question-chaining-with-quip-and-parevo-as-illustrations.html"><span class="header-section-number">72</span> 📚 Different kinds of question chaining, with QuIP and ParEvo as illustrations</a></li>
+<li><a class="" href="how-to-get-to-the-shadow-side-a-problem-with-back-chaining.html"><span class="header-section-number">73</span> 📚 How to get to the shadow side: a problem with back-chaining</a></li>
+<li><a class="" href="the-last-minute-principle.html"><span class="header-section-number">74</span> 📚 The last minute principle</a></li>
+<li><a class="" href="causal-maps-systems-maps-whats-the-difference-does-it-matter.html"><span class="header-section-number">75</span> 📚 Causal maps, systems maps, what’s the difference? Does it matter?</a></li>
+<li><a class="" href="coding-time-in-causal-mapping.html"><span class="header-section-number">76</span> 📚 Coding time in causal mapping</a></li>
+<li><a class="" href="more-about-coding-opposites.html"><span class="header-section-number">77</span> More about coding opposites</a></li>
+<li><a class="" href="puzzles-in-causal-mapping.html"><span class="header-section-number">78</span> 📚 Puzzles in causal mapping</a></li>
+<li><a class="" href="is-one-direction-enough.html"><span class="header-section-number">79</span> 📚 Is one direction enough?</a></li>
+<li><a class="" href="xshowcases.html"><span class="header-section-number">80</span> Showcase: how the Causal Map app has been used</a></li>
 <li class="book-part">💻 Technical reference</li>
-<li><a class="" href="appendix-filter-reference.html"><span class="header-section-number">80</span> Appendix: Filter reference</a></li>
-<li><a class="" href="how-causal-map-is-hosted.html"><span class="header-section-number">81</span> How Causal Map is hosted</a></li>
-<li><a class="" href="xconventions.html"><span class="header-section-number">82</span> Conventions</a></li>
-<li><a class="" href="screenshotting-your-maps.html"><span class="header-section-number">83</span> Screenshotting your maps</a></li>
-<li><a class="" href="xreports.html"><span class="header-section-number">84</span> Reports tab</a></li>
-<li><a class="" href="advanced-editor.html"><span class="header-section-number">85</span> Using the Advanced Editor to create and edit filters</a></li>
-<li><a class="" href="xkeyboard.html"><span class="header-section-number">86</span> Keyboard shortcuts</a></li>
-<li><a class="" href="causal-map-functions.html"><span class="header-section-number">87</span> Causal Map functions</a></li>
-<li><a class="" href="xexcel.html"><span class="header-section-number">88</span> Causal mapping with Excel</a></li>
-<li><a class="" href="using-storysurvey-admin-interface.html"><span class="header-section-number">89</span> Using StorySurvey: admin interface</a></li>
-<li><a class="" href="changelog.html"><span class="header-section-number">90</span> Recent changes</a></li>
+<li><a class="" href="appendix-filter-reference.html"><span class="header-section-number">81</span> Appendix: Filter reference</a></li>
+<li><a class="" href="how-causal-map-is-hosted.html"><span class="header-section-number">82</span> How Causal Map is hosted</a></li>
+<li><a class="" href="xconventions.html"><span class="header-section-number">83</span> Conventions</a></li>
+<li><a class="" href="screenshotting-your-maps.html"><span class="header-section-number">84</span> Screenshotting your maps</a></li>
+<li><a class="" href="xreports.html"><span class="header-section-number">85</span> Reports tab</a></li>
+<li><a class="" href="advanced-editor.html"><span class="header-section-number">86</span> Using the Advanced Editor to create and edit filters</a></li>
+<li><a class="" href="xkeyboard.html"><span class="header-section-number">87</span> Keyboard shortcuts</a></li>
+<li><a class="" href="causal-map-functions.html"><span class="header-section-number">88</span> Causal Map functions</a></li>
+<li><a class="" href="xexcel.html"><span class="header-section-number">89</span> Causal mapping with Excel</a></li>
+<li><a class="" href="using-storysurvey-admin-interface.html"><span class="header-section-number">90</span> Using StorySurvey: admin interface</a></li>
+<li><a class="" href="changelog.html"><span class="header-section-number">91</span> Recent changes</a></li>
 <li class="book-part">📚💻 Final section</li>
-<li><a class="" href="acknowledgements.html"><span class="header-section-number">91</span> Acknowledgements</a></li>
-<li><a class="" href="appendix-publications-and-links.html"><span class="header-section-number">92</span> Appendix: Publications and links</a></li>
+<li><a class="" href="acknowledgements.html"><span class="header-section-number">92</span> Acknowledgements</a></li>
+<li><a class="" href="appendix-publications-and-links.html"><span class="header-section-number">93</span> Appendix: Publications and links</a></li>
 <li><a class="" href="references.html">References</a></li>
 </ul>
 
@@ -160,25 +161,25 @@
         </div>
       </nav>
 </div>
-  </header><main class="col-sm-12 col-md-9 col-lg-7" id="content"><div id="xhierarchical-coding" class="section level1" number="40">
+  </header><main class="col-sm-12 col-md-9 col-lg-7" id="content"><div id="xhierarchical-coding" class="section level1" number="41">
 <h1>
-<span class="header-section-number">40</span> 💻 Hierarchical factors in Causal Map<a class="anchor" aria-label="anchor" href="#xhierarchical-coding"><i class="fas fa-link"></i></a>
+<span class="header-section-number">41</span> 💻 Hierarchical factors in Causal Map<a class="anchor" aria-label="anchor" href="#xhierarchical-coding"><i class="fas fa-link"></i></a>
 </h1>
 <p>(This section is about implementing hierarchical coding in the Causal Map app. See also the <a href="xsimplifying-with-hierarchical.html#xsimplifying-with-hierarchical">previous section</a> on hierarchical coding in general.)</p>
 <iframe src="https://player.vimeo.com/video/683770170" width="672" height="400px" data-external="1">
 </iframe>
-<div id="creating-labels" class="section level2" number="40.1">
+<div id="creating-labels" class="section level2" number="41.1">
 <h2>
-<span class="header-section-number">40.1</span> Creating labels<a class="anchor" aria-label="anchor" href="#creating-labels"><i class="fas fa-link"></i></a>
+<span class="header-section-number">41.1</span> Creating labels<a class="anchor" aria-label="anchor" href="#creating-labels"><i class="fas fa-link"></i></a>
 </h2>
 <p>Factors can optionally be expressed as part of a hierarchy by using semi-colons.</p>
 <p>For readability, it is usual to leave a space after the semi-colon, but this makes no difference to the functionality.</p>
 </div>
-<div id="relabelling" class="section level2" number="40.2">
+<div id="relabelling" class="section level2" number="41.2">
 <h2>
-<span class="header-section-number">40.2</span> Relabelling<a class="anchor" aria-label="anchor" href="#relabelling"><i class="fas fa-link"></i></a>
+<span class="header-section-number">41.2</span> Relabelling<a class="anchor" aria-label="anchor" href="#relabelling"><i class="fas fa-link"></i></a>
 </h2>
-<p>In Causal Map, the process of renaming the factors into this kind of hierarchical structure can be conveniently carried out in the <a href="#xfactor-editor">factor editor panel</a> tab which is a simple text editor where you can edit anything you have created during coding. If you select factors, as in the image below, it will list the currently visible factor labels, sorted alphabetically.</p>
+<p>In Causal Map, the process of renaming the factors into this kind of hierarchical structure can be conveniently carried out in the <a href="xfactor-editor.html#xfactor-editor">factor editor panel</a> tab which is a simple text editor where you can edit anything you have created during coding. If you select factors, as in the image below, it will list the currently visible factor labels, sorted alphabetically.</p>
 <p>Use <code>Ctrl F</code> or <code>Cmd F</code> (for Macs) to search.</p>
 <p>Use <code>Crtl H</code> on PC to search and replace.</p>
 <p>Use <code>Crtl Alt Up/Down</code> to edit multiple lines at once.</p>
@@ -195,26 +196,26 @@
 <p>This editor has many features such as global search and replace, and multiple cursors, which make it easy to rapidly edit many factor labels.</p>
 <p>Using this panel you can also combine several factors into one and split one factor into several.</p>
 </div>
-<div id="additional-calculated-fields" class="section level2" number="40.3">
+<div id="additional-calculated-fields" class="section level2" number="41.3">
 <h2>
-<span class="header-section-number">40.3</span> Additional calculated fields<a class="anchor" aria-label="anchor" href="#additional-calculated-fields"><i class="fas fa-link"></i></a>
+<span class="header-section-number">41.3</span> Additional calculated fields<a class="anchor" aria-label="anchor" href="#additional-calculated-fields"><i class="fas fa-link"></i></a>
 </h2>
 <p>The app <a href="xconditional-formats.html#xcalculated-fields">adds some fields</a> for using hierarchies. One of them is <code>top_level_label</code> which gives just the top level for each factor. Here it is being used to group factors in terms by their top level component.</p>
 <div class="figure">
 <img src="_assets/image-20211004182832447.png" width="650" alt=""><p class="caption">image-20211004182832447</p>
 </div>
 </div>
-<div id="additional-functionality-in-the-create-edit-links-panel" class="section level2" number="40.4">
+<div id="additional-functionality-in-the-create-edit-links-panel" class="section level2" number="41.4">
 <h2>
-<span class="header-section-number">40.4</span> Additional functionality in the Create &amp; Edit Links panel<a class="anchor" aria-label="anchor" href="#additional-functionality-in-the-create-edit-links-panel"><i class="fas fa-link"></i></a>
+<span class="header-section-number">41.4</span> Additional functionality in the Create &amp; Edit Links panel<a class="anchor" aria-label="anchor" href="#additional-functionality-in-the-create-edit-links-panel"><i class="fas fa-link"></i></a>
 </h2>
 <p>Once you have created at least one hierarchical factor, i.e. one with a “;” in its label, the <em>influence factor</em> box and <em>consequence factor</em> box have some additional functionality to help you.</p>
 <ul>
 <li>Now, when you start to type, the list of existing factors which you can choose from is extended to include existing factor components, even if they have not (yet) been coded as such. This means it is easier to add new detail to existing or implied higher-level factors.</li>
 </ul>
-<div id="xquick-tails" class="section level3" number="40.4.1">
+<div id="xquick-tails" class="section level3" number="41.4.1">
 <h3>
-<span class="header-section-number">40.4.1</span> Quick tails<a class="anchor" aria-label="anchor" href="#xquick-tails"><i class="fas fa-link"></i></a>
+<span class="header-section-number">41.4.1</span> Quick tails<a class="anchor" aria-label="anchor" href="#xquick-tails"><i class="fas fa-link"></i></a>
 </h3>
 <div class="figure">
 <img src="_assets/image-20211005153410088.png" width="350" alt=""><p class="caption">image-20211005153410088</p>
@@ -234,15 +235,15 @@ which will produce:
 </ul>
 </div>
 </div>
-<div id="search-with-nested-factors" class="section level2" number="40.5">
+<div id="search-with-nested-factors" class="section level2" number="41.5">
 <h2>
-<span class="header-section-number">40.5</span> Search with nested factors<a class="anchor" aria-label="anchor" href="#search-with-nested-factors"><i class="fas fa-link"></i></a>
+<span class="header-section-number">41.5</span> Search with nested factors<a class="anchor" aria-label="anchor" href="#search-with-nested-factors"><i class="fas fa-link"></i></a>
 </h2>
 <p>The same principle applies in the Search and Filter Factors box: you can see factors you have already used but also implied higher-level factors (like “Health behaviour”) and other factor components, beginning with a semi-colon (<code>;</code>).</p>
 </div>
-<div id="how-can-i-view-just-the-factors-where-i-have-applied-hierarchical-coding" class="section level2" number="40.6">
+<div id="how-can-i-view-just-the-factors-where-i-have-applied-hierarchical-coding" class="section level2" number="41.6">
 <h2>
-<span class="header-section-number">40.6</span> How can I view just the factors where I have applied hierarchical coding?<a class="anchor" aria-label="anchor" href="#how-can-i-view-just-the-factors-where-i-have-applied-hierarchical-coding"><i class="fas fa-link"></i></a>
+<span class="header-section-number">41.6</span> How can I view just the factors where I have applied hierarchical coding?<a class="anchor" aria-label="anchor" href="#how-can-i-view-just-the-factors-where-i-have-applied-hierarchical-coding"><i class="fas fa-link"></i></a>
 </h2>
 <p>Sometimes you only want to use hierarchical coding for a few of your factors. To view just those, you could create a mini map including just the factors which you have hierarchically coded (and one step up or down from them), by searching for <code>;</code> in the factor labels, but then zooming the factors out to just see the top level.</p>
 <div class="figure">
@@ -253,18 +254,18 @@ which will produce:
 <img src="_assets/image-20211123171257000.png" alt=""><p class="caption">image-20211123171257000</p>
 </div>
 </div>
-<div id="viewing-the-top-level-labels" class="section level2" number="40.7">
+<div id="viewing-the-top-level-labels" class="section level2" number="41.7">
 <h2>
-<span class="header-section-number">40.7</span> Viewing the top level labels<a class="anchor" aria-label="anchor" href="#viewing-the-top-level-labels"><i class="fas fa-link"></i></a>
+<span class="header-section-number">41.7</span> Viewing the top level labels<a class="anchor" aria-label="anchor" href="#viewing-the-top-level-labels"><i class="fas fa-link"></i></a>
 </h2>
 <p>In the factors table, you can view your top level factors even when not applying filters.</p>
 <div class="figure">
 <img src="_assets/image-20211123170740657.png" alt=""><p class="caption">image-20211123170740657</p>
 </div>
 </div>
-<div id="simplifying-zooming-out-and-filtering-out-less-frequent-links-and-factors-in-the-app" class="section level2" number="40.8">
+<div id="simplifying-zooming-out-and-filtering-out-less-frequent-links-and-factors-in-the-app" class="section level2" number="41.8">
 <h2>
-<span class="header-section-number">40.8</span> Simplifying (zooming out, and filtering out less frequent links and factors) in the app<a class="anchor" aria-label="anchor" href="#simplifying-zooming-out-and-filtering-out-less-frequent-links-and-factors-in-the-app"><i class="fas fa-link"></i></a>
+<span class="header-section-number">41.8</span> Simplifying (zooming out, and filtering out less frequent links and factors) in the app<a class="anchor" aria-label="anchor" href="#simplifying-zooming-out-and-filtering-out-less-frequent-links-and-factors-in-the-app"><i class="fas fa-link"></i></a>
 </h2>
 <p><strong>Why would I use this filter?</strong>
 An unfiltered causal map can be quite overwhelming to begin with as it is presenting all the causal links which have been coded, so this filter can be a good place to start. By filtering out links/factors which have only been mentioned once or twice, the map becomes more manageable, easier to make sense of, and displays only the most frequent stories of change/causal pathways.</p>
@@ -272,22 +273,22 @@ An unfiltered causal map can be quite overwhelming to begin with as it is presen
 </div>
 </div>
   <div class="chapter-nav">
-<div class="prev"><a href="xsimplifying-with-hierarchical.html"><span class="header-section-number">39</span> 📚 Simplifying causal maps with hierarchical coding</a></div>
-<div class="next"><a href="strength-adding-additional-information-like-strength-of-a-link-in-a-causal-map.html"><span class="header-section-number">41</span> 📚 Strength: Adding additional information like strength of a link in a causal map</a></div>
+<div class="prev"><a href="xsimplifying-with-hierarchical.html"><span class="header-section-number">40</span> 📚 Simplifying causal maps with hierarchical coding</a></div>
+<div class="next"><a href="strength-adding-additional-information-like-strength-of-a-link-in-a-causal-map.html"><span class="header-section-number">42</span> 📚 Strength: Adding additional information like strength of a link in a causal map</a></div>
 </div></main><div class="col-md-3 col-lg-2 d-none d-md-block sidebar sidebar-chapter">
     <nav id="toc" data-toggle="toc" aria-label="On this page"><h2>On this page</h2>
       <ul class="nav navbar-nav">
-<li><a class="nav-link" href="#xhierarchical-coding"><span class="header-section-number">40</span> 💻 Hierarchical factors in Causal Map</a></li>
-<li><a class="nav-link" href="#creating-labels"><span class="header-section-number">40.1</span> Creating labels</a></li>
-<li><a class="nav-link" href="#relabelling"><span class="header-section-number">40.2</span> Relabelling</a></li>
-<li><a class="nav-link" href="#additional-calculated-fields"><span class="header-section-number">40.3</span> Additional calculated fields</a></li>
+<li><a class="nav-link" href="#xhierarchical-coding"><span class="header-section-number">41</span> 💻 Hierarchical factors in Causal Map</a></li>
+<li><a class="nav-link" href="#creating-labels"><span class="header-section-number">41.1</span> Creating labels</a></li>
+<li><a class="nav-link" href="#relabelling"><span class="header-section-number">41.2</span> Relabelling</a></li>
+<li><a class="nav-link" href="#additional-calculated-fields"><span class="header-section-number">41.3</span> Additional calculated fields</a></li>
 <li>
-<a class="nav-link" href="#additional-functionality-in-the-create-edit-links-panel"><span class="header-section-number">40.4</span> Additional functionality in the Create &amp; Edit Links panel</a><ul class="nav navbar-nav"><li><a class="nav-link" href="#xquick-tails"><span class="header-section-number">40.4.1</span> Quick tails</a></li></ul>
+<a class="nav-link" href="#additional-functionality-in-the-create-edit-links-panel"><span class="header-section-number">41.4</span> Additional functionality in the Create &amp; Edit Links panel</a><ul class="nav navbar-nav"><li><a class="nav-link" href="#xquick-tails"><span class="header-section-number">41.4.1</span> Quick tails</a></li></ul>
 </li>
-<li><a class="nav-link" href="#search-with-nested-factors"><span class="header-section-number">40.5</span> Search with nested factors</a></li>
-<li><a class="nav-link" href="#how-can-i-view-just-the-factors-where-i-have-applied-hierarchical-coding"><span class="header-section-number">40.6</span> How can I view just the factors where I have applied hierarchical coding?</a></li>
-<li><a class="nav-link" href="#viewing-the-top-level-labels"><span class="header-section-number">40.7</span> Viewing the top level labels</a></li>
-<li><a class="nav-link" href="#simplifying-zooming-out-and-filtering-out-less-frequent-links-and-factors-in-the-app"><span class="header-section-number">40.8</span> Simplifying (zooming out, and filtering out less frequent links and factors) in the app</a></li>
+<li><a class="nav-link" href="#search-with-nested-factors"><span class="header-section-number">41.5</span> Search with nested factors</a></li>
+<li><a class="nav-link" href="#how-can-i-view-just-the-factors-where-i-have-applied-hierarchical-coding"><span class="header-section-number">41.6</span> How can I view just the factors where I have applied hierarchical coding?</a></li>
+<li><a class="nav-link" href="#viewing-the-top-level-labels"><span class="header-section-number">41.7</span> Viewing the top level labels</a></li>
+<li><a class="nav-link" href="#simplifying-zooming-out-and-filtering-out-less-frequent-links-and-factors-in-the-app"><span class="header-section-number">41.8</span> Simplifying (zooming out, and filtering out less frequent links and factors) in the app</a></li>
 </ul>
 
       <div class="book-extra">

@@ -4,23 +4,23 @@
 <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
 <meta charset="utf-8">
 <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
-<title>Chapter 53 Quickfields | Guide to Causal Mapping</title>
+<title>Chapter 54 Quickfields | Guide to Causal Mapping</title>
 <meta name="author" content="Steve Powell">
 <meta name="author" content="Fiona Remnant">
 <meta name="author" content="James Copestake">
 <meta name="author" content="Hannah Mishan">
 <meta name="author" content="Rebekah Arvard">
 <meta name="author" content="Samuel Goddard">
-<meta name="description" content="53.1 Summary Quickfields are a special kind of flag for factor labels. They are a refinement of flags for when you have a set of categories which is mutually exclusive. You can add information...">
+<meta name="description" content="54.1 Summary Quickfields are a special kind of flag for factor labels. They are a refinement of flags for when you have a set of categories which is mutually exclusive. You can add information...">
 <meta name="generator" content="bookdown 0.26 with bs4_book()">
-<meta property="og:title" content="Chapter 53 Quickfields | Guide to Causal Mapping">
+<meta property="og:title" content="Chapter 54 Quickfields | Guide to Causal Mapping">
 <meta property="og:type" content="book">
 <meta property="og:url" content="https://causalmap.app/xquickfields.html">
 <meta property="og:image" content="https://causalmap.app/_assets/image-20210520221329966.png">
-<meta property="og:description" content="53.1 Summary Quickfields are a special kind of flag for factor labels. They are a refinement of flags for when you have a set of categories which is mutually exclusive. You can add information...">
+<meta property="og:description" content="54.1 Summary Quickfields are a special kind of flag for factor labels. They are a refinement of flags for when you have a set of categories which is mutually exclusive. You can add information...">
 <meta name="twitter:card" content="summary">
-<meta name="twitter:title" content="Chapter 53 Quickfields | Guide to Causal Mapping">
-<meta name="twitter:description" content="53.1 Summary Quickfields are a special kind of flag for factor labels. They are a refinement of flags for when you have a set of categories which is mutually exclusive. You can add information...">
+<meta name="twitter:title" content="Chapter 54 Quickfields | Guide to Causal Mapping">
+<meta name="twitter:description" content="54.1 Summary Quickfields are a special kind of flag for factor labels. They are a refinement of flags for when you have a set of categories which is mutually exclusive. You can add information...">
 <meta name="twitter:image" content="https://causalmap.app/_assets/image-20210520221329966.png">
 <!-- JS --><script src="https://cdnjs.cloudflare.com/ajax/libs/clipboard.js/2.0.6/clipboard.min.js" integrity="sha256-inc5kl9MA1hkeYUt+EC3BhlIgyp/2jDIyBLS6k3UxPI=" crossorigin="anonymous"></script><script src="https://cdnjs.cloudflare.com/ajax/libs/fuse.js/6.4.6/fuse.js" integrity="sha512-zv6Ywkjyktsohkbp9bb45V6tEMoWhzFzXis+LrMehmJZZSys19Yxf1dopHx7WzIKxr5tK2dVcYmaCk2uqdjF4A==" crossorigin="anonymous"></script><script src="https://kit.fontawesome.com/6ecbd6c532.js" crossorigin="anonymous"></script><script src="libs/jquery-3.6.0/jquery-3.6.0.min.js"></script><meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
 <link href="libs/bootstrap-4.6.0/bootstrap.min.css" rel="stylesheet">
@@ -78,80 +78,81 @@
 <li><a class="" href="features-of-causal-map.html"><span class="header-section-number">23</span> Features of Causal Map</a></li>
 <li><a class="" href="collaboratio.html"><span class="header-section-number">24</span> Collaborating at Causal Map</a></li>
 <li class="book-part">💻 The rest of the app</li>
-<li><a class="" href="xthe-mentions-table.html"><span class="header-section-number">25</span> The Mentions Table</a></li>
-<li><a class="" href="xthe-factors-table.html"><span class="header-section-number">26</span> The Factors table</a></li>
-<li><a class="" href="xthe-links-table.html"><span class="header-section-number">27</span> The Links Table</a></li>
-<li><a class="" href="xthe-bundles-table.html"><span class="header-section-number">28</span> The Bundles Table</a></li>
-<li><a class="" href="xthe-statements-table.html"><span class="header-section-number">29</span> The Statements Table</a></li>
-<li><a class="" href="xthe-sources-table.html"><span class="header-section-number">30</span> The Sources Table</a></li>
-<li><a class="" href="xthe-questions-table.html"><span class="header-section-number">31</span> The Questions Table</a></li>
-<li><a class="" href="xthe-closed-question-blocks-table.html"><span class="header-section-number">32</span> The Closed Question Blocks Table</a></li>
-<li><a class="" href="xmetrics.html"><span class="header-section-number">33</span> The Metrics Table</a></li>
-<li><a class="" href="xdata-manager.html"><span class="header-section-number">34</span> Data manager</a></li>
-<li><a class="" href="xgamification.html"><span class="header-section-number">35</span> Document coding score!</a></li>
-<li><a class="" href="xupdates-tab.html"><span class="header-section-number">36</span> The Updates tab</a></li>
+<li><a class="" href="xfactor-editor.html"><span class="header-section-number">25</span> The Factor Editor</a></li>
+<li><a class="" href="xthe-mentions-table.html"><span class="header-section-number">26</span> The Mentions Table</a></li>
+<li><a class="" href="xthe-factors-table.html"><span class="header-section-number">27</span> The Factors table</a></li>
+<li><a class="" href="xthe-links-table.html"><span class="header-section-number">28</span> The Links Table</a></li>
+<li><a class="" href="xthe-bundles-table.html"><span class="header-section-number">29</span> The Bundles Table</a></li>
+<li><a class="" href="xthe-statements-table.html"><span class="header-section-number">30</span> The Statements Table</a></li>
+<li><a class="" href="xthe-sources-table.html"><span class="header-section-number">31</span> The Sources Table</a></li>
+<li><a class="" href="xthe-questions-table.html"><span class="header-section-number">32</span> The Questions Table</a></li>
+<li><a class="" href="xthe-closed-question-blocks-table.html"><span class="header-section-number">33</span> The Closed Question Blocks Table</a></li>
+<li><a class="" href="xmetrics.html"><span class="header-section-number">34</span> The Metrics Table</a></li>
+<li><a class="" href="xdata-manager.html"><span class="header-section-number">35</span> Data manager</a></li>
+<li><a class="" href="xgamification.html"><span class="header-section-number">36</span> Document coding score!</a></li>
+<li><a class="" href="xupdates-tab.html"><span class="header-section-number">37</span> The Updates tab</a></li>
 <li class="book-part">📚💻 Creating maps</li>
-<li><a class="" href="creating-good-factor-labels.html"><span class="header-section-number">37</span> 📚 Creating good factor labels</a></li>
-<li><a class="" href="xedit-factor-and-links.html"><span class="header-section-number">38</span> Editing factors and links</a></li>
-<li><a class="" href="xsimplifying-with-hierarchical.html"><span class="header-section-number">39</span> 📚 Simplifying causal maps with hierarchical coding</a></li>
-<li><a class="" href="xhierarchical-coding.html"><span class="header-section-number">40</span> 💻 Hierarchical factors in Causal Map</a></li>
-<li><a class="" href="strength-adding-additional-information-like-strength-of-a-link-in-a-causal-map.html"><span class="header-section-number">41</span> 📚 Strength: Adding additional information like strength of a link in a causal map</a></li>
-<li><a class="" href="coding-opposites.html"><span class="header-section-number">42</span> 📚 Coding opposites</a></li>
-<li><a class="" href="xplain_coding.html"><span class="header-section-number">43</span> 📚 Plain coding</a></li>
-<li><a class="" href="tricky-coding-challenges.html"><span class="header-section-number">44</span> 📚 Tricky coding challenges</a></li>
+<li><a class="" href="creating-good-factor-labels.html"><span class="header-section-number">38</span> 📚 Creating good factor labels</a></li>
+<li><a class="" href="xedit-factor-and-links.html"><span class="header-section-number">39</span> Editing factors and links</a></li>
+<li><a class="" href="xsimplifying-with-hierarchical.html"><span class="header-section-number">40</span> 📚 Simplifying causal maps with hierarchical coding</a></li>
+<li><a class="" href="xhierarchical-coding.html"><span class="header-section-number">41</span> 💻 Hierarchical factors in Causal Map</a></li>
+<li><a class="" href="strength-adding-additional-information-like-strength-of-a-link-in-a-causal-map.html"><span class="header-section-number">42</span> 📚 Strength: Adding additional information like strength of a link in a causal map</a></li>
+<li><a class="" href="coding-opposites.html"><span class="header-section-number">43</span> 📚 Coding opposites</a></li>
+<li><a class="" href="xplain_coding.html"><span class="header-section-number">44</span> 📚 Plain coding</a></li>
+<li><a class="" href="tricky-coding-challenges.html"><span class="header-section-number">45</span> 📚 Tricky coding challenges</a></li>
 <li class="book-part">💻Filters</li>
-<li><a class="" href="filters-overview.html"><span class="header-section-number">45</span> Filters – overview</a></li>
-<li><a class="" href="xrobustness.html"><span class="header-section-number">46</span> 📚 Tracing paths and calculating robustness</a></li>
-<li><a class="" href="xconditional-formats.html"><span class="header-section-number">47</span> Conditional formats</a></li>
-<li><a class="" href="xsimple-formats.html"><span class="header-section-number">48</span> Simple formats</a></li>
-<li><a class="" href="what-is-the-logic-behind-the-causal-map-filters.html"><span class="header-section-number">49</span> What is the logic behind the Causal Map filters?</a></li>
-<li><a class="" href="xanalysis.html"><span class="header-section-number">50</span> Analysing causal maps</a></li>
-<li><a class="" href="smart-zoom.html"><span class="header-section-number">51</span> Smart zooming</a></li>
-<li><a class="" href="xcontinuity.html"><span class="header-section-number">52</span> Continuity and tracing threads</a></li>
-<li><a class="active" href="xquickfields.html"><span class="header-section-number">53</span> Quickfields</a></li>
-<li><a class="" href="comparing.html"><span class="header-section-number">54</span> 📚 Analysis: comparing maps between particular groups</a></li>
-<li><a class="" href="cluster-sources.html"><span class="header-section-number">55</span> 📚 Clustering sources</a></li>
-<li><a class="" href="recalculate.html"><span class="header-section-number">56</span> Recalculate fields</a></li>
-<li><a class="" href="xinterpret.html"><span class="header-section-number">57</span> Interpreting your results</a></li>
+<li><a class="" href="filters-overview.html"><span class="header-section-number">46</span> Filters – overview</a></li>
+<li><a class="" href="xrobustness.html"><span class="header-section-number">47</span> 📚 Tracing paths and calculating robustness</a></li>
+<li><a class="" href="xconditional-formats.html"><span class="header-section-number">48</span> Conditional formats</a></li>
+<li><a class="" href="xsimple-formats.html"><span class="header-section-number">49</span> Simple formats</a></li>
+<li><a class="" href="what-is-the-logic-behind-the-causal-map-filters.html"><span class="header-section-number">50</span> What is the logic behind the Causal Map filters?</a></li>
+<li><a class="" href="xanalysis.html"><span class="header-section-number">51</span> Analysing causal maps</a></li>
+<li><a class="" href="smart-zoom.html"><span class="header-section-number">52</span> Smart zooming</a></li>
+<li><a class="" href="xcontinuity.html"><span class="header-section-number">53</span> Continuity and tracing threads</a></li>
+<li><a class="active" href="xquickfields.html"><span class="header-section-number">54</span> Quickfields</a></li>
+<li><a class="" href="comparing.html"><span class="header-section-number">55</span> 📚 Analysis: comparing maps between particular groups</a></li>
+<li><a class="" href="cluster-sources.html"><span class="header-section-number">56</span> 📚 Clustering sources</a></li>
+<li><a class="" href="recalculate.html"><span class="header-section-number">57</span> Recalculate fields</a></li>
+<li><a class="" href="xinterpret.html"><span class="header-section-number">58</span> Interpreting your results</a></li>
 <li class="book-part">💻 Uploading and updating data</li>
-<li><a class="" href="core-tables.html"><span class="header-section-number">58</span> Core tables in Causal Map</a></li>
-<li><a class="" href="ximport.html"><span class="header-section-number">59</span> Uploading your data</a></li>
-<li><a class="" href="import-additional-data.html"><span class="header-section-number">60</span> Uploading additional data</a></li>
-<li><a class="" href="xroundtripping.html"><span class="header-section-number">61</span> Appending and fixing data (“roundtripping”)</a></li>
-<li><a class="" href="ximport-other.html"><span class="header-section-number">62</span> Importing your data: special cases</a></li>
-<li><a class="" href="xmerging-files.html"><span class="header-section-number">63</span> Merging files</a></li>
-<li><a class="" href="xcodebook.html"><span class="header-section-number">64</span> Importing a codebook of factors</a></li>
+<li><a class="" href="core-tables.html"><span class="header-section-number">59</span> Core tables in Causal Map</a></li>
+<li><a class="" href="ximport.html"><span class="header-section-number">60</span> Uploading your data</a></li>
+<li><a class="" href="import-additional-data.html"><span class="header-section-number">61</span> Uploading additional data</a></li>
+<li><a class="" href="xroundtripping.html"><span class="header-section-number">62</span> Appending and fixing data (“roundtripping”)</a></li>
+<li><a class="" href="ximport-other.html"><span class="header-section-number">63</span> Importing your data: special cases</a></li>
+<li><a class="" href="xmerging-files.html"><span class="header-section-number">64</span> Merging files</a></li>
+<li><a class="" href="xcodebook.html"><span class="header-section-number">65</span> Importing a codebook of factors</a></li>
 <li class="book-part">📚💻Spotlights</li>
-<li><a class="" href="causal-mapping-definitions.html"><span class="header-section-number">65</span> 📚 Causal Mapping: Definitions</a></li>
-<li><a class="" href="mapping.html"><span class="header-section-number">66</span> 📚 Causal mapping for evaluators</a></li>
-<li><a class="" href="causal-mapping-and-outcome-harvesting.html"><span class="header-section-number">67</span> 📚 Causal Mapping and Outcome Harvesting</a></li>
-<li><a class="" href="context-in-causal-mapping-how-to-code-it.html"><span class="header-section-number">68</span> 📚 Context in causal mapping: how to code it</a></li>
-<li><a class="" href="xtransitivity-trap.html"><span class="header-section-number">69</span> 📚 Beware the transitivity trap</a></li>
-<li><a class="" href="caveat-numbers.html"><span class="header-section-number">70</span> 📚 Cases, variables and percentages in causal mapping?</a></li>
-<li><a class="" href="different-kinds-of-question-chaining-with-quip-and-parevo-as-illustrations.html"><span class="header-section-number">71</span> 📚 Different kinds of question chaining, with QuIP and ParEvo as illustrations</a></li>
-<li><a class="" href="how-to-get-to-the-shadow-side-a-problem-with-back-chaining.html"><span class="header-section-number">72</span> 📚 How to get to the shadow side: a problem with back-chaining</a></li>
-<li><a class="" href="the-last-minute-principle.html"><span class="header-section-number">73</span> 📚 The last minute principle</a></li>
-<li><a class="" href="causal-maps-systems-maps-whats-the-difference-does-it-matter.html"><span class="header-section-number">74</span> 📚 Causal maps, systems maps, what’s the difference? Does it matter?</a></li>
-<li><a class="" href="coding-time-in-causal-mapping.html"><span class="header-section-number">75</span> 📚 Coding time in causal mapping</a></li>
-<li><a class="" href="more-about-coding-opposites.html"><span class="header-section-number">76</span> More about coding opposites</a></li>
-<li><a class="" href="puzzles-in-causal-mapping.html"><span class="header-section-number">77</span> 📚 Puzzles in causal mapping</a></li>
-<li><a class="" href="is-one-direction-enough.html"><span class="header-section-number">78</span> 📚 Is one direction enough?</a></li>
-<li><a class="" href="xshowcases.html"><span class="header-section-number">79</span> Showcase: how the Causal Map app has been used</a></li>
+<li><a class="" href="causal-mapping-definitions.html"><span class="header-section-number">66</span> 📚 Causal Mapping: Definitions</a></li>
+<li><a class="" href="mapping.html"><span class="header-section-number">67</span> 📚 Causal mapping for evaluators</a></li>
+<li><a class="" href="causal-mapping-and-outcome-harvesting.html"><span class="header-section-number">68</span> 📚 Causal Mapping and Outcome Harvesting</a></li>
+<li><a class="" href="context-in-causal-mapping-how-to-code-it.html"><span class="header-section-number">69</span> 📚 Context in causal mapping: how to code it</a></li>
+<li><a class="" href="xtransitivity-trap.html"><span class="header-section-number">70</span> 📚 Beware the transitivity trap</a></li>
+<li><a class="" href="caveat-numbers.html"><span class="header-section-number">71</span> 📚 Cases, variables and percentages in causal mapping?</a></li>
+<li><a class="" href="different-kinds-of-question-chaining-with-quip-and-parevo-as-illustrations.html"><span class="header-section-number">72</span> 📚 Different kinds of question chaining, with QuIP and ParEvo as illustrations</a></li>
+<li><a class="" href="how-to-get-to-the-shadow-side-a-problem-with-back-chaining.html"><span class="header-section-number">73</span> 📚 How to get to the shadow side: a problem with back-chaining</a></li>
+<li><a class="" href="the-last-minute-principle.html"><span class="header-section-number">74</span> 📚 The last minute principle</a></li>
+<li><a class="" href="causal-maps-systems-maps-whats-the-difference-does-it-matter.html"><span class="header-section-number">75</span> 📚 Causal maps, systems maps, what’s the difference? Does it matter?</a></li>
+<li><a class="" href="coding-time-in-causal-mapping.html"><span class="header-section-number">76</span> 📚 Coding time in causal mapping</a></li>
+<li><a class="" href="more-about-coding-opposites.html"><span class="header-section-number">77</span> More about coding opposites</a></li>
+<li><a class="" href="puzzles-in-causal-mapping.html"><span class="header-section-number">78</span> 📚 Puzzles in causal mapping</a></li>
+<li><a class="" href="is-one-direction-enough.html"><span class="header-section-number">79</span> 📚 Is one direction enough?</a></li>
+<li><a class="" href="xshowcases.html"><span class="header-section-number">80</span> Showcase: how the Causal Map app has been used</a></li>
 <li class="book-part">💻 Technical reference</li>
-<li><a class="" href="appendix-filter-reference.html"><span class="header-section-number">80</span> Appendix: Filter reference</a></li>
-<li><a class="" href="how-causal-map-is-hosted.html"><span class="header-section-number">81</span> How Causal Map is hosted</a></li>
-<li><a class="" href="xconventions.html"><span class="header-section-number">82</span> Conventions</a></li>
-<li><a class="" href="screenshotting-your-maps.html"><span class="header-section-number">83</span> Screenshotting your maps</a></li>
-<li><a class="" href="xreports.html"><span class="header-section-number">84</span> Reports tab</a></li>
-<li><a class="" href="advanced-editor.html"><span class="header-section-number">85</span> Using the Advanced Editor to create and edit filters</a></li>
-<li><a class="" href="xkeyboard.html"><span class="header-section-number">86</span> Keyboard shortcuts</a></li>
-<li><a class="" href="causal-map-functions.html"><span class="header-section-number">87</span> Causal Map functions</a></li>
-<li><a class="" href="xexcel.html"><span class="header-section-number">88</span> Causal mapping with Excel</a></li>
-<li><a class="" href="using-storysurvey-admin-interface.html"><span class="header-section-number">89</span> Using StorySurvey: admin interface</a></li>
-<li><a class="" href="changelog.html"><span class="header-section-number">90</span> Recent changes</a></li>
+<li><a class="" href="appendix-filter-reference.html"><span class="header-section-number">81</span> Appendix: Filter reference</a></li>
+<li><a class="" href="how-causal-map-is-hosted.html"><span class="header-section-number">82</span> How Causal Map is hosted</a></li>
+<li><a class="" href="xconventions.html"><span class="header-section-number">83</span> Conventions</a></li>
+<li><a class="" href="screenshotting-your-maps.html"><span class="header-section-number">84</span> Screenshotting your maps</a></li>
+<li><a class="" href="xreports.html"><span class="header-section-number">85</span> Reports tab</a></li>
+<li><a class="" href="advanced-editor.html"><span class="header-section-number">86</span> Using the Advanced Editor to create and edit filters</a></li>
+<li><a class="" href="xkeyboard.html"><span class="header-section-number">87</span> Keyboard shortcuts</a></li>
+<li><a class="" href="causal-map-functions.html"><span class="header-section-number">88</span> Causal Map functions</a></li>
+<li><a class="" href="xexcel.html"><span class="header-section-number">89</span> Causal mapping with Excel</a></li>
+<li><a class="" href="using-storysurvey-admin-interface.html"><span class="header-section-number">90</span> Using StorySurvey: admin interface</a></li>
+<li><a class="" href="changelog.html"><span class="header-section-number">91</span> Recent changes</a></li>
 <li class="book-part">📚💻 Final section</li>
-<li><a class="" href="acknowledgements.html"><span class="header-section-number">91</span> Acknowledgements</a></li>
-<li><a class="" href="appendix-publications-and-links.html"><span class="header-section-number">92</span> Appendix: Publications and links</a></li>
+<li><a class="" href="acknowledgements.html"><span class="header-section-number">92</span> Acknowledgements</a></li>
+<li><a class="" href="appendix-publications-and-links.html"><span class="header-section-number">93</span> Appendix: Publications and links</a></li>
 <li><a class="" href="references.html">References</a></li>
 </ul>
 
@@ -160,13 +161,13 @@
         </div>
       </nav>
 </div>
-  </header><main class="col-sm-12 col-md-9 col-lg-7" id="content"><div id="xquickfields" class="section level1" number="53">
+  </header><main class="col-sm-12 col-md-9 col-lg-7" id="content"><div id="xquickfields" class="section level1" number="54">
 <h1>
-<span class="header-section-number">53</span> Quickfields<a class="anchor" aria-label="anchor" href="#xquickfields"><i class="fas fa-link"></i></a>
+<span class="header-section-number">54</span> Quickfields<a class="anchor" aria-label="anchor" href="#xquickfields"><i class="fas fa-link"></i></a>
 </h1>
-<div id="summary-8" class="section level2" number="53.1">
+<div id="summary-8" class="section level2" number="54.1">
 <h2>
-<span class="header-section-number">53.1</span> Summary<a class="anchor" aria-label="anchor" href="#summary-8"><i class="fas fa-link"></i></a>
+<span class="header-section-number">54.1</span> Summary<a class="anchor" aria-label="anchor" href="#summary-8"><i class="fas fa-link"></i></a>
 </h2>
 <p>Quickfields are a special kind of <a href="#xflag">flag</a> for factor labels. They are a <em>refinement</em> of flags for when you have a set of categories which is mutually exclusive.</p>
 <p>You can add information about one or more dimensions using a format like this:</p>
@@ -185,9 +186,9 @@
 <p>This feature is automatic and does not need to be switched on with any filter.</p>
 <p>Quickfields can be hidden in labels using the <code>hide_quickfields</code> filter. This can provide a kind of zoom.</p>
 </div>
-<div id="uses" class="section level2" number="53.2">
+<div id="uses" class="section level2" number="54.2">
 <h2>
-<span class="header-section-number">53.2</span> Uses<a class="anchor" aria-label="anchor" href="#uses"><i class="fas fa-link"></i></a>
+<span class="header-section-number">54.2</span> Uses<a class="anchor" aria-label="anchor" href="#uses"><i class="fas fa-link"></i></a>
 </h2>
 <ul>
 <li>to search, filter, and organise the factors, links and mentions tables <img src="_assets/image-20220124101850661.png" alt="image-20220124101850661"><ul>
@@ -202,9 +203,9 @@
 </ul>
 <p>If you set numerical values e.g. <code>time:0</code>, <code>time:1</code>, <code>time:2</code> then the quick field <code>time</code> will be treated as numerical and so in particular continuous formatting for colours will be used e.g. a fade from red to blue.</p>
 </div>
-<div id="alternative-formulations" class="section level2" number="53.3">
+<div id="alternative-formulations" class="section level2" number="54.3">
 <h2>
-<span class="header-section-number">53.3</span> Alternative formulations<a class="anchor" aria-label="anchor" href="#alternative-formulations"><i class="fas fa-link"></i></a>
+<span class="header-section-number">54.3</span> Alternative formulations<a class="anchor" aria-label="anchor" href="#alternative-formulations"><i class="fas fa-link"></i></a>
 </h2>
 <p>These are equivalent, you can</p>
 <p><u>Crops improved time:after</u></p>
@@ -212,37 +213,37 @@
 <p>or you can use a hanging flag:</p>
 <p><u>Crops improved; time:after</u> (a so-called “hanging flag” which is perhaps a bit more readable and moves the quick field to a lower level of the hierarchy).</p>
 </div>
-<div id="quickfields-are-also-ordinary-flags" class="section level2" number="53.4">
+<div id="quickfields-are-also-ordinary-flags" class="section level2" number="54.4">
 <h2>
-<span class="header-section-number">53.4</span> Quickfields are also ordinary flags<a class="anchor" aria-label="anchor" href="#quickfields-are-also-ordinary-flags"><i class="fas fa-link"></i></a>
+<span class="header-section-number">54.4</span> Quickfields are also ordinary flags<a class="anchor" aria-label="anchor" href="#quickfields-are-also-ordinary-flags"><i class="fas fa-link"></i></a>
 </h2>
 <p>Quick field flags are still flags, so you can still <em>also</em> do all the things you would do with flags, for example search for “time:after” as a complete flag just as you would if it did not contain an <code>:</code> sign.</p>
 <p><code>find factors label contains time:after</code></p>
 <p>is equivalent to</p>
 <p><code>find factors time=after</code></p>
 </div>
-<div id="syntax" class="section level2" number="53.5">
+<div id="syntax" class="section level2" number="54.5">
 <h2>
-<span class="header-section-number">53.5</span> Syntax<a class="anchor" aria-label="anchor" href="#syntax"><i class="fas fa-link"></i></a>
+<span class="header-section-number">54.5</span> Syntax<a class="anchor" aria-label="anchor" href="#syntax"><i class="fas fa-link"></i></a>
 </h2>
 <p>Quickfields must be composed only of letters and numbers, no punctuation or spaces. There must be no gap on either side of the colon (<code>:</code>).</p>
 </div>
-<div id="more-than-one-quick-field" class="section level2" number="53.6">
+<div id="more-than-one-quick-field" class="section level2" number="54.6">
 <h2>
-<span class="header-section-number">53.6</span> More than one quick field<a class="anchor" aria-label="anchor" href="#more-than-one-quick-field"><i class="fas fa-link"></i></a>
+<span class="header-section-number">54.6</span> More than one quick field<a class="anchor" aria-label="anchor" href="#more-than-one-quick-field"><i class="fas fa-link"></i></a>
 </h2>
 <p>You can combine more than one quick field at once:</p>
 <p><u>Crops improved / time:after / valence:2</u> (the / symbols here are not strictly necessary but improve readability.)</p>
 </div>
-<div id="permanence" class="section level2" number="53.7">
+<div id="permanence" class="section level2" number="54.7">
 <h2>
-<span class="header-section-number">53.7</span> Permanence<a class="anchor" aria-label="anchor" href="#permanence"><i class="fas fa-link"></i></a>
+<span class="header-section-number">54.7</span> Permanence<a class="anchor" aria-label="anchor" href="#permanence"><i class="fas fa-link"></i></a>
 </h2>
 <p>Quickfields become part of the factors table, you can even export them, but the values of the fields are always immediately overwritten if you change the labels. Values of fields derived from labels always take precedence, so there is no point roundtripping a quick field as it will be overwritten according to the labels. (You can always roundtrip other fields in the factors table which are not mentioned in the labels. So you can have a field called, say, <code>valence</code>, which is not mentioned in the factor labels in the form, say, <code>/ valence:high</code>).</p>
 </div>
-<div id="xhiding-quickfields" class="section level2" number="53.8">
+<div id="xhiding-quickfields" class="section level2" number="54.8">
 <h2>
-<span class="header-section-number">53.8</span> Hiding quickfields<a class="anchor" aria-label="anchor" href="#xhiding-quickfields"><i class="fas fa-link"></i></a>
+<span class="header-section-number">54.8</span> Hiding quickfields<a class="anchor" aria-label="anchor" href="#xhiding-quickfields"><i class="fas fa-link"></i></a>
 </h2>
 <p>Quickfields can be hidden in labels using the <code>hide quickfields</code> filter,</p>
 <div class="figure">
@@ -258,24 +259,24 @@
 </div>
 <p>Slashes and spaces and any leading semicolon will be removed.</p>
 </div>
-<div id="position-in-hierarchy" class="section level2" number="53.9">
+<div id="position-in-hierarchy" class="section level2" number="54.9">
 <h2>
-<span class="header-section-number">53.9</span> Position in hierarchy<a class="anchor" aria-label="anchor" href="#position-in-hierarchy"><i class="fas fa-link"></i></a>
+<span class="header-section-number">54.9</span> Position in hierarchy<a class="anchor" aria-label="anchor" href="#position-in-hierarchy"><i class="fas fa-link"></i></a>
 </h2>
 <p>Usually quickfields are put at the end the labels. This makes it easy to find and manipulate the factor labels in the Factor Editor. But quicklinks can appear anywhere in a label and in particular anywhere within a hierarchy:</p>
 <p><u>Anti-discrimination policy / theme:gender; disciplinary rules</u></p>
 <p><u>Anti-discrimination policy / theme:race; awareness training</u></p>
 <p>This makes particular sense <strong>when the lower levels of the hierarchy might differ</strong> according to theme. Hierarchy and quickfields are a powerful combination.</p>
 </div>
-<div id="current-limitation" class="section level2" number="53.10">
+<div id="current-limitation" class="section level2" number="54.10">
 <h2>
-<span class="header-section-number">53.10</span> Current limitation<a class="anchor" aria-label="anchor" href="#current-limitation"><i class="fas fa-link"></i></a>
+<span class="header-section-number">54.10</span> Current limitation<a class="anchor" aria-label="anchor" href="#current-limitation"><i class="fas fa-link"></i></a>
 </h2>
 <p>When you use filters which merge factors together (zooming and bundling factors) the values of quickfields for any factors which are lost because they are nested into the higher levels is not available.</p>
 </div>
-<div id="quickfields-for-factor-labels-versus-hashtags-for-links" class="section level2" number="53.11">
+<div id="quickfields-for-factor-labels-versus-hashtags-for-links" class="section level2" number="54.11">
 <h2>
-<span class="header-section-number">53.11</span> Quickfields for factor labels versus hashtags for links<a class="anchor" aria-label="anchor" href="#quickfields-for-factor-labels-versus-hashtags-for-links"><i class="fas fa-link"></i></a>
+<span class="header-section-number">54.11</span> Quickfields for factor labels versus hashtags for links<a class="anchor" aria-label="anchor" href="#quickfields-for-factor-labels-versus-hashtags-for-links"><i class="fas fa-link"></i></a>
 </h2>
 <p>It makes most sense to add dimensional information as described above when the distinctions are best understood as part of the causal structure, as part of the hierarchy of factors. For example:</p>
 <ul>
@@ -299,23 +300,23 @@
 </div>
 </div>
   <div class="chapter-nav">
-<div class="prev"><a href="xcontinuity.html"><span class="header-section-number">52</span> Continuity and tracing threads</a></div>
-<div class="next"><a href="comparing.html"><span class="header-section-number">54</span> 📚 Analysis: comparing maps between particular groups</a></div>
+<div class="prev"><a href="xcontinuity.html"><span class="header-section-number">53</span> Continuity and tracing threads</a></div>
+<div class="next"><a href="comparing.html"><span class="header-section-number">55</span> 📚 Analysis: comparing maps between particular groups</a></div>
 </div></main><div class="col-md-3 col-lg-2 d-none d-md-block sidebar sidebar-chapter">
     <nav id="toc" data-toggle="toc" aria-label="On this page"><h2>On this page</h2>
       <ul class="nav navbar-nav">
-<li><a class="nav-link" href="#xquickfields"><span class="header-section-number">53</span> Quickfields</a></li>
-<li><a class="nav-link" href="#summary-8"><span class="header-section-number">53.1</span> Summary</a></li>
-<li><a class="nav-link" href="#uses"><span class="header-section-number">53.2</span> Uses</a></li>
-<li><a class="nav-link" href="#alternative-formulations"><span class="header-section-number">53.3</span> Alternative formulations</a></li>
-<li><a class="nav-link" href="#quickfields-are-also-ordinary-flags"><span class="header-section-number">53.4</span> Quickfields are also ordinary flags</a></li>
-<li><a class="nav-link" href="#syntax"><span class="header-section-number">53.5</span> Syntax</a></li>
-<li><a class="nav-link" href="#more-than-one-quick-field"><span class="header-section-number">53.6</span> More than one quick field</a></li>
-<li><a class="nav-link" href="#permanence"><span class="header-section-number">53.7</span> Permanence</a></li>
-<li><a class="nav-link" href="#xhiding-quickfields"><span class="header-section-number">53.8</span> Hiding quickfields</a></li>
-<li><a class="nav-link" href="#position-in-hierarchy"><span class="header-section-number">53.9</span> Position in hierarchy</a></li>
-<li><a class="nav-link" href="#current-limitation"><span class="header-section-number">53.10</span> Current limitation</a></li>
-<li><a class="nav-link" href="#quickfields-for-factor-labels-versus-hashtags-for-links"><span class="header-section-number">53.11</span> Quickfields for factor labels versus hashtags for links</a></li>
+<li><a class="nav-link" href="#xquickfields"><span class="header-section-number">54</span> Quickfields</a></li>
+<li><a class="nav-link" href="#summary-8"><span class="header-section-number">54.1</span> Summary</a></li>
+<li><a class="nav-link" href="#uses"><span class="header-section-number">54.2</span> Uses</a></li>
+<li><a class="nav-link" href="#alternative-formulations"><span class="header-section-number">54.3</span> Alternative formulations</a></li>
+<li><a class="nav-link" href="#quickfields-are-also-ordinary-flags"><span class="header-section-number">54.4</span> Quickfields are also ordinary flags</a></li>
+<li><a class="nav-link" href="#syntax"><span class="header-section-number">54.5</span> Syntax</a></li>
+<li><a class="nav-link" href="#more-than-one-quick-field"><span class="header-section-number">54.6</span> More than one quick field</a></li>
+<li><a class="nav-link" href="#permanence"><span class="header-section-number">54.7</span> Permanence</a></li>
+<li><a class="nav-link" href="#xhiding-quickfields"><span class="header-section-number">54.8</span> Hiding quickfields</a></li>
+<li><a class="nav-link" href="#position-in-hierarchy"><span class="header-section-number">54.9</span> Position in hierarchy</a></li>
+<li><a class="nav-link" href="#current-limitation"><span class="header-section-number">54.10</span> Current limitation</a></li>
+<li><a class="nav-link" href="#quickfields-for-factor-labels-versus-hashtags-for-links"><span class="header-section-number">54.11</span> Quickfields for factor labels versus hashtags for links</a></li>
 </ul>
 
       <div class="book-extra">
