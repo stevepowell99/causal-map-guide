@@ -17,16 +17,12 @@ Factor memos are an important part of your Codebook. They appear:
 
 You can create and edit the memos from interactive view:
 
-
-
-![image-20211001175928850](_assets/edit.gif){width=650}
+![chrome_wcBLYp2tQs](_assets/chrome_wcBLYp2tQs.gif){width=650}
 
 ... or from the factors table:
 
-![image-20211001175928850](_assets/factors-table.gif){width=650}
+![chrome_piNEMXrdaz](_assets/chrome_piNEMXrdaz.gif){width=650}
 
+The factors table has some presets. For example, sometimes it can be useful to break down hierarchical labels into first, second, third levels and so on. By clicking the `levels`you will create the table below.
 
-
-The factors table has some presets. For example, sometimes it can be useful to break down hierarchical labels into first, second, third levels and so on.
-
-![image-20220214121441722](_assets/image-20220214121441722.png)
+![image-20220808151139918](_assets/image-20220808151139918.png){width=650}

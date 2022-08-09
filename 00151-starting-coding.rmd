@@ -10,9 +10,9 @@ Zoom your browser out so everything fits on your screen. Try pressing Ctrl 0 or 
 
 Don't forget you can get more space while coding by pressing the little resize arrow at the top between left and right panels.
 
-Don't forget you can see additional information about each statement, and make memos on the statement or the source by clicking the info toggle. ![image-20211220153222953](_assets/image-20211220153222953.png){width
+Don't forget you can see additional information about each statement, and make memos on the statement or the source by clicking the info toggle. ![image-20211220153222953](_assets/image-20211220153222953.png){width=650}
 
-Normally you'll want to keep the Filters panel closed because it takes space. 
+Normally you'll want to keep the Filters panel closed because it takes space.
 
 Don't bother coding the same link more than once for the same source, unless they bring up distinctively different evidence each time.
 
@@ -26,9 +26,8 @@ Don't forget when you want to search rapidly through already coded links through
 
 Don't forget that the app always knows what question a particular link is in response to, so you don't need to try to sneak the question information somehow into the factors and links, unless you want to.
 
-Occasionally, someone will make a comment about something which is worth coding, even though there isn't actually a causal link. For example, they might make general comments about some outcome without saying what causes it. In this case just make a link like (no influence factor) --> some outcome. (But if you find you are doing this a lot, you might need to rethink your research design.)
+Occasionally, someone will make a comment about something which is worth coding, even though there isn't actually a causal link. For example, they might make general comments about some outcome without saying what causes it. In this case just make a link like (no influence factor) --> some ''''''''outcome or use [plain coding](#xplain_coding). (But if you find you are doing this a lot, you might need to rethink your research design.)
 
-Don't forget while coding you can view the map from the One statement view or the Many statement view.
 
 If you are using [hierarchical/nested coding](#xhierarchical-coding) (and you probably should) don't forget you can see the whole map zoomed out to the top level: just press the appropriate button in the Filters panel.
 

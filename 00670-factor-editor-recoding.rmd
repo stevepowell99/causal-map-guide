@@ -1,4 +1,4 @@
-# The Factor Editor{#xfactor-editor}
+he Factor Editor{#xfactor-editor}
 
 ## Summary
 
@@ -19,7 +19,7 @@ Click inside the editor and retype the factor labels however you want. You can r
 
 Then hit Update.
 
- ![image-20211007092925683](_assets/image-20211007092925683.png){width=650}
+![image-20220808133418098](_assets/image-20220808133418098.png){width=65}
 
 **TIP**: press Ctrl F (Cmd F on Mac) to find or Ctrl H (Cmd alt F on Mac) to replace.
 
@@ -77,11 +77,13 @@ The factor editor also has a sidebar, which shows more details for the factor cu
   - delete the factor)
 
 - The memo, if there is one (click on it to edit or add a memo)
+
 - Lists of influence and consequence factors, with source and statement ids
   - When hovering over the influence or consequence factors, see the whole original text from the corresponding statement
   - Click on these boxes to edit the corresponding links directly
-- Note that the sidebar does show you for each factor in the current filter ALL the links / quotes relating to it, even ones which are not in the current filter. This is so you can make a decision about eg changing factor labels which takes into account all the uses of the factor. 
+  
+- Note that the sidebar does show you for each factor in the current filter ALL the links / quotes relating to it, even ones which are not in the current filter. This is so you can make a decision about eg changing factor labels which takes into account all the uses of the factor.
 
-![image-20211001175928850](_assets/fe sidebar.gif)
+   ![chrome_1eP2EIwWo5](_assets/chrome_1eP2EIwWo5.gif){width=650}
 
-If you use emojis in your factor labels, especially emojis with skin colours, you may find it difficult to find the right place in the editor. Tip: put the emojis at the end of the label if possible.
+  If you use emojis in your factor labels, especially emojis with skin colours, you may find it difficult to find the right place in the editor. Tip: put the emojis at the end of the label if possible.

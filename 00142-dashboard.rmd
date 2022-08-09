@@ -12,15 +12,14 @@ The Dashboard lists views of the current file saved by you or other users.
 
 A View records information about the currently applied filters (analysis filters and formatting) as well as the specific tab you are looking at and, in the case of tables, the way you have set up the table as well. They also save the name of the current file.
 
-### Using a view 
+### Using and sharing a view{#xsharing_view} 
 
 Click on:
 
-- a **row** to load the associated filters into the current file.
-- **the blue View number** to open the view in an other tab.
+- A **row** to load the associated filters into the current file.
+- **The blue View number** to open the view in an other tab.
 - **`Share` icon**: Copy the link and filter to your clipboard, for pasting into a document or sending to someone. If you send someone a shortlink to a view, when they click on it they will be taken to the *same view of the current file* (providing you have given them View or Edit rights to the file).
-
-- **`Edit` icon**: Edit the view - see below.
+- **`Edit` icon**: Edit the view - [see below](#xedit_view)
 - **`Hide` icon**: Hide this row in future from this table.  You may want to use this button to clear unused views from your table. If you already shared this link with someone, it will still work even though it is hidden.
 
 ### ⭐ Recommended views versus 🤵custom views
@@ -52,9 +51,11 @@ Complete views replace the existing view and all the filters, included for examp
 
 "Add-on" views are are added after any other existing filters and do not replace them. So you can use them for example to add a particular kind of formatting, like making all the links pink, or to add one instruction, like "remove all links mentioned only once".
 
+![image-20220808114607154](_assets/image-20220808114607154.png){width=650}
+
 Complete views belong with the current file and you can edit them, whereas Add-ons exist separately of individual files (actually, they belong to `example-file`) and you can't edit them (unless you are an admin). 
 
-## To edit the content (filter, tab etc) of an existing view:
+## To edit the content (filter, tab etc) of an existing view:{#xedit_view}
 
 Set up the content the way you want it in the app, so it looks exactly the way it should when someone in the future clicks on the link. Then go to the filter which you want to update and press the edit button: 
 
@@ -64,17 +65,16 @@ Set up the content the way you want it in the app, so it looks exactly the way i
 
 In the modal dialog which opens, make sure you check this box. You can optionally change the title too.
 
-![image-20220616161209527](_assets/image-20220616161209527.png)
+![image-20220808120110607](_assets/image-20220808120110607.png){width=650}
 
 If all you want to do is change the title, make sure the checkbox is **not** checked.
 
 
 
-## Jumping to a view
+## Applying a view
+![image-20220808114935730](_assets/image-20220808114935730.png){width=650}
 
-![image-20220623083702198](_assets/image-20220623083702198.png)
-
-If you know the number of a shortlink for the current file, just paste the number in this box and press the arrow.  
+When you view a map which has been downloaded as an image you will see there is a unique number in the bottom left-hand corner. Using this number you can jump to this particular view on that specific file, just paste the number in this box at the bottom of the dashboard and press the arrow. If you share this number with others who have edit or view access they will also be taken to this view.
 
 ## Medals
 

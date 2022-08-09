@@ -26,6 +26,10 @@ We have an <a href="https://causalmap.shinyapps.io/pdf2excel/">app</a> for that!
 Copy your text from the word document into an excel, in a format ready for uploading. <a href="https://guide.causalmap.app/import.html#uploading-from-word">Click here</a> for more information. 
 </details>
 
+<details><summary>Upload data from a Google form</summary>
+Download the Google form as an excel document. Add $ to the start of any column headers that you wnat to be treated as statements and # to any you wish to be treated as important additional information. Then click the green upload button in the top panel to upload this data. The app will read the first tab and will ignore other tabs. The app will recognise each row as one source. <a href=https://guide.causalmap.app/ximport.html#upload-summary"">Click here</a> for more information. 
+</details>
+
 <details><summary>Upload closed questions</summary>
 In the Sources table, ensure all closed questions are in the sources tab. The app will then recognise these questions as closed questions and feed them into the closed questions table and recode a fixed set of words into + positive, - negative and 0 neutral. <a href="https://guide.causalmap.app/importing-your-data-special-cases.html#uploading-closed-question-blocks">Click here</a> for more information. 
 </details>

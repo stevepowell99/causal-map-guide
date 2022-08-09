@@ -20,7 +20,7 @@
 | **Memos**               | You can make short notes or memos on each statement, as well as about each causal link, each factor, each source, each question and the project globally. |
 | **Nested factors** | Factor labels can be nested meaning there are higher level factors i.e <u>New intervention; midwife training; hand washing instructions</u>. [See more here.](#simplifying) |
 | **Original links** | Often, there is more than one link between any pair of factors. We can call these the original links especially when we bundle them together for display purposes so they visually look like one. In this case we can say that the bundled link on the map actually consists of several original links. |
-| **Shortlink** | A weblink (URL) to a causal map which has been shortened, usually to make sharing it easier. You can easily make [shortlinks](#xshortlinks) using a button in the app. |
+| **Shortlink** | A weblink (URL) to a causal map which has been shortened, usually to make sharing it easier. You can easily make [shortlinks](#xshortlinks) using the dashboard. |
 | **Statement** | Refers to each individual piece of text to be coded in Causal Map, usually this is a sentence, a paragraph or a few paragraphs. Each statement has an ID; a number like 1, 2, 3 etc. |
 | **Source** | Sources are where your statements come from, this could be respondents you have interviewed or documents you have collected. |
 | **Weblink** | A complete URL like https://causalmap.shinyapps.io/CausalMap2/ |

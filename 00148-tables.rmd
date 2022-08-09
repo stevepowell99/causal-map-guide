@@ -9,11 +9,7 @@ From simply creating a table showing the total links to and from each factor to 
 
 ## Presets{#preset-tables}
 
-If you want to keep things simple, try creating a table using one of the quick presets:
-
-![image-20210914081424695](_assets/image-20210914081424695.png)
-
-... and the presets relevant to each table are also accessible from within that table:
+If you want to keep things simple the presets relevant to each table are accessible from each of the table tabsable, so just click on the button to create that table.
 
 ![image-20210914081506509](_assets/image-20210914081506509.png){width=650}
 
