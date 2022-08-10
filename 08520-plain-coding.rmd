@@ -17,9 +17,9 @@ So by default, plain codings will still appear in maps, as self-loops from the f
 
 `find links field=hashtags value=#plain_coding operator=notcontains`
 
-There is a shortcut button to apply this filter. ![image-20220210191520259](_assets/image-20220210191520259.png)
+There is a shortcut button to apply this filter in the addons section in the dashboard.
 
-In future we might make this a default. 
+![image-20220809115120423](_assets/image-20220809115120423.png){width=650}
 
 It would also be possible to format this kind of link in a special way, e.g. by not showing any arrowheads.
 
@@ -39,9 +39,7 @@ There is just a little button for plain coding. ![image-20220210155741353](_asse
 - When a coding you are going to make, or one which you are editing, has this special hashtag, the consequence factor selector is greyed out and always has the same contents as the influence factor.
 - When doing plain coding, if you put more than one factor in the first factor dropdown, each factor will just get one link to itself (rather than links being created between all the factors).
 
-
-
-![chrome_EDvvNSi30t](_assets/chrome_EDvvNSi30t.gif){width=650}
+![chrome_JYHrvSSH8p](_assets/chrome_JYHrvSSH8p.gif){width=650}
 
 ## Future
 

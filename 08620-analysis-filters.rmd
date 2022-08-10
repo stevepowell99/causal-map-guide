@@ -16,43 +16,35 @@ In this case, you are searching not the `text` of the statement but the `sex` of
 
 ### Searching and filtering factors
 
-To find factors which `contain` the word `Cash` in their `label`, click `find factors` and type to select factors which you want to find.
+To find factors which `contain` the word `Food` in their `label`, click `find factors` and type to select factors which you want to find.
 
-![image-20210929183453016](_assets/image-20210929183453016.png){width=650}
+![image-20220809121243579](_assets/image-20220809121243579.png){width=650}
 
 - Select one or more pre-existing factors. Press `enter` to accept
-- And/or just type fragments of text like `Cash` which might match several factors; type a tab to complete
+- And/or just type fragments of text like `Food` which might match several factors; type a tab to complete
 
-The map changes:
-
-![image-20210929184054292](_assets/image-20210929184054292.png){width=650}
+The map changes:![example-file-2022-08-09 (4)](_assets/example-file-2022-08-09 (4).svg){width=650}
 
 - All factors matched by the search are, by default, *highlighted*.
 - Only the factors matched by the search and those upstream and downstream (left and right) of them are shown, as many steps as set by the `Upstream steps` and `Downstream steps` sliders.
-
-Factors are only matched if the search term uses the same case, e.g. “Farming” will not match “farming” or “FARMING”.
 
 For a more visual representation: The following examples demonstrate how applying different upstream and downstream step filters affect the causal pathways presented in the map.
 
 **Searching for text ‘Flooding’** 
 
-One step upstream – one step downstream:
-
-![image-20211228115855510](_assets/image-20211228115855510.png){width=650}
+One step upstream – one step downstream:![example-file-2022-08-09 (5)](_assets/example-file-2022-08-09 (5).svg){width=650}
 
 
 
 One step upstream – zero steps downstream:
 
-![image-20211228115935071](_assets/image-20211228115935071.png){width=650}
-
-
+![image-20220809122516625](_assets/image-20220809122516625.png){width=650}
 
 This analysis function is particularly useful for searching for important factors such as intervention activities or intended programme outcomes and can be used in conjunction with [flags](#xflags).
 
 This also works when you include 0 steps upstream and 0 steps downstream:
 
-![image-20211228120112398](_assets/image-20211228120112398.png){width=650}
+![image-20220809122350919](_assets/image-20220809122350919.png){width=650}
 
 ## Find statements, find links {#xfind-statements-links}
 
@@ -112,11 +104,13 @@ you see this:
 ## Excluding factors, links, statements, sources and questions with `notcontains` and `notequals`
 
 
-![image-20211017203030093](_assets/image-20211017203030093.png){width=650}
+![image-20220809124232167](_assets/image-20220809124232167.png){width=650}
 
-![image-20211017203439458](_assets/image-20211017203439458.png){width=650}
+![lPyHGbTm3k](_assets/lPyHGbTm3k.png){width=650}
 
-![image-20211017203255902](_assets/image-20211017203255902.png){width=650}
+
+
+![image-20220809124734954](_assets/image-20220809124734954.png){width=650}
 
 Note how, logically enough, following a search for factors which do not contain a certain phrase, all the remaining factors have by default a coloured background.
 
@@ -129,7 +123,11 @@ You can exclude statements, sources etc in the same way. Or you could filter for
 
 ![image-20211017130102189](_assets/image-20211017130102189.png){width=650}
 
-![image-20211016141204775](_assets/image-20211016141204775.png){width=650}
+![image-20220809125945262](_assets/image-20220809125945262.png){width=650}
+
+4427
+
+![image-20220809125958876](_assets/image-20220809125958876.png){width=650}
 
 This analysis function is a powerful tool which enables you to view full causal pathways and to interrogate the relationships between specific causal factors. See the next section for more information on how to use the [tracing robustness](#xrobustness).
 
@@ -139,9 +137,7 @@ This analysis function is a powerful tool which enables you to view full causal 
 
 Bundling factors allows us to combine multiple factors into one box. This can be useful if we want to see the influences or consequences of factors with similar attributes. To use this function you just type in the search box what you want the factor label to contain and the app will bundle all the labels containing that text into one. Remember to use the exact spelling and case that is in the factor labels you want to combine. The below screenshot shows all factors including the words 'improved health' bundled into one factor label.
 
- 
-
-![image-20211206170740020](_assets/image-20211206170740020.png){width=650}
+ ![example-file-2022-08-09](_assets/example-file-2022-08-09.svg){width=650}
 
 
 

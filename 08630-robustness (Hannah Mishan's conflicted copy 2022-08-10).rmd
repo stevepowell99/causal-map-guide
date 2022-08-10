@@ -28,7 +28,13 @@ If you want to search from or to the **main** drivers and/or outcomes:
 
 Once you click `apply filter` your map will appear, as below. Orange indicates the origin(s) of the path, purple the target factor(s) and green any factors in between.
 
-![image-20211016141204775](_assets/image-20211016141204775.png){width=650}
+![img](_assets/clip_image004.png){width=650}
+
+ 4427
+
+![img](_assets/clip_image002.png){width=650}
+
+
 
 In this example, there are causal paths from the two external factors to the two outcomes. In real-life examples, these paths may be much harder to follow, so their are best seen and shown by using path tracing, as it simplifies the map and highlights the intervening factors between the two factors.
 
@@ -38,29 +44,11 @@ Path tracing is the prerequisite for calculating Robustness.
 
 It is [also possible]({#xrobustness-by-field}) to count, for example, how many sources mentioned a complete path.
 
-### 🧪Removing unwanted links
-
-Suppose you have a map with links B --> D, C --> D and also B --> C. If you run this filter:
-
-`trace paths length=1 to=D`
-
-the app will show you also the path from B to C, because both B and C are one link away from D, and there is a path from B to C. But that might have surprised you, as the path from B to C does not get you any closer to D. So you might prefer this filter:
-
-`trace paths length=1 to=D remove_links=T`
-
-... which will remove any such links.
-
-In other words, `trace paths length=L from=X to=Y` says "show me all the factors which are on paths from X to Y no longer than L, and all the links between such factors" whereas `trace paths length=L from=X to=Y remove_links=F` says "show me all the paths from X to Y no longer than L". This should probably be the default, but in order to maintain compatibility we will leave it like it is.
-
-
-
 ### How to calculate robustness
 
 Once you have applied the [trace path filter](#howtotracepathsandrobustness), you can find the robustness calculations in the `robustness` tab. Here is the table for the example above.
 
-![UpSR4OnxP6](_assets/UpSR4OnxP6.gif){width=650}
-
-![image-20211017130218716](_assets/image-20211017130218716.png){width=650}
+![image-20220809131222339](_assets/image-20220809131222339.png){width=650}
 
 In this tab you will find a table displaying the number of links between your `origin` and `target` factors. A larger number means more evidence; more pieces would have to be deleted until we gave up the hypothesis that the Origin factors influence the Target factors at all. 
 

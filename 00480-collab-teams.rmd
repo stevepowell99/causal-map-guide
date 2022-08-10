@@ -30,7 +30,7 @@ If you want, you can press the button to get the latest version, but if you are 
 We **don't yet support** doing any of these things while the file is open for in different sessions:
 
 - **using the factor editor** (The "Update" button will be greyed if the contents of the editor are not the newest version of the file -- but really, we don't anyway recommend doing any major reorganisation of your factor labels while someone else is working on the file at the same time!)
-  - 🧪 In this case, if you are sure you are ok to continue editing factors with the Factor Editor, for example someone else has left the file open on their computer but gone for lunch, there is a checkbox you can use to override the lock. ![image-20220624201919524](_assets/image-20220624201919524.png)
+  - In this case, if you are sure you are ok to continue editing factors with the Factor Editor, for example someone else has left the file open on their computer but gone for lunch, there is a checkbox you can use to override the lock. ![image-20220624201919524](_assets/image-20220624201919524.png)
 
 - doing advanced file operations like merging or renaming files
 

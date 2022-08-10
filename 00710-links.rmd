@@ -2,7 +2,7 @@
 
 This table counts factors differently to the mentions table as it counts links rather than individual factor mentions. Each row represents one link and has columns for that link’s influence factor and consequence factor, as well as many other columns. This table is also linked to the [statements](#xthe-statements-table) and [sources](#xthe-sources-table) tables. Use this table to show the links between factor labels. Information like the related quote is also available in this table, the easiest way to view this is to select the quotes preset.
 
-![image-20211122150602045](_assets/image-20211122150602045.png){width=650}
+![image-20220809100111331](_assets/image-20220809100111331.png){width=650}
 
 ### Fields
 

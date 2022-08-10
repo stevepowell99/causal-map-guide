@@ -24,7 +24,7 @@ Use `Crtl H` on PC to search and replace.
 
 Use `Crtl Alt Up/Down` to edit multiple lines at once.
 
-![image-20220117121742651](_assets/image-20220117121742651.png){width=650}
+![image-20220809114233781](_assets/image-20220809114233781.png){width=650}
 
 Here it is easy to “move” an (incorrectly labelled) factor 
 

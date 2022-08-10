@@ -1,6 +1,6 @@
 # Uploading your data{#ximport}
 
-## 🧪Importing a simple, wide-format file{#upload-summary} 
+## Importing a simple, wide-format file{#upload-summary} 
 
 There are many ways to import data into Causal Map. Perhaps the simplest way to upload your data is in wide format. This is the kind of data you might often get if you have been using Google Forms. 
 

@@ -1,0 +1,16 @@
+#  Managing your subscription
+
+To manage, cancel or renew your subscription follow the these steps, go to the Account tab in the app.
+
+  ![image-20220810101815442](_assets/image-20220810101815442.png){width=650}
+
+The accounts tab will show you:
+	-Details of any teams you manage
+	-Any teams you are a member of
+	-Files you have created
+	-Your subscription
+
+To change you subscription click the update subscription button at the bottom of the page
+
+![image-20220810102203892](_assets/image-20220810102203892.png){width=650}
+

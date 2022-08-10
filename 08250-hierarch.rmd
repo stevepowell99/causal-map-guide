@@ -218,9 +218,9 @@ Isn’t that a contradiction? Didn’t we just say that “Health” is not to b
 
 
 
-  
+  ![image-20220809111534899](_assets/image-20220809111534899.png){width=650}
 
-![image-20210115220039190](_assets/image-20210115220039190.png){width=650} 
+ 
 
 Assuming we have a causal map which has used nested coding, as in the small map shown above, how do we take advantage of this coding to “zoom out”? 
 
@@ -230,14 +230,14 @@ Assuming we have a causal map which has used nested coding, as in the small map 
 
 If we define the "level" of a factor as the number of semicolons in its label plus 1, here is the same map, zoomed out to level 2 (i.e. a maximum of one semi-colon per factor). 
 
-![image-20210115220051522](_assets/image-20210115220051522.png){width=650} 
-
- 
+ ![image-20220809111611024](_assets/image-20220809111611024.png){width=650}
 
 Here is the same map, zoomed out to level 1 (i.e. there are no semi-colons at all).
 
-![image-20210115220101258](_assets/image-20210115220101258.png){width=650} 
+
+
+![image-20220809111855871](_assets/image-20220809111855871.png){width=650}
 
 **A warning**: for convenience, in both of these diagrams, the set of links between each pair of factors are displayed as one, with a number to tell us how many links there actually are. But most generally, we must not assume that links can in fact be combined in this way without caveats; it could be, for example, that some of them express increasing, and some decreasing, influences. 
 
-Another, related, warning: causal mapping as described here is a *qualitative* process. While zooming in and out can be very useful, it should never be used mechanically. For example, if we had the information “my daughter went to the new training course and now she is quite obsessed about washing her hands, she just won’t stop”, we might code this as “Health behaviour; hand washing; obsessive” but we would certainly pause before zooming out without further thought. Perhaps this new behaviour belongs somewhere quite different. To a qualitative researcher, narrative is not additional colour, but raw data. 
+Another, related, warning: causal mapping as described here is a *qualitative* process. While zooming in and out can be very useful, it should never be used mechanically. For example, if we had the information “my daughter went to the new training course and now she is quite obsessed about washing her hands, she just won’t stop”, we might code this as “Health behaviour; Hand washing; Obsessive” but we would certainly pause before zooming out without further thought. Perhaps this new behaviour belongs somewhere quite different. To a qualitative researcher, narrative is not additional colour, but raw data. 

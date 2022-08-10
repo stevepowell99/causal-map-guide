@@ -85,7 +85,7 @@ There are many [caveats](#caveat-numbers) to using counts and percentages of men
 
 The details of how to do make these calculations are quite open; at the moment, the app uses the relevant baseline within the current map. So if you want to display "source count", or the number of sources who mentioned each link, and bundle the links by gender, the app takes as the baseline *the source count for each gender in the current map*. So if 7 women and 5 men mentioned a connection between X and Y, and altogether 14 women and 10 men mentioned anything in the whole map, then the percentage will be 50% on each.
 
-If you use percentages for labels, the label shows the raw number, 🧪 the baseline, and the percentage. 
+If you use percentages for labels, the label shows the raw number, the baseline, and the percentage. 
 
 If you use percentages for colour or width of the links, the percentage is used rather than the raw number. 
 
