@@ -156,7 +156,7 @@ Some examples of calculated fields:
 - out_degree: the number of outgoing links.
 - role: the number of incoming links minus the number of incoming links. High values are drivers, low values are outcomes
 - frequency: the number of links.
--  driver_score: how strongly is this factor a driver? (driver_score=factors$out_degree-factors$in_degree * 2)
+-  driver_score: how strongly is this factor a driver? (`driver_score`=`factors$out_degree`-`factors$in_degree` * 2)
 - outcome_score: how strongly is this factor an outcome?
 - driver_rank: rank of driver_score.
 - outcome_rank: rank of outcome_score.

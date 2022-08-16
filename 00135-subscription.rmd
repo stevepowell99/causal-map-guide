@@ -1,4 +1,4 @@
-#  Managing your subscription
+#  Managing your subscription{#xmanage_your_subscription}
 
 To manage, cancel or renew your subscription follow the these steps, go to the Account tab in the app.
 
@@ -10,7 +10,8 @@ The accounts tab will show you:
 	-Files you have created
 	-Your subscription
 
-To change you subscription click the update subscription button at the bottom of the page
+To change your subscription click the update subscription button at the bottom of the page
 
 ![image-20220810102203892](_assets/image-20220810102203892.png){width=650}
 
+From here you can renew, cancel or change your subscription. 

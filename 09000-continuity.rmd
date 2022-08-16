@@ -39,14 +39,18 @@ So a thread is a continuous chain of links with the same ID along a path. Within
 You set the filter `trace threads` *after* a `trace paths` or `trace robustness` filter. This creates the following calculated fields:
 
 - Links fields
-  - has_downstream_threads 
-  - downstream_threads
+  - has_threads threads
 - Factor field
-  - downstream_threads_surviving
+  - threads_surviving
+  - threads
 
-You can for example label the links like this `label links value=unique: downstream_threads`. 
+You can for example label the links like this `label links value=unique: threads`. 
 
-You can for example colour the factors like this `color factors field=downstream_threads_surviving`. So if you set a filter to *trace threads downstream* from Cash Transfer C, imagine factor C is coloured completely red, and imagine a factor F immediately downstream of it being coloured with an intensity of red according to the number of sources which mentioned the link from C to F. In fact every factor downstream of C will be coloured with a shade of red in the same way. The central question of whether any source mentioned a whole path from C to, say, "Increased wellbeing" can be answered simply by seeing whether there is any red in the colour of "Increased wellbeing" or whether it is completely white. 
+These fields are also available as `has_downstream_threads`, `has_downstream_threads_surviving` etc, but as this filter now works upstream too, we have removed the `downstream` part.
+
+
+
+You can for example colour the factors like this `color factors field=threads_surviving`. So if you set a filter to *trace threads downstream* from Cash Transfer C, imagine factor C is coloured completely red, and imagine a factor F immediately downstream of it being coloured with an intensity of red according to the number of sources which mentioned the link from C to F. In fact every factor downstream of C will be coloured with a shade of red in the same way. The central question of whether any source mentioned a whole path from C to, say, "Increased wellbeing" can be answered simply by seeing whether there is any red in the colour of "Increased wellbeing" or whether it is completely white. 
 
 ... So you can just look at C and watch its influence (in terms of source continuity) seeping downstream and spreading out along all source-complete paths.
 
@@ -59,6 +63,16 @@ Tracing paths anchors the filter to one or more factors, and if you use thread t
 ![image-20220301095046531](_assets/image-20220301095046531.png)
 
 In this example, the width of the links reflects the number of sources mentioning it, but the colour of the links (and factors) reflects how many sources have  a continuous story starting from "Living in a refugee settlement" all the way up to that point. This difference is also shown in the pair of numbers on the links. So the top-right link was mentioned by one source, but the 0 shows that no single source mentioned a story all the way from "Living in a refugee settlement" which also includes this link.
+
+All of this works for tracing influences upstream too:
+
+```
+trace paths length=3 from=WASH information to=Improved health direc
+trace threads
+
+```
+
+
 
 ## Advanced diagnostic filter: Mark links for continuity (Print View only)
 

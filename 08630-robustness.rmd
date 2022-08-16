@@ -44,11 +44,17 @@ Suppose you have a map with links B --> D, C --> D and also B --> C. If you run 
 
 `trace paths length=1 to=D`
 
-the app will show you also the path from B to C, because both B and C are one link away from D, and there is a path from B to C. But that might have surprised you, as the path from B to C does not get you any closer to D. So you might prefer this filter:
+the app will show you also the path from B to C, because both B and C are one link away from D, and there is a path from B to C. But that might have surprised you, as the path from B to C does not get you any closer to D. 
+
+![image-20220810124747011](_assets/image-20220810124747011.png)
+
+So you might prefer this filter:
 
 `trace paths length=1 to=D remove_links=T`
 
 ... which will remove any such links.
+
+![image-20220810124740033](_assets/image-20220810124740033.png)
 
 In other words, `trace paths length=L from=X to=Y` says "show me all the factors which are on paths from X to Y no longer than L, and all the links between such factors" whereas `trace paths length=L from=X to=Y remove_links=F` says "show me all the paths from X to Y no longer than L". This should probably be the default, but in order to maintain compatibility we will leave it like it is.
 
