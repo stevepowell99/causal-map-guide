@@ -1,0 +1,39 @@
+## Signing up
+
+Create your account [here](https://causalmap.shinyapps.io/CausalMap2/)
+
+- If you have a paid subscription, make sure you used the email you use to login is the same as the one for which you have a subscription. There are a variety of options when it comes to subscriptions, so have a [look](https://causalmap.app/subscriptions/) and find the one that is right for you. To cancel, renew or manage your subscription see the [following section](#xmanage_your_subscription).
+
+
+- If someone has [shared files](#xpermissions) with you, however you sign in, make sure the associated email is the one the files were shared to.
+
+## What do you want to do?
+
+///View a specific filtered map which someone sent you a link to
+If you have been [sent a link](#xinvite) to a specific map by someone you will be automatically taken to view this map (or table) once you click on the link, providing they have given you the correct permissions.
+
+///View a specific project (aka 'mapfile')
+If you have been asked to log in to view a whole project, click on the dropdown list on the left-hand side and click on the relevant file to load it. This will then load that project, providing you have been given the correct permissions.
+
+
+
+![ZwspZWog6A](_assets/ZwspZWog6A.gif){width=650}
+
+
+
+///Just explore the app
+If you have just loaded the app without clicking on a link, you will be taken to an example file called `example-file`. You can also create your own file by [copying the example file](#xown-copy) or [uploading your own](#ximport), this file will then be added to the dropdown list in the top left-hand side.
+
+![ZwspZWog6A](_assets/ZwspZWog6A.gif){width=650}
+
+
+
+## Exploring a file
+Once you load a file you can see how data has been [coded](#xcoding-panel), look at transcripts using the ['book' buttons](#xstatement-nav), or create your own maps using the [filters](xintro-filters).
+
+You won't be able to change anything if you have View Only access to a file, but you can still [take a look around](#quick-tour) and have a play with the [filters](#xintro-filters) and [tables](x#all-tables).
+
+And if you want to try coding give it a go with the help of the [coding section](#xcoding-panel)!
+
+
+

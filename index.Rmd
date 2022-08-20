@@ -73,6 +73,7 @@ This guide is licensed to you under [Creative Commons Attribution-NonCommercial-
 
 
 ```{r,echo=F}
+
 if(T) readLines("Guide-to-causal-mapping.Rmd") %>% 
   str_match(".*vimeo\\.com.*") %>% 
   keep(~!is.na(.)) %>% 

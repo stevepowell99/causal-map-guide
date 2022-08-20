@@ -28,13 +28,7 @@ If you want to search from or to the **main** drivers and/or outcomes:
 
 Once you click `apply filter` your map will appear, as below. Orange indicates the origin(s) of the path, purple the target factor(s) and green any factors in between.
 
-
-
-![img](_assets/clip_image004.png){width=650}
-
- 4427
-
-![img](_assets/clip_image002.png){width=650}
+![image-20211016141204775](_assets/image-20211016141204775.png){width=650}
 
 In this example, there are causal paths from the two external factors to the two outcomes. In real-life examples, these paths may be much harder to follow, so their are best seen and shown by using path tracing, as it simplifies the map and highlights the intervening factors between the two factors.
 

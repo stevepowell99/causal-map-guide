@@ -55,9 +55,7 @@ These buttons offer quick ways to add filters without going through a dialog pan
 
 ### The filter buttons
 
-There are in three sections: analysis, conditional formats and simple formats. See the section on [filters](https://guide.causalmap.app/all-the-filters.html).
-
-###  if(T) readLines("Guide-to-causal-mapping.Rmd") %>%   str_match(".*vimeo\\.com.*") %>%   keep(~!is.na(.)) %>%   unique %>%   paste0("```{r,echo=F}\n",.,"\n```\n") %>%   c("# Video list{#xvideo-list}\n\nThese videos are all included at different points in the Guide. If you love videos, here they are again in one place. Feel free to binge.",.) %>%   writeLines("00195-video_list.rmd")​{r,echo=F}
+They are in three sections: analysis, conditional formats and simple formats. See the section on [filters](https://guide.causalmap.app/all-the-filters.html).
 
 To see additional information about the statement you are currently viewing such as the `source_id` and `question_id` slide the info toggle.![image-20211220153438354](_assets/image-20211220153438354.png)
 

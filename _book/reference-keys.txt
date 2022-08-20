@@ -5,7 +5,9 @@ quizzes
 selected-projects-to-date
 prerequisites-for-using-the-app
 x5
-signing-up-and-signing-in-at-causal-map
+sign-up
+view-a-file
+exploring-a-file
 xmanage_your_subscription
 quick-tour
 xlhs
@@ -15,7 +17,6 @@ xstatement-view
 top-row
 shortcut-buttons
 the-filter-buttons
-ift-readlinesguide-to-causal-mapping.rmd-str_match.vimeo.com.-keepis.na.-unique-paste0rechofn.n-c-video-listxvideo-listvideos-are-all-included-at-different-points-in-the-guide.-if-you-love-videos-here-they-are-again-in-one-place.-feel-free-to-binge..-writelines00195-video_list.rmdrechof
 rhs
 not2
 not
