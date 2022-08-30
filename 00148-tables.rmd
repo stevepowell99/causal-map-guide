@@ -86,3 +86,80 @@ If you want printable quotes for your report, there is a table preset for that. 
 ### Filtering print view of tables
 
 Now you press the toggle for Print View in a table, you can still use the additional table filters to filter the information in your table. This can be really handy, for example for finding the right quote. Don't forget you can also include and exclude the fields which appear in Print View, and change their order, using the Show Columns box. Only the first 100 rows are shown.
+
+
+
+## 🧪 New tables
+
+The eight existing tables tabs had various weaknesses:
+
+- Many different tabs
+
+- Ajax errors
+
+- Inconsistent interface and ways of producing different tables, e.g. some have certain filters or types of shading, others don't
+
+- Not possible to export as Excel the same columns as in the current view
+
+- Not possible to consistently restore tables from shortlinks
+
+- Not possible to construct pivot tables
+
+- Hard to write code to handle clicks on rows
+
+### Roadmap
+
+The old tables will continue to function but as they take quite a lot of space and resources we will gradually hide them.
+
+Current limitations of new tables:
+
+- Can only filter by one column (will probably fix this)
+- Cannot presently filter numeric columns as numbers
+
+### Familiar functionality with small differences
+
+Hopefully it wont be much different from before, you'll just see some new functionality.
+
+- Select the `Tables` tab and select the table you want from the tables chooser buttons - the same choices as before.
+
+- You can interact with the rows of (some of) the tables as before, but instead of clicking on the row, you click on the three pink dots at the end of the row. (That means you can now also click on the rows as normal e.g. to copy something.)
+
+- You sort columns by clicking on them as before.
+- You filter columns by clicking on the = sign above the column you want to filter.
+- The "print view" and the help dropdowns work as before.
+- You can save to xlsx as before, but now the file includes what you see rather than including additional columns or rows.
+- As before, you can view filtered or unfiltered versions of the tables ... there is a subtle difference that the settings such as column selection and number of rows apply to both versions of each table rather than being separate as before -- that should be more intuitive than before.
+
+### New functionality
+
+- You can select font size and table styling
+- The `presets` button now brings up a list of all available preset tables, not just for the current table, and it works via the existing dashboard. That means you can also add your own presets for a particular file -- by saving a view as a shortlink.
+- The biggest difference is the way you construct your table, which is more powerful and hopefully easier to understand.
+
+#### Constructing your table
+
+There are three possibilties: 
+
+1) Normal table. You simply select the first column you want in the "rows" box and then add any others you need in the "columns" box.  The first column is also formatted a bit differently.
+
+2) Compressed rows: this happens when you select a field for your rows which is "shorter" than the actual number of rows in the table. For example [5043](https://causalmap.shinyapps.io/tokyo/?s=5043)  , in the factors table you can select level_1_label. Because there are fewer of these than there are factors, the table will be "compressed" and we can choose how we want the multiple results for each row to be displayed -- here we have chosen to display all the labels, but we could also have displayed just the number of values.  
+
+   ![image-20220830172706445](_assets/image-20220830172706445.png)
+
+Here, we compress the sources table just by the answer to their question on purchasing power [5044](https://causalmap.shinyapps.io/tokyo/?s=5044), and display several other columns. 
+
+![image-20220830173110732](_assets/image-20220830173110732.png)
+
+This is the same thing, but showing just the counts in each cell: [5045](https://causalmap.shinyapps.io/tokyo/?s=5045).
+
+![image-20220830173313874](_assets/image-20220830173313874.png)
+
+3. Pivot tables
+
+Finally, it is possible to construct pivot tables by selecting a column to pivot by: [5046](https://causalmap.shinyapps.io/tokyo/?s=5046). Again, you can fill the cells with all the values of a field you select, like source_id, or all the unique values, or the counts.
+
+![image-20220830173540123](_assets/image-20220830173540123.png)
+
+Pivot tables give us lots of new possibilities, like this display of closed questions: [5047](https://causalmap.shinyapps.io/tokyo/?s=5047). 
+
+![image-20220830174235089](_assets/image-20220830174235089.png)

@@ -5,8 +5,8 @@ quizzes
 selected-projects-to-date
 prerequisites-for-using-the-app
 x5
-sign-up
-view-a-file
+signing-up
+what-do-you-want-to-do
 exploring-a-file
 xmanage_your_subscription
 quick-tour
@@ -62,6 +62,11 @@ sorting
 reordering-columns
 xprint-view-tables
 filtering-print-view-of-tables
+new-tables
+roadmap
+familiar-functionality-with-small-differences
+new-functionality
+constructing-your-table
 FAQs
 logging-in
 setting-up
@@ -238,7 +243,8 @@ permanence
 xhiding-quickfields
 position-in-hierarchy
 current-limitation
-quickfields-for-factor-labels-versus-hashtags-for-links
+quickfields-for-links
+quickfields-for-factor-labels-versus-ordinary-hashtags-for-links
 comparing
 filtering-by-respondent-group
 showing-distinctive-maps-for-each-group

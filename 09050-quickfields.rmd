@@ -2,7 +2,7 @@
 
 ## Summary
 
-Quickfields are a special kind of [flag](#xflag) for factor labels. They are a *refinement* of flags for when you have a set of categories which is mutually exclusive.
+Quickfields are a special kind of [flag](#xflag) for factors and links. They are a *refinement* of flags for when you have a set of categories which is mutually exclusive.
 
 You can add information about one or more dimensions using a format like this:
 
@@ -103,9 +103,13 @@ This makes particular sense **when the lower levels of the hierarchy might diffe
 
 ## Current limitation
 
-When you use filters which merge factors together (zooming and bundling factors) the values of quickfields for any factors which are lost because they are nested into the higher levels is not available.    
+When you use filters which merge factors together (zooming and bundling factors) the values of quickfields for *any factors which are lost because they are nested into the higher levels* are not available.    
 
-## Quickfields for factor labels versus hashtags for links
+## 🧪Quickfields for links
+
+Quickfields are now available for links too. You use the same syntax in the "hashtags" box.
+
+## Quickfields for factor labels versus ordinary hashtags for links
 
 It makes most sense to add dimensional information as described above when the distinctions are best understood as part of the causal structure, as part of the hierarchy of factors. For example:
 

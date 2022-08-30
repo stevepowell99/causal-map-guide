@@ -11,16 +11,16 @@
 <meta name="author" content="Hannah Mishan">
 <meta name="author" content="Rebekah Arvard">
 <meta name="author" content="Samuel Goddard">
-<meta name="description" content="54.1 Summary Quickfields are a special kind of flag for factor labels. They are a refinement of flags for when you have a set of categories which is mutually exclusive. You can add information...">
+<meta name="description" content="54.1 Summary Quickfields are a special kind of flag for factors and links. They are a refinement of flags for when you have a set of categories which is mutually exclusive. You can add information...">
 <meta name="generator" content="bookdown 0.26 with bs4_book()">
 <meta property="og:title" content="Chapter 54 Quickfields | Guide to Causal Mapping">
 <meta property="og:type" content="book">
 <meta property="og:url" content="https://causalmap.app/xquickfields.html">
 <meta property="og:image" content="https://causalmap.app/_assets/image-20210520221329966.png">
-<meta property="og:description" content="54.1 Summary Quickfields are a special kind of flag for factor labels. They are a refinement of flags for when you have a set of categories which is mutually exclusive. You can add information...">
+<meta property="og:description" content="54.1 Summary Quickfields are a special kind of flag for factors and links. They are a refinement of flags for when you have a set of categories which is mutually exclusive. You can add information...">
 <meta name="twitter:card" content="summary">
 <meta name="twitter:title" content="Chapter 54 Quickfields | Guide to Causal Mapping">
-<meta name="twitter:description" content="54.1 Summary Quickfields are a special kind of flag for factor labels. They are a refinement of flags for when you have a set of categories which is mutually exclusive. You can add information...">
+<meta name="twitter:description" content="54.1 Summary Quickfields are a special kind of flag for factors and links. They are a refinement of flags for when you have a set of categories which is mutually exclusive. You can add information...">
 <meta name="twitter:image" content="https://causalmap.app/_assets/image-20210520221329966.png">
 <!-- JS --><script src="https://cdnjs.cloudflare.com/ajax/libs/clipboard.js/2.0.6/clipboard.min.js" integrity="sha256-inc5kl9MA1hkeYUt+EC3BhlIgyp/2jDIyBLS6k3UxPI=" crossorigin="anonymous"></script><script src="https://cdnjs.cloudflare.com/ajax/libs/fuse.js/6.4.6/fuse.js" integrity="sha512-zv6Ywkjyktsohkbp9bb45V6tEMoWhzFzXis+LrMehmJZZSys19Yxf1dopHx7WzIKxr5tK2dVcYmaCk2uqdjF4A==" crossorigin="anonymous"></script><script src="https://kit.fontawesome.com/6ecbd6c532.js" crossorigin="anonymous"></script><script src="libs/jquery-3.6.0/jquery-3.6.0.min.js"></script><meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
 <link href="libs/bootstrap-4.6.0/bootstrap.min.css" rel="stylesheet">
@@ -169,7 +169,7 @@
 <h2>
 <span class="header-section-number">54.1</span> Summary<a class="anchor" aria-label="anchor" href="#summary-8"><i class="fas fa-link"></i></a>
 </h2>
-<p>Quickfields are a special kind of <a href="#xflag">flag</a> for factor labels. They are a <em>refinement</em> of flags for when you have a set of categories which is mutually exclusive.</p>
+<p>Quickfields are a special kind of <a href="#xflag">flag</a> for factors and links. They are a <em>refinement</em> of flags for when you have a set of categories which is mutually exclusive.</p>
 <p>You can add information about one or more dimensions using a format like this:</p>
 <p><u>Crops improved / time:before</u></p>
 <p><u>Crops improved / time:after</u></p>
@@ -272,11 +272,17 @@
 <h2>
 <span class="header-section-number">54.10</span> Current limitation<a class="anchor" aria-label="anchor" href="#current-limitation"><i class="fas fa-link"></i></a>
 </h2>
-<p>When you use filters which merge factors together (zooming and bundling factors) the values of quickfields for any factors which are lost because they are nested into the higher levels is not available.</p>
+<p>When you use filters which merge factors together (zooming and bundling factors) the values of quickfields for <em>any factors which are lost because they are nested into the higher levels</em> are not available.</p>
 </div>
-<div id="quickfields-for-factor-labels-versus-hashtags-for-links" class="section level2" number="54.11">
+<div id="quickfields-for-links" class="section level2" number="54.11">
 <h2>
-<span class="header-section-number">54.11</span> Quickfields for factor labels versus hashtags for links<a class="anchor" aria-label="anchor" href="#quickfields-for-factor-labels-versus-hashtags-for-links"><i class="fas fa-link"></i></a>
+<span class="header-section-number">54.11</span> 🧪Quickfields for links<a class="anchor" aria-label="anchor" href="#quickfields-for-links"><i class="fas fa-link"></i></a>
+</h2>
+<p>Quickfields are now available for links too. You use the same syntax in the “hashtags” box.</p>
+</div>
+<div id="quickfields-for-factor-labels-versus-ordinary-hashtags-for-links" class="section level2" number="54.12">
+<h2>
+<span class="header-section-number">54.12</span> Quickfields for factor labels versus ordinary hashtags for links<a class="anchor" aria-label="anchor" href="#quickfields-for-factor-labels-versus-ordinary-hashtags-for-links"><i class="fas fa-link"></i></a>
 </h2>
 <p>It makes most sense to add dimensional information as described above when the distinctions are best understood as part of the causal structure, as part of the hierarchy of factors. For example:</p>
 <ul>
@@ -316,7 +322,8 @@
 <li><a class="nav-link" href="#xhiding-quickfields"><span class="header-section-number">54.8</span> Hiding quickfields</a></li>
 <li><a class="nav-link" href="#position-in-hierarchy"><span class="header-section-number">54.9</span> Position in hierarchy</a></li>
 <li><a class="nav-link" href="#current-limitation"><span class="header-section-number">54.10</span> Current limitation</a></li>
-<li><a class="nav-link" href="#quickfields-for-factor-labels-versus-hashtags-for-links"><span class="header-section-number">54.11</span> Quickfields for factor labels versus hashtags for links</a></li>
+<li><a class="nav-link" href="#quickfields-for-links"><span class="header-section-number">54.11</span> 🧪Quickfields for links</a></li>
+<li><a class="nav-link" href="#quickfields-for-factor-labels-versus-ordinary-hashtags-for-links"><span class="header-section-number">54.12</span> Quickfields for factor labels versus ordinary hashtags for links</a></li>
 </ul>
 
       <div class="book-extra">
@@ -334,7 +341,7 @@
 <footer class="bg-primary text-light mt-5"><div class="container"><div class="row">
 
   <div class="col-12 col-md-6 mt-3">
-    <p>"<strong>Guide to Causal Mapping</strong>" was written by Steve Powell<a href="#fn1" class="footnote-ref" id="fnref1"><sup>1</sup></a>, Fiona Remnant<a href="#fn2" class="footnote-ref" id="fnref2"><sup>2</sup></a>, James Copestake<a href="#fn3" class="footnote-ref" id="fnref3"><sup>3</sup></a>, Hannah Mishan<a href="#fn4" class="footnote-ref" id="fnref4"><sup>4</sup></a>, Rebekah Arvard<a href="#fn5" class="footnote-ref" id="fnref5"><sup>5</sup></a>, Samuel Goddard<a href="#fn6" class="footnote-ref" id="fnref6"><sup>6</sup></a>. It was last built on 2022-08-20.</p>
+    <p>"<strong>Guide to Causal Mapping</strong>" was written by Steve Powell<a href="#fn1" class="footnote-ref" id="fnref1"><sup>1</sup></a>, Fiona Remnant<a href="#fn2" class="footnote-ref" id="fnref2"><sup>2</sup></a>, James Copestake<a href="#fn3" class="footnote-ref" id="fnref3"><sup>3</sup></a>, Hannah Mishan<a href="#fn4" class="footnote-ref" id="fnref4"><sup>4</sup></a>, Rebekah Arvard<a href="#fn5" class="footnote-ref" id="fnref5"><sup>5</sup></a>, Samuel Goddard<a href="#fn6" class="footnote-ref" id="fnref6"><sup>6</sup></a>. It was last built on 2022-08-30.</p>
   </div>
 
   <div class="col-12 col-md-6 mt-3">

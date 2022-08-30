@@ -268,7 +268,92 @@
 <span class="header-section-number">13.3.1</span> Filtering print view of tables<a class="anchor" aria-label="anchor" href="#filtering-print-view-of-tables"><i class="fas fa-link"></i></a>
 </h3>
 <p>Now you press the toggle for Print View in a table, you can still use the additional table filters to filter the information in your table. This can be really handy, for example for finding the right quote. Don’t forget you can also include and exclude the fields which appear in Print View, and change their order, using the Show Columns box. Only the first 100 rows are shown.</p>
+</div>
+</div>
+<div id="new-tables" class="section level2" number="13.4">
+<h2>
+<span class="header-section-number">13.4</span> 🧪 New tables<a class="anchor" aria-label="anchor" href="#new-tables"><i class="fas fa-link"></i></a>
+</h2>
+<p>The eight existing tables tabs had various weaknesses:</p>
+<ul>
+<li><p>Many different tabs</p></li>
+<li><p>Ajax errors</p></li>
+<li><p>Inconsistent interface and ways of producing different tables, e.g. some have certain filters or types of shading, others don’t</p></li>
+<li><p>Not possible to export as Excel the same columns as in the current view</p></li>
+<li><p>Not possible to consistently restore tables from shortlinks</p></li>
+<li><p>Not possible to construct pivot tables</p></li>
+<li><p>Hard to write code to handle clicks on rows</p></li>
+</ul>
+<div id="roadmap" class="section level3" number="13.4.1">
+<h3>
+<span class="header-section-number">13.4.1</span> Roadmap<a class="anchor" aria-label="anchor" href="#roadmap"><i class="fas fa-link"></i></a>
+</h3>
+<p>The old tables will continue to function but as they take quite a lot of space and resources we will gradually hide them.</p>
+<p>Current limitations of new tables:</p>
+<ul>
+<li>Can only filter by one column (will probably fix this)</li>
+<li>Cannot presently filter numeric columns as numbers</li>
+</ul>
+</div>
+<div id="familiar-functionality-with-small-differences" class="section level3" number="13.4.2">
+<h3>
+<span class="header-section-number">13.4.2</span> Familiar functionality with small differences<a class="anchor" aria-label="anchor" href="#familiar-functionality-with-small-differences"><i class="fas fa-link"></i></a>
+</h3>
+<p>Hopefully it wont be much different from before, you’ll just see some new functionality.</p>
+<ul>
+<li><p>Select the <code>Tables</code> tab and select the table you want from the tables chooser buttons - the same choices as before.</p></li>
+<li><p>You can interact with the rows of (some of) the tables as before, but instead of clicking on the row, you click on the three pink dots at the end of the row. (That means you can now also click on the rows as normal e.g. to copy something.)</p></li>
+<li><p>You sort columns by clicking on them as before.</p></li>
+<li><p>You filter columns by clicking on the = sign above the column you want to filter.</p></li>
+<li><p>The “print view” and the help dropdowns work as before.</p></li>
+<li><p>You can save to xlsx as before, but now the file includes what you see rather than including additional columns or rows.</p></li>
+<li><p>As before, you can view filtered or unfiltered versions of the tables … there is a subtle difference that the settings such as column selection and number of rows apply to both versions of each table rather than being separate as before – that should be more intuitive than before.</p></li>
+</ul>
+</div>
+<div id="new-functionality" class="section level3" number="13.4.3">
+<h3>
+<span class="header-section-number">13.4.3</span> New functionality<a class="anchor" aria-label="anchor" href="#new-functionality"><i class="fas fa-link"></i></a>
+</h3>
+<ul>
+<li>You can select font size and table styling</li>
+<li>The <code>presets</code> button now brings up a list of all available preset tables, not just for the current table, and it works via the existing dashboard. That means you can also add your own presets for a particular file – by saving a view as a shortlink.</li>
+<li>The biggest difference is the way you construct your table, which is more powerful and hopefully easier to understand.</li>
+</ul>
+<div id="constructing-your-table" class="section level4" number="13.4.3.1">
+<h4>
+<span class="header-section-number">13.4.3.1</span> Constructing your table<a class="anchor" aria-label="anchor" href="#constructing-your-table"><i class="fas fa-link"></i></a>
+</h4>
+<p>There are three possibilties:</p>
+<ol style="list-style-type: decimal">
+<li><p>Normal table. You simply select the first column you want in the “rows” box and then add any others you need in the “columns” box. The first column is also formatted a bit differently.</p></li>
+<li>
+<p>Compressed rows: this happens when you select a field for your rows which is “shorter” than the actual number of rows in the table. For example <a href="https://causalmap.shinyapps.io/tokyo/?s=5043">5043</a> , in the factors table you can select level_1_label. Because there are fewer of these than there are factors, the table will be “compressed” and we can choose how we want the multiple results for each row to be displayed – here we have chosen to display all the labels, but we could also have displayed just the number of values.</p>
+<div class="figure">
+<img src="_assets/image-20220830172706445.png" alt=""><p class="caption">image-20220830172706445</p>
+</div>
+</li>
+</ol>
+<p>Here, we compress the sources table just by the answer to their question on purchasing power <a href="https://causalmap.shinyapps.io/tokyo/?s=5044">5044</a>, and display several other columns.</p>
+<div class="figure">
+<img src="_assets/image-20220830173110732.png" alt=""><p class="caption">image-20220830173110732</p>
+</div>
+<p>This is the same thing, but showing just the counts in each cell: <a href="https://causalmap.shinyapps.io/tokyo/?s=5045">5045</a>.</p>
+<div class="figure">
+<img src="_assets/image-20220830173313874.png" alt=""><p class="caption">image-20220830173313874</p>
+</div>
+<ol start="3" style="list-style-type: decimal">
+<li>Pivot tables</li>
+</ol>
+<p>Finally, it is possible to construct pivot tables by selecting a column to pivot by: <a href="https://causalmap.shinyapps.io/tokyo/?s=5046">5046</a>. Again, you can fill the cells with all the values of a field you select, like source_id, or all the unique values, or the counts.</p>
+<div class="figure">
+<img src="_assets/image-20220830173540123.png" alt=""><p class="caption">image-20220830173540123</p>
+</div>
+<p>Pivot tables give us lots of new possibilities, like this display of closed questions: <a href="https://causalmap.shinyapps.io/tokyo/?s=5047">5047</a>.</p>
+<div class="figure">
+<img src="_assets/image-20220830174235089.png" alt=""><p class="caption">image-20220830174235089</p>
+</div>
 
+</div>
 </div>
 </div>
 </div>
@@ -292,6 +377,13 @@
 <li>
 <a class="nav-link" href="#xprint-view-tables"><span class="header-section-number">13.3</span> Print view</a><ul class="nav navbar-nav"><li><a class="nav-link" href="#filtering-print-view-of-tables"><span class="header-section-number">13.3.1</span> Filtering print view of tables</a></li></ul>
 </li>
+<li>
+<a class="nav-link" href="#new-tables"><span class="header-section-number">13.4</span> 🧪 New tables</a><ul class="nav navbar-nav">
+<li><a class="nav-link" href="#roadmap"><span class="header-section-number">13.4.1</span> Roadmap</a></li>
+<li><a class="nav-link" href="#familiar-functionality-with-small-differences"><span class="header-section-number">13.4.2</span> Familiar functionality with small differences</a></li>
+<li><a class="nav-link" href="#new-functionality"><span class="header-section-number">13.4.3</span> New functionality</a></li>
+</ul>
+</li>
 </ul>
 
       <div class="book-extra">
@@ -309,7 +401,7 @@
 <footer class="bg-primary text-light mt-5"><div class="container"><div class="row">
 
   <div class="col-12 col-md-6 mt-3">
-    <p>"<strong>Guide to Causal Mapping</strong>" was written by Steve Powell<a href="#fn1" class="footnote-ref" id="fnref1"><sup>1</sup></a>, Fiona Remnant<a href="#fn2" class="footnote-ref" id="fnref2"><sup>2</sup></a>, James Copestake<a href="#fn3" class="footnote-ref" id="fnref3"><sup>3</sup></a>, Hannah Mishan<a href="#fn4" class="footnote-ref" id="fnref4"><sup>4</sup></a>, Rebekah Arvard<a href="#fn5" class="footnote-ref" id="fnref5"><sup>5</sup></a>, Samuel Goddard<a href="#fn6" class="footnote-ref" id="fnref6"><sup>6</sup></a>. It was last built on 2022-08-20.</p>
+    <p>"<strong>Guide to Causal Mapping</strong>" was written by Steve Powell<a href="#fn1" class="footnote-ref" id="fnref1"><sup>1</sup></a>, Fiona Remnant<a href="#fn2" class="footnote-ref" id="fnref2"><sup>2</sup></a>, James Copestake<a href="#fn3" class="footnote-ref" id="fnref3"><sup>3</sup></a>, Hannah Mishan<a href="#fn4" class="footnote-ref" id="fnref4"><sup>4</sup></a>, Rebekah Arvard<a href="#fn5" class="footnote-ref" id="fnref5"><sup>5</sup></a>, Samuel Goddard<a href="#fn6" class="footnote-ref" id="fnref6"><sup>6</sup></a>. It was last built on 2022-08-30.</p>
   </div>
 
   <div class="col-12 col-md-6 mt-3">
