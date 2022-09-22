@@ -1,11 +1,21 @@
-# The Factors table{#xthe-factors-table}
+# 🧪The Factors table{#xthe-factors-table}
 
 The factors table presents the factors applied during coding. There are columns for label, factor memo, and columns for any other fields you have provided, maybe "domain" for instance. The app also calculates some additional fields like:
 
 - `betweenness` (how central is the factor in the map?)
 - `in_degree` (how many links come in to this factor?)
+- `out_degree` (how many links come out of this factor?)
 
 This table is an overview which can help us to understand which factors are reported most frequently, and to view and understand metadata like memos. As usual, this table responds to any filters you have applied on the left-hand side and can be additionally sorted and filtered.
+
+The factors table has two presets:
+
+- The `codebook` preset which lists all factors used in the file without any metrics, this is useful for reports.
+- `Top factors` shows you the factor label and source count so you can easily see which factors were most mentioned.
+
+As with all tables, you can create your own table. For example, sometimes it can be useful to break down hierarchical labels into first, second, third levels and so on. By clicking adding levels in the columns box you can view a break down of factors' hierarchies. 
+
+![image-20220921155814404](C:\Users\hanna\AppData\Roaming\Typora\typora-user-images\image-20220921155814404.png){width=650}
 
 ## Factor memos{#xfactormemos}
 
@@ -19,10 +29,5 @@ You can create and edit the memos from interactive view:
 
 ![chrome_wcBLYp2tQs](_assets/chrome_wcBLYp2tQs.gif){width=650}
 
-... or from the factors table:
+... or from the factors table:![chrome_a1dTqstH7Y](C:\Users\hanna\Documents\ShareX\Screenshots\2022-09\chrome_a1dTqstH7Y.gif){width=650}
 
-![chrome_piNEMXrdaz](_assets/chrome_piNEMXrdaz.gif){width=650}
-
-The factors table has some presets. For example, sometimes it can be useful to break down hierarchical labels into first, second, third levels and so on. By clicking the `levels`you will create the table below.
-
-![image-20220808151139918](_assets/image-20220808151139918.png){width=650}

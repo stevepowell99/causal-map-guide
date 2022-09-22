@@ -1,4 +1,4 @@
-#  All the tables{#xall-tables}
+#  All the tables{#xall-tables-old}
 
 
 ```{r,echo=F}
@@ -7,7 +7,7 @@ knitr::include_url("https://player.vimeo.com/video/596519456")
 
 From simply creating a table showing the total links to and from each factor to a visual representation of each respondent's response to a closed question. The possibilities are large - and increase with the amount of additional data your project has.
 
-## Presets{#preset-tables}
+## Presets{#preset-tables-old}
 
 If you want to keep things simple the presets relevant to each table are accessible from each of the table tabsable, so just click on the button to create that table.
 
@@ -15,7 +15,7 @@ If you want to keep things simple the presets relevant to each table are accessi
 
 ----
 
-## Features common to all the tables{#tables_common}
+## Features common to all the tables{#tables_common-old}
 
 Numerical tables are presented as *heatmap tables*. The higher the number, the darker the colour of the cell will be.
 
@@ -73,7 +73,7 @@ You can reorder the columns just by dragging the column headers. This can be use
 
 There's also a catch - if you have columns A B and C, and move column B to position 3, and you want to sort by column B, you have to click on the second column even though column B is now in position 3!
 
-## Print view{#xprint-view-tables}
+## Print view{#xprint-view-tables-old}
 
 Do you want some preformatted quotes for your report?
 
@@ -113,8 +113,8 @@ The old tables will continue to function but as they take quite a lot of space a
 
 Current limitations of new tables:
 
-- Can only filter by one column (will probably fix this)
-- Cannot presently filter numeric columns as numbers
+- Can filter on one or two columns, not more
+- Not yet implemented OR 
 
 ### Familiar functionality with small differences
 

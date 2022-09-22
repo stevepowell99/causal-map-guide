@@ -1,7 +1,11 @@
-# The Questions Table{#xthe-questions-table}
+# 🧪The Questions Table{#xthe-questions-table}
 
-This table displays the text and ID for every question included in the questionnaire. It may also show any other additional data fields which are the same for each question, e.g. questionnaire subsection or question group.
+This table displays the text, ID, memo and map id for every question included in the questionnaire. 
 
-![image-20211122153204078](_assets/image-20211122153204078.png){width=650}
+This table has one preset:
+
+- `All questions (basic)` which displays id and text as shown below
+
+![image-20220922105503304](C:\Users\hanna\AppData\Roaming\Typora\typora-user-images\image-20220922105503304.png){width=650}
 
 You may wish to include this table as an appendix in your report or as a reference point for looking up particular questions.

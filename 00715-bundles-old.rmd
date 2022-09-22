@@ -1,4 +1,4 @@
-# The Bundles Table{#xthe-bundles-table}
+# The Bundles Table{#xthe-bundles-table-old}
 
 This table is like the links table, but each row represents one *bundle* of links with the same influence and consequence factors. It can be useful to see which were the most commonly mentioned bundles of links.
 

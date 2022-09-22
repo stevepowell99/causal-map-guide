@@ -19,7 +19,7 @@ Click inside the editor and retype the factor labels however you want. You can r
 
 Then hit Update.
 
-![image-20220808133418098](_assets/image-20220808133418098.png){width=65}
+![image-20220808133418098](_assets/image-20220808133418098.png){width=650}
 
 **TIP**: press Ctrl F (Cmd F on Mac) to find or Ctrl H (Cmd alt F on Mac) to replace.
 
