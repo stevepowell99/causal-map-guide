@@ -12,7 +12,7 @@ There are two presets for this table:
 
   
 
-Remember the print view button may come in handy to view your table as plain text. ![image-20220921170450911](_assets/image-20220921170450911.png){width=650}
+Remember the print view button may come in handy to view your table as plain text. ![image-20220921170450911](_assets/image-20220921170450911.png)
 
 ### Fields
 
