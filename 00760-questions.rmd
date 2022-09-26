@@ -6,6 +6,6 @@ This table has one preset:
 
 - `All questions (basic)` which displays id and text as shown below
 
-![image-20220922105503304](C:\Users\hanna\AppData\Roaming\Typora\typora-user-images\image-20220922105503304.png){width=650}
+![image-20220922105503304](_assets/image-20220922105503304.png){width=650}
 
 You may wish to include this table as an appendix in your report or as a reference point for looking up particular questions.

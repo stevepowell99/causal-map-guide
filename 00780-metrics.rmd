@@ -4,7 +4,7 @@
 
 The metrics table displays a range of useful measurements about your data. These metrics respond to any filters that have been applied to your data, so consider whether you want to see these metrics `unfiltered` or `filtered`.
 
-![image-20220922111120841](C:\Users\hanna\AppData\Roaming\Typora\typora-user-images\image-20220922111120841.png){width=650}
+![image-20220922111120841](_assets/image-20220922111120841.png){width=650}
 
 ## What the metrics mean
 

@@ -13,7 +13,7 @@ There are two presets with this table:
 - `Closed questions by source (basic)`  gives an overview of how each **individual** respondent answered each closed question, which you can see below.
 - `Closed questions summary` presents the **total respondent counts** for each direction of change. For every closed question you can see how many respondents reported positive, negative, or no change in that domain. You may wish to search and filter the statements to view only the closed question responses from a particular respondent group.
 
-![image-20220922131551570](C:\Users\hanna\AppData\Roaming\Typora\typora-user-images\image-20220922131551570.png){width=650}
+![image-20220922131551570](_assets/image-20220922131551570.png){width=650}
 
 **Why would I use this table?**
 

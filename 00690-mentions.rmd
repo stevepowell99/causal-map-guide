@@ -4,7 +4,7 @@ This table is useful when looking at how many times factors have been mentioned 
 
 It is likely that you will want to view this table using the preset `Mentions (basic)` which can be found in the dashboard.
 
-![image-20220921153141284](C:\Users\hanna\AppData\Roaming\Typora\typora-user-images\image-20220921153141284.png){width=650}
+![image-20220921153141284](_assets/image-20220921153141284.png){width=650}
 
 The Direction field shows you the number of times each factors was reported as an influence factor and/or a consequence factor.
 

@@ -15,7 +15,7 @@ The factors table has two presets:
 
 As with all tables, you can create your own table. For example, sometimes it can be useful to break down hierarchical labels into first, second, third levels and so on. By clicking adding levels in the columns box you can view a break down of factors' hierarchies. 
 
-![image-20220921155814404](C:\Users\hanna\AppData\Roaming\Typora\typora-user-images\image-20220921155814404.png){width=650}
+![image-20220926102939227](_assets/image-20220926102939227.png){width=650}
 
 ## Factor memos{#xfactormemos}
 

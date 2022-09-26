@@ -4,7 +4,7 @@ The sources table, when they are no filters applied or when the `Sources (basic)
 
 This table can be useful to check that all the sources have been imported into the app correctly. The table also provides a summary of the respondents which can be useful for presenting respondent demographics in the report, either in the sampling section or as an appendix.
 
-![image-20220922103706766](C:\Users\hanna\AppData\Roaming\Typora\typora-user-images\image-20220922103706766.png){width=650}
+![image-20220922103706766](_assets/image-20220922103706766.png){width=650}
 
 
 

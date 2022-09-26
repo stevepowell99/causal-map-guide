@@ -9,7 +9,7 @@ This table has three available presets:
 - `Frequent bundles` which shows the source_frequency for each link bundle
 - `Hashtags` which shows the hashtags used and their source_frequency
 
-.![image-20220921163103017](C:\Users\hanna\AppData\Roaming\Typora\typora-user-images\image-20220921163103017.png){width=650}
+![image-20220921163103017](_assets/image-20220921163103017.png){width=650}
 
 ### Fields
 

@@ -8,11 +8,11 @@ There are two presets for this table:
 
 - `Statements metadata` this preset gives you more information about who said which statement and shows you household code, name of province , village , age as well as the fields listed above. If your metadata fields are called something different just add them to the columns box to display them.
 
-![image-20220921170229760](C:\Users\hanna\AppData\Roaming\Typora\typora-user-images\image-20220921170229760.png){width=650}
+![image-20220921170229760](_assets/image-20220921170229760.png){width=650}
 
   
 
-Remember the print view button may come in handy to view your table as plain text. ![image-20220921170450911](C:\Users\hanna\AppData\Roaming\Typora\typora-user-images\image-20220921170450911.png){width=650}
+Remember the print view button may come in handy to view your table as plain text. ![image-20220921170450911](_assets/image-20220921170450911.png){width=650}
 
 ### Fields
 
