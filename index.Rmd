@@ -5,7 +5,7 @@ author:
   - Fiona Remnant^[Causal Map Ltd., fiona@causalmap.app]
   - James Copestake^[Bath University., hssjgc@bath.ac.uk]
   - Hannah Mishan^[Causal Map Ltd., hannah@causalmap.app]
-  - Rebekah Arvard^[Bath SDR., rebekah@bathsdr.org]
+  - Rebekah Avard^[Bath SDR., rebekah@bathsdr.org]
   - Samuel Goddard^[Causal Map Ltd., SamuelGoddard@outlook.com]
 date: "`r Sys.Date()`"
 site: bookdown::bookdown_site
