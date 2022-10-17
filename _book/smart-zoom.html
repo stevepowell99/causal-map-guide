@@ -4,7 +4,7 @@
 <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
 <meta charset="utf-8">
 <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
-<title>Chapter 61 Smart zooming | Guide to Causal Mapping</title>
+<title>Chapter 62 Smart zooming | Guide to Causal Mapping</title>
 <meta name="author" content="Steve Powell">
 <meta name="author" content="Fiona Remnant">
 <meta name="author" content="James Copestake">
@@ -13,13 +13,13 @@
 <meta name="author" content="Samuel Goddard">
 <meta name="description" content="If you are using hierarchical aka nested coding, you can use ordinary zooming to “zoom out” your map to give a simple, more general overview. But sometimes this can mean oversimplifying your map:...">
 <meta name="generator" content="bookdown 0.24 with bs4_book()">
-<meta property="og:title" content="Chapter 61 Smart zooming | Guide to Causal Mapping">
+<meta property="og:title" content="Chapter 62 Smart zooming | Guide to Causal Mapping">
 <meta property="og:type" content="book">
 <meta property="og:url" content="https://causalmap.app/smart-zoom.html">
 <meta property="og:image" content="https://causalmap.app/_assets/image-20210520221329966.png">
 <meta property="og:description" content="If you are using hierarchical aka nested coding, you can use ordinary zooming to “zoom out” your map to give a simple, more general overview. But sometimes this can mean oversimplifying your map:...">
 <meta name="twitter:card" content="summary">
-<meta name="twitter:title" content="Chapter 61 Smart zooming | Guide to Causal Mapping">
+<meta name="twitter:title" content="Chapter 62 Smart zooming | Guide to Causal Mapping">
 <meta name="twitter:description" content="If you are using hierarchical aka nested coding, you can use ordinary zooming to “zoom out” your map to give a simple, more general overview. But sometimes this can mean oversimplifying your map:...">
 <meta name="twitter:image" content="https://causalmap.app/_assets/image-20210520221329966.png">
 <!-- JS --><script src="https://cdnjs.cloudflare.com/ajax/libs/clipboard.js/2.0.6/clipboard.min.js" integrity="sha256-inc5kl9MA1hkeYUt+EC3BhlIgyp/2jDIyBLS6k3UxPI=" crossorigin="anonymous"></script><script src="https://cdnjs.cloudflare.com/ajax/libs/fuse.js/6.4.6/fuse.js" integrity="sha512-zv6Ywkjyktsohkbp9bb45V6tEMoWhzFzXis+LrMehmJZZSys19Yxf1dopHx7WzIKxr5tK2dVcYmaCk2uqdjF4A==" crossorigin="anonymous"></script><script src="https://kit.fontawesome.com/6ecbd6c532.js" crossorigin="anonymous"></script><script src="libs/header-attrs-2.11/header-attrs.js"></script><script src="libs/jquery-3.6.0/jquery-3.6.0.min.js"></script><meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
@@ -107,13 +107,13 @@
 <li><a class="" href="tricky-coding-challenges.html"><span class="header-section-number">54</span> 📚 Tricky coding challenges</a></li>
 <li class="book-part">💻Filters</li>
 <li><a class="" href="filters-overview.html"><span class="header-section-number">55</span> Filters – overview</a></li>
-<li><a class="" href="xrobustness.html"><span class="header-section-number">56</span> 📚 Tracing paths and calculating robustness</a></li>
-<li><a class="" href="xconditional-formats.html"><span class="header-section-number">57</span> Conditional formats</a></li>
-<li><a class="" href="xsimple-formats.html"><span class="header-section-number">58</span> Simple formats</a></li>
-<li><a class="" href="what-is-the-logic-behind-the-causal-map-filters.html"><span class="header-section-number">59</span> What is the logic behind the Causal Map filters?</a></li>
-<li><a class="" href="xanalysis.html"><span class="header-section-number">60</span> Analysing causal maps</a></li>
-<li><a class="active" href="smart-zoom.html"><span class="header-section-number">61</span> Smart zooming</a></li>
-<li><a class="" href="xcontinuity.html"><span class="header-section-number">62</span> Continuity and tracing threads</a></li>
+<li><a class="" href="xtracing-paths.html"><span class="header-section-number">56</span> 📚 Tracing paths</a></li>
+<li><a class="" href="xcontinuity.html"><span class="header-section-number">57</span> Continuity and tracing threads</a></li>
+<li><a class="" href="xconditional-formats.html"><span class="header-section-number">58</span> Conditional formats</a></li>
+<li><a class="" href="xsimple-formats.html"><span class="header-section-number">59</span> Simple formats</a></li>
+<li><a class="" href="what-is-the-logic-behind-the-causal-map-filters.html"><span class="header-section-number">60</span> What is the logic behind the Causal Map filters?</a></li>
+<li><a class="" href="xanalysis.html"><span class="header-section-number">61</span> Analysing causal maps</a></li>
+<li><a class="active" href="smart-zoom.html"><span class="header-section-number">62</span> Smart zooming</a></li>
 <li><a class="" href="xquickfields.html"><span class="header-section-number">63</span> Quickfields</a></li>
 <li><a class="" href="comparing.html"><span class="header-section-number">64</span> 📚 Analysis: comparing maps between particular groups</a></li>
 <li><a class="" href="cluster-sources.html"><span class="header-section-number">65</span> 📚 Clustering sources</a></li>
@@ -166,9 +166,9 @@
         </div>
       </nav>
 </div>
-  </header><main class="col-sm-12 col-md-9 col-lg-7" id="content"><div id="smart-zoom" class="section level1" number="61">
+  </header><main class="col-sm-12 col-md-9 col-lg-7" id="content"><div id="smart-zoom" class="section level1" number="62">
 <h1>
-<span class="header-section-number">61</span> Smart zooming<a class="anchor" aria-label="anchor" href="#smart-zoom"><i class="fas fa-link"></i></a>
+<span class="header-section-number">62</span> Smart zooming<a class="anchor" aria-label="anchor" href="#smart-zoom"><i class="fas fa-link"></i></a>
 </h1>
 <p>If you are using <a href="xsimplifying-with-hierarchical.html#xsimplifying-with-hierarchical">hierarchical aka nested coding</a>, you can use ordinary zooming to “zoom out” your map to give a simple, more general overview. But sometimes this can mean oversimplifying your map: there are lower-level factors which are so important and popular that it is unhelpful or even misleading to roll them up into a parent factor. Smart zooming solves that problem.</p>
 <div class="figure">
@@ -215,11 +215,11 @@
 
 </div>
   <div class="chapter-nav">
-<div class="prev"><a href="xanalysis.html"><span class="header-section-number">60</span> Analysing causal maps</a></div>
-<div class="next"><a href="xcontinuity.html"><span class="header-section-number">62</span> Continuity and tracing threads</a></div>
+<div class="prev"><a href="xanalysis.html"><span class="header-section-number">61</span> Analysing causal maps</a></div>
+<div class="next"><a href="xquickfields.html"><span class="header-section-number">63</span> Quickfields</a></div>
 </div></main><div class="col-md-3 col-lg-2 d-none d-md-block sidebar sidebar-chapter">
     <nav id="toc" data-toggle="toc" aria-label="On this page"><h2>On this page</h2>
-      <ul class="nav navbar-nav"><li><a class="nav-link" href="#smart-zoom"><span class="header-section-number">61</span> Smart zooming</a></li></ul>
+      <ul class="nav navbar-nav"><li><a class="nav-link" href="#smart-zoom"><span class="header-section-number">62</span> Smart zooming</a></li></ul>
 
       <div class="book-extra">
         <ul class="list-unstyled">
@@ -236,7 +236,7 @@
 <footer class="bg-primary text-light mt-5"><div class="container"><div class="row">
 
   <div class="col-12 col-md-6 mt-3">
-    <p>"<strong>Guide to Causal Mapping</strong>" was written by Steve Powell<a href="#fn1" class="footnote-ref" id="fnref1"><sup>1</sup></a>, Fiona Remnant<a href="#fn2" class="footnote-ref" id="fnref2"><sup>2</sup></a>, James Copestake<a href="#fn3" class="footnote-ref" id="fnref3"><sup>3</sup></a>, Hannah Mishan<a href="#fn4" class="footnote-ref" id="fnref4"><sup>4</sup></a>, Rebekah Avard<a href="#fn5" class="footnote-ref" id="fnref5"><sup>5</sup></a>, Samuel Goddard<a href="#fn6" class="footnote-ref" id="fnref6"><sup>6</sup></a>. It was last built on 2022-10-03.</p>
+    <p>"<strong>Guide to Causal Mapping</strong>" was written by Steve Powell<a href="#fn1" class="footnote-ref" id="fnref1"><sup>1</sup></a>, Fiona Remnant<a href="#fn2" class="footnote-ref" id="fnref2"><sup>2</sup></a>, James Copestake<a href="#fn3" class="footnote-ref" id="fnref3"><sup>3</sup></a>, Hannah Mishan<a href="#fn4" class="footnote-ref" id="fnref4"><sup>4</sup></a>, Rebekah Avard<a href="#fn5" class="footnote-ref" id="fnref5"><sup>5</sup></a>, Samuel Goddard<a href="#fn6" class="footnote-ref" id="fnref6"><sup>6</sup></a>. It was last built on 2022-10-17.</p>
   </div>
 
   <div class="col-12 col-md-6 mt-3">

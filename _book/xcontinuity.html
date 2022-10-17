@@ -4,23 +4,23 @@
 <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
 <meta charset="utf-8">
 <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
-<title>Chapter 62 Continuity and tracing threads | Guide to Causal Mapping</title>
+<title>Chapter 57 Continuity and tracing threads | Guide to Causal Mapping</title>
 <meta name="author" content="Steve Powell">
 <meta name="author" content="Fiona Remnant">
 <meta name="author" content="James Copestake">
 <meta name="author" content="Hannah Mishan">
 <meta name="author" content="Rebekah Avard">
 <meta name="author" content="Samuel Goddard">
-<meta name="description" content="62.1 Summary The transitivity trap can make it a challenge to interpret your maps. Some people (or somebody) said that improved hygiene led to reduction in mosquito environments, and some people...">
+<meta name="description" content="57.1 Summary When you use the trace threads filter to follow paths of influence across your map, the transitivity trap can make it a challenge to interpret your maps. Some people (or somebody)...">
 <meta name="generator" content="bookdown 0.24 with bs4_book()">
-<meta property="og:title" content="Chapter 62 Continuity and tracing threads | Guide to Causal Mapping">
+<meta property="og:title" content="Chapter 57 Continuity and tracing threads | Guide to Causal Mapping">
 <meta property="og:type" content="book">
 <meta property="og:url" content="https://causalmap.app/xcontinuity.html">
 <meta property="og:image" content="https://causalmap.app/_assets/image-20210520221329966.png">
-<meta property="og:description" content="62.1 Summary The transitivity trap can make it a challenge to interpret your maps. Some people (or somebody) said that improved hygiene led to reduction in mosquito environments, and some people...">
+<meta property="og:description" content="57.1 Summary When you use the trace threads filter to follow paths of influence across your map, the transitivity trap can make it a challenge to interpret your maps. Some people (or somebody)...">
 <meta name="twitter:card" content="summary">
-<meta name="twitter:title" content="Chapter 62 Continuity and tracing threads | Guide to Causal Mapping">
-<meta name="twitter:description" content="62.1 Summary The transitivity trap can make it a challenge to interpret your maps. Some people (or somebody) said that improved hygiene led to reduction in mosquito environments, and some people...">
+<meta name="twitter:title" content="Chapter 57 Continuity and tracing threads | Guide to Causal Mapping">
+<meta name="twitter:description" content="57.1 Summary When you use the trace threads filter to follow paths of influence across your map, the transitivity trap can make it a challenge to interpret your maps. Some people (or somebody)...">
 <meta name="twitter:image" content="https://causalmap.app/_assets/image-20210520221329966.png">
 <!-- JS --><script src="https://cdnjs.cloudflare.com/ajax/libs/clipboard.js/2.0.6/clipboard.min.js" integrity="sha256-inc5kl9MA1hkeYUt+EC3BhlIgyp/2jDIyBLS6k3UxPI=" crossorigin="anonymous"></script><script src="https://cdnjs.cloudflare.com/ajax/libs/fuse.js/6.4.6/fuse.js" integrity="sha512-zv6Ywkjyktsohkbp9bb45V6tEMoWhzFzXis+LrMehmJZZSys19Yxf1dopHx7WzIKxr5tK2dVcYmaCk2uqdjF4A==" crossorigin="anonymous"></script><script src="https://kit.fontawesome.com/6ecbd6c532.js" crossorigin="anonymous"></script><script src="libs/header-attrs-2.11/header-attrs.js"></script><script src="libs/jquery-3.6.0/jquery-3.6.0.min.js"></script><meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
 <link href="libs/bootstrap-4.6.0/bootstrap.min.css" rel="stylesheet">
@@ -107,13 +107,13 @@
 <li><a class="" href="tricky-coding-challenges.html"><span class="header-section-number">54</span> 📚 Tricky coding challenges</a></li>
 <li class="book-part">💻Filters</li>
 <li><a class="" href="filters-overview.html"><span class="header-section-number">55</span> Filters – overview</a></li>
-<li><a class="" href="xrobustness.html"><span class="header-section-number">56</span> 📚 Tracing paths and calculating robustness</a></li>
-<li><a class="" href="xconditional-formats.html"><span class="header-section-number">57</span> Conditional formats</a></li>
-<li><a class="" href="xsimple-formats.html"><span class="header-section-number">58</span> Simple formats</a></li>
-<li><a class="" href="what-is-the-logic-behind-the-causal-map-filters.html"><span class="header-section-number">59</span> What is the logic behind the Causal Map filters?</a></li>
-<li><a class="" href="xanalysis.html"><span class="header-section-number">60</span> Analysing causal maps</a></li>
-<li><a class="" href="smart-zoom.html"><span class="header-section-number">61</span> Smart zooming</a></li>
-<li><a class="active" href="xcontinuity.html"><span class="header-section-number">62</span> Continuity and tracing threads</a></li>
+<li><a class="" href="xtracing-paths.html"><span class="header-section-number">56</span> 📚 Tracing paths</a></li>
+<li><a class="active" href="xcontinuity.html"><span class="header-section-number">57</span> Continuity and tracing threads</a></li>
+<li><a class="" href="xconditional-formats.html"><span class="header-section-number">58</span> Conditional formats</a></li>
+<li><a class="" href="xsimple-formats.html"><span class="header-section-number">59</span> Simple formats</a></li>
+<li><a class="" href="what-is-the-logic-behind-the-causal-map-filters.html"><span class="header-section-number">60</span> What is the logic behind the Causal Map filters?</a></li>
+<li><a class="" href="xanalysis.html"><span class="header-section-number">61</span> Analysing causal maps</a></li>
+<li><a class="" href="smart-zoom.html"><span class="header-section-number">62</span> Smart zooming</a></li>
 <li><a class="" href="xquickfields.html"><span class="header-section-number">63</span> Quickfields</a></li>
 <li><a class="" href="comparing.html"><span class="header-section-number">64</span> 📚 Analysis: comparing maps between particular groups</a></li>
 <li><a class="" href="cluster-sources.html"><span class="header-section-number">65</span> 📚 Clustering sources</a></li>
@@ -166,37 +166,34 @@
         </div>
       </nav>
 </div>
-  </header><main class="col-sm-12 col-md-9 col-lg-7" id="content"><div id="xcontinuity" class="section level1" number="62">
+  </header><main class="col-sm-12 col-md-9 col-lg-7" id="content"><div id="xcontinuity" class="section level1" number="57">
 <h1>
-<span class="header-section-number">62</span> Continuity and tracing threads<a class="anchor" aria-label="anchor" href="#xcontinuity"><i class="fas fa-link"></i></a>
+<span class="header-section-number">57</span> Continuity and tracing threads<a class="anchor" aria-label="anchor" href="#xcontinuity"><i class="fas fa-link"></i></a>
 </h1>
-<div id="summary-7" class="section level2" number="62.1">
+<div id="summary-7" class="section level2" number="57.1">
 <h2>
-<span class="header-section-number">62.1</span> Summary<a class="anchor" aria-label="anchor" href="#summary-7"><i class="fas fa-link"></i></a>
+<span class="header-section-number">57.1</span> Summary<a class="anchor" aria-label="anchor" href="#summary-7"><i class="fas fa-link"></i></a>
 </h2>
-<p>The <a href="xtransitivity-trap.html#xtransitivity-trap">transitivity trap</a> can make it a challenge to interpret your maps. Some people (or somebody) said that improved hygiene led to reduction in mosquito environments, and some people said reduction in mosquito environments led to improved health, but <em>was this the same or different people</em>?</p>
+<p>When you use the <a href="xtracing-paths.html#xtracing-paths">trace threads filter</a> to follow paths of influence across your map, the <a href="xtransitivity-trap.html#xtransitivity-trap">transitivity trap</a> can make it a challenge to interpret your maps. Some people (or somebody) said that improved hygiene led to reduction in mosquito environments, and some people said reduction in mosquito environments led to improved health, but <em>was this the same or different people</em>?</p>
 <div class="inline-figure">
 <img src="_assets/image-20211215081735743.png" alt="image-20211215081735743"><!-- these need to stay full width or you cannot read them-->
 </div>
-<p>You set the filter <code>trace threads</code> <em>after</em> a <code>trace paths</code> or <code>trace robustness</code> filter:</p>
-<pre><code>trace paths length=3 from=WASH information to=Improved health
-trace threads</code></pre>
-<p>You can also trace threads downstream if you don’t specify target factors (to = “anything”):</p>
-<pre><code>trace paths length=3 from=WASH information to=
-trace threads</code></pre>
 </div>
-<div id="xtracing-threads" class="section level2" number="62.2">
+<div id="xtracing-threads" class="section level2" number="57.2">
 <h2>
-<span class="header-section-number">62.2</span> Tracing threads (aka tracing continuity)<a class="anchor" aria-label="anchor" href="#xtracing-threads"><i class="fas fa-link"></i></a>
+<span class="header-section-number">57.2</span> Tracing threads (aka tracing continuity)<a class="anchor" aria-label="anchor" href="#xtracing-threads"><i class="fas fa-link"></i></a>
 </h2>
 <p>If your map makes it look like Cash Transfer causally influenced Increased Wellbeing further downstream of it, you surely want to know if there are at least some sources who each mentioned the whole of one of the possible paths.</p>
-<p>We call this “tracing threads” as opposed to “tracing paths”. So a thread is a chain of individual “original links” inside the bundles, whereas a path is just a chain of bundles, regardless of which sources mentioned each link.</p>
-<p>Tracing threads is built on top of tracing paths. After you set a trace paths filter, you can then set a trace threads filter to look at the individual threads within the paths.</p>
+<p>We call this “tracing threads”. A thread is a chain of individual “original links” inside the bundles, whereas a path is just a chain of bundles, regardless of which sources mentioned each link.</p>
+<div class="figure">
+<img src="_assets/image-20221017081846053.png" alt=""><p class="caption">image-20221017081846053</p>
+</div>
+<p>Tracing threads is an option within the <a href="xtracing-paths.html#xtracing-paths">tracing paths</a> dialog. Click to trace threads up or down. Normally you will want to trace by source_id, but sometimes you might want to set, for example, village_id.</p>
 <p>“Ah so there are plenty of paths from X to Y, but are there any threads? yes look, here is MXFG-1 who has a thread all the way down”.</p>
 <p>We can ask “how many threads make it all the way down to Improved Wellbeing”? The threads are named by the source ids, so we can say “Let’s look at downstream thread MXFG-1”.</p>
 <p>When we are tracing threads, we can trace source threads, or village threads, or whatever. But usually we will trace in terms of sources, so if we do not specify which field defines the context, we assume we mean sources.</p>
 <p>So a thread is a continuous chain of links with the same ID along a path. Within a bundle of links, each thread is one individual link associated with one ID (or sometimes, more than one link, if the ID mentioned that bundle more than once).</p>
-<p>You set the filter <code>trace threads</code> <em>after</em> a <code>trace paths</code> or <code>trace robustness</code> filter. This creates the following calculated fields:</p>
+<p>This creates the following calculated fields:</p>
 <ul>
 <li>Links fields
 <ul>
@@ -211,24 +208,20 @@ trace threads</code></pre>
 </li>
 </ul>
 <p>You can for example label the links like this <code>label links value=unique: threads</code>.</p>
-<p>These fields are also available as <code>has_downstream_threads</code>, <code>has_downstream_threads_surviving</code> etc, but as this filter now works upstream too, we have removed the <code>downstream</code> part.</p>
+<p>(For compatibility purposes, the deprecated fields <code>has_downstream_threads</code>, <code>has_downstream_threads_surviving</code> etc. are also available.)</p>
 <p>You can for example colour the factors like this <code>color factors field=threads_surviving</code>. So if you set a filter to <em>trace threads downstream</em> from Cash Transfer C, imagine factor C is coloured completely red, and imagine a factor F immediately downstream of it being coloured with an intensity of red according to the number of sources which mentioned the link from C to F. In fact every factor downstream of C will be coloured with a shade of red in the same way. The central question of whether any source mentioned a whole path from C to, say, “Increased wellbeing” can be answered simply by seeing whether there is any red in the colour of “Increased wellbeing” or whether it is completely white.</p>
 <p>… So you can just look at C and watch its influence (in terms of source continuity) seeping downstream and spreading out along all source-complete paths.</p>
 <p>It’s like ink starting from C and flowing downstream as long as there is source continuity.</p>
-<p>The direct counterpart, <em>tracing upstream threads</em> is not implemented yet. It asks about causes of effects rather than effects of causes: “Increased wellbeing” is completely red, and the redness of “Cash Transfer C” depends on the number of sources which mention a complete path from C to Increased wellbeing.</p>
+<p>Tracing threads upstream asks about causes of effects rather than effects of causes: “Increased wellbeing” is completely red, and the redness of “Cash Transfer C” depends on the number of sources which mention a complete path from C to Increased wellbeing.</p>
 <p>Tracing paths anchors the filter to one or more factors, and if you use thread tracing to format an aspect of the map (e.g. to colour the links) then this formatting is only related to this specific set of origin and/or target factors and will change if you trace from and/or to different factors.</p>
 <div class="figure">
 <img src="_assets/image-20220301095046531.png" alt=""><p class="caption">image-20220301095046531</p>
 </div>
-<p>In this example, the width of the links reflects the number of sources mentioning it, but the colour of the links (and factors) reflects how many sources have a continuous story starting from “Living in a refugee settlement” all the way up to that point. This difference is also shown in the pair of numbers on the links. So the top-right link was mentioned by one source, but the 0 shows that no single source mentioned a story all the way from “Living in a refugee settlement” which also includes this link.</p>
-<p>All of this works for tracing influences upstream too:</p>
-<pre><code>trace paths length=3 from=WASH information to=Improved health direc
-trace threads
-</code></pre>
+<p>In this example, the width of the links reflects the number of sources mentioning it, but the colour of the links (and factors) reflects how many sources have a continuous story starting from “Living in a refugee settlement” all the way up to that point. This difference is also shown in the pair of numbers on the links: the first number is the source thread count, the second is the source count. So the top-right link was mentioned by one source, but the 0 shows that no single source mentioned a story all the way from “Living in a refugee settlement” which also includes this link.</p>
 </div>
-<div id="advanced-diagnostic-filter-mark-links-for-continuity-print-view-only" class="section level2" number="62.3">
+<div id="advanced-diagnostic-filter-mark-links-for-continuity-print-view-only" class="section level2" number="57.3">
 <h2>
-<span class="header-section-number">62.3</span> Advanced diagnostic filter: Mark links for continuity (Print View only)<a class="anchor" aria-label="anchor" href="#advanced-diagnostic-filter-mark-links-for-continuity-print-view-only"><i class="fas fa-link"></i></a>
+<span class="header-section-number">57.3</span> Advanced diagnostic filter: Mark links for continuity (Print View only)<a class="anchor" aria-label="anchor" href="#advanced-diagnostic-filter-mark-links-for-continuity-print-view-only"><i class="fas fa-link"></i></a>
 </h2>
 <p><em>Showing</em> continuity aka “showing threads” is concerned with adjacent sets of links (or factors). It cannot be used to definitively answer questions about continuity down a longer path (actually, sometimes it does tell us something: if there is zero continuity on a section of a path with no splits, we know there is zero continuity down the longer path; but more generally, if there is some continuity down all the sections of a path, it does not mean that there is continuity down the whole of it).</p>
 <p>Add the filter <code>mark links</code> (there is no button for it, you have to type it) provides the following diagnostics:</p>
@@ -248,15 +241,16 @@ trace threads
 <p>This also works with all the other fields, e.g. you can type <code>mark links field=statement_id</code> in order to test statement continuity, which is a stricter test of continuity. source_id is default so you don’t need to type it specially.</p>
 <p>Yes, it is a bit difficult to communicate this in a report. But it is important for interpretation. Of course a chain without source continuity isn’t an invalid chain per se, it’s just something to be aware of.</p>
 <p>We will probably also add a simpler metric for outgoing links which does not distinguish between the incoming links, something like “Percentage of sources who mentioned a link leaving factor F who mentioned any of the links entering F”. This metric could be used to colour or scale the links, or perhaps be printed on the tail of the links.</p>
+<p><strong>That’s all you’ll need for most purposes. Read on for some advanced diagnostics.</strong></p>
 </div>
-<div id="advanced-diagnostic-filter-show-continuity" class="section level2" number="62.4">
+<div id="advanced-diagnostic-filter-show-continuity" class="section level2" number="57.4">
 <h2>
-<span class="header-section-number">62.4</span> Advanced diagnostic filter: Show continuity<a class="anchor" aria-label="anchor" href="#advanced-diagnostic-filter-show-continuity"><i class="fas fa-link"></i></a>
+<span class="header-section-number">57.4</span> Advanced diagnostic filter: Show continuity<a class="anchor" aria-label="anchor" href="#advanced-diagnostic-filter-show-continuity"><i class="fas fa-link"></i></a>
 </h2>
 <p>Read on only if you are interested in advanced diagnostics!</p>
-<div id="summary-8" class="section level3" number="62.4.1">
+<div id="summary-8" class="section level3" number="57.4.1">
 <h3>
-<span class="header-section-number">62.4.1</span> Summary<a class="anchor" aria-label="anchor" href="#summary-8"><i class="fas fa-link"></i></a>
+<span class="header-section-number">57.4.1</span> Summary<a class="anchor" aria-label="anchor" href="#summary-8"><i class="fas fa-link"></i></a>
 </h3>
 <div class="figure">
 <img src="_assets/image-20211222121147473.png" width="650" alt=""><p class="caption"><a href="http://theorymaker.info/?permalink=transitivity" class="uri">http://theorymaker.info/?permalink=transitivity</a></p>
@@ -300,9 +294,9 @@ trace threads
 <img src="_assets/image-20211216190609563.png" width="650" alt=""><p class="caption">image-20211216190609563</p>
 </div>
 </div>
-<div id="showing-continuity-with-arrowtypes" class="section level3" number="62.4.2">
+<div id="showing-continuity-with-arrowtypes" class="section level3" number="57.4.2">
 <h3>
-<span class="header-section-number">62.4.2</span> Showing continuity with arrowtypes<a class="anchor" aria-label="anchor" href="#showing-continuity-with-arrowtypes"><i class="fas fa-link"></i></a>
+<span class="header-section-number">57.4.2</span> Showing continuity with arrowtypes<a class="anchor" aria-label="anchor" href="#showing-continuity-with-arrowtypes"><i class="fas fa-link"></i></a>
 </h3>
 <p>Printing actual numbers (from 0 to 1) on the arrows can be very confusing. So the default is to use symbols.</p>
 <ul>
@@ -324,9 +318,9 @@ trace threads
 <img src="_assets/image-20211216200541572.png" width="650" alt=""><p class="caption">image-20211216200541572</p>
 </div>
 </div>
-<div id="showing-continuity-with-colours" class="section level3" number="62.4.3">
+<div id="showing-continuity-with-colours" class="section level3" number="57.4.3">
 <h3>
-<span class="header-section-number">62.4.3</span> Showing continuity with colours<a class="anchor" aria-label="anchor" href="#showing-continuity-with-colours"><i class="fas fa-link"></i></a>
+<span class="header-section-number">57.4.3</span> Showing continuity with colours<a class="anchor" aria-label="anchor" href="#showing-continuity-with-colours"><i class="fas fa-link"></i></a>
 </h3>
 <p><a href="https://causalmap.shinyapps.io/CM2test/?s=618" class="uri">https://causalmap.shinyapps.io/CM2test/?s=618</a></p>
 <p>Using arrowheads gives you information about both upstream and downstream flows, but it can be a bit tricky to read. Instead you can use colours to display either downstream (effects of causes) or upstream (causes of effects) continuity.</p>
@@ -345,9 +339,9 @@ trace threads
 <img src="_assets/image-20211222121147473.png" width="650" alt=""><p class="caption">.http://theorymaker.info/?permalink=transitivity</p>
 </div>
 </div>
-<div id="more-about-these-metrics" class="section level3" number="62.4.4">
+<div id="more-about-these-metrics" class="section level3" number="57.4.4">
 <h3>
-<span class="header-section-number">62.4.4</span> More about these metrics<a class="anchor" aria-label="anchor" href="#more-about-these-metrics"><i class="fas fa-link"></i></a>
+<span class="header-section-number">57.4.4</span> More about these metrics<a class="anchor" aria-label="anchor" href="#more-about-these-metrics"><i class="fas fa-link"></i></a>
 </h3>
 <div class="inline-table"><table class="table table-sm">
 <colgroup>
@@ -424,29 +418,29 @@ trace threads
 </div>
 </div>
   <div class="chapter-nav">
-<div class="prev"><a href="smart-zoom.html"><span class="header-section-number">61</span> Smart zooming</a></div>
-<div class="next"><a href="xquickfields.html"><span class="header-section-number">63</span> Quickfields</a></div>
+<div class="prev"><a href="xtracing-paths.html"><span class="header-section-number">56</span> 📚 Tracing paths</a></div>
+<div class="next"><a href="xconditional-formats.html"><span class="header-section-number">58</span> Conditional formats</a></div>
 </div></main><div class="col-md-3 col-lg-2 d-none d-md-block sidebar sidebar-chapter">
     <nav id="toc" data-toggle="toc" aria-label="On this page"><h2>On this page</h2>
       <ul class="nav navbar-nav">
-<li><a class="nav-link" href="#xcontinuity"><span class="header-section-number">62</span> Continuity and tracing threads</a></li>
-<li><a class="nav-link" href="#summary-7"><span class="header-section-number">62.1</span> Summary</a></li>
-<li><a class="nav-link" href="#xtracing-threads"><span class="header-section-number">62.2</span> Tracing threads (aka tracing continuity)</a></li>
-<li><a class="nav-link" href="#advanced-diagnostic-filter-mark-links-for-continuity-print-view-only"><span class="header-section-number">62.3</span> Advanced diagnostic filter: Mark links for continuity (Print View only)</a></li>
+<li><a class="nav-link" href="#xcontinuity"><span class="header-section-number">57</span> Continuity and tracing threads</a></li>
+<li><a class="nav-link" href="#summary-7"><span class="header-section-number">57.1</span> Summary</a></li>
+<li><a class="nav-link" href="#xtracing-threads"><span class="header-section-number">57.2</span> Tracing threads (aka tracing continuity)</a></li>
+<li><a class="nav-link" href="#advanced-diagnostic-filter-mark-links-for-continuity-print-view-only"><span class="header-section-number">57.3</span> Advanced diagnostic filter: Mark links for continuity (Print View only)</a></li>
 <li>
-<a class="nav-link" href="#advanced-diagnostic-filter-show-continuity"><span class="header-section-number">62.4</span> Advanced diagnostic filter: Show continuity</a><ul class="nav navbar-nav">
-<li><a class="nav-link" href="#summary-8"><span class="header-section-number">62.4.1</span> Summary</a></li>
-<li><a class="nav-link" href="#showing-continuity-with-arrowtypes"><span class="header-section-number">62.4.2</span> Showing continuity with arrowtypes</a></li>
-<li><a class="nav-link" href="#showing-continuity-with-colours"><span class="header-section-number">62.4.3</span> Showing continuity with colours</a></li>
-<li><a class="nav-link" href="#more-about-these-metrics"><span class="header-section-number">62.4.4</span> More about these metrics</a></li>
+<a class="nav-link" href="#advanced-diagnostic-filter-show-continuity"><span class="header-section-number">57.4</span> Advanced diagnostic filter: Show continuity</a><ul class="nav navbar-nav">
+<li><a class="nav-link" href="#summary-8"><span class="header-section-number">57.4.1</span> Summary</a></li>
+<li><a class="nav-link" href="#showing-continuity-with-arrowtypes"><span class="header-section-number">57.4.2</span> Showing continuity with arrowtypes</a></li>
+<li><a class="nav-link" href="#showing-continuity-with-colours"><span class="header-section-number">57.4.3</span> Showing continuity with colours</a></li>
+<li><a class="nav-link" href="#more-about-these-metrics"><span class="header-section-number">57.4.4</span> More about these metrics</a></li>
 </ul>
 </li>
 </ul>
 
       <div class="book-extra">
         <ul class="list-unstyled">
-<li><a id="book-source" href="https://github.com/stevepowell99/causal-map-guide/blob/master/09000-continuity.rmd">View source <i class="fab fa-github"></i></a></li>
-          <li><a id="book-edit" href="https://github.com/stevepowell99/causal-map-guide/edit/master/09000-continuity.rmd">Edit this page <i class="fab fa-github"></i></a></li>
+<li><a id="book-source" href="https://github.com/stevepowell99/causal-map-guide/blob/master/08635-threads-and-continuity.rmd">View source <i class="fab fa-github"></i></a></li>
+          <li><a id="book-edit" href="https://github.com/stevepowell99/causal-map-guide/edit/master/08635-threads-and-continuity.rmd">Edit this page <i class="fab fa-github"></i></a></li>
         </ul>
 </div>
     </nav>
@@ -458,7 +452,7 @@ trace threads
 <footer class="bg-primary text-light mt-5"><div class="container"><div class="row">
 
   <div class="col-12 col-md-6 mt-3">
-    <p>"<strong>Guide to Causal Mapping</strong>" was written by Steve Powell<a href="#fn1" class="footnote-ref" id="fnref1"><sup>1</sup></a>, Fiona Remnant<a href="#fn2" class="footnote-ref" id="fnref2"><sup>2</sup></a>, James Copestake<a href="#fn3" class="footnote-ref" id="fnref3"><sup>3</sup></a>, Hannah Mishan<a href="#fn4" class="footnote-ref" id="fnref4"><sup>4</sup></a>, Rebekah Avard<a href="#fn5" class="footnote-ref" id="fnref5"><sup>5</sup></a>, Samuel Goddard<a href="#fn6" class="footnote-ref" id="fnref6"><sup>6</sup></a>. It was last built on 2022-10-03.</p>
+    <p>"<strong>Guide to Causal Mapping</strong>" was written by Steve Powell<a href="#fn1" class="footnote-ref" id="fnref1"><sup>1</sup></a>, Fiona Remnant<a href="#fn2" class="footnote-ref" id="fnref2"><sup>2</sup></a>, James Copestake<a href="#fn3" class="footnote-ref" id="fnref3"><sup>3</sup></a>, Hannah Mishan<a href="#fn4" class="footnote-ref" id="fnref4"><sup>4</sup></a>, Rebekah Avard<a href="#fn5" class="footnote-ref" id="fnref5"><sup>5</sup></a>, Samuel Goddard<a href="#fn6" class="footnote-ref" id="fnref6"><sup>6</sup></a>. It was last built on 2022-10-17.</p>
   </div>
 
   <div class="col-12 col-md-6 mt-3">

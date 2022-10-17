@@ -4,23 +4,23 @@
 <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
 <meta charset="utf-8">
 <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
-<title>Chapter 71 Appending and fixing data (“roundtripping”) | Guide to Causal Mapping</title>
+<title>Chapter 56 📚 Tracing paths | Guide to Causal Mapping</title>
 <meta name="author" content="Steve Powell">
 <meta name="author" content="Fiona Remnant">
 <meta name="author" content="James Copestake">
 <meta name="author" content="Hannah Mishan">
 <meta name="author" content="Rebekah Avard">
 <meta name="author" content="Samuel Goddard">
-<meta name="description" content="Rather than providing a complicated interface for manipulating and adding data, Causal Map lets you upload data from an Excel file, download it again, make changes or add data and upload it again....">
+<meta name="description" content="56.1 Summary  56.1.1 How to trace paths Tracing paths allows you to view full causal pathways and to analyse the relationships between specific causal factors. You will find the trace paths filter...">
 <meta name="generator" content="bookdown 0.24 with bs4_book()">
-<meta property="og:title" content="Chapter 71 Appending and fixing data (“roundtripping”) | Guide to Causal Mapping">
+<meta property="og:title" content="Chapter 56 📚 Tracing paths | Guide to Causal Mapping">
 <meta property="og:type" content="book">
-<meta property="og:url" content="https://causalmap.app/xroundtripping.html">
+<meta property="og:url" content="https://causalmap.app/xtracing-paths.html">
 <meta property="og:image" content="https://causalmap.app/_assets/image-20210520221329966.png">
-<meta property="og:description" content="Rather than providing a complicated interface for manipulating and adding data, Causal Map lets you upload data from an Excel file, download it again, make changes or add data and upload it again....">
+<meta property="og:description" content="56.1 Summary  56.1.1 How to trace paths Tracing paths allows you to view full causal pathways and to analyse the relationships between specific causal factors. You will find the trace paths filter...">
 <meta name="twitter:card" content="summary">
-<meta name="twitter:title" content="Chapter 71 Appending and fixing data (“roundtripping”) | Guide to Causal Mapping">
-<meta name="twitter:description" content="Rather than providing a complicated interface for manipulating and adding data, Causal Map lets you upload data from an Excel file, download it again, make changes or add data and upload it again....">
+<meta name="twitter:title" content="Chapter 56 📚 Tracing paths | Guide to Causal Mapping">
+<meta name="twitter:description" content="56.1 Summary  56.1.1 How to trace paths Tracing paths allows you to view full causal pathways and to analyse the relationships between specific causal factors. You will find the trace paths filter...">
 <meta name="twitter:image" content="https://causalmap.app/_assets/image-20210520221329966.png">
 <!-- JS --><script src="https://cdnjs.cloudflare.com/ajax/libs/clipboard.js/2.0.6/clipboard.min.js" integrity="sha256-inc5kl9MA1hkeYUt+EC3BhlIgyp/2jDIyBLS6k3UxPI=" crossorigin="anonymous"></script><script src="https://cdnjs.cloudflare.com/ajax/libs/fuse.js/6.4.6/fuse.js" integrity="sha512-zv6Ywkjyktsohkbp9bb45V6tEMoWhzFzXis+LrMehmJZZSys19Yxf1dopHx7WzIKxr5tK2dVcYmaCk2uqdjF4A==" crossorigin="anonymous"></script><script src="https://kit.fontawesome.com/6ecbd6c532.js" crossorigin="anonymous"></script><script src="libs/header-attrs-2.11/header-attrs.js"></script><script src="libs/jquery-3.6.0/jquery-3.6.0.min.js"></script><meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
 <link href="libs/bootstrap-4.6.0/bootstrap.min.css" rel="stylesheet">
@@ -107,7 +107,7 @@
 <li><a class="" href="tricky-coding-challenges.html"><span class="header-section-number">54</span> 📚 Tricky coding challenges</a></li>
 <li class="book-part">💻Filters</li>
 <li><a class="" href="filters-overview.html"><span class="header-section-number">55</span> Filters – overview</a></li>
-<li><a class="" href="xtracing-paths.html"><span class="header-section-number">56</span> 📚 Tracing paths</a></li>
+<li><a class="active" href="xtracing-paths.html"><span class="header-section-number">56</span> 📚 Tracing paths</a></li>
 <li><a class="" href="xcontinuity.html"><span class="header-section-number">57</span> Continuity and tracing threads</a></li>
 <li><a class="" href="xconditional-formats.html"><span class="header-section-number">58</span> Conditional formats</a></li>
 <li><a class="" href="xsimple-formats.html"><span class="header-section-number">59</span> Simple formats</a></li>
@@ -123,7 +123,7 @@
 <li><a class="" href="core-tables.html"><span class="header-section-number">68</span> Core tables in Causal Map</a></li>
 <li><a class="" href="ximport.html"><span class="header-section-number">69</span> Uploading your data</a></li>
 <li><a class="" href="import-additional-data.html"><span class="header-section-number">70</span> Uploading additional data</a></li>
-<li><a class="active" href="xroundtripping.html"><span class="header-section-number">71</span> Appending and fixing data (“roundtripping”)</a></li>
+<li><a class="" href="xroundtripping.html"><span class="header-section-number">71</span> Appending and fixing data (“roundtripping”)</a></li>
 <li><a class="" href="ximport-other.html"><span class="header-section-number">72</span> Importing your data: special cases</a></li>
 <li><a class="" href="xmerging-files.html"><span class="header-section-number">73</span> Merging files</a></li>
 <li><a class="" href="xcodebook.html"><span class="header-section-number">74</span> Importing a codebook of factors</a></li>
@@ -166,115 +166,144 @@
         </div>
       </nav>
 </div>
-  </header><main class="col-sm-12 col-md-9 col-lg-7" id="content"><div id="xroundtripping" class="section level1" number="71">
+  </header><main class="col-sm-12 col-md-9 col-lg-7" id="content"><div id="xtracing-paths" class="section level1" number="56">
 <h1>
-<span class="header-section-number">71</span> Appending and fixing data (“roundtripping”)<a class="anchor" aria-label="anchor" href="#xroundtripping"><i class="fas fa-link"></i></a>
+<span class="header-section-number">56</span> 📚 Tracing paths<a class="anchor" aria-label="anchor" href="#xtracing-paths"><i class="fas fa-link"></i></a>
 </h1>
-<p>Rather than providing a complicated interface for manipulating and adding data, Causal Map lets you upload data from an Excel file, download it again, make changes or add data and upload it again.</p>
-<div id="import-general-principles" class="section level3" number="71.0.1">
+<div id="summary-6" class="section level2" number="56.1">
+<h2>
+<span class="header-section-number">56.1</span> Summary<a class="anchor" aria-label="anchor" href="#summary-6"><i class="fas fa-link"></i></a>
+</h2>
+<div id="howtotracepathsandrobustness" class="section level3" number="56.1.1">
 <h3>
-<span class="header-section-number">71.0.1</span> General principles<a class="anchor" aria-label="anchor" href="#import-general-principles"><i class="fas fa-link"></i></a>
+<span class="header-section-number">56.1.1</span> How to trace paths<a class="anchor" aria-label="anchor" href="#howtotracepathsandrobustness"><i class="fas fa-link"></i></a>
 </h3>
-<p>The 5 core data tables in any Causal Map file are these: <code>factors</code>, <code>links</code>, <code>statements</code>, <code>sources</code>, <code>questions</code>.</p>
-<ul>
-<li>The downloaded file has these 5 main tabs (as well as tabs to show all the data for the current view when you downloaded the file including filtered fields.)</li>
-<li>All 5 standard tables can also have arbitrary additional columns/fields which users can use e.g. to filter, analyse their data.</li>
-</ul>
-<p>You can upload your data back into a new or existing Causal Map file.</p>
-<ul>
-<li>The app will read any tabs with any of the (lowercase) names of the core tables: <code>factors</code>, <code>links</code>, <code>statements</code>, <code>sources</code>, <code>questions</code> and will ignore other tabs.</li>
-<li>If any of these five tabs in your Excel file are <em>empty</em>, the app will <strong>delete all the data</strong> in the corresponding tables.</li>
-<li>If any of the five tabs are completely <strong>missing</strong> (e.g. you deleted them), when you upload, the app will just keep the old data in the target file.</li>
-<li>If you want to append data, just download the old file, add the rows you want in any of the tables, and upload again. (Adding additional <em>links</em> is a special case, see <a href="">xx</a>. )</li>
-</ul>
-</div>
-<div id="downloading-a-file" class="section level3" number="71.0.2">
-<h3>
-<span class="header-section-number">71.0.2</span> Downloading a file<a class="anchor" aria-label="anchor" href="#downloading-a-file"><i class="fas fa-link"></i></a>
-</h3>
-<p>To download a file click the download icon in the left panel and your data will be downloaded as an xlsx.</p>
+<p>Tracing paths allows you to view full causal pathways and to analyse the relationships between specific causal factors. You will find the <code>trace paths</code> filter in the <code>analysis</code> filters section. This will open the <code>trace paths</code> panel which asks you to select how many steps to trace and which factors to trace from and to. Type one or more factors to begin your path (these are the <code>origin</code> factors) and which factor or factors you want the path to end at (the <code>target</code> factors). If necessary, move the slider to select how many steps down you want the path to go.</p>
 <div class="figure">
-<img src="_assets/dVHQQ2ZsUl.gif" width="650" alt=""><p class="caption">dVHQQ2ZsUl</p>
+<img src="_assets/image-20221017080606765.png" alt=""><p class="caption">image-20221017080606765</p>
 </div>
-<p>What you can expect from your download:</p>
+<p>If you want you can also leave either (but not both) factor selectors blank, e.g.</p>
 <ul>
-<li>Factors table: the <code>factor_id</code> field is included.
+<li>to search from some specific factor or factors to “anywhere”, or</li>
+<li>to search from “anywhere” to some specific factor or factors.</li>
+</ul>
+<p>If you want to search from or to the <strong>main</strong> drivers and/or outcomes:</p>
 <ul>
-<li>If you delete any of the rows, any links pointing to them will be deleted on upload.</li>
-<li>If you want to add more factors at the bottom of the table, leave the <code>factor_id</code> field blank for those rows and the app will add them on upload.</li>
+<li>put “main_drivers” in the first box</li>
+<li>and/or put “main_outcomes” in the second box.</li>
 </ul>
-</li>
-<li>Links table: the <code>link_id</code> field is not included and is not needed.</li>
-<li>Statements table: the <code>statement_id</code> field is not included.
-<ul>
-<li>Don’t delete any of the rows, unless you know what you are doing. (You can delete any rows after the currently last coded statement.)</li>
-<li>You can add more statements at the bottom of the table.</li>
-</ul>
-</li>
-<li>Statements table on our Test server: the <code>statement_id</code> field IS included when you download a file.</li>
-<li>You can delete rows and reorder rows (by dragging them around in Excel). Don’t change the <code>statement_id</code>.
-<ul>
-<li>Note: If you delete rows which had links, these links will become orphaned and will be displayed in the maps only when you do not filter by any <code>statement_id</code>. This probably isn’t what you want – you might want to delete the corresponding links too. If you choose to add new rows as well as deleting old rows, the <code>statement_id</code> of the new rows will be the row number, so make sure this is what you want – will they then get “gifted” orphaned links?</li>
-</ul>
-</li>
-<li>Sources table: the <code>source_id</code> field is included.
-<ul>
-<li>You can edit the <code>source_id</code>. Keep in mind that the contents of the <code>source_id</code> column in this table should match the contents of the <code>source_id</code> column in the statements table.</li>
-<li>If you want to add more rows, you must include a <code>source_id</code> for each row.</li>
-</ul>
-</li>
-<li>Questions table: the <code>question_id</code> field is included.
-<ul>
-<li>You can edit the <code>question_id</code>. Keep in mind that the contents of the <code>question_id</code> column in this table should match the contents of the <code>question_id</code> column in the statements table.</li>
-<li>If you want to add more rows, you must include a <code>question_id</code> for each row.</li>
-</ul>
-</li>
-</ul>
+<p>“main_drivers” uses an algorithm which identifies 1-3 factors with the highest <code>driver_score</code> , i.e. and likewise for outcomes.</p>
+<p>Once you click <code>apply filter</code> your map will appear, as below. Orange indicates the origin(s) of the path, purple the target factor(s) and green any factors in between.</p>
+<div class="figure">
+<img src="_assets/image-20211016141204775.png" width="650" alt=""><p class="caption">image-20211016141204775</p>
 </div>
-<div id="uses-for-roundtripping" class="section level3" number="71.0.3">
+<p>In this example, there are causal paths from the two external factors to the two outcomes. In real-life examples, these paths may be much harder to follow, so their are best seen and shown by using path tracing, as it simplifies the map and highlights the intervening factors between the two factors.</p>
+<p>A path length of 1 will only show the one step in the causal chain from/to your chosen factor, i.e. A ➜ B. A path length of 2 will also show the next step in the causal chain (if there is one!), i.e. A ➜ B ➜ C.</p>
+</div>
+<div id="removing-unwanted-links" class="section level3" number="56.1.2">
 <h3>
-<span class="header-section-number">71.0.3</span> Uses for roundtripping<a class="anchor" aria-label="anchor" href="#uses-for-roundtripping"><i class="fas fa-link"></i></a>
+<span class="header-section-number">56.1.2</span> 🧪Removing unwanted links<a class="anchor" aria-label="anchor" href="#removing-unwanted-links"><i class="fas fa-link"></i></a>
 </h3>
-<p>You could download a file to:</p>
-<ol style="list-style-type: decimal">
-<li>Make any ordinary trivial edits like changing a name, and/or add ordinary columns/fields.</li>
-<li>Add rows. Note this does <strong>not</strong> add linked entries in linked tables.</li>
-<li>Delete rows. Note this does <strong>not</strong> delete linked entries in linked tables (except if you delete factors, any links to/from them will be deleted.)</li>
-</ol>
-<p>You could upload a file containing only a statements tab:
-1. with a column text and optionally source_id, question_id and maybe other fields. Note this does not add the source and question ids to the source and question tables.</p>
-<p>You could upload a file containing only a links tab:</p>
-<ol style="list-style-type: decimal">
-<li>With just the from_label and/or to_label columns and no factors tab.</li>
-<li>With numerical from and to columns which relate to a factors tab which has a factor_id column and a label column and usually a statement_id column.</li>
-</ol>
+<p>Suppose you have a map with links B –&gt; D, C –&gt; D and also B –&gt; C. If you run this filter:</p>
+<p><code>trace paths length=1 to=D</code></p>
+<p>the app will show you also the path from B to C, because both B and C are one link away from D, and there is a path from B to C. But that might have surprised you, as the path from B to C does not get you any closer to D.</p>
+<div class="figure">
+<img src="_assets/image-20220810124747011.png" alt=""><p class="caption">image-20220810124747011</p>
 </div>
-<div id="what-if-you-have-merged-cells-in-your-excel-file" class="section level3" number="71.0.4">
-<h3>
-<span class="header-section-number">71.0.4</span> What if you have merged cells in your Excel file?<a class="anchor" aria-label="anchor" href="#what-if-you-have-merged-cells-in-your-excel-file"><i class="fas fa-link"></i></a>
-</h3>
-<p>If you have merged cells so e.g. source_id spans many rows, the app will not be able to read this data. It is easy to unmerge your cells without losing your data, just follow the instructions on this <a href="https://www.extendoffice.com/documents/excel/1139-excel-unmerge-cells-and-fill.html">webpage</a>.</p>
+<p>So you might prefer this filter:</p>
+<p><code>trace paths length=1 to=D remove_links=T</code> (which is equivalent to clicking this box in the dialog:)</p>
+<div class="figure">
+<img src="_assets/image-20221017080731614.png" alt=""><p class="caption">image-20221017080731614</p>
+</div>
+<p>… which will remove any such links.</p>
+<div class="figure">
+<img src="_assets/image-20220810124740033.png" alt=""><p class="caption">image-20220810124740033</p>
+</div>
+<p>In other words, <code>trace paths length=L from=X to=Y</code> says “show me all the factors which are on paths from X to Y no longer than L, and all the links between such factors” whereas <code>trace paths length=L from=X to=Y remove_links=F</code> says “show me all the paths from X to Y no longer than L”.</p>
+<p><a href="xcontinuity.html#xcontinuity">Read more about tracing paths and tracing threads</a>.</p>
+<!--### How to calculate robustness
 
+Once you have applied the [trace path filter](#howtotracepathsandrobustness), you can find the robustness calculations in the `robustness` tab. Here is the table for the example above.
+
+![UpSR4OnxP6](_assets/UpSR4OnxP6.gif){width=650}
+
+![image-20211017130218716](_assets/image-20211017130218716.png){width=650}
+
+In this tab you will find a table displaying the number of links between your `origin` and `target` factors. A larger number means more evidence; more pieces would have to be deleted until we gave up the hypothesis that the Origin factors influence the Target factors at all. 
+
+For example, in the top row of the table above you can see that there is more evidence that rainfall influenced both of the targets compared to the influence of loss of forests. In the first column, you can see that there is more evidence of the influence of external factors on people moving away than on people getting angry.
+
+The [following section](#howtoanalyseobustness) will expand on how to understand these figures.
+
+
+
+## Understanding robustness{#analysingrobustness}
+
+Robustness identifies how many pieces of evidence (individual mentions of individual links) would have to be deleted so that there is no longer any path from the Origin factors to the Target factors. It is important to understand a large number does *not* necessarily mean that this path is *strong* in the sense that the Origin factors have a *large* effect on the Target factors. It says there is plenty of evidence for the path, *whatever its strength*.
+
+Subtotals are provided for each Origin factor, when there is more than one, and/or for each Target factor, when there is more than one; it can be useful to compare the amount of evidence for the impact of each Origin factor (and/or Target factor).
+
+These numbers are not very useful on their own. But they are useful for comparisons. 
+
+## Amount of overlap
+
+If you look at the robustness of the path from interventions B and C to an outcome E, one thing you can do is compare the sum of the score for the two sets of paths and compare it with the overall score. If the overall score is more or less the same as the larger of the score for B and the score for C, you can assume that the (evidence for the) intervention paths overlap - so if the score for B is larger, you could say that C uses many of the same paths. But if the overall score is more like the sum of the two, you can deduce that the interventions work more independently. So for example if you are already funding intervention B, and you have to decide whether to fund C or D, and your causal map says that the score from C to E and from D to E are similar, you'd want to look at the pairs - you'd want to look at B plus C to E and compare it with B plus D to E. B + D might have a much larger score than C +D, because C shares many paths with B, but D doesn't. So you'd want to fund D, as the combination of B and D would be more robust.  
+
+Of course, in principle you can see all of this just by looking at the maps and to what extent B, C and D share paths to E. But sometimes it is hard to see and this metric anchors a narrative description in actual numbers.
+
+## Tracing paths and calculating robustness *by field* {#xtracing-paths-by-field}
+
+### Tracing paths by field, e.g. "by source" 
+
+[this is superseded by [thread tracing](#xtracing-threads)]
+
+Don't fall into the [transitivity trap](#xtransitivity-trap)! 
+
+The trouble with the existing maps is that if you ask for paths from A to C, it might include links from sources which never actually mentioned any complete path from A to C. It might even be that there is no complete path from A to C in the sense that no single source mentioned any such path in its entirety.
+
+By default, path tracing shows all the paths from the origin (set of) factors to the target (set of) factors which can be constructed using information from *different sources*. But sometimes this is not what we want. We only want to see paths which were actually mentioned in their entirety by individual sources. It is easy to construct a single such map from origin to target for a single source. And if we are interested in more than one source, we can combine those maps to construct a shared map for that group of sources. 
+
+By setting the field to `source_id` you only show links which are part of a complete path which at least one individual source mentioned in its entirety. The width of the links can be set to a new metric, namely the number of sources whose complete evidence included that path: who mentioned a complete path which ends at the consequence factor of the link.   So you could for example set the width of the links to this new metric but for comparison set the link label to a familiar metric (e.g. `count: link_id`): the total number of mentions of the link (regardless of which source they are from, i.e. including sources which never mentioned this link as part of a whole path).
+
+Even these maps can still be misleading: you must not assume that any arbitrary path you can trace through the map was actually mentioned by one particular source. You only know that *each of its links* was *part of some path* which was mentioned in its entirety by some source.
+
+### Calculating robustness by field, e.g. "by source"
+
+
+Just because there is a lot of evidence for all the different parts of a path does not mean that any one source, or type of source, actually mentioned all those parts. 
+
+For this reason, `trace robustness` also lets you ask that question. 
+
+![image-20211119164551704](_assets/image-20211119164551704.png)
+
+For example you can put `source_id` in the box in order to count how many sources mentioned at least one entire path from the source to the target factor(s).  
+
+This is important because it's usually more credible to ask how many people mentioned all the bits of some path than to ask how many pieces of evidence are there altogether.
+
+Or you could put `District` to find out, looking at each district individually, there is evidence (possibly assembled from different sources within that district) for the path.   -->
+
+</div>
 </div>
 </div>
   <div class="chapter-nav">
-<div class="prev"><a href="import-additional-data.html"><span class="header-section-number">70</span> Uploading additional data</a></div>
-<div class="next"><a href="ximport-other.html"><span class="header-section-number">72</span> Importing your data: special cases</a></div>
+<div class="prev"><a href="filters-overview.html"><span class="header-section-number">55</span> Filters – overview</a></div>
+<div class="next"><a href="xcontinuity.html"><span class="header-section-number">57</span> Continuity and tracing threads</a></div>
 </div></main><div class="col-md-3 col-lg-2 d-none d-md-block sidebar sidebar-chapter">
     <nav id="toc" data-toggle="toc" aria-label="On this page"><h2>On this page</h2>
-      <ul class="nav navbar-nav"><li>
-<a class="nav-link" href="#xroundtripping"><span class="header-section-number">71</span> Appending and fixing data (“roundtripping”)</a><ul class="nav navbar-nav">
-<li><a class="nav-link" href="#import-general-principles"><span class="header-section-number">71.0.1</span> General principles</a></li>
-<li><a class="nav-link" href="#downloading-a-file"><span class="header-section-number">71.0.2</span> Downloading a file</a></li>
-<li><a class="nav-link" href="#uses-for-roundtripping"><span class="header-section-number">71.0.3</span> Uses for roundtripping</a></li>
-<li><a class="nav-link" href="#what-if-you-have-merged-cells-in-your-excel-file"><span class="header-section-number">71.0.4</span> What if you have merged cells in your Excel file?</a></li>
+      <ul class="nav navbar-nav">
+<li><a class="nav-link" href="#xtracing-paths"><span class="header-section-number">56</span> 📚 Tracing paths</a></li>
+<li>
+<a class="nav-link" href="#summary-6"><span class="header-section-number">56.1</span> Summary</a><ul class="nav navbar-nav">
+<li><a class="nav-link" href="#howtotracepathsandrobustness"><span class="header-section-number">56.1.1</span> How to trace paths</a></li>
+<li><a class="nav-link" href="#removing-unwanted-links"><span class="header-section-number">56.1.2</span> 🧪Removing unwanted links</a></li>
 </ul>
-</li></ul>
+</li>
+</ul>
 
       <div class="book-extra">
         <ul class="list-unstyled">
-<li><a id="book-source" href="https://github.com/stevepowell99/causal-map-guide/blob/master/20200-roundtripping.rmd">View source <i class="fab fa-github"></i></a></li>
-          <li><a id="book-edit" href="https://github.com/stevepowell99/causal-map-guide/edit/master/20200-roundtripping.rmd">Edit this page <i class="fab fa-github"></i></a></li>
+<li><a id="book-source" href="https://github.com/stevepowell99/causal-map-guide/blob/master/08630-tracing-paths.rmd">View source <i class="fab fa-github"></i></a></li>
+          <li><a id="book-edit" href="https://github.com/stevepowell99/causal-map-guide/edit/master/08630-tracing-paths.rmd">Edit this page <i class="fab fa-github"></i></a></li>
         </ul>
 </div>
     </nav>
