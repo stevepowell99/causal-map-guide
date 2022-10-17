@@ -1,18 +1,12 @@
-# 📚 Tracing paths and calculating robustness{#xrobustness}
+# 📚 Tracing paths {#xtracing-paths}
 
 ## Summary
 
-### How to trace paths and calculate robustness{#howtotracepathsandrobustness}
+### How to trace paths{#howtotracepathsandrobustness}
 
-Tracing paths allows you to view full causal pathways and to analyse the relationships between specific causal factors. You will find the `trace robustness` filter in the `analysis` filters section.
+Tracing paths allows you to view full causal pathways and to analyse the relationships between specific causal factors. You will find the `trace paths` filter in the `analysis` filters section. This will open the `trace paths` panel which asks you to select how many steps to trace and which factors to trace from and to. Type one or more factors to begin your path (these are the `origin` factors) and which factor or factors you want the path to end at (the `target` factors). If necessary, move the slider to select how many steps down you want the path to go. 
 
-![Irgj26EgMI](_assets/Irgj26EgMI.gif){width=650}
-
-This will open the `trace robustness` panel which asks you to select how many steps to trace and which factors to trace from and to. Type one or more factors to begin your path (these are the `origin` factors) and which factor or factors you want the path to end at (the `target` factors). If necessary, move the slider to select how many steps down you want the path to go. 
-
-
-
-![](_assets/image-20211025151626916.png){width=650}
+![image-20221017080606765](_assets/image-20221017080606765.png)
 
 If you want you can also leave either (but not both) factor selectors blank, e.g.
 
@@ -34,10 +28,6 @@ In this example, there are causal paths from the two external factors to the two
 
 A path length of 1 will only show the one step in the causal chain from/to your chosen factor, i.e. A ➜ B. A path length of 2 will also show the next step in the causal chain (if there is one!), i.e. A ➜ B ➜ C.
 
-Path tracing is the prerequisite for calculating Robustness.
-
-It is [also possible]({#xrobustness-by-field}) to count, for example, how many sources mentioned a complete path.
-
 ### 🧪Removing unwanted links
 
 Suppose you have a map with links B --> D, C --> D and also B --> C. If you run this filter:
@@ -50,17 +40,19 @@ the app will show you also the path from B to C, because both B and C are one li
 
 So you might prefer this filter:
 
-`trace paths length=1 to=D remove_links=T`
+`trace paths length=1 to=D remove_links=T` (which is equivalent to clicking this box in the dialog:)
 
-... which will remove any such links.
+![image-20221017080731614](_assets/image-20221017080731614.png)
+
+... which will remove any such links. 
 
 ![image-20220810124740033](_assets/image-20220810124740033.png)
 
-In other words, `trace paths length=L from=X to=Y` says "show me all the factors which are on paths from X to Y no longer than L, and all the links between such factors" whereas `trace paths length=L from=X to=Y remove_links=F` says "show me all the paths from X to Y no longer than L". This should probably be the default, but in order to maintain compatibility we will leave it like it is.
+In other words, `trace paths length=L from=X to=Y` says "show me all the factors which are on paths from X to Y no longer than L, and all the links between such factors" whereas `trace paths length=L from=X to=Y remove_links=F` says "show me all the paths from X to Y no longer than L". 
 
+[Read more about tracing paths and tracing threads](#xcontinuity).
 
-
-### How to calculate robustness
+<!--### How to calculate robustness
 
 Once you have applied the [trace path filter](#howtotracepathsandrobustness), you can find the robustness calculations in the `robustness` tab. Here is the table for the example above.
 
@@ -90,7 +82,7 @@ If you look at the robustness of the path from interventions B and C to an outco
 
 Of course, in principle you can see all of this just by looking at the maps and to what extent B, C and D share paths to E. But sometimes it is hard to see and this metric anchors a narrative description in actual numbers.
 
-<!--## Tracing paths and calculating robustness *by field* {#xrobustness-by-field}
+## Tracing paths and calculating robustness *by field* {#xtracing-paths-by-field}
 
 ### Tracing paths by field, e.g. "by source" 
 

@@ -48,7 +48,7 @@ The video below shows you how to format and upload a set of statements for codin
 knitr::include_url("https://player.vimeo.com/video/637121851")
 ```
 
-And click [here](https://causalmap.app/wp-content/uploads/2022/03/template-upload-2-2.xlsx) to download the excel template. 
+And click [here](https://drive.google.com/uc?export=download&id=126fAfkJSbUXkqHp_OkE3af2vdxhMjRy-) to download the excel template. 
 
 ### Formatting a Standard Format file: The basics {#formattingyourfile}
 
