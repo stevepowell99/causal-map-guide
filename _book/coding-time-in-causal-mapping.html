@@ -4,7 +4,7 @@
 <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
 <meta charset="utf-8">
 <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
-<title>Chapter 85 📚 Coding time in causal mapping | Guide to Causal Mapping</title>
+<title>Chapter 78 📚 Coding time in causal mapping | Guide to Causal Mapping</title>
 <meta name="author" content="Steve Powell">
 <meta name="author" content="Fiona Remnant">
 <meta name="author" content="James Copestake">
@@ -12,20 +12,24 @@
 <meta name="author" content="Rebekah Avard">
 <meta name="author" content="Samuel Goddard">
 <meta name="description" content="Many of the questions we want to answer when doing causal mapping have to do with time. Of course, there is always some kind of flow of time through our causal maps, because effects come after...">
-<meta name="generator" content="bookdown 0.24 with bs4_book()">
-<meta property="og:title" content="Chapter 85 📚 Coding time in causal mapping | Guide to Causal Mapping">
+<meta name="generator" content="bookdown 0.26 with bs4_book()">
+<meta property="og:title" content="Chapter 78 📚 Coding time in causal mapping | Guide to Causal Mapping">
 <meta property="og:type" content="book">
 <meta property="og:url" content="https://causalmap.app/coding-time-in-causal-mapping.html">
 <meta property="og:image" content="https://causalmap.app/_assets/image-20210520221329966.png">
 <meta property="og:description" content="Many of the questions we want to answer when doing causal mapping have to do with time. Of course, there is always some kind of flow of time through our causal maps, because effects come after...">
 <meta name="twitter:card" content="summary">
-<meta name="twitter:title" content="Chapter 85 📚 Coding time in causal mapping | Guide to Causal Mapping">
+<meta name="twitter:title" content="Chapter 78 📚 Coding time in causal mapping | Guide to Causal Mapping">
 <meta name="twitter:description" content="Many of the questions we want to answer when doing causal mapping have to do with time. Of course, there is always some kind of flow of time through our causal maps, because effects come after...">
 <meta name="twitter:image" content="https://causalmap.app/_assets/image-20210520221329966.png">
-<!-- JS --><script src="https://cdnjs.cloudflare.com/ajax/libs/clipboard.js/2.0.6/clipboard.min.js" integrity="sha256-inc5kl9MA1hkeYUt+EC3BhlIgyp/2jDIyBLS6k3UxPI=" crossorigin="anonymous"></script><script src="https://cdnjs.cloudflare.com/ajax/libs/fuse.js/6.4.6/fuse.js" integrity="sha512-zv6Ywkjyktsohkbp9bb45V6tEMoWhzFzXis+LrMehmJZZSys19Yxf1dopHx7WzIKxr5tK2dVcYmaCk2uqdjF4A==" crossorigin="anonymous"></script><script src="https://kit.fontawesome.com/6ecbd6c532.js" crossorigin="anonymous"></script><script src="libs/header-attrs-2.11/header-attrs.js"></script><script src="libs/jquery-3.6.0/jquery-3.6.0.min.js"></script><meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+<!-- JS --><script src="https://cdnjs.cloudflare.com/ajax/libs/clipboard.js/2.0.6/clipboard.min.js" integrity="sha256-inc5kl9MA1hkeYUt+EC3BhlIgyp/2jDIyBLS6k3UxPI=" crossorigin="anonymous"></script><script src="https://cdnjs.cloudflare.com/ajax/libs/fuse.js/6.4.6/fuse.js" integrity="sha512-zv6Ywkjyktsohkbp9bb45V6tEMoWhzFzXis+LrMehmJZZSys19Yxf1dopHx7WzIKxr5tK2dVcYmaCk2uqdjF4A==" crossorigin="anonymous"></script><script src="https://kit.fontawesome.com/6ecbd6c532.js" crossorigin="anonymous"></script><script src="libs/jquery-3.6.0/jquery-3.6.0.min.js"></script><meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
 <link href="libs/bootstrap-4.6.0/bootstrap.min.css" rel="stylesheet">
 <script src="libs/bootstrap-4.6.0/bootstrap.bundle.min.js"></script><script src="libs/bs3compat-0.3.1/transition.js"></script><script src="libs/bs3compat-0.3.1/tabs.js"></script><script src="libs/bs3compat-0.3.1/bs3compat.js"></script><link href="libs/bs4_book-1.0.0/bs4_book.css" rel="stylesheet">
-<script src="libs/bs4_book-1.0.0/bs4_book.js"></script><script src="https://cdnjs.cloudflare.com/ajax/libs/autocomplete.js/0.38.0/autocomplete.jquery.min.js" integrity="sha512-GU9ayf+66Xx2TmpxqJpliWbT5PiGYxpaG8rfnBEk1LL8l1KGkRShhngwdXK1UgqhAzWpZHSiYPc09/NwDQIGyg==" crossorigin="anonymous"></script><script src="https://cdnjs.cloudflare.com/ajax/libs/mark.js/8.11.1/mark.min.js" integrity="sha512-5CYOlHXGh6QpOFA/TeTylKLWfB3ftPsde7AnmhuitiTX4K5SqCLBeKro6sPS8ilsz1Q4NRx3v8Ko2IBiszzdww==" crossorigin="anonymous"></script><!-- CSS --><link rel="stylesheet" href="style.css">
+<script src="libs/bs4_book-1.0.0/bs4_book.js"></script><script src="https://cdnjs.cloudflare.com/ajax/libs/autocomplete.js/0.38.0/autocomplete.jquery.min.js" integrity="sha512-GU9ayf+66Xx2TmpxqJpliWbT5PiGYxpaG8rfnBEk1LL8l1KGkRShhngwdXK1UgqhAzWpZHSiYPc09/NwDQIGyg==" crossorigin="anonymous"></script><script src="https://cdnjs.cloudflare.com/ajax/libs/mark.js/8.11.1/mark.min.js" integrity="sha512-5CYOlHXGh6QpOFA/TeTylKLWfB3ftPsde7AnmhuitiTX4K5SqCLBeKro6sPS8ilsz1Q4NRx3v8Ko2IBiszzdww==" crossorigin="anonymous"></script><!-- CSS --><style type="text/css">
+    
+    div.hanging-indent{margin-left: 1.5em; text-indent: -1.5em;}
+  </style>
+<link rel="stylesheet" href="style.css">
 </head>
 <body data-spy="scroll" data-target="#toc">
 
@@ -48,116 +52,114 @@
       <nav aria-label="Table of contents"><h2>Table of contents</h2>
         <ul class="book-toc list-unstyled">
 <li><a class="" href="index.html"><span class="header-section-number">1</span> Overview</a></li>
-<li class="book-part">💻 Getting Started</li>
+<li class="book-part">💻 1: Getting Started</li>
 <li><a class="" href="prerequisites-for-using-the-app.html"><span class="header-section-number">2</span> Prerequisites for using the app</a></li>
-<li><a class="" href="x5.html"><span class="header-section-number">3</span> Your first 5 minutes with Causal Map</a></li>
-<li><a class="" href="xmanage_your_subscription.html"><span class="header-section-number">4</span> Managing your subscription</a></li>
-<li><a class="" href="quick-tour.html"><span class="header-section-number">5</span> Quick tour of the app</a></li>
-<li><a class="" href="xtop-menu.html"><span class="header-section-number">6</span> The top menu</a></li>
-<li><a class="" href="dashboard.html"><span class="header-section-number">7</span> The Dashboard</a></li>
-<li><a class="" href="xfile-manager.html"><span class="header-section-number">8</span> The File Manager</a></li>
-<li><a class="" href="xstatement-nav-old.html"><span class="header-section-number">9</span> The Statement Navigator</a></li>
-<li><a class="" href="xcoding-panel.html"><span class="header-section-number">10</span> The Coding Panel: creating factors and links</a></li>
-<li><a class="" href="xinteractive-view.html"><span class="header-section-number">11</span> Interactive View</a></li>
-<li><a class="" href="print-view.html"><span class="header-section-number">12</span> Print view</a></li>
-<li><a class="" href="xall-tables-old.html"><span class="header-section-number">13</span> All the tables</a></li>
-<li><a class="" href="xall-tables.html"><span class="header-section-number">14</span> 🧪New tables</a></li>
-<li><a class="" href="FAQs.html"><span class="header-section-number">15</span> FAQs: Causal Map questions and troubleshooting</a></li>
-<li><a class="" href="top-tips.html"><span class="header-section-number">16</span> Top tips if you have just starting coding</a></li>
-<li><a class="" href="xintro-filters.html"><span class="header-section-number">17</span> Introduction to filters</a></li>
-<li><a class="" href="uploadandupdate.html"><span class="header-section-number">18</span> How to upload and update your data – Overview</a></li>
-<li><a class="" href="glossary.html"><span class="header-section-number">19</span> 📚 Glossary</a></li>
-<li><a class="" href="xvideo-list.html"><span class="header-section-number">20</span> Video list</a></li>
-<li class="book-part">Introduction</li>
-<li><a class="" href="xinvite.html"><span class="header-section-number">21</span> Just received an invite to view something in Causal Map?</a></li>
-<li><a class="" href="moving-to-causal-map-2-from-causal-map-1.html"><span class="header-section-number">22</span> Moving to Causal Map 2 from Causal Map 1</a></li>
-<li><a class="" href="are-causal-map-and-causal-mapping-for-me.html"><span class="header-section-number">23</span> 📚 Are Causal Map and causal mapping for me?</a></li>
-<li><a class="" href="features-of-causal-map.html"><span class="header-section-number">24</span> Features of Causal Map</a></li>
-<li><a class="" href="collaboratio.html"><span class="header-section-number">25</span> Collaborating at Causal Map</a></li>
-<li class="book-part">💻 The rest of the app</li>
-<li><a class="" href="xfactor-editor.html"><span class="header-section-number">26</span> The Factor Editor</a></li>
-<li><a class="" href="xthe-factors-table-old.html"><span class="header-section-number">27</span> The Factors table</a></li>
-<li><a class="" href="xthe-factors-table.html"><span class="header-section-number">28</span> 🧪The Factors table</a></li>
-<li><a class="" href="xthe-mentions-table-old.html"><span class="header-section-number">29</span> The Mentions Table</a></li>
-<li><a class="" href="xthe-mentions-table.html"><span class="header-section-number">30</span> 🧪The Mentions Table</a></li>
-<li><a class="" href="xthe-links-table-old.html"><span class="header-section-number">31</span> The Links Table</a></li>
-<li><a class="" href="xthe-links-table.html"><span class="header-section-number">32</span> 🧪The Links Table</a></li>
-<li><a class="" href="xthe-bundles-table-old.html"><span class="header-section-number">33</span> The Bundles Table</a></li>
-<li><a class="" href="xthe-statements-table-old.html"><span class="header-section-number">34</span> The Statements Table</a></li>
-<li><a class="" href="xthe-statements-table.html"><span class="header-section-number">35</span> 🧪The Statements Table</a></li>
-<li><a class="" href="xthe-sources-table-old.html"><span class="header-section-number">36</span> The Sources Table</a></li>
-<li><a class="" href="the-sources-table.html"><span class="header-section-number">37</span> 🧪The Sources Table</a></li>
-<li><a class="" href="xthe-questions-table-old.html"><span class="header-section-number">38</span> The Questions Table</a></li>
-<li><a class="" href="xthe-questions-table.html"><span class="header-section-number">39</span> 🧪The Questions Table</a></li>
-<li><a class="" href="xthe-closed-question-blocks-table-old.html"><span class="header-section-number">40</span> The Closed Question Blocks Table</a></li>
-<li><a class="" href="the-closed-question-blocks-table.html"><span class="header-section-number">41</span> 🧪The Closed Question Blocks Table</a></li>
-<li><a class="" href="xmetrics-old.html"><span class="header-section-number">42</span> The Metrics Table</a></li>
-<li><a class="" href="xmetrics.html"><span class="header-section-number">43</span> 🧪The Metrics Table</a></li>
-<li><a class="" href="xdata-manager.html"><span class="header-section-number">44</span> Data manager</a></li>
-<li><a class="" href="xgamification.html"><span class="header-section-number">45</span> Document coding score!</a></li>
-<li><a class="" href="xupdates-tab.html"><span class="header-section-number">46</span> The Updates tab</a></li>
-<li class="book-part">📚💻 Creating maps</li>
-<li><a class="" href="creating-good-factor-labels.html"><span class="header-section-number">47</span> 📚 Creating good factor labels</a></li>
-<li><a class="" href="xedit-factor-and-links.html"><span class="header-section-number">48</span> Editing factors and links</a></li>
-<li><a class="" href="xsimplifying-with-hierarchical.html"><span class="header-section-number">49</span> 📚 Simplifying causal maps with hierarchical coding</a></li>
-<li><a class="" href="xhierarchical-coding.html"><span class="header-section-number">50</span> 💻 Hierarchical factors in Causal Map</a></li>
-<li><a class="" href="strength-adding-additional-information-like-strength-of-a-link-in-a-causal-map.html"><span class="header-section-number">51</span> 📚 Strength: Adding additional information like strength of a link in a causal map</a></li>
-<li><a class="" href="coding-opposites.html"><span class="header-section-number">52</span> 📚 Coding opposites</a></li>
-<li><a class="" href="xplain_coding.html"><span class="header-section-number">53</span> 📚 Plain coding</a></li>
-<li><a class="" href="tricky-coding-challenges.html"><span class="header-section-number">54</span> 📚 Tricky coding challenges</a></li>
-<li class="book-part">💻Filters</li>
-<li><a class="" href="filters-overview.html"><span class="header-section-number">55</span> Filters – overview</a></li>
-<li><a class="" href="xtracing-paths.html"><span class="header-section-number">56</span> 📚 Tracing paths</a></li>
-<li><a class="" href="xcontinuity.html"><span class="header-section-number">57</span> Continuity and tracing threads</a></li>
-<li><a class="" href="xconditional-formats.html"><span class="header-section-number">58</span> Conditional formats</a></li>
-<li><a class="" href="xsimple-formats.html"><span class="header-section-number">59</span> Simple formats</a></li>
-<li><a class="" href="what-is-the-logic-behind-the-causal-map-filters.html"><span class="header-section-number">60</span> What is the logic behind the Causal Map filters?</a></li>
-<li><a class="" href="xanalysis.html"><span class="header-section-number">61</span> Analysing causal maps</a></li>
-<li><a class="" href="smart-zoom.html"><span class="header-section-number">62</span> Smart zooming</a></li>
-<li><a class="" href="xquickfields.html"><span class="header-section-number">63</span> Quickfields</a></li>
-<li><a class="" href="comparing.html"><span class="header-section-number">64</span> 📚 Analysis: comparing maps between particular groups</a></li>
-<li><a class="" href="cluster-sources.html"><span class="header-section-number">65</span> 📚 Clustering sources</a></li>
-<li><a class="" href="recalculate.html"><span class="header-section-number">66</span> Recalculate fields</a></li>
-<li><a class="" href="xinterpret.html"><span class="header-section-number">67</span> Interpreting your results</a></li>
-<li class="book-part">💻 Uploading and updating data</li>
-<li><a class="" href="core-tables.html"><span class="header-section-number">68</span> Core tables in Causal Map</a></li>
-<li><a class="" href="ximport.html"><span class="header-section-number">69</span> Uploading your data</a></li>
-<li><a class="" href="import-additional-data.html"><span class="header-section-number">70</span> Uploading additional data</a></li>
-<li><a class="" href="xroundtripping.html"><span class="header-section-number">71</span> Appending and fixing data (“roundtripping”)</a></li>
-<li><a class="" href="ximport-other.html"><span class="header-section-number">72</span> Importing your data: special cases</a></li>
-<li><a class="" href="xmerging-files.html"><span class="header-section-number">73</span> Merging files</a></li>
-<li><a class="" href="xcodebook.html"><span class="header-section-number">74</span> Importing a codebook of factors</a></li>
+<li><a class="" href="xinvite.html"><span class="header-section-number">3</span> Has someone shared a file with you?</a></li>
+<li><a class="" href="want-to-do-your-own-coding.html"><span class="header-section-number">4</span> Want to do your own coding?</a></li>
+<li><a class="" href="are-causal-map-and-causal-mapping-for-you.html"><span class="header-section-number">5</span> 📚 Are Causal Map and causal mapping for you?</a></li>
+<li><a class="" href="getting-help.html"><span class="header-section-number">6</span> Getting help</a></li>
+<li><a class="" href="x5.html"><span class="header-section-number">7</span> Your first 5 minutes with Causal Map</a></li>
+<li><a class="" href="xstatement-nav-old.html"><span class="header-section-number">8</span> The Statement Navigator</a></li>
+<li><a class="" href="xinteractive-view.html"><span class="header-section-number">9</span> Interactive View</a></li>
+<li><a class="" href="print-view.html"><span class="header-section-number">10</span> Print view</a></li>
+<li><a class="" href="xall-tables.html"><span class="header-section-number">11</span> 🧪Tables</a></li>
+<li><a class="" href="the-first-quiz.html"><span class="header-section-number">12</span> The first quiz</a></li>
+<li class="book-part">2: Basic Coding</li>
+<li><a class="" href="top-tips.html"><span class="header-section-number">13</span> Top tips if you have just starting coding</a></li>
+<li><a class="" href="xintro-filters.html"><span class="header-section-number">14</span> Introduction to filters</a></li>
+<li><a class="" href="uploadandupdate.html"><span class="header-section-number">15</span> How to upload and update your data – Overview</a></li>
+<li><a class="" href="xcoding-panel.html"><span class="header-section-number">16</span> The Coding Panel: creating factors and links</a></li>
+<li><a class="" href="xinfo-pan.html"><span class="header-section-number">17</span> The info panel</a></li>
+<li><a class="" href="creating-a-file.html"><span class="header-section-number">18</span> Creating a file</a></li>
+<li><a class="" href="collaboratio.html"><span class="header-section-number">19</span> Collaborating at Causal Map</a></li>
+<li><a class="" href="the-second-quiz.html"><span class="header-section-number">20</span> The second quiz</a></li>
+<li class="book-part">💻 3: Basic analysis</li>
+<li><a class="" href="about-the-filters.html"><span class="header-section-number">21</span> About the filters</a></li>
+<li><a class="" href="xtop-menu.html"><span class="header-section-number">22</span> The top menu</a></li>
+<li><a class="" href="xdashboard-advanced.html"><span class="header-section-number">23</span> The Dashboard</a></li>
+<li><a class="" href="xfile-manager.html"><span class="header-section-number">24</span> The File Manager</a></li>
+<li><a class="" href="xfactor-editor.html"><span class="header-section-number">25</span> The Factor Editor</a></li>
+<li><a class="" href="xthe-factors-table.html"><span class="header-section-number">26</span> 🧪The Factors table</a></li>
+<li><a class="" href="xthe-mentions-table.html"><span class="header-section-number">27</span> 🧪The Mentions Table</a></li>
+<li><a class="" href="xthe-links-table.html"><span class="header-section-number">28</span> 🧪The Links Table</a></li>
+<li><a class="" href="xthe-statements-table.html"><span class="header-section-number">29</span> 🧪The Statements Table</a></li>
+<li><a class="" href="the-sources-table.html"><span class="header-section-number">30</span> 🧪The Sources Table</a></li>
+<li><a class="" href="xthe-questions-table.html"><span class="header-section-number">31</span> 🧪The Questions Table</a></li>
+<li><a class="" href="the-closed-question-blocks-table.html"><span class="header-section-number">32</span> 🧪The Closed Question Blocks Table</a></li>
+<li><a class="" href="xmetrics.html"><span class="header-section-number">33</span> 🧪The Metrics Table</a></li>
+<li><a class="" href="xdata-manager.html"><span class="header-section-number">34</span> Data manager</a></li>
+<li><a class="" href="xupdates-tab.html"><span class="header-section-number">35</span> The Updates tab</a></li>
+<li><a class="" href="the-third-quiz.html"><span class="header-section-number">36</span> The third quiz</a></li>
+<li class="book-part">📚4: Advanced coding</li>
+<li><a class="" href="ximport.html"><span class="header-section-number">37</span> Uploading your data</a></li>
+<li><a class="" href="import-additional-data.html"><span class="header-section-number">38</span> Uploading additional data</a></li>
+<li><a class="" href="xroundtripping.html"><span class="header-section-number">39</span> Appending and fixing data (“roundtripping”)</a></li>
+<li><a class="" href="ximport-other.html"><span class="header-section-number">40</span> Importing your data: special cases</a></li>
+<li><a class="" href="xmerging-files.html"><span class="header-section-number">41</span> Merging files</a></li>
+<li><a class="" href="strength-adding-additional-information-like-strength-of-a-link-in-a-causal-map.html"><span class="header-section-number">42</span> 📚 Strength: Adding additional information like strength of a link in a causal map</a></li>
+<li><a class="" href="xedit-factor-and-links.html"><span class="header-section-number">43</span> Editing factors and links</a></li>
+<li><a class="" href="xplain_coding.html"><span class="header-section-number">44</span> 📚 Plain coding</a></li>
+<li><a class="" href="xsimplifying-with-hierarchical.html"><span class="header-section-number">45</span> 📚 Simplifying causal maps with hierarchical coding</a></li>
+<li><a class="" href="tricky-coding-challenges.html"><span class="header-section-number">46</span> 📚 Tricky coding challenges</a></li>
+<li><a class="" href="xhierarchical-coding.html"><span class="header-section-number">47</span> 💻 Hierarchical factors in Causal Map</a></li>
+<li><a class="" href="xcodebook.html"><span class="header-section-number">48</span> Importing a codebook of factors</a></li>
+<li><a class="" href="xquickfields.html"><span class="header-section-number">49</span> Quickfields</a></li>
+<li><a class="" href="creating-good-factor-labels.html"><span class="header-section-number">50</span> 📚 Creating good factor labels</a></li>
+<li><a class="" href="coding-opposites.html"><span class="header-section-number">51</span> 📚 Coding opposites</a></li>
+<li class="book-part">💻5: Advanced analysis</li>
+<li><a class="" href="xtables-advanced.html"><span class="header-section-number">52</span> 🧪Tables - advanced</a></li>
+<li><a class="" href="filters-overview.html"><span class="header-section-number">53</span> Filters – overview</a></li>
+<li><a class="" href="xtracing-paths.html"><span class="header-section-number">54</span> 📚 Tracing paths</a></li>
+<li><a class="" href="xcontinuity.html"><span class="header-section-number">55</span> Continuity and tracing threads</a></li>
+<li><a class="" href="xconditional-formats.html"><span class="header-section-number">56</span> Conditional formats</a></li>
+<li><a class="" href="xsimple-formats.html"><span class="header-section-number">57</span> Simple formats</a></li>
+<li><a class="" href="what-is-the-logic-behind-the-causal-map-filters.html"><span class="header-section-number">58</span> What is the logic behind the Causal Map filters?</a></li>
+<li><a class="" href="xanalysis.html"><span class="header-section-number">59</span> Analysing causal maps</a></li>
+<li><a class="" href="smart-zoom.html"><span class="header-section-number">60</span> Smart zooming</a></li>
+<li><a class="" href="xquickfields-analysis.html"><span class="header-section-number">61</span> Quickfields: analysis</a></li>
+<li><a class="" href="comparing.html"><span class="header-section-number">62</span> 📚 Analysis: comparing maps between particular groups</a></li>
+<li><a class="" href="cluster-sources.html"><span class="header-section-number">63</span> 📚 Clustering sources</a></li>
+<li><a class="" href="recalculate.html"><span class="header-section-number">64</span> Recalculate fields</a></li>
+<li><a class="" href="xinterpret.html"><span class="header-section-number">65</span> Interpreting your results</a></li>
+<li class="book-part">The rest of the app</li>
+<li><a class="" href="xgamification.html"><span class="header-section-number">66</span> Document coding score!</a></li>
+<li><a class="" href="xmanage_your_subscription.html"><span class="header-section-number">67</span> Managing your subscription</a></li>
 <li class="book-part">📚💻Spotlights</li>
-<li><a class="" href="causal-mapping-definitions.html"><span class="header-section-number">75</span> 📚 Causal Mapping: Definitions</a></li>
-<li><a class="" href="mapping.html"><span class="header-section-number">76</span> 📚 Causal mapping for evaluators</a></li>
-<li><a class="" href="causal-mapping-and-outcome-harvesting.html"><span class="header-section-number">77</span> 📚 Causal Mapping and Outcome Harvesting</a></li>
-<li><a class="" href="context-in-causal-mapping-how-to-code-it.html"><span class="header-section-number">78</span> 📚 Context in causal mapping: how to code it</a></li>
-<li><a class="" href="xtransitivity-trap.html"><span class="header-section-number">79</span> 📚 Beware the transitivity trap</a></li>
-<li><a class="" href="caveat-numbers.html"><span class="header-section-number">80</span> 📚 Cases, variables and percentages in causal mapping?</a></li>
-<li><a class="" href="different-kinds-of-question-chaining-with-quip-and-parevo-as-illustrations.html"><span class="header-section-number">81</span> 📚 Different kinds of question chaining, with QuIP and ParEvo as illustrations</a></li>
-<li><a class="" href="how-to-get-to-the-shadow-side-a-problem-with-back-chaining.html"><span class="header-section-number">82</span> 📚 How to get to the shadow side: a problem with back-chaining</a></li>
-<li><a class="" href="the-last-minute-principle.html"><span class="header-section-number">83</span> 📚 The last minute principle</a></li>
-<li><a class="" href="causal-maps-systems-maps-whats-the-difference-does-it-matter.html"><span class="header-section-number">84</span> 📚 Causal maps, systems maps, what’s the difference? Does it matter?</a></li>
-<li><a class="active" href="coding-time-in-causal-mapping.html"><span class="header-section-number">85</span> 📚 Coding time in causal mapping</a></li>
-<li><a class="" href="more-about-coding-opposites.html"><span class="header-section-number">86</span> More about coding opposites</a></li>
-<li><a class="" href="puzzles-in-causal-mapping.html"><span class="header-section-number">87</span> 📚 Puzzles in causal mapping</a></li>
-<li><a class="" href="is-one-direction-enough.html"><span class="header-section-number">88</span> 📚 Is one direction enough?</a></li>
-<li><a class="" href="xshowcases.html"><span class="header-section-number">89</span> Showcase: how the Causal Map app has been used</a></li>
-<li class="book-part">💻 Technical reference</li>
-<li><a class="" href="appendix-filter-reference.html"><span class="header-section-number">90</span> Appendix: Filter reference</a></li>
-<li><a class="" href="how-causal-map-is-hosted.html"><span class="header-section-number">91</span> How Causal Map is hosted</a></li>
-<li><a class="" href="xconventions.html"><span class="header-section-number">92</span> Conventions</a></li>
-<li><a class="" href="screenshotting-your-maps.html"><span class="header-section-number">93</span> Screenshotting your maps</a></li>
-<li><a class="" href="xreports.html"><span class="header-section-number">94</span> Reports tab</a></li>
-<li><a class="" href="advanced-editor.html"><span class="header-section-number">95</span> Using the Advanced Editor to create and edit filters</a></li>
-<li><a class="" href="xkeyboard.html"><span class="header-section-number">96</span> Keyboard shortcuts</a></li>
-<li><a class="" href="causal-map-functions.html"><span class="header-section-number">97</span> Causal Map functions</a></li>
-<li><a class="" href="xexcel.html"><span class="header-section-number">98</span> Causal mapping with Excel</a></li>
-<li><a class="" href="using-storysurvey-admin-interface.html"><span class="header-section-number">99</span> Using StorySurvey: admin interface</a></li>
-<li><a class="" href="changelog.html"><span class="header-section-number">100</span> Recent changes</a></li>
-<li class="book-part">📚💻 Final section</li>
-<li><a class="" href="acknowledgements.html"><span class="header-section-number">101</span> Acknowledgements</a></li>
-<li><a class="" href="appendix-publications-and-links.html"><span class="header-section-number">102</span> Appendix: Publications and links</a></li>
+<li><a class="" href="causal-mapping-definitions.html"><span class="header-section-number">68</span> 📚 Causal Mapping: Definitions</a></li>
+<li><a class="" href="mapping.html"><span class="header-section-number">69</span> 📚 Causal mapping for evaluators</a></li>
+<li><a class="" href="causal-mapping-and-outcome-harvesting.html"><span class="header-section-number">70</span> 📚 Causal Mapping and Outcome Harvesting</a></li>
+<li><a class="" href="context-in-causal-mapping-how-to-code-it.html"><span class="header-section-number">71</span> 📚 Context in causal mapping: how to code it</a></li>
+<li><a class="" href="xtransitivity-trap.html"><span class="header-section-number">72</span> 📚 Beware the transitivity trap</a></li>
+<li><a class="" href="caveat-numbers.html"><span class="header-section-number">73</span> 📚 Cases, variables and percentages in causal mapping?</a></li>
+<li><a class="" href="different-kinds-of-question-chaining-with-quip-and-parevo-as-illustrations.html"><span class="header-section-number">74</span> 📚 Different kinds of question chaining, with QuIP and ParEvo as illustrations</a></li>
+<li><a class="" href="how-to-get-to-the-shadow-side-a-problem-with-back-chaining.html"><span class="header-section-number">75</span> 📚 How to get to the shadow side: a problem with back-chaining</a></li>
+<li><a class="" href="the-last-minute-principle.html"><span class="header-section-number">76</span> 📚 The last minute principle</a></li>
+<li><a class="" href="causal-maps-systems-maps-whats-the-difference-does-it-matter.html"><span class="header-section-number">77</span> 📚 Causal maps, systems maps, what’s the difference? Does it matter?</a></li>
+<li><a class="active" href="coding-time-in-causal-mapping.html"><span class="header-section-number">78</span> 📚 Coding time in causal mapping</a></li>
+<li><a class="" href="more-about-coding-opposites.html"><span class="header-section-number">79</span> More about coding opposites</a></li>
+<li><a class="" href="puzzles-in-causal-mapping.html"><span class="header-section-number">80</span> 📚 Puzzles in causal mapping</a></li>
+<li><a class="" href="is-one-direction-enough.html"><span class="header-section-number">81</span> 📚 Is one direction enough?</a></li>
+<li><a class="" href="xshowcases.html"><span class="header-section-number">82</span> Showcase: how the Causal Map app has been used</a></li>
+<li class="book-part">Technical reference</li>
+<li><a class="" href="xvideo-list.html"><span class="header-section-number">83</span> Video list</a></li>
+<li><a class="" href="FAQs.html"><span class="header-section-number">84</span> FAQs: Causal Map questions and troubleshooting</a></li>
+<li><a class="" href="glossary.html"><span class="header-section-number">85</span> 📚 Glossary</a></li>
+<li><a class="" href="filter-reference.html"><span class="header-section-number">86</span> Filter reference</a></li>
+<li><a class="" href="how-causal-map-is-hosted.html"><span class="header-section-number">87</span> How Causal Map is hosted</a></li>
+<li><a class="" href="xconventions.html"><span class="header-section-number">88</span> Conventions</a></li>
+<li><a class="" href="screenshotting-your-maps.html"><span class="header-section-number">89</span> Screenshotting your maps</a></li>
+<li><a class="" href="xreports.html"><span class="header-section-number">90</span> Reports tab</a></li>
+<li><a class="" href="core-tables.html"><span class="header-section-number">91</span> Core tables in Causal Map</a></li>
+<li><a class="" href="advanced-editor.html"><span class="header-section-number">92</span> Using the Advanced Editor to create and edit filters</a></li>
+<li><a class="" href="xkeyboard.html"><span class="header-section-number">93</span> Keyboard shortcuts</a></li>
+<li><a class="" href="causal-map-functions.html"><span class="header-section-number">94</span> Causal Map functions</a></li>
+<li><a class="" href="xexcel.html"><span class="header-section-number">95</span> Causal mapping with Excel</a></li>
+<li><a class="" href="using-storysurvey-admin-interface.html"><span class="header-section-number">96</span> Using StorySurvey: admin interface</a></li>
+<li><a class="" href="x.html"><span class="header-section-number">97</span> Features of Causal Map</a></li>
+<li><a class="" href="changelog.html"><span class="header-section-number">98</span> Recent changes</a></li>
+<li class="book-part">📚Final section</li>
+<li><a class="" href="acknowledgements.html"><span class="header-section-number">99</span> Acknowledgements</a></li>
+<li><a class="" href="appendix-publications-and-links.html"><span class="header-section-number">100</span> Appendix: Publications and links</a></li>
 <li><a class="" href="references.html">References</a></li>
 </ul>
 
@@ -166,14 +168,14 @@
         </div>
       </nav>
 </div>
-  </header><main class="col-sm-12 col-md-9 col-lg-7" id="content"><div id="coding-time-in-causal-mapping" class="section level1" number="85">
+  </header><main class="col-sm-12 col-md-9 col-lg-7" id="content"><div id="coding-time-in-causal-mapping" class="section level1" number="78">
 <h1>
-<span class="header-section-number">85</span> 📚 Coding time in causal mapping<a class="anchor" aria-label="anchor" href="#coding-time-in-causal-mapping"><i class="fas fa-link"></i></a>
+<span class="header-section-number">78</span> 📚 Coding time in causal mapping<a class="anchor" aria-label="anchor" href="#coding-time-in-causal-mapping"><i class="fas fa-link"></i></a>
 </h1>
 <p>Many of the questions we want to answer when doing causal mapping have to do with time. Of course, there is always some kind of flow of time through our causal maps, because effects come after causes. But the actual “timings” – specific time points or periods associated with particular things – can take almost any order. In causal mapping, we don’t have any fixed set of options in order to allow the analyst to capture causal stories free form, without any preconceptions. In quantitative research, time appears in research designs in quite straightforward ways, usually as a continuous variable (which may be left continuous or transformed into a discrete variable with values like “before” and “after”); research conclusions can be, for example, “the dependent variables decreased over time”. Often it will miss stories which are not linear, for example when things get better, then worse, then better again. When designing research to analyse with causal mapping, we may also have a research design which already anticipates temporal questions, for example we want to compare people’s causal maps before and after some intervention. However, the really exciting (and for the analyst, really demanding) potential of causal mapping is to identify temporal aspects to stories which only emerge when listening to the respondents.</p>
-<div id="temporal-features-which-can-emerge-without-explicit-coding-of-time" class="section level2" number="85.1">
+<div id="temporal-features-which-can-emerge-without-explicit-coding-of-time" class="section level2" number="78.1">
 <h2>
-<span class="header-section-number">85.1</span> Temporal features which can emerge without explicit coding of time<a class="anchor" aria-label="anchor" href="#temporal-features-which-can-emerge-without-explicit-coding-of-time"><i class="fas fa-link"></i></a>
+<span class="header-section-number">78.1</span> Temporal features which can emerge without explicit coding of time<a class="anchor" aria-label="anchor" href="#temporal-features-which-can-emerge-without-explicit-coding-of-time"><i class="fas fa-link"></i></a>
 </h2>
 <p>It is useful to note some common patterns and features which can emerge even before we have any system to explicitly code timings:</p>
 <ul>
@@ -192,9 +194,9 @@
 <p>When we think about influences and consequences in this way we can often ask and answer questions about time and effect without ever mentioning time or temporal aspects explicitly.</p>
 <p>The rest of this paper deals with other cases when this is not enough.</p>
 </div>
-<div id="temporal-information-attached-to-additional-data" class="section level2" number="85.2">
+<div id="temporal-information-attached-to-additional-data" class="section level2" number="78.2">
 <h2>
-<span class="header-section-number">85.2</span> Temporal information attached to additional data<a class="anchor" aria-label="anchor" href="#temporal-information-attached-to-additional-data"><i class="fas fa-link"></i></a>
+<span class="header-section-number">78.2</span> Temporal information attached to additional data<a class="anchor" aria-label="anchor" href="#temporal-information-attached-to-additional-data"><i class="fas fa-link"></i></a>
 </h2>
 <p>The statements we process when doing causal mapping usually have <a href="https://causalmapdocumentation.blot.im/search?q=additional+data">additional data</a> attached to them, for example respondent ID and gender, question number, etc. In some cases, the research may have been <strong>planned</strong> (and the data explicitly gathered) with temporal questions in mind, so that we have <em>temporal</em> additional data. For example, we might have gathered data at separate time points, before and after an intervention and then in a longer-term follow-up. In this case, for every statement, we know from its additional data which of these three timepoints it belongs to. This way, it is possible (if desired) to use the same set of factor labels for all of the timepoints but quickly and automatically identify just those causal links which are associated with just one time point (because they come from statements which were actually made at that time point); or we can compare maps between timepoints, etc.</p>
 <p>Alternatively, we may have asked respondents <em>questions</em> which concern time. For example, we might have some questions which are explicitly about:</p>
@@ -206,9 +208,9 @@
 <p>If we have a number of questions which share some of these aspects (for example several questions about “start of the school year” and several about “rest of the school year”), we can add an additional data field to capture this information (for example a field called “school year time” with two possible values “start” and “rest”). This additional data for each statement can be referred to by the analyst when coding, and can be used to filter the causal map as described above. It could also be indicated in the map itself, e.g. by using different colours for links associated with claims from different time points.</p>
 <p>We may have planned our research with temporal questions in mind, and so our additional data already has neat fields to capture temporal data. In other cases we may decide during the analysis that we need to make use of temporal information which is <em>implicit</em> in the additional data – for example, we may be able to work out from the interview number when an interview was held, and so we might want to go back to the additional data and add something like “interview week” as an explicit additional data field.</p>
 </div>
-<div id="recording-temporal-information-in-causal-links" class="section level2" number="85.3">
+<div id="recording-temporal-information-in-causal-links" class="section level2" number="78.3">
 <h2>
-<span class="header-section-number">85.3</span> Recording temporal information in causal links<a class="anchor" aria-label="anchor" href="#recording-temporal-information-in-causal-links"><i class="fas fa-link"></i></a>
+<span class="header-section-number">78.3</span> Recording temporal information in causal links<a class="anchor" aria-label="anchor" href="#recording-temporal-information-in-causal-links"><i class="fas fa-link"></i></a>
 </h2>
 <p>The analyst may decide that the temporal aspects of the <em>links</em> in the emerging story are particularly important. Sometimes it is enough to merely mention them in each causal link, for example to attach a hashtag like “before intervention” to a link – perhaps <em>without</em> recording any temporal information in the factor labels. Sometimes a more systematic approach is required, for example to establish two hashtags “before intervention” and “after intervention”. (It might even be required that the hashtag always be applied to every coding, though this is not necessary). So, for example, the statement:</p>
 <p>“Oh, before the intervention, as soon as we had a discussion on a difficult theme, we’d get into an argument, but now we don’t, we actually make decisions instead!”</p>
@@ -222,17 +224,17 @@
 <p>Family discussion on difficult theme ➜(#after intervention; low probability) Family gets into argument</p>
 <p>This is just an example; temporal information might not be coded simply as the names of discrete phases like “before” and “after”; for example, hashtags like “rapid” or “unchanging” or “repeated” are also possible.</p>
 </div>
-<div id="recording-temporal-information-in-factor-labels" class="section level2" number="85.4">
+<div id="recording-temporal-information-in-factor-labels" class="section level2" number="78.4">
 <h2>
-<span class="header-section-number">85.4</span> Recording temporal information in factor labels<a class="anchor" aria-label="anchor" href="#recording-temporal-information-in-factor-labels"><i class="fas fa-link"></i></a>
+<span class="header-section-number">78.4</span> Recording temporal information in factor labels<a class="anchor" aria-label="anchor" href="#recording-temporal-information-in-factor-labels"><i class="fas fa-link"></i></a>
 </h2>
 <p>Likewise, the analyst may decide that the temporal aspects of the <em>factors</em> in the emerging story are particularly important.</p>
 <p>Coding temporal aspects within <em>links</em> may be more suitable when there is an overall causal structure which does not itself change much over time, whereas coding temporal aspects within <em>factor</em> labels may be more suitable when respondents are thinking in terms of different (although maybe similar) sets of causal factors time which differ in time.</p>
 <p>How to code temporal information in factor labels?</p>
 <p>Sometimes it is enough to merely mention them in a factor label, for example “improved concentration after intervention” in an ad-hoc way. Sometimes a more systematic approach is required. There are several possibilities.</p>
-<div id="use-a-hashtag-or-flag" class="section level3" number="85.4.1">
+<div id="use-a-hashtag-or-flag" class="section level3" number="78.4.1">
 <h3>
-<span class="header-section-number">85.4.1</span> Use a hashtag or flag<a class="anchor" aria-label="anchor" href="#use-a-hashtag-or-flag"><i class="fas fa-link"></i></a>
+<span class="header-section-number">78.4.1</span> Use a hashtag or flag<a class="anchor" aria-label="anchor" href="#use-a-hashtag-or-flag"><i class="fas fa-link"></i></a>
 </h3>
 <p>It might be enough to simply use a consistent set of <a href="https://causalmapdocumentation.blot.im/search?q=flag">flags</a>, appearing anywhere in the factor label, for example:</p>
 <p>“Oh, before the intervention, as soon as we had a discussion on a difficult theme, we’d get into an argument, but now we don’t, we actually make decisions instead!”</p>
@@ -245,18 +247,18 @@
 <p>Family discussion on difficult theme; #before-intervention ➜ Family gets into argument #before-intervention</p>
 <p>Family discussion on difficult theme; #after-intervention ➜ Family makes decision #after-intervention</p>
 </div>
-<div id="use-components-in-hierarchical-coding" class="section level3" number="85.4.2">
+<div id="use-components-in-hierarchical-coding" class="section level3" number="78.4.2">
 <h3>
-<span class="header-section-number">85.4.2</span> Use components in hierarchical coding<a class="anchor" aria-label="anchor" href="#use-components-in-hierarchical-coding"><i class="fas fa-link"></i></a>
+<span class="header-section-number">78.4.2</span> Use components in hierarchical coding<a class="anchor" aria-label="anchor" href="#use-components-in-hierarchical-coding"><i class="fas fa-link"></i></a>
 </h3>
 <p>This approach allows us to filter just for factors with or without one or more specific hashtags. However, what if we want to zoom out to a causal map which does not make this distinction, because we want to see family processes in general, regardless of timepoint? We would like to be able to make a higher-level factor “Family discussion … “ which generalises from the specific timepoints. We can do that by making the timepoints into <a href="https://causalmapdocumentation.blot.im/search?q=component">components</a> in hierarchical coding style:</p>
 <p>Family discussion on difficult theme; before-intervention ➜ Family gets into argument; before-intervention</p>
 <p>Family discussion on difficult theme; after-intervention ➜ Family makes decision; after-intervention</p>
 <p>This way, when we zoom out to view only first-level factors, all the causal links to and from the specific factors for the two timepoints will be rerouted to the top-level factor, to give a time-independent overview. Effectively we create “virtual” factors like Family discussion on difficult theme and so on</p>
 </div>
-<div id="use-higher-level-temporal-components-in-hierarchical-coding" class="section level3" number="85.4.3">
+<div id="use-higher-level-temporal-components-in-hierarchical-coding" class="section level3" number="78.4.3">
 <h3>
-<span class="header-section-number">85.4.3</span> Use higher-level temporal components in hierarchical coding<a class="anchor" aria-label="anchor" href="#use-higher-level-temporal-components-in-hierarchical-coding"><i class="fas fa-link"></i></a>
+<span class="header-section-number">78.4.3</span> Use higher-level temporal components in hierarchical coding<a class="anchor" aria-label="anchor" href="#use-higher-level-temporal-components-in-hierarchical-coding"><i class="fas fa-link"></i></a>
 </h3>
 <p>Another approach is to do this the other way round, with factors like these.</p>
 <p>Family stressors before intervention; discussions on difficult themes</p>
@@ -272,16 +274,16 @@
 <p>All of these suggestions can in principle be mixed in with one another, but the analyst is advised to be very careful not to make things too complicated.</p>
 <p>The temporal aspects mentioned here are just examples; temporal information might not be coded simply as the names of discrete phases like “before” and “after”; for example, concepts like “rapid” or “unchanging” or “repeated” are also possible.</p>
 </div>
-<div id="but-what-if-factor-labels-themselves-express-changes" class="section level3" number="85.4.4">
+<div id="but-what-if-factor-labels-themselves-express-changes" class="section level3" number="78.4.4">
 <h3>
-<span class="header-section-number">85.4.4</span> But what if factor labels themselves express changes?<a class="anchor" aria-label="anchor" href="#but-what-if-factor-labels-themselves-express-changes"><i class="fas fa-link"></i></a>
+<span class="header-section-number">78.4.4</span> But what if factor labels themselves express changes?<a class="anchor" aria-label="anchor" href="#but-what-if-factor-labels-themselves-express-changes"><i class="fas fa-link"></i></a>
 </h3>
 <p>We have already recommended using heterogeneous, “in-vivo” factor labels and to resist the temptation to formulate all factor labels in a strictly similar way: when in doubt, stick fairly close to the actual language your sources use (so-called “in-vivo” coding) , and don’t be <em>too</em> worried if your factor labels are different from one another grammatically. In particular, this means that sometimes you may find yourself using some labels which express a <em>difference</em>, even a difference over time, like “improvement in X” and some which do not. It can get confusing using these kinds of labels at the same time as some of the temporal approaches mentioned here. But, we argue, that is the way we humans think about how things work, as a heterogenous pile of fragments of connected causal information. This is always a balancing act, but we encourage you to side with your respondents and try to capture what they are saying rather than impose a schema.</p>
 </div>
 </div>
-<div id="xlateness" class="section level2" number="85.5">
+<div id="xlateness" class="section level2" number="78.5">
 <h2>
-<span class="header-section-number">85.5</span> Lateness<a class="anchor" aria-label="anchor" href="#xlateness"><i class="fas fa-link"></i></a>
+<span class="header-section-number">78.5</span> Lateness<a class="anchor" aria-label="anchor" href="#xlateness"><i class="fas fa-link"></i></a>
 </h2>
 <p>Evaluations often report timeliness and/or lateness. It can be difficult to code a sentence like:</p>
 <blockquote>
@@ -304,9 +306,9 @@
 </ul>
 <p>Your choice of what to use might depend on what you think is here the primary story: is it the fact that the material was delivered at all, and the lateness is just a qualifier? Or is the lateness the main story?</p>
 </div>
-<div id="analysing-and-displaying-the-results-of-temporal-coding" class="section level2" number="85.6">
+<div id="analysing-and-displaying-the-results-of-temporal-coding" class="section level2" number="78.6">
 <h2>
-<span class="header-section-number">85.6</span> Analysing and displaying the results of temporal coding<a class="anchor" aria-label="anchor" href="#analysing-and-displaying-the-results-of-temporal-coding"><i class="fas fa-link"></i></a>
+<span class="header-section-number">78.6</span> Analysing and displaying the results of temporal coding<a class="anchor" aria-label="anchor" href="#analysing-and-displaying-the-results-of-temporal-coding"><i class="fas fa-link"></i></a>
 </h2>
 <p>All the usual tools are available to us to analyse and display these results. For example, we can:</p>
 <ul>
@@ -324,25 +326,25 @@
 </div>
 </div>
   <div class="chapter-nav">
-<div class="prev"><a href="causal-maps-systems-maps-whats-the-difference-does-it-matter.html"><span class="header-section-number">84</span> 📚 Causal maps, systems maps, what’s the difference? Does it matter?</a></div>
-<div class="next"><a href="more-about-coding-opposites.html"><span class="header-section-number">86</span> More about coding opposites</a></div>
+<div class="prev"><a href="causal-maps-systems-maps-whats-the-difference-does-it-matter.html"><span class="header-section-number">77</span> 📚 Causal maps, systems maps, what’s the difference? Does it matter?</a></div>
+<div class="next"><a href="more-about-coding-opposites.html"><span class="header-section-number">79</span> More about coding opposites</a></div>
 </div></main><div class="col-md-3 col-lg-2 d-none d-md-block sidebar sidebar-chapter">
     <nav id="toc" data-toggle="toc" aria-label="On this page"><h2>On this page</h2>
       <ul class="nav navbar-nav">
-<li><a class="nav-link" href="#coding-time-in-causal-mapping"><span class="header-section-number">85</span> 📚 Coding time in causal mapping</a></li>
-<li><a class="nav-link" href="#temporal-features-which-can-emerge-without-explicit-coding-of-time"><span class="header-section-number">85.1</span> Temporal features which can emerge without explicit coding of time</a></li>
-<li><a class="nav-link" href="#temporal-information-attached-to-additional-data"><span class="header-section-number">85.2</span> Temporal information attached to additional data</a></li>
-<li><a class="nav-link" href="#recording-temporal-information-in-causal-links"><span class="header-section-number">85.3</span> Recording temporal information in causal links</a></li>
+<li><a class="nav-link" href="#coding-time-in-causal-mapping"><span class="header-section-number">78</span> 📚 Coding time in causal mapping</a></li>
+<li><a class="nav-link" href="#temporal-features-which-can-emerge-without-explicit-coding-of-time"><span class="header-section-number">78.1</span> Temporal features which can emerge without explicit coding of time</a></li>
+<li><a class="nav-link" href="#temporal-information-attached-to-additional-data"><span class="header-section-number">78.2</span> Temporal information attached to additional data</a></li>
+<li><a class="nav-link" href="#recording-temporal-information-in-causal-links"><span class="header-section-number">78.3</span> Recording temporal information in causal links</a></li>
 <li>
-<a class="nav-link" href="#recording-temporal-information-in-factor-labels"><span class="header-section-number">85.4</span> Recording temporal information in factor labels</a><ul class="nav navbar-nav">
-<li><a class="nav-link" href="#use-a-hashtag-or-flag"><span class="header-section-number">85.4.1</span> Use a hashtag or flag</a></li>
-<li><a class="nav-link" href="#use-components-in-hierarchical-coding"><span class="header-section-number">85.4.2</span> Use components in hierarchical coding</a></li>
-<li><a class="nav-link" href="#use-higher-level-temporal-components-in-hierarchical-coding"><span class="header-section-number">85.4.3</span> Use higher-level temporal components in hierarchical coding</a></li>
-<li><a class="nav-link" href="#but-what-if-factor-labels-themselves-express-changes"><span class="header-section-number">85.4.4</span> But what if factor labels themselves express changes?</a></li>
+<a class="nav-link" href="#recording-temporal-information-in-factor-labels"><span class="header-section-number">78.4</span> Recording temporal information in factor labels</a><ul class="nav navbar-nav">
+<li><a class="nav-link" href="#use-a-hashtag-or-flag"><span class="header-section-number">78.4.1</span> Use a hashtag or flag</a></li>
+<li><a class="nav-link" href="#use-components-in-hierarchical-coding"><span class="header-section-number">78.4.2</span> Use components in hierarchical coding</a></li>
+<li><a class="nav-link" href="#use-higher-level-temporal-components-in-hierarchical-coding"><span class="header-section-number">78.4.3</span> Use higher-level temporal components in hierarchical coding</a></li>
+<li><a class="nav-link" href="#but-what-if-factor-labels-themselves-express-changes"><span class="header-section-number">78.4.4</span> But what if factor labels themselves express changes?</a></li>
 </ul>
 </li>
-<li><a class="nav-link" href="#xlateness"><span class="header-section-number">85.5</span> Lateness</a></li>
-<li><a class="nav-link" href="#analysing-and-displaying-the-results-of-temporal-coding"><span class="header-section-number">85.6</span> Analysing and displaying the results of temporal coding</a></li>
+<li><a class="nav-link" href="#xlateness"><span class="header-section-number">78.5</span> Lateness</a></li>
+<li><a class="nav-link" href="#analysing-and-displaying-the-results-of-temporal-coding"><span class="header-section-number">78.6</span> Analysing and displaying the results of temporal coding</a></li>
 </ul>
 
       <div class="book-extra">
@@ -360,7 +362,7 @@
 <footer class="bg-primary text-light mt-5"><div class="container"><div class="row">
 
   <div class="col-12 col-md-6 mt-3">
-    <p>"<strong>Guide to Causal Mapping</strong>" was written by Steve Powell<a href="#fn1" class="footnote-ref" id="fnref1"><sup>1</sup></a>, Fiona Remnant<a href="#fn2" class="footnote-ref" id="fnref2"><sup>2</sup></a>, James Copestake<a href="#fn3" class="footnote-ref" id="fnref3"><sup>3</sup></a>, Hannah Mishan<a href="#fn4" class="footnote-ref" id="fnref4"><sup>4</sup></a>, Rebekah Avard<a href="#fn5" class="footnote-ref" id="fnref5"><sup>5</sup></a>, Samuel Goddard<a href="#fn6" class="footnote-ref" id="fnref6"><sup>6</sup></a>. It was last built on 2022-10-17.</p>
+    <p>"<strong>Guide to Causal Mapping</strong>" was written by Steve Powell<a href="#fn1" class="footnote-ref" id="fnref1"><sup>1</sup></a>, Fiona Remnant<a href="#fn2" class="footnote-ref" id="fnref2"><sup>2</sup></a>, James Copestake<a href="#fn3" class="footnote-ref" id="fnref3"><sup>3</sup></a>, Hannah Mishan<a href="#fn4" class="footnote-ref" id="fnref4"><sup>4</sup></a>, Rebekah Avard<a href="#fn5" class="footnote-ref" id="fnref5"><sup>5</sup></a>, Samuel Goddard<a href="#fn6" class="footnote-ref" id="fnref6"><sup>6</sup></a>. It was last built on 2022-10-19.</p>
   </div>
 
   <div class="col-12 col-md-6 mt-3">

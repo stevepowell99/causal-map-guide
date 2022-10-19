@@ -118,10 +118,9 @@ You can exclude statements, sources etc in the same way. Or you could filter for
 
 `find links field=hashtags value=doubtful operator=notcontains`
 
+## Trace paths
 
-## Trace paths / trace robustness
-
-![image-20211017130102189](_assets/image-20211017130102189.png){width=650}
+![image-20221017093545711](_assets/image-20221017093545711.png)
 
 ![image-20220809125945262](_assets/image-20220809125945262.png){width=650}
 
@@ -129,7 +128,7 @@ You can exclude statements, sources etc in the same way. Or you could filter for
 
 ![image-20220809125958876](_assets/image-20220809125958876.png){width=650}
 
-This analysis function is a powerful tool which enables you to view full causal pathways and to interrogate the relationships between specific causal factors. See the next section for more information on how to use the [tracing robustness](#xrobustness).
+This analysis function is a powerful tool which enables you to view full causal pathways and to interrogate the relationships between specific causal factors. 
 
 
 

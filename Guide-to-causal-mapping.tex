@@ -4,10 +4,6 @@
 %
 \documentclass[
 ]{book}
-\title{Guide to Causal Mapping}
-\author{Steve Powell\footnote{Causal Map Ltd., \href{mailto:steve@causalmap.app}{\nolinkurl{steve@causalmap.app}}} \and Fiona Remnant\footnote{Causal Map Ltd., \href{mailto:fiona@causalmap.app}{\nolinkurl{fiona@causalmap.app}}} \and James Copestake\footnote{Bath University., \href{mailto:hssjgc@bath.ac.uk}{\nolinkurl{hssjgc@bath.ac.uk}}} \and Hannah Mishan\footnote{Causal Map Ltd., \href{mailto:hannah@causalmap.app}{\nolinkurl{hannah@causalmap.app}}} \and Rebekah Arvard\footnote{Bath SDR., \href{mailto:rebekah@bathsdr.org}{\nolinkurl{rebekah@bathsdr.org}}} \and Samuel Goddard\footnote{Causal Map Ltd., \href{mailto:SamuelGoddard@outlook.com}{\nolinkurl{SamuelGoddard@outlook.com}}}}
-\date{2022-09-30}
-
 \usepackage{amsmath,amssymb}
 \usepackage{lmodern}
 \usepackage{iftex}
@@ -37,14 +33,6 @@
   \KOMAoptions{parskip=half}}
 \makeatother
 \usepackage{xcolor}
-\IfFileExists{xurl.sty}{\usepackage{xurl}}{} % add URL line breaks if available
-\IfFileExists{bookmark.sty}{\usepackage{bookmark}}{\usepackage{hyperref}}
-\hypersetup{
-  pdftitle={Guide to Causal Mapping},
-  pdfauthor={Steve Powell; Fiona Remnant; James Copestake; Hannah Mishan; Rebekah Arvard; Samuel Goddard},
-  hidelinks,
-  pdfcreator={LaTeX via pandoc}}
-\urlstyle{same} % disable monospaced font for URLs
 \usepackage{color}
 \usepackage{fancyvrb}
 \newcommand{\VerbBar}{|}
@@ -124,6 +112,18 @@
 \fi
 \usepackage[]{natbib}
 \bibliographystyle{plainnat}
+\IfFileExists{bookmark.sty}{\usepackage{bookmark}}{\usepackage{hyperref}}
+\IfFileExists{xurl.sty}{\usepackage{xurl}}{} % add URL line breaks if available
+\urlstyle{same} % disable monospaced font for URLs
+\hypersetup{
+  pdftitle={Guide to Causal Mapping},
+  pdfauthor={Steve Powell; Fiona Remnant; James Copestake; Hannah Mishan; Rebekah Avard; Samuel Goddard},
+  hidelinks,
+  pdfcreator={LaTeX via pandoc}}
+
+\title{Guide to Causal Mapping}
+\author{Steve Powell\footnote{Causal Map Ltd., \href{mailto:steve@causalmap.app}{\nolinkurl{steve@causalmap.app}}} \and Fiona Remnant\footnote{Causal Map Ltd., \href{mailto:fiona@causalmap.app}{\nolinkurl{fiona@causalmap.app}}} \and James Copestake\footnote{Bath University., \href{mailto:hssjgc@bath.ac.uk}{\nolinkurl{hssjgc@bath.ac.uk}}} \and Hannah Mishan\footnote{Causal Map Ltd., \href{mailto:hannah@causalmap.app}{\nolinkurl{hannah@causalmap.app}}} \and Rebekah Avard\footnote{Bath SDR., \href{mailto:rebekah@bathsdr.org}{\nolinkurl{rebekah@bathsdr.org}}} \and Samuel Goddard\footnote{Causal Map Ltd., \href{mailto:SamuelGoddard@outlook.com}{\nolinkurl{SamuelGoddard@outlook.com}}}}
+\date{2022-10-19}
 
 \begin{document}
 \maketitle
@@ -154,10 +154,10 @@
 \end{verbatim}
 
 \begin{verbatim}
-## v ggplot2 3.3.5     v purrr   0.3.4
-## v tibble  3.1.6     v dplyr   1.0.7
-## v tidyr   1.1.4     v stringr 1.4.0
-## v readr   2.1.1     v forcats 0.5.1
+## v ggplot2 3.3.6     v purrr   0.3.4
+## v tibble  3.1.7     v dplyr   1.0.9
+## v tidyr   1.2.0     v stringr 1.4.0
+## v readr   2.1.2     v forcats 0.5.1
 \end{verbatim}
 
 \begin{verbatim}
@@ -169,6 +169,11 @@
 \hypertarget{overview}{%
 \chapter{Overview}\label{overview}}
 
+\hypertarget{what-is-causal-map}{%
+\section{What is Causal Map?}\label{what-is-causal-map}}
+
+Causal Map is a web app for analysing and visualising causal claims within narrative data from interviews or reports.
+
 \href{https://player.vimeo.com/video/689223728}{\includegraphics{Guide-to-causal-mapping_files/figure-latex/unnamed-chunk-2-1.pdf}}
 
 This Guide is for you if:
@@ -178,14 +183,16 @@ This Guide is for you if:
 \item
   you want to find out more about causal mapping as an approach (look for the ``book'' symbol 📚)
 \item
-  you want to find out more about the \href{https://causalmap.app/}{Causal Map app} (look for the ``computer'' symbol 💻)
+  you want to find out how to use the \href{https://causalmap.app/}{Causal Map app} (look for the ``computer'' symbol 💻)
 \item
   you are on, or have completed, the \href{https://bathsdr.org/about-the-quip/}{QuIP} Lead Evaluator training.
 \end{itemize}
 
 \begin{center}\rule{0.5\linewidth}{0.5pt}\end{center}
 
-If you are in a hurry (and who isn't?), just read the first part, Getting Started.
+This Guide is divided into several Training Levels. Each is followed by a simple \href{https://causalmap.shinyapps.io/quizzes/}{quiz}.
+
+If you are in a hurry (and who isn't?), just read Level 1: Getting Started.
 
 Features marked 🧪are experimental and are implemented on the \href{https://causalmap.shinyapps.io/CM2test}{test server} only.
 
@@ -202,9 +209,6 @@ Check out our growing library of \href{https://guide.causalmap.app/xvideo-list.h
   \href{https://chat.whatsapp.com/KwWn0lfpHuR0qJKtkuGZUA}{WhatsApp group for Causal Map}
 \item
   \href{https://chat.whatsapp.com/CdlkCKV8bP7ATYc4nioL0T}{Whatspp group for StorySurvey}
-
-  \hypertarget{section}{%
-  \section{}\label{section}}
 \end{itemize}
 
 \hypertarget{quizzes}{%
@@ -225,8 +229,8 @@ For more details on selected Casual Map projects please check out the \protect\h
 
 This guide is licensed to you under \href{http://creativecommons.org/licenses/by-nc-nd/4.0/}{Creative Commons Attribution-NonCommercial-NoDerivatives 4.0 International License}.
 
-\hypertarget{part-getting-started}{%
-\part{💻 Getting Started}\label{part-getting-started}}
+\hypertarget{part-1-getting-started}{%
+\part{💻 1: Getting Started}\label{part-1-getting-started}}
 
 \hypertarget{prerequisites-for-using-the-app}{%
 \chapter{Prerequisites for using the app}\label{prerequisites-for-using-the-app}}
@@ -237,31 +241,21 @@ You need a screen with a large resolution, preferably HD or better. It won't wor
 
 As Causal Map is a web application, you will also need a reasonably reliable internet connection.
 
-\hypertarget{x5}{%
-\chapter{Your first 5 minutes with Causal Map}\label{x5}}
-
 \hypertarget{signing-up}{%
 \section{Signing up}\label{signing-up}}
 
-Create your account \href{https://causalmap.shinyapps.io/CausalMap2/}{here}
+To use the app, create an account \href{https://causalmap.shinyapps.io/CausalMap2/}{here}. It's quickest to just log in with a Google account, or you can use your email address.
 
-\begin{itemize}
-\item
-  If you have a paid subscription, make sure you used the email you use to login is the same as the one for which you have a subscription. There are a variety of options when it comes to subscriptions, so have a \href{https://causalmap.app/subscriptions/}{look} and find the one that is right for you. To cancel, renew or manage your subscription see the \protect\hyperlink{xmanage_your_subscription}{following section}.
-\item
-  If someone has \protect\hyperlink{xpermissions}{shared files} with you, however you sign in, make sure the associated email is the one the files were shared to.
-\end{itemize}
+It's free to log in and explore the app.
 
-\hypertarget{what-do-you-want-to-do}{%
-\section{What do you want to do?}\label{what-do-you-want-to-do}}
+\hypertarget{xinvite}{%
+\chapter{Has someone shared a file with you?}\label{xinvite}}
 
-View a specific filtered map which someone sent you a link to
+If they have \protect\hyperlink{xpermissions}{shared the file} with, say, \href{mailto:YOU@MAIL.COM}{\nolinkurl{YOU@MAIL.COM}}, make sure you sign in with \href{mailto:YOU@MAIL.COM}{\nolinkurl{YOU@MAIL.COM}} as well.
 
-If you have been \protect\hyperlink{xinvite}{sent a link} to a specific map by someone you will be automatically taken to view this map (or table) once you click on the link, providing they have given you the correct permissions.
+If they have \protect\hyperlink{xinvite}{sent you a link} like \url{https://causalmap.shinyapps.io/CausalMap2/?s=99to} a particular map (or table), click the link and you will be automatically taken to view the corresponding map (or table), providing they have given you the correct permissions.
 
-View a specific project (aka `mapfile')
-
-If you have been asked to log in to view a whole project, click on the dropdown list on the left-hand side and click on the relevant file to load it. This will then load that project, providing you have been given the correct permissions.
+If they have just asked you to log in at the app to explore a file name, say ``project-x'', log in and click on the dropdown list on the left-hand side and click on \texttt{project-x} to load it. If you can't find that file name, it means they haven't correctly shared it with the email address you logged in with.
 
 \begin{figure}
 \centering
@@ -269,312 +263,93 @@ If you have been asked to log in to view a whole project, click on the dropdown 
 \caption{ZwspZWog6A}
 \end{figure}
 
-Just explore the app
+If you would like to explore further, you can then apply your own filters by using the \protect\hyperlink{xdashboard}{dashboard}.
 
-If you have just loaded the app without clicking on a link, you will be taken to an example file called \texttt{example-file}. You can also create your own file by \protect\hyperlink{xown-copy}{copying the example file} or \protect\hyperlink{ximport}{uploading your own}, this file will then be added to the dropdown list in the top left-hand side.
+\hypertarget{want-to-do-your-own-coding}{%
+\chapter{Want to do your own coding?}\label{want-to-do-your-own-coding}}
 
-\begin{figure}
-\centering
-\includegraphics[width=6.77083in,height=\textheight]{_assets/ZwspZWog6A.gif}
-\caption{ZwspZWog6A}
-\end{figure}
+The workflow is usually like this:
 
-\hypertarget{exploring-a-file}{%
-\section{Exploring a file}\label{exploring-a-file}}
+\begin{enumerate}
+\def\labelenumi{\arabic{enumi}.}
+\tightlist
+\item
+  UPLOAD: Create a new empty file and upload some narrative data in the form of paragraph-length chunks called \texttt{statements}.
+\item
+  CODE: View your data statement by statement, and highlight any causal claims within it, telling the app what is the cause (``influence'') and what is the effect (``consequence'') for each claim. We call this process ``coding''.
+\item
+  ANALYSE: When you've coded a lot of causal claims, you can analyse them to make different kinds of maps and answer different research questions.
+\end{enumerate}
 
-Once you load a file you can see how data has been \protect\hyperlink{xcoding-panel}{coded}, look at transcripts using the \protect\hyperlink{xstatement-nav}{`book' buttons}, or create your own maps using the \href{xintro-filters}{filters}.
+\hypertarget{accounts}{%
+\subsection{Accounts}\label{accounts}}
 
-You won't be able to change anything if you have View Only access to a file, but you can still \protect\hyperlink{quick-tour}{take a look around} and have a play with the \protect\hyperlink{xintro-filters}{filters} and \href{x\#all-tables}{tables}.
+\hypertarget{free-accounts}{%
+\subsubsection{Free accounts}\label{free-accounts}}
 
-And if you want to try coding give it a go with the help of the \protect\hyperlink{xcoding-panel}{coding section}!
+You can create your own file and do some coding and analysis: you can code up to 50 links for free.
 
-\hypertarget{xmanage_your_subscription}{%
-\chapter{Managing your subscription}\label{xmanage_your_subscription}}
+\hypertarget{paid-subscriptions}{%
+\subsubsection{Paid subscriptions}\label{paid-subscriptions}}
 
-To manage, cancel or renew your subscription follow the these steps, go to the Account tab in the app.
+Find the \href{https://causalmap.app/subscriptions/}{subscription option} which is right for you. To cancel, renew or manage your subscription see this \protect\hyperlink{xmanage_your_subscription}{section}.
 
-\begin{figure}
-\centering
-\includegraphics[width=6.77083in,height=\textheight]{_assets/image-20220810101815442.png}
-\caption{image-20220810101815442}
-\end{figure}
+If you have a paid subscription, make sure you used the email you use to login is the same as the one for which you have a subscription.
 
-The accounts tab will show you:
--Details of any teams you manage
--Any teams you are a member of
--Files you have created
--Your subscription
+\hypertarget{are-causal-map-and-causal-mapping-for-you}{%
+\chapter{📚 Are Causal Map and causal mapping for you?}\label{are-causal-map-and-causal-mapping-for-you}}
 
-To change your subscription click the update subscription button at the bottom of the page
+So, you've taken a look at the \textbf{\protect\hyperlink{xfeatures}{features of the app}}, and you're getting excited about creating maps -- but is your project right for it?
 
-\begin{figure}
-\centering
-\includegraphics[width=6.77083in,height=\textheight]{_assets/image-20220810102203892.png}
-\caption{image-20220810102203892}
-\end{figure}
-
-From here you can renew, cancel or change your subscription.
-
-\hypertarget{quick-tour}{%
-\chapter{Quick tour of the app}\label{quick-tour}}
-
-\href{https://player.vimeo.com/video/674369121}{\includegraphics{Guide-to-causal-mapping_files/figure-latex/unnamed-chunk-5-1.pdf}}
-
-The app has two parts, the \protect\hyperlink{xlhs}{left-hand side} and the \protect\hyperlink{rhs}{right-hand side}.
-
-You can get help at any time by clicking on the little blue info buttons, like below. This will then open a panel displaying the relevant section of this guide.
-
-\begin{figure}
-\centering
-\includegraphics{_assets/image-20210927115203506.png}
-\caption{image-20210927115203506}
-\end{figure}
-
-\hypertarget{xlhs}{%
-\section{The left-hand side}\label{xlhs}}
-
-\hypertarget{getting-data-into-the-app}{%
-\subsection{Getting data into the app}\label{getting-data-into-the-app}}
+Use Causal Map if you:
 
 \begin{itemize}
 \tightlist
 \item
-  Create a new file \includegraphics{_assets/image-20220723134329170.png}
-
-  \begin{itemize}
-  \tightlist
-  \item
-    and then upload a map in the form of an \protect\hyperlink{xuploading-and-updating}{Excel file} (.xls or .xlsx).
-  \end{itemize}
+  have a relatively large amount of narrative data (enough to provide at least 20-30 causal links)
 \item
-  Or, in the file chooser, select any files to which you have access, which include an anonymised dataset from a \href{http://bathsdr.org/}{QuIP} study.
+  need help to organise a large number of links and summarise them into an overview or synthesis
+\item
+  have information from more than one source (for example different respondents, different documents, or different places in one document) and the information about the source is important to you: they aren't all interchangeable
+\item
+  are interested in possible differences between the sources and groups of sources -- and/or you don't necessarily have a preconceived idea of the contents or boundaries of the map
+\item
+  want to capture what your sources actually say, systematically and transparently
 \end{itemize}
 
-\hypertarget{commands-and-buttons-to-apply-filters-to-your-map}{%
-\subsection{Commands and buttons to apply filters to your map}\label{commands-and-buttons-to-apply-filters-to-your-map}}
-
-The left-hand side of the app really only contains the text in the Advanced Editor (which you can view if you want, but close the window if it scares you).
-
-\begin{figure}
-\centering
-\includegraphics{_assets/image-20210914103354673.png}
-\caption{advanced-editor}
-\end{figure}
-
-The text window uses a simple syntax for filtering and manipulating the maps and tables.
-
-Nearly all the other buttons on the left-hand side are just ways to manipulate this text. Each line in this window is a filter which manipulates the existing map in some way. The lines in the windows are applied successively to the original map to produce the final map which is then displayed.
-
-\hypertarget{xstatement-view}{%
-\subsection{Do some coding (view one statement) or do some analysis (view many statements)?}\label{xstatement-view}}
-
-\begin{figure}
-\centering
-\includegraphics{_assets/image-20211026110623336.png}
-\caption{\#statement-toggle}
-\end{figure}
-
-These buttons add the correct filters to either view just one statement or many statements.
-
-When you are coding, you will want to view just one statement, and when you want to explore and analyse the entire causal map or sections of it, you will want to view many statements.
-
-(Even when you are viewing one statement, it is still possible to apply filters for example if the map associated with this one statement is quite large.)
-
-\hypertarget{top-row}{%
-\subsection{Top row}\label{top-row}}
-
-Most people like to hide these filters when they are coding, so they hide the filters using the toggle.
-
-\begin{figure}
-\centering
-\includegraphics{_assets/image-20210914103505559.png}
-\caption{image-20210914103505559}
-\end{figure}
-
-But for analysing your map, you will want to open the filters panel.
-
-\hypertarget{shortcut-buttons}{%
-\subsection{Shortcut buttons}\label{shortcut-buttons}}
-
-These buttons offer quick ways to add filters without going through a dialog panel.
-
-\hypertarget{the-filter-buttons}{%
-\subsection{The filter buttons}\label{the-filter-buttons}}
-
-They are in three sections: analysis, conditional formats and simple formats. See the section on \href{https://guide.causalmap.app/all-the-filters.html}{filters}.
-
-To see additional information about the statement you are currently viewing such as the \texttt{source\_id} and \texttt{question\_id} slide the info toggle.\includegraphics{_assets/image-20211220153438354.png}
-
-\hypertarget{rhs}{%
-\section{The right hand side}\label{rhs}}
-
-\begin{figure}
-\centering
-\includegraphics[width=6.77083in,height=\textheight]{_assets/image-20210914103654314.png}
-\caption{image-20210914103654314}
-\end{figure}
-
-\hypertarget{not2}{%
-\subsection{Interactive View}\label{not2}}
-
-An interactive version of the map in which the elements can be moved around and also the upstream and downstream factors are highlighted when the user moves their mouse over them.
-
-The Interactive View is designed to let you interact with and explore your map, whereas the main point of Print View is to get something high quality and static for including in reports.
-
-\hypertarget{not}{%
-\subsection{Print View}\label{not}}
-
-A print-quality version of the map with advanced layout.
-
-\hypertarget{no-not-this-one}{%
-\subsection{Factor editor}\label{no-not-this-one}}
-
-Simply click on the factor you want to change and edit it. You can change one factor everywhere in the file or you can do it for each statement, by pressing the Split checkbox. Just remember to press update once you have made your changes and you are happy with them.
-
-\hypertarget{tables}{%
-\subsection{Tables}\label{tables}}
-
-Several tables showing lists of factors, links and various metrics and which can be filtered and reorganised in marvellous ways. See the section on \href{https://guide.causalmap.app/all-the-tables.html}{tables}.
+Causal Map map is not suitable if you:
 
 \begin{itemize}
+\tightlist
 \item
-  \protect\hyperlink{xfile-manager}{Files tab}
+  only have a relatively small map which you can manage with traditional tools for drawing network diagrams (e.g.~PowerPoint, \href{http://kumu.io}{kumu.io} etc.)
 \item
-  \protect\hyperlink{xupdates-tab}{Updates tab}
+  need to analyse quantitative data and/or need to do precise mathematical modelling, e.g.~of future states of a system under certain conditions
 \item
-  \protect\hyperlink{xdata-manager}{Data tab}
-\item
-  \protect\hyperlink{account-tab}{Account tab}
+  would like to sketch out a plan (e.g.~Theory of Change or similar) without much reference to the different sources underpinning each link
 \end{itemize}
 
-\hypertarget{xtop-menu}{%
-\chapter{The top menu}\label{xtop-menu}}
+\hypertarget{x5}{%
+\chapter{Your first 5 minutes with Causal Map}\label{x5}}
 
-This section is all about how to manage using the top menu to help you deal with the currently loaded file. Hover over the icons to see what they do.
+Let's have a look around the Causal Map app.
 
-\includegraphics[width=6.77083in,height=\textheight]{_assets/image-20211025111815970.png}
-
-You can use these buttons for quick fixes. There is also a dedicated \protect\hyperlink{file-manager}{File Manager} to manage all your files.
-
-\hypertarget{xpermissions}{%
-\section{Current File Manager}\label{xpermissions}}
-
-Click the green File icon to manage your file.
+If you have just loaded the app without clicking on a link, you will be taken to an example file called \texttt{example-file}. Other public files or files which have been shared with you are listed in the dropdown menu at top left.
 
 \begin{figure}
 \centering
-\includegraphics[width=6.77083in,height=\textheight]{_assets/uBfaYOvRRH.gif}
-\caption{uBfaYOvRRH}
+\includegraphics[width=6.77083in,height=\textheight]{_assets/ZwspZWog6A.gif}
+\caption{ZwspZWog6A}
 \end{figure}
 
-\includegraphics[width=6.77083in,height=\textheight]{_assets/image-20211025111538915.png}
+Once you load a file you can see how data has been \protect\hyperlink{xcoding-panel}{coded}, look at transcripts using the \protect\hyperlink{xstatement-nav}{`book' buttons}, or create your own maps using the dashboard or, if you are feeling adventurous, the \href{xintro-filters}{filters}.
 
-\hypertarget{sharing-and-locking-files}{%
-\subsection{Sharing and locking files}\label{sharing-and-locking-files}}
+You won't be able to change anything if you have View Only access to a file, but you can still have a play with the \protect\hyperlink{xintro-filters}{filters} and \href{x\#all-tables}{tables}.
 
-You can add any number of other Causal Map accounts into the ``copy'' and/or ``view'' boxes.
+And if you want to try coding give it a go with the help of the \protect\hyperlink{xcoding-panel}{coding section}!
 
-\begin{itemize}
-\item
-  ``Copy'' permission means that the other user can make their own copy of this file, which they can then edit.
-\item
-  ``View'' permission means that the other user can make only view the file.
-\end{itemize}
-
-You can also use this switch to lock the file. This means that no-one can change it, not even you, until it is unlocked again.
-
-It is also possible to create larger groups of users. Ask us for help with this: \href{mailto:hello@causalmap.app}{\nolinkurl{hello@causalmap.app}}.
-
-\hypertarget{file-memo}{%
-\subsection{File memo}\label{file-memo}}
-
-You can put information about your file in the \texttt{file\ memo} box, and it will be shown below the interactive map to tell other users what this file is about. You can use markdown to format the text, e.g.~start a line with \# to make level-1 heading. You can even include images using markdown.
-
-\begin{figure}
-\centering
-\includegraphics{_assets/image-20211103133030379.png}
-\caption{image-20211103133030379}
-\end{figure}
-
-This is in addition to any ``newsflash'' information about updates which you add using the chat widget.
-
-\hypertarget{xown-copy}{%
-\section{⚡ Making your own copy of a file}\label{xown-copy}}
-
-\href{https://player.vimeo.com/video/641927229}{\includegraphics{Guide-to-causal-mapping_files/figure-latex/unnamed-chunk-6-1.pdf}}
-Copying a file in Causal Map is easily done. Simply load the file you want to copy using the dropdown menu. Then click the `Save As' button on the top left of your screen.
-
-\includegraphics[width=6.77083in,height=\textheight]{_assets/5Najfi4Pr2.gif}
-
-You can then append something to the end of the filename to make it yours:
-
-\begin{figure}
-\centering
-\includegraphics[width=6.77083in,height=\textheight]{_assets/image-20211001180419448.png}
-\caption{image-20211001180419448}
-\end{figure}
-
-Click the `Save current map' button. This window will then close and your copy of the file will load up. You can now make changes to the file.
-
-\hypertarget{restoring-a-previous-version-of-your-file}{%
-\section{Restoring a previous version of your file}\label{restoring-a-previous-version-of-your-file}}
-
-The app is continously saving your work and so you can restore your file to any prevision version, by clicking this icon \includegraphics{_assets/image-20211115175030770.png}. This will open the below panel where you can choose which timepoint you wish to revert your map to.
-
-\begin{figure}
-\centering
-\includegraphics[width=6.77083in,height=\textheight]{_assets/image-20211115174934976.png}
-\caption{image-20211115174934976}
-\end{figure}
-
-This panel shows a dropdown list of times when you made changes to the mapfile in GMT. Along with the size of your file which can help you identify which timepoint you want to revert to. It can be easy to forget what time you made alterations to your file, so if you're likely to want to restore a previous map it is best to note the time so that you can easily return to it.
-
-\hypertarget{uploading-your-data}{%
-\section{Uploading your data}\label{uploading-your-data}}
-
-\begin{figure}
-\centering
-\includegraphics[width=6.77083in,height=\textheight]{_assets/image-20211115175648298.png}
-\caption{image-20211115175648298}
-\end{figure}
-
-The above buttons relate to uploading your data, see \protect\hyperlink{ximport}{this section} for more information.
-
-\hypertarget{chat-about-this-file}{%
-\section{Chat about this file}\label{chat-about-this-file}}
-
-By clicking on the icon of two speech bubbles, a panel containing chat about the file will appear. You can see the comments you and other people with access to this file have added. From here you can also add updates on this file, this function is useful when working collaboratively.
-
-\begin{figure}
-\centering
-\includegraphics{_assets/image-20211115175519249.png}
-\caption{image-20211115175519249}
-\end{figure}
-
-\begin{quote}
-Why did I make this version of that file? Is it different from version xzy? Did we already import those new statements into this version??
-\end{quote}
-
-This panel can help with these kinds of problems. You and your colleagues -- anyone else with access to the current file -- can type notes and updates about the file. These updates will be listed here sequentially.
-
-Also, these same notes and updates are listed in the main Updates panel, along with automatic updates about when files were opened and edited.
-
-\begin{figure}
-\centering
-\includegraphics{_assets/image-20211018121359141.png}
-\caption{image-20211018121359141}
-\end{figure}
-
-So you can use the filters just to search for manual and automatic updates about particular files, or on particular dates; or you can just search for type=chat to view recent chat about any files or some particular files:
-
-\begin{figure}
-\centering
-\includegraphics{_assets/image-20211122063223836.png}
-\caption{image-20211122063223836}
-\end{figure}
-
-\hypertarget{dashboard}{%
-\chapter{The Dashboard}\label{dashboard}}
+\hypertarget{xdashboard}{%
+\section{The Dashboard}\label{xdashboard}}
 
 \begin{figure}
 \centering
@@ -582,160 +357,30 @@ So you can use the filters just to search for manual and automatic updates about
 \caption{image-20220725094435395}
 \end{figure}
 
-The Dashboard appears on the right as the app loads. (It is an easier-to-use version of the old ``Gallery''.) You can also reach the dashboard by pressing the 🏅 icon on the right, or with the key combination Alt+q.
+The Dashboard appears on the right as the app loads.
 
-The Dashboard lists views of the current file saved by you or other users.
+Each item in the dashboard is a different view of the current file saved by you or other users.
 
-\hypertarget{whats-in-a-view}{%
-\subsection{What's in a View}\label{whats-in-a-view}}
+Each view might apply a particular filter, e.g.~``show me only causal claims made by women'' and/or take you to a particular tab on the right hand side -- the Print map, one of the Tables, etc.
 
-A View records information about the currently applied filters (analysis filters and formatting) as well as the specific tab you are looking at and, in the case of tables, the way you have set up the table as well. They also save the name of the current file.
+To load one of the views, just click on the item.
 
-\hypertarget{xsharing_view}{%
-\subsection{Using and sharing a view}\label{xsharing_view}}
+You can also go to a view if you know its unique number. So to go to view 369, type 369 into this box
 
-Click on:
+\includegraphics[width=6.77083in,height=\textheight]{_assets/image-20220808114935730.png} and click the green arrow button.
 
-\begin{itemize}
-\tightlist
-\item
-  A \textbf{row} to load the associated filters into the current file.
-\item
-  \textbf{The blue View number} to open the view in an other tab.
-\item
-  \textbf{\texttt{Share} icon}: Copy the link and filter to your clipboard, for pasting into a document or sending to someone. If you send someone a shortlink to a view, when they click on it they will be taken to the \emph{same view of the current file} (providing you have given them View or Edit rights to the file).
-\item
-  \textbf{\texttt{Edit} icon}: Edit the view - \protect\hyperlink{xedit_view}{see below}
-\item
-  \textbf{\texttt{Hide} icon}: Hide this row in future from this table. You may want to use this button to clear unused views from your table. If you already shared this link with someone, it will still work even though it is hidden.
-\end{itemize}
+Maps which have been downloaded as an image often have a unique number like this in the bottom left-hand corner.
 
-\hypertarget{recommended-views-versus-custom-views}{%
-\subsection{⭐ Recommended views versus 🤵custom views}\label{recommended-views-versus-custom-views}}
-
-\hypertarget{recommended-views}{%
-\subsubsection{⭐ Recommended views}\label{recommended-views}}
-
-When you first create or copy a file, Causal Map will create for you some recommended views. These are marked with a star.
-
-\begin{itemize}
-\tightlist
-\item
-  These recommended views are copies specific for the current file. You can edit them later, or hide them if you don't want them.
-\item
-  Some recommended views might not be shown in the list if they would not be relevant to the current file -- for example if you do not use hierarchical coding, views which are only relevant to zooming are not shown. Occasionally you might see them appear later as you add features to your file, for example if you add hierarchical coding.
-\item
-  Occasionally you might see additional recommended views added to the list as we publish new ones.
-\end{itemize}
-
-\hypertarget{custom-views---create-your-own}{%
-\subsubsection{🤵 Custom views - create your own}\label{custom-views---create-your-own}}
-
-You can create your own views for the current file at any time.
+\hypertarget{the-tabs}{%
+\section{The tabs}\label{the-tabs}}
 
 \begin{figure}
 \centering
-\includegraphics{_assets/image-20220623083918159.png}
-\caption{image-20220623083918159}
+\includegraphics{_assets/image-20221019152210573.png}
+\caption{image-20221019152210573}
 \end{figure}
 
-Set your map or table up the way you want it then put an (optional) title and press Save.
-
-\begin{itemize}
-\tightlist
-\item
-  A shortlink to this view will also be copied into your clipboard so you can paste it straight into a document or send it to someone else.
-\item
-  If you put a title, the view will also appear in the list of views for the current file.
-\item
-  If you don't put a title, it won't be listed, but the shortlink you created will always point to that same view.
-\end{itemize}
-
-\hypertarget{complete-views-versus-add-ons}{%
-\section{Complete views versus ``Add-ons''}\label{complete-views-versus-add-ons}}
-
-Complete views replace the existing view and all the filters, included for example analysis filters which change the map itself, for example show only the most frequent links, or zoom out to the top level of a hierarchy. If you are looking at the Advanced Editor, you will see that the entire contents of the editor are replaced.
-
-``Add-on'' views are are added after any other existing filters and do not replace them. So you can use them for example to add a particular kind of formatting, like making all the links pink, or to add one instruction, like ``remove all links mentioned only once''.
-
-\begin{figure}
-\centering
-\includegraphics[width=6.77083in,height=\textheight]{_assets/image-20220808114607154.png}
-\caption{image-20220808114607154}
-\end{figure}
-
-Complete views belong with the current file and you can edit them, whereas Add-ons exist separately of individual files (actually, they belong to \texttt{example-file}) and you can't edit them (unless you are an admin).
-
-\hypertarget{xedit_view}{%
-\section{To edit the content (filter, tab etc) of an existing view:}\label{xedit_view}}
-
-Set up the content the way you want it in the app, so it looks exactly the way it should when someone in the future clicks on the link. Then go to the filter which you want to update and press the edit button:
-
-\begin{figure}
-\centering
-\includegraphics[width=6.77083in,height=\textheight]{C:/Users/hanna/Downloads/Edit shortlinks.png}
-\caption{Edit shortlinks}
-\end{figure}
-
-In the modal dialog which opens, make sure you check this box. You can optionally change the title too.
-
-\begin{figure}
-\centering
-\includegraphics[width=6.77083in,height=\textheight]{_assets/image-20220808120110607.png}
-\caption{image-20220808120110607}
-\end{figure}
-
-If all you want to do is change the title, make sure the checkbox is \textbf{not} checked.
-
-\hypertarget{applying-a-view}{%
-\section{Applying a view}\label{applying-a-view}}
-
-\begin{figure}
-\centering
-\includegraphics[width=6.77083in,height=\textheight]{_assets/image-20220808114935730.png}
-\caption{image-20220808114935730}
-\end{figure}
-
-When you view a map which has been downloaded as an image you will see there is a unique number in the bottom left-hand corner. Using this number you can jump to this particular view on that specific file, just paste the number in this box at the bottom of the dashboard and press the arrow. If you share this number with others who have edit or view access they will also be taken to this view.
-
-\hypertarget{medals}{%
-\section{Medals}\label{medals}}
-
-\begin{figure}
-\centering
-\includegraphics{_assets/image-20220623080054435.png}
-\caption{image-20220623080054435}
-\end{figure}
-
-This section gives a whole load of medals to reflect all the work you've been doing and encourage you to try out new things.
-
-\hypertarget{for-admins}{%
-\section{For admins}\label{for-admins}}
-
-Recommended views can only be added / edited by admins, and only from \texttt{example-file}.
-
-When you create a recommended view it should be applicable to almost any file, so don't use filters which refer to particular factor labels etc.
-
-Recommended views are then copied to every other file. Editors can then edit, rename etc that recommended filter in the other file. But that won't change the original filter in \texttt{example-file}. Editors can hide a recommended filter in any other file except \texttt{example-file}, and it won't come back.
-
-Addons work a bit differently from complete views - they can also only be created within \texttt{example-file}, but they are not copied to other files. As admin, you can create your own addons just for individual files if you want, by not clicking ``recommended'' -- maybe useful if you have a lot of steps you want to repeat just within a particular file.
-
-To ``delete'' an addon, edit it and delete the title.
-
-\hypertarget{xfile-manager}{%
-\chapter{The File Manager}\label{xfile-manager}}
-
-At the top of the page you will find information about your subscriptions, the files you have crested and any teams you manage.
-
-Below, the file manager table allows you to see shows you all the files you have access to and what level of access you have i.e.~copy, view or edit access. You can also see details such as whether these files are locked, archived, any memos on the file and what access other users have to these files.
-
-\begin{figure}
-\centering
-\includegraphics[width=6.77083in,height=\textheight]{_assets/image-20210927120502982.png}
-\caption{image-20210927120502982}
-\end{figure}
-
-From this page you can either \texttt{load} the map or click \texttt{manage}to open the \protect\hyperlink{xpermissions}{file manager panel}.
+The tabs on the right-hand side of the app all present the same file, with the same filters, in different ways. There are two different kinds of graphical map and other outputs like tables. Click on the tabs to explore them.
 
 \hypertarget{xstatement-nav-old}{%
 \chapter{The Statement Navigator}\label{xstatement-nav-old}}
@@ -774,141 +419,12 @@ By clicking on the green book icon you can see all the statements from all sourc
 
 You can use the arrow and numbered button to skip through statements. If you want to skip to a particular statement the easiest way is to use the \href{xfind-statements-links}{find statements} filter. This will automatically be applied if you are viewing statements one at a time, so simply click on the filter and edit the number it is searching for.
 
-\hypertarget{xcoding-panel}{%
-\chapter{The Coding Panel: creating factors and links}\label{xcoding-panel}}
-
-Qualitative causal mapping involves taking passages of text, e.g.~from interviews or documents, and identifying sections which make causal claims. We highlight each of these sections and specify a causal factor at each end of each link (for example Lost job or Went hungry). This means creating a new factor or reusing an existing one. Usually we create these factors inductively as we code, and revise and review and consolidate them as part of the process, as with any other kind of qualitative content analysis. This section is about how to create factors and their labels.
-
-In Causal Map, a factor \emph{is} its label. Once you create a label, there is nothing else to add.
-
-\hypertarget{creating-links-in-the-app}{%
-\section{Creating links in the app}\label{creating-links-in-the-app}}
-
-\href{https://player.vimeo.com/video/604099226}{\includegraphics{Guide-to-causal-mapping_files/figure-latex/unnamed-chunk-7-1.pdf}}
-To code a causal link, - With your mouse, highlight a piece of text within the statement which makes a causal claim.
-
-\begin{itemize}
-\tightlist
-\item
-  Watch how that passage is copied for you into the ``Quote'' window below. (Usually you don't need to think about his window: you can edit the text if you really need to but it has to remain an exact quote of one part of the text or you will get a warning.) - Start to type the name of the influence factors at the \textbf{start} of the link(s) which you are going to make, in the first drop-down menu.
-\item
-  If there is an existing factor which matches what you want, you can select select it.
-\item
-  Otherwise you will create a new factor with the contents of what you have typed; finish what you have typed with a comma or a tab character if you want to continue to select or create another factor.
-\item
-  If you want to create more than one link, you can select or create additional factors in the same box (as shown in the video below).
-\item
-  When you have finished, press Enter.
-\item
-  Repeat the process in the other box to specify the factors at the \textbf{end} of the link (or ends of the links).
-\item
-  Press the green Save button which is now active.
-\item
-  The link is created in the Map window, colour-coded with the quote which is now highlighted on the left. If you mouse over the highlighted quote, the link in the map is activated.
-\end{itemize}
-
-For more information on how to edit an existing link \protect\hyperlink{xedit-factor-and-links}{see here}.
-
-This video shows how to create more than one causal link at a time.
-
-\href{https://player.vimeo.com/video/588851236}{\includegraphics{Guide-to-causal-mapping_files/figure-latex/unnamed-chunk-8-1.pdf}}
-
-\textbf{NOTE}: factor names which contain semicolons \textbf{;}. get special treatment as they separate the different parts of \protect\hyperlink{xhierachical-coding}{hierarchical labels}.
-
-After beginning to create links between factors, one will notice already-coded factors will appear in the dropdown menus in the to and from factor boxes. For added convenience:
-
-\begin{itemize}
-\tightlist
-\item
-  the most frequently coded factors will appear at the top of this list
-\item
-  if you are using hierarchical coding, top-level components will appear to be selected even if you have not used them explicitly so far. For example, if you have used the factors \texttt{health;\ mental} and \texttt{health;\ physical}, the factor \texttt{health} will appear even if you never used it explicitly. You can then easily create new nested factors such as \texttt{health;\ spiritual}by selecting \texttt{health} and then typing \texttt{;\ spiritual} with a leading ``;''. The app will automatically join these for you into the factor \texttt{health;\ spiritual}.
-\item
-  once you have selected an influence factor, the order of the choices available for the consequence factor will be silently updated, presenting at the top of the list the most frequently mentioned consequences of the influence factor you have chosen.
-\end{itemize}
-
-\hypertarget{xchaining-links}{%
-\section{Chaining Links}\label{xchaining-links}}
-
-\href{https://player.vimeo.com/video/588881701}{\includegraphics{Guide-to-causal-mapping_files/figure-latex/unnamed-chunk-9-1.pdf}}
-
-Chaining links is easily done and useful when you have statement where one consequence leads to another, which leads to a third, and so on. To use this function simply click the chain icon below the consequence factor box and the app will automatically fill the influence box with the consequence from your previous link.
-
-\begin{figure}
-\centering
-\includegraphics[width=6.77083in,height=\textheight]{_assets/md0XWSnpLr.gif}
-\caption{md0XWSnpLr}
-\end{figure}
-
-\hypertarget{xmemosandhashtags}{%
-\section{Using memos and hashtags}\label{xmemosandhashtags}}
-
-\hypertarget{xlink-memos}{%
-\subsection{Memos}\label{xlink-memos}}
-
-Qualitative coding usually involves making notes and memos, and you can do this in Causal Map too.
-
-This toggle opens both additional statement info, i.e.~info for any fields which start with \#, for example you might have a field \#gender in your statements table, and also shows the boxes to edit the memos. (In this example, there is no additional information.)
-
-\begin{figure}
-\centering
-\includegraphics{_assets/esSnHL226V.gif}
-\caption{esSnHL226V}
-\end{figure}
-
-\hypertarget{xhashtags}{%
-\subsection{Hashtags / link flags}\label{xhashtags}}
-
-Hashtags are available as a special kind of memo when coding a link: you can use them to provide any kind of additional information, for example:
-
-\begin{itemize}
-\tightlist
-\item
-  about \textbf{the causal connection}, e.g.
-
-  \begin{itemize}
-  \tightlist
-  \item
-    the respondent says this is only true for their village, not for other villages
-  \item
-    where a link is only projected for the future
-  \end{itemize}
-\item
-  about \textbf{the claim about the causal connection}
-
-  \begin{itemize}
-  \tightlist
-  \item
-    where a link is only a hypothesis
-  \item
-    to add other qualifying information like ``source seems unsure.''
-  \item
-    respondent doesn't like this connection
-  \item
-    respondent feels good about the outcome.
-  \end{itemize}
-\item
-  for you, the analyst, e.g.
-
-  \begin{itemize}
-  \tightlist
-  \item
-    respondent is answering a different question
-  \item
-    to tag links you want to come back and review.
-  \end{itemize}
-\end{itemize}
-
-As usual in Causal Map, you can apply one or more hashtags, and you can either select existing hashtags or create new ones on the fly.
-
-Later, you can \href{https://guide.causalmap.app/analysis.html\#filtering-the-map-by-link-hashtag-memo}{filter the map} to show only links containing specific hashtags (or parts of hashtags), and also for links which do \emph{not} contain specific hashtags or parts of hashtags.
-
 \hypertarget{xinteractive-view}{%
 \chapter{Interactive View}\label{xinteractive-view}}
 
 The video below gives a brief overview of both the interactive and print view tab.
 
-\href{https://player.vimeo.com/video/674383670}{\includegraphics{Guide-to-causal-mapping_files/figure-latex/unnamed-chunk-10-1.pdf}}
+\href{https://player.vimeo.com/video/674383670}{\includegraphics{Guide-to-causal-mapping_files/figure-latex/unnamed-chunk-4-1.pdf}}
 
 An interactive version of the map in which the elements can be moved around and also the upstream and downstream factors are highlighted when the user hovers over them.
 
@@ -1010,7 +526,7 @@ When you export an SVG image, a shortlink is automatically created for you. The 
 \hypertarget{xall-tables-old}{%
 \chapter{All the tables}\label{xall-tables-old}}
 
-\href{https://player.vimeo.com/video/596519456}{\includegraphics{Guide-to-causal-mapping_files/figure-latex/unnamed-chunk-11-1.pdf}}
+\href{https://player.vimeo.com/video/596519456}{\includegraphics{Guide-to-causal-mapping_files/figure-latex/unnamed-chunk-5-1.pdf}}
 
 From simply creating a table showing the total links to and from each factor to a visual representation of each respondent's response to a closed question. The possibilities are large - and increase with the amount of additional data your project has.
 
@@ -1529,9 +1045,9 @@ If you are looking at statement 99, looking also at factor editor, and click a q
 
 When should I use a factor flag, and when should I use a link flag aka hashtag?
 
-Use factor flags, including quickfields, to add extra information about the causal factors, especially information which cuts across any existing factor hierarchy you are using, for example themes like \texttt{environment}. Use link flags aka hashtags specifically if it relates to the claim rather than the factors e.g.~respondent is suspicious / uncertain / answering a different question / respondent doesnâ€™t like this connection, etc.
+Use factor flags, including quickfields, to add extra information about the causal factors, especially information which cuts across any existing factor hierarchy you are using, for example themes like \texttt{environment}. Use link flags aka hashtags specifically if it relates to the claim rather than the factors e.g.~respondent is suspicious / uncertain / answering a different question / respondent doesn't like this connection, etc.
 
-Â~if(T) readLines(``Guide-to-causal-mapping.Rmd'') \%\textgreater\% str\_match(``.\emph{vimeo\textbackslash.com.}'') \%\textgreater\% keep(\textasciitilde!is.na(.)) \%\textgreater\% unique \%\textgreater\% paste0(``\texttt{\{r,echo=F\}\textbackslash{}n",.,"\textbackslash{}n}\n'') \%\textgreater\% c(``\# Video list\{\#xvideo-list\}\n\nThese videos are all included at different points in the Guide. If you love videos, here they are again in one place. Feel free to binge.'',.) \%\textgreater\% writeLines(``00195-video\_list.rmd'')â€‹\{r,echo=F\}
+~if(T) readLines(``Guide-to-causal-mapping.Rmd'') \%\textgreater\% str\_match(``.\emph{vimeo\textbackslash.com.}'') \%\textgreater\% keep(\textasciitilde!is.na(.)) \%\textgreater\% unique \%\textgreater\% paste0(``\texttt{\{r,echo=F\}\textbackslash{}n",.,"\textbackslash{}n}\n'') \%\textgreater\% c(``\# Video list\{\#xvideo-list\}\n\nThese videos are all included at different points in the Guide. If you love videos, here they are again in one place. Feel free to binge.'',.) \%\textgreater\% writeLines(``00195-video\_list.rmd'')\hspace{0pt}\{r,echo=F\}
 
 Can I autofill influence factor label if its the same as the last consequence factor?
 
@@ -1598,6 +1114,93 @@ Where can I find example files to use as templates?
 
 They can be found and downloaded \href{https://drive.google.com/drive/folders/1wvifDQ0BXmAjSudTRUv9i_4JURpphD4v}{here}.
 
+\hypertarget{xvideo-list}{%
+\chapter{Video list}\label{xvideo-list}}
+
+These videos are all included at different points in the Guide. If you love videos, here they are again in one place. Feel free to binge.
+\href{https://player.vimeo.com/video/689223728}{\includegraphics{Guide-to-causal-mapping_files/figure-latex/unnamed-chunk-7-1.pdf}}
+
+\href{https://player.vimeo.com/video/674369121}{\includegraphics{Guide-to-causal-mapping_files/figure-latex/unnamed-chunk-8-1.pdf}}
+
+\href{https://player.vimeo.com/video/641927229}{\includegraphics{Guide-to-causal-mapping_files/figure-latex/unnamed-chunk-9-1.pdf}}
+
+\href{https://player.vimeo.com/video/604099226}{\includegraphics{Guide-to-causal-mapping_files/figure-latex/unnamed-chunk-10-1.pdf}}
+
+\href{https://player.vimeo.com/video/588851236}{\includegraphics{Guide-to-causal-mapping_files/figure-latex/unnamed-chunk-11-1.pdf}}
+
+\href{https://player.vimeo.com/video/588881701}{\includegraphics{Guide-to-causal-mapping_files/figure-latex/unnamed-chunk-12-1.pdf}}
+
+\href{https://player.vimeo.com/video/674383670}{\includegraphics{Guide-to-causal-mapping_files/figure-latex/unnamed-chunk-13-1.pdf}}
+
+\href{https://player.vimeo.com/video/596519456}{\includegraphics{Guide-to-causal-mapping_files/figure-latex/unnamed-chunk-14-1.pdf}}
+
+\href{https://player.vimeo.com/video/618270513}{\includegraphics{Guide-to-causal-mapping_files/figure-latex/unnamed-chunk-15-1.pdf}}
+
+\href{https://player.vimeo.com/video/596594094}{\includegraphics{Guide-to-causal-mapping_files/figure-latex/unnamed-chunk-16-1.pdf}}
+
+\href{https://player.vimeo.com/video/596497752}{\includegraphics{Guide-to-causal-mapping_files/figure-latex/unnamed-chunk-17-1.pdf}}
+
+\href{https://player.vimeo.com/video/580212681}{\includegraphics{Guide-to-causal-mapping_files/figure-latex/unnamed-chunk-18-1.pdf}}
+
+\href{https://player.vimeo.com/video/636997200}{\includegraphics{Guide-to-causal-mapping_files/figure-latex/unnamed-chunk-19-1.pdf}}
+
+\href{https://player.vimeo.com/video/651173445}{\includegraphics{Guide-to-causal-mapping_files/figure-latex/unnamed-chunk-20-1.pdf}}
+
+\href{https://player.vimeo.com/video/604138709}{\includegraphics{Guide-to-causal-mapping_files/figure-latex/unnamed-chunk-21-1.pdf}}
+
+\href{https://player.vimeo.com/video/664879474}{\includegraphics{Guide-to-causal-mapping_files/figure-latex/unnamed-chunk-22-1.pdf}}
+
+\href{https://player.vimeo.com/video/599620015}{\includegraphics{Guide-to-causal-mapping_files/figure-latex/unnamed-chunk-23-1.pdf}}
+
+\href{https://player.vimeo.com/video/671894620}{\includegraphics{Guide-to-causal-mapping_files/figure-latex/unnamed-chunk-24-1.pdf}}
+
+\href{https://player.vimeo.com/video/637121851}{\includegraphics{Guide-to-causal-mapping_files/figure-latex/unnamed-chunk-25-1.pdf}}
+
+\href{https://player.vimeo.com/video/683770170}{\includegraphics{Guide-to-causal-mapping_files/figure-latex/unnamed-chunk-26-1.pdf}}
+
+\hypertarget{glossary}{%
+\chapter{📚 Glossary}\label{glossary}}
+
+\hypertarget{generic-terminology-for-causal-mapping}{%
+\section{Generic terminology for causal mapping}\label{generic-terminology-for-causal-mapping}}
+
+\begin{longtable}[]{@{}
+  >{\raggedright\arraybackslash}p{(\columnwidth - 2\tabcolsep) * \real{0.1538}}
+  >{\raggedright\arraybackslash}p{(\columnwidth - 2\tabcolsep) * \real{0.8462}}@{}}
+\toprule()
+\begin{minipage}[b]{\linewidth}\raggedright
+Term
+\end{minipage} & \begin{minipage}[b]{\linewidth}\raggedright
+\textbf{Definition}
+\end{minipage} \\
+\midrule()
+\endhead
+\textbf{Active filter bar} & This is the first white bar in the filters panel, if your filter is there it is active. \\
+\textbf{All filter bar} & This is the second white bar in the filters panel, if your filter is there it is not active, or it is active but can also be used again. \\
+\textbf{Bundle} & You can bundle links or factors. Bundling factors merges factors containing a chosen word or phrase. You can also bundle links which are between the same influence and consequence factors, which are usually mentioned in different statements by different sources. A thicker line or a label can be used to show the number of links in the bundle. \\
+\textbf{Causal links} & Causal links are the links between the consequence and influence factors. Each link represents a casual claim. \\
+\textbf{Combining opposites} & When we combine any pairs of factors which are opposites. This means merging two factors which are identical apart from one starts with a `\textasciitilde{}', to indicate a negative. On print view the link will show green and pink to indicate that both the positive and negative of the factor is true. \\
+\textbf{Contrary factor} & With a pair of opposite factors like \texttt{Progress} and \texttt{\textasciitilde{}Progress}, we call \texttt{Progress} the \emph{ordinary} factor and we call \texttt{\textasciitilde{}Progress} the \emph{contrary} factor. (We prefer this terminology to, say, ``negative factor'' as it has fewer unwanted connotations: contrary factors don't have to be bad.) \\
+\textbf{Consequence factor} & A causal factor at the end of a link, that has been influenced by another factor. \\
+\textbf{Field} & Additional data associated with a statement such as respondent ID number, respondent age or question number. \\
+\textbf{Flags} aka themes & A recurring subject found within the factor labels i.e.~farming or health. Often we use symbols like \# to make sure that the flags are uniquely searchable. \\
+\textbf{Hierarchical coding} & Nested factors (see below) put factor labels in a hierarchy from more general to specific. \protect\hyperlink{simplifying}{See more here.} \\
+\textbf{Hybrid format} & (Mostly used in QuIP/BSDR coding.) When importing data into Causal Map, a data table in hybrid format has some rows which are statements and some which are metadata. \\
+\textbf{Influence factor} & A causal factor at the beginning of the link, that affects another factor. \\
+\textbf{Mapfile}, \textbf{File} & When working in Causal Map, all your original data (the statements, source and question data) as well as the coding you have done (factors and links) are stored together in one file which we call a \textbf{mapfile}, or just \textbf{file}. \\
+\textbf{Memos} & You can make short notes or memos on each statement, as well as about each causal link, each factor, each source, each question and the project globally. \\
+\textbf{Nested factors} & Factor labels can be nested meaning there are higher level factors i.e New intervention; midwife training; hand washing instructions. \protect\hyperlink{simplifying}{See more here.} \\
+\textbf{Original links} & Often, there is more than one link between any pair of factors. We can call these the original links especially when we bundle them together for display purposes so they visually look like one. In this case we can say that the bundled link on the map actually consists of several original links. \\
+\textbf{Shortlink} & A weblink (URL) to a causal map which has been shortened, usually to make sharing it easier. You can easily make \protect\hyperlink{xsharing_view}{shortlinks} using the dashboard. \\
+\textbf{Statement} & Refers to each individual piece of text to be coded in Causal Map, usually this is a sentence, a paragraph or a few paragraphs. Each statement has an ID; a number like 1, 2, 3 etc. \\
+\textbf{Source} & Sources are where your statements come from, this could be respondents you have interviewed or documents you have collected. \\
+\textbf{Weblink} & A complete URL like \url{https://causalmap.shinyapps.io/CausalMap2/} \\
+\bottomrule()
+\end{longtable}
+
+\hypertarget{part-introduction}{%
+\part{Introduction}\label{part-introduction}}
+
 \hypertarget{top-tips}{%
 \chapter{Top tips if you have just starting coding}\label{top-tips}}
 
@@ -1634,10 +1237,10 @@ If you are using \protect\hyperlink{xhierarchical-coding}{hierarchical/nested co
 \hypertarget{xintro-filters}{%
 \chapter{Introduction to filters}\label{xintro-filters}}
 
-\href{https://player.vimeo.com/video/618270513}{\includegraphics{Guide-to-causal-mapping_files/figure-latex/unnamed-chunk-13-1.pdf}}
+\href{https://player.vimeo.com/video/618270513}{\includegraphics{Guide-to-causal-mapping_files/figure-latex/unnamed-chunk-27-1.pdf}}
 
-\hypertarget{commands-and-buttons-to-apply-filters-to-your-map-1}{%
-\section{Commands and buttons to apply filters to your map}\label{commands-and-buttons-to-apply-filters-to-your-map-1}}
+\hypertarget{commands-and-buttons-to-apply-filters-to-your-map}{%
+\section{Commands and buttons to apply filters to your map}\label{commands-and-buttons-to-apply-filters-to-your-map}}
 
 The left-hand side of the app really only contains the text in the advanced editor (which you can view if you want, but close the window if it scares you).
 
@@ -1686,8 +1289,8 @@ By pressing this button you will restore the filters you applied previously in t
 
 \includegraphics[width=6.77083in,height=\textheight]{_assets/image-20220808111332598.png}
 
-\hypertarget{the-filter-buttons-1}{%
-\section{The filter buttons}\label{the-filter-buttons-1}}
+\hypertarget{the-filter-buttons}{%
+\section{The filter buttons}\label{the-filter-buttons}}
 
 The filter buttons are in three sections: analysis, conditional formats and simple formats.
 
@@ -1745,273 +1348,139 @@ Upload closed questions
 
 In the Sources table, ensure all closed questions are in the sources tab. The app will then recognise these questions as closed questions and feed them into the closed questions table and recode a fixed set of words into + positive, - negative and 0 neutral. Click here for more information.
 
-\hypertarget{glossary}{%
-\chapter{📚 Glossary}\label{glossary}}
+\hypertarget{xcoding-panel}{%
+\chapter{The Coding Panel: creating factors and links}\label{xcoding-panel}}
 
-\hypertarget{generic-terminology-for-causal-mapping}{%
-\section{Generic terminology for causal mapping}\label{generic-terminology-for-causal-mapping}}
+Qualitative causal mapping involves taking passages of text, e.g.~from interviews or documents, and identifying sections which make causal claims. We highlight each of these sections and specify a causal factor at each end of each link (for example Lost job or Went hungry). This means creating a new factor or reusing an existing one. Usually we create these factors inductively as we code, and revise and review and consolidate them as part of the process, as with any other kind of qualitative content analysis. This section is about how to create factors and their labels.
 
-\begin{longtable}[]{@{}
-  >{\raggedright\arraybackslash}p{(\columnwidth - 2\tabcolsep) * \real{0.15}}
-  >{\raggedright\arraybackslash}p{(\columnwidth - 2\tabcolsep) * \real{0.85}}@{}}
-\toprule
-\begin{minipage}[b]{\linewidth}\raggedright
-Term
-\end{minipage} & \begin{minipage}[b]{\linewidth}\raggedright
-\textbf{Definition}
-\end{minipage} \\
-\midrule
-\endhead
-\textbf{Active filter bar} & This is the first white bar in the filters panel, if your filter is there it is active. \\
-\textbf{All filter bar} & This is the second white bar in the filters panel, if your filter is there it is not active, or it is active but can also be used again. \\
-\textbf{Bundle} & You can bundle links or factors. Bundling factors merges factors containing a chosen word or phrase. You can also bundle links which are between the same influence and consequence factors, which are usually mentioned in different statements by different sources. A thicker line or a label can be used to show the number of links in the bundle. \\
-\textbf{Causal links} & Causal links are the links between the consequence and influence factors. Each link represents a casual claim. \\
-\textbf{Combining opposites} & When we combine any pairs of factors which are opposites. This means merging two factors which are identical apart from one starts with a `\textasciitilde{}', to indicate a negative. On print view the link will show green and pink to indicate that both the positive and negative of the factor is true. \\
-\textbf{Contrary factor} & With a pair of opposite factors like \texttt{Progress} and \texttt{\textasciitilde{}Progress}, we call \texttt{Progress} the \emph{ordinary} factor and we call \texttt{\textasciitilde{}Progress} the \emph{contrary} factor. (We prefer this terminology to, say, ``negative factor'' as it has fewer unwanted connotations: contrary factors don't have to be bad.) \\
-\textbf{Consequence factor} & A causal factor at the end of a link, that has been influenced by another factor. \\
-\textbf{Field} & Additional data associated with a statement such as respondent ID number, respondent age or question number. \\
-\textbf{Flags} aka themes & A recurring subject found within the factor labels i.e.~farming or health. Often we use symbols like \# to make sure that the flags are uniquely searchable. \\
-\textbf{Hierarchical coding} & Nested factors (see below) put factor labels in a hierarchy from more general to specific. \protect\hyperlink{simplifying}{See more here.} \\
-\textbf{Hybrid format} & (Mostly used in QuIP/BSDR coding.) When importing data into Causal Map, a data table in hybrid format has some rows which are statements and some which are metadata. \\
-\textbf{Influence factor} & A causal factor at the beginning of the link, that affects another factor. \\
-\textbf{Mapfile}, \textbf{File} & When working in Causal Map, all your original data (the statements, source and question data) as well as the coding you have done (factors and links) are stored together in one file which we call a \textbf{mapfile}, or just \textbf{file}. \\
-\textbf{Memos} & You can make short notes or memos on each statement, as well as about each causal link, each factor, each source, each question and the project globally. \\
-\textbf{Nested factors} & Factor labels can be nested meaning there are higher level factors i.e New intervention; midwife training; hand washing instructions. \protect\hyperlink{simplifying}{See more here.} \\
-\textbf{Original links} & Often, there is more than one link between any pair of factors. We can call these the original links especially when we bundle them together for display purposes so they visually look like one. In this case we can say that the bundled link on the map actually consists of several original links. \\
-\textbf{Shortlink} & A weblink (URL) to a causal map which has been shortened, usually to make sharing it easier. You can easily make \protect\hyperlink{xsharing_view}{shortlinks} using the dashboard. \\
-\textbf{Statement} & Refers to each individual piece of text to be coded in Causal Map, usually this is a sentence, a paragraph or a few paragraphs. Each statement has an ID; a number like 1, 2, 3 etc. \\
-\textbf{Source} & Sources are where your statements come from, this could be respondents you have interviewed or documents you have collected. \\
-\textbf{Weblink} & A complete URL like \url{https://causalmap.shinyapps.io/CausalMap2/} \\
-\bottomrule
-\end{longtable}
+In Causal Map, a factor \emph{is} its label. Once you create a label, there is nothing else to add.
 
-\hypertarget{xvideo-list}{%
-\chapter{Video list}\label{xvideo-list}}
+\hypertarget{creating-links-in-the-app}{%
+\section{Creating links in the app}\label{creating-links-in-the-app}}
 
-These videos are all included at different points in the Guide. If you love videos, here they are again in one place. Feel free to binge.
-\href{https://player.vimeo.com/video/689223728}{\includegraphics{Guide-to-causal-mapping_files/figure-latex/unnamed-chunk-14-1.pdf}}
+\href{https://player.vimeo.com/video/604099226}{\includegraphics{Guide-to-causal-mapping_files/figure-latex/unnamed-chunk-28-1.pdf}}
+To code a causal link, - With your mouse, highlight a piece of text within the statement which makes a causal claim.
 
-\href{https://player.vimeo.com/video/674369121}{\includegraphics{Guide-to-causal-mapping_files/figure-latex/unnamed-chunk-15-1.pdf}}
+\begin{itemize}
+\tightlist
+\item
+  Watch how that passage is copied for you into the ``Quote'' window below. (Usually you don't need to think about his window: you can edit the text if you really need to but it has to remain an exact quote of one part of the text or you will get a warning.) - Start to type the name of the influence factors at the \textbf{start} of the link(s) which you are going to make, in the first drop-down menu.
+\item
+  If there is an existing factor which matches what you want, you can select select it.
+\item
+  Otherwise you will create a new factor with the contents of what you have typed; finish what you have typed with a comma or a tab character if you want to continue to select or create another factor.
+\item
+  If you want to create more than one link, you can select or create additional factors in the same box (as shown in the video below).
+\item
+  When you have finished, press Enter.
+\item
+  Repeat the process in the other box to specify the factors at the \textbf{end} of the link (or ends of the links).
+\item
+  Press the green Save button which is now active.
+\item
+  The link is created in the Map window, colour-coded with the quote which is now highlighted on the left. If you mouse over the highlighted quote, the link in the map is activated.
+\end{itemize}
 
-\href{https://player.vimeo.com/video/641927229}{\includegraphics{Guide-to-causal-mapping_files/figure-latex/unnamed-chunk-16-1.pdf}}
+For more information on how to edit an existing link \protect\hyperlink{xedit-factor-and-links}{see here}.
 
-\href{https://player.vimeo.com/video/604099226}{\includegraphics{Guide-to-causal-mapping_files/figure-latex/unnamed-chunk-17-1.pdf}}
+This video shows how to create more than one causal link at a time.
 
-\href{https://player.vimeo.com/video/588851236}{\includegraphics{Guide-to-causal-mapping_files/figure-latex/unnamed-chunk-18-1.pdf}}
+\href{https://player.vimeo.com/video/588851236}{\includegraphics{Guide-to-causal-mapping_files/figure-latex/unnamed-chunk-29-1.pdf}}
 
-\href{https://player.vimeo.com/video/588881701}{\includegraphics{Guide-to-causal-mapping_files/figure-latex/unnamed-chunk-19-1.pdf}}
+\textbf{NOTE}: factor names which contain semicolons \textbf{;}. get special treatment as they separate the different parts of \protect\hyperlink{xhierachical-coding}{hierarchical labels}.
 
-\href{https://player.vimeo.com/video/674383670}{\includegraphics{Guide-to-causal-mapping_files/figure-latex/unnamed-chunk-20-1.pdf}}
+After beginning to create links between factors, one will notice already-coded factors will appear in the dropdown menus in the to and from factor boxes. For added convenience:
 
-\href{https://player.vimeo.com/video/596519456}{\includegraphics{Guide-to-causal-mapping_files/figure-latex/unnamed-chunk-21-1.pdf}}
+\begin{itemize}
+\tightlist
+\item
+  the most frequently coded factors will appear at the top of this list
+\item
+  if you are using hierarchical coding, top-level components will appear to be selected even if you have not used them explicitly so far. For example, if you have used the factors \texttt{health;\ mental} and \texttt{health;\ physical}, the factor \texttt{health} will appear even if you never used it explicitly. You can then easily create new nested factors such as \texttt{health;\ spiritual}by selecting \texttt{health} and then typing \texttt{;\ spiritual} with a leading ``;''. The app will automatically join these for you into the factor \texttt{health;\ spiritual}.
+\item
+  once you have selected an influence factor, the order of the choices available for the consequence factor will be silently updated, presenting at the top of the list the most frequently mentioned consequences of the influence factor you have chosen.
+\end{itemize}
 
-\href{https://player.vimeo.com/video/618270513}{\includegraphics{Guide-to-causal-mapping_files/figure-latex/unnamed-chunk-22-1.pdf}}
+\hypertarget{xchaining-links}{%
+\section{Chaining Links}\label{xchaining-links}}
 
-\href{https://player.vimeo.com/video/596594094}{\includegraphics{Guide-to-causal-mapping_files/figure-latex/unnamed-chunk-23-1.pdf}}
+\href{https://player.vimeo.com/video/588881701}{\includegraphics{Guide-to-causal-mapping_files/figure-latex/unnamed-chunk-30-1.pdf}}
 
-\href{https://player.vimeo.com/video/596497752}{\includegraphics{Guide-to-causal-mapping_files/figure-latex/unnamed-chunk-24-1.pdf}}
-
-\href{https://player.vimeo.com/video/580212681}{\includegraphics{Guide-to-causal-mapping_files/figure-latex/unnamed-chunk-25-1.pdf}}
-
-\href{https://player.vimeo.com/video/636997200}{\includegraphics{Guide-to-causal-mapping_files/figure-latex/unnamed-chunk-26-1.pdf}}
-
-\href{https://player.vimeo.com/video/651173445}{\includegraphics{Guide-to-causal-mapping_files/figure-latex/unnamed-chunk-27-1.pdf}}
-
-\href{https://player.vimeo.com/video/604138709}{\includegraphics{Guide-to-causal-mapping_files/figure-latex/unnamed-chunk-28-1.pdf}}
-
-\href{https://player.vimeo.com/video/664879474}{\includegraphics{Guide-to-causal-mapping_files/figure-latex/unnamed-chunk-29-1.pdf}}
-
-\href{https://player.vimeo.com/video/599620015}{\includegraphics{Guide-to-causal-mapping_files/figure-latex/unnamed-chunk-30-1.pdf}}
-
-\href{https://player.vimeo.com/video/671894620}{\includegraphics{Guide-to-causal-mapping_files/figure-latex/unnamed-chunk-31-1.pdf}}
-
-\href{https://player.vimeo.com/video/637121851}{\includegraphics{Guide-to-causal-mapping_files/figure-latex/unnamed-chunk-32-1.pdf}}
-
-\href{https://player.vimeo.com/video/683770170}{\includegraphics{Guide-to-causal-mapping_files/figure-latex/unnamed-chunk-33-1.pdf}}
-
-\hypertarget{part-introduction}{%
-\part{Introduction}\label{part-introduction}}
-
-\hypertarget{xinvite}{%
-\chapter{Just received an invite to view something in Causal Map?}\label{xinvite}}
-
-Someone sent you a link like \url{https://causalmap.shinyapps.io/CausalMap2/?s=99} so you can view and explore their file?
-
-Assuming they also remembered to give you permissions to view the file :smile: once you are logged in, the link will take you straight to a specific view of a specific file (a specific map or table) with a specific set of filters applied. You can then add or take away your own filters if you would like to explore further.
-
-\hypertarget{moving-to-causal-map-2-from-causal-map-1}{%
-\chapter{Moving to Causal Map 2 from Causal Map 1}\label{moving-to-causal-map-2-from-causal-map-1}}
-
-\textbf{Read this if you have been using the legacy version of Causal Map (CM1) at go.causalmap.app}
-
-All your files (and other files you had access to) from CM1 are accessible from within CM2. You will find them in the file chooser dropdown menu as before, but preceded by \texttt{cm1/...}
+Chaining links is easily done and useful when you have statement where one consequence leads to another, which leads to a third, and so on. To use this function simply click the chain icon below the consequence factor box and the app will automatically fill the influence box with the consequence from your previous link.
 
 \begin{figure}
 \centering
-\includegraphics[width=6.77083in,height=\textheight]{_assets/image-20210914103154772.png}
-\caption{image-20210914103154772}
+\includegraphics[width=6.77083in,height=\textheight]{_assets/md0XWSnpLr.gif}
+\caption{md0XWSnpLr}
 \end{figure}
 
-You can view and analyse these files in CM2 without needing to do anything.
+\hypertarget{xmemosandhashtags}{%
+\section{Using memos and hashtags}\label{xmemosandhashtags}}
 
-You can't make changes to them from within CM2.
+\hypertarget{xlink-memos}{%
+\subsection{Memos}\label{xlink-memos}}
 
-If you are still coding a file in CM1, changes you make will be visible from CM2 as soon as you refresh the page.
+Qualitative coding usually involves making notes and memos, and you can do this in Causal Map too.
 
-If you want, you can save a CM1 file in the new CM2 format so that you can continue to edit it in CM2 (as long as you have \emph{edit} or c\emph{opy}, not just \emph{view}, authorisation to the original file- see \protect\hyperlink{xpermissions}{here} for more details).
+This toggle opens both additional statement info, i.e.~info for any fields which start with \#, for example you might have a field \#gender in your statements table, and also shows the boxes to edit the memos. (In this example, there is no additional information.)
 
 \begin{figure}
 \centering
-\includegraphics[width=6.77083in,height=\textheight]{_assets/image-20210921103613356.png}
-\caption{image-20210921103613356}
+\includegraphics{_assets/esSnHL226V.gif}
+\caption{esSnHL226V}
 \end{figure}
 
-This creates a new file which is no longer connected to the original file.
+\hypertarget{xhashtags}{%
+\subsection{Hashtags / link flags}\label{xhashtags}}
 
-You will find that \emph{coding} with the new platform is pretty much the same as coding in the old one. The Factor Editor aka multi-editor is still there but on the right hand side. But when it comes to \emph{analysis}, the new app can do much more.
-
-The rest of this \href{guide.causalmap.app}{Guide} will take you on a 🗺 \protect\hyperlink{quick-tour}{quick tour} of the app.
-
-You may also have been using the Causal Map \textbf{Viewer} at (\url{https://causalmap.shinyapps.io/CausalMapViewer/}). This has been superseded by Causal Map 2.
-
-\hypertarget{are-causal-map-and-causal-mapping-for-me}{%
-\chapter{📚 Are Causal Map and causal mapping for me?}\label{are-causal-map-and-causal-mapping-for-me}}
-
-So, you've taken a look at the \textbf{\href{https://causalmap.app/the-app/}{features of the app}}, and you're getting excited about creating maps -- but is your project right for it?
-
-Use Causal Map if you:
+Hashtags are available as a special kind of memo when coding a link: you can use them to provide any kind of additional information, for example:
 
 \begin{itemize}
 \tightlist
 \item
-  have a relatively large amount of narrative data (enough to provide at least 20-30 causal links)
-\item
-  need help to organise a large number of links and summarise them into an overview or synthesis
-\item
-  have information from more than one source (for example different respondents, different documents, or different places in one document) and the information about the source is important to you: they aren't all interchangeable
-\item
-  are interested in possible differences between the sources and groups of sources -- and/or you don't necessarily have a preconceived idea of the contents or boundaries of the map.
-\item
-  want to capture what your sources actually say, systematically and transparently
-\end{itemize}
-
-Causal Map map is not suitable if you:
-
-\begin{itemize}
-\tightlist
-\item
-  only have a relatively small map which you can manage with traditional tools for drawing network diagrams (e.g.~PowerPoint, \href{http://kumu.io}{kumu.io} etc.)
-\item
-  need to analyse quantitative data and/or need to do precise mathematical modelling, e.g.~of future states of a system under certain conditions
-\item
-  would like to sketch out a plan (e.g.~Theory of Change or similar) without much reference to the different sources underpinning each link
-\end{itemize}
-
-\hypertarget{features-of-causal-map}{%
-\chapter{Features of Causal Map}\label{features-of-causal-map}}
-
-\hypertarget{main-features-of-causal-map}{%
-\section{Main features of Causal Map}\label{main-features-of-causal-map}}
-
-\begin{itemize}
-\tightlist
-\item
-  Code causal claims in the form A --\textgreater{} B
-\item
-  Code multiple claims at once
-\item
-  Code additional claims as a continuation of previous claim (``\protect\hyperlink{xchaining-links}{chaining}'')
-\item
-  \protect\hyperlink{ximport}{Import data} (and meta-data about your sources) in different formats
-\item
-  Add \protect\hyperlink{xmemosandhashtags}{memos and hashtags}
-\item
-  See a summary of all statements from a specific source
-\item
-  View additional information about each statement (e.g.~question and respondent characteristics)
-\item
-  Create simple or \protect\hyperlink{xhierarchical-coding}{hierarchical factor labels}
-\item
-  Edit many factors and links at once in a \protect\hyperlink{factor-editor}{powerful bulk editor}
-\item
-  Filter the global map by: Current statement; Factor label; Link (quote, hashtag, memo etc); Statement (text, additional data e.g.~respondent characteristics)
-\item
-  \protect\hyperlink{xrobustness}{Trace paths} from one set of factors to another
-\item
-  Use the interactive viewer to edit your map
-\item
-  View and export print-quality maps
-\item
-  View all quotes for a specific view, and get a smart summary
-\item
-  Create detailed \protect\hyperlink{core-tables}{tables}: Factors; Sample; Questions; Closed questions
-\item
-  Calculate \protect\hyperlink{xrobustness}{\textbf{Robustness of Argument}} for causal paths between sets of factors
-\item
-  \protect\hyperlink{xroundtripping}{Download/export} your data in different formats
-\item
-  Share files with others for viewing or editing
-\item
-  Code additional properties of links like strength and certainty, or mark pairs of factors which are opposite to one another
-\end{itemize}
-
-\hypertarget{additional-new-features-in-causal-map-2}{%
-\section{Additional new features in Causal Map 2}\label{additional-new-features-in-causal-map-2}}
-
-\begin{itemize}
-\item
-  Anyone can use it, and it is free for small projects
-\item
-  Conditional formatting makes your findings more visible
-\item
-  \protect\hyperlink{xbundlefactors}{Bundle factors} together to make your map neater and easier to read
-\item
-  \protect\hyperlink{bundlelinks}{Bundle links} by attributes such as stakeholder, district, question and many more
-\item
-  Infinite versioning means you can restore any change made to a file from any timepoint. This isn't just backups, it is every single change
-\item
-  It is easier to import and manage your data
-\item
-  You can import a standard-format Excel file into CM2, meaning you can download a file, edit it, and upload it again (this is called ``\protect\hyperlink{xroundtripping}{round-tripping}''). You can also include any additional fields or columns you want and they will be imported and available for searching, conditional formatting etc
-\item
-  Build a map by importing any combination of tables or just some of them - factors, links, sources, questions and statements, in any order, at any time
-\item
-  All outputs transparently recreatable from the \protect\hyperlink{advanced-editor}{filters}
-\item
-  Share or save links to maps and filters
-\item
-  Clickable legends and ordinary-language explanations of filters
-\item
-  Merging maps means you can compare multiple maps:
+  about \textbf{the causal connection}, e.g.
 
   \begin{itemize}
   \tightlist
   \item
-    You can use the merge\_map filter to temporarily merge other files into the current file if you wish. You can share a link to that merge and revisit it. Viewing a merge of file A and file B will take longer, so you will probably want to save the merged file as a new file
+    the respondent says this is only true for their village, not for other villages
   \item
-    The tables (factors, links etc) have a new field called factor\_map\_id etc, which you can use to visualise the merge e.g.~by presenting links in a different colour according to their source
+    where a link is only projected for the future
   \end{itemize}
 \item
-  You can restore, lock, delete, archive and share any of your files
+  about \textbf{the claim about the causal connection}
+
+  \begin{itemize}
+  \tightlist
+  \item
+    where a link is only a hypothesis
+  \item
+    to add other qualifying information like ``source seems unsure.''
+  \item
+    respondent doesn't like this connection
+  \item
+    respondent feels good about the outcome.
+  \end{itemize}
 \item
-  Log in to the same or different maps from the same or different accounts, including from multiple browser tabs
-\item
-  Collaborate on a file asynchronously
-\item
-  View, filter and sort all the tables - factors, links, sources, questions and statements - making up a map. These tables provide all the existing tables functionality plus more.
-\item
-  Delete factors and edit or delete links directly from the interactive map
-\item
-  Create a new blank file
-\item
-  \protect\hyperlink{xown-copy}{Clone an existing file} under a new name, containing all the current factors or only including the factors currently visible
-\item
-  New colour scales are colour-blind friendly and make sense when printed in black and white
-\item
-  Like Print View, if Interactive View is given a very big map with lots of links, it now bundles up the links so that it loads faster (you can still view a random quote from the bundle when you hover over a link)
-\item
-  When you edit a link, you are able to replace it with more than one link if you wish, e.g.~you can edit a link A→B and replace it with A→B and A→C by typing both B and C in the consequence factor box.
+  for you, the analyst, e.g.
+
+  \begin{itemize}
+  \tightlist
+  \item
+    respondent is answering a different question
+  \item
+    to tag links you want to come back and review.
+  \end{itemize}
 \end{itemize}
+
+As usual in Causal Map, you can apply one or more hashtags, and you can either select existing hashtags or create new ones on the fly.
+
+Later, you can \href{https://guide.causalmap.app/analysis.html\#filtering-the-map-by-link-hashtag-memo}{filter the map} to show only links containing specific hashtags (or parts of hashtags), and also for links which do \emph{not} contain specific hashtags or parts of hashtags.
+
+\hypertarget{creating-a-file}{%
+\chapter{Creating a file}\label{creating-a-file}}
+
+You can also create your own file by \protect\hyperlink{xown-copy}{copying the example file} or \protect\hyperlink{ximport}{uploading your own}, this file will then be added to the dropdown list in the top left-hand side.
 
 \hypertarget{collaboratio}{%
 \chapter{Collaborating at Causal Map}\label{collaboratio}}
@@ -2109,6 +1578,473 @@ Don't forget, if two or more colleagues are coding the same file at once, perhap
 
 \hypertarget{part-the-rest-of-the-app}{%
 \part{💻 The rest of the app}\label{part-the-rest-of-the-app}}
+
+\hypertarget{quick-tour}{%
+\chapter{Quick tour of the app}\label{quick-tour}}
+
+\href{https://player.vimeo.com/video/674369121}{\includegraphics{Guide-to-causal-mapping_files/figure-latex/unnamed-chunk-31-1.pdf}}
+
+\begin{verbatim}
+
+#  Interactive View{#xinteractive-view}
+
+The video below gives a brief overview of both the interactive and print view tab.
+
+[![](Guide-to-causal-mapping_files/figure-latex/unnamed-chunk-49-1.pdf)](https://player.vimeo.com/video/674383670)<!-- --> 
+
+An interactive version of the map in which the elements can be moved around and also the upstream and downstream factors are highlighted when the user hovers over them.
+
+- Drag the factors around.
+- Copy a map as an image by right-clicking on it.
+- Save a PNG image by pressing the button at bottom right.
+- Hover over factors to highlight the connected links and factors.
+- Hover over factors to display basic information about them and delete them from the entire map.
+- Hover over links to see the associated quote and other information.
+- Click on links to edit or delete them them.
+- Click on factors to focus on them, trace paths from/to them, edit their memo, or delete them.
+
+
+![image-20211001175928850](_assets/focus.gif){width=650}
+
+- Click on factors to edit the label or memo
+
+
+
+![image-20211001175928850](_assets/edit.gif){width=650}
+
+In both Interactive and Print view, if the factor labels have not been wrapped to any specific width, they are automatically wrapped to 22 characters.
+
+When you have  a lot of factors in your map, the selector in the top-right corner of the map can help locate them.
+
+![image-20211001175928850](_assets/nodeselect.gif){width=650}
+
+When you are viewing a single statement, the colour of the links corresponds to the colour of the highlighted sections of text.
+
+![image-20211116082854960](_assets/image-20211116082854960.png)
+
+
+
+Tracing paths to a particular factor directly from the interactive map
+
+![](_assets/BhOlErDmwB.gif)
+\end{verbatim}
+
+The app has two parts, the \protect\hyperlink{xlhs}{left-hand side} and the \protect\hyperlink{rhs}{right-hand side}.
+
+You can get help at any time by clicking on the little blue info buttons, like below. This will then open a panel displaying the relevant section of this guide.
+
+\begin{figure}
+\centering
+\includegraphics{_assets/image-20210927115203506.png}
+\caption{image-20210927115203506}
+\end{figure}
+
+\hypertarget{xlhs}{%
+\section{The left-hand side}\label{xlhs}}
+
+\hypertarget{getting-data-into-the-app}{%
+\subsection{Getting data into the app}\label{getting-data-into-the-app}}
+
+\begin{itemize}
+\tightlist
+\item
+  Create a new file \includegraphics{_assets/image-20220723134329170.png}
+
+  \begin{itemize}
+  \tightlist
+  \item
+    and then upload a map in the form of an \protect\hyperlink{xuploading-and-updating}{Excel file} (.xls or .xlsx).
+  \end{itemize}
+\item
+  Or, in the file chooser, select any files to which you have access, which include an anonymised dataset from a \href{http://bathsdr.org/}{QuIP} study.
+\end{itemize}
+
+\hypertarget{commands-and-buttons-to-apply-filters-to-your-map-1}{%
+\subsection{Commands and buttons to apply filters to your map}\label{commands-and-buttons-to-apply-filters-to-your-map-1}}
+
+The left-hand side of the app really only contains the text in the Advanced Editor (which you can view if you want, but close the window if it scares you).
+
+\begin{figure}
+\centering
+\includegraphics{_assets/image-20210914103354673.png}
+\caption{advanced-editor}
+\end{figure}
+
+The text window uses a simple syntax for filtering and manipulating the maps and tables.
+
+Nearly all the other buttons on the left-hand side are just ways to manipulate this text. Each line in this window is a filter which manipulates the existing map in some way. The lines in the windows are applied successively to the original map to produce the final map which is then displayed.
+
+\hypertarget{xstatement-view}{%
+\subsection{Do some coding (view one statement) or do some analysis (view many statements)?}\label{xstatement-view}}
+
+\begin{figure}
+\centering
+\includegraphics{_assets/image-20211026110623336.png}
+\caption{\#statement-toggle}
+\end{figure}
+
+These buttons add the correct filters to either view just one statement or many statements.
+
+When you are coding, you will want to view just one statement, and when you want to explore and analyse the entire causal map or sections of it, you will want to view many statements.
+
+(Even when you are viewing one statement, it is still possible to apply filters for example if the map associated with this one statement is quite large.)
+
+\hypertarget{top-row}{%
+\subsection{Top row}\label{top-row}}
+
+Most people like to hide these filters when they are coding, so they hide the filters using the toggle.
+
+\begin{figure}
+\centering
+\includegraphics{_assets/image-20210914103505559.png}
+\caption{image-20210914103505559}
+\end{figure}
+
+But for analysing your map, you will want to open the filters panel.
+
+\hypertarget{shortcut-buttons}{%
+\subsection{Shortcut buttons}\label{shortcut-buttons}}
+
+These buttons offer quick ways to add filters without going through a dialog panel.
+
+\hypertarget{the-filter-buttons-1}{%
+\subsection{The filter buttons}\label{the-filter-buttons-1}}
+
+They are in three sections: analysis, conditional formats and simple formats. See the section on \href{https://guide.causalmap.app/all-the-filters.html}{filters}.
+
+To see additional information about the statement you are currently viewing such as the \texttt{source\_id} and \texttt{question\_id} slide the info toggle.\includegraphics{_assets/image-20211220153438354.png}
+
+\hypertarget{rhs}{%
+\section{The right hand side}\label{rhs}}
+
+\begin{figure}
+\centering
+\includegraphics[width=6.77083in,height=\textheight]{_assets/image-20210914103654314.png}
+\caption{image-20210914103654314}
+\end{figure}
+
+\hypertarget{not2}{%
+\subsection{Interactive View}\label{not2}}
+
+An interactive version of the map in which the elements can be moved around and also the upstream and downstream factors are highlighted when the user moves their mouse over them.
+
+The Interactive View is designed to let you interact with and explore your map, whereas the main point of Print View is to get something high quality and static for including in reports.
+
+\hypertarget{not}{%
+\subsection{Print View}\label{not}}
+
+A print-quality version of the map with advanced layout.
+
+\hypertarget{no-not-this-one}{%
+\subsection{Factor editor}\label{no-not-this-one}}
+
+Simply click on the factor you want to change and edit it. You can change one factor everywhere in the file or you can do it for each statement, by pressing the Split checkbox. Just remember to press update once you have made your changes and you are happy with them.
+
+\hypertarget{tables}{%
+\subsection{Tables}\label{tables}}
+
+Several tables showing lists of factors, links and various metrics and which can be filtered and reorganised in marvellous ways. See the section on \href{https://guide.causalmap.app/all-the-tables.html}{tables}.
+
+\begin{itemize}
+\item
+  \protect\hyperlink{xfile-manager}{Files tab}
+\item
+  \protect\hyperlink{xupdates-tab}{Updates tab}
+\item
+  \protect\hyperlink{xdata-manager}{Data tab}
+\item
+  \protect\hyperlink{account-tab}{Account tab}
+\end{itemize}
+
+\hypertarget{xtop-menu}{%
+\chapter{The top menu}\label{xtop-menu}}
+
+This section is all about how to manage using the top menu to help you deal with the currently loaded file. Hover over the icons to see what they do.
+
+\includegraphics[width=6.77083in,height=\textheight]{_assets/image-20211025111815970.png}
+
+There is also a dedicated \protect\hyperlink{file-manager}{File Manager} to manage all your files.
+
+\hypertarget{xpermissions}{%
+\section{Current File Manager}\label{xpermissions}}
+
+Click the green File icon to manage your file.
+
+\begin{figure}
+\centering
+\includegraphics[width=6.77083in,height=\textheight]{_assets/uBfaYOvRRH.gif}
+\caption{uBfaYOvRRH}
+\end{figure}
+
+\includegraphics[width=6.77083in,height=\textheight]{_assets/image-20211025111538915.png}
+
+\hypertarget{sharing-and-locking-files}{%
+\subsection{Sharing and locking files}\label{sharing-and-locking-files}}
+
+You can add any number of other Causal Map accounts into the ``copy'' and/or ``view'' boxes.
+
+\begin{itemize}
+\item
+  ``Copy'' permission means that the other user can make their own copy of this file, which they can then edit.
+\item
+  ``View'' permission means that the other user can make only view the file.
+\end{itemize}
+
+You can also use this switch to lock the file. This means that no-one can change it, not even you, until it is unlocked again.
+
+It is also possible to create larger groups of users. Ask us for help with this: \href{mailto:hello@causalmap.app}{\nolinkurl{hello@causalmap.app}}.
+
+\hypertarget{file-memo}{%
+\subsection{File memo}\label{file-memo}}
+
+You can put information about your file in the \texttt{file\ memo} box, and it will be shown below the interactive map to tell other users what this file is about. You can use markdown to format the text, e.g.~start a line with \# to make level-1 heading. You can even include images using markdown.
+
+\begin{figure}
+\centering
+\includegraphics{_assets/image-20211103133030379.png}
+\caption{image-20211103133030379}
+\end{figure}
+
+This is in addition to any ``newsflash'' information about updates which you add using the chat widget.
+
+\hypertarget{xown-copy}{%
+\section{⚡ Making your own copy of a file}\label{xown-copy}}
+
+\href{https://player.vimeo.com/video/641927229}{\includegraphics{Guide-to-causal-mapping_files/figure-latex/unnamed-chunk-33-1.pdf}}
+Copying a file in Causal Map is easily done. Simply load the file you want to copy using the dropdown menu. Then click the `Save As' button on the top left of your screen.
+
+\includegraphics[width=6.77083in,height=\textheight]{_assets/5Najfi4Pr2.gif}
+
+You can then append something to the end of the filename to make it yours:
+
+\begin{figure}
+\centering
+\includegraphics[width=6.77083in,height=\textheight]{_assets/image-20211001180419448.png}
+\caption{image-20211001180419448}
+\end{figure}
+
+Click the `Save current map' button. This window will then close and your copy of the file will load up. You can now make changes to the file.
+
+\hypertarget{restoring-a-previous-version-of-your-file}{%
+\section{Restoring a previous version of your file}\label{restoring-a-previous-version-of-your-file}}
+
+The app is continously saving your work and so you can restore your file to any prevision version, by clicking this icon \includegraphics{_assets/image-20211115175030770.png}. This will open the below panel where you can choose which timepoint you wish to revert your map to.
+
+\begin{figure}
+\centering
+\includegraphics[width=6.77083in,height=\textheight]{_assets/image-20211115174934976.png}
+\caption{image-20211115174934976}
+\end{figure}
+
+This panel shows a dropdown list of times when you made changes to the mapfile in GMT. Along with the size of your file which can help you identify which timepoint you want to revert to. It can be easy to forget what time you made alterations to your file, so if you're likely to want to restore a previous map it is best to note the time so that you can easily return to it.
+
+\hypertarget{uploading-your-data}{%
+\section{Uploading your data}\label{uploading-your-data}}
+
+\begin{figure}
+\centering
+\includegraphics[width=6.77083in,height=\textheight]{_assets/image-20211115175648298.png}
+\caption{image-20211115175648298}
+\end{figure}
+
+The above buttons relate to uploading your data, see \protect\hyperlink{ximport}{this section} for more information.
+
+\hypertarget{chat-about-this-file}{%
+\section{Chat about this file}\label{chat-about-this-file}}
+
+By clicking on the icon of two speech bubbles, a panel containing chat about the file will appear. You can see the comments you and other people with access to this file have added. From here you can also add updates on this file, this function is useful when working collaboratively.
+
+\begin{figure}
+\centering
+\includegraphics{_assets/image-20211115175519249.png}
+\caption{image-20211115175519249}
+\end{figure}
+
+\begin{quote}
+Why did I make this version of that file? Is it different from version xzy? Did we already import those new statements into this version??
+\end{quote}
+
+This panel can help with these kinds of problems. You and your colleagues -- anyone else with access to the current file -- can type notes and updates about the file. These updates will be listed here sequentially.
+
+Also, these same notes and updates are listed in the main Updates panel, along with automatic updates about when files were opened and edited.
+
+\begin{figure}
+\centering
+\includegraphics{_assets/image-20211018121359141.png}
+\caption{image-20211018121359141}
+\end{figure}
+
+So you can use the filters just to search for manual and automatic updates about particular files, or on particular dates; or you can just search for type=chat to view recent chat about any files or some particular files:
+
+\begin{figure}
+\centering
+\includegraphics{_assets/image-20211122063223836.png}
+\caption{image-20211122063223836}
+\end{figure}
+
+\hypertarget{xdashboard-advanced}{%
+\chapter{The Dashboard}\label{xdashboard-advanced}}
+
+\begin{figure}
+\centering
+\includegraphics{_assets/image-20220725094435395.png}
+\caption{image-20220725094435395}
+\end{figure}
+
+The Dashboard appears on the right as the app loads. You can also reach the dashboard by pressing the 🏅 icon on the right, or with the key combination Alt+q.
+
+The Dashboard lists views of the current file saved by you or other users.
+
+\hypertarget{whats-in-a-view}{%
+\subsection{What's in a View}\label{whats-in-a-view}}
+
+A View records information about the currently applied filters (analysis filters and formatting) as well as the specific tab you are looking at and, in the case of tables, the way you have set up the table as well. They also save the name of the current file.
+
+\hypertarget{xsharing_view}{%
+\subsection{Using and sharing a view}\label{xsharing_view}}
+
+Click on:
+
+\begin{itemize}
+\tightlist
+\item
+  A \textbf{row} to load the associated filters into the current file.
+\item
+  \textbf{The blue View number} to open the view in an other tab.
+\item
+  \textbf{\texttt{Share} icon}: Copy the link and filter to your clipboard, for pasting into a document or sending to someone. If you send someone a shortlink to a view, when they click on it they will be taken to the \emph{same view of the current file} (providing you have given them View or Edit rights to the file).
+\item
+  \textbf{\texttt{Edit} icon}: Edit the view - \protect\hyperlink{xedit_view}{see below}
+\item
+  \textbf{\texttt{Hide} icon}: Hide this row in future from this table. You may want to use this button to clear unused views from your table. If you already shared this link with someone, it will still work even though it is hidden.
+\end{itemize}
+
+\hypertarget{recommended-views-versus-custom-views}{%
+\subsection{⭐ Recommended views versus 🤵custom views}\label{recommended-views-versus-custom-views}}
+
+\hypertarget{recommended-views}{%
+\subsubsection{⭐ Recommended views}\label{recommended-views}}
+
+When you first create or copy a file, Causal Map will create for you some recommended views. These are marked with a star.
+
+\begin{itemize}
+\tightlist
+\item
+  These recommended views are copies specific for the current file. You can edit them later, or hide them if you don't want them.
+\item
+  Some recommended views might not be shown in the list if they would not be relevant to the current file -- for example if you do not use hierarchical coding, views which are only relevant to zooming are not shown. Occasionally you might see them appear later as you add features to your file, for example if you add hierarchical coding.
+\item
+  Occasionally you might see additional recommended views added to the list as we publish new ones.
+\end{itemize}
+
+\hypertarget{custom-views---create-your-own}{%
+\subsubsection{🤵 Custom views - create your own}\label{custom-views---create-your-own}}
+
+You can create your own views for the current file at any time.
+
+\begin{figure}
+\centering
+\includegraphics{_assets/image-20220623083918159.png}
+\caption{image-20220623083918159}
+\end{figure}
+
+Set your map or table up the way you want it then put an (optional) title and press Save.
+
+\begin{itemize}
+\tightlist
+\item
+  A shortlink to this view will also be copied into your clipboard so you can paste it straight into a document or send it to someone else.
+\item
+  If you put a title, the view will also appear in the list of views for the current file.
+\item
+  If you don't put a title, it won't be listed, but the shortlink you created will always point to that same view.
+\end{itemize}
+
+\hypertarget{complete-views-versus-add-ons}{%
+\section{Complete views versus ``Add-ons''}\label{complete-views-versus-add-ons}}
+
+Complete views replace the existing view and all the filters, included for example analysis filters which change the map itself, for example show only the most frequent links, or zoom out to the top level of a hierarchy. If you are looking at the Advanced Editor, you will see that the entire contents of the editor are replaced.
+
+``Add-on'' views are are added after any other existing filters and do not replace them. So you can use them for example to add a particular kind of formatting, like making all the links pink, or to add one instruction, like ``remove all links mentioned only once''.
+
+\begin{figure}
+\centering
+\includegraphics[width=6.77083in,height=\textheight]{_assets/image-20220808114607154.png}
+\caption{image-20220808114607154}
+\end{figure}
+
+Complete views belong with the current file and you can edit them, whereas Add-ons exist separately of individual files (actually, they belong to \texttt{example-file}) and you can't edit them (unless you are an admin).
+
+\hypertarget{xedit_view}{%
+\section{To edit the content (filter, tab etc) of an existing view:}\label{xedit_view}}
+
+Set up the content the way you want it in the app, so it looks exactly the way it should when someone in the future clicks on the link. Then go to the filter which you want to update and press the edit button:
+
+\begin{figure}
+\centering
+\includegraphics[width=6.77083in,height=\textheight]{C:/Users/hanna/Downloads/Edit shortlinks.png}
+\caption{Edit shortlinks}
+\end{figure}
+
+In the modal dialog which opens, make sure you check this box. You can optionally change the title too.
+
+\begin{figure}
+\centering
+\includegraphics[width=6.77083in,height=\textheight]{_assets/image-20220808120110607.png}
+\caption{image-20220808120110607}
+\end{figure}
+
+If all you want to do is change the title, make sure the checkbox is \textbf{not} checked.
+
+\hypertarget{applying-a-view}{%
+\section{Applying a view}\label{applying-a-view}}
+
+\begin{figure}
+\centering
+\includegraphics[width=6.77083in,height=\textheight]{_assets/image-20220808114935730.png}
+\caption{image-20220808114935730}
+\end{figure}
+
+When you view a map which has been downloaded as an image you will see there is a unique number in the bottom left-hand corner. Using this number you can jump to this particular view on that specific file, just paste the number in this box at the bottom of the dashboard and press the arrow. If you share this number with others who have edit or view access they will also be taken to this view.
+
+\hypertarget{medals}{%
+\section{Medals}\label{medals}}
+
+\begin{figure}
+\centering
+\includegraphics{_assets/image-20220623080054435.png}
+\caption{image-20220623080054435}
+\end{figure}
+
+This section gives a whole load of medals to reflect all the work you've been doing and encourage you to try out new things.
+
+\hypertarget{for-admins}{%
+\section{For admins}\label{for-admins}}
+
+Recommended views can only be added / edited by admins, and only from \texttt{example-file}.
+
+When you create a recommended view it should be applicable to almost any file, so don't use filters which refer to particular factor labels etc.
+
+Recommended views are then copied to every other file. Editors can then edit, rename etc that recommended filter in the other file. But that won't change the original filter in \texttt{example-file}. Editors can hide a recommended filter in any other file except \texttt{example-file}, and it won't come back.
+
+Addons work a bit differently from complete views - they can also only be created within \texttt{example-file}, but they are not copied to other files. As admin, you can create your own addons just for individual files if you want, by not clicking ``recommended'' -- maybe useful if you have a lot of steps you want to repeat just within a particular file.
+
+To ``delete'' an addon, edit it and delete the title.
+
+\hypertarget{xfile-manager}{%
+\chapter{The File Manager}\label{xfile-manager}}
+
+At the top of the page you will find information about your subscriptions, the files you have crested and any teams you manage.
+
+Below, the file manager table allows you to see shows you all the files you have access to and what level of access you have i.e.~copy, view or edit access. You can also see details such as whether these files are locked, archived, any memos on the file and what access other users have to these files.
+
+\begin{figure}
+\centering
+\includegraphics[width=6.77083in,height=\textheight]{_assets/image-20210927120502982.png}
+\caption{image-20210927120502982}
+\end{figure}
+
+From this page you can either \texttt{load} the map or click \texttt{manage}to open the \protect\hyperlink{xpermissions}{file manager panel}.
 
 \hypertarget{xfactor-editor}{%
 \chapter{The Factor Editor}\label{xfactor-editor}}
@@ -2703,15 +2639,24 @@ You may wish to include this table as an appendix in your report or as a referen
 
 There are two tables which provide a summary of the responses to the \textbf{closed questions} asked at the end of each QuIP questionnaire domain. The following symbols are used in the tables to represent the direction of change indicated by the response to the closed question:
 
-\begin{longtable}[]{@{}lll@{}}
-\toprule
-\textbf{Symbol} & \textbf{Direction of change} & \textbf{Example responses} \\
-\midrule
+\begin{longtable}[]{@{}
+  >{\raggedright\arraybackslash}p{(\columnwidth - 4\tabcolsep) * \real{0.1538}}
+  >{\raggedright\arraybackslash}p{(\columnwidth - 4\tabcolsep) * \real{0.3692}}
+  >{\raggedright\arraybackslash}p{(\columnwidth - 4\tabcolsep) * \real{0.4769}}@{}}
+\toprule()
+\begin{minipage}[b]{\linewidth}\raggedright
+\textbf{Symbol}
+\end{minipage} & \begin{minipage}[b]{\linewidth}\raggedright
+\textbf{Direction of change}
+\end{minipage} & \begin{minipage}[b]{\linewidth}\raggedright
+\textbf{Example responses}
+\end{minipage} \\
+\midrule()
 \endhead
 \textbf{0} & No change & ``No change'' ``Stayed the same'' \\
 \textbf{+} & Positive change & ``Better'' ``Improved'' ``Increased'' \\
 \textbf{-} & Negative change & ``Worse'' ``Decreased'' \\
-\bottomrule
+\bottomrule()
 \end{longtable}
 
 The closed questions table gives an overview of how each \textbf{individual} respondent answered each closed question. The closed question summary table presents the \textbf{total respondent counts} for each direction of change. For every closed question you can see how many respondents reported positive, negative, or no change in that domain. You may wish to search and filter the statements to view only the closed question responses from a particular respondent group.
@@ -2735,15 +2680,24 @@ You can also add other additional data fields like respondent gender:
 
 The closed question table provides a summary of the responses to the \textbf{closed questions} asked at the end of each QuIP questionnaire domain. The following symbols are used in the tables to represent the direction of change indicated by the response to the closed question:
 
-\begin{longtable}[]{@{}lll@{}}
-\toprule
-\textbf{Symbol} & \textbf{Direction of change} & \textbf{Example responses} \\
-\midrule
+\begin{longtable}[]{@{}
+  >{\raggedright\arraybackslash}p{(\columnwidth - 4\tabcolsep) * \real{0.1538}}
+  >{\raggedright\arraybackslash}p{(\columnwidth - 4\tabcolsep) * \real{0.3692}}
+  >{\raggedright\arraybackslash}p{(\columnwidth - 4\tabcolsep) * \real{0.4769}}@{}}
+\toprule()
+\begin{minipage}[b]{\linewidth}\raggedright
+\textbf{Symbol}
+\end{minipage} & \begin{minipage}[b]{\linewidth}\raggedright
+\textbf{Direction of change}
+\end{minipage} & \begin{minipage}[b]{\linewidth}\raggedright
+\textbf{Example responses}
+\end{minipage} \\
+\midrule()
 \endhead
 \textbf{0} & No change & ``No change'' ``Stayed the same'' \\
 \textbf{+} & Positive change & ``Better'' ``Improved'' ``Increased'' \\
 \textbf{-} & Negative change & ``Worse'' ``Decreased'' \\
-\bottomrule
+\bottomrule()
 \end{longtable}
 
 There are two presets with this table:
@@ -2788,15 +2742,15 @@ The metrics table displays a range of useful measurements about your data. These
 There are quite a few metrics, some are more self-explanatory than others. The table below expands on the brief description given in the metrics table.
 
 \begin{longtable}[]{@{}
-  >{\raggedright\arraybackslash}p{(\columnwidth - 2\tabcolsep) * \real{0.14}}
-  >{\raggedright\arraybackslash}p{(\columnwidth - 2\tabcolsep) * \real{0.86}}@{}}
-\toprule
+  >{\raggedright\arraybackslash}p{(\columnwidth - 2\tabcolsep) * \real{0.1429}}
+  >{\raggedright\arraybackslash}p{(\columnwidth - 2\tabcolsep) * \real{0.8571}}@{}}
+\toprule()
 \begin{minipage}[b]{\linewidth}\raggedright
 Metric
 \end{minipage} & \begin{minipage}[b]{\linewidth}\raggedright
 \textbf{Explanation}
 \end{minipage} \\
-\midrule
+\midrule()
 \endhead
 \textbf{size} & The total number of links in the map. \\
 \textbf{order} & The total number of factors in the map. \\
@@ -2813,7 +2767,7 @@ Metric
 \textbf{reciprocity} & The proportion of mutual connections in the map. This calculates the proportion of factors in which both factors influence one another. The connection must be between two factors, feedback loops are not counted. \\
 \textbf{min\_cut} & The minimum number of links that you would have to remove to split the map into two clusters. \\
 \textbf{mean\_dist} & The mean number of links between all factors in the map. \\
-\bottomrule
+\bottomrule()
 \end{longtable}
 
 \hypertarget{xmetrics}{%
@@ -2836,15 +2790,15 @@ The metrics table displays a range of useful measurements about your data. These
 There are quite a few metrics, some are more self-explanatory than others. The table below expands on the brief description given in the metrics table.
 
 \begin{longtable}[]{@{}
-  >{\raggedright\arraybackslash}p{(\columnwidth - 2\tabcolsep) * \real{0.14}}
-  >{\raggedright\arraybackslash}p{(\columnwidth - 2\tabcolsep) * \real{0.86}}@{}}
-\toprule
+  >{\raggedright\arraybackslash}p{(\columnwidth - 2\tabcolsep) * \real{0.1429}}
+  >{\raggedright\arraybackslash}p{(\columnwidth - 2\tabcolsep) * \real{0.8571}}@{}}
+\toprule()
 \begin{minipage}[b]{\linewidth}\raggedright
 Metric
 \end{minipage} & \begin{minipage}[b]{\linewidth}\raggedright
 \textbf{Explanation}
 \end{minipage} \\
-\midrule
+\midrule()
 \endhead
 \textbf{size} & The total number of links in the map. \\
 \textbf{order} & The total number of factors in the map. \\
@@ -2861,7 +2815,7 @@ Metric
 \textbf{reciprocity} & The proportion of mutual connections in the map. This calculates the proportion of factors in which both factors influence one another. The connection must be between two factors, feedback loops are not counted. \\
 \textbf{min\_cut} & The minimum number of links that you would have to remove to split the map into two clusters. \\
 \textbf{mean\_dist} & The mean number of links between all factors in the map. \\
-\bottomrule
+\bottomrule()
 \end{longtable}
 
 \hypertarget{xdata-manager}{%
@@ -4140,13 +4094,13 @@ You can exclude statements, sources etc in the same way. Or you could filter for
 
 \texttt{find\ links\ field=hashtags\ value=doubtful\ operator=notcontains}
 
-\hypertarget{trace-paths-trace-robustness}{%
-\section{Trace paths / trace robustness}\label{trace-paths-trace-robustness}}
+\hypertarget{trace-paths}{%
+\section{Trace paths}\label{trace-paths}}
 
 \begin{figure}
 \centering
-\includegraphics[width=6.77083in,height=\textheight]{_assets/image-20211017130102189.png}
-\caption{image-20211017130102189}
+\includegraphics{_assets/image-20221017093545711.png}
+\caption{image-20221017093545711}
 \end{figure}
 
 \begin{figure}
@@ -4163,7 +4117,7 @@ You can exclude statements, sources etc in the same way. Or you could filter for
 \caption{image-20220809125958876}
 \end{figure}
 
-This analysis function is a powerful tool which enables you to view full causal pathways and to interrogate the relationships between specific causal factors. See the next section for more information on how to use the \protect\hyperlink{xrobustness}{tracing robustness}.
+This analysis function is a powerful tool which enables you to view full causal pathways and to interrogate the relationships between specific causal factors.
 
 \hypertarget{bundlefactors}{%
 \section{Bundle factors}\label{bundlefactors}}
@@ -4200,26 +4154,22 @@ When you use an \texttt{equals} filter you are usually filtering for a particula
 
 These ``next'' and ``previous'' buttons appear when using equals filters with links, factors or statements (except when filtering statements by statement\_id, as in this special case the next and previous buttons are already visible in the statement navigation panel below).
 
-\hypertarget{xrobustness}{%
-\chapter{📚 Tracing paths and calculating robustness}\label{xrobustness}}
+\hypertarget{xtracing-paths}{%
+\chapter{📚 Tracing paths}\label{xtracing-paths}}
 
 \hypertarget{summary-6}{%
 \section{Summary}\label{summary-6}}
 
 \hypertarget{howtotracepathsandrobustness}{%
-\subsection{How to trace paths and calculate robustness}\label{howtotracepathsandrobustness}}
+\subsection{How to trace paths}\label{howtotracepathsandrobustness}}
 
-Tracing paths allows you to view full causal pathways and to analyse the relationships between specific causal factors. You will find the \texttt{trace\ robustness} filter in the \texttt{analysis} filters section.
+Tracing paths allows you to view full causal pathways and to analyse the relationships between specific causal factors. You will find the \texttt{trace\ paths} filter in the \texttt{analysis} filters section. This will open the \texttt{trace\ paths} panel which asks you to select how many steps to trace and which factors to trace from and to. Type one or more factors to begin your path (these are the \texttt{origin} factors) and which factor or factors you want the path to end at (the \texttt{target} factors). If necessary, move the slider to select how many steps down you want the path to go.
 
 \begin{figure}
 \centering
-\includegraphics[width=6.77083in,height=\textheight]{_assets/Irgj26EgMI.gif}
-\caption{Irgj26EgMI}
+\includegraphics{_assets/image-20221017080606765.png}
+\caption{image-20221017080606765}
 \end{figure}
-
-This will open the \texttt{trace\ robustness} panel which asks you to select how many steps to trace and which factors to trace from and to. Type one or more factors to begin your path (these are the \texttt{origin} factors) and which factor or factors you want the path to end at (the \texttt{target} factors). If necessary, move the slider to select how many steps down you want the path to go.
-
-\includegraphics[width=6.77083in,height=\textheight]{_assets/image-20211025151626916.png}
 
 If you want you can also leave either (but not both) factor selectors blank, e.g.
 
@@ -4255,10 +4205,6 @@ In this example, there are causal paths from the two external factors to the two
 
 A path length of 1 will only show the one step in the causal chain from/to your chosen factor, i.e.~A ➜ B. A path length of 2 will also show the next step in the causal chain (if there is one!), i.e.~A ➜ B ➜ C.
 
-Path tracing is the prerequisite for calculating Robustness.
-
-It is \href{\%7B\#xrobustness-by-field\%7D}{also possible} to count, for example, how many sources mentioned a complete path.
-
 \hypertarget{removing-unwanted-links}{%
 \subsection{🧪Removing unwanted links}\label{removing-unwanted-links}}
 
@@ -4276,7 +4222,13 @@ the app will show you also the path from B to C, because both B and C are one li
 
 So you might prefer this filter:
 
-\texttt{trace\ paths\ length=1\ to=D\ remove\_links=T}
+\texttt{trace\ paths\ length=1\ to=D\ remove\_links=T} (which is equivalent to clicking this box in the dialog:)
+
+\begin{figure}
+\centering
+\includegraphics{_assets/image-20221017080731614.png}
+\caption{image-20221017080731614}
+\end{figure}
 
 \ldots{} which will remove any such links.
 
@@ -4286,46 +4238,351 @@ So you might prefer this filter:
 \caption{image-20220810124740033}
 \end{figure}
 
-In other words, \texttt{trace\ paths\ length=L\ from=X\ to=Y} says ``show me all the factors which are on paths from X to Y no longer than L, and all the links between such factors'' whereas \texttt{trace\ paths\ length=L\ from=X\ to=Y\ remove\_links=F} says ``show me all the paths from X to Y no longer than L''. This should probably be the default, but in order to maintain compatibility we will leave it like it is.
+In other words, \texttt{trace\ paths\ length=L\ from=X\ to=Y} says ``show me all the factors which are on paths from X to Y no longer than L, and all the links between such factors'' whereas \texttt{trace\ paths\ length=L\ from=X\ to=Y\ remove\_links=F} says ``show me all the paths from X to Y no longer than L''.
 
-\hypertarget{how-to-calculate-robustness}{%
-\subsection{How to calculate robustness}\label{how-to-calculate-robustness}}
+\protect\hyperlink{xcontinuity}{Read more about tracing paths and tracing threads}.
 
-Once you have applied the \protect\hyperlink{howtotracepathsandrobustness}{trace path filter}, you can find the robustness calculations in the \texttt{robustness} tab. Here is the table for the example above.
+\hypertarget{xcontinuity}{%
+\chapter{Continuity and tracing threads}\label{xcontinuity}}
+
+\hypertarget{summary-7}{%
+\section{Summary}\label{summary-7}}
+
+When you use the \protect\hyperlink{xtracing-paths}{trace threads filter} to follow paths of influence across your map, the \protect\hyperlink{xtransitivity-trap}{transitivity trap} can make it a challenge to interpret your maps. Some people (or somebody) said that improved hygiene led to reduction in mosquito environments, and some people said reduction in mosquito environments led to improved health, but \emph{was this the same or different people}?
+
+\includegraphics{_assets/image-20211215081735743.png}
+
+\hypertarget{xtracing-threads}{%
+\section{Tracing threads (aka tracing continuity)}\label{xtracing-threads}}
+
+If your map makes it look like Cash Transfer causally influenced Increased Wellbeing further downstream of it, you surely want to know if there are at least some sources who each mentioned the whole of one of the possible paths.
+
+We call this ``tracing threads''. A thread is a chain of individual ``original links'' inside the bundles, whereas a path is just a chain of bundles, regardless of which sources mentioned each link.
 
 \begin{figure}
 \centering
-\includegraphics[width=6.77083in,height=\textheight]{_assets/UpSR4OnxP6.gif}
-\caption{UpSR4OnxP6}
+\includegraphics{_assets/image-20221017081846053.png}
+\caption{image-20221017081846053}
+\end{figure}
+
+Tracing threads is an option within the \protect\hyperlink{xtracing-paths}{tracing paths} dialog. Click to trace threads up or down. Normally you will want to trace by source\_id, but sometimes you might want to set, for example, village\_id.
+
+``Ah so there are plenty of paths from X to Y, but are there any threads? yes look, here is MXFG-1 who has a thread all the way down''.
+
+We can ask ``how many threads make it all the way down to Improved Wellbeing''? The threads are named by the source ids, so we can say ``Let's look at downstream thread MXFG-1''.
+
+When we are tracing threads, we can trace source threads, or village threads, or whatever. But usually we will trace in terms of sources, so if we do not specify which field defines the context, we assume we mean sources.
+
+So a thread is a continuous chain of links with the same ID along a path. Within a bundle of links, each thread is one individual link associated with one ID (or sometimes, more than one link, if the ID mentioned that bundle more than once).
+
+This creates the following calculated fields:
+
+\begin{itemize}
+\tightlist
+\item
+  Links fields
+
+  \begin{itemize}
+  \tightlist
+  \item
+    has\_threads threads
+  \end{itemize}
+\item
+  Factor field
+
+  \begin{itemize}
+  \tightlist
+  \item
+    threads\_surviving
+  \item
+    threads
+  \end{itemize}
+\end{itemize}
+
+You can for example label the links like this \texttt{label\ links\ value=unique:\ threads}.
+
+(For compatibility purposes, the deprecated fields \texttt{has\_downstream\_threads}, \texttt{has\_downstream\_threads\_surviving} etc. are also available.)
+
+You can for example colour the factors like this \texttt{color\ factors\ field=threads\_surviving}. So if you set a filter to \emph{trace threads downstream} from Cash Transfer C, imagine factor C is coloured completely red, and imagine a factor F immediately downstream of it being coloured with an intensity of red according to the number of sources which mentioned the link from C to F. In fact every factor downstream of C will be coloured with a shade of red in the same way. The central question of whether any source mentioned a whole path from C to, say, ``Increased wellbeing'' can be answered simply by seeing whether there is any red in the colour of ``Increased wellbeing'' or whether it is completely white.
+
+\ldots{} So you can just look at C and watch its influence (in terms of source continuity) seeping downstream and spreading out along all source-complete paths.
+
+It's like ink starting from C and flowing downstream as long as there is source continuity.
+
+Tracing threads upstream asks about causes of effects rather than effects of causes: ``Increased wellbeing'' is completely red, and the redness of ``Cash Transfer C'' depends on the number of sources which mention a complete path from C to Increased wellbeing.
+
+Tracing paths anchors the filter to one or more factors, and if you use thread tracing to format an aspect of the map (e.g.~to colour the links) then this formatting is only related to this specific set of origin and/or target factors and will change if you trace from and/or to different factors.
+
+\begin{figure}
+\centering
+\includegraphics{_assets/image-20220301095046531.png}
+\caption{image-20220301095046531}
+\end{figure}
+
+In this example, the width of the links reflects the number of sources mentioning it, but the colour of the links (and factors) reflects how many sources have a continuous story starting from ``Living in a refugee settlement'' all the way up to that point. This difference is also shown in the pair of numbers on the links: the first number is the source thread count, the second is the source count. So the top-right link was mentioned by one source, but the 0 shows that no single source mentioned a story all the way from ``Living in a refugee settlement'' which also includes this link.
+
+\hypertarget{advanced-diagnostic-filter-mark-links-for-continuity-print-view-only}{%
+\section{Advanced diagnostic filter: Mark links for continuity (Print View only)}\label{advanced-diagnostic-filter-mark-links-for-continuity-print-view-only}}
+
+\emph{Showing} continuity aka ``showing threads'' is concerned with adjacent sets of links (or factors). It cannot be used to definitively answer questions about continuity down a longer path (actually, sometimes it does tell us something: if there is zero continuity on a section of a path with no splits, we know there is zero continuity down the longer path; but more generally, if there is some continuity down all the sections of a path, it does not mean that there is continuity down the whole of it).
+
+Add the filter \texttt{mark\ links} (there is no button for it, you have to type it) provides the following diagnostics:
+
+\includegraphics{_assets/image-20211215081328481.png}
+
+The incoming (bundles of) links to every factor (actually to every factor with outgoing links) are labelled a, b, etc, including when links are bundled e.g.~by gender. Then the outgoing links are marked with say \texttt{a} if at least one of the sources who mentioned the outgoing link also mentioned link \texttt{a}.
+
+So we can see that none of the people who said that improved hygiene led to reduction in mosquito environments also said that reduction in mosquito environments led to improved health: there is no label at all on the arrow going out of reduction in mosquito environments. There is no source continuity.
+
+Note that the labels get re-used for each factor, so the \texttt{a}s and \texttt{b}s here are related:
+
+\begin{figure}
+\centering
+\includegraphics[width=6.77083in,height=\textheight]{_assets/image-20211215083702603.png}
+\caption{image-20211215083702603}
+\end{figure}
+
+but the \texttt{a}s here are not:
+
+\begin{figure}
+\centering
+\includegraphics[width=6.77083in,height=\textheight]{_assets/image-20211215083737009.png}
+\caption{image-20211215083737009}
+\end{figure}
+
+This also works with all the other fields, e.g.~you can type \texttt{mark\ links\ field=statement\_id} in order to test statement continuity, which is a stricter test of continuity. source\_id is default so you don't need to type it specially.
+
+Yes, it is a bit difficult to communicate this in a report. But it is important for interpretation. Of course a chain without source continuity isn't an invalid chain per se, it's just something to be aware of.
+
+We will probably also add a simpler metric for outgoing links which does not distinguish between the incoming links, something like ``Percentage of sources who mentioned a link leaving factor F who mentioned any of the links entering F''. This metric could be used to colour or scale the links, or perhaps be printed on the tail of the links.
+
+\textbf{That's all you'll need for most purposes. Read on for some advanced diagnostics.}
+
+\hypertarget{advanced-diagnostic-filter-show-continuity}{%
+\section{Advanced diagnostic filter: Show continuity}\label{advanced-diagnostic-filter-show-continuity}}
+
+Read on only if you are interested in advanced diagnostics!
+
+\hypertarget{summary-8}{%
+\subsection{Summary}\label{summary-8}}
+
+\begin{figure}
+\centering
+\includegraphics[width=6.77083in,height=\textheight]{_assets/image-20211222121147473.png}
+\caption{\url{http://theorymaker.info/?permalink=transitivity}}
+\end{figure}
+
+Above, the links are labelled with the sources.
+
+The ▭ open half-box at the end of the first link tells us that at least half but not all of these stories stop here: less than half the sources mentioned any link \emph{out of} K.
+
+The ◼ filled box at the start of the second link tells us that all of these stories are continuations: all these sources mentioned some link \emph{into} K.
+
+The ▂ filled half-box at the end of the second link tells us that at least half but not all of these stories continue: Bob mentioned some link out of L, but Carla did not.
+
+The ▢ open box on the link from L to N tells us that this story is not a continuation: Donna did not mention any link \emph{into} L.
+
+There is no UI for this filter yet. You can just type
+
+\texttt{show\ continuity}
+
+in the advanced editor.
+
+\begin{center}\rule{0.5\linewidth}{0.5pt}\end{center}
+
+The four kinds of boxes are (possibly aggregated) indicators of continuity, with respect to sources, between stages in a path.
+
+If you want to look at say statement continuity rather than source continuity (the default), type
+
+\texttt{show\ continuity\ field=statement\_id}
+
+If you want to see numbers (see examples below) rather than symbols (see examples further below; symbols are the default) then type:
+
+\texttt{show\ continuity\ type=label}
+
+\begin{figure}
+\centering
+\includegraphics[width=6.77083in,height=\textheight]{_assets/image-20211216162518175.png}
+\caption{image-20211216162518175}
+\end{figure}
+
+Here, the 0.9 says that 90\% of the sources mentioning the link to \textasciitilde performed well also mention the link \emph{from} \textasciitilde performed well. The 1 says that 100\% of the sources mentioning the link \emph{from} \textasciitilde performed well also mention the link \emph{to} \textasciitilde performed well. And the zeros below say that there is no source continuity at all.
+
+What this doesn't tell you is, when there are more than one incoming link, which of them have sources which continue to the outgoing link (that is what the bs and cs are for in \texttt{mark\_links}). It's just an aggregate.
+
+But what happens with filters which actually transform the map: zoom, bundle factors and combine opposites? Zoom can create its own version of the transitivity trap, if we \href{https://causalmap.shinyapps.io/CM2test/?s=415}{have}:
+
+\begin{quote}
+eating lemons --\textgreater{} health; no scurvy
+\end{quote}
+
+and
+
+\begin{quote}
+health; fitness --\textgreater{} fast runner
+\end{quote}
+
+\begin{figure}
+\centering
+\includegraphics[width=6.77083in,height=\textheight]{_assets/image-20211216190724734.png}
+\caption{image-20211216190724734}
+\end{figure}
+
+we should be very careful when concluding (when zooming)
+
+\begin{quote}
+eating lemons --\textgreater{} health --\textgreater{} fast runner
+\end{quote}
+
+\ldots{} and indeed, \href{https://causalmap.shinyapps.io/CM2test/?s=416}{showing continuity} highlights this error:
+
+\begin{figure}
+\centering
+\includegraphics[width=6.77083in,height=\textheight]{_assets/image-20211216190609563.png}
+\caption{image-20211216190609563}
+\end{figure}
+
+\hypertarget{showing-continuity-with-arrowtypes}{%
+\subsection{Showing continuity with arrowtypes}\label{showing-continuity-with-arrowtypes}}
+
+Printing actual numbers (from 0 to 1) on the arrows can be very confusing. So the default is to use symbols.
+
+\begin{itemize}
+\tightlist
+\item
+  white box: 0
+\item
+  half white box: \textless= 0.5
+\item
+  half full box: \textgreater{} .5
+\item
+  full box: 1
+\end{itemize}
+
+\begin{figure}
+\centering
+\includegraphics[width=6.77083in,height=\textheight]{_assets/image-20211220172600085.png}
+\caption{image-20211220172600085}
 \end{figure}
 
 \begin{figure}
 \centering
-\includegraphics[width=6.77083in,height=\textheight]{_assets/image-20211017130218716.png}
-\caption{image-20211017130218716}
+\includegraphics[width=6.77083in,height=\textheight]{_assets/image-20211220171759409.png}
+\caption{image-20211220171759409}
 \end{figure}
 
-In this tab you will find a table displaying the number of links between your \texttt{origin} and \texttt{target} factors. A larger number means more evidence; more pieces would have to be deleted until we gave up the hypothesis that the Origin factors influence the Target factors at all.
+\begin{figure}
+\centering
+\includegraphics[width=6.77083in,height=\textheight]{_assets/image-20211216195218720.png}
+\caption{image-20211216195218720}
+\end{figure}
 
-For example, in the top row of the table above you can see that there is more evidence that rainfall influenced both of the targets compared to the influence of loss of forests. In the first column, you can see that there is more evidence of the influence of external factors on people moving away than on people getting angry.
+\begin{figure}
+\centering
+\includegraphics[width=6.77083in,height=\textheight]{_assets/image-20211216200541572.png}
+\caption{image-20211216200541572}
+\end{figure}
 
-The \protect\hyperlink{howtoanalyseobustness}{following section} will expand on how to understand these figures.
+\hypertarget{showing-continuity-with-colours}{%
+\subsection{Showing continuity with colours}\label{showing-continuity-with-colours}}
 
-\hypertarget{analysingrobustness}{%
-\section{Understanding robustness}\label{analysingrobustness}}
+\url{https://causalmap.shinyapps.io/CM2test/?s=618}
 
-Robustness identifies how many pieces of evidence (individual mentions of individual links) would have to be deleted so that there is no longer any path from the Origin factors to the Target factors. It is important to understand a large number does \emph{not} necessarily mean that this path is \emph{strong} in the sense that the Origin factors have a \emph{large} effect on the Target factors. It says there is plenty of evidence for the path, \emph{whatever its strength}.
+Using arrowheads gives you information about both upstream and downstream flows, but it can be a bit tricky to read. Instead you can use colours to display either downstream (effects of causes) or upstream (causes of effects) continuity.
 
-Subtotals are provided for each Origin factor, when there is more than one, and/or for each Target factor, when there is more than one; it can be useful to compare the amount of evidence for the impact of each Origin factor (and/or Target factor).
+\begin{figure}
+\centering
+\includegraphics[width=6.77083in,height=\textheight]{_assets/image-20220117103703826.png}
+\caption{image-20220117103703826}
+\end{figure}
 
-These numbers are not very useful on their own. But they are useful for comparisons.
+Here we see that not so many of the people who mentioned the link from business to income mentioned the link from purchasing power to business.
 
-\hypertarget{amount-of-overlap}{%
-\section{Amount of overlap}\label{amount-of-overlap}}
+Same, but upstream continuity:
 
-If you look at the robustness of the path from interventions B and C to an outcome E, one thing you can do is compare the sum of the score for the two sets of paths and compare it with the overall score. If the overall score is more or less the same as the larger of the score for B and the score for C, you can assume that the (evidence for the) intervention paths overlap - so if the score for B is larger, you could say that C uses many of the same paths. But if the overall score is more like the sum of the two, you can deduce that the interventions work more independently. So for example if you are already funding intervention B, and you have to decide whether to fund C or D, and your causal map says that the score from C to E and from D to E are similar, you'd want to look at the pairs - you'd want to look at B plus C to E and compare it with B plus D to E. B + D might have a much larger score than C +D, because C shares many paths with B, but D doesn't. So you'd want to fund D, as the combination of B and D would be more robust.
+\begin{figure}
+\centering
+\includegraphics[width=6.77083in,height=\textheight]{_assets/image-20220117104107156.png}
+\caption{image-20220117104107156}
+\end{figure}
 
-Of course, in principle you can see all of this just by looking at the maps and to what extent B, C and D share paths to E. But sometimes it is hard to see and this metric anchors a narrative description in actual numbers.
+\url{https://causalmap.shinyapps.io/CM2test/?s=619}
+
+These values are set to 1 at the edges of the map where the metric has no meaning.
+
+Note this is not the same as the non-causal question ``how many of the people who mentioned factor C also mentioned factor E''.
+
+\begin{figure}
+\centering
+\includegraphics[width=6.77083in,height=\textheight]{_assets/image-20211222121147473.png}
+\caption{.http://theorymaker.info/?permalink=transitivity}
+\end{figure}
+
+\hypertarget{more-about-these-metrics}{%
+\subsection{More about these metrics}\label{more-about-these-metrics}}
+
+\begin{longtable}[]{@{}
+  >{\raggedright\arraybackslash}p{(\columnwidth - 4\tabcolsep) * \real{0.1176}}
+  >{\raggedright\arraybackslash}p{(\columnwidth - 4\tabcolsep) * \real{0.4412}}
+  >{\raggedright\arraybackslash}p{(\columnwidth - 4\tabcolsep) * \real{0.4412}}@{}}
+\toprule()
+\begin{minipage}[b]{\linewidth}\raggedright
+Local Continuity
+\end{minipage} & \begin{minipage}[b]{\linewidth}\raggedright
+factors (simple)
+\end{minipage} & \begin{minipage}[b]{\linewidth}\raggedright
+Factors (ego network)
+\end{minipage} \\
+\midrule()
+\endhead
+& overlap between sources who mentioned links to this factor and sources who mentioned links from this factor & overlap between sources who mentioned links to the causes of this factor and sources who mentioned links from the effects of this factor \\
+& & \\
+\bottomrule()
+\end{longtable}
+
+And, with links:
+
+\begin{longtable}[]{@{}
+  >{\raggedright\arraybackslash}p{(\columnwidth - 2\tabcolsep) * \real{0.2105}}
+  >{\raggedright\arraybackslash}p{(\columnwidth - 2\tabcolsep) * \real{0.7895}}@{}}
+\toprule()
+\begin{minipage}[b]{\linewidth}\raggedright
+Local Continuity
+\end{minipage} & \begin{minipage}[b]{\linewidth}\raggedright
+Links
+\end{minipage} \\
+\midrule()
+\endhead
+Upstream & overlap between sources who mentioned this link and sources who mentioned links to the cause of this link \\
+Downstream & overlap between sources who mentioned this link and sources who mentioned links from the effects of this link \\
+\bottomrule()
+\end{longtable}
+
+Each of these metrics can be expressed as a confusion matrix and can be cashed out as different ratios. We can therefore also interpret these metrics in terms of causal necessity and sufficiency. For example, above we can say that K is \textbf{causally sufficient} (with respect to sources) for M because all the sources who mention causes of M (along paths from K to M) also mention effects of K (along paths from K to M).
+
+We need to say ``with respect to sources'' because all these ideas are generalisable to other fields such as, for example, village or question domain.
+
+Because these metrics (confusion matrices) are defined in terms of source\_id (or some other context-relevant link variable) they partly counter the problem with previous versions of these metrics in that they provide a denominator (number of sources) even if this has to be used with some care: as usual, the fact that source S does not mention link L does not mean they wouldn't assent to it, it may just not have appeared in the stochastic interview process.
+
+Many different metrics are possible. These (all?) also have corresponding non-causal counterparts as in QCA, for example:
+
+\begin{longtable}[]{@{}
+  >{\raggedright\arraybackslash}p{(\columnwidth - 2\tabcolsep) * \real{0.3258}}
+  >{\raggedright\arraybackslash}p{(\columnwidth - 2\tabcolsep) * \real{0.6742}}@{}}
+\toprule()
+\begin{minipage}[b]{\linewidth}\raggedright
+Local continuity (non-causal)
+\end{minipage} & \begin{minipage}[b]{\linewidth}\raggedright
+Factors (ego network)
+\end{minipage} \\
+\midrule()
+\endhead
+& overlap between sources who mentioned the causes of this factor and sources who mentioned the effects of this factor \\
+& \\
+\bottomrule()
+\end{longtable}
+
+These QCA-type metrics (confusion matrices) are inferior to their causal counterparts because they lose the information about what causes what and only use information about co-occurrence.
 
 \hypertarget{xconditional-formats}{%
 \chapter{Conditional formats}\label{xconditional-formats}}
@@ -4873,361 +5130,6 @@ Probably the best way to do this is to add ``(other)'', or whatever else you typ
 \caption{image-20220531130328997}
 \end{figure}
 
-\hypertarget{xcontinuity}{%
-\chapter{Continuity and tracing threads}\label{xcontinuity}}
-
-\hypertarget{summary-7}{%
-\section{Summary}\label{summary-7}}
-
-The \protect\hyperlink{xtransitivity-trap}{transitivity trap} can make it a challenge to interpret your maps. Some people (or somebody) said that improved hygiene led to reduction in mosquito environments, and some people said reduction in mosquito environments led to improved health, but \emph{was this the same or different people}?
-
-\includegraphics{_assets/image-20211215081735743.png}
-
-You set the filter \texttt{trace\ threads} \emph{after} a \texttt{trace\ paths} or \texttt{trace\ robustness} filter:
-
-\begin{verbatim}
-trace paths length=3 from=WASH information to=Improved health
-trace threads
-\end{verbatim}
-
-You can also trace threads downstream if you don't specify target factors (to = ``anything''):
-
-\begin{verbatim}
-trace paths length=3 from=WASH information to=
-trace threads
-\end{verbatim}
-
-\hypertarget{xtracing-threads}{%
-\section{Tracing threads (aka tracing continuity)}\label{xtracing-threads}}
-
-If your map makes it look like Cash Transfer causally influenced Increased Wellbeing further downstream of it, you surely want to know if there are at least some sources who each mentioned the whole of one of the possible paths.
-
-We call this ``tracing threads'' as opposed to ``tracing paths''. So a thread is a chain of individual ``original links'' inside the bundles, whereas a path is just a chain of bundles, regardless of which sources mentioned each link.
-
-Tracing threads is built on top of tracing paths. After you set a trace paths filter, you can then set a trace threads filter to look at the individual threads within the paths.
-
-``Ah so there are plenty of paths from X to Y, but are there any threads? yes look, here is MXFG-1 who has a thread all the way down''.
-
-We can ask ``how many threads make it all the way down to Improved Wellbeing''? The threads are named by the source ids, so we can say ``Let's look at downstream thread MXFG-1''.
-
-When we are tracing threads, we can trace source threads, or village threads, or whatever. But usually we will trace in terms of sources, so if we do not specify which field defines the context, we assume we mean sources.
-
-So a thread is a continuous chain of links with the same ID along a path. Within a bundle of links, each thread is one individual link associated with one ID (or sometimes, more than one link, if the ID mentioned that bundle more than once).
-
-You set the filter \texttt{trace\ threads} \emph{after} a \texttt{trace\ paths} or \texttt{trace\ robustness} filter. This creates the following calculated fields:
-
-\begin{itemize}
-\tightlist
-\item
-  Links fields
-
-  \begin{itemize}
-  \tightlist
-  \item
-    has\_threads threads
-  \end{itemize}
-\item
-  Factor field
-
-  \begin{itemize}
-  \tightlist
-  \item
-    threads\_surviving
-  \item
-    threads
-  \end{itemize}
-\end{itemize}
-
-You can for example label the links like this \texttt{label\ links\ value=unique:\ threads}.
-
-These fields are also available as \texttt{has\_downstream\_threads}, \texttt{has\_downstream\_threads\_surviving} etc, but as this filter now works upstream too, we have removed the \texttt{downstream} part.
-
-You can for example colour the factors like this \texttt{color\ factors\ field=threads\_surviving}. So if you set a filter to \emph{trace threads downstream} from Cash Transfer C, imagine factor C is coloured completely red, and imagine a factor F immediately downstream of it being coloured with an intensity of red according to the number of sources which mentioned the link from C to F. In fact every factor downstream of C will be coloured with a shade of red in the same way. The central question of whether any source mentioned a whole path from C to, say, ``Increased wellbeing'' can be answered simply by seeing whether there is any red in the colour of ``Increased wellbeing'' or whether it is completely white.
-
-\ldots{} So you can just look at C and watch its influence (in terms of source continuity) seeping downstream and spreading out along all source-complete paths.
-
-It's like ink starting from C and flowing downstream as long as there is source continuity.
-
-The direct counterpart, \emph{tracing upstream threads} is not implemented yet. It asks about causes of effects rather than effects of causes: ``Increased wellbeing'' is completely red, and the redness of ``Cash Transfer C'' depends on the number of sources which mention a complete path from C to Increased wellbeing.
-
-Tracing paths anchors the filter to one or more factors, and if you use thread tracing to format an aspect of the map (e.g.~to colour the links) then this formatting is only related to this specific set of origin and/or target factors and will change if you trace from and/or to different factors.
-
-\begin{figure}
-\centering
-\includegraphics{_assets/image-20220301095046531.png}
-\caption{image-20220301095046531}
-\end{figure}
-
-In this example, the width of the links reflects the number of sources mentioning it, but the colour of the links (and factors) reflects how many sources have a continuous story starting from ``Living in a refugee settlement'' all the way up to that point. This difference is also shown in the pair of numbers on the links. So the top-right link was mentioned by one source, but the 0 shows that no single source mentioned a story all the way from ``Living in a refugee settlement'' which also includes this link.
-
-All of this works for tracing influences upstream too:
-
-\begin{verbatim}
-trace paths length=3 from=WASH information to=Improved health direc
-trace threads
-\end{verbatim}
-
-\hypertarget{advanced-diagnostic-filter-mark-links-for-continuity-print-view-only}{%
-\section{Advanced diagnostic filter: Mark links for continuity (Print View only)}\label{advanced-diagnostic-filter-mark-links-for-continuity-print-view-only}}
-
-\emph{Showing} continuity aka ``showing threads'' is concerned with adjacent sets of links (or factors). It cannot be used to definitively answer questions about continuity down a longer path (actually, sometimes it does tell us something: if there is zero continuity on a section of a path with no splits, we know there is zero continuity down the longer path; but more generally, if there is some continuity down all the sections of a path, it does not mean that there is continuity down the whole of it).
-
-Add the filter \texttt{mark\ links} (there is no button for it, you have to type it) provides the following diagnostics:
-
-\includegraphics{_assets/image-20211215081328481.png}
-
-The incoming (bundles of) links to every factor (actually to every factor with outgoing links) are labelled a, b, etc, including when links are bundled e.g.~by gender. Then the outgoing links are marked with say \texttt{a} if at least one of the sources who mentioned the outgoing link also mentioned link \texttt{a}.
-
-So we can see that none of the people who said that improved hygiene led to reduction in mosquito environments also said that reduction in mosquito environments led to improved health: there is no label at all on the arrow going out of reduction in mosquito environments. There is no source continuity.
-
-Note that the labels get re-used for each factor, so the \texttt{a}s and \texttt{b}s here are related:
-
-\begin{figure}
-\centering
-\includegraphics[width=6.77083in,height=\textheight]{_assets/image-20211215083702603.png}
-\caption{image-20211215083702603}
-\end{figure}
-
-but the \texttt{a}s here are not:
-
-\begin{figure}
-\centering
-\includegraphics[width=6.77083in,height=\textheight]{_assets/image-20211215083737009.png}
-\caption{image-20211215083737009}
-\end{figure}
-
-This also works with all the other fields, e.g.~you can type \texttt{mark\ links\ field=statement\_id} in order to test statement continuity, which is a stricter test of continuity. source\_id is default so you don't need to type it specially.
-
-Yes, it is a bit difficult to communicate this in a report. But it is important for interpretation. Of course a chain without source continuity isn't an invalid chain per se, it's just something to be aware of.
-
-We will probably also add a simpler metric for outgoing links which does not distinguish between the incoming links, something like ``Percentage of sources who mentioned a link leaving factor F who mentioned any of the links entering F''. This metric could be used to colour or scale the links, or perhaps be printed on the tail of the links.
-
-\hypertarget{advanced-diagnostic-filter-show-continuity}{%
-\section{Advanced diagnostic filter: Show continuity}\label{advanced-diagnostic-filter-show-continuity}}
-
-Read on only if you are interested in advanced diagnostics!
-
-\hypertarget{summary-8}{%
-\subsection{Summary}\label{summary-8}}
-
-\begin{figure}
-\centering
-\includegraphics[width=6.77083in,height=\textheight]{_assets/image-20211222121147473.png}
-\caption{\url{http://theorymaker.info/?permalink=transitivity}}
-\end{figure}
-
-Above, the links are labelled with the sources.
-
-The ▭ open half-box at the end of the first link tells us that at least half but not all of these stories stop here: less than half the sources mentioned any link \emph{out of} K.
-
-The ◼ filled box at the start of the second link tells us that all of these stories are continuations: all these sources mentioned some link \emph{into} K.
-
-The ▂ filled half-box at the end of the second link tells us that at least half but not all of these stories continue: Bob mentioned some link out of L, but Carla did not.
-
-The ▢ open box on the link from L to N tells us that this story is not a continuation: Donna did not mention any link \emph{into} L.
-
-There is no UI for this filter yet. You can just type
-
-\texttt{show\ continuity}
-
-in the advanced editor.
-
-\begin{center}\rule{0.5\linewidth}{0.5pt}\end{center}
-
-The four kinds of boxes are (possibly aggregated) indicators of continuity, with respect to sources, between stages in a path.
-
-If you want to look at say statement continuity rather than source continuity (the default), type
-
-\texttt{show\ continuity\ field=statement\_id}
-
-If you want to see numbers (see examples below) rather than symbols (see examples further below; symbols are the default) then type:
-
-\texttt{show\ continuity\ type=label}
-
-\begin{figure}
-\centering
-\includegraphics[width=6.77083in,height=\textheight]{_assets/image-20211216162518175.png}
-\caption{image-20211216162518175}
-\end{figure}
-
-Here, the 0.9 says that 90\% of the sources mentioning the link to \textasciitilde performed well also mention the link \emph{from} \textasciitilde performed well. The 1 says that 100\% of the sources mentioning the link \emph{from} \textasciitilde performed well also mention the link \emph{to} \textasciitilde performed well. And the zeros below say that there is no source continuity at all.
-
-What this doesn't tell you is, when there are more than one incoming link, which of them have sources which continue to the outgoing link (that is what the bs and cs are for in \texttt{mark\_links}). It's just an aggregate.
-
-But what happens with filters which actually transform the map: zoom, bundle factors and combine opposites? Zoom can create its own version of the transitivity trap, if we \href{https://causalmap.shinyapps.io/CM2test/?s=415}{have}:
-
-\begin{quote}
-eating lemons --\textgreater{} health; no scurvy
-\end{quote}
-
-and
-
-\begin{quote}
-health; fitness --\textgreater{} fast runner
-\end{quote}
-
-\begin{figure}
-\centering
-\includegraphics[width=6.77083in,height=\textheight]{_assets/image-20211216190724734.png}
-\caption{image-20211216190724734}
-\end{figure}
-
-we should be very careful when concluding (when zooming)
-
-\begin{quote}
-eating lemons --\textgreater{} health --\textgreater{} fast runner
-\end{quote}
-
-\ldots{} and indeed, \href{https://causalmap.shinyapps.io/CM2test/?s=416}{showing continuity} highlights this error:
-
-\begin{figure}
-\centering
-\includegraphics[width=6.77083in,height=\textheight]{_assets/image-20211216190609563.png}
-\caption{image-20211216190609563}
-\end{figure}
-
-\hypertarget{showing-continuity-with-arrowtypes}{%
-\subsection{Showing continuity with arrowtypes}\label{showing-continuity-with-arrowtypes}}
-
-Printing actual numbers (from 0 to 1) on the arrows can be very confusing. So the default is to use symbols.
-
-\begin{itemize}
-\tightlist
-\item
-  white box: 0
-\item
-  half white box: \textless= 0.5
-\item
-  half full box: \textgreater{} .5
-\item
-  full box: 1
-\end{itemize}
-
-\begin{figure}
-\centering
-\includegraphics[width=6.77083in,height=\textheight]{_assets/image-20211220172600085.png}
-\caption{image-20211220172600085}
-\end{figure}
-
-\begin{figure}
-\centering
-\includegraphics[width=6.77083in,height=\textheight]{_assets/image-20211220171759409.png}
-\caption{image-20211220171759409}
-\end{figure}
-
-\begin{figure}
-\centering
-\includegraphics[width=6.77083in,height=\textheight]{_assets/image-20211216195218720.png}
-\caption{image-20211216195218720}
-\end{figure}
-
-\begin{figure}
-\centering
-\includegraphics[width=6.77083in,height=\textheight]{_assets/image-20211216200541572.png}
-\caption{image-20211216200541572}
-\end{figure}
-
-\hypertarget{showing-continuity-with-colours}{%
-\subsection{Showing continuity with colours}\label{showing-continuity-with-colours}}
-
-\url{https://causalmap.shinyapps.io/CM2test/?s=618}
-
-Using arrowheads gives you information about both upstream and downstream flows, but it can be a bit tricky to read. Instead you can use colours to display either downstream (effects of causes) or upstream (causes of effects) continuity.
-
-\begin{figure}
-\centering
-\includegraphics[width=6.77083in,height=\textheight]{_assets/image-20220117103703826.png}
-\caption{image-20220117103703826}
-\end{figure}
-
-Here we see that not so many of the people who mentioned the link from business to income mentioned the link from purchasing power to business.
-
-Same, but upstream continuity:
-
-\begin{figure}
-\centering
-\includegraphics[width=6.77083in,height=\textheight]{_assets/image-20220117104107156.png}
-\caption{image-20220117104107156}
-\end{figure}
-
-\url{https://causalmap.shinyapps.io/CM2test/?s=619}
-
-These values are set to 1 at the edges of the map where the metric has no meaning.
-
-Note this is not the same as the non-causal question ``how many of the people who mentioned factor C also mentioned factor E''.
-
-\begin{figure}
-\centering
-\includegraphics[width=6.77083in,height=\textheight]{_assets/image-20211222121147473.png}
-\caption{.http://theorymaker.info/?permalink=transitivity}
-\end{figure}
-
-\hypertarget{more-about-these-metrics}{%
-\subsection{More about these metrics}\label{more-about-these-metrics}}
-
-\begin{longtable}[]{@{}
-  >{\raggedright\arraybackslash}p{(\columnwidth - 4\tabcolsep) * \real{0.12}}
-  >{\raggedright\arraybackslash}p{(\columnwidth - 4\tabcolsep) * \real{0.44}}
-  >{\raggedright\arraybackslash}p{(\columnwidth - 4\tabcolsep) * \real{0.44}}@{}}
-\toprule
-\begin{minipage}[b]{\linewidth}\raggedright
-Local Continuity
-\end{minipage} & \begin{minipage}[b]{\linewidth}\raggedright
-factors (simple)
-\end{minipage} & \begin{minipage}[b]{\linewidth}\raggedright
-Factors (ego network)
-\end{minipage} \\
-\midrule
-\endhead
-& overlap between sources who mentioned links to this factor and sources who mentioned links from this factor & overlap between sources who mentioned links to the causes of this factor and sources who mentioned links from the effects of this factor \\
-& & \\
-\bottomrule
-\end{longtable}
-
-And, with links:
-
-\begin{longtable}[]{@{}
-  >{\raggedright\arraybackslash}p{(\columnwidth - 2\tabcolsep) * \real{0.21}}
-  >{\raggedright\arraybackslash}p{(\columnwidth - 2\tabcolsep) * \real{0.79}}@{}}
-\toprule
-\begin{minipage}[b]{\linewidth}\raggedright
-Local Continuity
-\end{minipage} & \begin{minipage}[b]{\linewidth}\raggedright
-Links
-\end{minipage} \\
-\midrule
-\endhead
-Upstream & overlap between sources who mentioned this link and sources who mentioned links to the cause of this link \\
-Downstream & overlap between sources who mentioned this link and sources who mentioned links from the effects of this link \\
-\bottomrule
-\end{longtable}
-
-Each of these metrics can be expressed as a confusion matrix and can be cashed out as different ratios. We can therefore also interpret these metrics in terms of causal necessity and sufficiency. For example, above we can say that K is \textbf{causally sufficient} (with respect to sources) for M because all the sources who mention causes of M (along paths from K to M) also mention effects of K (along paths from K to M).
-
-We need to say ``with respect to sources'' because all these ideas are generalisable to other fields such as, for example, village or question domain.
-
-Because these metrics (confusion matrices) are defined in terms of source\_id (or some other context-relevant link variable) they partly counter the problem with previous versions of these metrics in that they provide a denominator (number of sources) even if this has to be used with some care: as usual, the fact that source S does not mention link L does not mean they wouldn't assent to it, it may just not have appeared in the stochastic interview process.
-
-Many different metrics are possible. These (all?) also have corresponding non-causal counterparts as in QCA, for example:
-
-\begin{longtable}[]{@{}
-  >{\raggedright\arraybackslash}p{(\columnwidth - 2\tabcolsep) * \real{0.33}}
-  >{\raggedright\arraybackslash}p{(\columnwidth - 2\tabcolsep) * \real{0.67}}@{}}
-\toprule
-\begin{minipage}[b]{\linewidth}\raggedright
-Local continuity (non-causal)
-\end{minipage} & \begin{minipage}[b]{\linewidth}\raggedright
-Factors (ego network)
-\end{minipage} \\
-\midrule
-\endhead
-& overlap between sources who mentioned the causes of this factor and sources who mentioned the effects of this factor \\
-& \\
-\bottomrule
-\end{longtable}
-
-These QCA-type metrics (confusion matrices) are inferior to their causal counterparts because they lose the information about what causes what and only use information about co-occurrence.
-
 \hypertarget{xquickfields}{%
 \chapter{Quickfields}\label{xquickfields}}
 
@@ -5530,15 +5432,26 @@ There are many \protect\hyperlink{caveat-numbers}{caveats} to using counts and p
 
 The details of how to do make these calculations are quite open; at the moment, the app uses the relevant baseline within the current map. So if you want to display ``source count'', or the number of sources who mentioned each link, and bundle the links by gender, the app takes as the baseline \emph{the source count for each gender in the current map}. So if 7 women and 5 men mentioned a connection between X and Y, and altogether 14 women and 10 men mentioned anything in the whole map, then the percentage will be 50\% on each.
 
-If you use percentages for labels, the label shows the raw number, the baseline, and the percentage.
+If you use \texttt{percent} for labels, the label shows just the percentage.
 
-If you use percentages for colour or width of the links, the percentage is used rather than the raw number.
+If you use \texttt{proportion} for labels, the label shows the raw number / the baseline.
+
+If you use \texttt{percent} or \texttt{proportion} for colour or width of the links, the percentage is used rather than the raw number.
 
 So for example you could use a filter like this
 
 \begin{verbatim}
 bundle links group=Sex
 label links value=percent: link_id
+color links value=unique: Sex
+\end{verbatim}
+
+or you can add both percentage and proportion to the labels
+
+\begin{verbatim}
+bundle links group=Sex
+label links value=percent: link_id clear_previous=TRUE
+label links value=proportion: link_id clear_previous=TRUE
 color links value=unique: Sex
 \end{verbatim}
 
@@ -5853,7 +5766,7 @@ The video below shows you how to format and upload a set of statements for codin
 
 \href{https://player.vimeo.com/video/637121851}{\includegraphics{Guide-to-causal-mapping_files/figure-latex/unnamed-chunk-42-1.pdf}}
 
-And click \href{https://causalmap.app/wp-content/uploads/2022/03/template-upload-2-2.xlsx}{here} to download the excel template.
+And click \href{https://drive.google.com/uc?export=download\&id=126fAfkJSbUXkqHp_OkE3af2vdxhMjRy-}{here} to download the excel template.
 
 \hypertarget{formattingyourfile}{%
 \subsection{Formatting a Standard Format file: The basics}\label{formattingyourfile}}
@@ -6660,15 +6573,15 @@ We can draw a line from Spark to Flame, but what do we do about Oxygen? Drawing 
 In general terms this diagram is ok, because we know the \emph{partial} function from Spark and Oxygen to Flame:
 
 \begin{longtable}[]{@{}lll@{}}
-\toprule
+\toprule()
 Oxygen & Spark & Flame \\
-\midrule
+\midrule()
 \endhead
 Yes & Yes & Yes \\
 Yes & No & No \\
 No & Yes & ? \\
 No & No & ? \\
-\bottomrule
+\bottomrule()
 \end{longtable}
 
 We know how Spark controls Flame only \emph{given} Oxygen, but not when there is no Oxygen. This suggests that we can deal with a contextual factor as an ordinary causal factor, namely one which causally enables causal link(s) between other factors.
@@ -6950,22 +6863,22 @@ One way to build up a causal map systematically is ``question chaining''. For ex
 \section{Four options with Fixed versus Variable question chaining}\label{four-options-with-fixed-versus-variable-question-chaining}}
 
 \begin{longtable}[]{@{}
-  >{\raggedright\arraybackslash}p{(\columnwidth - 4\tabcolsep) * \real{0.02}}
-  >{\raggedright\arraybackslash}p{(\columnwidth - 4\tabcolsep) * \real{0.45}}
-  >{\raggedright\arraybackslash}p{(\columnwidth - 4\tabcolsep) * \real{0.52}}@{}}
-\toprule
+  >{\raggedright\arraybackslash}p{(\columnwidth - 4\tabcolsep) * \real{0.0233}}
+  >{\raggedright\arraybackslash}p{(\columnwidth - 4\tabcolsep) * \real{0.4545}}
+  >{\raggedright\arraybackslash}p{(\columnwidth - 4\tabcolsep) * \real{0.5222}}@{}}
+\toprule()
 \begin{minipage}[b]{\linewidth}\raggedright
 \end{minipage} & \begin{minipage}[b]{\linewidth}\raggedright
 Backwards
 \end{minipage} & \begin{minipage}[b]{\linewidth}\raggedright
 Forwards
 \end{minipage} \\
-\midrule
+\midrule()
 \endhead
 Fixed & Please give causes/reasons for event or situation X; then give causes/reasons for those causes/reasons, etc. (example: -- what were the causes of / reasons for Brexit, etc.) & Please give consequences of event or situation X; then give consequences of those consequences, etc. (example: \href{http://parevo.org}{\textbf{ParEvo}} -- read this sentence describing the situation in the USA now, then suggest consequences of it, etc.) \\
 Variable & Please name one or more X's, then proceed as above (example: \href{https://bathsdr.org/about-the-quip/}{\textbf{QuIP}} -- name one or more changes in your life/wellbeing, and one by one give causes/reasons for those, etc.) & Please name one or more X's, then proceed as above (example: name one or more features of the current situation, and one by one give consequences of those, etc.) \\
 & & \\
-\bottomrule
+\bottomrule()
 \end{longtable}
 
 Causal mapping in the future is often used when constructing scenarios.
@@ -7222,7 +7135,7 @@ You mentioned X. Were there any ``opposite influences'' on X: factors which trie
 It's a bit strange, but could it work? Does it work with these typical factors mentioned in a StorySurvey on the response to Covid-19?
 
 \begin{longtable}[]{@{}l@{}}
-\toprule
+\toprule()
 \endhead
 Pfizer Vaccine \\
 Money \\
@@ -7241,7 +7154,7 @@ human nature \\
 united people \\
 Early lockdowns \\
 The cdc eventually said to wear them. \\
-\bottomrule
+\bottomrule()
 \end{longtable}
 
 We have to be careful not to label these drains, blocks and dangers (words which already have a negative sentiment) as ``negative factors'' (as I did above). This would be very confusing with factors which already have a positive rather than a negative sentiment, like ``human deaths''. You wouldn't naturally think of a factor which blocked or reduced human deaths as negative. That's why I suggest ``\emph{opposite} influences''.
@@ -7795,7 +7708,11 @@ Alfred Barr's famous diagram poses questions for those trying to plot causation,
 
 Barr elegantly organises the history of cubism and abstract art styles, artists and places are mapped and flow down through the years. Colours are used to clearly separate internal and external influences, whilst the size of the font reflects their historic relevance.
 
+\begin{figure}
+\centering
 \includegraphics{_assets/TufteOG-16335945994571.jpg}
+\caption{TufteOG}
+\end{figure}
 
 As Tufte (2006) highlights in his book ``Beautiful Evidence'' Barr made many interesting and, in some cases, controversial choices to fashion this map - such as the lack of arrow between Bauhaus and geometrical abstract art. Those used to causal mapping will be familiar with the multitude of decisions surrounding the creation of such a map. Barr's choice to have single direction arrows is a decision that has attracted attention and we find very intriguing.
 
@@ -8154,27 +8071,27 @@ does the proportion of women vs men who mention this link differ from what you w
 \end{quote}
 
 \begin{longtable}[]{@{}lll@{}}
-\toprule
+\toprule()
 & Women & Men \\
-\midrule
+\midrule()
 \endhead
 \emph{\ldots{} other links \ldots{}} & & \\
 Number of mentions of the link from X to Y & 10 & 9 \\
 \emph{\ldots{} other links \ldots{}} & & \\
 \textbf{Total number of mentions of any link} & \textbf{60} & \textbf{10} \\
-\bottomrule
+\bottomrule()
 \end{longtable}
 
 In this case we can see that although women mentioned the link slightly more often than men, women altogether mentioned links twice as often as men. So we can compare the number of mentions of the link with the number of ``non-mentions'' of the link. So we can work out this table (not shown).
 
 \begin{longtable}[]{@{}lll@{}}
-\toprule
+\toprule()
 & Women & Men \\
-\midrule
+\midrule()
 \endhead
 Number of mentions of the link from X to Y & 10 & 9 \\
 Number of mentions of any \emph{other} link & 50 & 1 \\
-\bottomrule
+\bottomrule()
 \end{longtable}
 
 We can do a simple chi-squared test on this table to see if the ratio 10:9 is significantly different from 50:1 (which of course it is) -- this is the same question as to whether 10:50 is significantly different from 9:1 (which of course it is). If this test is significant, the row ``Number of mentions of the link from X to Y'' is shown in the table, and the intensity of the colouring of each cell reflects its chi-squared residual, i.e.~how different is the number it contains from the number you would expect, given the other numbers?
@@ -8258,10 +8175,19 @@ Ace provides the following keyboard shortcuts to streamline the coding process.
 \hypertarget{line-operations}{%
 \subsection{Line operations}\label{line-operations}}
 
-\begin{longtable}[]{@{}lll@{}}
-\toprule
-Action & Windows/Linux & Mac \\
-\midrule
+\begin{longtable}[]{@{}
+  >{\raggedright\arraybackslash}p{(\columnwidth - 4\tabcolsep) * \real{0.2639}}
+  >{\raggedright\arraybackslash}p{(\columnwidth - 4\tabcolsep) * \real{0.1944}}
+  >{\raggedright\arraybackslash}p{(\columnwidth - 4\tabcolsep) * \real{0.5417}}@{}}
+\toprule()
+\begin{minipage}[b]{\linewidth}\raggedright
+Action
+\end{minipage} & \begin{minipage}[b]{\linewidth}\raggedright
+Windows/Linux
+\end{minipage} & \begin{minipage}[b]{\linewidth}\raggedright
+Mac
+\end{minipage} \\
+\midrule()
 \endhead
 Remove line & Ctrl-D & Command-D \\
 Copy lines down & Alt-Shift-Down & Command-Option-Down \\
@@ -8273,16 +8199,16 @@ Remove to linestart & Alt-Backspace & Command-Backspace \\
 Remove word left & Ctrl-Backspace & Option-Backspace, Ctrl-Option-Backspace \\
 Remove word right & Ctrl-Delete & Option-Delete \\
 Split line & --- & Ctrl-O \\
-\bottomrule
+\bottomrule()
 \end{longtable}
 
 \hypertarget{selection}{%
 \subsection{Selection}\label{selection}}
 
 \begin{longtable}[]{@{}lll@{}}
-\toprule
+\toprule()
 Action & Windows/Linux & Mac \\
-\midrule
+\midrule()
 \endhead
 Select all & Ctrl-A & Command-A \\
 Select left & Shift-Left & Shift-Left \\
@@ -8301,17 +8227,17 @@ Select to start & Ctrl-Shift-Home & Command-Shift-Up \\
 Select to end & Ctrl-Shift-End & Command-Shift-Down \\
 Duplicate selection & Ctrl-Shift-D & Command-Shift-D \\
 Select to matching bracket & Ctrl-Shift-P & --- \\
-\bottomrule
+\bottomrule()
 \end{longtable}
 
 \hypertarget{multicursor}{%
 \subsection{Multicursor}\label{multicursor}}
 
 \begin{longtable}[]{@{}
-  >{\raggedright\arraybackslash}p{(\columnwidth - 4\tabcolsep) * \real{0.58}}
-  >{\raggedright\arraybackslash}p{(\columnwidth - 4\tabcolsep) * \real{0.19}}
-  >{\raggedright\arraybackslash}p{(\columnwidth - 4\tabcolsep) * \real{0.22}}@{}}
-\toprule
+  >{\raggedright\arraybackslash}p{(\columnwidth - 4\tabcolsep) * \real{0.5825}}
+  >{\raggedright\arraybackslash}p{(\columnwidth - 4\tabcolsep) * \real{0.1942}}
+  >{\raggedright\arraybackslash}p{(\columnwidth - 4\tabcolsep) * \real{0.2233}}@{}}
+\toprule()
 \begin{minipage}[b]{\linewidth}\raggedright
 Action
 \end{minipage} & \begin{minipage}[b]{\linewidth}\raggedright
@@ -8319,7 +8245,7 @@ Windows/Linux
 \end{minipage} & \begin{minipage}[b]{\linewidth}\raggedright
 Mac
 \end{minipage} \\
-\midrule
+\midrule()
 \endhead
 Add multi-cursor above & Ctrl-Alt-Up & Ctrl-Option-Up \\
 Add multi-cursor below & Ctrl-Alt-Down & Ctrl-Option-Down \\
@@ -8330,16 +8256,16 @@ Move multicursor from current line to the line below & Ctrl-Alt-Shift-Down & Ctr
 Remove current occurrence from multi-selection and move to next & Ctrl-Alt-Shift-Right & Ctrl-Option-Shift-Right \\
 Remove current occurrence from multi-selection and move to previous & Ctrl-Alt-Shift-Left & Ctrl-Option-Shift-Left \\
 Select all from multi-selection & Ctrl-Shift-L & Ctrl-Shift-L \\
-\bottomrule
+\bottomrule()
 \end{longtable}
 
 \hypertarget{go-to}{%
 \subsection{Go to}\label{go-to}}
 
 \begin{longtable}[]{@{}lll@{}}
-\toprule
+\toprule()
 Action & Windows/Linux & Mac \\
-\midrule
+\midrule()
 \endhead
 Go to left & Left & Left, Ctrl-B \\
 Go to right & Right & Right, Ctrl-F \\
@@ -8359,46 +8285,64 @@ Scroll line up & Ctrl-Up & --- \\
 Go to matching bracket & Ctrl-P & --- \\
 Scroll page down & --- & Option-PageDown \\
 Scroll page up & --- & Option-PageUp \\
-\bottomrule
+\bottomrule()
 \end{longtable}
 
 \hypertarget{findreplace}{%
 \subsection{Find/Replace}\label{findreplace}}
 
 \begin{longtable}[]{@{}lll@{}}
-\toprule
+\toprule()
 Action & Windows/Linux & Mac \\
-\midrule
+\midrule()
 \endhead
 Find & Ctrl-F & Command-F \\
 Replace & Ctrl-H & Command-Option-F \\
 Find next & Ctrl-K & Command-G \\
 Find previous & Ctrl-Shift-K & Command-Shift-G \\
-\bottomrule
+\bottomrule()
 \end{longtable}
 
 \hypertarget{folding}{%
 \subsection{Folding}\label{folding}}
 
-\begin{longtable}[]{@{}lll@{}}
-\toprule
-Action & Windows/Linux & Mac \\
-\midrule
+\begin{longtable}[]{@{}
+  >{\raggedright\arraybackslash}p{(\columnwidth - 4\tabcolsep) * \real{0.1750}}
+  >{\raggedright\arraybackslash}p{(\columnwidth - 4\tabcolsep) * \real{0.3250}}
+  >{\raggedright\arraybackslash}p{(\columnwidth - 4\tabcolsep) * \real{0.5000}}@{}}
+\toprule()
+\begin{minipage}[b]{\linewidth}\raggedright
+Action
+\end{minipage} & \begin{minipage}[b]{\linewidth}\raggedright
+Windows/Linux
+\end{minipage} & \begin{minipage}[b]{\linewidth}\raggedright
+Mac
+\end{minipage} \\
+\midrule()
 \endhead
 Fold selection & Alt-L, Ctrl-F1 & Command-Option-L, Command-F1 \\
 Unfold & Alt-Shift-L, Ctrl-Shift-F1 & Command-Option-Shift-L, Command-Shift-F1 \\
 Fold all & Alt-0 & Command-Option-0 \\
 Unfold all & Alt-Shift-0 & Command-Option-Shift-0 \\
-\bottomrule
+\bottomrule()
 \end{longtable}
 
 \hypertarget{other}{%
 \subsection{Other}\label{other}}
 
-\begin{longtable}[]{@{}lll@{}}
-\toprule
-Action & Windows/Linux & Mac \\
-\midrule
+\begin{longtable}[]{@{}
+  >{\raggedright\arraybackslash}p{(\columnwidth - 4\tabcolsep) * \real{0.3235}}
+  >{\raggedright\arraybackslash}p{(\columnwidth - 4\tabcolsep) * \real{0.2941}}
+  >{\raggedright\arraybackslash}p{(\columnwidth - 4\tabcolsep) * \real{0.3824}}@{}}
+\toprule()
+\begin{minipage}[b]{\linewidth}\raggedright
+Action
+\end{minipage} & \begin{minipage}[b]{\linewidth}\raggedright
+Windows/Linux
+\end{minipage} & \begin{minipage}[b]{\linewidth}\raggedright
+Mac
+\end{minipage} \\
+\midrule()
 \endhead
 Indent & Tab & Tab \\
 Outdent & Shift-Tab & Shift-Tab \\
@@ -8415,7 +8359,7 @@ Macros replay & Ctrl-Shift-E & Command-Shift-E \\
 Macros recording & Ctrl-Alt-E & --- \\
 Delete & Delete & --- \\
 Center selection & --- & Ctrl-L \\
-\bottomrule
+\bottomrule()
 \end{longtable}
 
 \textbf{© Copyright Trivantis} \textbf{2019}
@@ -8662,6 +8606,137 @@ means
 There are 4 mentions of this (\texttt{more\ screen\ time} ) as an influence factor and 3 as a consequence factor.
 
 The /4 /3* part is only for display, it is ignored when you save your edits. You could delete it or change it, that would make no difference.
+
+\hypertarget{x}{%
+\chapter{Features of Causal Map}\label{x}}
+
+\hypertarget{main-features-of-causal-map}{%
+\section{Main features of Causal Map}\label{main-features-of-causal-map}}
+
+\begin{itemize}
+\tightlist
+\item
+  Code causal claims in the form A --\textgreater{} B
+\item
+  Code multiple claims at once
+\item
+  Code additional claims as a continuation of previous claim (``\protect\hyperlink{xchaining-links}{chaining}'')
+\item
+  \protect\hyperlink{ximport}{Import data} (and meta-data about your sources) in different formats
+\item
+  Add \protect\hyperlink{xmemosandhashtags}{memos and hashtags}
+\item
+  See a summary of all statements from a specific source
+\item
+  View additional information about each statement (e.g.~question and respondent characteristics)
+\item
+  Create simple or \protect\hyperlink{xhierarchical-coding}{hierarchical factor labels}
+\item
+  Edit many factors and links at once in a \protect\hyperlink{factor-editor}{powerful bulk editor}
+\item
+  Filter the global map by: Current statement; Factor label; Link (quote, hashtag, memo etc); Statement (text, additional data e.g.~respondent characteristics)
+\item
+  \protect\hyperlink{xtrace-paths}{Trace paths} from one set of factors to another
+\item
+  Use the interactive viewer to edit your map
+\item
+  View and export print-quality maps
+\item
+  View all quotes for a specific view, and get a smart summary
+\item
+  Create detailed \protect\hyperlink{core-tables}{tables}: Factors; Sample; Questions; Closed questions
+\item
+  \protect\hyperlink{xroundtripping}{Download/export} your data in different formats
+\item
+  Share files with others for viewing or editing
+\item
+  Code additional properties of links like strength and certainty, or mark pairs of factors which are opposite to one another
+\end{itemize}
+
+\hypertarget{additional-new-features-in-causal-map-2}{%
+\section{Additional new features in Causal Map 2}\label{additional-new-features-in-causal-map-2}}
+
+\begin{itemize}
+\item
+  Anyone can use it, and it is free for small projects
+\item
+  Conditional formatting makes your findings more visible
+\item
+  \protect\hyperlink{xbundlefactors}{Bundle factors} together to make your map neater and easier to read
+\item
+  \protect\hyperlink{bundlelinks}{Bundle links} by attributes such as stakeholder, district, question and many more
+\item
+  Infinite versioning means you can restore any change made to a file from any timepoint. This isn't just backups, it is every single change
+\item
+  It is easier to import and manage your data
+\item
+  You can import a standard-format Excel file into CM2, meaning you can download a file, edit it, and upload it again (this is called ``\protect\hyperlink{xroundtripping}{round-tripping}''). You can also include any additional fields or columns you want and they will be imported and available for searching, conditional formatting etc
+\item
+  Build a map by importing any combination of tables or just some of them - factors, links, sources, questions and statements, in any order, at any time
+\item
+  All outputs transparently recreatable from the \protect\hyperlink{advanced-editor}{filters}
+\item
+  Share or save links to maps and filters
+\item
+  Clickable legends and ordinary-language explanations of filters
+\item
+  Merging maps means you can compare multiple maps:
+
+  \begin{itemize}
+  \tightlist
+  \item
+    You can use the merge\_map filter to temporarily merge other files into the current file if you wish. You can share a link to that merge and revisit it. Viewing a merge of file A and file B will take longer, so you will probably want to save the merged file as a new file
+  \item
+    The tables (factors, links etc) have a new field called factor\_map\_id etc, which you can use to visualise the merge e.g.~by presenting links in a different colour according to their source
+  \end{itemize}
+\item
+  You can restore, lock, delete, archive and share any of your files
+\item
+  Log in to the same or different maps from the same or different accounts, including from multiple browser tabs
+\item
+  Collaborate on a file asynchronously
+\item
+  View, filter and sort all the tables - factors, links, sources, questions and statements - making up a map. These tables provide all the existing tables functionality plus more.
+\item
+  Delete factors and edit or delete links directly from the interactive map
+\item
+  Create a new blank file
+\item
+  \protect\hyperlink{xown-copy}{Clone an existing file} under a new name, containing all the current factors or only including the factors currently visible
+\item
+  New colour scales are colour-blind friendly and make sense when printed in black and white
+\item
+  Like Print View, if Interactive View is given a very big map with lots of links, it now bundles up the links so that it loads faster (you can still view a random quote from the bundle when you hover over a link)
+\item
+  When you edit a link, you are able to replace it with more than one link if you wish, e.g.~you can edit a link A→B and replace it with A→B and A→C by typing both B and C in the consequence factor box.
+\end{itemize}
+
+\hypertarget{xmanage_your_subscription}{%
+\chapter{Managing your subscription}\label{xmanage_your_subscription}}
+
+To manage, cancel or renew your subscription follow the these steps, go to the Account tab in the app.
+
+\begin{figure}
+\centering
+\includegraphics[width=6.77083in,height=\textheight]{_assets/image-20220810101815442.png}
+\caption{image-20220810101815442}
+\end{figure}
+
+The accounts tab will show you:
+-Details of any teams you manage
+-Any teams you are a member of
+-Files you have created
+-Your subscription
+
+To change your subscription click the update subscription button at the bottom of the page
+
+\begin{figure}
+\centering
+\includegraphics[width=6.77083in,height=\textheight]{_assets/image-20220810102203892.png}
+\caption{image-20220810102203892}
+\end{figure}
+
+From here you can renew, cancel or change your subscription.
 
 \hypertarget{changelog}{%
 \chapter{Recent changes}\label{changelog}}

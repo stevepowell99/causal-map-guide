@@ -1,0 +1,3 @@
+# The second quiz
+
+Now do the quiz to see if you've understood about basic coding.

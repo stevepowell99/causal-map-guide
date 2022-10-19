@@ -24,6 +24,10 @@ library(tidyverse)
 
 # Overview
 
+## What is Causal Map?
+
+Causal Map is a web app for analysing and visualising causal claims within narrative data from interviews or reports. 
+
 ```{r,echo=F}
 
 knitr::include_url("https://player.vimeo.com/video/689223728")
@@ -31,13 +35,15 @@ knitr::include_url("https://player.vimeo.com/video/689223728")
 
 This Guide is for you if:
 
-- you want to find out more about causal mapping as an approach (look for the "book" symbol 📚)
-- you want to find out more about the [Causal Map app](https://causalmap.app/) (look for the "computer" symbol 💻)
+- you want to find out more about causal mapping as an approach (look for the "book" symbol 📚).
+- you want to find out how to use the [Causal Map app](https://causalmap.app/). 
 - you are on, or have completed, the [QuIP](https://bathsdr.org/about-the-quip/) Lead Evaluator training.
 
 ------
 
-If you are in a hurry (and who isn't?), just read the first part, Getting Started.
+This Guide is divided into several Training Levels. Each is followed by a simple [quiz](https://causalmap.shinyapps.io/quizzes/). 
+
+If you are in a hurry (and who isn't?), just read Level 1: Getting Started.
 
 Features marked 🧪are experimental and are implemented on the [test server](https://causalmap.shinyapps.io/CM2test) only.
 
@@ -49,9 +55,8 @@ Check out our growing library of [short, focussed training videos](https://guide
 
 - [WhatsApp group for Causal Map](https://chat.whatsapp.com/KwWn0lfpHuR0qJKtkuGZUA)
 
-- [Whatspp group for StorySurvey](https://chat.whatsapp.com/CdlkCKV8bP7ATYc4nioL0T)
+- [Whatspp group for StorySurvey](https://chat.whatsapp.com/CdlkCKV8bP7ATYc4nioL0T) 
 
-  ## 
 
 ## Quizzes
 

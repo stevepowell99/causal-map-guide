@@ -1,0 +1,10 @@
+# The info panel{#xinfo-pan} 
+
+The `info` toggle opens additional statement info, i.e. info for any fields which start with #, for example you might have a field #gender in your statements table. 
+
+![sm559T6lUE](_assets/sm559T6lUE.gif)
+
+Boxes to edit the statement, question and source memos will also appear. Here you can add useful additional data which can be displayed on your map using the [label links](xformatting-links) or [label factors](#xlabel-factors) filters.
+
+![chrome_xXrp2x0TKw](_assets/chrome_xXrp2x0TKw.png){width=650}
+

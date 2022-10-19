@@ -1,0 +1,16 @@
+# Has someone shared a file with you?{#xinvite}
+
+If they have [shared the file](#xpermissions)  with, say, YOU@MAIL.COM, make sure you sign in with YOU@MAIL.COM as well.
+
+If they have [sent you a link](#xinvite) like https://causalmap.shinyapps.io/CausalMap2/?s=99to a particular map (or table), click the link and you will be automatically taken to view the corresponding map (or table), providing they have given you the correct permissions. 
+
+If they have just asked you to log in at the app to explore a file name, say "project-x", log in and click on the dropdown list on the left-hand side and click on `project-x` to load it. If you can't find that file name, it means they haven't correctly shared it with the email address you logged in with.
+
+
+
+![ZwspZWog6A](_assets/ZwspZWog6A.gif){width=650}
+
+
+
+If you would like to explore further, you can then apply your own filters by using the [dashboard](#xdashboard).
+

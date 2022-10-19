@@ -1,0 +1,7 @@
+# Getting help
+
+You can get help at any time by clicking on the little blue info buttons, like below. This will then open a panel displaying the relevant section of this guide.
+
+
+
+![image-20210927115203506](_assets/image-20210927115203506.png){max-width=650}

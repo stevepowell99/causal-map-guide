@@ -63,7 +63,7 @@ As usual, we should treat the maps just as a gateway into the data, an invitatio
 
 To repeat, the “distinctive map” for a group is *not* a good summary of everything that was said by that group. It is a good summary of what was said by that group more often than the other groups.
 
-## 💻 Filtering statements and groups for comparisons in Causal Map 
+## Filtering statements and groups for comparisons in Causal Map 
 
 
 
@@ -79,7 +79,7 @@ However, if the base number of sources in each group is different -- for example
 
 There are many [caveats](#caveat-numbers) to using counts and percentages of mentions of causal links and factors in causal mapping, as they arise (or don't arise) during conversations and are not answers to questions directly asked of respondents.
 
-#### 💻 Percentages in the app
+####  Percentages in the app
 
 
 

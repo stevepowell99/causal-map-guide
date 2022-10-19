@@ -1,1 +1,1 @@
-# (PART) 💻 Technical reference {-}
+# (PART) Technical reference {-}

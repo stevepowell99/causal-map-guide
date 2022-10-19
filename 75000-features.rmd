@@ -1,0 +1,73 @@
+# Features of Causal Map{#x}
+
+## Main features of Causal Map
+
+- Code causal claims in the form A –> B
+- Code multiple claims at once
+- Code additional claims as a continuation of previous claim (“[chaining](#xchaining-links)")
+- [Import data](#ximport) (and meta-data about your sources) in different formats
+- Add [memos and hashtags](#xmemosandhashtags)
+- See a summary of all statements from a specific source
+- View additional information about each statement (e.g. question and respondent characteristics)
+- Create simple or [hierarchical factor labels](#xhierarchical-coding)
+- Edit many factors and links at once in a [powerful bulk editor](#factor-editor)
+- Filter the global map by: Current statement; Factor label; Link (quote, hashtag, memo etc); Statement (text, additional data e.g. respondent characteristics)
+- [Trace paths](#xtrace-paths) from one set of factors to another
+- Use the interactive viewer to edit your map
+- View and export print-quality maps
+- View all quotes for a specific view, and get a smart summary
+- Create detailed [tables](#core-tables): Factors; Sample; Questions; Closed questions
+- [Download/export](#xroundtripping) your data in different formats
+- Share files with others for viewing or editing
+- Code additional properties of links like strength and certainty, or mark pairs of factors which are opposite to one another
+
+## Additional new features in Causal Map 2
+
+- Anyone can use it, and it is free for small projects
+
+- Conditional formatting makes your findings more visible
+
+- [Bundle factors](#xbundlefactors) together to make your map neater and easier to read
+
+- [Bundle links](#bundlelinks) by attributes such as stakeholder, district, question and many more
+
+- Infinite versioning means you can restore any change made to a file from any timepoint. This isn't just backups, it is every single change
+
+- It is easier to import and manage your data
+
+- You can import a standard-format Excel file into CM2, meaning you can download a file, edit it, and upload it again (this is called "[round-tripping](#xroundtripping)").  You can also include any additional fields or columns you want and they will be imported and available for searching, conditional formatting etc
+
+- Build a map by importing any combination of tables or just some of them - factors, links, sources, questions and statements, in any order, at any time
+
+- All outputs transparently recreatable from the [filters](#advanced-editor)
+
+- Share or save links to maps and filters
+
+- Clickable legends and ordinary-language explanations of filters
+
+- Merging maps means you can compare multiple maps:
+
+  - You can use the merge_map filter to temporarily merge other files into the current file if you wish. You can share a link to that merge and revisit it. Viewing a merge of file A and file B will take longer, so you will probably want to save the merged file as a new file
+  - The tables (factors, links etc) have a new field called factor_map_id etc, which you can use to visualise the merge e.g. by presenting links in a different colour according to their source
+
+- You can restore, lock, delete, archive and share any of your files
+
+- Log in to the same or different maps from the same or different accounts, including from multiple browser tabs
+
+- Collaborate on a file asynchronously
+
+- View, filter and sort all the tables - factors, links, sources, questions and statements - making up a map. These tables provide all the existing tables functionality plus more. 
+
+- Delete factors and edit or delete links directly from the interactive map
+
+- Create a new blank file
+
+- [Clone an existing file](#xown-copy) under a new name, containing all the current factors or only including the factors currently visible
+
+- New colour scales are colour-blind friendly and make sense when printed in black and white
+
+- Like Print View, if Interactive View is given a very big map with lots of links, it now bundles up the links so that it loads faster (you can still view a random quote from the bundle when you hover over a link)
+
+- When you edit a link, you are able to replace it with more than one link if you wish, e.g. you can edit a link A→B and replace it with A→B and A→C by typing both B and C in the consequence factor box. 
+
+  

@@ -47,7 +47,7 @@ In this version, the contextual information is explicitly encoded within each li
 
 - This approach only works if we think of context as an all-or-nothing thing, which is rarely the case in real life: in fact, in our very example, the contextual role of Oxygen obviously differs according to its strength.
 
-## 💻 Using context in the Causal Map app
+## Using context in the Causal Map app
 
 At the moment, you can encode context in the Causal Map app simply by creating a [hashtag](#xmemosandhashtags) for it. You can use a family of hashtags by using some characters in common, like “Context:”, like this: 
 
