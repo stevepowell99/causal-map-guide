@@ -1,4 +1,4 @@
-#  Prerequisites for using the app{#xprerequisites}
+#  Prerequisites for using the app{#xlevel1}
 
 The app is tested on Chrome and Firefox on Mac and Windows, and Safari on Mac, and the new Edge on Windows, and it should work fine on Chrome, Chromium and Firefox on Linux. 
 

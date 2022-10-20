@@ -1,0 +1,3 @@
+# The third quiz
+
+Now do the [quiz](https://causalmap.shinyapps.io/quizzes/#section-xlevel3)  to see if you've understood about basic analysis.

@@ -43,11 +43,11 @@ This Guide is for you if:
 
 This Guide is divided into these Training Levels:
 
-1. [Getting Started](#xprerequisites)
-2. [Basic Coding](#xstarting-coding)
-3. [Basic Analysis](#xabout-filters)
-4. [Advanced Coding](#xcollaboration)
-5. [Advanced Analysis](#xtables-advanced)
+1. [Getting Started](#xlevel1)
+2. [Basic Coding](#xlevel2)
+3. [Basic Analysis](#xlevel3)
+4. [Advanced Coding](#xlevel4)
+5. [Advanced Analysis](#xlevel5)
 
 ... and there are also sections on:
 

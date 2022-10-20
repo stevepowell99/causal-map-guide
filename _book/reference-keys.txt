@@ -4,7 +4,7 @@ videos
 support-chat
 quizzes
 selected-projects-to-date
-xprerequisites
+xlevel1
 signing-up
 xinvite
 want-to-do-your-own-coding
@@ -33,7 +33,7 @@ copy-svg
 xall-tables
 preset-tables
 the-first-quiz
-xstarting-coding
+xlevel2
 top-tips
 xintro-filters
 commands-and-buttons-to-apply-filters-to-your-map
@@ -60,7 +60,7 @@ split-recoding
 advanced-editing-tips
 xfactor-editor-sidebar
 the-second-quiz
-xabout-filters
+xlevel3
 top-row
 the-filter-buttons-1
 section-1
@@ -102,8 +102,8 @@ what-the-metrics-mean
 xdata-manager
 xupdates-tab
 the-third-quiz
+xlevel4
 xcollaboration
-overview-1
 details
 teams
 ximport
@@ -197,9 +197,10 @@ filtering
 xopposites-coding
 opposites-coding-within-components-of-a-hierarchy
 unpacking-opposites
-xtables-advanced
+the-fourth-quiz
+xlevel5
 tables_common
-main-controls
+xtables-advanced
 search
 sorting
 creating-your-table
@@ -282,6 +283,7 @@ bundling-links-by-cluster
 finding-many-solutions-at-once
 recalculate
 xinterpret
+the-fifth-quiz
 xgamification
 xmanage_your_subscription
 causal-mapping-definitions

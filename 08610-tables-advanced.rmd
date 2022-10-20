@@ -1,11 +1,11 @@
-#  🧪Tables - advanced{#xtables-advanced}
+#  🧪Tables - advanced{#xlevel5}
 
 We already saw basic information about [tables](#xall-tables).
 
 ## Features common to all the tables{#tables_common}
 
 
-### Main controls
+### Main controls{#xtables-advanced}
 
 Each table has a set of controls, which are the same across nearly all the tables.
 
