@@ -41,7 +41,20 @@ This Guide is for you if:
 
 ------
 
-This Guide is divided into several Training Levels. Each is followed by a simple [quiz](https://causalmap.shinyapps.io/quizzes/). 
+This Guide is divided into these Training Levels:
+
+1. [Getting Started](#xprerequisites)
+2. [Basic Coding](#xstarting-coding)
+3. [Basic Analysis](#xabout-filters)
+4. [Advanced Coding](#xcollaboration)
+5. [Advanced Analysis](#xtables-advanced)
+
+... and there are also sections on:
+
+- The rest of the app
+- Technical reference
+
+Each is followed by a simple [quiz](https://causalmap.shinyapps.io/quizzes/). 
 
 If you are in a hurry (and who isn't?), just read Level 1: Getting Started.
 

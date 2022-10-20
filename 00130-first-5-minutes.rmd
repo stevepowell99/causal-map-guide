@@ -81,6 +81,8 @@ A print-quality version of the map with advanced layout.
 
 Simply click on the factor you want to change and edit it. You can change one factor everywhere in the file or you can do it for each statement, by pressing the Split checkbox. Just remember to press update once you have made your changes and you are happy with them.
 
+### The other tabs
+
 These are the other tabs:
 
 - [Files tab](#xfile-manager)

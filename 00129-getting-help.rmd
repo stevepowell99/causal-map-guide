@@ -1,7 +1,34 @@
 # Getting help
 
+## Tooltips
+
+![image-20221020084317083](_assets/image-20221020084317083.png)
+
+You can get information about most of the buttons in the app by hovering your mouse over the button for a couple of seconds.
+
+## Blue info buttons
+
 You can get help at any time by clicking on the little blue info buttons, like below. This will then open a panel displaying the relevant section of this guide.
 
+![image-20221020084136350](_assets/image-20221020084136350.png)
 
 
-![image-20210927115203506](_assets/image-20210927115203506.png){max-width=650}
+
+## Guide button
+
+![image-20221020084046445](_assets/image-20221020084046445.png){width=650}
+
+opens this Guide in a new tab.
+
+## Tips dropdown
+
+The [dashboard](#xdashboard) contains a Tips dropdown with lots of useful links.
+
+![image-20221020084450586](_assets/image-20221020084450586.png)
+
+
+
+## Support chat
+
+- [WhatsApp group for Causal Map](https://chat.whatsapp.com/KwWn0lfpHuR0qJKtkuGZUA)
+- [Whatspp group for StorySurvey](https://chat.whatsapp.com/CdlkCKV8bP7ATYc4nioL0T)

@@ -1,4 +1,6 @@
-# Top tips if you have just starting coding{#top-tips}
+# Starting coding{#xstarting-coding}
+
+## Top tips if you have just starting coding{#top-tips}
 
 First of all, there's nothing to worry about, it's fun!
 

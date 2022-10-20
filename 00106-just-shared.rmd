@@ -1,6 +1,12 @@
 # Has someone shared a file with you?{#xinvite}
 
-If they have [shared the file](#xpermissions)  with, say, YOU@MAIL.COM, make sure you sign in with YOU@MAIL.COM as well.
+::: {.rmdcaution}
+
+If someone has [shared a file](#xpermissions)  with, say, YOU@MAIL.COM, make sure you sign in with YOU@MAIL.COM as well.
+
+:::
+
+
 
 If they have [sent you a link](#xinvite) like https://causalmap.shinyapps.io/CausalMap2/?s=99to a particular map (or table), click the link and you will be automatically taken to view the corresponding map (or table), providing they have given you the correct permissions. 
 

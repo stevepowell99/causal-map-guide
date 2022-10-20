@@ -1,15 +1,3 @@
-bookdown::bs4_book:
-  config:
-    toc_depth: 1
-    toc:
-      scroll_highlight: yes
-      collapse: chapter
-  theme:
-    primary: "#6dc4c8"
-  css: style.css
-  repo:
-    base: https://github.com/stevepowell99/causal-map-guide
-    branch: master
 bookdown::gitbook:
   includes:
     in_header: header.html
@@ -27,6 +15,18 @@ bookdown::gitbook:
       after: |
         <li><a href="https://causalmap.app" target="blank">Causal Map</a></li>
     download: ["pdf"]
+bookdown::bs4_book:
+  config:
+    toc_depth: 1
+    toc:
+      scroll_highlight: yes
+      collapse: chapter
+  theme:
+    primary: "#6dc4c8"
+  css: style.css
+  repo:
+    base: https://github.com/stevepowell99/causal-map-guide
+    branch: master
 bookdown::pdf_book:
   includes:
     in_header: preamble.tex
