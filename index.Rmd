@@ -49,12 +49,20 @@ This Guide is divided into these Training Levels:
 4. [Advanced Coding](#xlevel4)
 5. [Advanced Analysis](#xlevel5)
 
+Each is followed by a simple [quiz](https://causalmap.shinyapps.io/quizzes/). 
+
+You don't need to read all the levels! Most people will want to read and do the quiz for Level 1. 
+
+Then, if you just want to do some basic analysis, read Level 2.
+
+Or, if you just want to do some basic coding, read Level 3.
+
+
+
 ... and there are also sections on:
 
 - The rest of the app
 - Technical reference
-
-Each is followed by a simple [quiz](https://causalmap.shinyapps.io/quizzes/). 
 
 If you are in a hurry (and who isn't?), just read Level 1: Getting Started.
 

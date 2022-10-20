@@ -72,7 +72,7 @@ If all you want to do is change the title, make sure the checkbox is **not** che
 
 
 ## Applying a view
-![image-20220808114935730](_assets/image-20220808114935730.png){width=650}
+![image-20220808114935730](_assets/image-20220808114935730.png)
 
 When you view a map which has been downloaded as an image you will see there is a unique number in the bottom left-hand corner. Using this number you can jump to this particular view on that specific file, just paste the number in this box at the bottom of the dashboard and press the arrow. If you share this number with others who have edit or view access they will also be taken to this view.
 

@@ -204,7 +204,7 @@ Factor labels: You can now also choose whether or not to include the name of the
 
 Finding factors also works when you include 0 steps upstream and 0 steps downstream:
 
-![image-20211228120112398](_assets/image-20211228120112398.png){width=650}
+![image-20211228120112398](_assets/image-20211228120112398.png)
 
 Reorder columns: You can reorder the columns just by dragging the column headers.
 
@@ -284,11 +284,11 @@ This filter is experimental and the details will certainly change.
 
 The [transitivity trap](#xtransitivity-trap) can make it a challenge to interpret your maps. Some people (or somebody) said that improved hygiene led to reduction in mosquito environments, and some people  said reduction in mosquito environments led to improved health, but *was this the same or different people*?
 
-![image-20211215081735743](_assets/image-20211215081735743.png){width=650}{width=650}
+![image-20211215081735743](_assets/image-20211215081735743.png){width=650}
 
 Add the filter `mark links` (there is no button for it, you have to type it) provides the following diagnostics:
 
-![image-20211215081328481](_assets/image-20211215081328481.png){width=650}{width=650}
+![image-20211215081328481](_assets/image-20211215081328481.png){width=650}
 
 The incoming (bundles of) links to every factor (actually to every factor with outgoing links) are labelled a, b, etc, including when links are bundled e.g. by gender. Then the outgoing links are marked with say `a` if at least one of the sources who mentioned the outgoing link also mentioned link `a`. 
 
@@ -296,11 +296,11 @@ So we can see that none of the people who said that improved hygiene led to redu
 
 Note that the labels get re-used for each factor, so the `a`s and `b`s here are related:
 
-![image-20211215083702603](_assets/image-20211215083702603.png){width=650}
+![image-20211215083702603](_assets/image-20211215083702603.png)
 
 but the `a`s here are not:
 
-![image-20211215083737009](_assets/image-20211215083737009.png){width=650}
+![image-20211215083737009](_assets/image-20211215083737009.png)
 
 This also works with all the other fields, e.g. you can type `mark links field=statement_id` in order to test statement continuity, which is a stricter test of continuity. source_id is default so you don't need to type it specially.
 
@@ -312,7 +312,7 @@ We will probably also add a simpler metric for outgoing links which does not dis
 
 ##### Summary
 
-![http://theorymaker.info/?permalink=transitivity](_assets/image-20211222121147473.png){width=650}{width=650}
+![http://theorymaker.info/?permalink=transitivity](_assets/image-20211222121147473.png){width=650}
 
 Above, the links are labelled with the sources. 
 

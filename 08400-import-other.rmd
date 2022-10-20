@@ -83,7 +83,7 @@ Plus, the question_code may end with the characters "rank" to mark "ranking orga
 
 To upload the QuIP-style spreadsheet click on the purple upload button on the right-hand-side panel.
 
-![chrome_c4eNUSYcjH](_assets/chrome_c4eNUSYcjH.png){width=650}
+![chrome_c4eNUSYcjH](_assets/chrome_c4eNUSYcjH.png)
 
 #### QuIP recodes for closed questions - live link
 
@@ -91,7 +91,7 @@ Using this [table](https://www.dropbox.com/s/spiacrl67lqwvc9/quip-recodes.xlsx?d
 
 For example:
 
-![image-20211019155354881](_assets/image-20211019155354881.png){width=650}
+![image-20211019155354881](_assets/image-20211019155354881.png)
 
 This data will be displayed in the Tables panel if you select “closed questions.”
 

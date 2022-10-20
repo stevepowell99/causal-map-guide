@@ -379,7 +379,7 @@ So the maps for each cluster should be maximally different from one another. Thi
 <div class="inline-figure"><img src="_assets/BhOlErDmwB.gif"></div>
 <p>Finding factors also works when you include 0 steps upstream and 0 steps downstream:</p>
 <div class="figure">
-<img src="_assets/image-20211228120112398.png" width="650" alt=""><p class="caption">image-20211228120112398</p>
+<img src="_assets/image-20211228120112398.png" alt=""><p class="caption">image-20211228120112398</p>
 </div>
 <p>Reorder columns: You can reorder the columns just by dragging the column headers.</p>
 </div>
@@ -455,20 +455,22 @@ So the maps for each cluster should be maximally different from one another. Thi
 </h3>
 <p>This filter is experimental and the details will certainly change.</p>
 <p>The <a href="xtransitivity-trap.html#xtransitivity-trap">transitivity trap</a> can make it a challenge to interpret your maps. Some people (or somebody) said that improved hygiene led to reduction in mosquito environments, and some people said reduction in mosquito environments led to improved health, but <em>was this the same or different people</em>?</p>
-<div class="inline-figure">
-<img src="_assets/image-20211215081735743.png" width="650" alt="image-20211215081735743">{width=650}</div>
+<div class="figure">
+<img src="_assets/image-20211215081735743.png" width="650" alt=""><p class="caption">image-20211215081735743</p>
+</div>
 <p>Add the filter <code>mark links</code> (there is no button for it, you have to type it) provides the following diagnostics:</p>
-<div class="inline-figure">
-<img src="_assets/image-20211215081328481.png" width="650" alt="image-20211215081328481">{width=650}</div>
+<div class="figure">
+<img src="_assets/image-20211215081328481.png" width="650" alt=""><p class="caption">image-20211215081328481</p>
+</div>
 <p>The incoming (bundles of) links to every factor (actually to every factor with outgoing links) are labelled a, b, etc, including when links are bundled e.g. by gender. Then the outgoing links are marked with say <code>a</code> if at least one of the sources who mentioned the outgoing link also mentioned link <code>a</code>.</p>
 <p>So we can see that none of the people who said that improved hygiene led to reduction in mosquito environments also said that reduction in mosquito environments led to improved health: there is no label at all on the arrow going out of reduction in mosquito environments. There is no source continuity.</p>
 <p>Note that the labels get re-used for each factor, so the <code>a</code>s and <code>b</code>s here are related:</p>
 <div class="figure">
-<img src="_assets/image-20211215083702603.png" width="650" alt=""><p class="caption">image-20211215083702603</p>
+<img src="_assets/image-20211215083702603.png" alt=""><p class="caption">image-20211215083702603</p>
 </div>
 <p>but the <code>a</code>s here are not:</p>
 <div class="figure">
-<img src="_assets/image-20211215083737009.png" width="650" alt=""><p class="caption">image-20211215083737009</p>
+<img src="_assets/image-20211215083737009.png" alt=""><p class="caption">image-20211215083737009</p>
 </div>
 <p>This also works with all the other fields, e.g. you can type <code>mark links field=statement_id</code> in order to test statement continuity, which is a stricter test of continuity. source_id is default so you don’t need to type it specially.</p>
 <p>Yes, it is a bit difficult to communicate this in a report. But it is important for interpretation. Of course a chain without source continuity isn’t an invalid chain per se, it’s just something to be aware of.</p>
@@ -482,8 +484,9 @@ So the maps for each cluster should be maximally different from one another. Thi
 <h5>
 <span class="header-section-number">100.4.7.0.1</span> Summary<a class="anchor" aria-label="anchor" href="#summary-11"><i class="fas fa-link"></i></a>
 </h5>
-<div class="inline-figure">
-<img src="_assets/image-20211222121147473.png" width="650" alt="http://theorymaker.info/?permalink=transitivity">{width=650}</div>
+<div class="figure">
+<img src="_assets/image-20211222121147473.png" width="650" alt=""><p class="caption"><a href="http://theorymaker.info/?permalink=transitivity" class="uri">http://theorymaker.info/?permalink=transitivity</a></p>
+</div>
 <p>Above, the links are labelled with the sources.</p>
 <p>The ▭ open half-box at the end of the first link tells us that at least half but not all of these stories stop here: less than half the sources mentioned any link <em>out of</em> K.</p>
 <p>The ◼ filled box at the start of the second link tells us that all of these stories are continuations: all these sources mentioned some link <em>into</em> K.</p>

@@ -20,7 +20,7 @@ You can upload your data back into a new or existing Causal Map file.
 
 To download a file click the download icon in the left panel and your data will be downloaded as an xlsx.
 
-![dVHQQ2ZsUl](_assets/dVHQQ2ZsUl.gif){width=650}
+![dVHQQ2ZsUl](_assets/dVHQQ2ZsUl.gif)
 
 What you can expect from your download:
 

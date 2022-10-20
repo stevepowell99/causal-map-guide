@@ -10,7 +10,7 @@ We already saw basic information about [tables](#xall-tables).
 Each table has a set of controls, which are the same across nearly all the tables.
 
 
-![image-20220913134022864](_assets/image-20220913134022864.png){width=650}
+![image-20220913134022864](_assets/image-20220913134022864.png)
 
 When the table is set to "Filtered", the tables respond to any filters you have applied in the left-hand panel of the app, just as the interactive maps do. The table shows data corresponding to the map as it is currently displayed.
 
@@ -26,7 +26,7 @@ You can search / filter the whole table by clicking on the equals sign at the to
 
 You can sort the whole table by any column by clicking on the appropriate header:
 
-![image-20220913152846255](_assets/image-20220913152846255.png){width=650}
+![image-20220913152846255](_assets/image-20220913152846255.png)
 
 
 
