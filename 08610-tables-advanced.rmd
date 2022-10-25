@@ -1,4 +1,4 @@
-#  🧪Tables - advanced{#xlevel5}
+#  🧪Tables - advanced
 
 We already saw basic information about [tables](#xall-tables).
 

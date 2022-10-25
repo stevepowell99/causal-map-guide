@@ -1,0 +1,12 @@
+# Document coding score!{#xgamification}
+
+Coding a large file can be a daunting task. At the top right of the app, you will see some feedback on your progress in coding your file.
+
+![image-20220430193751134](_assets/image-20220430193751134.png)
+
+These show you:
+
+- number of (top level) factors. You get a warning if this is more than100. Ideally you'd have less than 10 or 20 top-level factors, enough so that you can remember most of them and could explain them to someone else without notes. Of course, each top-level factor might have subfactors, but again we'd recommend no more than say 10 lower-level factors within each higher-level factor. So, it doesn't really matter how many factors you have, but the number of top-level factors should be fairly small.
+- ratio of links to (top level) factors. You get a warning if this is less than 3. Ideally, each of your top level factors will be mentioned lots of times (including mentions of factors nested within them, like `Health behaviour; hand washing`) so they will have lots of links. If your factors don't have many links each, consider consolidating them.
+- percentage of statements which have been coded. You get a warning if this is less than 60%.
+

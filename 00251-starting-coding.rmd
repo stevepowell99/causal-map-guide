@@ -1,4 +1,4 @@
-# Starting coding{#xlevel2}
+# Starting coding
 
 ## Top tips if you have just starting coding{#top-tips}
 

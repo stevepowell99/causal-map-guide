@@ -5,6 +5,7 @@ support-chat
 quizzes
 selected-projects-to-date
 xlevel1
+prerequisites-for-using-the-app
 signing-up
 xinvite
 want-to-do-your-own-coding
@@ -34,7 +35,10 @@ xall-tables
 preset-tables
 the-first-quiz
 xlevel2
+starting-coding
 top-tips
+creating-a-file
+section
 xintro-filters
 commands-and-buttons-to-apply-filters-to-your-map
 statement-toggle-do-some-coding-view-one-statement-or-do-some-analysis-view-many-statements
@@ -50,8 +54,6 @@ xmemosandhashtags
 xlink-memos
 xhashtags
 xinfo-pan
-creating-a-file
-section
 xfactor-editor
 summary
 editing-factor-labels-in-the-factor-editor
@@ -61,6 +63,7 @@ advanced-editing-tips
 xfactor-editor-sidebar
 the-second-quiz
 xlevel3
+about-the-filters
 top-row
 the-filter-buttons-1
 section-1
@@ -84,7 +87,6 @@ xedit_view
 applying-a-view
 medals
 for-admins
-xfile-manager
 xthe-factors-table
 xfactormemos
 xthe-mentions-table
@@ -99,10 +101,9 @@ the-closed-question-blocks-table
 xmetrics
 summary-1
 what-the-metrics-mean
-xdata-manager
-xupdates-tab
 the-third-quiz
 xlevel4
+collaborating-at-causal-map
 xcollaboration
 details
 teams
@@ -160,6 +161,8 @@ search-with-nested-factors
 how-can-i-view-just-the-factors-where-i-have-applied-hierarchical-coding
 viewing-the-top-level-labels
 simplifying-zooming-out-and-filtering-out-less-frequent-links-and-factors-in-the-app
+xgamification
+xdata-manager
 xcodebook
 xquickfields
 summary-4
@@ -199,6 +202,7 @@ opposites-coding-within-components-of-a-hierarchy
 unpacking-opposites
 the-fourth-quiz
 xlevel5
+tables---advanced
 tables_common
 xtables-advanced
 search
@@ -284,7 +288,8 @@ finding-many-solutions-at-once
 recalculate
 xinterpret
 the-fifth-quiz
-xgamification
+xupdates-tab
+xfile-manager
 xmanage_your_subscription
 causal-mapping-definitions
 what-is-a-causal-map-what-is-causal-mapping
