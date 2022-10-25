@@ -1,6 +1,6 @@
 # 📚 What is causal mapping?{#xcausal-mapping}
 
-There is a [longer version](https://www.causalmap.app/causal-mapping) of this post.
+This is  a shorter version of  [this post](https://www.causalmap.app/causal-mapping).
 
 
 
@@ -16,7 +16,8 @@ At least some of the boundaries of causal mapping research are set by the respon
 
 Causal maps work on two levels. 
 
-- On one level, they are presentations of individual and shared cognitive structures, the maps “in people’s heads” which we need to know about if we want to understand, predict and influence behaviour. On the other level, if we trust our sources we can use this information to tell us something about how things work in the real world. 
+- On one level, they are presentations of individual and shared cognitive structures, the maps “in people’s heads” which we need to know about if we want to understand, predict and influence behaviour. 
+- On the other level, if we trust our sources we can use this information to tell us something about how things work in the real world. 
 
 #### Present
 

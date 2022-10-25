@@ -1,3 +1,3 @@
-# Level 2 qu
+# Level 2 quiz
 
 Now do the [quiz](https://causalmap.shinyapps.io/quizzes/#section-xlevel2)  to see if you've understood about basic coding.

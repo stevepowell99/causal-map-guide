@@ -4,7 +4,7 @@
 
 We are aware of the initiative to make qualitative coding software interoperable, [https://www.qdasoftware.org/products-project-exchange/](https://www.qdasoftware.org/products-project-exchange/). Causal Map has quite a different model and at the moment we don’t provide this, but would do if there is a lot of interest.
 
-You can always export all your data at any time using the buttons in the File tab.
+You can always export all your data at any time using the Download button in the [top menu](#xtop-menu).
 
 ### Exporting for import into kumu.io
 
