@@ -2,7 +2,7 @@
 
 To whet your appetite for some advanced analysis, [here](https://causalmap.app/gallery) are some of the variety of maps you can create with Causal Map.
 
-# {#xlevel4}
+
 
 In the pages in this section you will learn how to do advanced analysis in Causal Map: 
 
