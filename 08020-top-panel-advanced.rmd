@@ -1,4 +1,4 @@
-#  The top menu{#xtop-menu}
+#  The top menu{#xtop-menu-advanced}
 
 This section is all about how to manage using the top menu to help you deal with the currently loaded file. Hover over the icons to see what they do.
 
@@ -52,9 +52,9 @@ You can then append something to the end of the filename to make it yours:
 
 Click the 'Save current map' button. This window will then close and your copy of the file will load up. You can now make changes to the file. 
 
-## Restoring a previous version of your file
+## Restoring a previous version of your file{#xversions}
 
-The app is continously saving your work and so you can restore your file to any prevision version, by clicking this icon ![image-20211115175030770](_assets/image-20211115175030770.png). This will open the below panel where you can choose which timepoint you wish to revert your map to. 
+The app is continuously saving your work and so you can restore your file to any prevision version, by clicking this icon ![image-20211115175030770](_assets/image-20211115175030770.png). This will open the below panel where you can choose which timepoint you wish to revert your map to. 
 
 ![image-20211115174934976](_assets/image-20211115174934976.png){width=650}
 
@@ -81,10 +81,8 @@ By clicking on the icon of two speech bubbles, a panel containing chat about the
 
 This panel can help with these kinds of problems. You and your colleagues -- anyone else with access to the current file -- can type notes and updates about the file. These updates will be listed here sequentially. 
 
-Also, these same notes and updates are listed in the main Updates panel, along with automatic updates about when files were opened and edited.
+Also, these same notes and updates are listed in the main [Updates panel](#xupdates-tab), along with automatic updates about when files were opened and edited.
 
-![image-20211018121359141](_assets/image-20211018121359141.png)
-
-So you can use the filters just to search for manual and automatic updates about particular files, or on particular dates; or you can just search for type=chat to view recent chat about any files or some particular files:
+You can just search for type=chat to view recent chat about any files or some particular files:
 
 ![image-20211122063223836](_assets/image-20211122063223836.png)

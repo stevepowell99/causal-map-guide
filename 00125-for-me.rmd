@@ -1,7 +1,7 @@
 # 📚 Are Causal Map and causal mapping for you?
 
 
-So, you’ve taken a look at the **[features of the app](#xfeatures)**, and you’re getting excited about creating maps – but is your project right for it?
+So, you’re getting excited about creating maps – but is your project right for it?
 
   Use Causal Map if you:
 

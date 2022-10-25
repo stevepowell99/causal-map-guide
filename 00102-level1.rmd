@@ -1,2 +1,6 @@
 #  Level 1 overview{#xlevel1}
 
+In the pages in this section you will learn how to get started with Causal Map. 
+
+When you've read the pages, try the [quiz](https://causalmap.shinyapps.io/quizzes/#section-xlevel1) to see if you have understood enough or need to review some! 
+
