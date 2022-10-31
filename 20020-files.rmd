@@ -2,7 +2,14 @@
 
 At the top of the page you will find information about your subscriptions, the files you have crested and any teams you manage.
 
-Below, the file manager table allows you to see shows you all the files you have access to and what level of access you have i.e. copy, view or edit access. You can also see details such as whether these files are locked, archived, any memos on the file and what access other users have to these files.
+Below, the file manager table shows you all the files you have access to and what level of access you have i.e. copy, view or edit access. You can also see details such as:
+
+- Whether the file is locked- meaning you can view this file but not edit it. 
+- Whether the file is archived- which is a tag and archived files will remain in your dropdown list.
+- Any memos on the file.
+- What access other users have to these files.
+
+
 
 ![image-20210927120502982](_assets/image-20210927120502982.png){width=650}
 

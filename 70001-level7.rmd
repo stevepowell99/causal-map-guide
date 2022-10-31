@@ -1,0 +1,3 @@
+#  Technical reference{#xlevel7}
+
+This section contains technical reference for the Causal Map app.

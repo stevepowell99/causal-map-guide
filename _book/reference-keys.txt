@@ -69,7 +69,7 @@ editing-factors-in-the-factor-editor-is-disabled-when-you-use-any-of-these-filte
 split-recoding
 advanced-editing-tips
 xfactor-editor-sidebar
-level-2-qu
+level-2-quiz
 xlevel3
 about-the-filters
 top-row
@@ -299,6 +299,7 @@ level-5-quiz
 xupdates-tab
 xfile-manager
 xmanage_your_subscription
+xlevel6
 causal-mapping-definitions
 what-is-a-causal-map-what-is-causal-mapping
 summary-10
@@ -392,7 +393,11 @@ method
 hierarchy
 positive-links-and-other-links
 causal-link-diagrams
+xlevel7
 xvideo-list
+xconventions
+formatting-in-this-guide
+screenshotting-your-maps
 FAQs
 logging-in
 setting-up
@@ -405,9 +410,6 @@ glossary
 generic-terminology-for-causal-mapping
 filter-reference
 how-causal-map-is-hosted
-xconventions
-formatting-in-this-guide
-screenshotting-your-maps
 xreports
 sample
 hierarchy-1

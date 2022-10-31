@@ -26,20 +26,13 @@ library(tidyverse)
 
 ## What is Causal Map?
 
-Causal Map is a web app for analysing and visualising causal claims within narrative data from interviews or reports. 
+[Causal Map](https://causalmap.app/) is a web app for analysing and visualising causal claims within narrative data from interviews or reports. 
 
 ```{r,echo=F}
-
 knitr::include_url("https://player.vimeo.com/video/689223728")
 ```
 
-This Guide is for you if:
-
-- you want to find out more about causal mapping as an approach (look for the "book" symbol 📚).
-- you want to find out how to use the [Causal Map app](https://causalmap.app/). 
-- you are on, or have completed, the [QuIP](https://bathsdr.org/about-the-quip/) Lead Evaluator training.
-
-------
+If you want to find out more about the theory of causal mapping, rather than how to use the app, look for the "book" symbol 📚.
 
 This Guide is divided into these Training Levels:
 
@@ -51,18 +44,10 @@ This Guide is divided into these Training Levels:
 
 Each is followed by a simple [quiz](https://causalmap.shinyapps.io/quizzes/). 
 
-You don't need to read all the levels! Most people will want to read and do the quiz for Level 1. 
-
-Then, if you just want to do some basic analysis, read Level 2.
-
-Or, if you just want to do some basic coding, read Level 3.
-
-
-
 ... and there are also sections on:
 
 - The rest of the app
-- Technical reference
+- [Technical reference](#xlevel7)
 
 If you are in a hurry (and who isn't?), just read Level 1: Getting Started.
 
