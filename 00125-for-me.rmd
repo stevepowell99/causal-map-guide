@@ -3,7 +3,7 @@
 
 So, you’re getting excited about creating maps – but is your project right for it?
 
-  Use Causal Map if you:
+ ✅ Use Causal Map if you:
 
   - have a relatively large amount of narrative data (enough to provide at least 20-30 causal links)
   - need help to organise a large number of links and summarise them into an overview or synthesis
@@ -11,7 +11,7 @@ So, you’re getting excited about creating maps – but is your project right f
   - are interested in possible differences between the sources and groups of sources – and/or you don’t necessarily have a preconceived idea of the contents or boundaries of the map
   - want to capture what your sources actually say, systematically and transparently
 
-  Causal Map map is not suitable if you:
+  ❌ Causal Map map is not suitable if you:
 
   - only have a relatively small map which you can manage with traditional tools for drawing network diagrams (e.g. PowerPoint, [kumu.io](http://kumu.io) etc.)
   - need to analyse quantitative data and/or need to do precise mathematical modelling, e.g. of future states of a system under certain conditions

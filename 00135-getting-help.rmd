@@ -14,21 +14,17 @@ You can get help at any time by clicking on the little blue info buttons, like b
 
 
 
-## Guide button
+## Help button
 
 ![image-20221020084046445](_assets/image-20221020084046445.png){width=650}
 
-opens this Guide in a new tab.
-
-## Tips dropdown
-
-The [dashboard](#xdashboard) contains a Tips dropdown with lots of useful links.
-
-![image-20221020084450586](_assets/image-20221020084450586.png)
+The details of what you may differ slightly depending on the version of the app you are using.
 
 
 
 ## Support chat
+
+You can also usually get live help on these WhatsAp
 
 - [WhatsApp group for Causal Map](https://chat.whatsapp.com/KwWn0lfpHuR0qJKtkuGZUA)
 - [Whatspp group for StorySurvey](https://chat.whatsapp.com/CdlkCKV8bP7ATYc4nioL0T)

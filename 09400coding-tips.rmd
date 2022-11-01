@@ -1,6 +1,4 @@
-# Starting coding
-
-## Top tips if you have just starting coding{#top-tips}
+# Top tips on coding{#top-tips}
 
 First of all, there's nothing to worry about, it's fun!
 

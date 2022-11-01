@@ -1,0 +1,16 @@
+#  Preparing to code{#xcoding}
+
+Qualitative causal mapping involves taking passages of text, e.g. from interviews or documents, and identifying sections which make causal claims. We highlight each of these sections and specify a causal factor at each end of each link (for example Lost job or Went hungry). This means creating a new factor or reusing an existing one. Usually we create these factors inductively as we code, and revise and review and consolidate them as part of the process, as with any other kind of qualitative content analysis. This section is about how to create factors and their labels.
+
+
+
+![#statement-toggle](_assets/image-20211026110623336.png){max-width=650}
+
+When you are coding you should switch the multiple statement selector to One, to view just one statement at a time. Then you will see the navigation bar displayed below.
+
+![image-20211105092246054](_assets/image-20211105092246054.png)
+
+You can use the arrow and numbered button to skip through statements. If you want to skip to a particular statement the easiest way is to use the [find statements](xfind-statements-links) filter. This will automatically be applied if you are viewing statements one at a time, so simply click on the filter and edit the number it is searching for.
+
+(Even when you are viewing one statement, it is still possible to apply filters for example if the map associated with this one statement is quite large.)
+

@@ -6,7 +6,7 @@ This is  a shorter version of  [this post](https://www.causalmap.app/causal-mapp
 
 #### Induct
 
-Causal mapping aims to directly understand and collate the causal claims which people make in narrative (and other) data rather than trying deduce causal cohttps://player.vimeo.com/video/580212681nnections using statistics or other methods. It starts with what people actually say in real-world contexts and does not rely on heavily pre-structured question formats. Urgent, unexpected, and unwelcome information is treated at face value.
+Causal mapping aims to directly understand and collate the causal claims which people make in narrative (and other) data rather than trying deduce causal connections https://player.vimeo.com/video/580212681nnections using statistics or other methods. It starts with what people actually say in real-world contexts and does not rely on heavily pre-structured question formats. Urgent, unexpected, and unwelcome information is treated at face value.
 
 The analyst does not need to have any preconceived conceptual framework; types of causal claims are identified in the data inductively and iteratively. This is a partly creative process, however the decisions made by the analyst are transparent as the underlying text is always available.
 

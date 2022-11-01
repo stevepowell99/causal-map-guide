@@ -1,6 +1,6 @@
 # Level 2 overview{#xlevel2}
 
-In the pages in this section you will learn basic coCausal Map. 
+In the pages in this section you will learn basic coding with Causal Map. 
 
 When you've read the pages, try the [quiz](https://causalmap.shinyapps.io/quizzes/#section-xlevel12) to see if you have understood enough or need to review some things! 
 
