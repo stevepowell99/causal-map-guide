@@ -2,7 +2,7 @@
 
 This info provides important information about context which you may need to refer to during coding.
 
-During coding, the `info` toggle opens additional statement info. [^1]
+During coding, clicking on the `info` toggle opens additional statement info. [^1]
 
 [^1]: information is shown for any fields in the statements table which start with #, for example #gender.  
 
