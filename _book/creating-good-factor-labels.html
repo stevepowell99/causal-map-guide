@@ -1,227 +1,911 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="" xml:lang="">
 <head>
-<meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
-<meta charset="utf-8">
-<meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
-<title>Chapter 57 📚 Creating good factor labels | Guide to Causal Mapping</title>
-<meta name="author" content="Steve Powell">
-<meta name="author" content="Fiona Remnant">
-<meta name="author" content="James Copestake">
-<meta name="author" content="Hannah Mishan">
-<meta name="author" content="Rebekah Avard">
-<meta name="author" content="Samuel Goddard">
-<meta name="description" content="Remember that in general, factor names are case sensitive. So the app will not treat ‘funding’ and ‘Funding’ as the same. You can use emojis 😍 and other special characters in your factor labels....">
-<meta name="generator" content="bookdown 0.26 with bs4_book()">
-<meta property="og:title" content="Chapter 57 📚 Creating good factor labels | Guide to Causal Mapping">
-<meta property="og:type" content="book">
-<meta property="og:url" content="https://causalmap.app/creating-good-factor-labels.html">
-<meta property="og:image" content="https://causalmap.app/_assets/image-20210520221329966.png">
-<meta property="og:description" content="Remember that in general, factor names are case sensitive. So the app will not treat ‘funding’ and ‘Funding’ as the same. You can use emojis 😍 and other special characters in your factor labels....">
-<meta name="twitter:card" content="summary">
-<meta name="twitter:title" content="Chapter 57 📚 Creating good factor labels | Guide to Causal Mapping">
-<meta name="twitter:description" content="Remember that in general, factor names are case sensitive. So the app will not treat ‘funding’ and ‘Funding’ as the same. You can use emojis 😍 and other special characters in your factor labels....">
-<meta name="twitter:image" content="https://causalmap.app/_assets/image-20210520221329966.png">
-<!-- JS --><script src="https://cdnjs.cloudflare.com/ajax/libs/clipboard.js/2.0.6/clipboard.min.js" integrity="sha256-inc5kl9MA1hkeYUt+EC3BhlIgyp/2jDIyBLS6k3UxPI=" crossorigin="anonymous"></script><script src="https://cdnjs.cloudflare.com/ajax/libs/fuse.js/6.4.6/fuse.js" integrity="sha512-zv6Ywkjyktsohkbp9bb45V6tEMoWhzFzXis+LrMehmJZZSys19Yxf1dopHx7WzIKxr5tK2dVcYmaCk2uqdjF4A==" crossorigin="anonymous"></script><script src="https://kit.fontawesome.com/6ecbd6c532.js" crossorigin="anonymous"></script><script src="libs/jquery-3.6.0/jquery-3.6.0.min.js"></script><meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
-<link href="libs/bootstrap-4.6.0/bootstrap.min.css" rel="stylesheet">
-<script src="libs/bootstrap-4.6.0/bootstrap.bundle.min.js"></script><script src="libs/bs3compat-0.3.1/transition.js"></script><script src="libs/bs3compat-0.3.1/tabs.js"></script><script src="libs/bs3compat-0.3.1/bs3compat.js"></script><link href="libs/bs4_book-1.0.0/bs4_book.css" rel="stylesheet">
-<script src="libs/bs4_book-1.0.0/bs4_book.js"></script><script src="https://cdnjs.cloudflare.com/ajax/libs/autocomplete.js/0.38.0/autocomplete.jquery.min.js" integrity="sha512-GU9ayf+66Xx2TmpxqJpliWbT5PiGYxpaG8rfnBEk1LL8l1KGkRShhngwdXK1UgqhAzWpZHSiYPc09/NwDQIGyg==" crossorigin="anonymous"></script><script src="https://cdnjs.cloudflare.com/ajax/libs/mark.js/8.11.1/mark.min.js" integrity="sha512-5CYOlHXGh6QpOFA/TeTylKLWfB3ftPsde7AnmhuitiTX4K5SqCLBeKro6sPS8ilsz1Q4NRx3v8Ko2IBiszzdww==" crossorigin="anonymous"></script><!-- CSS --><style type="text/css">
-    
-    div.hanging-indent{margin-left: 1.5em; text-indent: -1.5em;}
-  </style>
-<link rel="stylesheet" href="style.css">
+
+  <meta charset="utf-8" />
+  <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+  <title>📚 Creating good factor labels | Guide to Causal Mapping</title>
+  <meta name="description" content="📚 Creating good factor labels | Guide to Causal Mapping" />
+  <meta name="generator" content="bookdown 0.26 and GitBook 2.6.7" />
+
+  <meta property="og:title" content="📚 Creating good factor labels | Guide to Causal Mapping" />
+  <meta property="og:type" content="book" />
+  <meta property="og:image" content="https://causalmap.app/_assets/image-20210520221329966.png" />
+  <meta property="og:description" content="📚 Creating good factor labels | Guide to Causal Mapping" />
+  
+
+  <meta name="twitter:card" content="summary" />
+  <meta name="twitter:title" content="📚 Creating good factor labels | Guide to Causal Mapping" />
+  
+  <meta name="twitter:description" content="📚 Creating good factor labels | Guide to Causal Mapping" />
+  <meta name="twitter:image" content="https://causalmap.app/_assets/image-20210520221329966.png" />
+
+<meta name="author" content="Steve Powell" />
+<meta name="author" content="Fiona Remnant" />
+<meta name="author" content="James Copestake" />
+<meta name="author" content="Hannah Mishan" />
+<meta name="author" content="Rebekah Avard" />
+<meta name="author" content="Samuel Goddard" />
+
+
+<meta name="date" content="2022-11-02" />
+
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <meta name="apple-mobile-web-app-capable" content="yes" />
+  <meta name="apple-mobile-web-app-status-bar-style" content="black" />
+  
+  
+<link rel="prev" href="xquickfields.html"/>
+<link rel="next" href="coding-opposites.html"/>
+<script src="libs/jquery-3.6.0/jquery-3.6.0.min.js"></script>
+<script src="https://cdn.jsdelivr.net/npm/fuse.js@6.4.6/dist/fuse.min.js"></script>
+<link href="libs/gitbook-2.6.7/css/style.css" rel="stylesheet" />
+<link href="libs/gitbook-2.6.7/css/plugin-table.css" rel="stylesheet" />
+<link href="libs/gitbook-2.6.7/css/plugin-bookdown.css" rel="stylesheet" />
+<link href="libs/gitbook-2.6.7/css/plugin-highlight.css" rel="stylesheet" />
+<link href="libs/gitbook-2.6.7/css/plugin-search.css" rel="stylesheet" />
+<link href="libs/gitbook-2.6.7/css/plugin-fontsettings.css" rel="stylesheet" />
+<link href="libs/gitbook-2.6.7/css/plugin-clipboard.css" rel="stylesheet" />
+
+
+
+
+
+
+
+
+<link href="libs/anchor-sections-1.1.0/anchor-sections.css" rel="stylesheet" />
+<link href="libs/anchor-sections-1.1.0/anchor-sections-hash.css" rel="stylesheet" />
+<script src="libs/anchor-sections-1.1.0/anchor-sections.js"></script>
+<link rel="shortcut icon" href="{favicon.ico}" />
+<!-- Google Tag Manager -->
+<script>(function(w,d,s,l,i){w[l]=w[l]||[];w[l].push({'gtm.start':
+new Date().getTime(),event:'gtm.js'});var f=d.getElementsByTagName(s)[0],
+j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
+'https://www.googletagmanager.com/gtm.js?id='+i+dl;f.parentNode.insertBefore(j,f);
+})(window,document,'script','dataLayer','GTM-5QDHBSC');</script>
+<!-- End Google Tag Manager -->
+
+
+<style type="text/css">
+pre > code.sourceCode { white-space: pre; position: relative; }
+pre > code.sourceCode > span { display: inline-block; line-height: 1.25; }
+pre > code.sourceCode > span:empty { height: 1.2em; }
+.sourceCode { overflow: visible; }
+code.sourceCode > span { color: inherit; text-decoration: inherit; }
+pre.sourceCode { margin: 0; }
+@media screen {
+div.sourceCode { overflow: auto; }
+}
+@media print {
+pre > code.sourceCode { white-space: pre-wrap; }
+pre > code.sourceCode > span { text-indent: -5em; padding-left: 5em; }
+}
+pre.numberSource code
+  { counter-reset: source-line 0; }
+pre.numberSource code > span
+  { position: relative; left: -4em; counter-increment: source-line; }
+pre.numberSource code > span > a:first-child::before
+  { content: counter(source-line);
+    position: relative; left: -1em; text-align: right; vertical-align: baseline;
+    border: none; display: inline-block;
+    -webkit-touch-callout: none; -webkit-user-select: none;
+    -khtml-user-select: none; -moz-user-select: none;
+    -ms-user-select: none; user-select: none;
+    padding: 0 4px; width: 4em;
+    color: #aaaaaa;
+  }
+pre.numberSource { margin-left: 3em; border-left: 1px solid #aaaaaa;  padding-left: 4px; }
+div.sourceCode
+  {   }
+@media screen {
+pre > code.sourceCode > span > a:first-child::before { text-decoration: underline; }
+}
+code span.al { color: #ff0000; font-weight: bold; } /* Alert */
+code span.an { color: #60a0b0; font-weight: bold; font-style: italic; } /* Annotation */
+code span.at { color: #7d9029; } /* Attribute */
+code span.bn { color: #40a070; } /* BaseN */
+code span.bu { } /* BuiltIn */
+code span.cf { color: #007020; font-weight: bold; } /* ControlFlow */
+code span.ch { color: #4070a0; } /* Char */
+code span.cn { color: #880000; } /* Constant */
+code span.co { color: #60a0b0; font-style: italic; } /* Comment */
+code span.cv { color: #60a0b0; font-weight: bold; font-style: italic; } /* CommentVar */
+code span.do { color: #ba2121; font-style: italic; } /* Documentation */
+code span.dt { color: #902000; } /* DataType */
+code span.dv { color: #40a070; } /* DecVal */
+code span.er { color: #ff0000; font-weight: bold; } /* Error */
+code span.ex { } /* Extension */
+code span.fl { color: #40a070; } /* Float */
+code span.fu { color: #06287e; } /* Function */
+code span.im { } /* Import */
+code span.in { color: #60a0b0; font-weight: bold; font-style: italic; } /* Information */
+code span.kw { color: #007020; font-weight: bold; } /* Keyword */
+code span.op { color: #666666; } /* Operator */
+code span.ot { color: #007020; } /* Other */
+code span.pp { color: #bc7a00; } /* Preprocessor */
+code span.sc { color: #4070a0; } /* SpecialChar */
+code span.ss { color: #bb6688; } /* SpecialString */
+code span.st { color: #4070a0; } /* String */
+code span.va { color: #19177c; } /* Variable */
+code span.vs { color: #4070a0; } /* VerbatimString */
+code span.wa { color: #60a0b0; font-weight: bold; font-style: italic; } /* Warning */
+</style>
+
+
+<link rel="stylesheet" href="style.css" type="text/css" />
 </head>
-<body data-spy="scroll" data-target="#toc">
 
-<div class="container-fluid">
-<div class="row">
-  <header class="col-sm-12 col-lg-3 sidebar sidebar-book"><a class="sr-only sr-only-focusable" href="#content">Skip to main content</a>
+<body>
 
-    <div class="d-flex align-items-start justify-content-between">
-      <h1>
-        <a href="index.html" title="">Guide to Causal Mapping</a>
-      </h1>
-      <button class="btn btn-outline-primary d-lg-none ml-2 mt-1" type="button" data-toggle="collapse" data-target="#main-nav" aria-expanded="true" aria-controls="main-nav"><i class="fas fa-bars"></i><span class="sr-only">Show table of contents</span></button>
-    </div>
 
-    <div id="main-nav" class="collapse-lg">
-      <form role="search">
-        <input id="search" class="form-control" type="search" placeholder="Search" aria-label="Search">
-</form>
 
-      <nav aria-label="Table of contents"><h2>Table of contents</h2>
-        <ul class="book-toc list-unstyled">
-<li><a class="" href="index.html"><span class="header-section-number">1</span> Overview</a></li>
-<li class="book-part">1: Getting Started</li>
-<li><a class="" href="xlevel1.html"><span class="header-section-number">2</span> Level 1 overview</a></li>
-<li><a class="" href="xcausal-maps.html"><span class="header-section-number">3</span> 📚 What is a causal map?</a></li>
-<li><a class="" href="xcausal-mapping.html"><span class="header-section-number">4</span> 📚 What is causal mapping?</a></li>
-<li><a class="" href="are-causal-map-and-causal-mapping-for-you.html"><span class="header-section-number">5</span> 📚 Are Causal Map and causal mapping for you?</a></li>
-<li><a class="" href="prerequisites-for-using-the-app.html"><span class="header-section-number">6</span> Prerequisites for using the app</a></li>
-<li><a class="" href="accounts.html"><span class="header-section-number">7</span> Accounts</a></li>
-<li><a class="" href="getting-help.html"><span class="header-section-number">8</span> Getting help</a></li>
-<li><a class="" href="xinvite.html"><span class="header-section-number">9</span> Has someone shared a file with you?</a></li>
-<li><a class="" href="you-want-to-code-your-own-data.html"><span class="header-section-number">10</span> You want to code your own data?</a></li>
-<li><a class="" href="x5.html"><span class="header-section-number">11</span> Your first 5 minutes with Causal Map</a></li>
-<li><a class="" href="xinteractive-view.html"><span class="header-section-number">12</span> Interactive View</a></li>
-<li><a class="" href="print-view.html"><span class="header-section-number">13</span> Print view</a></li>
-<li><a class="" href="xall-tables.html"><span class="header-section-number">14</span> 🧪Tables</a></li>
-<li><a class="" href="level-1-quiz.html"><span class="header-section-number">15</span> Level 1 quiz</a></li>
-<li class="book-part">2: Basic Coding</li>
-<li><a class="" href="xlevel2.html"><span class="header-section-number">16</span> Level 2 overview</a></li>
-<li><a class="" href="making-your-own-copy-of-a-file.html"><span class="header-section-number">17</span> Making your own copy of a file</a></li>
-<li><a class="" href="creating-a-new-file.html"><span class="header-section-number">18</span> Creating a new file</a></li>
-<li><a class="" href="uploadandupdate.html"><span class="header-section-number">19</span> How to upload and update your data – Overview</a></li>
-<li><a class="" href="xcoding.html"><span class="header-section-number">20</span> Preparing to code</a></li>
-<li><a class="" href="xinfo-pan.html"><span class="header-section-number">21</span> The info panel</a></li>
-<li><a class="" href="xcoding-panel.html"><span class="header-section-number">22</span> The Coding Panel: creating factors and links</a></li>
-<li><a class="" href="level-2-quiz.html"><span class="header-section-number">23</span> Level 2 quiz</a></li>
-<li class="book-part">3: Basic analysis</li>
-<li><a class="" href="xlevel3.html"><span class="header-section-number">24</span> Level 3 overview</a></li>
-<li><a class="" href="xabout-analysis.html"><span class="header-section-number">25</span> Analysing a file</a></li>
-<li><a class="" href="xdashboard.html"><span class="header-section-number">26</span> The Dashboard</a></li>
-<li><a class="" href="xtables-basic.html"><span class="header-section-number">27</span> 🧪Tables</a></li>
-<li><a class="" href="xthe-factors-table.html"><span class="header-section-number">28</span> 🧪The Factors table</a></li>
-<li><a class="" href="xthe-mentions-table.html"><span class="header-section-number">29</span> 🧪The Mentions Table</a></li>
-<li><a class="" href="xthe-links-table.html"><span class="header-section-number">30</span> 🧪The Links Table</a></li>
-<li><a class="" href="xthe-statements-table.html"><span class="header-section-number">31</span> 🧪The Statements Table</a></li>
-<li><a class="" href="the-sources-table.html"><span class="header-section-number">32</span> 🧪The Sources Table</a></li>
-<li><a class="" href="xthe-questions-table.html"><span class="header-section-number">33</span> 🧪The Questions Table</a></li>
-<li><a class="" href="the-closed-question-blocks-table.html"><span class="header-section-number">34</span> 🧪The Closed Question Blocks Table</a></li>
-<li><a class="" href="xmetrics.html"><span class="header-section-number">35</span> 🧪The Metrics Table</a></li>
-<li><a class="" href="level-3-quiz.html"><span class="header-section-number">36</span> Level 3 quiz</a></li>
-<li class="book-part">📚4: Advanced coding</li>
-<li><a class="" href="xlevel4.html"><span class="header-section-number">37</span> Level 4 overview</a></li>
-<li><a class="" href="collaborating-at-causal-map.html"><span class="header-section-number">38</span> Collaborating at Causal Map</a></li>
-<li><a class="" href="xtop-menu-advanced.html"><span class="header-section-number">39</span> The top menu</a></li>
-<li><a class="" href="ximport.html"><span class="header-section-number">40</span> Uploading your data</a></li>
-<li><a class="" href="import-additional-data.html"><span class="header-section-number">41</span> Uploading additional data</a></li>
-<li><a class="" href="xroundtripping.html"><span class="header-section-number">42</span> Appending and fixing data (“roundtripping”)</a></li>
-<li><a class="" href="ximport-other.html"><span class="header-section-number">43</span> Importing your data: special cases</a></li>
-<li><a class="" href="xfactor-editor.html"><span class="header-section-number">44</span> The Factor Editor</a></li>
-<li><a class="" href="more-coding.html"><span class="header-section-number">45</span> More coding</a></li>
-<li><a class="" href="xmerging-files.html"><span class="header-section-number">46</span> Merging files</a></li>
-<li><a class="" href="strength-adding-additional-information-like-strength-of-a-link-in-a-causal-map.html"><span class="header-section-number">47</span> 📚 Strength: Adding additional information like strength of a link in a causal map</a></li>
-<li><a class="" href="xedit-factor-and-links.html"><span class="header-section-number">48</span> Editing factors and links</a></li>
-<li><a class="" href="xplain_coding.html"><span class="header-section-number">49</span> 📚 Plain coding</a></li>
-<li><a class="" href="xsimplifying-with-hierarchical.html"><span class="header-section-number">50</span> 📚 Simplifying causal maps with hierarchical coding</a></li>
-<li><a class="" href="tricky-coding-challenges.html"><span class="header-section-number">51</span> 📚 Tricky coding challenges</a></li>
-<li><a class="" href="xhierarchical-coding.html"><span class="header-section-number">52</span> 💻 Hierarchical factors in Causal Map</a></li>
-<li><a class="" href="xgamification.html"><span class="header-section-number">53</span> Document coding score!</a></li>
-<li><a class="" href="xdata-manager.html"><span class="header-section-number">54</span> Data manager</a></li>
-<li><a class="" href="xcodebook.html"><span class="header-section-number">55</span> Importing a codebook of factors</a></li>
-<li><a class="" href="xquickfields.html"><span class="header-section-number">56</span> Quickfields</a></li>
-<li><a class="active" href="creating-good-factor-labels.html"><span class="header-section-number">57</span> 📚 Creating good factor labels</a></li>
-<li><a class="" href="coding-opposites.html"><span class="header-section-number">58</span> 📚 Coding opposites</a></li>
-<li><a class="" href="level.html"><span class="header-section-number">59</span> Level</a></li>
-<li class="book-part">5: Advanced analysis</li>
-<li><a class="" href="xlevel5.html"><span class="header-section-number">60</span> Level 5 overview</a></li>
-<li><a class="" href="xdashboard-a.html"><span class="header-section-number">61</span> Dashboard (advanced)</a></li>
-<li><a class="" href="xtables-advanced.html"><span class="header-section-number">62</span> 🧪Tables - advanced</a></li>
-<li><a class="" href="filters-overview.html"><span class="header-section-number">63</span> Filters – overview</a></li>
-<li><a class="" href="xtracing-paths.html"><span class="header-section-number">64</span> 📚 Tracing paths</a></li>
-<li><a class="" href="xcontinuity.html"><span class="header-section-number">65</span> Continuity and tracing threads</a></li>
-<li><a class="" href="xconditional-formats.html"><span class="header-section-number">66</span> Conditional formats</a></li>
-<li><a class="" href="xsimple-formats.html"><span class="header-section-number">67</span> Simple formats</a></li>
-<li><a class="" href="what-is-the-logic-behind-the-causal-map-filters.html"><span class="header-section-number">68</span> What is the logic behind the Causal Map filters?</a></li>
-<li><a class="" href="xanalysis.html"><span class="header-section-number">69</span> Analysing causal maps</a></li>
-<li><a class="" href="smart-zoom.html"><span class="header-section-number">70</span> Smart zooming</a></li>
-<li><a class="" href="xquickfields-analysis.html"><span class="header-section-number">71</span> Quickfields: analysis</a></li>
-<li><a class="" href="comparing.html"><span class="header-section-number">72</span> 📚 Analysis: comparing maps between particular groups</a></li>
-<li><a class="" href="cluster-sources.html"><span class="header-section-number">73</span> 📚 Clustering sources</a></li>
-<li><a class="" href="recalculate.html"><span class="header-section-number">74</span> Recalculate fields</a></li>
-<li><a class="" href="xinterpret.html"><span class="header-section-number">75</span> Interpreting your results</a></li>
-<li><a class="" href="top-tips.html"><span class="header-section-number">76</span> Top tips on coding</a></li>
-<li><a class="" href="level-5-quiz.html"><span class="header-section-number">77</span> Level 5 quiz</a></li>
-<li class="book-part">The rest of the app</li>
-<li><a class="" href="xupdates-tab.html"><span class="header-section-number">78</span> The Updates tab</a></li>
-<li><a class="" href="xfile-manager.html"><span class="header-section-number">79</span> The File Manager</a></li>
-<li><a class="" href="xmanage_your_subscription.html"><span class="header-section-number">80</span> Managing your subscription</a></li>
-<li class="book-part">📚Spotlights</li>
-<li><a class="" href="xlevel6.html"><span class="header-section-number">81</span> Spotlight</a></li>
-<li><a class="" href="causal-mapping-definitions.html"><span class="header-section-number">82</span> 📚 Causal Mapping: Definitions</a></li>
-<li><a class="" href="mapping.html"><span class="header-section-number">83</span> 📚 Causal mapping for evaluators</a></li>
-<li><a class="" href="causal-mapping-and-outcome-harvesting.html"><span class="header-section-number">84</span> 📚 Causal Mapping and Outcome Harvesting</a></li>
-<li><a class="" href="context-in-causal-mapping-how-to-code-it.html"><span class="header-section-number">85</span> 📚 Context in causal mapping: how to code it</a></li>
-<li><a class="" href="xtransitivity-trap.html"><span class="header-section-number">86</span> 📚 Beware the transitivity trap</a></li>
-<li><a class="" href="caveat-numbers.html"><span class="header-section-number">87</span> 📚 Cases, variables and percentages in causal mapping?</a></li>
-<li><a class="" href="different-kinds-of-question-chaining-with-quip-and-parevo-as-illustrations.html"><span class="header-section-number">88</span> 📚 Different kinds of question chaining, with QuIP and ParEvo as illustrations</a></li>
-<li><a class="" href="how-to-get-to-the-shadow-side-a-problem-with-back-chaining.html"><span class="header-section-number">89</span> 📚 How to get to the shadow side: a problem with back-chaining</a></li>
-<li><a class="" href="the-last-minute-principle.html"><span class="header-section-number">90</span> 📚 The last minute principle</a></li>
-<li><a class="" href="causal-maps-systems-maps-whats-the-difference-does-it-matter.html"><span class="header-section-number">91</span> 📚 Causal maps, systems maps, what’s the difference? Does it matter?</a></li>
-<li><a class="" href="coding-time-in-causal-mapping.html"><span class="header-section-number">92</span> 📚 Coding time in causal mapping</a></li>
-<li><a class="" href="more-about-coding-opposites.html"><span class="header-section-number">93</span> More about coding opposites</a></li>
-<li><a class="" href="puzzles-in-causal-mapping.html"><span class="header-section-number">94</span> 📚 Puzzles in causal mapping</a></li>
-<li><a class="" href="is-one-direction-enough.html"><span class="header-section-number">95</span> 📚 Is one direction enough?</a></li>
-<li><a class="" href="xshowcases.html"><span class="header-section-number">96</span> Showcase: how the Causal Map app has been used</a></li>
-<li class="book-part">Technical reference</li>
-<li><a class="" href="xlevel7.html"><span class="header-section-number">97</span> Technical reference</a></li>
-<li><a class="" href="xvideo-list.html"><span class="header-section-number">98</span> Video list</a></li>
-<li><a class="" href="xconventions.html"><span class="header-section-number">99</span> Conventions</a></li>
-<li><a class="" href="screenshotting-your-maps.html"><span class="header-section-number">100</span> Screenshotting your maps</a></li>
-<li><a class="" href="FAQs.html"><span class="header-section-number">101</span> FAQs: Causal Map questions and troubleshooting</a></li>
-<li><a class="" href="glossary.html"><span class="header-section-number">102</span> 📚 Glossary</a></li>
-<li><a class="" href="filter-reference.html"><span class="header-section-number">103</span> Filter reference</a></li>
-<li><a class="" href="how-causal-map-is-hosted.html"><span class="header-section-number">104</span> How Causal Map is hosted</a></li>
-<li><a class="" href="xreports.html"><span class="header-section-number">105</span> Reports tab</a></li>
-<li><a class="" href="core-tables.html"><span class="header-section-number">106</span> Core tables in Causal Map</a></li>
-<li><a class="" href="medals.html"><span class="header-section-number">107</span> Medals</a></li>
-<li><a class="" href="advanced-editor.html"><span class="header-section-number">108</span> Using the Advanced Editor to create and edit filters</a></li>
-<li><a class="" href="xkeyboard.html"><span class="header-section-number">109</span> Keyboard shortcuts</a></li>
-<li><a class="" href="causal-map-functions.html"><span class="header-section-number">110</span> Causal Map functions</a></li>
-<li><a class="" href="xexcel.html"><span class="header-section-number">111</span> Causal mapping with Excel</a></li>
-<li><a class="" href="using-storysurvey-admin-interface.html"><span class="header-section-number">112</span> Using StorySurvey: admin interface</a></li>
-<li><a class="" href="x.html"><span class="header-section-number">113</span> Features of Causal Map</a></li>
-<li><a class="" href="changelog.html"><span class="header-section-number">114</span> Recent changes</a></li>
-<li class="book-part">📚Final section</li>
-<li><a class="" href="acknowledgements.html"><span class="header-section-number">115</span> Acknowledgements</a></li>
-<li><a class="" href="appendix-publications-and-links.html"><span class="header-section-number">116</span> Appendix: Publications and links</a></li>
-<li><a class="" href="references.html">References</a></li>
+  <div class="book without-animation with-summary font-size-2 font-family-1" data-basepath=".">
+
+    <div class="book-summary">
+      <nav role="navigation">
+
+<ul class="summary">
+<li><a href="./">Guide to Causal Mapping</a></li>
+
+<li class="divider"></li>
+<li class="chapter" data-level="" data-path="index.html"><a href="index.html"><i class="fa fa-check"></i>Overview</a>
+<ul>
+<li class="chapter" data-level="" data-path="index.html"><a href="index.html#what-is-causal-map"><i class="fa fa-check"></i>What is Causal Map?</a></li>
+<li class="chapter" data-level="" data-path="index.html"><a href="index.html#videos"><i class="fa fa-check"></i>Videos</a></li>
+<li class="chapter" data-level="" data-path="index.html"><a href="index.html#support-chat"><i class="fa fa-check"></i>Support chat</a></li>
+<li class="chapter" data-level="" data-path="index.html"><a href="index.html#quizzes"><i class="fa fa-check"></i>Quizzes</a></li>
+<li class="chapter" data-level="" data-path="index.html"><a href="index.html#selected-projects-to-date"><i class="fa fa-check"></i>Selected projects to date</a></li>
+<li class="chapter" data-level="" data-path="index.html"><a href="index.html#license"><i class="fa fa-check"></i>License</a></li>
+</ul></li>
+<li class="part"><span><b>I 1: Getting Started</b></span></li>
+<li class="chapter" data-level="" data-path="xlevel1.html"><a href="xlevel1.html"><i class="fa fa-check"></i>Level 1 overview</a></li>
+<li class="chapter" data-level="" data-path="xcausal-maps.html"><a href="xcausal-maps.html"><i class="fa fa-check"></i>📚 What is a causal map?</a></li>
+<li class="chapter" data-level="" data-path="xcausal-mapping.html"><a href="xcausal-mapping.html"><i class="fa fa-check"></i>📚 What is causal mapping?</a>
+<ul>
+<li class="chapter" data-level="" data-path="xcausal-mapping.html"><a href="xcausal-mapping.html#causation---no-longer-a-taboo"><i class="fa fa-check"></i>Causation - no longer a taboo</a></li>
+</ul></li>
+<li class="chapter" data-level="" data-path="are-causal-map-and-causal-mapping-for-you.html"><a href="are-causal-map-and-causal-mapping-for-you.html"><i class="fa fa-check"></i>📚 Are Causal Map and causal mapping for you?</a></li>
+<li class="chapter" data-level="" data-path="prerequisites-for-using-the-app.html"><a href="prerequisites-for-using-the-app.html"><i class="fa fa-check"></i>Prerequisites for using the app</a>
+<ul>
+<li class="chapter" data-level="" data-path="prerequisites-for-using-the-app.html"><a href="prerequisites-for-using-the-app.html#signing-up"><i class="fa fa-check"></i>Signing up</a></li>
+</ul></li>
+<li class="chapter" data-level="" data-path="accounts.html"><a href="accounts.html"><i class="fa fa-check"></i>Accounts</a></li>
+<li class="chapter" data-level="" data-path="getting-help.html"><a href="getting-help.html"><i class="fa fa-check"></i>Getting help</a>
+<ul>
+<li class="chapter" data-level="" data-path="getting-help.html"><a href="getting-help.html#tooltips"><i class="fa fa-check"></i>Tooltips</a></li>
+<li class="chapter" data-level="" data-path="getting-help.html"><a href="getting-help.html#blue-info-buttons"><i class="fa fa-check"></i>Blue info buttons</a></li>
+<li class="chapter" data-level="" data-path="getting-help.html"><a href="getting-help.html#help-button"><i class="fa fa-check"></i>Help button</a></li>
+<li class="chapter" data-level="" data-path="getting-help.html"><a href="getting-help.html#support-chat-1"><i class="fa fa-check"></i>Support chat</a></li>
+</ul></li>
+<li class="chapter" data-level="" data-path="xinvite.html"><a href="xinvite.html"><i class="fa fa-check"></i>Has someone shared a file with you?</a></li>
+<li class="chapter" data-level="" data-path="you-want-to-code-your-own-data.html"><a href="you-want-to-code-your-own-data.html"><i class="fa fa-check"></i>You want to code your own data?</a></li>
+<li class="chapter" data-level="" data-path="x5.html"><a href="x5.html"><i class="fa fa-check"></i>Your first 5 minutes with Causal Map</a>
+<ul>
+<li class="chapter" data-level="" data-path="x5.html"><a href="x5.html#quick-tour"><i class="fa fa-check"></i>Quick tour of the app</a></li>
+<li class="chapter" data-level="" data-path="x5.html"><a href="x5.html#coding-a-file"><i class="fa fa-check"></i>Coding a file</a>
+<ul>
+<li class="chapter" data-level="" data-path="x5.html"><a href="x5.html#xstatement-view"><i class="fa fa-check"></i>Multiple statement selector</a></li>
+</ul></li>
+<li class="chapter" data-level="" data-path="x5.html"><a href="x5.html#viewing-and-analysing-a-file"><i class="fa fa-check"></i>Viewing and analysing a file</a>
+<ul>
+<li class="chapter" data-level="" data-path="x5.html"><a href="x5.html#xdashboard0"><i class="fa fa-check"></i>The Dashboard</a></li>
+<li class="chapter" data-level="" data-path="x5.html"><a href="x5.html#the-other-tabs"><i class="fa fa-check"></i>The other tabs</a></li>
+</ul></li>
+</ul></li>
+<li class="chapter" data-level="" data-path="xinteractive-view.html"><a href="xinteractive-view.html"><i class="fa fa-check"></i>Interactive View</a></li>
+<li class="chapter" data-level="" data-path="print-view.html"><a href="print-view.html"><i class="fa fa-check"></i>Print view</a>
+<ul>
+<li class="chapter" data-level="" data-path="print-view.html"><a href="print-view.html#copy-svg"><i class="fa fa-check"></i>Copying your map as a vector image</a></li>
+</ul></li>
+<li class="chapter" data-level="" data-path="xall-tables.html"><a href="xall-tables.html"><i class="fa fa-check"></i>🧪Tables</a>
+<ul>
+<li class="chapter" data-level="" data-path="xall-tables.html"><a href="xall-tables.html#preset-tables"><i class="fa fa-check"></i>Presets</a></li>
+</ul></li>
+<li class="chapter" data-level="" data-path="level-1-quiz.html"><a href="level-1-quiz.html"><i class="fa fa-check"></i>Level 1 quiz</a></li>
+<li class="part"><span><b>II 2: Basic Coding</b></span></li>
+<li class="chapter" data-level="" data-path="xlevel2.html"><a href="xlevel2.html"><i class="fa fa-check"></i>Level 2 overview</a></li>
+<li class="chapter" data-level="" data-path="making-your-own-copy-of-a-file.html"><a href="making-your-own-copy-of-a-file.html"><i class="fa fa-check"></i>Making your own copy of a file</a></li>
+<li class="chapter" data-level="" data-path="creating-a-new-file.html"><a href="creating-a-new-file.html"><i class="fa fa-check"></i>Creating a new file</a></li>
+<li class="chapter" data-level="" data-path="uploadandupdate.html"><a href="uploadandupdate.html"><i class="fa fa-check"></i>How to upload and update your data – Overview</a>
+<ul>
+<li class="chapter" data-level="" data-path="uploadandupdate.html"><a href="uploadandupdate.html#how-to"><i class="fa fa-check"></i>How to…</a></li>
+</ul></li>
+<li class="chapter" data-level="" data-path="xcoding.html"><a href="xcoding.html"><i class="fa fa-check"></i>Preparing to code</a></li>
+<li class="chapter" data-level="" data-path="xinfo-pan.html"><a href="xinfo-pan.html"><i class="fa fa-check"></i>The info panel</a>
+<ul>
+<li class="chapter" data-level="" data-path="xinfo-pan.html"><a href="xinfo-pan.html#the-memos-panel"><i class="fa fa-check"></i>The memos panel</a></li>
+</ul></li>
+<li class="chapter" data-level="" data-path="xcoding-panel.html"><a href="xcoding-panel.html"><i class="fa fa-check"></i>The Coding Panel: creating factors and links</a>
+<ul>
+<li class="chapter" data-level="" data-path="xcoding-panel.html"><a href="xcoding-panel.html#creating-links-in-the-app"><i class="fa fa-check"></i>Creating links in the app</a>
+<ul>
+<li class="chapter" data-level="" data-path="xcoding-panel.html"><a href="xcoding-panel.html#about-the-factor-label-dropdown-menus"><i class="fa fa-check"></i>About the factor label dropdown menus</a></li>
+</ul></li>
+</ul></li>
+<li class="chapter" data-level="" data-path="level-2-quiz.html"><a href="level-2-quiz.html"><i class="fa fa-check"></i>Level 2 quiz</a></li>
+<li class="part"><span><b>III 3: Basic analysis</b></span></li>
+<li class="chapter" data-level="" data-path="xlevel3.html"><a href="xlevel3.html"><i class="fa fa-check"></i>Level 3 overview</a></li>
+<li class="chapter" data-level="" data-path="xabout-analysis.html"><a href="xabout-analysis.html"><i class="fa fa-check"></i>Analysing a file</a>
+<ul>
+<li class="chapter" data-level="" data-path="xabout-analysis.html"><a href="xabout-analysis.html#background-information-about-filters"><i class="fa fa-check"></i>Background information about filters</a></li>
+</ul></li>
+<li class="chapter" data-level="" data-path="xdashboard.html"><a href="xdashboard.html"><i class="fa fa-check"></i>The Dashboard</a></li>
+<li class="chapter" data-level="" data-path="xtables-basic.html"><a href="xtables-basic.html"><i class="fa fa-check"></i>🧪Tables</a>
+<ul>
+<li class="chapter" data-level="" data-path="xtables-basic.html"><a href="xtables-basic.html#tables_common"><i class="fa fa-check"></i>Features common to all the tables</a>
+<ul>
+<li class="chapter" data-level="" data-path="xtables-basic.html"><a href="xtables-basic.html#main-controls"><i class="fa fa-check"></i>Main controls</a></li>
+<li class="chapter" data-level="" data-path="xtables-basic.html"><a href="xtables-basic.html#search"><i class="fa fa-check"></i>Search</a></li>
+<li class="chapter" data-level="" data-path="xtables-basic.html"><a href="xtables-basic.html#sorting"><i class="fa fa-check"></i>Sorting</a></li>
+</ul></li>
+</ul></li>
+<li class="chapter" data-level="" data-path="xthe-factors-table.html"><a href="xthe-factors-table.html"><i class="fa fa-check"></i>🧪The Factors table</a>
+<ul>
+<li class="chapter" data-level="" data-path="xthe-factors-table.html"><a href="xthe-factors-table.html#xfactormemos"><i class="fa fa-check"></i>Factor memos</a></li>
+</ul></li>
+<li class="chapter" data-level="" data-path="xthe-mentions-table.html"><a href="xthe-mentions-table.html"><i class="fa fa-check"></i>🧪The Mentions Table</a></li>
+<li class="chapter" data-level="" data-path="xthe-links-table.html"><a href="xthe-links-table.html"><i class="fa fa-check"></i>🧪The Links Table</a>
+<ul>
+<li class="chapter" data-level="" data-path="xthe-links-table.html"><a href="xthe-links-table.html#fields"><i class="fa fa-check"></i>Fields</a></li>
+</ul></li>
+<li class="chapter" data-level="" data-path="xthe-statements-table.html"><a href="xthe-statements-table.html"><i class="fa fa-check"></i>🧪The Statements Table</a>
+<ul>
+<li class="chapter" data-level="" data-path="xthe-statements-table.html"><a href="xthe-statements-table.html#fields-1"><i class="fa fa-check"></i>Fields</a></li>
+</ul></li>
+<li class="chapter" data-level="" data-path="the-sources-table.html"><a href="the-sources-table.html"><i class="fa fa-check"></i>🧪The Sources Table</a>
+<ul>
+<li class="chapter" data-level="" data-path="the-sources-table.html"><a href="the-sources-table.html#fields-2"><i class="fa fa-check"></i>Fields</a></li>
+</ul></li>
+<li class="chapter" data-level="" data-path="xthe-questions-table.html"><a href="xthe-questions-table.html"><i class="fa fa-check"></i>🧪The Questions Table</a></li>
+<li class="chapter" data-level="" data-path="the-closed-question-blocks-table.html"><a href="the-closed-question-blocks-table.html"><i class="fa fa-check"></i>🧪The Closed Question Blocks Table</a></li>
+<li class="chapter" data-level="" data-path="xmetrics.html"><a href="xmetrics.html"><i class="fa fa-check"></i>🧪The Metrics Table</a>
+<ul>
+<li class="chapter" data-level="" data-path="xmetrics.html"><a href="xmetrics.html#summary"><i class="fa fa-check"></i>Summary</a></li>
+<li class="chapter" data-level="" data-path="xmetrics.html"><a href="xmetrics.html#what-the-metrics-mean"><i class="fa fa-check"></i>What the metrics mean</a></li>
+</ul></li>
+<li class="chapter" data-level="" data-path="level-3-quiz.html"><a href="level-3-quiz.html"><i class="fa fa-check"></i>Level 3 quiz</a></li>
+<li class="part"><span><b>IV 📚4: Advanced coding</b></span></li>
+<li class="chapter" data-level="" data-path="xlevel4.html"><a href="xlevel4.html"><i class="fa fa-check"></i>Level 4 overview</a></li>
+<li class="chapter" data-level="" data-path="collaborating-at-causal-map.html"><a href="collaborating-at-causal-map.html"><i class="fa fa-check"></i>Collaborating at Causal Map</a>
+<ul>
+<li class="chapter" data-level="" data-path="collaborating-at-causal-map.html"><a href="collaborating-at-causal-map.html#xcollaboration"><i class="fa fa-check"></i>Overview</a>
+<ul>
+<li class="chapter" data-level="" data-path="collaborating-at-causal-map.html"><a href="collaborating-at-causal-map.html#details"><i class="fa fa-check"></i>Details</a></li>
+</ul></li>
+<li class="chapter" data-level="" data-path="collaborating-at-causal-map.html"><a href="collaborating-at-causal-map.html#teams"><i class="fa fa-check"></i>Teams</a></li>
+</ul></li>
+<li class="chapter" data-level="" data-path="xtop-menu-advanced.html"><a href="xtop-menu-advanced.html"><i class="fa fa-check"></i>The top menu</a>
+<ul>
+<li class="chapter" data-level="" data-path="xtop-menu-advanced.html"><a href="xtop-menu-advanced.html#xpermissions"><i class="fa fa-check"></i>Current File Manager</a>
+<ul>
+<li class="chapter" data-level="" data-path="xtop-menu-advanced.html"><a href="xtop-menu-advanced.html#sharing-and-locking-files"><i class="fa fa-check"></i>Sharing and locking files</a></li>
+<li class="chapter" data-level="" data-path="xtop-menu-advanced.html"><a href="xtop-menu-advanced.html#file-memo"><i class="fa fa-check"></i>File memo</a></li>
+</ul></li>
+<li class="chapter" data-level="" data-path="xtop-menu-advanced.html"><a href="xtop-menu-advanced.html#xown-copy"><i class="fa fa-check"></i>⚡ Making your own copy of a file</a></li>
+<li class="chapter" data-level="" data-path="xtop-menu-advanced.html"><a href="xtop-menu-advanced.html#xversions"><i class="fa fa-check"></i>Restoring a previous version of your file</a></li>
+<li class="chapter" data-level="" data-path="xtop-menu-advanced.html"><a href="xtop-menu-advanced.html#uploading-your-data"><i class="fa fa-check"></i>Uploading your data</a></li>
+<li class="chapter" data-level="" data-path="xtop-menu-advanced.html"><a href="xtop-menu-advanced.html#chat-about-this-file"><i class="fa fa-check"></i>Chat about this file</a></li>
+</ul></li>
+<li class="chapter" data-level="" data-path="ximport.html"><a href="ximport.html"><i class="fa fa-check"></i>Uploading your data</a>
+<ul>
+<li class="chapter" data-level="" data-path="ximport.html"><a href="ximport.html#upload-summary"><i class="fa fa-check"></i>Importing a simple, wide-format file</a>
+<ul>
+<li class="chapter" data-level="" data-path="ximport.html"><a href="ximport.html#adding-additional-cases-with-wide-format-files"><i class="fa fa-check"></i>Adding additional cases with wide-format files</a></li>
+</ul></li>
+<li class="chapter" data-level="" data-path="ximport.html"><a href="ximport.html#standard-format"><i class="fa fa-check"></i>Standard format</a>
+<ul>
+<li class="chapter" data-level="" data-path="ximport.html"><a href="ximport.html#formattingyourfile"><i class="fa fa-check"></i>Formatting a Standard Format file: The basics</a></li>
+<li class="chapter" data-level="" data-path="ximport.html"><a href="ximport.html#starting-from-a-word-document"><i class="fa fa-check"></i>Starting from a Word document</a></li>
+<li class="chapter" data-level="" data-path="ximport.html"><a href="ximport.html#uploading-from-pdfs"><i class="fa fa-check"></i>Uploading from PDFs</a></li>
+<li class="chapter" data-level="" data-path="ximport.html"><a href="ximport.html#making-a-basic-statements-table-by-hand"><i class="fa fa-check"></i>Making a basic statements table by hand</a></li>
+</ul></li>
+</ul></li>
+<li class="chapter" data-level="" data-path="import-additional-data.html"><a href="import-additional-data.html"><i class="fa fa-check"></i>Uploading additional data</a>
+<ul>
+<li class="chapter" data-level="" data-path="import-additional-data.html"><a href="import-additional-data.html#providing-additional-data-as-additional-fields-in-the-statements-table."><i class="fa fa-check"></i>Providing additional data as additional fields in the statements table.</a></li>
+<li class="chapter" data-level="" data-path="import-additional-data.html"><a href="import-additional-data.html#uploading-using-separate-source-and-question-tables"><i class="fa fa-check"></i>Uploading using separate source and question tables</a></li>
+</ul></li>
+<li class="chapter" data-level="" data-path="xroundtripping.html"><a href="xroundtripping.html"><i class="fa fa-check"></i>Appending and fixing data (“roundtripping”)</a>
+<ul>
+<li class="chapter" data-level="" data-path="xroundtripping.html"><a href="xroundtripping.html#import-general-principles"><i class="fa fa-check"></i>General principles</a></li>
+<li class="chapter" data-level="" data-path="xroundtripping.html"><a href="xroundtripping.html#downloading-a-file"><i class="fa fa-check"></i>Downloading a file</a></li>
+<li class="chapter" data-level="" data-path="xroundtripping.html"><a href="xroundtripping.html#uses-for-roundtripping"><i class="fa fa-check"></i>Uses for roundtripping</a></li>
+<li class="chapter" data-level="" data-path="xroundtripping.html"><a href="xroundtripping.html#what-if-you-have-merged-cells-in-your-excel-file"><i class="fa fa-check"></i>What if you have merged cells in your Excel file?</a></li>
+</ul></li>
+<li class="chapter" data-level="" data-path="ximport-other.html"><a href="ximport-other.html"><i class="fa fa-check"></i>Importing your data: special cases</a>
+<ul>
+<li class="chapter" data-level="" data-path="ximport-other.html"><a href="ximport-other.html#importing-from-other-software"><i class="fa fa-check"></i>Importing from other software</a>
+<ul>
+<li class="chapter" data-level="" data-path="ximport-other.html"><a href="ximport-other.html#exporting-for-import-into-kumu.io"><i class="fa fa-check"></i>Exporting for import into kumu.io</a></li>
+<li class="chapter" data-level="" data-path="ximport-other.html"><a href="ximport-other.html#exporting-for-import-into-nodexl"><i class="fa fa-check"></i>Exporting for import into NodeXL</a></li>
+</ul></li>
+<li class="chapter" data-level="" data-path="ximport-other.html"><a href="ximport-other.html#importing-existing-causal-coding"><i class="fa fa-check"></i>Importing existing causal coding</a></li>
+<li class="chapter" data-level="" data-path="ximport-other.html"><a href="ximport-other.html#uploading-closed-question-blocks"><i class="fa fa-check"></i>Uploading closed question blocks</a>
+<ul>
+<li class="chapter" data-level="" data-path="ximport-other.html"><a href="ximport-other.html#ximport-quip"><i class="fa fa-check"></i>QuIP-specific: Uploading hybrid format data</a></li>
+</ul></li>
+<li class="chapter" data-level="" data-path="ximport-other.html"><a href="ximport-other.html#appending-hybrid-data"><i class="fa fa-check"></i><em>Appending</em> hybrid data</a></li>
+</ul></li>
+<li class="chapter" data-level="" data-path="xfactor-editor.html"><a href="xfactor-editor.html"><i class="fa fa-check"></i>The Factor Editor</a>
+<ul>
+<li class="chapter" data-level="" data-path="xfactor-editor.html"><a href="xfactor-editor.html#summary-1"><i class="fa fa-check"></i>Summary</a></li>
+<li class="chapter" data-level="" data-path="xfactor-editor.html"><a href="xfactor-editor.html#editing-factor-labels-in-the-factor-editor"><i class="fa fa-check"></i>Editing factor labels in the Factor Editor</a></li>
+<li class="chapter" data-level="" data-path="xfactor-editor.html"><a href="xfactor-editor.html#editing-factors-in-the-factor-editor-is-disabled-when-you-use-any-of-these-filters"><i class="fa fa-check"></i>Editing factors in the factor editor is disabled when you use any of these filters:</a></li>
+<li class="chapter" data-level="" data-path="xfactor-editor.html"><a href="xfactor-editor.html#split-recoding"><i class="fa fa-check"></i>Split-recoding existing factors: Use the <strong>Split</strong> checkbox.</a></li>
+<li class="chapter" data-level="" data-path="xfactor-editor.html"><a href="xfactor-editor.html#advanced-editing-tips"><i class="fa fa-check"></i>Advanced editing tips</a></li>
+<li class="chapter" data-level="" data-path="xfactor-editor.html"><a href="xfactor-editor.html#xfactor-editor-sidebar"><i class="fa fa-check"></i>The factor editor sidebar</a></li>
+</ul></li>
+<li class="chapter" data-level="" data-path="more-coding.html"><a href="more-coding.html"><i class="fa fa-check"></i>More coding</a>
+<ul>
+<li class="chapter" data-level="" data-path="more-coding.html"><a href="more-coding.html#creating-more-than-one-link-at-a-time"><i class="fa fa-check"></i>Creating more than one link at a time</a></li>
+<li><a href="more-coding.html#section" id="toc-section"></a></li>
+<li class="chapter" data-level="" data-path="more-coding.html"><a href="more-coding.html#xchaining-links"><i class="fa fa-check"></i>Chaining Links</a></li>
+<li class="chapter" data-level="" data-path="more-coding.html"><a href="more-coding.html#xmemosandhashtags"><i class="fa fa-check"></i>Using memos and hashtags</a>
+<ul>
+<li class="chapter" data-level="" data-path="more-coding.html"><a href="more-coding.html#xlink-memos"><i class="fa fa-check"></i>Memos</a></li>
+<li class="chapter" data-level="" data-path="more-coding.html"><a href="more-coding.html#xhashtags"><i class="fa fa-check"></i>Hashtags / link flags</a></li>
+</ul></li>
+</ul></li>
+<li class="chapter" data-level="" data-path="xmerging-files.html"><a href="xmerging-files.html"><i class="fa fa-check"></i>Merging files</a>
+<ul>
+<li class="chapter" data-level="" data-path="xmerging-files.html"><a href="xmerging-files.html#alternative-method"><i class="fa fa-check"></i>Alternative method</a></li>
+</ul></li>
+<li class="chapter" data-level="" data-path="strength-adding-additional-information-like-strength-of-a-link-in-a-causal-map.html"><a href="strength-adding-additional-information-like-strength-of-a-link-in-a-causal-map.html"><i class="fa fa-check"></i>📚 Strength: Adding additional information like strength of a link in a causal map</a></li>
+<li class="chapter" data-level="" data-path="xedit-factor-and-links.html"><a href="xedit-factor-and-links.html"><i class="fa fa-check"></i>Editing factors and links</a></li>
+<li class="chapter" data-level="" data-path="xplain_coding.html"><a href="xplain_coding.html"><i class="fa fa-check"></i>📚 Plain coding</a>
+<ul>
+<li class="chapter" data-level="" data-path="xplain_coding.html"><a href="xplain_coding.html#summary-2"><i class="fa fa-check"></i>Summary</a></li>
+<li class="chapter" data-level="" data-path="xplain_coding.html"><a href="xplain_coding.html#what-the-app-does"><i class="fa fa-check"></i>What the app does</a></li>
+<li class="chapter" data-level="" data-path="xplain_coding.html"><a href="xplain_coding.html#future"><i class="fa fa-check"></i>Future</a></li>
+</ul></li>
+<li class="chapter" data-level="" data-path="xsimplifying-with-hierarchical.html"><a href="xsimplifying-with-hierarchical.html"><i class="fa fa-check"></i>📚 Simplifying causal maps with hierarchical coding</a>
+<ul>
+<li class="chapter" data-level="" data-path="xsimplifying-with-hierarchical.html"><a href="xsimplifying-with-hierarchical.html#summary-3"><i class="fa fa-check"></i>Summary</a></li>
+<li class="chapter" data-level="" data-path="xsimplifying-with-hierarchical.html"><a href="xsimplifying-with-hierarchical.html#introduction"><i class="fa fa-check"></i>Introduction</a></li>
+<li class="chapter" data-level="" data-path="xsimplifying-with-hierarchical.html"><a href="xsimplifying-with-hierarchical.html#interpretation-of-the-separator"><i class="fa fa-check"></i>Interpretation of the ; separator</a></li>
+<li class="chapter" data-level="" data-path="xsimplifying-with-hierarchical.html"><a href="xsimplifying-with-hierarchical.html#semi-quantitative-formulations-work-best"><i class="fa fa-check"></i>Semi-quantitative formulations work best</a></li>
+<li class="chapter" data-level="" data-path="xsimplifying-with-hierarchical.html"><a href="xsimplifying-with-hierarchical.html#higher-level-factors-are-generalisations"><i class="fa fa-check"></i>Higher-level factors are <em>generalisations</em></a></li>
+<li class="chapter" data-level="" data-path="xsimplifying-with-hierarchical.html"><a href="xsimplifying-with-hierarchical.html#hierarchical-coding-as-a-way-of-coping-with-a-large-number-of-factors"><i class="fa fa-check"></i>Hierarchical coding as a way of coping with a large number of factors</a></li>
+<li class="chapter" data-level="" data-path="xsimplifying-with-hierarchical.html"><a href="xsimplifying-with-hierarchical.html#themes"><i class="fa fa-check"></i>Themes</a></li>
+<li class="chapter" data-level="" data-path="xsimplifying-with-hierarchical.html"><a href="xsimplifying-with-hierarchical.html#re-usable-factor-components-as-text-flags"><i class="fa fa-check"></i>Re-usable factor components as text flags</a></li>
+<li class="chapter" data-level="" data-path="xsimplifying-with-hierarchical.html"><a href="xsimplifying-with-hierarchical.html#zooming-out"><i class="fa fa-check"></i>Zooming out</a></li>
+</ul></li>
+<li class="chapter" data-level="" data-path="tricky-coding-challenges.html"><a href="tricky-coding-challenges.html"><i class="fa fa-check"></i>📚 Tricky coding challenges</a></li>
+<li class="chapter" data-level="" data-path="xhierarchical-coding.html"><a href="xhierarchical-coding.html"><i class="fa fa-check"></i>💻 Hierarchical factors in Causal Map</a>
+<ul>
+<li class="chapter" data-level="" data-path="xhierarchical-coding.html"><a href="xhierarchical-coding.html#creating-labels"><i class="fa fa-check"></i>Creating labels</a></li>
+<li class="chapter" data-level="" data-path="xhierarchical-coding.html"><a href="xhierarchical-coding.html#relabelling"><i class="fa fa-check"></i>Relabelling</a></li>
+<li class="chapter" data-level="" data-path="xhierarchical-coding.html"><a href="xhierarchical-coding.html#additional-calculated-fields"><i class="fa fa-check"></i>Additional calculated fields</a></li>
+<li class="chapter" data-level="" data-path="xhierarchical-coding.html"><a href="xhierarchical-coding.html#additional-functionality-in-the-create-edit-links-panel"><i class="fa fa-check"></i>Additional functionality in the Create &amp; Edit Links panel</a>
+<ul>
+<li class="chapter" data-level="" data-path="xhierarchical-coding.html"><a href="xhierarchical-coding.html#xquick-tails"><i class="fa fa-check"></i>Quick tails</a></li>
+</ul></li>
+<li class="chapter" data-level="" data-path="xhierarchical-coding.html"><a href="xhierarchical-coding.html#search-with-nested-factors"><i class="fa fa-check"></i>Search with nested factors</a></li>
+<li class="chapter" data-level="" data-path="xhierarchical-coding.html"><a href="xhierarchical-coding.html#how-can-i-view-just-the-factors-where-i-have-applied-hierarchical-coding"><i class="fa fa-check"></i>How can I view just the factors where I have applied hierarchical coding?</a></li>
+<li class="chapter" data-level="" data-path="xhierarchical-coding.html"><a href="xhierarchical-coding.html#viewing-the-top-level-labels"><i class="fa fa-check"></i>Viewing the top level labels</a></li>
+<li class="chapter" data-level="" data-path="xhierarchical-coding.html"><a href="xhierarchical-coding.html#simplifying-zooming-out-and-filtering-out-less-frequent-links-and-factors-in-the-app"><i class="fa fa-check"></i>Simplifying (zooming out, and filtering out less frequent links and factors) in the app</a></li>
+</ul></li>
+<li class="chapter" data-level="" data-path="xgamification.html"><a href="xgamification.html"><i class="fa fa-check"></i>Document coding score!</a></li>
+<li class="chapter" data-level="" data-path="xdata-manager.html"><a href="xdata-manager.html"><i class="fa fa-check"></i>Data manager</a></li>
+<li class="chapter" data-level="" data-path="xcodebook.html"><a href="xcodebook.html"><i class="fa fa-check"></i>Importing a codebook of factors</a></li>
+<li class="chapter" data-level="" data-path="xquickfields.html"><a href="xquickfields.html"><i class="fa fa-check"></i>Quickfields</a>
+<ul>
+<li class="chapter" data-level="" data-path="xquickfields.html"><a href="xquickfields.html#summary-4"><i class="fa fa-check"></i>Summary</a></li>
+<li class="chapter" data-level="" data-path="xquickfields.html"><a href="xquickfields.html#alternative-formulations"><i class="fa fa-check"></i>Alternative formulations</a></li>
+<li class="chapter" data-level="" data-path="xquickfields.html"><a href="xquickfields.html#quickfields-are-also-ordinary-flags"><i class="fa fa-check"></i>Quickfields are also ordinary flags</a></li>
+<li class="chapter" data-level="" data-path="xquickfields.html"><a href="xquickfields.html#syntax"><i class="fa fa-check"></i>Syntax</a></li>
+<li class="chapter" data-level="" data-path="xquickfields.html"><a href="xquickfields.html#more-than-one-quick-field"><i class="fa fa-check"></i>More than one quick field</a></li>
+<li class="chapter" data-level="" data-path="xquickfields.html"><a href="xquickfields.html#permanence"><i class="fa fa-check"></i>Permanence</a></li>
+<li class="chapter" data-level="" data-path="xquickfields.html"><a href="xquickfields.html#position-in-hierarchy"><i class="fa fa-check"></i>Position in hierarchy</a></li>
+<li class="chapter" data-level="" data-path="xquickfields.html"><a href="xquickfields.html#current-limitation"><i class="fa fa-check"></i>Current limitation</a></li>
+<li class="chapter" data-level="" data-path="xquickfields.html"><a href="xquickfields.html#quickfields-for-links"><i class="fa fa-check"></i>🧪Quickfields for links</a></li>
+<li class="chapter" data-level="" data-path="xquickfields.html"><a href="xquickfields.html#quickfields-for-factor-labels-versus-ordinary-hashtags-for-links"><i class="fa fa-check"></i>Quickfields for factor labels versus ordinary hashtags for links</a></li>
+</ul></li>
+<li class="chapter" data-level="" data-path="creating-good-factor-labels.html"><a href="creating-good-factor-labels.html"><i class="fa fa-check"></i>📚 Creating good factor labels</a>
+<ul>
+<li class="chapter" data-level="" data-path="creating-good-factor-labels.html"><a href="creating-good-factor-labels.html#actor-focused-labels"><i class="fa fa-check"></i>Actor-focused labels</a></li>
+<li class="chapter" data-level="" data-path="creating-good-factor-labels.html"><a href="creating-good-factor-labels.html#formulating-factors-as-semi-quantitative"><i class="fa fa-check"></i>Formulating factors as “semi-quantitative”</a>
+<ul>
+<li class="chapter" data-level="" data-path="creating-good-factor-labels.html"><a href="creating-good-factor-labels.html#relax-use-heterogeneous-in-vivo-factor-labels"><i class="fa fa-check"></i>Relax! Use heterogeneous, “in-vivo” factor labels</a></li>
+<li class="chapter" data-level="" data-path="creating-good-factor-labels.html"><a href="creating-good-factor-labels.html#quip-specific-back-chaining"><i class="fa fa-check"></i>QuIP specific: back-chaining</a></li>
+<li class="chapter" data-level="" data-path="creating-good-factor-labels.html"><a href="creating-good-factor-labels.html#examples-of-semi-quantitative-factors"><i class="fa fa-check"></i>Examples of semi-quantitative factors</a></li>
+</ul></li>
+<li class="chapter" data-level="" data-path="creating-good-factor-labels.html"><a href="creating-good-factor-labels.html#opposed-pairs-of-causal-factors"><i class="fa fa-check"></i>Opposed pairs of causal factors</a></li>
+<li class="chapter" data-level="" data-path="creating-good-factor-labels.html"><a href="creating-good-factor-labels.html#formulating-factors-as-desirable"><i class="fa fa-check"></i>Formulating factors as desirable</a></li>
+<li class="chapter" data-level="" data-path="creating-good-factor-labels.html"><a href="creating-good-factor-labels.html#examples-of-non-quantitative-factors"><i class="fa fa-check"></i>Examples of non-quantitative factors</a></li>
+<li class="chapter" data-level="" data-path="creating-good-factor-labels.html"><a href="creating-good-factor-labels.html#using-flags-in-factor-labels"><i class="fa fa-check"></i>Using flags in factor labels</a>
+<ul>
+<li class="chapter" data-level="" data-path="creating-good-factor-labels.html"><a href="creating-good-factor-labels.html#xhanging-flags"><i class="fa fa-check"></i>Hanging flags</a></li>
+<li class="chapter" data-level="" data-path="creating-good-factor-labels.html"><a href="creating-good-factor-labels.html#flags-for-bundling-factors"><i class="fa fa-check"></i>Flags for bundling factors</a></li>
+<li class="chapter" data-level="" data-path="creating-good-factor-labels.html"><a href="creating-good-factor-labels.html#intervention-flags"><i class="fa fa-check"></i>Intervention Flags</a></li>
+<li class="chapter" data-level="" data-path="creating-good-factor-labels.html"><a href="creating-good-factor-labels.html#outcome-flags"><i class="fa fa-check"></i>Outcome Flags</a></li>
+<li class="chapter" data-level="" data-path="creating-good-factor-labels.html"><a href="creating-good-factor-labels.html#coding-your-statements-in-context-referring-to-evidence-from-elsewhere"><i class="fa fa-check"></i>Coding your statements in context: referring to evidence from elsewhere</a></li>
+</ul></li>
+<li class="chapter" data-level="" data-path="creating-good-factor-labels.html"><a href="creating-good-factor-labels.html#consolidating-and-editing-factor-labels"><i class="fa fa-check"></i>Consolidating and editing factor labels</a>
+<ul>
+<li class="chapter" data-level="" data-path="creating-good-factor-labels.html"><a href="creating-good-factor-labels.html#merging-multiple-factors-into-one"><i class="fa fa-check"></i>Merging multiple factors into one</a></li>
+</ul></li>
+</ul></li>
+<li class="chapter" data-level="" data-path="coding-opposites.html"><a href="coding-opposites.html"><i class="fa fa-check"></i>📚 Coding opposites</a>
+<ul>
+<li class="chapter" data-level="" data-path="coding-opposites.html"><a href="coding-opposites.html#summary-5"><i class="fa fa-check"></i>Summary</a></li>
+<li class="chapter" data-level="" data-path="coding-opposites.html"><a href="coding-opposites.html#combining-opposites"><i class="fa fa-check"></i>Combining opposites</a>
+<ul>
+<li class="chapter" data-level="" data-path="coding-opposites.html"><a href="coding-opposites.html#two-tone-links"><i class="fa fa-check"></i>Two-tone links</a></li>
+<li class="chapter" data-level="" data-path="coding-opposites.html"><a href="coding-opposites.html#filtering"><i class="fa fa-check"></i>Filtering</a></li>
+</ul></li>
+<li class="chapter" data-level="" data-path="coding-opposites.html"><a href="coding-opposites.html#xopposites-coding"><i class="fa fa-check"></i>Opposites coding within a hierarchy</a></li>
+<li class="chapter" data-level="" data-path="coding-opposites.html"><a href="coding-opposites.html#opposites-coding-within-components-of-a-hierarchy"><i class="fa fa-check"></i>Opposites coding within components of a hierarchy</a></li>
+<li class="chapter" data-level="" data-path="coding-opposites.html"><a href="coding-opposites.html#unpacking-opposites"><i class="fa fa-check"></i>Unpacking opposites</a></li>
+</ul></li>
+<li class="chapter" data-level="" data-path="level.html"><a href="level.html"><i class="fa fa-check"></i>Level</a></li>
+<li class="part"><span><b>V 5: Advanced analysis</b></span></li>
+<li class="chapter" data-level="" data-path="xlevel5.html"><a href="xlevel5.html"><i class="fa fa-check"></i>Level 5 overview</a></li>
+<li class="chapter" data-level="" data-path="xdashboard-a.html"><a href="xdashboard-a.html"><i class="fa fa-check"></i>Dashboard (advanced)</a>
+<ul>
+<li class="chapter" data-level="" data-path="xdashboard-a.html"><a href="xdashboard-a.html#xsharing_view"><i class="fa fa-check"></i>Using and sharing a view</a></li>
+<li class="chapter" data-level="" data-path="xdashboard-a.html"><a href="xdashboard-a.html#recommended-views-versus-custom-views"><i class="fa fa-check"></i>⭐ Recommended views versus 🤵custom views</a></li>
+<li class="chapter" data-level="" data-path="xdashboard-a.html"><a href="xdashboard-a.html#complete-views-versus-add-ons"><i class="fa fa-check"></i>Complete views versus “Add-ons”</a></li>
+<li class="chapter" data-level="" data-path="xdashboard-a.html"><a href="xdashboard-a.html#xedit_view"><i class="fa fa-check"></i>To edit the content (filter, tab etc) of an existing view:</a></li>
+<li class="chapter" data-level="" data-path="xdashboard-a.html"><a href="xdashboard-a.html#applying-a-view"><i class="fa fa-check"></i>Applying a view</a></li>
+<li class="chapter" data-level="" data-path="xdashboard-a.html"><a href="xdashboard-a.html#for-admins"><i class="fa fa-check"></i>For admins</a></li>
+</ul></li>
+<li class="chapter" data-level="" data-path="xtables-advanced.html"><a href="xtables-advanced.html"><i class="fa fa-check"></i>🧪Tables - advanced</a>
+<ul>
+<li class="chapter" data-level="" data-path="xtables-advanced.html"><a href="xtables-advanced.html#creating-your-table"><i class="fa fa-check"></i>Creating your table</a></li>
+<li class="chapter" data-level="" data-path="xtables-advanced.html"><a href="xtables-advanced.html#xprint-view-tables"><i class="fa fa-check"></i>Print view</a></li>
+<li class="chapter" data-level="" data-path="xtables-advanced.html"><a href="xtables-advanced.html#xformatting-your-table"><i class="fa fa-check"></i>Formatting your table</a></li>
+<li class="chapter" data-level="" data-path="xtables-advanced.html"><a href="xtables-advanced.html#xsaving-your-table"><i class="fa fa-check"></i>Saving your table</a></li>
+</ul></li>
+<li class="chapter" data-level="" data-path="filters-overview.html"><a href="filters-overview.html"><i class="fa fa-check"></i>Filters – overview</a>
+<ul>
+<li class="chapter" data-level="" data-path="filters-overview.html"><a href="filters-overview.html#restore-filters"><i class="fa fa-check"></i>Restore Filters</a></li>
+<li><a href="filters-overview.html#section-1" id="toc-section-1"></a></li>
+<li class="chapter" data-level="" data-path="filters-overview.html"><a href="filters-overview.html#applying-different-filters"><i class="fa fa-check"></i><strong>Applying different filters</strong></a></li>
+<li class="chapter" data-level="" data-path="filters-overview.html"><a href="filters-overview.html#find-factors"><i class="fa fa-check"></i>Find factors</a>
+<ul>
+<li class="chapter" data-level="" data-path="filters-overview.html"><a href="filters-overview.html#searching-and-filtering-factors"><i class="fa fa-check"></i>Searching and filtering factors</a></li>
+</ul></li>
+<li class="chapter" data-level="" data-path="filters-overview.html"><a href="filters-overview.html#xfind-statements-links"><i class="fa fa-check"></i>Find statements, find links</a>
+<ul>
+<li class="chapter" data-level="" data-path="filters-overview.html"><a href="filters-overview.html#find-links"><i class="fa fa-check"></i>Find links</a></li>
+</ul></li>
+<li class="chapter" data-level="" data-path="filters-overview.html"><a href="filters-overview.html#highlight-only"><i class="fa fa-check"></i>Highlight only</a></li>
+<li class="chapter" data-level="" data-path="filters-overview.html"><a href="filters-overview.html#remove-brackets"><i class="fa fa-check"></i>Remove brackets</a></li>
+<li class="chapter" data-level="" data-path="filters-overview.html"><a href="filters-overview.html#excluding-factors-links-statements-sources-and-questions-with-notcontains-and-notequals"><i class="fa fa-check"></i>Excluding factors, links, statements, sources and questions with <code>notcontains</code> and <code>notequals</code></a></li>
+<li class="chapter" data-level="" data-path="filters-overview.html"><a href="filters-overview.html#trace-paths"><i class="fa fa-check"></i>Trace paths</a></li>
+<li class="chapter" data-level="" data-path="filters-overview.html"><a href="filters-overview.html#bundlefactors"><i class="fa fa-check"></i>Bundle factors</a></li>
+<li class="chapter" data-level="" data-path="filters-overview.html"><a href="filters-overview.html#combine-opposites"><i class="fa fa-check"></i>Combine opposites</a></li>
+<li class="chapter" data-level="" data-path="filters-overview.html"><a href="filters-overview.html#filtering-group-by-group"><i class="fa fa-check"></i>Filtering group by group</a></li>
+</ul></li>
+<li class="chapter" data-level="" data-path="xtracing-paths.html"><a href="xtracing-paths.html"><i class="fa fa-check"></i>📚 Tracing paths</a>
+<ul>
+<li class="chapter" data-level="" data-path="xtracing-paths.html"><a href="xtracing-paths.html#summary-6"><i class="fa fa-check"></i>Summary</a>
+<ul>
+<li class="chapter" data-level="" data-path="xtracing-paths.html"><a href="xtracing-paths.html#howtotracepathsandrobustness"><i class="fa fa-check"></i>How to trace paths</a></li>
+<li class="chapter" data-level="" data-path="xtracing-paths.html"><a href="xtracing-paths.html#removing-unwanted-links"><i class="fa fa-check"></i>🧪Removing unwanted links</a></li>
+</ul></li>
+</ul></li>
+<li class="chapter" data-level="" data-path="xcontinuity.html"><a href="xcontinuity.html"><i class="fa fa-check"></i>Continuity and tracing threads</a>
+<ul>
+<li class="chapter" data-level="" data-path="xcontinuity.html"><a href="xcontinuity.html#summary-7"><i class="fa fa-check"></i>Summary</a></li>
+<li class="chapter" data-level="" data-path="xcontinuity.html"><a href="xcontinuity.html#xtracing-threads"><i class="fa fa-check"></i>Tracing threads (aka tracing continuity)</a></li>
+<li class="chapter" data-level="" data-path="xcontinuity.html"><a href="xcontinuity.html#advanced-diagnostic-filter-mark-links-for-continuity-print-view-only"><i class="fa fa-check"></i>Advanced diagnostic filter: Mark links for continuity (Print View only)</a></li>
+<li class="chapter" data-level="" data-path="xcontinuity.html"><a href="xcontinuity.html#advanced-diagnostic-filter-show-continuity"><i class="fa fa-check"></i>Advanced diagnostic filter: Show continuity</a>
+<ul>
+<li class="chapter" data-level="" data-path="xcontinuity.html"><a href="xcontinuity.html#summary-8"><i class="fa fa-check"></i>Summary</a></li>
+<li class="chapter" data-level="" data-path="xcontinuity.html"><a href="xcontinuity.html#showing-continuity-with-arrowtypes"><i class="fa fa-check"></i>Showing continuity with arrowtypes</a></li>
+<li class="chapter" data-level="" data-path="xcontinuity.html"><a href="xcontinuity.html#showing-continuity-with-colours"><i class="fa fa-check"></i>Showing continuity with colours</a></li>
+<li class="chapter" data-level="" data-path="xcontinuity.html"><a href="xcontinuity.html#more-about-these-metrics"><i class="fa fa-check"></i>More about these metrics</a></li>
+</ul></li>
+</ul></li>
+<li class="chapter" data-level="" data-path="xconditional-formats.html"><a href="xconditional-formats.html"><i class="fa fa-check"></i>Conditional formats</a>
+<ul>
+<li class="chapter" data-level="" data-path="xconditional-formats.html"><a href="xconditional-formats.html#xformatting-links"><i class="fa fa-check"></i>Conditional formatting for links</a></li>
+<li class="chapter" data-level="" data-path="xconditional-formats.html"><a href="xconditional-formats.html#conditional-formatting-for-factors"><i class="fa fa-check"></i>Conditional formatting for factors</a>
+<ul>
+<li class="chapter" data-level="" data-path="xconditional-formats.html"><a href="xconditional-formats.html#xcolour-text"><i class="fa fa-check"></i>Colour text</a></li>
+<li class="chapter" data-level="" data-path="xconditional-formats.html"><a href="xconditional-formats.html#xlabel-factors"><i class="fa fa-check"></i>Label factors</a></li>
+</ul></li>
+<li class="chapter" data-level="" data-path="xconditional-formats.html"><a href="xconditional-formats.html#bundlelinks"><i class="fa fa-check"></i>Bundle links</a></li>
+<li class="chapter" data-level="" data-path="xconditional-formats.html"><a href="xconditional-formats.html#colours"><i class="fa fa-check"></i>Colours</a>
+<ul>
+<li class="chapter" data-level="" data-path="xconditional-formats.html"><a href="xconditional-formats.html#xfixed-colours"><i class="fa fa-check"></i>Fixed colours</a></li>
+<li class="chapter" data-level="" data-path="xconditional-formats.html"><a href="xconditional-formats.html#xdiscrete-palettes"><i class="fa fa-check"></i>Changing discrete palettes</a></li>
+</ul></li>
+<li class="chapter" data-level="" data-path="xconditional-formats.html"><a href="xconditional-formats.html#xcalculated-fields"><i class="fa fa-check"></i>Calculated fields</a>
+<ul>
+<li class="chapter" data-level="" data-path="xconditional-formats.html"><a href="xconditional-formats.html#links-table"><i class="fa fa-check"></i>Links table</a></li>
+<li class="chapter" data-level="" data-path="xconditional-formats.html"><a href="xconditional-formats.html#factors-table"><i class="fa fa-check"></i>Factors table</a></li>
+<li class="chapter" data-level="" data-path="xconditional-formats.html"><a href="xconditional-formats.html#when-combining-opposites"><i class="fa fa-check"></i>When combining opposites</a></li>
+</ul></li>
+</ul></li>
+<li class="chapter" data-level="" data-path="xsimple-formats.html"><a href="xsimple-formats.html"><i class="fa fa-check"></i>Simple formats</a>
+<ul>
+<li class="chapter" data-level="" data-path="xsimple-formats.html"><a href="xsimple-formats.html#fixed-colours-for-all-links-factors-and-factor-borders"><i class="fa fa-check"></i>Fixed colours for all links, factors and factor borders</a></li>
+<li class="chapter" data-level="" data-path="xsimple-formats.html"><a href="xsimple-formats.html#setting-specific-colours-for-links-factors-and-factor-borders"><i class="fa fa-check"></i>Setting specific colours for links, factors and factor borders</a></li>
+<li class="chapter" data-level="" data-path="xsimple-formats.html"><a href="xsimple-formats.html#wrap-factorlink-labels"><i class="fa fa-check"></i>Wrap factor/link labels</a></li>
+<li class="chapter" data-level="" data-path="xsimple-formats.html"><a href="xsimple-formats.html#xcluster-factors"><i class="fa fa-check"></i>Cluster factors</a></li>
+<li class="chapter" data-level="" data-path="xsimple-formats.html"><a href="xsimple-formats.html#set-print-format"><i class="fa fa-check"></i>Set print format</a>
+<ul>
+<li class="chapter" data-level="" data-path="xsimple-formats.html"><a href="xsimple-formats.html#layout"><i class="fa fa-check"></i>Layout</a></li>
+</ul></li>
+</ul></li>
+<li class="chapter" data-level="" data-path="what-is-the-logic-behind-the-causal-map-filters.html"><a href="what-is-the-logic-behind-the-causal-map-filters.html"><i class="fa fa-check"></i>What is the logic behind the Causal Map filters?</a>
+<ul>
+<li class="chapter" data-level="" data-path="what-is-the-logic-behind-the-causal-map-filters.html"><a href="what-is-the-logic-behind-the-causal-map-filters.html#keeping-it-simple"><i class="fa fa-check"></i>Keeping it simple</a></li>
+<li class="chapter" data-level="" data-path="what-is-the-logic-behind-the-causal-map-filters.html"><a href="what-is-the-logic-behind-the-causal-map-filters.html#the-order-of-the-filters-with-calculated-fields"><i class="fa fa-check"></i>The order of the filters with calculated fields</a></li>
+<li class="chapter" data-level="" data-path="what-is-the-logic-behind-the-causal-map-filters.html"><a href="what-is-the-logic-behind-the-causal-map-filters.html#xautocorrect"><i class="fa fa-check"></i>Autocorrect</a></li>
+<li class="chapter" data-level="" data-path="what-is-the-logic-behind-the-causal-map-filters.html"><a href="what-is-the-logic-behind-the-causal-map-filters.html#where-do-these-islands-come-from-in-my-map"><i class="fa fa-check"></i>Where do these islands come from in my map?</a></li>
+</ul></li>
+<li class="chapter" data-level="" data-path="xanalysis.html"><a href="xanalysis.html"><i class="fa fa-check"></i>Analysing causal maps</a></li>
+<li class="chapter" data-level="" data-path="smart-zoom.html"><a href="smart-zoom.html"><i class="fa fa-check"></i>Smart zooming</a></li>
+<li class="chapter" data-level="" data-path="xquickfields-analysis.html"><a href="xquickfields-analysis.html"><i class="fa fa-check"></i>Quickfields: analysis</a>
+<ul>
+<li class="chapter" data-level="" data-path="xquickfields-analysis.html"><a href="xquickfields-analysis.html#summary-9"><i class="fa fa-check"></i>Summary</a></li>
+<li class="chapter" data-level="" data-path="xquickfields-analysis.html"><a href="xquickfields-analysis.html#uses"><i class="fa fa-check"></i>Uses</a></li>
+<li class="chapter" data-level="" data-path="xquickfields-analysis.html"><a href="xquickfields-analysis.html#quickfields-are-also-ordinary-flags-1"><i class="fa fa-check"></i>Quickfields are also ordinary flags</a></li>
+<li class="chapter" data-level="" data-path="xquickfields-analysis.html"><a href="xquickfields-analysis.html#xhiding-quickfields"><i class="fa fa-check"></i>Hiding quickfields</a></li>
+<li class="chapter" data-level="" data-path="xquickfields-analysis.html"><a href="xquickfields-analysis.html#current-limitation-1"><i class="fa fa-check"></i>Current limitation</a></li>
+<li class="chapter" data-level="" data-path="xquickfields-analysis.html"><a href="xquickfields-analysis.html#quickfields-for-links-1"><i class="fa fa-check"></i>🧪Quickfields for links</a></li>
+</ul></li>
+<li class="chapter" data-level="" data-path="comparing.html"><a href="comparing.html"><i class="fa fa-check"></i>📚 Analysis: comparing maps between particular groups</a>
+<ul>
+<li class="chapter" data-level="" data-path="comparing.html"><a href="comparing.html#filtering-by-respondent-group"><i class="fa fa-check"></i>Filtering by respondent group</a></li>
+<li class="chapter" data-level="" data-path="comparing.html"><a href="comparing.html#showing-distinctive-maps-for-each-group"><i class="fa fa-check"></i>Showing <em>distinctive maps</em> for each group</a></li>
+<li class="chapter" data-level="" data-path="comparing.html"><a href="comparing.html#filtering-statements-and-groups-for-comparisons-in-causal-map"><i class="fa fa-check"></i>Filtering statements and groups for comparisons in Causal Map</a></li>
+<li class="chapter" data-level="" data-path="comparing.html"><a href="comparing.html#percent"><i class="fa fa-check"></i>Percentages</a></li>
+<li class="chapter" data-level="" data-path="comparing.html"><a href="comparing.html#xsurprise"><i class="fa fa-check"></i>Surprise</a></li>
+</ul></li>
+<li class="chapter" data-level="" data-path="cluster-sources.html"><a href="cluster-sources.html"><i class="fa fa-check"></i>📚 Clustering sources</a>
+<ul>
+<li class="chapter" data-level="" data-path="cluster-sources.html"><a href="cluster-sources.html#unfiltered-clusters"><i class="fa fa-check"></i>Unfiltered clusters</a></li>
+<li class="chapter" data-level="" data-path="cluster-sources.html"><a href="cluster-sources.html#filtered-clusters"><i class="fa fa-check"></i>Filtered clusters</a></li>
+<li class="chapter" data-level="" data-path="cluster-sources.html"><a href="cluster-sources.html#the-clustering-algorithm"><i class="fa fa-check"></i>The clustering algorithm</a></li>
+<li class="chapter" data-level="" data-path="cluster-sources.html"><a href="cluster-sources.html#bundling-links-by-cluster"><i class="fa fa-check"></i>Bundling links by cluster</a></li>
+<li class="chapter" data-level="" data-path="cluster-sources.html"><a href="cluster-sources.html#finding-many-solutions-at-once"><i class="fa fa-check"></i>Finding many solutions at once</a></li>
+</ul></li>
+<li class="chapter" data-level="" data-path="recalculate.html"><a href="recalculate.html"><i class="fa fa-check"></i>Recalculate fields</a></li>
+<li class="chapter" data-level="" data-path="xinterpret.html"><a href="xinterpret.html"><i class="fa fa-check"></i>Interpreting your results</a></li>
+<li class="chapter" data-level="" data-path="top-tips.html"><a href="top-tips.html"><i class="fa fa-check"></i>Top tips on coding</a></li>
+<li class="chapter" data-level="" data-path="level-5-quiz.html"><a href="level-5-quiz.html"><i class="fa fa-check"></i>Level 5 quiz</a></li>
+<li class="part"><span><b>VI The rest of the app</b></span></li>
+<li class="chapter" data-level="" data-path="xupdates-tab.html"><a href="xupdates-tab.html"><i class="fa fa-check"></i>The Updates tab</a></li>
+<li class="chapter" data-level="" data-path="xfile-manager.html"><a href="xfile-manager.html"><i class="fa fa-check"></i>The File Manager</a></li>
+<li class="chapter" data-level="" data-path="xmanage_your_subscription.html"><a href="xmanage_your_subscription.html"><i class="fa fa-check"></i>Managing your subscription</a></li>
+<li class="part"><span><b>VII 📚Spotlights</b></span></li>
+<li class="chapter" data-level="" data-path="xlevel6.html"><a href="xlevel6.html"><i class="fa fa-check"></i>Spotlight</a></li>
+<li class="chapter" data-level="" data-path="causal-mapping-definitions.html"><a href="causal-mapping-definitions.html"><i class="fa fa-check"></i>📚 Causal Mapping: Definitions</a>
+<ul>
+<li class="chapter" data-level="" data-path="causal-mapping-definitions.html"><a href="causal-mapping-definitions.html#what-is-a-causal-map-what-is-causal-mapping"><i class="fa fa-check"></i>What is a causal map? What is causal mapping?</a></li>
+<li class="chapter" data-level="" data-path="causal-mapping-definitions.html"><a href="causal-mapping-definitions.html#summary-10"><i class="fa fa-check"></i>Summary</a></li>
+</ul></li>
+<li class="chapter" data-level="" data-path="mapping.html"><a href="mapping.html"><i class="fa fa-check"></i>📚 Causal mapping for evaluators</a>
+<ul>
+<li class="chapter" data-level="" data-path="mapping.html"><a href="mapping.html#causal-mapping-for-evaluators"><i class="fa fa-check"></i>Causal mapping for evaluators</a></li>
+<li class="chapter" data-level="" data-path="mapping.html"><a href="mapping.html#features-which-causal-mapping-approaches-have-in-common"><i class="fa fa-check"></i>Features which causal mapping approaches have in common</a>
+<ul>
+<li class="chapter" data-level="" data-path="mapping.html"><a href="mapping.html#causality"><i class="fa fa-check"></i>Causality</a></li>
+<li class="chapter" data-level="" data-path="mapping.html"><a href="mapping.html#modularity"><i class="fa fa-check"></i>Modularity</a></li>
+</ul></li>
+<li class="chapter" data-level="" data-path="mapping.html"><a href="mapping.html#causal-maps-as-a-summary-of-qualitative-data-analysis-of-textual-causal-claims-for-each-link"><i class="fa fa-check"></i>Causal maps as a summary of qualitative data analysis of textual causal claims for each link</a></li>
+<li class="chapter" data-level="" data-path="mapping.html"><a href="mapping.html#causal-mapping-as-a-form-of-data-collection"><i class="fa fa-check"></i>Causal mapping as a form of data collection</a></li>
+<li class="chapter" data-level="" data-path="mapping.html"><a href="mapping.html#quip-as-a-form-of-causal-mapping"><i class="fa fa-check"></i>QuIP as a form of causal mapping</a>
+<ul>
+<li class="chapter" data-level="" data-path="mapping.html"><a href="mapping.html#quip-explanations-of-changes-do-not-themselves-also-have-to-be-changes"><i class="fa fa-check"></i>QuIP: explanations of changes do not themselves also have to be changes</a></li>
+</ul></li>
+<li class="chapter" data-level="" data-path="mapping.html"><a href="mapping.html#advantages-of-causal-mapping"><i class="fa fa-check"></i>Advantages of causal mapping</a>
+<ul>
+<li class="chapter" data-level="" data-path="mapping.html"><a href="mapping.html#induct-1"><i class="fa fa-check"></i>Induct</a></li>
+<li class="chapter" data-level="" data-path="mapping.html"><a href="mapping.html#discover-1"><i class="fa fa-check"></i>Discover</a></li>
+<li class="chapter" data-level="" data-path="mapping.html"><a href="mapping.html#distinguish"><i class="fa fa-check"></i>Distinguish</a></li>
+<li class="chapter" data-level="" data-path="mapping.html"><a href="mapping.html#present-1"><i class="fa fa-check"></i>Present</a></li>
+<li class="chapter" data-level="" data-path="mapping.html"><a href="mapping.html#query-1"><i class="fa fa-check"></i>Query</a></li>
+<li class="chapter" data-level="" data-path="mapping.html"><a href="mapping.html#quote-1"><i class="fa fa-check"></i>Quote</a></li>
+<li class="chapter" data-level="" data-path="mapping.html"><a href="mapping.html#reuse"><i class="fa fa-check"></i>Reuse</a></li>
+</ul></li>
+<li class="chapter" data-level="" data-path="mapping.html"><a href="mapping.html#when-to-use-causal-map"><i class="fa fa-check"></i>When to use Causal Map</a></li>
+</ul></li>
+<li class="chapter" data-level="" data-path="causal-mapping-and-outcome-harvesting.html"><a href="causal-mapping-and-outcome-harvesting.html"><i class="fa fa-check"></i>📚 Causal Mapping and Outcome Harvesting</a></li>
+<li class="chapter" data-level="" data-path="context-in-causal-mapping-how-to-code-it.html"><a href="context-in-causal-mapping-how-to-code-it.html"><i class="fa fa-check"></i>📚 Context in causal mapping: how to code it</a>
+<ul>
+<li class="chapter" data-level="" data-path="context-in-causal-mapping-how-to-code-it.html"><a href="context-in-causal-mapping-how-to-code-it.html#using-context-in-the-causal-map-app"><i class="fa fa-check"></i>Using context in the Causal Map app</a></li>
+</ul></li>
+<li class="chapter" data-level="" data-path="xtransitivity-trap.html"><a href="xtransitivity-trap.html"><i class="fa fa-check"></i>📚 Beware the transitivity trap</a>
+<ul>
+<li class="chapter" data-level="" data-path="xtransitivity-trap.html"><a href="xtransitivity-trap.html#the-transitivity-trap"><i class="fa fa-check"></i>The transitivity trap</a></li>
+<li class="chapter" data-level="" data-path="xtransitivity-trap.html"><a href="xtransitivity-trap.html#not-just-a-problem-for-causal-mapping"><i class="fa fa-check"></i>Not just a problem for causal mapping</a></li>
+<li class="chapter" data-level="" data-path="xtransitivity-trap.html"><a href="xtransitivity-trap.html#can-we-mitigate-the-trap-with-careful-elicitation-protocols"><i class="fa fa-check"></i>Can we mitigate the trap with careful elicitation protocols?</a></li>
+<li class="chapter" data-level="" data-path="xtransitivity-trap.html"><a href="xtransitivity-trap.html#transitivity-trap-or-identity-trap"><i class="fa fa-check"></i>Transitivity trap, or identity trap?</a></li>
+</ul></li>
+<li class="chapter" data-level="" data-path="caveat-numbers.html"><a href="caveat-numbers.html"><i class="fa fa-check"></i>📚 Cases, variables and percentages in causal mapping?</a></li>
+<li class="chapter" data-level="" data-path="different-kinds-of-question-chaining-with-quip-and-parevo-as-illustrations.html"><a href="different-kinds-of-question-chaining-with-quip-and-parevo-as-illustrations.html"><i class="fa fa-check"></i>📚 Different kinds of question chaining, with QuIP and ParEvo as illustrations</a>
+<ul>
+<li class="chapter" data-level="" data-path="different-kinds-of-question-chaining-with-quip-and-parevo-as-illustrations.html"><a href="different-kinds-of-question-chaining-with-quip-and-parevo-as-illustrations.html#four-options-with-fixed-versus-variable-question-chaining"><i class="fa fa-check"></i>Four options with Fixed versus Variable question chaining</a></li>
+<li class="chapter" data-level="" data-path="different-kinds-of-question-chaining-with-quip-and-parevo-as-illustrations.html"><a href="different-kinds-of-question-chaining-with-quip-and-parevo-as-illustrations.html#single-versus-multiple"><i class="fa fa-check"></i>Single versus multiple</a></li>
+<li class="chapter" data-level="" data-path="different-kinds-of-question-chaining-with-quip-and-parevo-as-illustrations.html"><a href="different-kinds-of-question-chaining-with-quip-and-parevo-as-illustrations.html#future-in-past-past-in-future"><i class="fa fa-check"></i>Future in past, past in future</a></li>
+<li class="chapter" data-level="" data-path="different-kinds-of-question-chaining-with-quip-and-parevo-as-illustrations.html"><a href="different-kinds-of-question-chaining-with-quip-and-parevo-as-illustrations.html#closed-vs-open-questions"><i class="fa fa-check"></i>Closed vs open questions</a></li>
+<li class="chapter" data-level="" data-path="different-kinds-of-question-chaining-with-quip-and-parevo-as-illustrations.html"><a href="different-kinds-of-question-chaining-with-quip-and-parevo-as-illustrations.html#going-both-ways-bi-directional-chaining"><i class="fa fa-check"></i>Going both ways: bi-directional chaining</a></li>
+<li class="chapter" data-level="" data-path="different-kinds-of-question-chaining-with-quip-and-parevo-as-illustrations.html"><a href="different-kinds-of-question-chaining-with-quip-and-parevo-as-illustrations.html#evaluation"><i class="fa fa-check"></i>Evaluation</a></li>
+</ul></li>
+<li class="chapter" data-level="" data-path="how-to-get-to-the-shadow-side-a-problem-with-back-chaining.html"><a href="how-to-get-to-the-shadow-side-a-problem-with-back-chaining.html"><i class="fa fa-check"></i>📚 How to get to the shadow side: a problem with back-chaining</a>
+<ul>
+<li class="chapter" data-level="" data-path="how-to-get-to-the-shadow-side-a-problem-with-back-chaining.html"><a href="how-to-get-to-the-shadow-side-a-problem-with-back-chaining.html#concert-example"><i class="fa fa-check"></i>Concert example</a></li>
+<li class="chapter" data-level="" data-path="how-to-get-to-the-shadow-side-a-problem-with-back-chaining.html"><a href="how-to-get-to-the-shadow-side-a-problem-with-back-chaining.html#football-example"><i class="fa fa-check"></i>Football example</a></li>
+<li class="chapter" data-level="" data-path="how-to-get-to-the-shadow-side-a-problem-with-back-chaining.html"><a href="how-to-get-to-the-shadow-side-a-problem-with-back-chaining.html#one-solution-pairs-of-initial-questions"><i class="fa fa-check"></i>One solution: pairs of initial questions</a></li>
+<li class="chapter" data-level="" data-path="how-to-get-to-the-shadow-side-a-problem-with-back-chaining.html"><a href="how-to-get-to-the-shadow-side-a-problem-with-back-chaining.html#solving-the-deeper-problem"><i class="fa fa-check"></i>Solving the deeper problem</a></li>
+<li class="chapter" data-level="" data-path="how-to-get-to-the-shadow-side-a-problem-with-back-chaining.html"><a href="how-to-get-to-the-shadow-side-a-problem-with-back-chaining.html#so-what-can-we-do"><i class="fa fa-check"></i>So what can we do?</a>
+<ul>
+<li class="chapter" data-level="" data-path="how-to-get-to-the-shadow-side-a-problem-with-back-chaining.html"><a href="how-to-get-to-the-shadow-side-a-problem-with-back-chaining.html#counterfactual-worlds"><i class="fa fa-check"></i>Counterfactual worlds</a></li>
+<li class="chapter" data-level="" data-path="how-to-get-to-the-shadow-side-a-problem-with-back-chaining.html"><a href="how-to-get-to-the-shadow-side-a-problem-with-back-chaining.html#best-solution"><i class="fa fa-check"></i>Best solution?</a></li>
+<li class="chapter" data-level="" data-path="how-to-get-to-the-shadow-side-a-problem-with-back-chaining.html"><a href="how-to-get-to-the-shadow-side-a-problem-with-back-chaining.html#encoding-the-results"><i class="fa fa-check"></i>Encoding the results</a></li>
+</ul></li>
+<li class="chapter" data-level="" data-path="how-to-get-to-the-shadow-side-a-problem-with-back-chaining.html"><a href="how-to-get-to-the-shadow-side-a-problem-with-back-chaining.html#conclusion"><i class="fa fa-check"></i>Conclusion</a></li>
+<li class="chapter" data-level="" data-path="how-to-get-to-the-shadow-side-a-problem-with-back-chaining.html"><a href="how-to-get-to-the-shadow-side-a-problem-with-back-chaining.html#finally"><i class="fa fa-check"></i>Finally …</a></li>
+</ul></li>
+<li class="chapter" data-level="" data-path="the-last-minute-principle.html"><a href="the-last-minute-principle.html"><i class="fa fa-check"></i>📚 The last minute principle</a></li>
+<li class="chapter" data-level="" data-path="causal-maps-systems-maps-whats-the-difference-does-it-matter.html"><a href="causal-maps-systems-maps-whats-the-difference-does-it-matter.html"><i class="fa fa-check"></i>📚 Causal maps, systems maps, what’s the difference? Does it matter?</a>
+<ul>
+<li class="chapter" data-level="" data-path="causal-maps-systems-maps-whats-the-difference-does-it-matter.html"><a href="causal-maps-systems-maps-whats-the-difference-does-it-matter.html#what-is-the-difference-between-a-causal-map-and-a-systems-map"><i class="fa fa-check"></i>What is the difference between a causal map and a systems map?</a></li>
+<li class="chapter" data-level="" data-path="causal-maps-systems-maps-whats-the-difference-does-it-matter.html"><a href="causal-maps-systems-maps-whats-the-difference-does-it-matter.html#are-systems-maps-about-systems"><i class="fa fa-check"></i>Are systems maps about systems?</a></li>
+</ul></li>
+<li class="chapter" data-level="" data-path="coding-time-in-causal-mapping.html"><a href="coding-time-in-causal-mapping.html"><i class="fa fa-check"></i>📚 Coding time in causal mapping</a>
+<ul>
+<li class="chapter" data-level="" data-path="coding-time-in-causal-mapping.html"><a href="coding-time-in-causal-mapping.html#temporal-features-which-can-emerge-without-explicit-coding-of-time"><i class="fa fa-check"></i>Temporal features which can emerge without explicit coding of time</a></li>
+<li class="chapter" data-level="" data-path="coding-time-in-causal-mapping.html"><a href="coding-time-in-causal-mapping.html#temporal-information-attached-to-additional-data"><i class="fa fa-check"></i>Temporal information attached to additional data</a></li>
+<li class="chapter" data-level="" data-path="coding-time-in-causal-mapping.html"><a href="coding-time-in-causal-mapping.html#recording-temporal-information-in-causal-links"><i class="fa fa-check"></i>Recording temporal information in causal links</a></li>
+<li class="chapter" data-level="" data-path="coding-time-in-causal-mapping.html"><a href="coding-time-in-causal-mapping.html#recording-temporal-information-in-factor-labels"><i class="fa fa-check"></i>Recording temporal information in factor labels</a>
+<ul>
+<li class="chapter" data-level="" data-path="coding-time-in-causal-mapping.html"><a href="coding-time-in-causal-mapping.html#use-a-hashtag-or-flag"><i class="fa fa-check"></i>Use a hashtag or flag</a></li>
+<li class="chapter" data-level="" data-path="coding-time-in-causal-mapping.html"><a href="coding-time-in-causal-mapping.html#use-components-in-hierarchical-coding"><i class="fa fa-check"></i>Use components in hierarchical coding</a></li>
+<li class="chapter" data-level="" data-path="coding-time-in-causal-mapping.html"><a href="coding-time-in-causal-mapping.html#use-higher-level-temporal-components-in-hierarchical-coding"><i class="fa fa-check"></i>Use higher-level temporal components in hierarchical coding</a></li>
+<li class="chapter" data-level="" data-path="coding-time-in-causal-mapping.html"><a href="coding-time-in-causal-mapping.html#but-what-if-factor-labels-themselves-express-changes"><i class="fa fa-check"></i>But what if factor labels themselves express changes?</a></li>
+</ul></li>
+<li class="chapter" data-level="" data-path="coding-time-in-causal-mapping.html"><a href="coding-time-in-causal-mapping.html#xlateness"><i class="fa fa-check"></i>Lateness</a></li>
+<li class="chapter" data-level="" data-path="coding-time-in-causal-mapping.html"><a href="coding-time-in-causal-mapping.html#analysing-and-displaying-the-results-of-temporal-coding"><i class="fa fa-check"></i>Analysing and displaying the results of temporal coding</a></li>
+</ul></li>
+<li class="chapter" data-level="" data-path="more-about-coding-opposites.html"><a href="more-about-coding-opposites.html"><i class="fa fa-check"></i>More about coding opposites</a>
+<ul>
+<li class="chapter" data-level="" data-path="more-about-coding-opposites.html"><a href="more-about-coding-opposites.html#reversible"><i class="fa fa-check"></i>Reversible?</a>
+<ul>
+<li class="chapter" data-level="" data-path="more-about-coding-opposites.html"><a href="more-about-coding-opposites.html#combining-opposites-and-strengths"><i class="fa fa-check"></i>Combining opposites and strengths</a></li>
+</ul></li>
+<li class="chapter" data-level="" data-path="more-about-coding-opposites.html"><a href="more-about-coding-opposites.html#graded-factors-differences-of-degree"><i class="fa fa-check"></i>Graded factors: differences of degree</a></li>
+<li class="chapter" data-level="" data-path="more-about-coding-opposites.html"><a href="more-about-coding-opposites.html#philosophical-discursion-coding-with-propositions"><i class="fa fa-check"></i>Philosophical discursion: coding with propositions</a>
+<ul>
+<li class="chapter" data-level="" data-path="more-about-coding-opposites.html"><a href="more-about-coding-opposites.html#zero-influences."><i class="fa fa-check"></i>Zero influences.</a></li>
+</ul></li>
+</ul></li>
+<li class="chapter" data-level="" data-path="puzzles-in-causal-mapping.html"><a href="puzzles-in-causal-mapping.html"><i class="fa fa-check"></i>📚 Puzzles in causal mapping</a>
+<ul>
+<li class="chapter" data-level="" data-path="puzzles-in-causal-mapping.html"><a href="puzzles-in-causal-mapping.html#distinctive-groups"><i class="fa fa-check"></i>Distinctive Groups</a></li>
+<li class="chapter" data-level="" data-path="puzzles-in-causal-mapping.html"><a href="puzzles-in-causal-mapping.html#quantity-of-evidence"><i class="fa fa-check"></i>Quantity of Evidence</a></li>
+<li class="chapter" data-level="" data-path="puzzles-in-causal-mapping.html"><a href="puzzles-in-causal-mapping.html#joining-rules"><i class="fa fa-check"></i>Joining rules</a></li>
+<li class="chapter" data-level="" data-path="puzzles-in-causal-mapping.html"><a href="puzzles-in-causal-mapping.html#does-believing-that-x-influences-y-mean-you-have-to-believe-that-not-x-causes-not-y-causal-mapping-and-counterfactuals."><i class="fa fa-check"></i>Does believing that X influences Y mean you have to believe that not-X causes not-Y? Causal mapping and counterfactuals.</a></li>
+<li class="chapter" data-level="" data-path="puzzles-in-causal-mapping.html"><a href="puzzles-in-causal-mapping.html#homogenity-of-paths"><i class="fa fa-check"></i>Homogenity of paths</a></li>
+<li class="chapter" data-level="" data-path="puzzles-in-causal-mapping.html"><a href="puzzles-in-causal-mapping.html#non--solution-1"><i class="fa fa-check"></i>(non-) solution 1)</a></li>
+<li class="chapter" data-level="" data-path="puzzles-in-causal-mapping.html"><a href="puzzles-in-causal-mapping.html#solution-2"><i class="fa fa-check"></i>Solution 2)</a></li>
+<li class="chapter" data-level="" data-path="puzzles-in-causal-mapping.html"><a href="puzzles-in-causal-mapping.html#solution-3"><i class="fa fa-check"></i>Solution 3)</a></li>
+<li class="chapter" data-level="" data-path="puzzles-in-causal-mapping.html"><a href="puzzles-in-causal-mapping.html#solution-4"><i class="fa fa-check"></i>Solution 4)</a></li>
+<li class="chapter" data-level="" data-path="puzzles-in-causal-mapping.html"><a href="puzzles-in-causal-mapping.html#solution-5"><i class="fa fa-check"></i>Solution 5)</a></li>
+</ul></li>
+<li class="chapter" data-level="" data-path="is-one-direction-enough.html"><a href="is-one-direction-enough.html"><i class="fa fa-check"></i>📚 Is one direction enough?</a></li>
+<li class="chapter" data-level="" data-path="xshowcases.html"><a href="xshowcases.html"><i class="fa fa-check"></i>Showcase: how the Causal Map app has been used</a>
+<ul>
+<li class="chapter" data-level="" data-path="xshowcases.html"><a href="xshowcases.html#reports"><i class="fa fa-check"></i>Reports</a>
+<ul>
+<li class="chapter" data-level="" data-path="xshowcases.html"><a href="xshowcases.html#voscur"><i class="fa fa-check"></i>VOSCUR</a></li>
+<li class="chapter" data-level="" data-path="xshowcases.html"><a href="xshowcases.html#world-food-programme"><i class="fa fa-check"></i>World Food Programme</a></li>
+<li class="chapter" data-level="" data-path="xshowcases.html"><a href="xshowcases.html#power-to-change"><i class="fa fa-check"></i>Power to Change</a></li>
+<li class="chapter" data-level="" data-path="xshowcases.html"><a href="xshowcases.html#global-young-academy-tracing-the-paths-of-gyas-impact"><i class="fa fa-check"></i>Global Young Academy: Tracing the paths of GYA’s impact</a></li>
+<li class="chapter" data-level="" data-path="xshowcases.html"><a href="xshowcases.html#ifrc-nepal-meta-evaluation"><i class="fa fa-check"></i>IFRC Nepal Meta-evaluation</a></li>
+</ul></li>
+</ul></li>
+<li class="part"><span><b>VIII Technical reference</b></span></li>
+<li class="chapter" data-level="" data-path="xlevel7.html"><a href="xlevel7.html"><i class="fa fa-check"></i>Technical reference</a></li>
+<li class="chapter" data-level="" data-path="xvideo-list.html"><a href="xvideo-list.html"><i class="fa fa-check"></i>Video list</a></li>
+<li class="chapter" data-level="" data-path="xconventions.html"><a href="xconventions.html"><i class="fa fa-check"></i>Conventions</a>
+<ul>
+<li class="chapter" data-level="" data-path="xconventions.html"><a href="xconventions.html#formatting-in-this-guide"><i class="fa fa-check"></i>Formatting in this guide…</a></li>
+</ul></li>
+<li class="chapter" data-level="" data-path="screenshotting-your-maps.html"><a href="screenshotting-your-maps.html"><i class="fa fa-check"></i>Screenshotting your maps</a></li>
+<li class="chapter" data-level="" data-path="FAQs.html"><a href="FAQs.html"><i class="fa fa-check"></i>FAQs: Causal Map questions and troubleshooting</a>
+<ul>
+<li class="chapter" data-level="" data-path="FAQs.html"><a href="FAQs.html#logging-in"><i class="fa fa-check"></i>Logging in</a></li>
+<li class="chapter" data-level="" data-path="FAQs.html"><a href="FAQs.html#setting-up"><i class="fa fa-check"></i>Setting Up</a></li>
+<li class="chapter" data-level="" data-path="FAQs.html"><a href="FAQs.html#uploading-and-tweaking-data"><i class="fa fa-check"></i>Uploading and tweaking data</a></li>
+<li class="chapter" data-level="" data-path="FAQs.html"><a href="FAQs.html#coding"><i class="fa fa-check"></i>Coding</a></li>
+<li class="chapter" data-level="" data-path="FAQs.html"><a href="FAQs.html#known-bugs"><i class="fa fa-check"></i>Known Bugs</a></li>
+<li class="chapter" data-level="" data-path="FAQs.html"><a href="FAQs.html#quip-questions"><i class="fa fa-check"></i>QuIP questions</a></li>
+<li class="chapter" data-level="" data-path="FAQs.html"><a href="FAQs.html#downloads"><i class="fa fa-check"></i>Downloads</a></li>
+</ul></li>
+<li class="chapter" data-level="" data-path="glossary.html"><a href="glossary.html"><i class="fa fa-check"></i>📚 Glossary</a>
+<ul>
+<li class="chapter" data-level="" data-path="glossary.html"><a href="glossary.html#generic-terminology-for-causal-mapping"><i class="fa fa-check"></i>Generic terminology for causal mapping</a></li>
+</ul></li>
+<li class="chapter" data-level="" data-path="filter-reference.html"><a href="filter-reference.html"><i class="fa fa-check"></i>Filter reference</a></li>
+<li class="chapter" data-level="" data-path="how-causal-map-is-hosted.html"><a href="how-causal-map-is-hosted.html"><i class="fa fa-check"></i>How Causal Map is hosted</a></li>
+<li class="chapter" data-level="" data-path="xreports.html"><a href="xreports.html"><i class="fa fa-check"></i>Reports tab</a>
+<ul>
+<li class="chapter" data-level="" data-path="xreports.html"><a href="xreports.html#sample"><i class="fa fa-check"></i>Sample</a></li>
+<li class="chapter" data-level="" data-path="xreports.html"><a href="xreports.html#hierarchy-1"><i class="fa fa-check"></i>Hierarchy</a></li>
+<li class="chapter" data-level="" data-path="xreports.html"><a href="xreports.html#opposites"><i class="fa fa-check"></i>Opposites</a></li>
+<li class="chapter" data-level="" data-path="xreports.html"><a href="xreports.html#rankings"><i class="fa fa-check"></i>Rankings</a></li>
+<li class="chapter" data-level="" data-path="xreports.html"><a href="xreports.html#differences---questions"><i class="fa fa-check"></i>Differences - questions</a></li>
+<li class="chapter" data-level="" data-path="xreports.html"><a href="xreports.html#differences---sample"><i class="fa fa-check"></i>Differences - sample</a></li>
+<li class="chapter" data-level="" data-path="xreports.html"><a href="xreports.html#differences---sample-1"><i class="fa fa-check"></i>Differences - sample</a></li>
+<li class="chapter" data-level="" data-path="xreports.html"><a href="xreports.html#differences---question"><i class="fa fa-check"></i>Differences - question</a></li>
+<li class="chapter" data-level="" data-path="xreports.html"><a href="xreports.html#hashtags"><i class="fa fa-check"></i>Hashtags</a></li>
+<li class="chapter" data-level="" data-path="xreports.html"><a href="xreports.html#custom"><i class="fa fa-check"></i>Custom</a></li>
+</ul></li>
+<li class="chapter" data-level="" data-path="core-tables.html"><a href="core-tables.html"><i class="fa fa-check"></i>Core tables in Causal Map</a>
+<ul>
+<li class="chapter" data-level="" data-path="core-tables.html"><a href="core-tables.html#the-main-five-tables-and-the-most-important-fields-columns"><i class="fa fa-check"></i>The main five tables and the most important fields / columns</a>
+<ul>
+<li class="chapter" data-level="" data-path="core-tables.html"><a href="core-tables.html#factors"><i class="fa fa-check"></i>Factors</a></li>
+<li class="chapter" data-level="" data-path="core-tables.html"><a href="core-tables.html#links"><i class="fa fa-check"></i>Links</a></li>
+<li class="chapter" data-level="" data-path="core-tables.html"><a href="core-tables.html#statements"><i class="fa fa-check"></i>Statements</a></li>
+<li class="chapter" data-level="" data-path="core-tables.html"><a href="core-tables.html#sources"><i class="fa fa-check"></i>Sources</a></li>
+<li class="chapter" data-level="" data-path="core-tables.html"><a href="core-tables.html#questions"><i class="fa fa-check"></i>Questions</a></li>
+<li class="chapter" data-level="" data-path="core-tables.html"><a href="core-tables.html#special-case-closed-question-blocks"><i class="fa fa-check"></i>Special case: Closed question blocks</a></li>
+</ul></li>
+</ul></li>
+<li class="chapter" data-level="" data-path="medals.html"><a href="medals.html"><i class="fa fa-check"></i>Medals</a>
+<ul>
+<li><a href="medals.html#section-2" id="toc-section-2"></a></li>
+</ul></li>
+<li class="chapter" data-level="" data-path="advanced-editor.html"><a href="advanced-editor.html"><i class="fa fa-check"></i>Using the Advanced Editor to create and edit filters</a></li>
+<li class="chapter" data-level="" data-path="xkeyboard.html"><a href="xkeyboard.html"><i class="fa fa-check"></i>Keyboard shortcuts</a>
+<ul>
+<li class="chapter" data-level="" data-path="xkeyboard.html"><a href="xkeyboard.html#general"><i class="fa fa-check"></i>General</a></li>
+<li class="chapter" data-level="" data-path="xkeyboard.html"><a href="xkeyboard.html#factor-editor-and-advanced-editor"><i class="fa fa-check"></i>Factor Editor and Advanced Editor</a>
+<ul>
+<li class="chapter" data-level="" data-path="xkeyboard.html"><a href="xkeyboard.html#line-operations"><i class="fa fa-check"></i>Line operations</a></li>
+<li class="chapter" data-level="" data-path="xkeyboard.html"><a href="xkeyboard.html#selection"><i class="fa fa-check"></i>Selection</a></li>
+<li class="chapter" data-level="" data-path="xkeyboard.html"><a href="xkeyboard.html#multicursor"><i class="fa fa-check"></i>Multicursor</a></li>
+<li class="chapter" data-level="" data-path="xkeyboard.html"><a href="xkeyboard.html#go-to"><i class="fa fa-check"></i>Go to</a></li>
+<li class="chapter" data-level="" data-path="xkeyboard.html"><a href="xkeyboard.html#findreplace"><i class="fa fa-check"></i>Find/Replace</a></li>
+<li class="chapter" data-level="" data-path="xkeyboard.html"><a href="xkeyboard.html#folding"><i class="fa fa-check"></i>Folding</a></li>
+<li class="chapter" data-level="" data-path="xkeyboard.html"><a href="xkeyboard.html#other"><i class="fa fa-check"></i>Other</a></li>
+</ul></li>
+</ul></li>
+<li class="chapter" data-level="" data-path="causal-map-functions.html"><a href="causal-map-functions.html"><i class="fa fa-check"></i>Causal Map functions</a></li>
+<li class="chapter" data-level="" data-path="xexcel.html"><a href="xexcel.html"><i class="fa fa-check"></i>Causal mapping with Excel</a></li>
+<li class="chapter" data-level="" data-path="using-storysurvey-admin-interface.html"><a href="using-storysurvey-admin-interface.html"><i class="fa fa-check"></i>Using StorySurvey: admin interface</a>
+<ul>
+<li class="chapter" data-level="" data-path="using-storysurvey-admin-interface.html"><a href="using-storysurvey-admin-interface.html#explorer"><i class="fa fa-check"></i>Explorer</a></li>
+<li class="chapter" data-level="" data-path="using-storysurvey-admin-interface.html"><a href="using-storysurvey-admin-interface.html#map"><i class="fa fa-check"></i>Map</a></li>
+<li class="chapter" data-level="" data-path="using-storysurvey-admin-interface.html"><a href="using-storysurvey-admin-interface.html#project-recodes"><i class="fa fa-check"></i>Project recodes</a></li>
+<li class="chapter" data-level="" data-path="using-storysurvey-admin-interface.html"><a href="using-storysurvey-admin-interface.html#project-settings"><i class="fa fa-check"></i>Project settings</a></li>
+<li class="chapter" data-level="" data-path="using-storysurvey-admin-interface.html"><a href="using-storysurvey-admin-interface.html#project-answers"><i class="fa fa-check"></i>Project answers</a></li>
+<li class="chapter" data-level="" data-path="using-storysurvey-admin-interface.html"><a href="using-storysurvey-admin-interface.html#project-questions"><i class="fa fa-check"></i>Project questions</a></li>
+<li class="chapter" data-level="" data-path="using-storysurvey-admin-interface.html"><a href="using-storysurvey-admin-interface.html#project-recodes-ace-the-recodes-advanced-editor"><i class="fa fa-check"></i>Project recodes ace: The recodes advanced editor</a>
+<ul>
+<li class="chapter" data-level="" data-path="using-storysurvey-admin-interface.html"><a href="using-storysurvey-admin-interface.html#basic-idea"><i class="fa fa-check"></i>Basic idea</a></li>
+<li class="chapter" data-level="" data-path="using-storysurvey-admin-interface.html"><a href="using-storysurvey-admin-interface.html#full-hierarchy"><i class="fa fa-check"></i>Full hierarchy</a></li>
+<li class="chapter" data-level="" data-path="using-storysurvey-admin-interface.html"><a href="using-storysurvey-admin-interface.html#making-changes"><i class="fa fa-check"></i>Making changes</a></li>
+<li class="chapter" data-level="" data-path="using-storysurvey-admin-interface.html"><a href="using-storysurvey-admin-interface.html#hiding-factors"><i class="fa fa-check"></i>Hiding factors</a></li>
+<li class="chapter" data-level="" data-path="using-storysurvey-admin-interface.html"><a href="using-storysurvey-admin-interface.html#recoding-a-factor-into-itself"><i class="fa fa-check"></i>Recoding a factor into itself</a></li>
+<li class="chapter" data-level="" data-path="using-storysurvey-admin-interface.html"><a href="using-storysurvey-admin-interface.html#the-contents-of-the-editor"><i class="fa fa-check"></i>The contents of the editor</a></li>
+<li class="chapter" data-level="" data-path="using-storysurvey-admin-interface.html"><a href="using-storysurvey-admin-interface.html#searching"><i class="fa fa-check"></i>Searching</a></li>
+</ul></li>
+</ul></li>
+<li class="chapter" data-level="" data-path="x.html"><a href="x.html"><i class="fa fa-check"></i>Features of Causal Map</a>
+<ul>
+<li class="chapter" data-level="" data-path="x.html"><a href="x.html#main-features-of-causal-map"><i class="fa fa-check"></i>Main features of Causal Map</a></li>
+<li class="chapter" data-level="" data-path="x.html"><a href="x.html#additional-new-features-in-causal-map-2"><i class="fa fa-check"></i>Additional new features in Causal Map 2</a></li>
+</ul></li>
+<li class="chapter" data-level="" data-path="changelog.html"><a href="changelog.html"><i class="fa fa-check"></i>Recent changes</a>
+<ul>
+<li class="chapter" data-level="" data-path="changelog.html"><a href="changelog.html#version-0.81-982022"><i class="fa fa-check"></i>Version 0.81, 9/8/2022</a>
+<ul>
+<li class="chapter" data-level="" data-path="changelog.html"><a href="changelog.html#importing-a-simple-wide-format-file"><i class="fa fa-check"></i><span>Importing a simple, wide-format file</span></a></li>
+<li class="chapter" data-level="" data-path="changelog.html"><a href="changelog.html#bundling-links"><i class="fa fa-check"></i><span>Bundling links</span></a></li>
+<li class="chapter" data-level="" data-path="changelog.html"><a href="changelog.html#improved-percentage-labels-when-calculating-surprise"><i class="fa fa-check"></i>Improved percentage labels when calculating surprise</a></li>
+</ul></li>
+<li class="chapter" data-level="" data-path="changelog.html"><a href="changelog.html#version-0.80-1062022"><i class="fa fa-check"></i>Version 0.80, 10/6/2022</a>
+<ul>
+<li class="chapter" data-level="" data-path="changelog.html"><a href="changelog.html#smart-zoom-1"><i class="fa fa-check"></i><span>Smart zoom</span></a></li>
+<li class="chapter" data-level="" data-path="changelog.html"><a href="changelog.html#collaboration"><i class="fa fa-check"></i><span>Collaboration</span></a></li>
+<li class="chapter" data-level="" data-path="changelog.html"><a href="changelog.html#the-dashboard"><i class="fa fa-check"></i><span>The Dashboard</span></a></li>
+<li class="chapter" data-level="" data-path="changelog.html"><a href="changelog.html#reports-tab"><i class="fa fa-check"></i><span>Reports Tab</span></a></li>
+<li class="chapter" data-level="" data-path="changelog.html"><a href="changelog.html#document-coding-score"><i class="fa fa-check"></i><span>Document coding score!</span></a></li>
+<li class="chapter" data-level="" data-path="changelog.html"><a href="changelog.html#copying-your-map-as-a-vector-image"><i class="fa fa-check"></i><span>Copying your map as a vector image</span></a></li>
+<li class="chapter" data-level="" data-path="changelog.html"><a href="changelog.html#clustering-sources"><i class="fa fa-check"></i><span>Clustering sources</span></a></li>
+<li class="chapter" data-level="" data-path="changelog.html"><a href="changelog.html#quickfields"><i class="fa fa-check"></i><span>Quickfields</span></a></li>
+<li class="chapter" data-level="" data-path="changelog.html"><a href="changelog.html#plain-coding"><i class="fa fa-check"></i><span>Plain coding</span></a></li>
+<li class="chapter" data-level="" data-path="changelog.html"><a href="changelog.html#new-palettes-for-conditional-formatting"><i class="fa fa-check"></i><span>New palettes for conditional formatting</span></a></li>
+<li class="chapter" data-level="" data-path="changelog.html"><a href="changelog.html#quick-tails"><i class="fa fa-check"></i><span>Quick tails</span></a></li>
+<li class="chapter" data-level="" data-path="changelog.html"><a href="changelog.html#search-for-main-drivers-andor-outcomes"><i class="fa fa-check"></i><span>Search for main drivers and/or outcomes</span></a></li>
+<li class="chapter" data-level="" data-path="changelog.html"><a href="changelog.html#filtering-print-view-of-tables"><i class="fa fa-check"></i><span>Filtering print view of tables</span></a></li>
+</ul></li>
+<li class="chapter" data-level="" data-path="changelog.html"><a href="changelog.html#version-0.78"><i class="fa fa-check"></i>Version 0.78</a>
+<ul>
+<li class="chapter" data-level="" data-path="changelog.html"><a href="changelog.html#the-gallery"><i class="fa fa-check"></i>The Gallery</a></li>
+<li class="chapter" data-level="" data-path="changelog.html"><a href="changelog.html#continuity"><i class="fa fa-check"></i>Continuity</a></li>
+<li class="chapter" data-level="" data-path="changelog.html"><a href="changelog.html#quickfields-1"><i class="fa fa-check"></i>Quickfields</a></li>
+<li class="chapter" data-level="" data-path="changelog.html"><a href="changelog.html#other-features"><i class="fa fa-check"></i>Other features</a></li>
+</ul></li>
+<li class="chapter" data-level="" data-path="changelog.html"><a href="changelog.html#version-0.75-27122021"><i class="fa fa-check"></i>Version 0.75, 27/12/2021</a>
+<ul>
+<li class="chapter" data-level="" data-path="changelog.html"><a href="changelog.html#print-view-exporting-and-zooming"><i class="fa fa-check"></i>Print view: exporting and zooming</a></li>
+<li class="chapter" data-level="" data-path="changelog.html"><a href="changelog.html#label-links"><i class="fa fa-check"></i>Label links</a></li>
+<li class="chapter" data-level="" data-path="changelog.html"><a href="changelog.html#highlight-factors-without-removing-other-factors"><i class="fa fa-check"></i>Highlight factors without removing other factors</a></li>
+<li class="chapter" data-level="" data-path="changelog.html"><a href="changelog.html#printout-for-example-printout-of-quotes-option-in-tables"><i class="fa fa-check"></i>Printout (for example, printout of quotes) option in tables</a></li>
+<li class="chapter" data-level="" data-path="changelog.html"><a href="changelog.html#path-tracing"><i class="fa fa-check"></i>Path tracing</a></li>
+<li class="chapter" data-level="" data-path="changelog.html"><a href="changelog.html#mark-links-for-continuity-print-view-only"><i class="fa fa-check"></i>Mark links for continuity (Print View only)</a></li>
+<li class="chapter" data-level="" data-path="changelog.html"><a href="changelog.html#show-continuity"><i class="fa fa-check"></i>Show continuity</a></li>
+<li class="chapter" data-level="" data-path="changelog.html"><a href="changelog.html#roundtripping-with-the-statements-table"><i class="fa fa-check"></i>Roundtripping with the <code>statements</code> table</a></li>
+</ul></li>
+</ul></li>
+<li class="part"><span><b>IX 📚Final section</b></span></li>
+<li class="chapter" data-level="" data-path="acknowledgements.html"><a href="acknowledgements.html"><i class="fa fa-check"></i>Acknowledgements</a></li>
+<li class="chapter" data-level="" data-path="appendix-publications-and-links.html"><a href="appendix-publications-and-links.html"><i class="fa fa-check"></i>Appendix: Publications and links</a>
+<ul>
+<li class="chapter" data-level="" data-path="appendix-publications-and-links.html"><a href="appendix-publications-and-links.html#publications"><i class="fa fa-check"></i>Publications</a></li>
+<li class="chapter" data-level="" data-path="appendix-publications-and-links.html"><a href="appendix-publications-and-links.html#presentations"><i class="fa fa-check"></i>Presentations</a></li>
+<li class="chapter" data-level="" data-path="appendix-publications-and-links.html"><a href="appendix-publications-and-links.html#longer-blog-posts"><i class="fa fa-check"></i>Longer blog posts</a></li>
+<li class="chapter" data-level="" data-path="appendix-publications-and-links.html"><a href="appendix-publications-and-links.html#researchgate"><i class="fa fa-check"></i>ResearchGate</a></li>
+<li class="chapter" data-level="" data-path="appendix-publications-and-links.html"><a href="appendix-publications-and-links.html#resources-and-apps"><i class="fa fa-check"></i>Resources and apps</a></li>
+<li class="chapter" data-level="" data-path="appendix-publications-and-links.html"><a href="appendix-publications-and-links.html#bibliography-of-selected-causal-mapping-approaches"><i class="fa fa-check"></i>Bibliography of selected causal mapping approaches</a></li>
+</ul></li>
+<li class="chapter" data-level="" data-path="references.html"><a href="references.html"><i class="fa fa-check"></i>References</a></li>
+<li class="divider"></li>
+<li><a href="https://causalmap.app" target="blank">Causal Map</a></li>
+
 </ul>
 
-        <div class="book-extra">
-          <p><a id="book-repo" href="https://github.com/stevepowell99/causal-map-guide">View book source <i class="fab fa-github"></i></a></p>
-        </div>
       </nav>
-</div>
-  </header><main class="col-sm-12 col-md-9 col-lg-7" id="content"><div id="creating-good-factor-labels" class="section level1" number="57">
-<h1>
-<span class="header-section-number">57</span> 📚 Creating good factor labels<a class="anchor" aria-label="anchor" href="#creating-good-factor-labels"><i class="fas fa-link"></i></a>
-</h1>
+    </div>
+
+    <div class="book-body">
+      <div class="body-inner">
+        <div class="book-header" role="navigation">
+          <h1>
+            <i class="fa fa-circle-o-notch fa-spin"></i><a href="./">Guide to Causal Mapping</a>
+          </h1>
+        </div>
+
+        <div class="page-wrapper" tabindex="-1" role="main">
+          <div class="page-inner">
+
+            <section class="normal" id="section-">
+<!-- Global site tag (gtag.js) - Google Analytics -->
+<script async src="https://www.googletagmanager.com/gtag/js?id=G-1EQ4YJMYRJ"></script>
+<script>
+  window.dataLayer = window.dataLayer || [];
+  function gtag(){dataLayer.push(arguments);}
+  gtag('js', new Date());
+
+  gtag('config', 'G-1EQ4YJMYRJ');
+</script>
+<div id="creating-good-factor-labels" class="section level1 hasAnchor">
+<h1>📚 Creating good factor labels<a href="#creating-good-factor-labels" class="anchor-section" aria-label="Anchor link to header"></a></h1>
 <iframe src="https://player.vimeo.com/video/580212681" width="672" height="400px" data-external="1">
 </iframe>
 <p>Remember that in general, factor names are case sensitive. So the app will not treat ‘funding’ and ‘Funding’ as the same.</p>
 <p>You can use emojis 😍 and other special characters in your factor labels.</p>
 <p>Also, semi-colons ‘;’ you can use them if you want, but note that the app will then treat this factor label as <a href="xhierarchical-coding.html#xhierarchical-coding">hierarchical</a>.</p>
-<div id="actor-focused-labels" class="section level2" number="57.1">
-<h2>
-<span class="header-section-number">57.1</span> Actor-focused labels<a class="anchor" aria-label="anchor" href="#actor-focused-labels"><i class="fas fa-link"></i></a>
-</h2>
+<div id="actor-focused-labels" class="section level2 hasAnchor">
+<h2>Actor-focused labels<a href="creating-good-factor-labels.html#actor-focused-labels" class="anchor-section" aria-label="Anchor link to header"></a></h2>
 <p>Often you will find that it is easier and clearer if you formulate your labels to highlight who does what. So a formulation like “advocacy on renewables” might be better as “NGOs conduct advocacy campaign on renewables”. If you do this, you may even find that you want to break this up into different actors, for example “<strong>NGOs</strong> conduct advocacy campaign on renewables” and “<strong>Politicians</strong> pay more attention to renewables”. In particular, avoid using passive formulations like “Advocacy is carried out” or “Awareness is raised”.</p>
 </div>
-<div id="formulating-factors-as-semi-quantitative" class="section level2" number="57.2">
-<h2>
-<span class="header-section-number">57.2</span> Formulating factors as “semi-quantitative”<a class="anchor" aria-label="anchor" href="#formulating-factors-as-semi-quantitative"><i class="fas fa-link"></i></a>
-</h2>
-<div id="relax-use-heterogeneous-in-vivo-factor-labels" class="section level3" number="57.2.1">
-<h3>
-<span class="header-section-number">57.2.1</span> Relax! Use heterogeneous, “in-vivo” factor labels<a class="anchor" aria-label="anchor" href="#relax-use-heterogeneous-in-vivo-factor-labels"><i class="fas fa-link"></i></a>
-</h3>
+<div id="formulating-factors-as-semi-quantitative" class="section level2 hasAnchor">
+<h2>Formulating factors as “semi-quantitative”<a href="creating-good-factor-labels.html#formulating-factors-as-semi-quantitative" class="anchor-section" aria-label="Anchor link to header"></a></h2>
+<div id="relax-use-heterogeneous-in-vivo-factor-labels" class="section level3 hasAnchor">
+<h3>Relax! Use heterogeneous, “in-vivo” factor labels<a href="creating-good-factor-labels.html#relax-use-heterogeneous-in-vivo-factor-labels" class="anchor-section" aria-label="Anchor link to header"></a></h3>
 <p>It might be tempting to try to formulate all factor labels in a strictly similar way, using for example language like “increased probability of …” or “positive change in …” in every case. But it is difficult to identify and agree on a satisfactory template for doing this which will capture enough of the way people really make causal explanations (in the way that quantitative social scientists hope to measure everything just with continuous variables). This is always a balancing act, but we encourage you when in doubt to stick fairly close to the actual language your sources use (so-called “in-vivo” coding), and don’t be <em>too</em> worried if your factor labels are different from one another grammatically (e.g. some express a difference like “improvement in X” and some do not.</p>
 <p>The formulation of <strong>factor labels</strong> should fit the intended interpretation of the <strong>causal links</strong>. For example, most commonly B ➜ E is supposed to mean that B exerts in some sense an “increasing” or “decreasing” influence on E, then both B and E need to be formulated in a corresponding way. In order to ease interpretation, with a few exceptions, factors should be labelled and understood in such a way that it makes sense to say “more of this” or “this happened as opposed to not happening”: we call these semi-quantitative factors.</p>
 <p>Consequently you should avoid a factor label like Training courses, which might be understood as a mixed bag of various causal factors to do with training courses. We would usually prefer a label such as Training courses delivered or Quality of training courses which are easier to understand as things which can increase or decrease, or happen or not happen. You may even prefer to use labels like Quality of training courses improved or Improved quality of training courses, in which the <em>difference made</em> is already included in the title.</p>
 </div>
-<div id="quip-specific-back-chaining" class="section level3" number="57.2.2">
-<h3>
-<span class="header-section-number">57.2.2</span> QuIP specific: back-chaining<a class="anchor" aria-label="anchor" href="#quip-specific-back-chaining"><i class="fas fa-link"></i></a>
-</h3>
+<div id="quip-specific-back-chaining" class="section level3 hasAnchor">
+<h3>QuIP specific: back-chaining<a href="creating-good-factor-labels.html#quip-specific-back-chaining" class="anchor-section" aria-label="Anchor link to header"></a></h3>
 <p>In QuIP projects, most of the interview material comes in response to questions about changes in the reference period, usually the last three years. QuIP questioning continues back up the causal chain, asking what was the reason for that? … and the reason for that? That means that most influence factors will also be expressed as changes or differences (a change in F is explained by a change in E which is explained by a change in D….), whereas some are not (e.g. “unemployment”). Some analysts will try to avoid coding this kind of claim (can something which has been around a long time explain a change in the last three years?) but you may decide that this distinction does not matter too much. If something really does describe a <em>change</em> (e.g. “became unemployed”) then it should be coded.</p>
 <p>Most QuIP testimony begins with questions about whether things have got better or worse, so most causal factors, going back up the causal chain, are likely to be semi-quantitative too.</p>
 </div>
-<div id="examples-of-semi-quantitative-factors" class="section level3" number="57.2.3">
-<h3>
-<span class="header-section-number">57.2.3</span> Examples of semi-quantitative factors<a class="anchor" aria-label="anchor" href="#examples-of-semi-quantitative-factors"><i class="fas fa-link"></i></a>
-</h3>
+<div id="examples-of-semi-quantitative-factors" class="section level3 hasAnchor">
+<h3>Examples of semi-quantitative factors<a href="creating-good-factor-labels.html#examples-of-semi-quantitative-factors" class="anchor-section" aria-label="Anchor link to header"></a></h3>
 <p>These are examples of factor labels where you can judge whether it happened more or less, whether it is higher or lower, or whether it happened versus not happened:</p>
 <ul>
 <li>Sold cow</li>
@@ -235,10 +919,8 @@
 <p>It is also perfectly acceptable and sometimes necessary to use purely qualitative labels, e.g. coping style, <a href="https://guide.causalmap.app/creating.html#examples-of-non-quantitative-factors">see below</a>. However, this may limit some of the analysis and reporting tools available.</p>
 </div>
 </div>
-<div id="opposed-pairs-of-causal-factors" class="section level2" number="57.3">
-<h2>
-<span class="header-section-number">57.3</span> Opposed pairs of causal factors<a class="anchor" aria-label="anchor" href="#opposed-pairs-of-causal-factors"><i class="fas fa-link"></i></a>
-</h2>
+<div id="opposed-pairs-of-causal-factors" class="section level2 hasAnchor">
+<h2>Opposed pairs of causal factors<a href="creating-good-factor-labels.html#opposed-pairs-of-causal-factors" class="anchor-section" aria-label="Anchor link to header"></a></h2>
 <p>What to do when some explanations use a causal factor phrased in a positive way and others use a similar causal factor but phrased the other way around?</p>
 <p>“I feel good because my health is good.”</p>
 <p>“My sister lost her job because her health is bad.”</p>
@@ -252,17 +934,13 @@
 <p>If you use more advanced coding styles involving “strength,” detailed in the “Extra” section of this Guide, you can avoid this by just using one factor like Better health.</p>
 <p>Alternatively, ‘Health Improved’ and ‘Health got Worse’ could be coded as ‘Health Improved’ and ‘~Health Improved’ respectively, with ‘~’ indicating the ‘opposite’ of an improvement in health. The app will then treat links to Health Improved and ~Health Improved separately. <a href="https://guide.causalmap.app/coding-opposites.html#combining-opposites">More information on this can be found here.</a></p>
 </div>
-<div id="formulating-factors-as-desirable" class="section level2" number="57.4">
-<h2>
-<span class="header-section-number">57.4</span> Formulating factors as desirable<a class="anchor" aria-label="anchor" href="#formulating-factors-as-desirable"><i class="fas fa-link"></i></a>
-</h2>
+<div id="formulating-factors-as-desirable" class="section level2 hasAnchor">
+<h2>Formulating factors as desirable<a href="creating-good-factor-labels.html#formulating-factors-as-desirable" class="anchor-section" aria-label="Anchor link to header"></a></h2>
 <p>If possible, especially when conducting evaluations or research for policy purposes, try to formulate these semi-quantitative factors so that for each one, <em>more</em> of it can be broadly thought of as <em>more desirable</em>, e.g. Health, Wellbeing; and failing that, as something <em>undesirable</em>, e.g. Psychosocial Stress, Mortality. Including factors which primarily code something undesirable as well as factors which primarily code something desirable, is often very natural, but you might sometimes have to think more carefully when making reports and summaries.</p>
 <p>Again, it is least useful, but also perfectly acceptable and sometimes necessary, to fall back to using factor labels which are ambiguous as to their desirability, e.g. Moved house<em>,</em> if there is a lack of information or in the case of factors which simply are neutral.</p>
 </div>
-<div id="examples-of-non-quantitative-factors" class="section level2" number="57.5">
-<h2>
-<span class="header-section-number">57.5</span> Examples of non-quantitative factors<a class="anchor" aria-label="anchor" href="#examples-of-non-quantitative-factors"><i class="fas fa-link"></i></a>
-</h2>
+<div id="examples-of-non-quantitative-factors" class="section level2 hasAnchor">
+<h2>Examples of non-quantitative factors<a href="creating-good-factor-labels.html#examples-of-non-quantitative-factors" class="anchor-section" aria-label="Anchor link to header"></a></h2>
 <p>These are examples of factors where it is very hard to quantify the occurrence in any way:</p>
 <ul>
 <li>Teaching style</li>
@@ -276,10 +954,8 @@
 </ul>
 <p>The diagram below is an acceptable causal map, even though the intervening two variables are an example of more qualitative rather than (semi-)quantitative labels. It tells us that the training did something to the teaching style, which did something relevant to the learning style, which improved student outcomes. We don’t have a theory about the “how” of any of the arrows, and we don’t (necessarily) suggest that teaching style or learning style are things which can be measured on a single scale from e.g. “less” to “more.”</p>
 </div>
-<div id="using-flags-in-factor-labels" class="section level2" number="57.6">
-<h2>
-<span class="header-section-number">57.6</span> Using flags in factor labels<a class="anchor" aria-label="anchor" href="#using-flags-in-factor-labels"><i class="fas fa-link"></i></a>
-</h2>
+<div id="using-flags-in-factor-labels" class="section level2 hasAnchor">
+<h2>Using flags in factor labels<a href="creating-good-factor-labels.html#using-flags-in-factor-labels" class="anchor-section" aria-label="Anchor link to header"></a></h2>
 <p>Hierarchical coding is one way to structure your coding. However, sometimes you don’t want to think in terms of a strict hierarchy, or maybe you have an additional set of themes which cut across that hierarchy.</p>
 <iframe src="https://player.vimeo.com/video/671894620" width="672" height="400px" data-external="1">
 </iframe>
@@ -300,10 +976,8 @@
 <p>Then we can easily search for this and other desired outcomes.</p>
 <p>A flag like “men” is not suitable because it is likely to appear elsewhere (e.g. as part of “women” or “management”). To get round this, add additional characters like a hash: “#men”; this makes the flag unique.</p>
 <p>If you use curved or square brackets around your flags, you can use one of the app filters to hide the flags for specific maps if desired.</p>
-<div id="xhanging-flags" class="section level3" number="57.6.1">
-<h3>
-<span class="header-section-number">57.6.1</span> Hanging flags<a class="anchor" aria-label="anchor" href="#xhanging-flags"><i class="fas fa-link"></i></a>
-</h3>
+<div id="xhanging-flags" class="section level3 hasAnchor">
+<h3>Hanging flags<a href="creating-good-factor-labels.html#xhanging-flags" class="anchor-section" aria-label="Anchor link to header"></a></h3>
 <p>A subtle trick is to use hanging flags which are additional hierarchical components. So rather than writing, say,</p>
 <blockquote>
 <p>More food #nutrition –&gt; Improved wellbeing</p>
@@ -317,16 +991,12 @@
 <p>More food –&gt; Improved wellbeing</p>
 </blockquote>
 </div>
-<div id="flags-for-bundling-factors" class="section level3" number="57.6.2">
-<h3>
-<span class="header-section-number">57.6.2</span> Flags for bundling factors<a class="anchor" aria-label="anchor" href="#flags-for-bundling-factors"><i class="fas fa-link"></i></a>
-</h3>
+<div id="flags-for-bundling-factors" class="section level3 hasAnchor">
+<h3>Flags for bundling factors<a href="creating-good-factor-labels.html#flags-for-bundling-factors" class="anchor-section" aria-label="Anchor link to header"></a></h3>
 <p>It is very convenient to use flags when you want to <a href="filters-overview.html#bundlefactors">bundle factors</a>. This means you can easily collapse together one or more sets of factors sharing a common theme, regardless and independently of any hierarchical structure you are using.</p>
 </div>
-<div id="intervention-flags" class="section level3" number="57.6.3">
-<h3>
-<span class="header-section-number">57.6.3</span> Intervention Flags<a class="anchor" aria-label="anchor" href="#intervention-flags"><i class="fas fa-link"></i></a>
-</h3>
+<div id="intervention-flags" class="section level3 hasAnchor">
+<h3>Intervention Flags<a href="creating-good-factor-labels.html#intervention-flags" class="anchor-section" aria-label="Anchor link to header"></a></h3>
 <p>The commissioner of an evaluation will nearly always want to be able to focus on their own interventions, so it is advisable to use a consistent label or category across all factors which are noted as project inputs in order to be easily searchable. These will usually be influence factors with no parents, i.e. factors which have no incoming influence factors.</p>
 <p>In the example below, both are similar interventions, but one is clearly attributable to an NGO.</p>
 <p>“MSF gave us medicines which healed the children”</p>
@@ -339,17 +1009,13 @@
 <p>· And/or you can use a specific intervention flag, e.g. #Intervention. (QuIP has its own flags, [I] for Implicit and [E] for Explicit).</p>
 <p>You can use any label you want as long as you are sure it is unique, it doesn’t appear accidentally in other factor names, and you use it consistently.</p>
 </div>
-<div id="outcome-flags" class="section level3" number="57.6.4">
-<h3>
-<span class="header-section-number">57.6.4</span> Outcome Flags<a class="anchor" aria-label="anchor" href="#outcome-flags"><i class="fas fa-link"></i></a>
-</h3>
+<div id="outcome-flags" class="section level3 hasAnchor">
+<h3>Outcome Flags<a href="creating-good-factor-labels.html#outcome-flags" class="anchor-section" aria-label="Anchor link to header"></a></h3>
 <p>Similarly, if you wish to flag up outcomes /consequences as either desired/desirable/valued, or the inverse, you can mark these in a way which makes them easy to identify. You could use symbols like ♥ etc. in the labels to designate this, or use use QuIP-style labels [P] for positive and [N] for negative. This can be helpful when undertaking analysis; for example, displaying direct and indirect links from some or all of the intervention factors to some or all of the positive outcome factors or highlighting or counting paths leading to all negative outcome factors, etc.</p>
 <p>Again, you can use any label you want as long as you are sure it is unique, it doesn’t appear accidentally in other factor names, and you use it consistently.</p>
 </div>
-<div id="coding-your-statements-in-context-referring-to-evidence-from-elsewhere" class="section level3" number="57.6.5">
-<h3>
-<span class="header-section-number">57.6.5</span> Coding your statements in context: referring to evidence from elsewhere<a class="anchor" aria-label="anchor" href="#coding-your-statements-in-context-referring-to-evidence-from-elsewhere"><i class="fas fa-link"></i></a>
-</h3>
+<div id="coding-your-statements-in-context-referring-to-evidence-from-elsewhere" class="section level3 hasAnchor">
+<h3>Coding your statements in context: referring to evidence from elsewhere<a href="creating-good-factor-labels.html#coding-your-statements-in-context-referring-to-evidence-from-elsewhere" class="anchor-section" aria-label="Anchor link to header"></a></h3>
 <p>When coding data from an interview it is very important to see the whole interview as your source, and not fall into the trap of only coding the statement in front you, out of context. If your statements are split into separate questions (as is often the case with QuIP), it can be misleading to code just one statement in isolation, without taking account of what the respondent says earlier or later in the interview. For this reason we recommend that all analysts read the whole interview before starting to code, and start to formulate causal stories which fit across the whole interview. In some cases, you may prefer to have the whole interview as one statement, and to code it all in one place. This is absolutely possible, and just depends how the data is imported (whatever information is on one row in the .csv file is considered a statement). If, however, the interview is too long, or you would still prefer to code question by question, you need may want to refer to information provided in another statement when coding a link. This is not necessary but can be useful when sharing the file with a commissioner who may look at quotes associated with links, and not understand the rationale for coding without further context. The same applies for different parts of a paragraphs within one statement; you may want to highlight two separate parts of a longer statement.</p>
 <p>If the quote is not exactly verbatim in the statement, the app won’t let you save anything. (If this happens, just cancel the quote (press the X) and start again.) The app is really picky about this to ensure your quotes are accurate. However, this rule does not apply for anything between square brackets, a useful feature for this case. If the evidence for a link is mentioned in two different parts of a single statement, like this:</p>
 <p><em>Yes, we got the help from OrgX. Sed ut perspiciatis unde omnis iste natus error sit voluptatem accusantium doloremque laudantium, totam rem aperiam, eaque ipsa quae ab illo inventore veritatis et quasi architecto beatae vitae dicta sunt explicabo. And because of that help, now I have a job. qui dolorem ipsum quia dolor sit amet, consectetur, adipisci velit. Ut enim ad minima veniam.</em></p>
@@ -362,10 +1028,8 @@
 <p><em>[reference to statement 36: The whole village received help from Org X] Thanks to that help we received, we are now growing our own produce.</em></p>
 </div>
 </div>
-<div id="consolidating-and-editing-factor-labels" class="section level2" number="57.7">
-<h2>
-<span class="header-section-number">57.7</span> Consolidating and editing factor labels<a class="anchor" aria-label="anchor" href="#consolidating-and-editing-factor-labels"><i class="fas fa-link"></i></a>
-</h2>
+<div id="consolidating-and-editing-factor-labels" class="section level2 hasAnchor">
+<h2>Consolidating and editing factor labels<a href="creating-good-factor-labels.html#consolidating-and-editing-factor-labels" class="anchor-section" aria-label="Anchor link to header"></a></h2>
 <p>After you have created more than about 50 factors you will probably feel the need to start consolidating and renaming them and perhaps merging some.</p>
 <p>If you look at the Mentions table in the app, you will probably find a lot of <em>pairs</em> of factors each of which is used only once, as half of this particular pair, and don’t appear linked into longer stories. We almost certainly will want to consolidate some of these factors by in some way merging them with others which have similar meaning.</p>
 <p>Suppose you have 100 factors which are just mentioned once or twice. It’s a lot of work to do all that coding, a lot of work for almost nothing, because those very infrequent factors (we call them “tiddlers”) are unlikely to appear much in any reporting you do. With hierarchical coding, even infrequent factors can contribute to the bigger picture.</p>
@@ -378,71 +1042,75 @@
 <p>This is useful when the factors are listed alphabetically and can be a stepping-stone to formulating factors hierarchically.</p>
 <p>Even when doing inductive coding, some people formulate factors with a theory in mind, with some higher-level factors like “communication difficulties” or “resilient outcomes.” However we have found that it is often most interesting when you let the theory emerge rather than by starting with a preconceived template in this way. Look at your factors periodically as you code and see if there are any obvious groups.</p>
 <p>Also, our recommended way of having your cake and eating it - keeping the detail but seeing the general trends too – is “hierarchical coding.” <a href="https://guide.causalmap.app/creating.html#simplifying-causal-maps-with-hierarchical-coding">See below</a>.</p>
-<div id="merging-multiple-factors-into-one" class="section level3" number="57.7.1">
-<h3>
-<span class="header-section-number">57.7.1</span> Merging multiple factors into one<a class="anchor" aria-label="anchor" href="#merging-multiple-factors-into-one"><i class="fas fa-link"></i></a>
-</h3>
+<div id="merging-multiple-factors-into-one" class="section level3 hasAnchor">
+<h3>Merging multiple factors into one<a href="creating-good-factor-labels.html#merging-multiple-factors-into-one" class="anchor-section" aria-label="Anchor link to header"></a></h3>
 <p>In some cases you will simply decide, in the face of too many factors, to merge <code>Engagement with communities</code> and <code>NGO engagement</code>into one, e.g. <code>Engagement</code>.</p>
 <p>If you have two factors like this which are very similar but not quite the same, you can sometimes keep some detail by using a composite label which explicitly mentions both i.e.<code>Engagement with communities/NGOs</code>.</p>
 
 </div>
 </div>
 </div>
-  <div class="chapter-nav">
-<div class="prev"><a href="xquickfields.html"><span class="header-section-number">56</span> Quickfields</a></div>
-<div class="next"><a href="coding-opposites.html"><span class="header-section-number">58</span> 📚 Coding opposites</a></div>
-</div></main><div class="col-md-3 col-lg-2 d-none d-md-block sidebar sidebar-chapter">
-    <nav id="toc" data-toggle="toc" aria-label="On this page"><h2>On this page</h2>
-      <ul class="nav navbar-nav">
-<li><a class="nav-link" href="#creating-good-factor-labels"><span class="header-section-number">57</span> 📚 Creating good factor labels</a></li>
-<li><a class="nav-link" href="#actor-focused-labels"><span class="header-section-number">57.1</span> Actor-focused labels</a></li>
-<li>
-<a class="nav-link" href="#formulating-factors-as-semi-quantitative"><span class="header-section-number">57.2</span> Formulating factors as “semi-quantitative”</a><ul class="nav navbar-nav">
-<li><a class="nav-link" href="#relax-use-heterogeneous-in-vivo-factor-labels"><span class="header-section-number">57.2.1</span> Relax! Use heterogeneous, “in-vivo” factor labels</a></li>
-<li><a class="nav-link" href="#quip-specific-back-chaining"><span class="header-section-number">57.2.2</span> QuIP specific: back-chaining</a></li>
-<li><a class="nav-link" href="#examples-of-semi-quantitative-factors"><span class="header-section-number">57.2.3</span> Examples of semi-quantitative factors</a></li>
-</ul>
-</li>
-<li><a class="nav-link" href="#opposed-pairs-of-causal-factors"><span class="header-section-number">57.3</span> Opposed pairs of causal factors</a></li>
-<li><a class="nav-link" href="#formulating-factors-as-desirable"><span class="header-section-number">57.4</span> Formulating factors as desirable</a></li>
-<li><a class="nav-link" href="#examples-of-non-quantitative-factors"><span class="header-section-number">57.5</span> Examples of non-quantitative factors</a></li>
-<li>
-<a class="nav-link" href="#using-flags-in-factor-labels"><span class="header-section-number">57.6</span> Using flags in factor labels</a><ul class="nav navbar-nav">
-<li><a class="nav-link" href="#xhanging-flags"><span class="header-section-number">57.6.1</span> Hanging flags</a></li>
-<li><a class="nav-link" href="#flags-for-bundling-factors"><span class="header-section-number">57.6.2</span> Flags for bundling factors</a></li>
-<li><a class="nav-link" href="#intervention-flags"><span class="header-section-number">57.6.3</span> Intervention Flags</a></li>
-<li><a class="nav-link" href="#outcome-flags"><span class="header-section-number">57.6.4</span> Outcome Flags</a></li>
-<li><a class="nav-link" href="#coding-your-statements-in-context-referring-to-evidence-from-elsewhere"><span class="header-section-number">57.6.5</span> Coding your statements in context: referring to evidence from elsewhere</a></li>
-</ul>
-</li>
-<li>
-<a class="nav-link" href="#consolidating-and-editing-factor-labels"><span class="header-section-number">57.7</span> Consolidating and editing factor labels</a><ul class="nav navbar-nav"><li><a class="nav-link" href="#merging-multiple-factors-into-one"><span class="header-section-number">57.7.1</span> Merging multiple factors into one</a></li></ul>
-</li>
-</ul>
+            </section>
 
-      <div class="book-extra">
-        <ul class="list-unstyled">
-<li><a id="book-source" href="https://github.com/stevepowell99/causal-map-guide/blob/master/48600-coding-principles.rmd">View source <i class="fab fa-github"></i></a></li>
-          <li><a id="book-edit" href="https://github.com/stevepowell99/causal-map-guide/edit/master/48600-coding-principles.rmd">Edit this page <i class="fab fa-github"></i></a></li>
-        </ul>
-</div>
-    </nav>
-</div>
-
-</div>
-</div> <!-- .container -->
-
-<footer class="bg-primary text-light mt-5"><div class="container"><div class="row">
-
-  <div class="col-12 col-md-6 mt-3">
-    <p>"<strong>Guide to Causal Mapping</strong>" was written by Steve Powell<a href="#fn1" class="footnote-ref" id="fnref1"><sup>1</sup></a>, Fiona Remnant<a href="#fn2" class="footnote-ref" id="fnref2"><sup>2</sup></a>, James Copestake<a href="#fn3" class="footnote-ref" id="fnref3"><sup>3</sup></a>, Hannah Mishan<a href="#fn4" class="footnote-ref" id="fnref4"><sup>4</sup></a>, Rebekah Avard<a href="#fn5" class="footnote-ref" id="fnref5"><sup>5</sup></a>, Samuel Goddard<a href="#fn6" class="footnote-ref" id="fnref6"><sup>6</sup></a>. It was last built on 2022-11-02.</p>
+          </div>
+        </div>
+      </div>
+<a href="xquickfields.html" class="navigation navigation-prev " aria-label="Previous page"><i class="fa fa-angle-left"></i></a>
+<a href="coding-opposites.html" class="navigation navigation-next " aria-label="Next page"><i class="fa fa-angle-right"></i></a>
+    </div>
   </div>
+<script src="libs/gitbook-2.6.7/js/app.min.js"></script>
+<script src="libs/gitbook-2.6.7/js/clipboard.min.js"></script>
+<script src="libs/gitbook-2.6.7/js/plugin-search.js"></script>
+<script src="libs/gitbook-2.6.7/js/plugin-sharing.js"></script>
+<script src="libs/gitbook-2.6.7/js/plugin-fontsettings.js"></script>
+<script src="libs/gitbook-2.6.7/js/plugin-bookdown.js"></script>
+<script src="libs/gitbook-2.6.7/js/jquery.highlight.js"></script>
+<script src="libs/gitbook-2.6.7/js/plugin-clipboard.js"></script>
+<script>
+gitbook.require(["gitbook"], function(gitbook) {
+gitbook.start({
+"sharing": {
+"github": false,
+"facebook": true,
+"twitter": true,
+"linkedin": false,
+"weibo": false,
+"instapaper": false,
+"vk": false,
+"whatsapp": false,
+"all": ["facebook", "twitter", "linkedin", "weibo", "instapaper"]
+},
+"fontsettings": {
+"theme": "white",
+"family": "sans",
+"size": 2
+},
+"edit": {
+"link": null,
+"text": null
+},
+"history": {
+"link": null,
+"text": null
+},
+"view": {
+"link": null,
+"text": null
+},
+"download": ["Guide-to-causal-mapping.pdf"],
+"search": {
+"engine": "fuse",
+"options": null
+},
+"toc": {
+"collapse": "section"
+},
+"toc_depth": 3
+});
+});
+</script>
 
-  <div class="col-12 col-md-6 mt-3">
-    <p>This book was built by the <a class="text-light" href="https://bookdown.org">bookdown</a> R package.</p>
-  </div>
-
-</div></div>
-</footer>
 </body>
+
 </html>
