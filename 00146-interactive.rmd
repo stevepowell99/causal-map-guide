@@ -1,5 +1,9 @@
 #  Interactive View{#xinteractive-view}
 
+The first tab on the right shows an interactive version of the map in which the elements can be moved around and also the upstream and downstream factors are highlighted when the user moves their mouse over them.
+
+The Interactive View is designed to let you interact with and explore your map.
+
 The video below gives a brief overview of both the interactive and print view tab.
 
 ```{r,echo=F}
@@ -8,7 +12,7 @@ knitr::include_url("https://player.vimeo.com/video/674383670")
 
 ```
 
-An interactive version of the map in which the elements can be moved around and also the upstream and downstream factors are highlighted when the user hovers over them.
+You can:
 
 - Drag the factors around.
 - Copy a map as an image by right-clicking on it.

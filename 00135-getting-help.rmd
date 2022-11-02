@@ -18,7 +18,7 @@ You can get help at any time by clicking on the little blue info buttons, like b
 
 ![image-20221020084046445](_assets/image-20221020084046445.png){width=650}
 
-The details of what you may differ slightly depending on the version of the app you are using.
+The details of what you see may differ slightly depending on the version of the app you are using.
 
 
 

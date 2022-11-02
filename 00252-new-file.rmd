@@ -6,6 +6,5 @@ If you want to [upload your own data into a new file](#ximport), first press the
 
 ![image-20220723134329170](_assets/image-20220723134329170.png)
 
-Then you can upload causal mapping data (consisting of at least a set of statements to be coded) in the form of an [Excel file](#xuploading-and-updating) (.xls or .xlsx). 
-
+Then you can upload causal mapping data (consisting of at least a set of narrative statements to be coded, e.g. the text of interviews or reports) in the form of an [Excel file](#xuploading-and-updating) (.xls or .xlsx). 
 

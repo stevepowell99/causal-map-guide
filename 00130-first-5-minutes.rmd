@@ -53,22 +53,9 @@ You can use the arrow buttons to skip through statements. The --> button takes y
 
 Analysing a file means 
 
-- applying different filters to it, so that instead of seeing the entire unfiltered causal map, which can be quite bewildering, you see only part of it, for example
+- **applying different filters** to it, to focus on different parts of the entire causal map in order to answer different questions
 
-  - show me only information given by women
-
-  - show me only information from the first statement
-
-  - show me only the most frequently mentioned factors.
-
-- viewing the results in different ways by clicking on different tabs in the right hand side, e.g.:
-
-  ![image-20221019152210573](_assets/image-20221019152210573.png)
-
-  - two different kinds of graphical map
-    - the interactive view
-    - the print view
-  - various [tables](https://guide.causalmap.app/all-the-tables.html). 
+- **viewing the results in different ways** by clicking on different tabs in the right hand side to view different kinds of graphical map and various [tables](https://guide.causalmap.app/all-the-tables.html). 
 
 If you want to view / analyse a file, you will mostly:
 
@@ -76,48 +63,17 @@ If you want to view / analyse a file, you will mostly:
 - view many statements at a time by clicking `Many` on the multiple statement selector (above). 
 - start off by analysing the [example-file](https://app.causalmap.app/?story=example-file&filters=&tab=Interactive&subtab=&version=none&tabl=).
 
-### Interactive View{#not2}
 
-![image-20221101174559252](_assets/image-20221101174559252.png)
 
-[An interactive version of the map](#xinteractive-view) in which the elements can be moved around and also the upstream and downstream factors are highlighted when the user moves their mouse over them.
+### The Dashboard{#xdashboard0}
 
-The Interactive View is designed to let you interact with and explore your map.
-
-### Print View{#not}
-
-![image-20221101174616554](_assets/image-20221101174616554.png)
-
-[A print-quality version of the map](#xprint-view) with advanced layout. You usually use Print View to get high quality static outputs for including in reports.
-
-### Tables
-
-![image-20221101174632006](_assets/image-20221101174632006.png)
-
-Use this tab to produce a wide variety of [tables](https://guide.causalmap.app/all-the-tables.html).
-
-### The Dashboard{#xdashboard}
-
-- The Dashboard appears on the right as the app loads, or reveal it by pressing the yellow button at top-right: ![image-20221101151144384](_assets/image-20221101151144384.png)
+The Dashboard appears on the right as the app loads, or reveal it by pressing the yellow button at top-right: ![image-20221101151144384](_assets/image-20221101151144384.png)
 
 
 
 ![image-20220725094435395](_assets/image-20220725094435395.png)
 
-Each item in the dashboard is a different view of the current file saved by you or other users. 
-
-Each view usually:
-
-- applies a particular **filter**, e.g. "show me only causal claims made by women".
-- and/or it may take you to a particular **tab** on the right hand side -- the Print map, one of the Tables, etc.
-
-To load one of the views, just click on the item. 
-
-You can also go to a view if you know its unique number. So to go to view 369, type 369 into this box
-
-![image-20220808114935730](_assets/image-20220808114935730.png) and click the green arrow button.
-
-(Maps which have been downloaded as an image often have a unique number like this in the bottom left-hand corner. )
+Each item in the dashboard is a different view of the current file saved by you or other users. You can apply a view by clicking on the corresponding row. 
 
 ### The other tabs
 

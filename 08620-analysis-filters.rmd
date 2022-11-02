@@ -1,5 +1,41 @@
 # Filters -- overview
 
+
+
+```{r,echo=F}
+knitr::include_url("https://player.vimeo.com/video/618270513")
+```
+
+## Restore Filters
+
+By pressing this button you will restore the filters you applied previously in the current session.
+
+![](_assets/image-20220808111332598.png){width=650}
+
+## 
+
+
+
+## **Applying different filters** 
+
+Filters simplify your graph to help you answer specific questions. You will often apply more than one of these filters in order, e.g. first select only specific factors and then make the most frequently mentioned factors larger.
+
+- **Analysis filters**
+  - **Exclusion filters**. These filters simply exclude links and/or factors from the map. So instead of seeing the entire unfiltered causal map, which can be quite bewildering, you see only part of it. For example:
+    - show me only information given by women
+    - show me only information from the first statement
+    - show me only paths leading from "My intervention" to "My important outcomes"
+    - show me only the most frequently mentioned factors.
+  - **Simplification filters**. If you want to combine two similar factors, you will be using a simplification filter. These filters actually involve rerouting links, e.g. if you want to combine the factor "Ebola" into "Infectious diseases" the app will need to remove the factor "Ebola" and reroute all its links so they connect with "Infectious diseases" instead.
+- **Conditional formatting** filters. You can format the links and factors in your map to reflect the data, e.g. you can make factors bigger if they were mentioned more often.
+- **Simple formatting** filters. These are simply used to apply overall formatting, e.g. give all the factors a grey border. 
+
+
+
+
+
+
+
 These filters apply powerful filters which change the structure of the unfiltered map. Each filter can be applied more than once and they can (to some extent) be moved up and down.
 
 For example suppose you want to show only links from statements in which the word "women" appears in the `text` of the statement. So to apply a `find statements` filter, you click the button with that name. A dialog will appear, once you have filled in the panel, and you click `Apply filter`.
