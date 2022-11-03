@@ -6,14 +6,6 @@
 knitr::include_url("https://player.vimeo.com/video/618270513")
 ```
 
-## Restore Filters
-
-By pressing this button you will restore the filters you applied previously in the current session.
-
-![](_assets/image-20220808111332598.png){width=650}
-
-## 
-
 
 
 ## **Applying different filters** 

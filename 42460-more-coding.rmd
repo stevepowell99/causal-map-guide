@@ -12,7 +12,7 @@ This video shows how to create more than one causal link at a time.
 knitr::include_url("https://player.vimeo.com/video/588851236")
 ```
 
-### 
+
 
 ##  Chaining Links{#xchaining-links}
 

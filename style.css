@@ -133,3 +133,7 @@ p.author{display:none;}
 .book.font-family-1,.book-summary {
   font-family: 'Muli', sans-serif !important;
  }
+a[aria-label="Search"]{
+  background-color:#eee !important;
+  color:#00ffaf !important;
+}

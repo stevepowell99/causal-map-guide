@@ -1,0 +1,8 @@
+# Filters: tips
+
+## Restoring previous filter
+
+By pressing this button you will restore the filter you applied previously in the current session.
+
+![](_assets/image-20220808111332598.png){width=650}
+
