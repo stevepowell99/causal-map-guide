@@ -6,14 +6,7 @@ bookdown::gitbook:
   css: style.css
   number_sections: no
   config:
-    search:
-      engine: fuse #lunr # or fuse https://opensourcelibs.com/lib/lunr-module
-      # options to control/tune search engine behavior (for
-      # fuse.js, refer to https://fusejs.io/api/options.html)
-      options:
-        isCaseSensitive: true
-        threshold: 0.0
-        distance: 0
+    search: yes
     toc_depth: 3
     toc:
       collapse: section
@@ -23,10 +16,6 @@ bookdown::gitbook:
         <li><a href="https://causalmap.app" target="blank">Causal Map</a></li>
     download: null
     sharing: null
-    fontsettings:
-      theme: white
-      family: Ubuntu
-      size: 2
 bookdown::bs4_book:
   config:
     toc_depth: 1
