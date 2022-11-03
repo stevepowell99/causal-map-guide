@@ -1,3 +1,6 @@
+@import url('https://fonts.googleapis.com/css?family=Muli:400,400i,700&display=swap');
+@import url('https://fonts.googleapis.com/css?family=Ubuntu:300');
+
 /*Dark blue:
 C94 M87 Y45 K59
 R31 G31 B54
@@ -103,16 +106,12 @@ margin-bottom:10px;
 }
 
 /* for gitbook toc only*/
-@import url('https://fonts.googleapis.com/css?family=Ubuntu:300');
 
 .part{border-bottom:4px solid #eee;padding:4px;}
 .part{background-color: #eee;}
 .part span{color: black;opacity:.9 !important;}
 .chapter.active{background-color:#00ffaf55;}
 
-.book,.summary{
-  font-family: ;
-}
 .book{
   color:#1f1f36;
 }
@@ -128,3 +127,9 @@ margin-bottom:10px;
   background-color:#eee;
 }
 p.author{display:none;}
+
+
+
+.book.font-family-1,.book-summary {
+  font-family: 'Muli', sans-serif !important;
+ }
