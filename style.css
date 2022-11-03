@@ -57,13 +57,13 @@ pre code {
   float:right;
 }
 
-.focus{
+.focus,.rmdcaution{
   border: 1px solid #6dc4c8;
   border-radius: 5px;
   margin-bottom: 10px;
   padding: 15px;
   background-color:#eee;
-    
+
 }
 
 .show_mark_p{
@@ -102,4 +102,29 @@ summary{
 margin-bottom:10px;
 }
 
+/* for gitbook toc only*/
+@import url('https://fonts.googleapis.com/css?family=Ubuntu:300');
 
+.part{border-bottom:4px solid #eee;padding:4px;}
+.part{background-color: #eee;}
+.part span{color: black;opacity:.9 !important;}
+.chapter.active{background-color:#00ffaf55;}
+
+.book,.summary{
+  font-family: ;
+}
+.book{
+  color:#1f1f36;
+}
+.summary{
+  color:#1f1f3655;
+}
+.summary>li:first-child {
+  background-color: #eee;
+  font-size: 1.5em;
+
+}
+.navigation i{
+  background-color:#eee;
+}
+p.author{display:none;}

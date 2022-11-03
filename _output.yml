@@ -14,7 +14,12 @@ bookdown::gitbook:
         <li><a href="./">Guide to Causal Mapping</a></li>
       after: |
         <li><a href="https://causalmap.app" target="blank">Causal Map</a></li>
-    download: ["pdf"]
+    download: null
+    sharing: null
+    fontsettings:
+      theme: white
+      family: Ubuntu
+      size: 2
 bookdown::bs4_book:
   config:
     toc_depth: 1

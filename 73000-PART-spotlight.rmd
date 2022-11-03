@@ -1,2 +1,2 @@
-# (PART) 📚Spotlights {-}
+# (PART\*) 📚Spotlights {-}
 

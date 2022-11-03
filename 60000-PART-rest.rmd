@@ -1,2 +1,2 @@
-# (PART) The rest of the app {-}
+# (PART\*) The rest of the app {-}
 
