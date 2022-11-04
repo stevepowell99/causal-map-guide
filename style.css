@@ -121,14 +121,24 @@ margin-bottom:10px;
 .summary>li:first-child {
   background-color: #eee;
   font-size: 1.5em;
+  padding-top:15px;
+  padding-bottom:15px;
 
 }
 .navigation i{
   background-color:#eee;
+  border:8px solid white;
 }
 p.author{display:none;}
 
-
+.book.font-size-2 .book-body .page-inner section {
+    font-size: 2rem;
+}
+.book-summary {
+  font-size: .9em;
+  line-height: .7em;
+  font-family: 'Muli', sans-serif !important;
+ }
 
 .book.font-family-1,.book-summary {
   font-family: 'Muli', sans-serif !important;

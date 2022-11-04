@@ -16,6 +16,8 @@ bookdown::gitbook:
         <li><a href="https://causalmap.app" target="blank">Causal Map</a></li>
     download: null
     sharing: null
+    fontsettings:
+      theme: white
 bookdown::bs4_book:
   config:
     toc_depth: 1
