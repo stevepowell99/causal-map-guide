@@ -1,0 +1,74 @@
+# 📚 Creating good factor labels (1){#factor-labels1}
+
+See also [here](#factor-labels2).
+
+```{r,echo=F}
+knitr::include_url("https://player.vimeo.com/video/580212681")
+```
+
+
+Remember that in general, factor names are case sensitive. So the app will not treat 'funding' and 'Funding' as the same.
+
+You can use emojis 😍 and other special characters in your factor labels.
+
+Also, semi-colons ‘;’ you can use them if you want, but note that the app will then treat this factor label as [hierarchical](#xhierarchical-coding).
+
+
+## Actor-focused labels
+
+Often you will find that it is easier and clearer if you formulate your labels to highlight who does what. So a formulation like "advocacy on renewables" might be better as "NGOs conduct advocacy campaign on renewables". If you do this, you may even find that you want to break this up into different actors, for example "**NGOs** conduct advocacy campaign on renewables" and "**Politicians** pay more attention to renewables". In particular, avoid using passive formulations like "Advocacy is carried out" or "Awareness is raised".
+
+### "Semi-quantitative' labels
+
+It might be tempting to try to formulate all factor labels in a strictly similar way, using for example language like “increased probability of …” or “positive change in …” in every case. But it is difficult to identify and agree on a satisfactory template for doing this which will capture enough of the way people really make causal explanations (in the way that quantitative social scientists hope to measure everything just with continuous variables). This is always a balancing act, but we encourage you when in doubt to stick fairly close to the actual language your sources use (so-called “in-vivo” coding), and don’t be *too* worried if your factor labels are different from one another grammatically (e.g. some express a difference like “improvement in X” and some do not.
+
+The formulation of **factor labels** should fit the intended interpretation of the **causal links**. For example, most commonly B ➜ E is supposed to mean that B exerts in some sense an “increasing” or “decreasing” influence on E, then both B and E need to be formulated in a corresponding way. In order to ease interpretation, with a few exceptions, factors should be labelled and understood in such a way that it makes sense to say “more of this” or “this happened as opposed to not happening”: we call these semi-quantitative factors.
+
+Consequently you should avoid a factor label like Training courses, which might be understood as a mixed bag of various causal factors to do with training courses. We would usually prefer a label such as Training courses delivered or Quality of training courses which are easier to understand as things which can increase or decrease, or happen or not happen. You may even prefer to use labels like Quality of training courses improved or Improved quality of training courses, in which the *difference made* is already included in the title.
+
+### Examples of semi-quantitative factors
+
+These are examples of factor labels where you can judge whether it happened more or less, whether it is higher or lower, or whether it happened versus not happened:
+
+- Sold cow
+- Earthquake happened
+- (Had) good harvest
+- (Level of) bank account
+- (Level of) ethnic tolerance
+- Quality of seeds
+
+In some contexts, we can also talk about the *likelihood* of events, so “if people get a good harvest they are less likely to sell their cow.”
+
+It is also perfectly acceptable and sometimes necessary to use purely qualitative labels, e.g. coping style, [see below](https://guide.causalmap.app/creating.html#examples-of-non-quantitative-factors). However, this may limit some of the analysis and reporting tools available.
+
+## Using flags in factor labels
+
+Hierarchical coding is one way to structure your coding. However, sometimes you don't want to think in terms of a strict hierarchy, or maybe you have an additional set of themes which cut across that hierarchy.
+
+````{r,echo=F}
+knitr::include_url("https://player.vimeo.com/video/671894620")
+
+````
+
+Flags are useful in either of these cases.
+
+Flags are just sequences of characters within a factor label to which you have given a special meaning, and which are unique and easy to search for. These can include letters, emojis or phrases. You can do coding without any such flags if you want, but it can help when searching and filtering.
+
+A quote like “family situation is better now because of improved food availability” can be coded like this:
+
+> More food --> Improved wellbeing
+
+Now, maybe you are asked also to keep track of any aspects of the project which have to do with nutrition. Nutrition is not really part of your system of factors, but you would like to be able to construct some maps just to look at this aspect. So you can write this:
+
+> More food #nutrition --> Improved wellbeing  
+
+Similarly,  if Improved Wellbeing is one of the desired outcomes of the project, we might want to reflect that by adding a flag "(Outcome)" like this.
+
+> More food --> Improved wellbeing (Outcome)
+
+Then we can easily search for this and other desired outcomes.  
+
+A flag like “men” is not suitable because it is likely to appear elsewhere (e.g. as part of “women” or “management”). To get round this, add additional characters like a hash: “#men”; this makes the flag unique.
+
+If you use curved or square brackets around your flags, you can use one of the app filters to hide the flags for specific maps if desired.
+

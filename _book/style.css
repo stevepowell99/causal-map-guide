@@ -129,7 +129,8 @@ margin-bottom:10px;
   background-color:#eee;
   border:8px solid white;
 }
-p.author{display:none;}
+p.author,p.date{display:none;}
+h1.title{font-size:small !important;margin-top:10px !important;float:left;}
 
 .book.font-size-2 .book-body .page-inner section {
     font-size: 2rem;

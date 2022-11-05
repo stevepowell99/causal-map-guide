@@ -1,4 +1,4 @@
-# 💻 Hierarchical factors in Causal Map{#xhierarchical-coding}
+# Hierarchical factors in Causal Map{#xhierarchical-coding}
 
  (This section is about implementing hierarchical coding in the Causal Map app. See also the [previous section](#xsimplifying-with-hierarchical) on hierarchical coding in general.)
 
