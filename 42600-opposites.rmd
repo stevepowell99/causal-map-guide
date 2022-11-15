@@ -42,7 +42,7 @@ This barefoot style on its own is unsatisfactory. We haven't told the app that b
 
 The first step forwards is to follow this convention:
 
->To signal that two factors are *opposites* we formalise the idea we already instinctively used in the above example, where we used the word "not" for one of each pair. Formally, we will code them in the form "~Y" and "Y".  The `~` may appear at the start of a factor label. This already ensures that when we search for "Y" we will also find "~ Y". 
+>To signal that two factors are *opposites* we formalise the idea we already instinctively used in the above example, where we used the word "not" for one of each pair. Formally, we will code them in the form "~Y" and "Y".  The `~` may appear at the start of a factor label. This already ensures that when we search for "Y" we will also find "~Y". 
 >
 >In the [factors-editor panel](#xfactor-editor), these two factors will be listed next to each other - the alphabetical listing will ignore the `~`. 
 
@@ -56,9 +56,9 @@ So the same map would look like this, using `~` instead of `not`.
 
 When you press "combine opposites",
 
-​	![image-20210115221340684](_assets/image-20210115221340684.png){width=650}            
+​	![image-20210115221340684](_assets/image-20210115221340684.png)            
 
-the app combine any pairs of factors which are opposites. It looks at all the factors which begin with a `~` and takes off the `~` where there was one - a process which we call "flipping" the factor. But it only does this if there is already it's opposite coded in the file as currently filtered, otherwise there wouldn't be any point i.e. `~running` will remain as such is you haven't coded `running`.
+the app combine any pairs of factors which are opposites. It looks at all the factors which begin with a `~` and takes off the `~` where there was one - a process which we call "flipping" the factor. But it only does this if there is already its opposite coded in the file as currently filtered, otherwise there wouldn't be any point i.e. `~running` will remain as such is you haven't coded `running`.
 
 
 ![](_assets/121008.png)

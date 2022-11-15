@@ -47,9 +47,7 @@ Complete views belong with the current file and you can edit them, whereas Add-o
 
 Set up the content the way you want it in the app, so it looks exactly the way it should when someone in the future clicks on the link. Then go to the filter which you want to update and press the edit button: 
 
-![Edit shortlinks](C:\Users\hanna\Downloads\Edit shortlinks.png){width=650}
-
-
+![Edit view](_assets/image-20221112171418559.png)
 
 In the modal dialog which opens, make sure you check this box. You can optionally change the title too.
 

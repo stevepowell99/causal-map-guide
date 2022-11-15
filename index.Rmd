@@ -9,7 +9,7 @@ author:
   - Samuel Goddard^[Causal Map Ltd., SamuelGoddard@outlook.com]
 date: "`r Sys.Date()`"
 site: bookdown::bookdown_site
-output: bookdown::bs4_book
+output: bookdown::gitbook
 documentclass: book
 url: https://causalmap.app
 cover-image: "_assets/image-20210520221329966.png"
@@ -32,7 +32,7 @@ library(tidyverse)
 knitr::include_url("https://player.vimeo.com/video/689223728")
 ```
 
-If you want to find out more about the theory of causal mapping, rather than how to use the app, look for the "book" symbol 📚.
+If you are particularly interested in the *theory* of causal mapping, rather than how to use the app, look for the "book" symbol 📚.
 
 This Guide is divided into these Training Levels:
 
@@ -52,6 +52,8 @@ Each is followed by a simple [quiz](https://causalmap.shinyapps.io/quizzes/).
 If you are in a hurry (and who isn't?), just read Level 1: Getting Started.
 
 Features marked 🧪are experimental and are implemented on the [test server](https://causalmap.shinyapps.io/CM2test) only.
+
+
 
 ## Videos
 
