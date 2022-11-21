@@ -6,7 +6,14 @@ bookdown::gitbook:
   css: style.css
   number_sections: no
   config:
-    search: yes
+    search:
+      engine: fuse #lunr # or fuse https://opensourcelibs.com/lib/lunr-module
+      # options to control/tune search engine behavior (for
+      # fuse.js, refer to https://fusejs.io/api/options.html)
+      options:
+        isCaseSensitive: true
+        threshold: 0.0
+        distance: 0
     toc_depth: 3
     toc:
       collapse: section
