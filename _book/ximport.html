@@ -28,7 +28,7 @@
 <meta name="author" content="Samuel Goddard" />
 
 
-<meta name="date" content="2022-11-21" />
+<meta name="date" content="2022-11-23" />
 
   <meta name="viewport" content="width=device-width, initial-scale=1" />
   <meta name="apple-mobile-web-app-capable" content="yes" />
@@ -307,7 +307,7 @@ code span.wa { color: #60a0b0; font-weight: bold; font-style: italic; } /* Warni
 <ul>
 <li class="chapter" data-level="" data-path="ximport.html"><a href="ximport.html#formattingyourfile"><i class="fa fa-check"></i>Formatting a Standard Format file: The basics</a></li>
 <li class="chapter" data-level="" data-path="ximport.html"><a href="ximport.html#starting-from-a-word-document"><i class="fa fa-check"></i>Starting from a Word document</a></li>
-<li class="chapter" data-level="" data-path="ximport.html"><a href="ximport.html#uploading-from-pdfs"><i class="fa fa-check"></i>Uploading from PDFs</a></li>
+<li class="chapter" data-level="" data-path="ximport.html"><a href="ximport.html#ximport2excel"><i class="fa fa-check"></i>Uploading multiple PDFs and word-processing documents (doc, docx, odt)</a></li>
 <li class="chapter" data-level="" data-path="ximport.html"><a href="ximport.html#making-a-basic-statements-table-by-hand"><i class="fa fa-check"></i>Making a basic statements table by hand</a></li>
 </ul></li>
 </ul></li>
@@ -958,11 +958,16 @@ code span.wa { color: #60a0b0; font-weight: bold; font-style: italic; } /* Warni
 <p>We strongly recommend that you don’t try to import statements which are longer than 500 words, as it is harder to code very long statements.</p>
 <p>Your statements file must have at least one column with the text of the statements and the header for this column must be “text.” Other columns will be treated as additional data.</p>
 </div>
-<div id="uploading-from-pdfs" class="section level3 hasAnchor">
-<h3>Uploading from PDFs<a href="ximport.html#uploading-from-pdfs" class="anchor-section" aria-label="Anchor link to header"></a></h3>
-<p>You can make a basic statements table from a set of PDF files using our <a href="https://causalmap.shinyapps.io/pdf2excel/">free utility</a> which will save you a lot of time. You can upload all your files at once and get an Excel file of the right format for uploading into Causal Map.</p>
-<p>This works well on simple PDF files but may miss text which is in boxes and columns. As an alternative you can export a PDF to Excel (one by one) <a href="https://www.adobe.com/uk/acrobat/online/pdf-to-excel.html">here</a>. The resulting file is also full of pictures etc but does seem to contain all of the text, although in many columns. 80% of the time it identifies suitably large chunks of text, but sometimes you get very small fragments.</p>
-<p>We provide another our <a href="https://causalmap.shinyapps.io/pdf2excel/">free utility</a> (Tool 2) which batch converts any number of these Adobe Excel files into an Excel file which you can upload to Causal Map.</p>
+<div id="ximport2excel" class="section level3 hasAnchor">
+<h3>Uploading multiple PDFs and word-processing documents (doc, docx, odt)<a href="ximport.html#ximport2excel" class="anchor-section" aria-label="Anchor link to header"></a></h3>
+<p>You can make a basic statements table from a set of PDF and other files using our <a href="https://causalmap.shinyapps.io/import2excel/">free utility</a> which will save you a lot of time. You can upload all your files at once and get an Excel file of the right format for uploading into Causal Map.</p>
+<p>Preparing your files: In doc, docx and text files you can separate text into statements by inserting lines containing just ‘–’ where you want to separate statements. Otherwise, doc and docx files will be broken into paragraphs and pdf files will be broken into pages.</p>
+<p>If you need to get the page numbers of each statement when importing PDFs, try another free utility](<a href="https://causalmap.shinyapps.io/pdf2excel/" class="uri">https://causalmap.shinyapps.io/pdf2excel/</a>) (Tool 2) which imports PDFs only but does provide page numbers as an additional column.</p>
+<div id="problems-importing-pdfs" class="section level4 hasAnchor">
+<h4>Problems importing PDFS?<a href="ximport.html#problems-importing-pdfs" class="anchor-section" aria-label="Anchor link to header"></a></h4>
+<p>Tools 1 and 2 work well on simple PDF files but may miss text which is in boxes and columns. As an alternative you can export a PDF to Excel (one by one) <a href="https://www.adobe.com/uk/acrobat/online/pdf-to-excel.html">here</a>. The resulting file is also full of pictures etc but does seem to contain all of the text, although in many columns. 80% of the time it identifies suitably large chunks of text, but sometimes you get very small fragments.</p>
+<p>We provide another our <a href="https://causalmap.shinyapps.io/pdf2excel/">free utility</a> (Tool 3) which batch converts any number of these Adobe Excel files into an Excel file which you can upload to Causal Map.</p>
+</div>
 </div>
 <div id="making-a-basic-statements-table-by-hand" class="section level3 hasAnchor">
 <h3>Making a basic statements table by hand<a href="ximport.html#making-a-basic-statements-table-by-hand" class="anchor-section" aria-label="Anchor link to header"></a></h3>
