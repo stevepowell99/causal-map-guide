@@ -28,7 +28,7 @@ In this example, there are causal paths from the two external factors to the two
 
 A path length of 1 will only show the one step in the causal chain from/to your chosen factor, i.e. A ➜ B. A path length of 2 will also show the next step in the causal chain (if there is one!), i.e. A ➜ B ➜ C.
 
-### 🧪Removing unwanted links
+### Removing unwanted links{#xremoving-unwanted-links}
 
 Suppose you have a map with links B --> D, C --> D and also B --> C. If you run this filter:
 

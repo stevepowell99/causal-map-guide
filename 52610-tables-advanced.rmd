@@ -1,4 +1,4 @@
-#  🧪Tables - advanced{#xtables-advanced}
+#  Tables - advanced{#xtables-advanced}
 
 ## Creating your table
 

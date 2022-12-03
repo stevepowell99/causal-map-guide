@@ -1,4 +1,4 @@
-# 🧪The Factors table{#xthe-factors-table}
+# The Factors table{#xthe-factors-table}
 
 The factors table presents the factors applied during coding. There are columns for label, factor memo, and columns for any other fields you have provided, maybe "domain" for instance. The app also calculates some additional fields like:
 

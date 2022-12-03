@@ -95,7 +95,7 @@ Also, you can bundle the links between any pair of factors into more than one bu
 
 If your map is large the app will automatically apply this filter when you are viewing all statements. 
 
-🧪 When you specify the field in the Advanced Editor, it is enough to only specify only part of the field name. Remember, this name matches any field associated with sources, links or statements. 
+When you specify the field in the Advanced Editor, it is enough to only specify only part of the field name. Remember, this name matches any field associated with sources, links or statements. 
 
 So `#2` will match  `#2-village-name`. We recommend marking your top few fields for analysis like gender etc., or whatever else interests you the most, not just with a leading `#` (this anyway marks out the field as important) but then with a number, like `#2`. This makes it easy to create reproducible filters which you can conveniently share across different files. 
 

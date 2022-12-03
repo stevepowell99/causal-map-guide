@@ -1,5 +1,44 @@
 # Recent changes{#changelog}
 
+## Version 0.85, 1/12/2022
+
+## Tables
+
+The biggest change is the full release of the [new tables functionality](https://guide.causalmap.app/xall-tables.html). Now all your tables (factors, links, mentions, sources, statements, questions and metrics) use the [new features](https://guide.causalmap.app/xall-tables.html). There are lots of tables you can create, from a table simply showing the total links to and from each factor to a summary of each respondent’s response to a closed question. The possibilities are large - and increase with the amount of additional data your project has.
+
+- Complete set of table presets in the Dashboard
+- Filter, search and sort 
+- Pivot tables
+- [Lots more](#xtables-advanced.html)
+
+### Removing unwanted links
+
+Suppose you have a map with links B --> D, C --> D and also B --> C. If you run this filter:
+
+`trace paths length=1 to=D`
+
+the app will show you also the path from B to C, because both B and C are one link away from D, and there is a path from B to C. But that might have surprised you, as the path from B to C does not get you any closer to D. 
+
+![image-20220810124747011](C:/Users/steve/Dropbox/Projects/causal-map-guide/_assets/image-20220810124747011.png)
+
+So you might prefer this filter:
+
+`trace paths length=1 to=D remove_links=T` (which is equivalent to clicking this box in the dialog:)
+
+![image-20221017080731614](C:/Users/steve/Dropbox/Projects/causal-map-guide/_assets/image-20221017080731614.png)
+
+... which will remove any such links. 
+
+![image-20220810124740033](C:/Users/steve/Dropbox/Projects/causal-map-guide/_assets/image-20220810124740033.png)
+
+In other words, `trace paths length=L from=X to=Y` says "show me all the factors which are on paths from X to Y no longer than L, and all the links between such factors" whereas `trace paths length=L from=X to=Y remove_links=F` says "show me all the paths from X to Y no longer than L". 
+
+Read more [here](#xremoving-unwanted-links).
+
+## Quickfields for links
+
+[Quickfields](#xquickfields) are now available for links too. You use the same syntax in the "hashtags" box as for [quickfields for factors](#xquickfields). This might seem like a small tweak but it means you can now systematically include information about the *context* of each link. Whereas previously you could mark that a particular link refers only to the context of before Covid by marking it with a hashtag like `#before-covid`, now you can use systematic *sets* of hashtags like `#covid:before` and  `#covid:after`, which automatically then adds a column to your links table called `covid` which can have values like `before`, `after`, and anything 
+
 ## Version 0.81, 9/8/2022
 
 ### [Importing a simple, wide-format file](#upload-summary) 

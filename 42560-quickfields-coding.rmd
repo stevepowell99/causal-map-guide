@@ -77,9 +77,9 @@ This makes particular sense **when the lower levels of the hierarchy might diffe
 
 When you use filters which merge factors together (zooming and bundling factors) the values of quickfields for *any factors which are lost because they are nested into the higher levels* are not available.    
 
-## 🧪Quickfields for links
+## Quickfields for links{#quickfields-for-links}
 
-Quickfields are now available for links too. You use the same syntax in the "hashtags" box.
+[Quickfields](#xquickfields) are now available for links too. You use the same syntax in the "hashtags" box as for [quickfields for factors](#xquickfields). This might seem like a small tweak but it means you can now systematically include information about the *context* of each link. Whereas previously you could mark that a particular link refers only to the context of before Covid by marking it with a hashtag like `#before-covid`, now you can use systematic *sets* of hashtags like `#covid:before` and  `#covid:after`, which automatically then adds a column to your links table called `covid` which can have values like `before`, `after`, and anything else you type.
 
 ## Quickfields for factor labels versus ordinary hashtags for links
 

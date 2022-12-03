@@ -1,4 +1,4 @@
-#  🧪Tables{#xall-tables}
+#  Tables{#xall-tables}
 
 You will find all the tables under the table tab at the top of your screen.
 
@@ -18,4 +18,4 @@ The preset button opens a list of views in the dashboard, these links will take 
 
 ----
 
-Find out more about tables [here](#tables-adv).
+Find out more about tables [here](#xtables-advanced).

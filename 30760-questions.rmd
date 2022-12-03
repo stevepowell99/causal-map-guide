@@ -1,4 +1,4 @@
-# 🧪The Questions Table{#xthe-questions-table}
+# The Questions Table{#xthe-questions-table}
 
 This table displays the text, ID, memo and map id for every question included in the questionnaire. 
 

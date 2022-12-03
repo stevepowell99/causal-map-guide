@@ -1,4 +1,4 @@
-#  🧪Tables{#xtables-basic}
+#  Tables{#xtables-basic}
 
 ## Features common to all the tables{#tables_common}
 
