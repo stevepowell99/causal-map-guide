@@ -1,4 +1,4 @@
-# 📚 Creating good factor labels (2){#factor-labels2}
+# 📚 Creating good factor labels (advanced){#factor-labels2}
 
 See also [here](#factor-labels1).
 
