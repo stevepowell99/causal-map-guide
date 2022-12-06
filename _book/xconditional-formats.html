@@ -28,7 +28,7 @@
 <meta name="author" content="Samuel Goddard" />
 
 
-<meta name="date" content="2022-12-05" />
+<meta name="date" content="2022-12-06" />
 
   <meta name="viewport" content="width=device-width, initial-scale=1" />
   <meta name="apple-mobile-web-app-capable" content="yes" />
@@ -523,7 +523,10 @@ code span.wa { color: #60a0b0; font-weight: bold; font-style: italic; } /* Warni
 </ul></li>
 <li class="chapter" data-level="" data-path="xconditional-formats.html"><a href="xconditional-formats.html"><i class="fa fa-check"></i>Conditional formats</a>
 <ul>
-<li class="chapter" data-level="" data-path="xconditional-formats.html"><a href="xconditional-formats.html#xformatting-links"><i class="fa fa-check"></i>Conditional formatting for links</a></li>
+<li class="chapter" data-level="" data-path="xconditional-formats.html"><a href="xconditional-formats.html#xformatting-links"><i class="fa fa-check"></i>Conditional formatting for links</a>
+<ul>
+<li class="chapter" data-level="" data-path="xconditional-formats.html"><a href="xconditional-formats.html#dashed-links"><i class="fa fa-check"></i>🧪Dashed links</a></li>
+</ul></li>
 <li class="chapter" data-level="" data-path="xconditional-formats.html"><a href="xconditional-formats.html#conditional-formatting-for-factors"><i class="fa fa-check"></i>Conditional formatting for factors</a>
 <ul>
 <li class="chapter" data-level="" data-path="xconditional-formats.html"><a href="xconditional-formats.html#xcolour-text"><i class="fa fa-check"></i>Colour text</a></li>
@@ -899,6 +902,7 @@ code span.wa { color: #60a0b0; font-weight: bold; font-style: italic; } /* Warni
 <li>scale links</li>
 <li>colour links</li>
 <li>label links</li>
+<li>dash links</li>
 </ul>
 <div class="figure">
 <img src="_assets/image-20211015124001957.png" width="650" alt="" />
@@ -942,6 +946,14 @@ code span.wa { color: #60a0b0; font-weight: bold; font-style: italic; } /* Warni
 <li>show a different colour for every source (<code>unique: source_id</code>)</li>
 </ul>
 <p>The app works out for you if your scale is numerical or discrete, so you don’t need to worry about that.</p>
+<div id="dashed-links" class="section level3 hasAnchor">
+<h3>🧪Dashed links<a href="#dashed-links" class="anchor-section" aria-label="Anchor link to header"></a></h3>
+<p>You can mark out some subset of your links as remarkable or doubtful by showing them as dashes instead of solid. Just add a condition the same as you use for finding links, for example:</p>
+<ul>
+<li>links whose hashtag is not empty</li>
+<li>links whose from_factor start with “S”</li>
+<li>links whose source is male</li>
+</ul>
 <div id="xinitials" class="section level4 hasAnchor">
 <h4>Initials<a href="xconditional-formats.html#xinitials" class="anchor-section" aria-label="Anchor link to header"></a></h4>
 <p>Often it is useful to shorten the labels, for example you might have bundled your links by village and want to label the bundles with the names of the villages, but the village names are very long. Or you might have bundled your links by region and want to label the bundles with a list of the unique names of the villages in that region, but this might be quite a lot of text.</p>
@@ -959,6 +971,7 @@ code span.wa { color: #60a0b0; font-weight: bold; font-style: italic; } /* Warni
 <p class="caption">image-20220113122358127</p>
 </div>
 <p>This is especially useful when you do <a href="comparing.html#xsurprise">conditional formatting with surprise</a>.</p>
+</div>
 </div>
 </div>
 <div id="conditional-formatting-for-factors" class="section level2 hasAnchor">
@@ -1043,7 +1056,7 @@ code span.wa { color: #60a0b0; font-weight: bold; font-style: italic; } /* Warni
 <li>betweenness_rank: the rank of the betweenness.</li>
 <li>in_degree: the number of incoming links.</li>
 <li>out_degree: the number of outgoing links.</li>
-<li>role: the number of incoming links minus the number of incoming links. High values are drivers, low values are outcomes</li>
+<li>role: the number of incoming links minus the number of outgoing links. High values are drivers, low values are outcomes</li>
 <li>frequency: the number of links.</li>
 <li>driver_score: how strongly is this factor a driver? (<code>driver_score</code>=<code>factors$out_degree</code>-<code>factors$in_degree</code> * 2)</li>
 <li>outcome_score: how strongly is this factor an outcome?</li>

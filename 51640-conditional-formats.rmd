@@ -11,6 +11,7 @@ Conditional formatting gives you more options with links than with factors. It a
 - scale links
 - colour links
 - label links
+- dash links
 
 ![image-20211015124001957](_assets/image-20211015124001957.png){width=650}
 
@@ -49,6 +50,16 @@ Or you might want to colour your links with a discrete scale of colours accordin
 - show a different colour for every source (`unique: source_id`)
 
 The app works out for you if your scale is numerical or discrete, so you don't need to worry about that.
+
+### 🧪Dashed links
+
+You can mark out some subset of your links as remarkable or doubtful by showing them as dashes instead of solid. Just add a condition the same as you use for finding links, for example:
+
+- links whose hashtag is not empty
+- links whose from_factor start with "S"
+- links whose source is male
+
+
 
 #### Initials{#xinitials}
 
@@ -154,7 +165,7 @@ Some examples of calculated fields:
 - betweenness_rank: the rank of the betweenness.
 - in_degree: the number of incoming links.
 - out_degree: the number of outgoing links.
-- role: the number of incoming links minus the number of incoming links. High values are drivers, low values are outcomes
+- role: the number of incoming links minus the number of outgoing links. High values are drivers, low values are outcomes
 - frequency: the number of links.
 -  driver_score: how strongly is this factor a driver? (`driver_score`=`factors$out_degree`-`factors$in_degree` * 2)
 - outcome_score: how strongly is this factor an outcome?

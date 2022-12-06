@@ -32,7 +32,7 @@ library(tidyverse)
 knitr::include_url("https://player.vimeo.com/video/689223728")
 ```
 
-If you are particularly interested in the *theory* of causal mapping, rather than how to use the app, look for the "book" symbol 📚.
+If you are particularly interested in the *theory* of causal mapping, rather than how to use the app, look for the "book" symbol 📚 in this Guide.
 
 This Guide is divided into these Training Levels:
 
