@@ -130,6 +130,9 @@ Yes that's annoying. Just zoom out your browser e.g. by pressing ctrl -
 ///I'm getting an "Ajax error" when viewing tables.
 Have a look to see if the URL of the app has a lot of parts like this: [https://causalmap.shinyapps.io/CM2test/_w_741fed8d/_w_q4eeed8d/_w_346fed8d/](https://causalmap.shinyapps.io/CM2test/_w_741fed8d/_w_q4eeed8d/_w_346fed8d/). If it does, just visit the bare URL: (https://causalmap.shinyapps.io/CausalMap2 or https://causalmap.shinyapps.io/CM2test) and start again from there.
 
+///My link label is appearing slightly away from the link
+Unfortunately when a map has a lot of links link labels may appear slightly removed from the link. Currently there is no way to change this with formatting, only by simplfiying your map.
+
 
 ## QuIP questions
 
