@@ -28,7 +28,7 @@ You can start coding your data even if you do not yet have all the cases/sources
 
 
 
-## Standard format
+## Standard format{#xupload-standard-format}
 
 Causal Map has a standard format for storing data which can be uploaded and downloaded as an Excel (xlsx) file. 
 
