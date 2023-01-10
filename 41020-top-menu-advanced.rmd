@@ -6,23 +6,23 @@ This section is all about how to manage using the top menu to help you deal with
 
 There is also a dedicated [File Manager](#file-manager) to manage all your files.
 
-## Current File Manager{#xpermissions}
+## Current File Manager / Sharing{#xpermissions}
 
-Click the green File icon to manage your file.
+Click the green icon to manage your file.
 
 ![uBfaYOvRRH](_assets/uBfaYOvRRH.gif){width=650}
 
-![](_assets/image-20211025111538915.png){width=650}
+![image-20230103192339456](_assets/image-20230103192339456.png){width=650}
 
 ### Sharing and locking files
 
-You can add any number of other Causal Map accounts into the "copy" and/or "view" boxes. 
+You can add any number of other Causal Map accounts into the "copy" and/or "view" boxes. There must be at least one editor.
 
 - "Copy" permission means that the other user can make their own copy of this file, which they can then edit.
 
 - "View" permission means that the other user can make only view the file.
 
-You can also use this switch to lock the file. This means that no-one can change it, not even you, until it is unlocked again.
+You can also use the `locked` switch to lock the file. This means that no-one can change it, not even you, until it is unlocked again.
 
 It is also possible to create larger groups of users. Ask us for help with this: hello@causalmap.app. 
 

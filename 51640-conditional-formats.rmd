@@ -187,7 +187,8 @@ to exclude singletons.
 
 When you combine opposites, the app gives you additional combined fields (in the links and factors tables) which you can use to display and filter your maps in various ways. For example, you can keep only links in which come from or to *positively* formulated factors: `find links field=flipped_bundle value=FALSE|FALSE operator=equals` . 
 
-
 There are many more.
 
-These fields are calculated at the start, so if you, say, filter for bundles with at least 10 links and then add filters which filter out, say, all the older people, you might get bundles with fewer links remaining. 
+
+
+These fields are calculated at the point in the chain of filters where each filter is applied, so if you, say, filter for bundles with at least 10 links and then add filters which filter out, say, all the older people, you might get bundles with fewer links remaining. 

@@ -1,5 +1,7 @@
 # Uploading your data{#ximport}
 
+## 🧪New unified interface for uploading
+
 ## Importing a simple, wide-format file{#upload-summary} 
 
 There are many ways to import data into Causal Map. Perhaps the simplest way to upload your data is in wide format. This is the kind of data you might often get if you have been using Google Forms. 
@@ -101,7 +103,7 @@ You can make a basic statements table from a set of PDF and other files using ou
 
 Preparing your files: In doc, docx and text files you can separate text into statements by inserting lines containing just '--' where you want to separate statements. Otherwise, doc and docx files will be broken into paragraphs and pdf files will be broken into pages.
 
-If you need to get the page numbers of each statement when importing PDFs, try another free utility](https://causalmap.shinyapps.io/pdf2excel/)  (Tool 2) which imports PDFs only but does provide page numbers as an additional column.
+If you need to get the page numbers of each statement when importing PDFs, try [another free utility](https://causalmap.shinyapps.io/pdf2excel/)  (Tool 2) which imports PDFs only but does provide page numbers as an additional column.
 
 #### Problems importing PDFS?
 

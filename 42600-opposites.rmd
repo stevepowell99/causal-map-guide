@@ -162,3 +162,13 @@ The app makes it easy to code opposites; while coding, when you have loaded any 
 Occasionally you might decide you'd prefer to view a file where you have used opposites coding but with ordinary-language labels like <u>unfit</u> rather than <u>~fit</u> - after all, it's easier to read. By all means, create another version of the file and manually recode your labels back again using the Factor Editor. Remember, you'll only want to recode factor labels which *start* with a `~`, not labels with a `~` elsewhere. We recommend in this case adding a * at the end of each such factor, so that someone viewing the file that this factor does have a conceptual opposite somewhere. 
 
 In this case of course you won't be able to combine opposites any more. 
+
+## 🧪The border colours and how to override them
+
+The factor border colours are calculated so they are more orange as the proportion of contrary mentions of the factor to the total mentions of the factor. So if <u>~Income</u> was mentioned often *in the map as it was at the point at which this filter is applied* and <u>Income</u> only occasionally, the new combined factor <u>Income</u> will have border which is more orange than blue. This metric depends only on the overall number of times the factors were mentioned, not e.g. on the number of sources mentioning it.
+
+Sometimes these colours can be distracting, so if you don't want them, you can set some other border colour as usual, e.g. by adding a line in the Advanced Editor like this:
+
+`color borders fixed=white` 
+
+Alternatively in the Dashboard, you should also find an Addon View to add fixed border colours. 
