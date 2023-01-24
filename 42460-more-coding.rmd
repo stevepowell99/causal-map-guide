@@ -40,26 +40,70 @@ This toggle opens both additional statement info, i.e. info for any fields which
 
 ![esSnHL226V](_assets/esSnHL226V.gif)
 
-### Hashtags / link flags{#xhashtags}
+### Link flags (aka Hashtags){#xhashtags}
 
-Hashtags are available as a special kind of memo when coding a link: you can use them to provide any kind of additional information, for example:
+Link flags are available as a special kind of memo when coding a link: you can use them to provide any kind of additional information.
 
-- about **the causal connection**, e.g.
-  - the respondent says this is only true for their village, not for other villages
-  - where a link is only projected for the future
-- about **the claim about the causal connection**
-  - where a link is only a hypothesis
-  - to add other qualifying information like “source seems unsure.”
+As usual in Causal Map, you can apply one or more flags, and you can either select existing flags or create new ones on the fly.
+
+Later, you can [filter the map](https://guide.causalmap.app/analysis.html#filtering-the-map-by-link-hashtag-memo) to show only links containing or beginning or ending with specific flags (or parts of flags), and also for links which do *not* contain specific flags or parts of flags.
+
+Conceptually, there are two kinds:
+
+#### 🧪Weak flags
+
+Weak flags are a special kind of hashtag aka link flag. They are *caveats*. If you use weak flags, you should make sure that by default your maps do not include any link with a weak flag. 
+
+They begin with `?` and are used to mark any link which you are not sure is always valid across the global context for the whole global map, for example:
+
+- **the causal connection** is only valid for a specific context, e.g.
+  
+  - the respondent says this is only true for their village, not for other villages e.g. `?village X`
+  - a link is only projected for the future e.g. `?future`
+- you are unsure about **the claim about the causal connection**
+  - a link is only a hypothesis e.g. `?hypothetical`
+  - you as the analyst are not confident in the claim  e.g. `?doubtful`
+  - the source themselves are not sure  e.g. `?source seems unsure`
+  - to add other qualifying information  e.g. `?probably hearsay`
+  
+
+
+  - to mark the fact that a connection is **weak or non-existent**, e.g.
+
+    - Respondent makes a substantive claim that X does *not* influence Y, e.g. `?zero influence`
+    - Respondent makes a substantive claim that X only insignificantly influences Y, e.g. `?weak`
+
+
+##### Weak flags in [quickfields](#xquickfields).
+
+If you are using quickfields for (some of) your link flags, you can usually put the `?` at the start of the flag as normal:
+
+`?context:village-A`
+
+`?context:village-B`
+
+However the "weakness" only applies to one of the values of the quickfield, in which case we recommend the following kind of format, in which the `?` comes before the second part of the flag:
+
+`strength:?none`
+
+`strength:strong`
+
+or 
+
+`confidence:?low`
+
+`confidence:high`
+
+This makes sense because in your default maps you would only want to exclude one, not both, of each of the pairs in these examples.
+
+#### Other link flags
+
+You can use any flag which does not begin with a `?` to record any other information about the link, e.g.:
+
+
   - respondent doesn’t like this connection 
-  - respondent feels good about the outcome.
-
+  - respondent feels good about the outcome
 - for you, the analyst, e.g.
   - respondent is answering a different question 
   - to tag links you want to come back and review. 
-
-
-
-As usual in Causal Map, you can apply one or more hashtags, and you can either select existing hashtags or create new ones on the fly.
-
-Later, you can [filter the map](https://guide.causalmap.app/analysis.html#filtering-the-map-by-link-hashtag-memo) to show only links containing specific hashtags (or parts of hashtags), and also for links which do *not* contain specific hashtags or parts of hashtags.
 

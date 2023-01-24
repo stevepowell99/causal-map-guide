@@ -92,7 +92,7 @@ if(T) readLines("Guide-to-causal-mapping.Rmd") %>%
   keep(~!is.na(.)) %>% 
   unique %>% 
   paste0("```{r,echo=F}\n",.,"\n```\n") %>% 
-  c("# Video list{#xvideo-list}\n\nThese videos are all included at different points in the Guide. If you love videos, here they are again in one place. Feel free to binge.",.) %>% 
+  c("# Video list{#xvideo-list}\n\nThese videos are all included at different points in the Guide. If you love videos, here they are again in one place. Feel free to binge. Tip: if you play a video, you can press 'Picture in picture' and then switch to the app, and you can follow (and even resize) the vid",.) %>% 
   writeLines("00195-video_list.rmd")
 
 ```

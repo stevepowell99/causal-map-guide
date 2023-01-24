@@ -1,4 +1,4 @@
-# Using StorySurvey: admin interface
+# Using StorySurvey: for survey editor
 
 This documentation is work in progress.
 
@@ -6,7 +6,9 @@ You have to log in with one of the accounts which is hardcoded as admin.
 
 The SQL table `ss2embeddings` has columns for survey ("project"), original phrase ("old") and then hundreds of columns containing the embeddings for each original phrase.
 
-This table can be (re-)constructed with the function generate_embeddings() (there is a button in the Cluster panel). This should not be necessary as the embedding for each new phrase is added to the table `ss2embeddings` when the respondent enters it.
+The embedding for each new phrase is added to the table `ss2embeddings` when the respondent enters it.
+
+This table can be (re-)constructed with the function generate_embeddings() (there is a button in the Cluster panel). This should not be necessary as embeddings are added as above.
 
 The SQL table `ss2recodes` has xxxxxxx columns for survey ("project"), original phrase ("old") and then hundreds of columns containing the embeddings for each original phrase.
 

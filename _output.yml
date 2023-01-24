@@ -11,9 +11,9 @@ bookdown::gitbook:
       # options to control/tune search engine behavior (for
       # fuse.js, refer to https://fusejs.io/api/options.html)
       options:
-        isCaseSensitive: true
-        threshold: 0.0
-        distance: 0
+        isCaseSensitive: false
+        threshold: 0.6
+        distance: 100
     toc_depth: 3
     toc:
       collapse: section

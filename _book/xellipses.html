@@ -4,20 +4,20 @@
 
   <meta charset="utf-8" />
   <meta http-equiv="X-UA-Compatible" content="IE=edge" />
-  <title>Uploading your data | Guide to Causal Mapping</title>
-  <meta name="description" content="Uploading your data | Guide to Causal Mapping" />
+  <title>Ellipses | Guide to Causal Mapping</title>
+  <meta name="description" content="Ellipses | Guide to Causal Mapping" />
   <meta name="generator" content="bookdown 0.26 and GitBook 2.6.7" />
 
-  <meta property="og:title" content="Uploading your data | Guide to Causal Mapping" />
+  <meta property="og:title" content="Ellipses | Guide to Causal Mapping" />
   <meta property="og:type" content="book" />
   <meta property="og:image" content="https://causalmap.app/_assets/image-20210520221329966.png" />
-  <meta property="og:description" content="Uploading your data | Guide to Causal Mapping" />
+  <meta property="og:description" content="Ellipses | Guide to Causal Mapping" />
   
 
   <meta name="twitter:card" content="summary" />
-  <meta name="twitter:title" content="Uploading your data | Guide to Causal Mapping" />
+  <meta name="twitter:title" content="Ellipses | Guide to Causal Mapping" />
   
-  <meta name="twitter:description" content="Uploading your data | Guide to Causal Mapping" />
+  <meta name="twitter:description" content="Ellipses | Guide to Causal Mapping" />
   <meta name="twitter:image" content="https://causalmap.app/_assets/image-20210520221329966.png" />
 
 <meta name="author" content="Steve Powell" />
@@ -35,8 +35,8 @@
   <meta name="apple-mobile-web-app-status-bar-style" content="black" />
   
   
-<link rel="prev" href="xtop-menu-advanced.html"/>
-<link rel="next" href="import-additional-data.html"/>
+<link rel="prev" href="more-coding.html"/>
+<link rel="next" href="strength-adding-additional-information-like-strength-of-a-link-in-a-causal-map.html"/>
 <script src="libs/jquery-3.6.0/jquery-3.6.0.min.js"></script>
 <script src="https://cdn.jsdelivr.net/npm/fuse.js@6.4.6/dist/fuse.min.js"></script>
 <link href="libs/gitbook-2.6.7/css/style.css" rel="stylesheet" />
@@ -890,115 +890,21 @@ code span.wa { color: #60a0b0; font-weight: bold; font-style: italic; } /* Warni
 
   gtag('config', 'G-1EQ4YJMYRJ');
 </script>
-<div id="ximport" class="section level1 hasAnchor">
-<h1>Uploading your data<a href="ximport.html#ximport" class="anchor-section" aria-label="Anchor link to header"></a></h1>
-<div id="new-unified-interface-for-uploading" class="section level2 hasAnchor">
-<h2>🧪New unified interface for uploading<a href="#new-unified-interface-for-uploading" class="anchor-section" aria-label="Anchor link to header"></a></h2>
-</div>
-<div id="upload-summary" class="section level2 hasAnchor">
-<h2>Importing a simple, wide-format file<a href="ximport.html#upload-summary" class="anchor-section" aria-label="Anchor link to header"></a></h2>
-<p>There are many ways to import data into Causal Map. Perhaps the simplest way to upload your data is in wide format. This is the kind of data you might often get if you have been using Google Forms.</p>
-<p>In this format, you only need an Excel file with one tab; each row is all the data from one source. So many of the columns will probably be additional data like gender, etc.</p>
-<p>Press the blue upload button.</p>
-<div class="figure">
-<img src="_assets/image-20220720115514616.png" alt="" />
-<p class="caption">image-20220720115514616</p>
-</div>
-<ul>
-<li><p>The app will read the first tab and will ignore other tabs in the Excel file.</p></li>
-<li><p>Each row is one source.</p></li>
-<li><p>Columns beginning with $ are treated as statements.</p></li>
-<li><p>Columns beginning with # are treated as important additional information.</p></li>
-</ul>
-<p>So this means that if you want a column to be treated as a statement, i.e. you want to code the answers in Causal Map, add a <code>$</code> at the beginning of the column name.</p>
-<p>If you want a column to be treated as important additional data, i.e. you want the information to be easily identified for crosstabulation and other analyses in Causal Map, add a <code>#</code> at the beginning of the column name.</p>
-<div id="adding-additional-cases-with-wide-format-files" class="section level3 hasAnchor">
-<h3>Adding additional cases with wide-format files<a href="ximport.html#adding-additional-cases-with-wide-format-files" class="anchor-section" aria-label="Anchor link to header"></a></h3>
-<p>You can start coding your data even if you do not yet have all the cases/sources. When you get more data, simply add them to the bottom of the original file and upload again. You don’t need to do “<a href="xroundtripping.html#xroundtripping">roundtripping</a>”. All your sources and statements will be overwritten but your coding (links and statements) will be untouched. The questions table will also be untouched. If you want to add information about your questions, for example adding question text as well as question id, you can use <a href="xroundtripping.html#xroundtripping">roundtripping</a>.</p>
-</div>
-</div>
-<div id="xupload-standard-format" class="section level2 hasAnchor">
-<h2>Standard format<a href="ximport.html#xupload-standard-format" class="anchor-section" aria-label="Anchor link to header"></a></h2>
-<p>Causal Map has a standard format for storing data which can be uploaded and downloaded as an Excel (xlsx) file.</p>
-<p>Uploading data in Causal Map standard format is simply done. Click the upload icon, browse your computer and find the xlsx file you want to use. The app will import any tabs called “factors”, “links”, “statements”, “sources” or “questions” and will ignore other tabs.</p>
-<div class="figure">
-<img src="_assets/1SHtnPxKUp.gif" width="650" alt="" />
-<p class="caption">1SHtnPxKUp</p>
-</div>
-<p>It is important that your file is in the right format to make it compatible with the app and the following section will show you how to format your file.</p>
-<p>The video below shows you how to format and upload a set of statements for coding to the Causal Map App.</p>
-<iframe src="https://player.vimeo.com/video/637121851" width="672" height="400px" data-external="1">
-</iframe>
-<p>And click <a href="https://drive.google.com/uc?export=download&amp;id=126fAfkJSbUXkqHp_OkE3af2vdxhMjRy-">here</a> to download the excel template.</p>
-<div id="formattingyourfile" class="section level3 hasAnchor">
-<h3>Formatting a Standard Format file: The basics<a href="ximport.html#formattingyourfile" class="anchor-section" aria-label="Anchor link to header"></a></h3>
-<iframe src="https://player.vimeo.com/video/604138709" width="672" height="400px" data-external="1">
-</iframe>
-<p>When uploading data for coding the only data you <strong>need</strong> to upload to the app is a table of statements as an xlsx file. Your file must have a header row with the names of the fields; the name of the column with the actual responses must be <code>text</code>.</p>
-<p>All tab names and column names should be lower-case.</p>
-<div class="figure">
-<img src="_assets/image-20211012141450834.png" width="650" alt="" />
-<p class="caption">image-20211012141450834</p>
-</div>
-<p>Additionally (optionally), you will usually have a column in the statements table called <code>source id</code> and a corresponding tab called <code>sources</code> with at least one column called <code>source_id</code> with corresponding values, and additional columns giving more information about your sources.</p>
-<div class="figure">
-<img src="_assets/image-20211012141409487.png" width="650" alt="" />
-<p class="caption">image-20211012141409487</p>
-</div>
-<p>Additionally (optionally), you may have a column in the statements table called <code>question id</code> . If you want, this question_id can already include the question text, e.g. “q1: tell us about your life”. But usually it is more convenient to just use a code like “q1” and also include a corresponding tab in your Excel file called <code>questions</code> with at least one column called <code>question_id</code> with corresponding values, and an additional column <code>question_text</code> with the full text, as well as any other information about your questions, e.g. domain or questionnaire section.</p>
-<div class="figure">
-<img src="_assets/image-20211012141342985.png" width="650" alt="" />
-<p class="caption">image-20211012141342985</p>
-</div>
-</div>
-<div id="starting-from-a-word-document" class="section level3 hasAnchor">
-<h3>Starting from a Word document<a href="ximport.html#starting-from-a-word-document" class="anchor-section" aria-label="Anchor link to header"></a></h3>
-<p>You can create a table from a Microsoft Word document.</p>
-<p>Each paragraph in your Word document will become one statement, so make sure your Word document is already structured so this will work for you. Delete any double paragraph breaks in Word (i.e. delete any empty paragraphs). If you want some short paragraphs to appear together as one longer statement, delete the paragraph breaks between them.</p>
-<p>Then</p>
-<ul>
-<li>Copy all the text from your document</li>
-<li>Create a fresh spreadsheet file in Excel (or LibreOffice Calc or similar) and select cell A2</li>
-<li>Paste your text.</li>
-<li>Type the word “text” as column header in cell A1.</li>
-<li>Check the statements are the way you want them. You can ignore any formatting, pictures etc which might also have been pasted in because these will disappear in the next step.</li>
-</ul>
-<p>The statements are the texts which appear one by one, for you to read and code. Each statement is one row in your file.</p>
-<p><img src="_assets/image-20211018160023515.png" width="650" /></p>
-<p>If you want to import interviews which are several pages each, you should break each interview into several statements. Ideally a statement consists of between one and five paragraphs – enough to fit on the left-hand side panel when it is displayed there. Usually your text breaks up naturally into sections, for example the interviews might be responses to a number of questions, so your statements might consist of one or a few paragraphs for each question.</p>
-<p>We strongly recommend that you don’t try to import statements which are longer than 500 words, as it is harder to code very long statements.</p>
-<p>Your statements file must have at least one column with the text of the statements and the header for this column must be “text.” Other columns will be treated as additional data.</p>
-</div>
-<div id="ximport2excel" class="section level3 hasAnchor">
-<h3>Uploading multiple PDFs and word-processing documents (doc, docx, odt)<a href="ximport.html#ximport2excel" class="anchor-section" aria-label="Anchor link to header"></a></h3>
-<p>You can make a basic statements table from a set of PDF and other files using our <a href="https://causalmap.shinyapps.io/import2excel/">free utility</a> which will save you a lot of time. You can upload all your files at once and get an Excel file of the right format for uploading into Causal Map.</p>
-<p>Preparing your files: In doc, docx and text files you can separate text into statements by inserting lines containing just ‘–’ where you want to separate statements. Otherwise, doc and docx files will be broken into paragraphs and pdf files will be broken into pages.</p>
-<p>If you need to get the page numbers of each statement when importing PDFs, try <a href="https://causalmap.shinyapps.io/pdf2excel/">another free utility</a> (Tool 2) which imports PDFs only but does provide page numbers as an additional column.</p>
-<div id="problems-importing-pdfs" class="section level4 hasAnchor">
-<h4>Problems importing PDFS?<a href="ximport.html#problems-importing-pdfs" class="anchor-section" aria-label="Anchor link to header"></a></h4>
-<p>Tools 1 and 2 work well on simple PDF files but may miss text which is in boxes and columns. As an alternative you can export a PDF to Excel (one by one) <a href="https://www.adobe.com/uk/acrobat/online/pdf-to-excel.html">here</a>. The resulting file is also full of pictures etc but does seem to contain all of the text, although in many columns. 80% of the time it identifies suitably large chunks of text, but sometimes you get very small fragments.</p>
-<p>We provide another our <a href="https://causalmap.shinyapps.io/pdf2excel/">free utility</a> (Tool 3) which batch converts any number of these Adobe Excel files into an Excel file which you can upload to Causal Map.</p>
-</div>
-</div>
-<div id="making-a-basic-statements-table-by-hand" class="section level3 hasAnchor">
-<h3>Making a basic statements table by hand<a href="ximport.html#making-a-basic-statements-table-by-hand" class="anchor-section" aria-label="Anchor link to header"></a></h3>
-<p>If you want to import longer documents which are several pages each, you should break each document into many chunks or “statements”. Ideally a statement consists of between one and five paragraphs – enough to fit on the left-hand side of the Code &amp; View tab when it is displayed there.</p>
-<p>Make a fresh spreadsheet file in Excel (or LibreOffice Calc or similar)</p>
-<ul>
-<li>Type the word “text” as column header in cell A1.</li>
-<li>Select cell A2</li>
-<li>Paste your text below in the A column, with between 1 sentence and 9 paragraphs in each cell. Note that if you want several paragraphs together in one cell, be careful when pasting.</li>
-<li>Check the statements are the way you want them. You can ignore any formatting, pictures etc which might also have been pasted in because these will disappear in the next step.</li>
-<li>Just the column “text” is enough, but optionally use the other columns for other metadata you might need, like this:</li>
-</ul>
-<div class="figure">
-<img src="_assets/image-20210930112731572.png" alt="" />
-<p class="caption">image-20210930112731572</p>
-</div>
-<p>The statements are the texts which appear one by one in the left-hand panel, for you to read and code. Each statement is one row in your file.</p>
-<p>The (optional) column <code>source_id</code> is special, because it gives you an easy way to provide additional information about each source (e.g. year and country of publication) rather than having to copy this information into your this main statements file.</p>
+<div id="xellipses" class="section level1 hasAnchor">
+<h1>Ellipses<a href="xellipses.html#xellipses" class="anchor-section" aria-label="Anchor link to header"></a></h1>
+<div id="coding-your-statements-in-context-referring-to-evidence-from-elsewhere" class="section level3 hasAnchor">
+<h3>Coding your statements in context: referring to evidence from elsewhere<a href="xellipses.html#coding-your-statements-in-context-referring-to-evidence-from-elsewhere" class="anchor-section" aria-label="Anchor link to header"></a></h3>
+<p>When coding data from an interview it is very important to see the whole interview as your source, and not fall into the trap of only coding the statement in front you, out of context. If your statements are split into separate questions (as is often the case with QuIP), it can be misleading to code just one statement in isolation, without taking account of what the respondent says earlier or later in the interview. For this reason we recommend that all analysts read the whole interview before starting to code, and start to formulate causal stories which fit across the whole interview. In some cases, you may prefer to have the whole interview as one statement, and to code it all in one place. This is absolutely possible, and just depends how the data is imported (whatever information is on one row in the .csv file is considered a statement). If, however, the interview is too long, or you would still prefer to code question by question, you need may want to refer to information provided in another statement when coding a link. This is not necessary but can be useful when sharing the file with a commissioner who may look at quotes associated with links, and not understand the rationale for coding without further context. The same applies for different parts of a paragraphs within one statement; you may want to highlight two separate parts of a longer statement.</p>
+<p>If the quote is not exactly verbatim in the statement, the app won’t let you save anything. (If this happens, just cancel the quote (press the X) and start again.) The app is really picky about this to ensure your quotes are accurate. However, this rule does not apply for anything between square brackets, a useful feature for this case. If the evidence for a link is mentioned in two different parts of a single statement, like this:</p>
+<p><em>Yes, we got the help from OrgX. Sed ut perspiciatis unde omnis iste natus error sit voluptatem accusantium doloremque laudantium, totam rem aperiam, eaque ipsa quae ab illo inventore veritatis et quasi architecto beatae vitae dicta sunt explicabo. And because of that help, now I have a job. qui dolorem ipsum quia dolor sit amet, consectetur, adipisci velit. Ut enim ad minima veniam.</em></p>
+<p>You can use square brackets to remove the text you don’t want. Highlight the whole piece of text you want to code, and then edit the quote in the quote window, replacing what you don’t need with […]</p>
+<p><em>Yes, we got the help from OrgX. […] And because of that help, now I have a job.</em></p>
+<p>Be careful not to introduce any new text or even spaces.</p>
+<p>You can also use the same technique to add your own comment or quote from a statement elsewhere in the interview:</p>
+<p><em>[this is my note] Neque porro quisquam est, qui dolorem ipsum quia dolor sit amet, consectetur, adipisci velit, sed quia non numquam eius modi tempora incidunt.</em></p>
+<p>Ellipses are also helpful to refer to another statement as part of your evidence:</p>
+<p><em>[reference to statement 36: The whole village received help from Org X] Thanks to that help we received, we are now growing our own produce.</em></p>
 
-</div>
 </div>
 </div>
             </section>
@@ -1006,8 +912,8 @@ code span.wa { color: #60a0b0; font-weight: bold; font-style: italic; } /* Warni
           </div>
         </div>
       </div>
-<a href="xtop-menu-advanced.html" class="navigation navigation-prev " aria-label="Previous page"><i class="fa fa-angle-left"></i></a>
-<a href="import-additional-data.html" class="navigation navigation-next " aria-label="Next page"><i class="fa fa-angle-right"></i></a>
+<a href="more-coding.html" class="navigation navigation-prev " aria-label="Previous page"><i class="fa fa-angle-left"></i></a>
+<a href="strength-adding-additional-information-like-strength-of-a-link-in-a-causal-map.html" class="navigation navigation-next " aria-label="Next page"><i class="fa fa-angle-right"></i></a>
     </div>
   </div>
 <script src="libs/gitbook-2.6.7/js/app.min.js"></script>
