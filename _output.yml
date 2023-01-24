@@ -12,8 +12,8 @@ bookdown::gitbook:
       # fuse.js, refer to https://fusejs.io/api/options.html)
       options:
         isCaseSensitive: false
-        threshold: 0.6
-        distance: 100
+        threshold: 0.1
+        distance: 0
     toc_depth: 3
     toc:
       collapse: section
