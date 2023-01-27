@@ -14,7 +14,7 @@ tbc
 
 tbc
 
-## 🧪Importing existing causal coding ("links only")
+## 🧪Importing existing causal coding ("links only"){#xlinks-only}
 
 What to do if you have causal information, for example in the form of **edge lists**, from some other source (e.g. AI coding of a larger text) which you want to import? 
 

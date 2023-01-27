@@ -1,0 +1,56 @@
+# 📚 Factor labels (more about flags){#xflag2}
+
+See also the [introduction to using flags](#xflags).
+
+![image-20230127194955893](_assets/image-20230127194955893.png)
+
+
+### Flags for bundling factors
+
+It is very convenient to use flags when you want to [bundle factors](#bundlefactors). This means you can easily and temporarily collapse together one or more sets of factors sharing a common theme, regardless and independently of any hierarchical structure you are using.
+
+
+### Intervention Flags
+
+The commissioner of an evaluation will nearly always want to be able to focus on their own interventions, so it is advisable to use a consistent label or category across all factors which are noted as project inputs in order to be easily searchable. These will usually be influence factors with no parents, i.e. factors which have no incoming influence factors.
+
+In the example below, both are similar interventions, but one is clearly attributable to an NGO.
+
+“MSF gave us medicines which healed the children”
+
+MSF gave medicines –> children healed
+
+“Someone gave us medicines which healed the children”
+
+Unknown actor gave medicines –> children healed
+
+You have a range of options to flag this difference in the label and enable you to filter for all project-related interventions once the data is coded.
+
+· All such interventions can be labelled with the NGO’s name
+
+· If you are doing nested coding, you can nest such factors within a higher-level factor like ‘Interventions;’
+
+· And/or you can use a specific intervention flag, e.g. #Intervention. (QuIP has its own flags, [I] for Implicit and [E] for Explicit).
+
+You can use any label you want as long as you are sure it is unique, it doesn’t appear accidentally in other factor names, and you use it consistently.
+
+### Outcome Flags
+
+Similarly, if you wish to flag up outcomes /consequences as either desired/desirable/valued, or the inverse, you can mark these in a way which makes them easy to identify. You could use symbols like ♥ etc. in the labels to designate this, or use use QuIP-style labels [P] for positive and [N] for negative. This can be helpful when undertaking analysis; for example, displaying direct and indirect links from some or all of the intervention factors to some or all of the positive outcome factors or highlighting or counting paths leading to all negative outcome factors, etc.
+
+Again, you can use any label you want as long as you are sure it is unique, it doesn’t appear accidentally in other factor names, and you use it consistently.
+
+
+### Hanging flags{#xhanging-flags}
+
+A subtle trick is to use hanging flags which are additional hierarchical components. So rather than writing, say,
+
+>More food #nutrition --> Improved wellbeing
+
+you write
+
+>More food; #nutrition --> Improved wellbeing
+
+(note the `;` ), then  if you "zoom out" to the top level of the hierarchy, the flag will be neatly hidden:
+
+>More food --> Improved wellbeing

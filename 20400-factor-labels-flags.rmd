@@ -1,0 +1,33 @@
+# 📚 Factor labels (using flags){#xflags}
+
+![image-20230127194939490](_assets/image-20230127194939490.png)
+
+[Hierarchical](#xhierarchical-coding) coding is one way to structure your coding. However, sometimes you don't want to think in terms of a strict hierarchy, or maybe you have an additional set of themes which cut across that hierarchy.
+
+````{r,echo=F}
+knitr::include_url("https://player.vimeo.com/video/671894620")
+
+````
+
+Flags are useful in either of these cases.
+
+Flags are just sequences of characters within a factor label to which you have given a special meaning, and which are unique and easy to search for. These can include letters, emojis or phrases. You can do coding without any such flags if you want, but it can help when searching and filtering.
+
+A quote like “family situation is better now because of improved food availability” can be coded like this:
+
+> More food --> Improved wellbeing
+
+Now, maybe you are asked also to keep track of any aspects of the project which have to do with nutrition. Nutrition is not really part of your system of factors, but you would like to be able to construct some maps just to look at this aspect. So you can write this:
+
+> More food #nutrition --> Improved wellbeing  
+
+Similarly,  if Improved Wellbeing is one of the desired outcomes of the project, we might want to reflect that by adding a flag "(Outcome)" like this.
+
+> More food --> Improved wellbeing (Outcome)
+
+Then we can easily search for this and other desired outcomes.  
+
+A flag like “men” is not suitable because it is likely to appear elsewhere (e.g. as part of “women” or “management”). To get round this, add additional characters like a hash: “#men”; this makes the flag unique.
+
+If you use curved or square brackets around your flags, you can use one of the app filters to hide the flags for specific maps if desired.
+

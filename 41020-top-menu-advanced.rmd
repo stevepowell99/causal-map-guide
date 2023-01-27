@@ -1,4 +1,4 @@
-#  The top menu{#xtop-menu-advanced}
+#  Managing your file: The top menu{#xtop-menu-advanced}
 
 This section is all about how to manage using the top menu to help you deal with the currently loaded file. Hover over the icons to see what they do.
 
@@ -6,7 +6,7 @@ This section is all about how to manage using the top menu to help you deal with
 
 There is also a dedicated [File Manager](#file-manager) to manage all your files.
 
-## Current File Manager / Sharing{#xpermissions}
+## Sharing files with the Current File Manager{#xpermissions}
 
 Click the green icon to manage your file.
 
@@ -36,7 +36,7 @@ This is in addition to any "newsflash" information about updates which you add u
 
 
 
-## ⚡ Making your own copy of a file{#xown-copy}
+## Making your own copy of a file{#xown-copy}
 
 
 ```{r,echo=F}
@@ -52,6 +52,24 @@ You can then append something to the end of the filename to make it yours:
 
 Click the 'Save current map' button. This window will then close and your copy of the file will load up. You can now make changes to the file. 
 
+## Saving a file as currently filtered{#as-currently-filtered}
+
+::: {.rmdcaution}
+
+Suppose you have applied a filter so that only statements from women are visible. Saving the file as currently filtered means that only these statements remain in the file, and the invisible statements and links are completely deleted from the file.  If this is what you want, here's how to do it!
+
+:::
+
+
+
+Press Save As: ![](_assets/image-20220126194223383.png)
+
+Then press: ![image-20220126194329472](_assets/image-20220126194329472.png)
+
+That's it.
+
+
+
 ## Restoring a previous version of your file{#xversions}
 
 The app is continuously saving your work and so you can restore your file to any prevision version, by clicking this icon ![image-20211115175030770](_assets/image-20211115175030770.png). This will open the below panel where you can choose which timepoint you wish to revert your map to. 
@@ -62,12 +80,11 @@ This panel shows a dropdown list of times when you made changes to the mapfile i
 
 
 
-
 ## Uploading your data
 
-![image-20211115175648298](_assets/image-20211115175648298.png){width=650}
+![image-20230127182310371](_assets/image-20230127182310371.png){width=650}
 
-The above buttons relate to uploading your data, see [this section](#ximport) for more information.
+See [this section](#ximport) for more information.
 
 ## Chat about this file
 
