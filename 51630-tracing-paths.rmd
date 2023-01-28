@@ -1,5 +1,7 @@
 # 📚 Tracing paths {#xtracing-paths}
 
+![image-20230128222050923](_assets/image-20230128222050923.png)
+
 ## Summary
 
 ### How to trace paths{#howtotracepathsandrobustness}

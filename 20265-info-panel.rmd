@@ -10,6 +10,8 @@ During coding, clicking on the `info` toggle opens additional statement info. [^
 
 ## The memos panel
 
+![image-20230128223629065](_assets/image-20230128223629065.png){width=650}
+
 When you click the toggle switch, boxes to edit the statement, question and source memos will also appear. 
 
 Here you can add useful additional memos on your coding process.

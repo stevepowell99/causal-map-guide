@@ -1,5 +1,7 @@
 #  Tables{#xtables-basic}
 
+![image-20230128222830465](_assets/image-20230128222830465.png){width=650}
+
 ## Features common to all the tables{#tables_common}
 
 

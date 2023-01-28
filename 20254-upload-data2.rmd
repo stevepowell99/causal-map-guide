@@ -1,4 +1,6 @@
 #  How to upload and update your data -- Overview{#uploadandupdate}
 
+![image-20230128223913739](_assets/image-20230128223913739.png)
+
 How to manage your data, whether it is downloading, modifying or appending? These bulletpoints will direct you to the relevant sections later in this Guide.
 

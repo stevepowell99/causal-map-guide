@@ -2,7 +2,7 @@
 
 See also the [introduction to using flags](#xflags).
 
-![image-20230127200638689](_assets/image-20230127200638689.png)
+![image-20230127200638689](_assets/image-20230127200638689.png){width=650}
 
 
 ### Flags for bundling factors

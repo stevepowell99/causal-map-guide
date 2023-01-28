@@ -1,5 +1,7 @@
 # 📚 Simplifying causal maps with hierarchical coding{#xsimplifying-with-hierarchical}
 
+![image-20230128224445047](_assets/image-20230128224445047.png){width=650}
+
  (See also the [next section](#xhierarchical-coding) for how to implement these ideas in the Causal Map app.)
 
 ## Summary

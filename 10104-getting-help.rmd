@@ -1,5 +1,7 @@
 # Getting help
 
+![image-20230128223744187](_assets/image-20230128223744187.png){width=650}
+
 ## Tooltips
 
 ![image-20221020084317083](_assets/image-20221020084317083.png)

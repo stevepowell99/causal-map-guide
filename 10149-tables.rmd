@@ -1,5 +1,7 @@
 #  Tables{#xall-tables}
 
+![image-20230128222702874](_assets/image-20230128222702874.png){width=650}
+
 You will find all the tables under the table tab at the top of your screen.
 
 ![image-20220913102123040](_assets/image-20220913102123040.png){width=650}

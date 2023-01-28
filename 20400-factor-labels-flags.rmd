@@ -1,6 +1,6 @@
 # 📚 Factor labels: using flags{#xflags}
 
-![image-20230127194939490](_assets/image-20230127194939490.png)
+![image-20230127194939490](_assets/image-20230127194939490.png){width=650}
 
 [Hierarchical](#xhierarchical-coding) coding is one way to bring some order to a whole crowd of factors. However, sometimes you don't want to think in terms of a strict hierarchy, or maybe you have an additional set of themes which cut across that hierarchy.
 

@@ -1,5 +1,7 @@
 # 📚 Factor labels: introduction{#xfactor-labels-0}
 
+![image-20230128224058421](_assets/image-20230128224058421.png){width=650}
+
 Many people like to start coding simply by choosing whatever factor labels occur to them, as far as possible using text directly taken from the statements they are coding. That's one good way to start.
 
 ```{r,echo=F}
