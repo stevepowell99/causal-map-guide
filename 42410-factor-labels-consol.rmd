@@ -1,4 +1,4 @@
-# 📚 Creating good factor labels (advanced){#xfactor-labels-consolidating}
+# 📚 Factor labels: consolidating {#xfactor-labels-consolidating}
 
 
 
@@ -23,7 +23,7 @@ This is useful when the factors are listed alphabetically and can be a stepping-
 
 Even when doing inductive coding, some people formulate factors with a theory in mind, with some higher-level factors like “communication difficulties” or “resilient outcomes.” However we have found that it is often most interesting when you let the theory emerge rather than by starting with a preconceived template in this way. Look at your factors periodically as you code and see if there are any obvious groups.
 
-Also, our recommended way of having your cake and eating it - keeping the detail but seeing the general trends too – is “hierarchical coding.” [See below](https://guide.causalmap.app/creating.html#simplifying-causal-maps-with-hierarchical-coding).
+Also, our recommended way of having your cake and eating it - keeping the detail but seeing the general trends too – is “hierarchical coding.”.
 
 ### Merging multiple factors into one
 

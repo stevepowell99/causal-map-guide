@@ -1,8 +1,8 @@
-# 📚 Factor labels (more about flags){#xflag2}
+# 📚 Factor labels: more about flags{#xflag2}
 
 See also the [introduction to using flags](#xflags).
 
-![image-20230127194955893](_assets/image-20230127194955893.png)
+![image-20230127200638689](_assets/image-20230127200638689.png)
 
 
 ### Flags for bundling factors
@@ -51,6 +51,11 @@ you write
 
 >More food; #nutrition --> Improved wellbeing
 
-(note the `;` ), then  if you "zoom out" to the top level of the hierarchy, the flag will be neatly hidden:
+(note the `;` ). 
+
+If you do this, you can still search for your flag `#nutrition` as before. 
+
+But  if you "zoom out" to the top level of the hierarchy, the flag will be neatly hidden:
 
 >More food --> Improved wellbeing
+

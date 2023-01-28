@@ -26,6 +26,9 @@ You can:
 
 ![image-20211001175928850](_assets/focus.gif){width=650}
 
+- As usual, if you want to return to the previous view after focussing on a particular factor, press the Restore Previous Filter button: 
+  - ![image-20230128113249777](_assets/image-20230128113249777.png)
+
 - Click on factors to edit the label or memo
 
 
@@ -44,7 +47,9 @@ When you are viewing a single statement, the colour of the links corresponds to 
 
 
 
-Tracing paths to a particular factor directly from the interactive map
+### Tracing paths
+
+You can even use the same dialog to [trace paths](#xtracing-paths) to or from a particular factor directly from the interactive map
 
 ![](_assets/BhOlErDmwB.gif)
 

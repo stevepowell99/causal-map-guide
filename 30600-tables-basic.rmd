@@ -16,7 +16,7 @@ If you want to see all the data in one table for the unfiltered map, switch this
 
 ### Search
 
-You can search / filter the whole table by clicking on the equals sign at the top of a column. To search numerical volumes you can type in the vaue you are searching for or you can use `>` and `<` to search for values less than or greater than a set number.
+You can search / filter the whole table by clicking on the equals sign at the top of a column. To search numerical volumes you can type in the value you are searching for or you can use `>` and `<` to search for values less than or greater than a set number.
 
 ![chrome_tlYyv8TfPp](_assets/chrome_tlYyv8TfPp.gif){width=650}
 

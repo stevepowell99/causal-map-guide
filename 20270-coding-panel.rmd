@@ -25,7 +25,7 @@ knitr::include_url("https://player.vimeo.com/video/604099226")
 
 ![chrome_CLSI5ONvmH-1 (1).webp](_assets/4951b2_b4dc0637775d446397052cd2f3e5ac1amv2.webp)
 
-For more information on how to edit an existing link [see here](#xedit-factor-and-links).
+For more information on how to edit an existing link [see here](#xedit-factor-and-links1).
 
 
 
@@ -35,6 +35,6 @@ By creating links, you also create the names of your factors.
 
 In Causal Map, a factor *is* its label. Once you create a label, there is nothing else to add.
 
-Factor names which contain semicolons **;**. get special treatment as they separate the different parts of [hierarchical labels](#xhierachical-coding).
+Factor names which contain semicolons **;**. get special treatment as they separate the different parts of hierarchical labels.
 
 After beginning to create links between factors, already-coded factors will appear in the dropdown menus in the to and from factor boxes. For added convenience. The most frequently coded factors will appear at the top of this list

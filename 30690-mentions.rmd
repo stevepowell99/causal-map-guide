@@ -9,8 +9,8 @@ It is likely that you will want to view this table using the preset `Mentions (b
 The Direction field shows you the number of times each factors was reported as an influence factor and/or a consequence factor.
 
 - **Influence**= how many times the factor lead to another factor.
-- **Consequence** = how many times the factor was mentnioned as a result of another factor.
--  **Either** = how many times the factor was mentioned in direction.
+- **Consequence** = how many times the factor was mentioned as a result of another factor.
+-  **Either** = how many times the factor was mentioned each direction.
 
 Remember, in each case these counts depend on what you put in the Count box. You can count link_id (which gives us the overall count, the highest number) or statement_id, source_id, district etc (which usually give a lower number).
 

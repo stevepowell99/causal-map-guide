@@ -19,6 +19,8 @@ As with all tables, you can create your own table. For example, sometimes it can
 
 ## Factor memos{#xfactormemos}
 
+You can include a lot of information about your factors directly in the factor label, especially using [flags](#xflags). But sometimes you want to store information separately from the label, perhaps because you are not interested in ever seeing this information displayed in maps. For example, you might want to record who created this factor -- you or a colleague.
+
 Factor memos are an important part of your Codebook. They appear:
 
 - when you hover in interactive view 
@@ -30,4 +32,8 @@ You can create and edit the memos from interactive view:
 ![chrome_wcBLYp2tQs](_assets/chrome_wcBLYp2tQs.gif){width=650}
 
 ... or from the factors table.
+
+You can find factors with particular memos in the factors table or using filters:
+
+![image-20230128112855215](_assets/image-20230128112855215.png)
 

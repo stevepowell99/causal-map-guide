@@ -1,0 +1,16 @@
+# Importing a codebook of factors{#xcodebook}
+
+Sometimes you might want to work with a pre-determined list of possible factors. This is sometimes called "deductive coding" or "(partially) deductive coding".
+
+Or you might be working on a larger project with colleagues and you want to periodically share your codebook.
+
+To do this you just need to [roundtrip](#xroundtripping) your file: start by downloading the file as Excel. Then look at the `factors` tab. 
+
+If you already have factors (and links) in your file, you **must not change the existing order of the factors** which are already in the `factors` tab. 
+
+If you want to add *new* factors, which do not yet have links, you can add the factor labels you need one above the other in the `label` column of the `factors` tab *after* any existing factors.
+
+You can edit the existing labels and/or add memos about the factors in the `factor_memo` column if you want, and even add arbitrary other columns like, say, `domain`.
+
+- If you add a factor field like "domain", you can only use it in a filter *before* any transforming filters like Zoom. 
+

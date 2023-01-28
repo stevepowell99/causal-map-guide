@@ -2,7 +2,7 @@
 
 ## Summary
 
-Quickfields are a special kind of [flag](#xflag) for factors and links. They are a *refinement* of flags for when you have a set of categories which is mutually exclusive.
+Quickfields are a special kind of [flag](#xflags) for factors and links. They are a *refinement* of flags for when you have a set of categories which is mutually exclusive.
 
 You can add information about one or more dimensions using a format like this:
 

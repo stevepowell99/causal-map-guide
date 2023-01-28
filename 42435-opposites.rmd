@@ -1,26 +1,21 @@
-# 📚 Coding opposites
+# 📚 Coding opposites{#xopposites}
 
 ## Summary
 
 ![image-20211210144453107](_assets/image-20211210144453107.png){width=650}
 
-13 people say they got stressed (the first section of the link is green) and therefore did not perform well (second section is red), another person said they also got stressed but performed well (both sections green) and 3 people said they did not get stressed and performed well. The border of the factor "performed well" is mostly red because most people mentioned *not* performing well.  
+13 people say they got stressed (the first section of the link is green) and therefore did not perform well (second section is orange), another person said they also got stressed but performed well (both sections green) and 3 people said they did not get stressed and performed well. The border of the factor "performed well" is mostly orange because most people mentioned *not* performing well.  
 
 ----
 
 In the first part of this Guide we have dealt only with undifferentiated links which simply say "C causally influences/influenced E" or more precisely "Source S claims/believes that C causally influences/influenced E". We call this "barebones style" causal mapping. There is nothing more to this kind of causal map than links between factors. No other features are used. 
 
-Barebones-style mapping can be interpreted in two different ways:
 
-- As in QuIP, to show causal influences between past events. It is an open question to what extent these causal claims can be generalised. It is possible to parse a link from C to E as saying not only that C is something which has the causal power to influence E but also that in some sense C happened and did in fact influence E, i.e. made a difference to it. 
 
-![image-20210115220956355](_assets/image-20210115220956355.png)
+Barebones-style mapping can also be interpreted in two more different ways:
 
-- To show only causal influences between factors, without recording what did or does happen.  
-
-![image-20210115221010548](_assets/image-20210115221010548.png)
-
-Earlier in this guide we have introduced an additional convention, [hierarchical coding](#xhierarchical-coding), in which the ";" separator is used to indicate that C; D can be read "D, an example of C".
+- Following a "semi-quantitative" convention, <u>Health trainings</u> --> <u>Health -outcomes</u> means that (good / more / present /  adequate) health trainings lead to (good / more / present /  adequate) health outcomes.
+- Without this convention, it means no more than health trainings somehow influence health outcomes. Both "The trainings actually made the outcomes worse" and "The trainings actually made the outcomes better" could both be coded in the same way. We do not recommend coding in this way.
 
 ## Combining opposites
 
@@ -48,7 +43,7 @@ The first step forwards is to follow this convention:
 
 We talk about *opposites* rather than positive/negative or plus/minus because that frees us from any implications about valence or sentiment: smoking is the opposite of not smoking, health is the opposite of not health / ill health / illness. 
 
-Where there is some kind of sentiment involved, we do suggest using the `~` sign for the negative member of the pair. But it wouldn't make any difference to the app.
+Where there is some kind of sentiment involved, we do suggest using the `~` sign for the negative member of the pair. 
 
 So the same map would look like this, using `~` instead of `not`.
 

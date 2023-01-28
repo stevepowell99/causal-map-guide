@@ -1,8 +1,8 @@
-# 📚 Factor labels (using flags){#xflags}
+# 📚 Factor labels: using flags{#xflags}
 
 ![image-20230127194939490](_assets/image-20230127194939490.png)
 
-[Hierarchical](#xhierarchical-coding) coding is one way to structure your coding. However, sometimes you don't want to think in terms of a strict hierarchy, or maybe you have an additional set of themes which cut across that hierarchy.
+[Hierarchical](#xhierarchical-coding) coding is one way to bring some order to a whole crowd of factors. However, sometimes you don't want to think in terms of a strict hierarchy, or maybe you have an additional set of themes which cut across that hierarchy.
 
 ````{r,echo=F}
 knitr::include_url("https://player.vimeo.com/video/671894620")
@@ -12,6 +12,8 @@ knitr::include_url("https://player.vimeo.com/video/671894620")
 Flags are useful in either of these cases.
 
 Flags are just sequences of characters within a factor label to which you have given a special meaning, and which are unique and easy to search for. These can include letters, emojis or phrases. You can do coding without any such flags if you want, but it can help when searching and filtering.
+
+So a flag is nothing more than any sequence of characters which is repeated in several factor labels. Any sequence of characters will do. For example you could consider the letter "a" to be a flag and display the map showing all the factors which contain the letter "a". But this wouldn't be interesting.  The trick when using flags is to decide on short, meaningful codes which will not be repeated anywhere else. For example you wouldn't want to use a pair of flags like "women" and "men" to distinguish factors which are only relevant for one or the other gender because the "wo**men**" factors would also turn up when you search for "**men**". That is why we have to be careful when creating flags, for example by preceding a sequence of characters with a hashtag `"#"`. 
 
 A quote like “family situation is better now because of improved food availability” can be coded like this:
 

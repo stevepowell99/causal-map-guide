@@ -1,4 +1,4 @@
-# Interpreting your results{#xinterpret}
+# 📚 Interpreting your results{#xinterpret}
 
 Like with any other kind of data analysis, in causal mapping you have to be careful to interpret your results correctly. 
 
