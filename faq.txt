@@ -76,10 +76,6 @@ If you are looking at statement 99, looking also at factor editor, and click a q
 Use factor flags, including quickfields, to add extra information about the causal factors, especially information which cuts across any existing factor hierarchy you are using, for example themes like `environment`. Use link flags aka hashtags specifically if  it relates to the claim rather than the factors e.g. respondent is suspicious / uncertain /  answering a different question / respondent doesn’t like this connection, etc.
 
 
-
- if(T) readLines("Guide-to-causal-mapping.Rmd") %>%   str_match(".*vimeo\\.com.*") %>%   keep(~!is.na(.)) %>%   unique %>%   paste0("```{r,echo=F}\n",.,"\n```\n") %>%   c("# Video list{#xvideo-list}\n\nThese videos are all included at different points in the Guide. If you love videos, here they are again in one place. Feel free to binge.",.) %>%   writeLines("00195-video_list.rmd")​{r,echo=F}
-
-
 ///Can I autofill influence factor label if its the same as the last consequence factor?
 Yes, that is called chaining links! You can chain links by clicking the chain icon, after you have saved your previous link. If you would like more guidance check out this <a href="https://causalmap.app/courses/causal-map-basics/lessons/how-to-code-a-link/">video</a>.
 

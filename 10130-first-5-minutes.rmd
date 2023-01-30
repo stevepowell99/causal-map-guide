@@ -35,7 +35,7 @@ If you have just loaded the app without clicking on a link, you will be taken to
 
 ## Coding a file
 
-If you want to practice coding, you will mostly use the left hand side of the app. You usually start off with an uncoded example file which the app creates for you. You can find it in the dropdown menu, it has a name like **example-file-uncoded-youremailaddress**. 
+If you want to practice coding, you will mostly use the left hand side of the app. You usually start off with an uncoded example file which the app creates for you. You can find it in the dropdown menu, it has a name like **example-file-uncoded-youremailaddress**.
 
 ### Multiple statement selector{#xstatement-view}
 

@@ -34,3 +34,12 @@ The original quote on which each causal link is based is stored within the link 
 ## Causation - no longer a taboo
 
 Gone are the days when we could think of data or information as primarily about numbers. Many of us who are involved in understanding the social world and evaluating interventions within it spend much of our day understanding, presenting, manipulating and caring about *causal structures* (and even *models of other people’s* causal structures).
+
+## CEDIL Video on Impact evaluation: causal maps, mechanisms and the elusive quest for useful middle range theory
+
+With Nancy Cartwright, Gary Goertz, James Copestake and Steve Powell
+
+```{r,echo=F}
+knitr::include_url("https://www.youtube.com/embed/6DBzadDMXew")
+```
+

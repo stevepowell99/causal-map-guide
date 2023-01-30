@@ -32,6 +32,10 @@ library(tidyverse)
 knitr::include_url("https://player.vimeo.com/video/689223728")
 ```
 
+
+
+
+
 If you are particularly interested in the *theory* of causal mapping, rather than how to use the app, look for the "book" symbol 📚 in this Guide.
 
 This Guide is divided into these Training Levels:
@@ -57,7 +61,7 @@ Features marked 🧪are experimental and are implemented on the [test server](ht
 
 ## Videos
 
-Check out our growing library of [short, focussed training videos](https://guide.causalmap.app/xvideo-list.html), none longer than four minutes!
+Check out our growing library of [short, focussed training videos](#xvideo-list), none longer than four minutes!
 
 ## Support chat
 
@@ -87,12 +91,12 @@ This guide is licensed to you under [Creative Commons Attribution-NonCommercial-
 
 ```{r,echo=F}
 
-if(T) readLines("Guide-to-causal-mapping.Rmd") %>% 
-  str_match(".*vimeo\\.com.*") %>% 
+readLines("Guide-to-causal-mapping.Rmd") %>% 
+  str_match(".*vimeo\\.com.*|.*youtube\\.com.*") %>% 
   keep(~!is.na(.)) %>% 
   unique %>% 
   paste0("```{r,echo=F}\n",.,"\n```\n") %>% 
-  c("# Video list{#xvideo-list}\n\nThese videos are all included at different points in the Guide. If you love videos, here they are again in one place. Feel free to binge. Tip: if you play a video, you can press 'Picture in picture' and then switch to the app, and you can follow (and even resize) the vid",.) %>% 
-  writeLines("00195-video_list.rmd")
+  c("# Video list{#xvideo-list}\n\nThese videos are all included at different points in the Guide. If you love videos, here they are again in one place. Feel free to binge. Tip: if you play a video, you can press 'Picture in picture' and then switch to the app, and you can follow (and even resize) the video.",.) %>% 
+  writeLines("83500-video_list.rmd")
 
 ```
