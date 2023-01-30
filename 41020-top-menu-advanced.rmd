@@ -82,7 +82,7 @@ This panel shows a dropdown list of times when you made changes to the mapfile i
 
 ## Uploading your data
 
-![image-20230127182310371](_assets/image-20230127182310371.png){width=650}
+![image-20230127182310371](_assets/image-20230127182310371.png)
 
 See [this section](#ximport) for more information.
 

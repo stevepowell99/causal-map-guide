@@ -1,34 +1,6 @@
-# Creating links 2
+# Link memos, flags and hashtags
 
 ![image-20230128221237191](_assets/image-20230128221237191.png){width=650}
-
-If you are using hierarchical coding, top-level components will appear in the factor dropeven if you have not used them explicitly so far. For example, if you have used the factors `health; mental` and `health; physical`, the factor `health` will appear even if you never used it explicitly. You can then easily create new nested factors such as `health; spiritual`by selecting `health` and then typing `; spiritual` with a leading ";". The app will automatically join these for you into the factor `health; spiritual`. 
-
-- once you have selected an influence factor, the order of the choices available for the consequence factor will be silently updated, presenting at the top of the list the most frequently mentioned consequences of the influence factor you have chosen.
-
-### Creating more than one link at a time
-
-This video shows how to create more than one causal link at a time.
-
-```{r,echo=F}
-knitr::include_url("https://player.vimeo.com/video/588851236")
-```
-
-
-
-##  Chaining Links{#xchaining-links}
-
-```{r,echo=F}
-knitr::include_url("https://player.vimeo.com/video/588881701")
-```
-
-Chaining links is easily done and useful when you have statement where one consequence leads to another, which leads to a third, and so on. To use this function simply click the chain icon below the consequence factor box and the app will automatically fill the influence box with the consequence from your previous link.
-
-![md0XWSnpLr](_assets/md0XWSnpLr.gif){width=650}
-
-
-
- 
 
 ## Using memos and hashtags{#xmemosandhashtags}
 
@@ -44,6 +16,8 @@ This toggle opens both additional statement info, i.e. info for any fields which
 
 ### Link flags (aka Hashtags){#xhashtags}
 
+(Link flags are also sometimes called hashtags. But there is no need to use a hash `#` at the start of a link flag, though you can if you want.)
+
 Link flags are available as a special kind of memo when coding a link: you can use them to provide any kind of additional information.
 
 As usual in Causal Map, you can apply one or more flags, and you can either select existing flags or create new ones on the fly.
@@ -51,6 +25,17 @@ As usual in Causal Map, you can apply one or more flags, and you can either sele
 Later, you can [filter the map](https://guide.causalmap.app/analysis.html#filtering-the-map-by-link-hashtag-memo) to show only links containing or beginning or ending with specific flags (or parts of flags), and also for links which do *not* contain specific flags or parts of flags.
 
 Conceptually, there are two kinds:
+
+#### Ordinary link flags
+
+You can use any flag which does not begin with a `?` to record any other information about the link, e.g.:
+
+
+  - respondent doesn’t like this connection 
+  - respondent feels good about the outcome
+- for you, the analyst, e.g.
+  - respondent is answering a different question 
+  - to tag links you want to come back and review. 
 
 #### 🧪Weak flags
 
@@ -97,15 +82,4 @@ or
 `confidence:high`
 
 This makes sense because in your default maps you would only want to exclude one, not both, of each of the pairs in these examples.
-
-#### Other link flags
-
-You can use any flag which does not begin with a `?` to record any other information about the link, e.g.:
-
-
-  - respondent doesn’t like this connection 
-  - respondent feels good about the outcome
-- for you, the analyst, e.g.
-  - respondent is answering a different question 
-  - to tag links you want to come back and review. 
 

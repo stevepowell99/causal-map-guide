@@ -1,5 +1,7 @@
 # Merging files{#xmerging-files}
 
+![image-20230129092348843](_assets/image-20230129092348843.png)
+
 You want to merge files "foxtrot", "golf "and "hotel" into one. What you are going to do is create a blank file and then use the merge mapfile command to merge in the file foxtrot, and save the map as currently filtered (i.e. including all the contents of foxtrot which arrive via the filter), and then repeat for the others.
 
 1. Create a new file under a new name e.g. "my-merged-file"

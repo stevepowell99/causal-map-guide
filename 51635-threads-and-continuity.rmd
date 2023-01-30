@@ -1,5 +1,7 @@
 # Continuity and tracing threads{#xcontinuity}
 
+![image-20230128235100885](_assets/image-20230128235100885.png)
+
 ## Summary
 
 When you use the [trace threads filter](#xtracing-paths) to follow paths of influence across your map, the [transitivity trap](#xtransitivity-trap) can make it a challenge to interpret your maps. Some people (or somebody) said that improved hygiene led to reduction in mosquito environments, and some people  said reduction in mosquito environments led to improved health, but *was this the same or different people*?

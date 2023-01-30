@@ -1,4 +1,4 @@
-# Document coding score!{#xgamification}
+# Document coding score{#xgamification}
 
 Coding a large file can be a daunting task. At the top right of the app, you will see some feedback on your progress in coding your file.
 
