@@ -66,7 +66,7 @@ One limitation to this way of expressing the hierarchy as part of the factor lab
 
 This limitation is because of the meaning of the semicolon: the ; in "Y; X" means that this label can be replaced as needed with just “Y” , accepting a loss of detail but affirming that the overall causal story is not essentially distorted. If a hierarchical label had more than one parent, we wouldn’t know which parent to "roll up" the factor into.
 
-If you find yourself wanting to put a factor into more than one hierarchy, try using [quickfields](#xquickfields) or [flags](#xflags) instead.
+If you find yourself wanting to put a factor into more than one hierarchy, try using [quickfields](#xquickfields) or [hashtags](#xhashtags) instead.
 
 ## Zooming out
 
@@ -166,7 +166,7 @@ Usually, we don’t use higher levels merely to organise factors into themes whi
 
 <u>Health; mortality rate</u>
 
-These two items can be grouped into a *theme* “health” but can hardly be understood as special cases of a more general causal factor, so it would be a mistake to use the semi-colon. Instead, it would be more suitable to include the word “Health” just as a **flag**, without the semi-colon:
+These two items can be grouped into a *theme* “health” but can hardly be understood as special cases of a more general causal factor, so it would be a mistake to use the semi-colon. Instead, it would be more suitable to include the word “Health” just as a **hashtag**, without the semi-colon:
 
 <u>Vaccinations law is passed #health</u>
 
@@ -210,9 +210,9 @@ The higher-level factor <u>Politics</u> is not in any sense a generalisation of 
 
 Usually analysts are faced with the quandary of either having too many factors which they lose track of, or merging them into a smaller number of factors and losing information. With hierachies, you can have your cake and eat it; it is similar to the process of recoding an unwieldy number of factors into a smaller number of less granular items, but with the advantage that the process is reversible; the information can be viewed from the new higher level but also viewed from the original, more granular level. For example, we can count that the higher-level factor component “Health behaviour” was mentioned ten times, while retaining the information about the individual mentions of its more granular components.
 
-## Don't use a hierarchy when a flag will do
+## Don't use a hierarchy when a hashtag will do
 
-When the analyst wants to group certain factors into a theme (like “health”) which is not itself a causal factor, hierarchical coding should not be used. Instead, text flags like “#Environment” or “[Environment]” or just “Environment” can be used to create themes simply by adding the text flag to the factor label, e.g. 
+When the analyst wants to group certain factors into a theme (like “health”) which is not itself a causal factor, hierarchical coding should not be used. Instead, text hashtags like “#Environment” or “[Environment]” or just “Environment” can be used to create themes simply by adding the text hashtag to the factor label, e.g. 
 
 <u>Soil loss (Environment)</u>
 
@@ -226,11 +226,11 @@ or even a symbol:
 
 We can still search and filter with text tags, even with icons, as long as they are unique. 
 
-You can use flags in parallel with hierarchies:
+You can use hashtags in parallel with hierarchies:
 
 <u>Training courses delivered; Eco training for NGOs 🌍</u>
 
-## Re-usable factor components as flags
+## Re-usable factor components as hashtags
 
 Sometimes your factors relate to each other in ways which are not just hierarchical. For example:
 
@@ -244,7 +244,7 @@ These are three (hierarchical) factors in which “health” appears in differen
 
 This is not ideal, but sometimes it's just the best way to organise a tricky set of factors. 
 
-In this example, "Health" appears only as a "component" of other factors. Although on its own it might look like a mere theme rather than a causal factor, it plays a role in differentiating the causal factors in which it participates, e.g. “Activities completed, in particular training, in particular on health”; and because "Health" is used across hierarchies, it can *also* be treated as a [flag](#xflags) and can be used as part of searches, lists and counts of factors, etc.
+In this example, "Health" appears only as a "component" of other factors. Although on its own it might look like a mere theme rather than a causal factor, it plays a role in differentiating the causal factors in which it participates, e.g. “Activities completed, in particular training, in particular on health”; and because "Health" is used across hierarchies, it can *also* be treated as a [hashtag](#xhashtags) and can be used as part of searches, lists and counts of factors, etc.
 
 Isn’t that a contradiction? Didn’t we just say that “Health” is not to be used on its own as a factor because it is just a theme and is not expressed in a semi-quantitative way? No, because here the word “Health” does not function as only a theme but as a way of differentiating causal factors: all the actual factor labels in which it participates are correctly expressed in a semi-quantitative way. So <u>Activities completed; Training; Health</u> is intended as a causal factor about the extent of completion of activities, in particular training activities, and in particular health training activities.
 

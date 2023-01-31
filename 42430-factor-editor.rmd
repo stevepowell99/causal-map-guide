@@ -55,7 +55,7 @@ With these filters, any changes you made would be ambiguous. So the app makes it
 
 **TIP**: The Factor Editor is especially useful with [hierarchical coding]({#xhierarchical-coding}) because *related labels are displayed together*.
 
-**TIP**: Use [flags](#xflags) like “Problem!” or “#innovation”, unique words which are easy to search for, to make it easy to find particular kinds of factor within the editor and elsewhere.
+**TIP**: Use [hashtags](#xhashtags) like “Problem!” or “#innovation”, unique words which are easy to search for, to make it easy to find particular kinds of factor within the editor and elsewhere.
 
 ## Merging your factors
 

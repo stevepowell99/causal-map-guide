@@ -72,8 +72,8 @@ If you are looking at statement 99, looking also at factor editor, and click a q
 
 
 
-///When should I use a factor flag, and when should I use a link flag aka hashtag?
-Use factor flags, including quickfields, to add extra information about the causal factors, especially information which cuts across any existing factor hierarchy you are using, for example themes like `environment`. Use link flags aka hashtags specifically if  it relates to the claim rather than the factors e.g. respondent is suspicious / uncertain /  answering a different question / respondent doesn’t like this connection, etc.
+///When should I use a factor hashtag, and when should I use a link hashtag?
+Use factor hashtags, including quickfields, to add extra information about the causal factors, especially information which cuts across any existing factor hierarchy you are using, for example themes like `environment`. Use link hashtags specifically if  it relates to the claim rather than the factors e.g. respondent is suspicious / uncertain /  answering a different question / respondent doesn’t like this connection, etc.
 
 
 ///Can I autofill influence factor label if its the same as the last consequence factor?

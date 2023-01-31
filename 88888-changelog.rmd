@@ -125,7 +125,7 @@ So the maps for each cluster should be maximally different from one another. Thi
 
 ### [Quickfields](#xquickfields)
 
-Quickfields are a special kind of [flag](#xflag) for factor labels. They are a *refinement* of flags for when you have a set of categories which is mutually exclusive, like before/after which are not attributes of your sources and which you don't want to include in your hierarchy of factors.
+Quickfields are a special kind of [hashtag](#xhashtag) for factor labels. They are a *refinement* of hashtags for when you have a set of categories which is mutually exclusive, like before/after which are not attributes of your sources and which you don't want to include in your hierarchy of factors.
 
 You can add information about one or more such dimensions using a format like this:
 
@@ -210,7 +210,7 @@ The Gallery contains the history of all the filters you used in the current sess
 
 ### Quickfields
 
-[Quickfields](#xquickfields) are a special kind of flag for factor labels. They are a refinement of flags for when you have a set of categories which is mutually exclusive. You can add information about one or more dimensions using a format like this: `Crops improved / time:before` or `Crops improved / time:after`. A field (in this case, a field called time) will then be created in the factors table. Useful for coding a wide range of concepts which cut across your existing factor coding scheme. 
+[Quickfields](#xquickfields) are a special kind of hashtag for factor labels. They are a refinement of hashtags for when you have a set of categories which is mutually exclusive. You can add information about one or more dimensions using a format like this: `Crops improved / time:before` or `Crops improved / time:after`. A field (in this case, a field called time) will then be created in the factors table. Useful for coding a wide range of concepts which cut across your existing factor coding scheme. 
 
 ### Other features
 

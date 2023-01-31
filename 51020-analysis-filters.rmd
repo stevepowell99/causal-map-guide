@@ -68,7 +68,7 @@ One step upstream – zero steps downstream:
 
 ![image-20220809122516625](_assets/image-20220809122516625.png){width=650}
 
-This analysis function is particularly useful for searching for important factors such as intervention activities or intended programme outcomes and can be used in conjunction with [flags](#xflags).
+This analysis function is particularly useful for searching for important factors such as intervention activities or intended programme outcomes and can be used in conjunction with [hashtags](#xhashtags).
 
 This also works when you include 0 steps upstream and 0 steps downstream:
 

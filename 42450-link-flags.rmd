@@ -1,4 +1,4 @@
-# Link memos, flags and hashtags
+# Link memos and hashtags
 
 ![image-20230128221237191](_assets/image-20230128221237191.png){width=650}
 
@@ -14,21 +14,21 @@ This toggle opens both additional statement info, i.e. info for any fields which
 
 ![esSnHL226V](_assets/esSnHL226V.gif)
 
-### Link flags (aka Hashtags){#xhashtags}
+### Link hashtags{#xhashtags}
 
-(Link flags are also sometimes called hashtags. But there is no need to use a hash `#` at the start of a link flag, though you can if you want.)
+There is no need to actually use a hash `#` at the start of a link hashtag, though you can if you want. Just use any unique single word which is easy to search and filter on, like #nutrition or nutrition# or nutrition--. 
 
-Link flags are available as a special kind of memo when coding a link: you can use them to provide any kind of additional information.
+Link hashtags are available as a special kind of memo when coding a link: you can use them to provide any kind of additional information.
 
-As usual in Causal Map, you can apply one or more flags, and you can either select existing flags or create new ones on the fly.
+As usual in Causal Map, you can apply one or more hashtags, and you can either select existing hashtags or create new ones on the fly.
 
-Later, you can [filter the map](https://guide.causalmap.app/analysis.html#filtering-the-map-by-link-hashtag-memo) to show only links containing or beginning or ending with specific flags (or parts of flags), and also for links which do *not* contain specific flags or parts of flags.
+Later, you can [filter the map](https://guide.causalmap.app/analysis.html#filtering-the-map-by-link-hashtag-memo) to show only links containing or beginning or ending with specific hashtags (or parts of hashtags), and also for links which do *not* contain specific hashtags or parts of hashtags.
 
 Conceptually, there are two kinds:
 
-#### Ordinary link flags
+#### Ordinary link hashtags
 
-You can use any flag which does not begin with a `?` to record any other information about the link, e.g.:
+You can use any hashtag which does not begin with a `?` to record any other information about the link, e.g.:
 
 
   - respondent doesn’t like this connection 
@@ -37,9 +37,9 @@ You can use any flag which does not begin with a `?` to record any other informa
   - respondent is answering a different question 
   - to tag links you want to come back and review. 
 
-#### 🧪Weak flags
+#### 🧪Weak hashtags
 
-Weak flags are a special kind of hashtag aka link flag. They are *caveats*. If you use weak flags, you should make sure that by default your maps do not include any link with a weak flag. 
+Weak hashtags are a special kind of hashtag aka link hashtag. They are *caveats*. If you use weak hashtags, you should make sure that by default your maps do not include any link with a weak hashtag. 
 
 They begin with `?` and are used to mark any link which you are not sure is always valid across the global context for the whole global map, for example:
 
@@ -61,15 +61,15 @@ They begin with `?` and are used to mark any link which you are not sure is alwa
     - Respondent makes a substantive claim that X only insignificantly influences Y, e.g. `?weak`
 
 
-##### Weak flags in [quickfields](#xquickfields).
+##### Weak hashtags in [quickfields](#xquickfields).
 
-If you are using quickfields for (some of) your link flags, you can usually put the `?` at the start of the flag as normal:
+If you are using quickfields for (some of) your link hashtags, you can usually put the `?` at the start of the hashtag as normal:
 
 `?context:village-A`
 
 `?context:village-B`
 
-However the "weakness" only applies to one of the values of the quickfield, in which case we recommend the following kind of format, in which the `?` comes before the second part of the flag:
+However the "weakness" only applies to one of the values of the quickfield, in which case we recommend the following kind of format, in which the `?` comes before the second part of the hashtag:
 
 `strength:?none`
 

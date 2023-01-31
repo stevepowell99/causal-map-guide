@@ -19,7 +19,7 @@ As with all tables, you can create your own table. For example, sometimes it can
 
 ## Factor memos{#xfactormemos}
 
-You can include a lot of information about your factors directly in the factor label, especially using [flags](#xflags). But sometimes you want to store information separately from the label, perhaps because you are not interested in ever seeing this information displayed in maps. For example, you might want to record who created this factor -- you or a colleague.
+You can include a lot of information about your factors directly in the factor label, especially using [hashtags](#xhashtags). But sometimes you want to store information separately from the label, perhaps because you are not interested in ever seeing this information displayed in maps. For example, you might want to record who created this factor -- you or a colleague.
 
 Factor memos are an important part of your Codebook. They appear:
 

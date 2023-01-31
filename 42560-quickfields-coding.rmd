@@ -2,7 +2,7 @@
 
 ## Summary
 
-Quickfields are a special kind of [flag](#xflags) for factors and links. They are a *refinement* of flags for when you have a set of categories which is mutually exclusive.
+Quickfields are a special kind of [hashtag](#xhashtags) for factors and links. They are a *refinement* of hashtags for when you have a set of categories which is mutually exclusive.
 
 You can add information about one or more dimensions using a format like this:
 
@@ -20,7 +20,7 @@ Example uses:
 - capturing things which apply only, say, to girls or only to boys
 - organising ideas within a hierarchy
 
-You can search for and display this information across all your tables and maps, not separately as they would be if you used ordinary flags like #before and #after, but together.
+You can search for and display this information across all your tables and maps, not separately as they would be if you used ordinary hashtags like #before and #after, but together.
 
 Here is more info about [analysis with quickfields](#xquickfields-analysis).
 
@@ -33,13 +33,13 @@ These are equivalent, you can
 
 <u>Crops improved /time:after</u> (optionally use a / just to separate the fields visually)
 
-or you can use a hanging flag:
+or you can use a hanging hashtag:
 
-<u>Crops improved; time:after</u> (a so-called "hanging flag" which is perhaps a bit more readable and moves the quick field to a lower level of the hierarchy).
+<u>Crops improved; time:after</u> (a so-called "hanging hashtag" which is perhaps a bit more readable and moves the quick field to a lower level of the hierarchy).
 
-## Quickfields are also ordinary flags
+## Quickfields are also ordinary hashtags
 
-Quick field flags are still flags, so you can still *also* do all the things you would do with flags, for example search for "time:after" as a complete flag just as you would if it did not contain an `:` sign.
+Quick field hashtags are still hashtags, so you can still *also* do all the things you would do with hashtags, for example search for "time:after" as a complete hashtag just as you would if it did not contain an `:` sign.
 
 `find factors label contains time:after`
 

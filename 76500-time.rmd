@@ -94,9 +94,9 @@ How to code temporal information in factor labels?
 
 Sometimes it is enough to merely mention them in a factor label, for example “improved concentration after intervention” in an ad-hoc way. Sometimes a more systematic approach is required. There are several possibilities.
 
-### Use a hashtag or flag
+### Use a hashtag
 
-It might be enough to simply use a consistent set of [flags](https://causalmapdocumentation.blot.im/search?q=flag), appearing anywhere in the factor label, for example: 
+It might be enough to simply use a consistent set of [hashtags](#xhashtags), appearing anywhere in the factor label, for example: 
 
 “Oh, before the intervention, as soon as we had a discussion on a difficult theme, we’d get into an argument, but now we don’t, we actually make decisions instead!”
 
@@ -106,11 +106,11 @@ Family discussion on difficult theme #before-intervention ➜ Family gets into a
 
 Family discussion on difficult theme #after-intervention ➜ Family makes decision #after-intervention
 
-This way, as the flags are unique and searchable, it would be possible to show a map consisting only of #after-intervention factors. 
+This way, as the hashtags are unique and searchable, it would be possible to show a map consisting only of #after-intervention factors. 
 
 Sometimes a more systematic approach is required, for example to establish two hashtags “#before-intervention” and “#after-intervention” which are used systematically.
 
-You can also use [hanging flags](#xhanging-flags) like this:
+You can also use [hanging hashtags](#xhanging-hashtags) like this:
 
 Family discussion on difficult theme; #before-intervention ➜ Family gets into argument #before-intervention
 
@@ -173,9 +173,9 @@ Evaluations often report timeliness and/or lateness. It can be difficult to code
 Three ideas how to code this:
 
 - use a hashtag like #late on the causal *link*
-- use a flag like #late in the factor label: 
+- use a hashtag like #late in the factor label: 
   - UNICEF's intervention --> Material delivered #late
-- use a [hanging flag](#hanging-flags) : 
+- use a [hanging hashtag](#hanging-hashtags) : 
   - UNICEF's intervention --> Material delivered; #late
 
 Your choice of what to use might depend on what you think is here the primary story: is it the fact that the material was delivered at all, and the lateness is just a qualifier? Or is the lateness the main story?  
@@ -194,7 +194,7 @@ o  one or more values of a temporally relevant additional data field
 
 o  and/or one or more temporally relevant link hashtags
 
-o  and/or one or more temporally relevant factor label flags/hashtags
+o  and/or one or more temporally relevant factor label hashtags/hashtags
 
 - and/or we can zoom in or out if we have used hierarchical coding with one or more temporally relevant components.
 
