@@ -4,15 +4,13 @@
 
 ![image-20211210144453107](_assets/image-20211210144453107.png){width=650}
 
-13 people say they got stressed (the first section of the link is green) and therefore did not perform well (second section is orange), another person said they also got stressed but performed well (both sections green) and 3 people said they did not get stressed and performed well. The border of the factor "performed well" is mostly orange because most people mentioned *not* performing well.  
+This map shows that 13 people say they got stressed (the first section of the link is green) and therefore did *not* perform well (second section is *orange*), another person said they also got stressed but performed well (both sections green) and 3 people said they did *not* get stressed (first section of the link is orange) and performed well. The border of the factor "performed well" is mostly orange because most people mentioned *not* performing well.  
 
 ----
 
-In the first part of this Guide we have dealt only with undifferentiated links which simply say "C causally influences/influenced E" or more precisely "Source S claims/believes that C causally influences/influenced E". We call this "barebones style" causal mapping. There is nothing more to this kind of causal map than links between factors. No other features are used. 
+In the first part of this Guide we have dealt only with undifferentiated links which simply say "C causally influences/influenced E" or more precisely "Source S claims/believes that C causally influences/influenced E".  
 
 
-
-Barebones-style mapping can also be interpreted in two more different ways:
 
 - Following a "semi-quantitative" convention, <u>Health trainings</u> --> <u>Health -outcomes</u> means that (good / more / present /  adequate) health trainings lead to (good / more / present /  adequate) health outcomes.
 - Without this convention, it means no more than health trainings somehow influence health outcomes. Both "The trainings actually made the outcomes worse" and "The trainings actually made the outcomes better" could both be coded in the same way. We do not recommend coding in this way.

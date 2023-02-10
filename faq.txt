@@ -26,8 +26,9 @@ Please see our T&Cs at https://causalmap.app/terms-and-conditions-for-the-causal
 
 
 
-///I've signed up but haven't received a validation code?
-Firstly, the best thing to do is double check you have entered your email correctly - if your email is correct, then try sending the code again. Make sure to also check your junk/spam email folder. If none of these things work email us at hello@causalmap.
+///How do I delete my account?
+If you have created any files which you want to delete, you can delete them using the green file sharing / file management button at the top left of the app.
+If you have a recurring subscription, you can cancel it from the Account tab in the app.
 
 
 ///How do I import and export maps from Causal Map 2?

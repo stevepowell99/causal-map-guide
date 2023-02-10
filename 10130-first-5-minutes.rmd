@@ -11,7 +11,7 @@ knitr::include_url("https://player.vimeo.com/video/674369121")
 
 
 
-The app has two parts, the [left-hand side](#xlhs) and the [right-hand side](#rhs) as well as the [top menu](#xtop-menu).
+The app has two parts, the left-hand side and the right-hand side as well as the top menu. Watch the video below to see how these parts work.
 
 
 
@@ -73,7 +73,7 @@ The Dashboard appears on the right as the app loads, or reveal it by pressing th
 
 ![image-20220725094435395](_assets/image-20220725094435395.png)
 
-Each item in the dashboard is a different view of the current file saved by you or other users. You can apply a view by clicking on the corresponding row. 
+Each item in the dashboard is a different view of the current file saved by you or other users. You can apply a view by clicking on the corresponding row. You can see more about The Dashboard [here](#xdashboard)
 
 ### The other tabs
 
@@ -86,5 +86,5 @@ There are other tabs on the right hand side. You won't need these when you are j
 
 - [Data tab](#xdata-manager) see summary data about the current file such as number of factors
 
-- [Account tab](#account-tab) manage your subscriptions and teams.
+- [Account tab](#xmanage_your_subscription) manage your subscriptions and teams.
 

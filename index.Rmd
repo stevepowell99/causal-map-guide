@@ -50,7 +50,7 @@ Each is followed by a simple [quiz](https://causalmap.shinyapps.io/quizzes/).
 
 ... and there are also sections on:
 
-- The rest of the app
+- [The rest of the app](#xupdates-tab) 
 - [Technical reference](#xlevel7)
 
 If you are in a hurry (and who isn't?), just read Level 1: Getting Started.
@@ -80,7 +80,7 @@ These are some causal mapping projects completed with Causal Map - either direct
 
 <iframe class="airtable-embed" src="https://airtable.com/embed/shrlHVXucgPfsNPnw?backgroundColor=red&viewControls=on" frameborder="0" onmousewheel="" width="100%" height="533" style="background: transparent; border: 1px solid #ccc;"></iframe>
 
-For more details on selected Casual Map projects please check out the [Showcases section](#xshowcases) of this guide.
+For more details on selected Casual Map projects please check out our [Recent Projects](https://www.causalmap.app/recent-projects page) page.
 
 ## License {.unnumbered}
 

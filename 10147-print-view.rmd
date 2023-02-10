@@ -1,6 +1,6 @@
 #  Print view{#print-view}
 
-[A print-quality version of the map](#xprint-view) with advanced layout. You usually use Print View to get high quality static outputs for including in reports.
+A print-quality version of the map with advanced layout. You usually use Print View to get high quality static outputs for including in reports.
 
 When you are viewing a single statement, the colour of the links corresponds to the colour of the highlighted sections of text.
 

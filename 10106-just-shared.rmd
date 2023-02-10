@@ -8,7 +8,7 @@ If someone has [shared a file](#xpermissions)  with, say, YOU@MAIL.COM, make sur
 
 
 
-If they have [sent you a link](#xinvite) like https://causalmap.shinyapps.io/CausalMap2/?s=99 to a particular map (or table), click the link and you will be automatically taken to view the corresponding map (or table), providing they have given you the correct permissions. 
+If they have [sent you a link](#xinvite) like https://causalmap.shinyapps.io/CausalMap2/?s=99 to a particular map (or table), click the link and you will be automatically taken to view the corresponding map (or table), providing they have given you the correct [permissions](#xpermissions). 
 
 Alternatively If they have just asked you to log in at the app to explore a file name, say "project-x", log in and click on the dropdown list on the left-hand side and click on `project-x` to load it. If you can't find that file name, it means they haven't correctly shared it with the email address you logged in with.
 

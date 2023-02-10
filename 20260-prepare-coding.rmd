@@ -10,7 +10,7 @@ When you are coding you should switch the multiple statement selector to One, to
 
 ![image-20211105092246054](_assets/image-20211105092246054.png)
 
-You can use the arrow and numbered button to skip through statements. If you want to skip to a particular statement the easiest way is to use the [find statements](xfind-statements-links) filter. This will automatically be applied if you are viewing statements one at a time, so simply click on the filter and edit the number it is searching for.
+You can use the arrow and numbered button to skip through statements. If you want to skip to a particular statement the easiest way is to use the [find statements](#xfind-statements-links) filter. This will automatically be applied if you are viewing statements one at a time, so simply click on the filter and edit the number it is searching for.
 
 (Even when you are viewing one statement, it is still possible to apply filters for example if the map associated with this one statement is quite large.)
 

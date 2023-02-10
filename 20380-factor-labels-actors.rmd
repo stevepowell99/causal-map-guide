@@ -6,10 +6,10 @@ Often you will find that it is easier and clearer if you formulate your labels t
 
 So instead of this:
 
-"advocacy on renewables" 
+<u>advocacy on renewables</u>
 
 try this:
 
-"NGOs conduct advocacy campaign on renewables".  
+<u>NGOs conduct advocacy campaign on renewables</u>.  
 
 In particular, avoid using passive formulations like "Advocacy is carried out" or "Awareness is raised".

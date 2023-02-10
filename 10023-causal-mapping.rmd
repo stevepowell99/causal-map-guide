@@ -19,7 +19,7 @@ Causal maps work on two levels.
 
 #### Present
 
-The results of ordinary qualitative research on texts is usually just more text. Causal maps, on the other hand, are not additional presentations of additional analyses but are **the main product of qualitative causal mapping.** They are relatively intuitive and easy to understand.
+The results of ordinary qualitative research on texts is usually just more text. Causal maps, on the other hand, are not additional presentations of additional analyses but are **the main product of qualitative causal mapping.** They are relatively intuitive and easy to understand (and they look good in presentations 👨‍🏫).
 
 #### Query
 

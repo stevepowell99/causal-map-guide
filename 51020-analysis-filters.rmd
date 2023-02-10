@@ -8,7 +8,7 @@ knitr::include_url("https://player.vimeo.com/video/618270513")
 
 
 
-## **Applying different filters** 
+## **Applying different filters**{#xapplyingfilters}
 
 Filters simplify your graph to help you answer specific questions. You will often apply more than one of these filters in order, e.g. first select only specific factors and then make the most frequently mentioned factors larger.
 

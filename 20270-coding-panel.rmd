@@ -35,6 +35,6 @@ By creating links, you also create the names of your factors.
 
 In Causal Map, a factor *is* its label. Once you create a label, there is nothing else to add.
 
-Factor names which contain semicolons **;**. get special treatment as they separate the different parts of hierarchical labels.
+Factor names which contain semicolons **;**. get special treatment as they separate the different parts of [hierarchical](#xsimplifying-with-hierarchical) labels.
 
 After beginning to create links between factors, already-coded factors will appear in the dropdown menus in the to and from factor boxes. For added convenience. The most frequently coded factors will appear at the top of this list

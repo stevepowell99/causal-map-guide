@@ -10,7 +10,7 @@ You can get information about most of the buttons in the app by hovering your mo
 
 ## Blue info buttons
 
-You can get help at any time by clicking on the little blue info buttons, like below. This will then open a panel displaying the relevant section of this guide.
+You can get help at any time by clicking on the little blue info buttons, like below. This will then open a panel displaying the relevant section of this guide (good for when you forget what a feature works for).
 
 ![image-20221020084136350](_assets/image-20221020084136350.png)
 

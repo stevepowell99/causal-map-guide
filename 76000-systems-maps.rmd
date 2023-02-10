@@ -1,5 +1,7 @@
 # 📚 Causal maps, systems maps, what's the difference? Does it matter?
 
+![image-20230207132845800](_assets/image-20230207132845800.png)
+
 ## What is the difference between a causal map and a systems map?
 
 Causal mapping is related to systems mapping, but we are specifically interested in *causal* connections, and we specifically map *what individual sources think/believe/claim*. 
