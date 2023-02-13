@@ -17,15 +17,15 @@ So a hashtag is nothing more than any sequence of characters which is repeated i
 
 A quote like “family situation is better now because of improved food availability” can be coded like this:
 
-> More food --> Improved wellbeing
+> <u>More food</u> --> <u>Improved wellbeing</u> 
 
 Now, maybe you are asked also to keep track of any aspects of the project which have to do with nutrition. Nutrition is not really part of your system of factors, but you would like to be able to construct some maps just to look at this aspect. So you can write this:
 
-> More food #nutrition --> Improved wellbeing  
+> <u>More food #nutrition</u> --> <u>Improved wellbeing</u>  
 
-Similarly,  if Improved Wellbeing is one of the desired outcomes of the project, we might want to reflect that by adding a hashtag "(Outcome)" like this.
+Similarly,  if <u>Improved Wellbeing</u> is one of the desired outcomes of the project, we might want to reflect that by adding a hashtag "(Outcome)" like this.
 
-> More food --> Improved wellbeing (Outcome)
+> <u>More food --> Improved wellbeing (Outcome)</u>
 
 Then we can easily search for this and other desired outcomes.  
 

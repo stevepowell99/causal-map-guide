@@ -28,7 +28,7 @@
 <meta name="author" content="Samuel Goddard" />
 
 
-<meta name="date" content="2023-02-10" />
+<meta name="date" content="2023-02-13" />
 
   <meta name="viewport" content="width=device-width, initial-scale=1" />
   <meta name="apple-mobile-web-app-capable" content="yes" />
@@ -312,17 +312,24 @@ code span.wa { color: #60a0b0; font-weight: bold; font-style: italic; } /* Warni
 </ul></li>
 <li class="chapter" data-level="" data-path="ximport.html"><a href="ximport.html"><i class="fa fa-check"></i>Uploading your data</a>
 <ul>
-<li class="chapter" data-level="" data-path="ximport.html"><a href="ximport.html#new-unified-interface-for-uploading"><i class="fa fa-check"></i>🧪New unified interface for uploading</a></li>
-<li class="chapter" data-level="" data-path="ximport.html"><a href="ximport.html#xupload-google"><i class="fa fa-check"></i>Importing a simple, wide-format file</a>
+<li class="chapter" data-level="" data-path="ximport.html"><a href="ximport.html#ximport2excel"><i class="fa fa-check"></i>🧪Text documents including Word and PDFs</a>
+<ul>
+<li class="chapter" data-level="" data-path="ximport.html"><a href="ximport.html#problems-importing-pdfs"><i class="fa fa-check"></i>Problems importing PDFS?</a></li>
+</ul></li>
+<li class="chapter" data-level="" data-path="ximport.html"><a href="ximport.html#xupload-google"><i class="fa fa-check"></i>Importing a simple wide-format file</a>
 <ul>
 <li class="chapter" data-level="" data-path="ximport.html"><a href="ximport.html#adding-additional-cases-with-wide-format-files"><i class="fa fa-check"></i>Adding additional cases with wide-format files</a></li>
 </ul></li>
 <li class="chapter" data-level="" data-path="ximport.html"><a href="ximport.html#xupload-standard-format"><i class="fa fa-check"></i>Standard format</a>
 <ul>
 <li class="chapter" data-level="" data-path="ximport.html"><a href="ximport.html#formattingyourfile"><i class="fa fa-check"></i>Formatting a Standard Format file: The basics</a></li>
-<li class="chapter" data-level="" data-path="ximport.html"><a href="ximport.html#starting-from-a-word-document"><i class="fa fa-check"></i>Starting from a Word document</a></li>
-<li class="chapter" data-level="" data-path="ximport.html"><a href="ximport.html#ximport2excel"><i class="fa fa-check"></i>Uploading multiple PDFs and word-processing documents (doc, docx, odt)</a></li>
+<li class="chapter" data-level="" data-path="ximport.html"><a href="ximport.html#pasting-data-from-a-word-document-into-excel"><i class="fa fa-check"></i>Pasting data from a Word document into Excel</a></li>
 <li class="chapter" data-level="" data-path="ximport.html"><a href="ximport.html#making-a-basic-statements-table-by-hand"><i class="fa fa-check"></i>Making a basic statements table by hand</a></li>
+</ul></li>
+<li class="chapter" data-level="" data-path="ximport.html"><a href="ximport.html#ximport-quip"><i class="fa fa-check"></i>QuIP-specific: Uploading hybrid format data</a>
+<ul>
+<li class="chapter" data-level="" data-path="ximport.html"><a href="ximport.html#appending-hybrid-data"><i class="fa fa-check"></i><em>Appending</em> hybrid data</a></li>
+<li class="chapter" data-level="" data-path="ximport.html"><a href="ximport.html#uploading-closed-question-blocks"><i class="fa fa-check"></i>Uploading closed question blocks</a></li>
 </ul></li>
 </ul></li>
 <li class="chapter" data-level="" data-path="import-additional-data.html"><a href="import-additional-data.html"><i class="fa fa-check"></i>Uploading additional data</a>
@@ -339,17 +346,12 @@ code span.wa { color: #60a0b0; font-weight: bold; font-style: italic; } /* Warni
 </ul></li>
 <li class="chapter" data-level="" data-path="ximport-other.html"><a href="ximport-other.html"><i class="fa fa-check"></i>Importing your data: special cases</a>
 <ul>
+<li class="chapter" data-level="" data-path="ximport-other.html"><a href="ximport-other.html#xlinks-only"><i class="fa fa-check"></i>🧪Importing existing causal coding (“links only”)</a></li>
 <li class="chapter" data-level="" data-path="ximport-other.html"><a href="ximport-other.html#importing-from-other-software"><i class="fa fa-check"></i>Importing from other software</a>
 <ul>
 <li class="chapter" data-level="" data-path="ximport-other.html"><a href="ximport-other.html#exporting-for-import-into-kumu.io"><i class="fa fa-check"></i>Exporting for import into kumu.io</a></li>
 <li class="chapter" data-level="" data-path="ximport-other.html"><a href="ximport-other.html#exporting-for-import-into-nodexl"><i class="fa fa-check"></i>Exporting for import into NodeXL</a></li>
 </ul></li>
-<li class="chapter" data-level="" data-path="ximport-other.html"><a href="ximport-other.html#xlinks-only"><i class="fa fa-check"></i>🧪Importing existing causal coding (“links only”)</a></li>
-<li class="chapter" data-level="" data-path="ximport-other.html"><a href="ximport-other.html#uploading-closed-question-blocks"><i class="fa fa-check"></i>Uploading closed question blocks</a>
-<ul>
-<li class="chapter" data-level="" data-path="ximport-other.html"><a href="ximport-other.html#ximport-quip"><i class="fa fa-check"></i>QuIP-specific: Uploading hybrid format data</a></li>
-</ul></li>
-<li class="chapter" data-level="" data-path="ximport-other.html"><a href="ximport-other.html#appending-hybrid-data"><i class="fa fa-check"></i><em>Appending</em> hybrid data</a></li>
 </ul></li>
 <li class="chapter" data-level="" data-path="xmerging-files.html"><a href="xmerging-files.html"><i class="fa fa-check"></i>Merging files</a>
 <ul>
@@ -899,13 +901,21 @@ code span.wa { color: #60a0b0; font-weight: bold; font-style: italic; } /* Warni
 </script>
 <div id="ximport" class="section level1 hasAnchor">
 <h1>Uploading your data<a href="ximport.html#ximport" class="anchor-section" aria-label="Anchor link to header"></a></h1>
-<div id="new-unified-interface-for-uploading" class="section level2 hasAnchor">
-<h2>🧪New unified interface for uploading<a href="#new-unified-interface-for-uploading" class="anchor-section" aria-label="Anchor link to header"></a></h2>
+<div id="ximport2excel" class="section level2 hasAnchor">
+<h2>🧪Text documents including Word and PDFs<a href="#ximport2excel" class="anchor-section" aria-label="Anchor link to header"></a></h2>
+<p>If your data is in the form of several word processing documents like Word .docx or .odt, or plain text documents or even PDFs, you can upload all of them at once..</p>
+<p>Preparing your files: In doc, docx and text files you can separate text into statements by inserting lines containing just ‘–’ where you want to separate statements. Otherwise, doc and docx files will be broken into paragraphs and pdf files will be broken into pages.</p>
+<p>Uploading like this does not retain information about page numbers in PDFs. If you need to get the page numbers of each statement when importing PDFs, try <a href="https://causalmap.shinyapps.io/pdf2excel/">another free utility</a> (Tool 2) which imports PDFs only but does provide page numbers as an additional column.</p>
+<div id="problems-importing-pdfs" class="section level3 hasAnchor">
+<h3>Problems importing PDFS?<a href="ximport.html#problems-importing-pdfs" class="anchor-section" aria-label="Anchor link to header"></a></h3>
+<p>This upload option may miss text in PDFs which is in boxes and columns. As an alternative you can export a PDF to Excel (one by one) <a href="https://www.adobe.com/uk/acrobat/online/pdf-to-excel.html">here</a>. The resulting file is also full of pictures etc but does seem to contain all of the text, although in many columns. 80% of the time it identifies suitably large chunks of text, but sometimes you get very small fragments.</p>
+<p>We provide another our <a href="https://causalmap.shinyapps.io/pdf2excel/">free utility</a> (Tool 3) which batch converts any number of these Adobe Excel files into an Excel file which you can then upload to Causal Map.</p>
+</div>
 </div>
 <div id="xupload-google" class="section level2 hasAnchor">
-<h2>Importing a simple, wide-format file<a href="ximport.html#xupload-google" class="anchor-section" aria-label="Anchor link to header"></a></h2>
-<p>There are many ways to import data into Causal Map. Perhaps the simplest way to upload your data is in wide format. This is the kind of data you might often get if you have been using Google Forms.</p>
-<p>In this format, you only need an Excel file with one tab; each row is all the data from one source. So many of the columns will probably be additional data like gender, etc.</p>
+<h2>Importing a simple wide-format file<a href="ximport.html#xupload-google" class="anchor-section" aria-label="Anchor link to header"></a></h2>
+<p>This is the kind of data you get if you have been using Google Forms or ODK.</p>
+<p>In this format, you only need an Excel file with one tab; each row is all the data from one source. Many of the columns will probably be additional data like gender, etc.</p>
 <p>Press the blue upload button.</p>
 <div class="figure">
 <img src="_assets/image-20220720115514616.png" alt="" />
@@ -927,6 +937,7 @@ code span.wa { color: #60a0b0; font-weight: bold; font-style: italic; } /* Warni
 <div id="xupload-standard-format" class="section level2 hasAnchor">
 <h2>Standard format<a href="ximport.html#xupload-standard-format" class="anchor-section" aria-label="Anchor link to header"></a></h2>
 <p>Causal Map has a standard format for storing data which can be uploaded and downloaded as an Excel (xlsx) file.</p>
+<p>You can follow the instructions below, or you might find it easier to use the <a href="https://drive.google.com/uc?export=download&amp;id=126fAfkJSbUXkqHp_OkE3af2vdxhMjRy-">Excel template</a>.</p>
 <p>Uploading data in Causal Map standard format is simply done. Click the upload icon, browse your computer and find the xlsx file you want to use. The app will import any tabs called “factors”, “links”, “statements”, “sources” or “questions” and will ignore other tabs.</p>
 <div class="figure">
 <img src="_assets/1SHtnPxKUp.gif" width="650" alt="" />
@@ -936,7 +947,6 @@ code span.wa { color: #60a0b0; font-weight: bold; font-style: italic; } /* Warni
 <p>The video below shows you how to format and upload a set of statements for coding to the Causal Map App.</p>
 <iframe src="https://player.vimeo.com/video/637121851" width="672" height="400px" data-external="1">
 </iframe>
-<p>And click <a href="https://drive.google.com/uc?export=download&amp;id=126fAfkJSbUXkqHp_OkE3af2vdxhMjRy-">here</a> to download the excel template.</p>
 <div id="formattingyourfile" class="section level3 hasAnchor">
 <h3>Formatting a Standard Format file: The basics<a href="ximport.html#formattingyourfile" class="anchor-section" aria-label="Anchor link to header"></a></h3>
 <iframe src="https://player.vimeo.com/video/604138709" width="672" height="400px" data-external="1">
@@ -958,9 +968,9 @@ code span.wa { color: #60a0b0; font-weight: bold; font-style: italic; } /* Warni
 <p class="caption">image-20211012141342985</p>
 </div>
 </div>
-<div id="starting-from-a-word-document" class="section level3 hasAnchor">
-<h3>Starting from a Word document<a href="ximport.html#starting-from-a-word-document" class="anchor-section" aria-label="Anchor link to header"></a></h3>
-<p>You can create a table from a Microsoft Word document.</p>
+<div id="pasting-data-from-a-word-document-into-excel" class="section level3 hasAnchor">
+<h3>Pasting data from a Word document into Excel<a href="ximport.html#pasting-data-from-a-word-document-into-excel" class="anchor-section" aria-label="Anchor link to header"></a></h3>
+<p>You can create a standard format statements table from a Microsoft Word document. However if your data is mainly in the form of Word, PDF or other text documents, you may find it easier to <a href="#ximport-text">upload them directly</a>.</p>
 <p>Each paragraph in your Word document will become one statement, so make sure your Word document is already structured so this will work for you. Delete any double paragraph breaks in Word (i.e. delete any empty paragraphs). If you want some short paragraphs to appear together as one longer statement, delete the paragraph breaks between them.</p>
 <p>Then</p>
 <ul>
@@ -975,17 +985,6 @@ code span.wa { color: #60a0b0; font-weight: bold; font-style: italic; } /* Warni
 <p>If you want to import interviews which are several pages each, you should break each interview into several statements. Ideally a statement consists of between one and five paragraphs – enough to fit on the left-hand side panel when it is displayed there. Usually your text breaks up naturally into sections, for example the interviews might be responses to a number of questions, so your statements might consist of one or a few paragraphs for each question.</p>
 <p>We strongly recommend that you don’t try to import statements which are longer than 500 words, as it is harder to code very long statements.</p>
 <p>Your statements file must have at least one column with the text of the statements and the header for this column must be “text.” Other columns will be treated as additional data.</p>
-</div>
-<div id="ximport2excel" class="section level3 hasAnchor">
-<h3>Uploading multiple PDFs and word-processing documents (doc, docx, odt)<a href="ximport.html#ximport2excel" class="anchor-section" aria-label="Anchor link to header"></a></h3>
-<p>You can make a basic statements table from a set of PDF and other files using our <a href="https://causalmap.shinyapps.io/import2excel/">free utility</a> which will save you a lot of time. You can upload all your files at once and get an Excel file of the right format for uploading into Causal Map.</p>
-<p>Preparing your files: In doc, docx and text files you can separate text into statements by inserting lines containing just ‘–’ where you want to separate statements. Otherwise, doc and docx files will be broken into paragraphs and pdf files will be broken into pages.</p>
-<p>If you need to get the page numbers of each statement when importing PDFs, try <a href="https://causalmap.shinyapps.io/pdf2excel/">another free utility</a> (Tool 2) which imports PDFs only but does provide page numbers as an additional column.</p>
-<div id="problems-importing-pdfs" class="section level4 hasAnchor">
-<h4>Problems importing PDFS?<a href="ximport.html#problems-importing-pdfs" class="anchor-section" aria-label="Anchor link to header"></a></h4>
-<p>Tools 1 and 2 work well on simple PDF files but may miss text which is in boxes and columns. As an alternative you can export a PDF to Excel (one by one) <a href="https://www.adobe.com/uk/acrobat/online/pdf-to-excel.html">here</a>. The resulting file is also full of pictures etc but does seem to contain all of the text, although in many columns. 80% of the time it identifies suitably large chunks of text, but sometimes you get very small fragments.</p>
-<p>We provide another our <a href="https://causalmap.shinyapps.io/pdf2excel/">free utility</a> (Tool 3) which batch converts any number of these Adobe Excel files into an Excel file which you can upload to Causal Map.</p>
-</div>
 </div>
 <div id="making-a-basic-statements-table-by-hand" class="section level3 hasAnchor">
 <h3>Making a basic statements table by hand<a href="ximport.html#making-a-basic-statements-table-by-hand" class="anchor-section" aria-label="Anchor link to header"></a></h3>
@@ -1004,7 +1003,86 @@ code span.wa { color: #60a0b0; font-weight: bold; font-style: italic; } /* Warni
 </div>
 <p>The statements are the texts which appear one by one in the left-hand panel, for you to read and code. Each statement is one row in your file.</p>
 <p>The (optional) column <code>source_id</code> is special, because it gives you an easy way to provide additional information about each source (e.g. year and country of publication) rather than having to copy this information into your this main statements file.</p>
+</div>
+</div>
+<div id="ximport-quip" class="section level2 hasAnchor">
+<h2>QuIP-specific: Uploading hybrid format data<a href="ximport.html#ximport-quip" class="anchor-section" aria-label="Anchor link to header"></a></h2>
+<iframe src="https://player.vimeo.com/video/664879474" width="672" height="400px" data-external="1">
+</iframe>
+<p>This section is specifically about importing from a QuIP-style spreadsheet.</p>
+<p><a href="https://docs.google.com/spreadsheets/d/1Er6m9XpkP4WcszaiLbmv_xFsc7V1d8H5?rtpof=true&amp;authuser=hello%40causalmap.app&amp;usp=drive_fs">Here</a> is an example file.</p>
+<p>This format has many rows, one for each answer, and includes the statements as one kind of answer; you can import statements and additional data from the same fieldwork file. The main differences to a normal import are:</p>
+<ul>
+<li>Rows whose question code does not include a “$” will be imported only as additional data, not as statements.</li>
+<li>A new question ID will be constructed from the question code together with the question text.</li>
+</ul>
+<p>Your xslx file must have just four columns, with column headers in this order:</p>
+<ul>
+<li><code>text</code>, containing the answers</li>
+<li><code>source_id</code>, containing the respondent ID</li>
+<li><code>question_id</code>, containing the question ID</li>
+<li><code>question_text</code>, containing the question text</li>
+</ul>
+<p>(Actually the names of the columns do not matter, only the order.)</p>
+<p>Your Question IDs may include the following characters:</p>
+<ul>
+<li><p>A dollar <code>$</code> to be treated as a statement.</p></li>
+<li><p>A star <code>*</code> to be treated as a closed question.</p></li>
+<li><p>A hash <code>#</code> to be treated as important additional data.</p></li>
+</ul>
+<p>Otherwise your question will be treated as unimportant additional data. Also it is worth noting that all the columns of the <code>sources</code> table contain metadata about your sources and can for example be used to create filters (e.g. show me a map which only contains statements from people who live alone). Data whose <code>question_code</code> contains a <code>#</code> will also be shown in a few additional key place in the app such as the info panel.</p>
+<p>You can mix these, so e.g.</p>
+<p><code>#$* Do you have a house?</code></p>
+<p>Will be treated as a statement and as closed question (part of a block) and as important additional data. <img src="_assets/image-20211220160457936.png" width="650" alt="image-20211220160457936" /></p>
+<p>All important additional data, as indicated by the <code>#</code> in the question_id, can be found under the <a href="#xadditional-information">info toggle</a> in your left-hand side panel.</p>
+<div class="figure">
+<img src="_assets/image-20211220153042098.png" width="650" alt="" />
+<p class="caption">image-20211220153042098</p>
+</div>
+<p>Closed questions, as indicated by the <code>*</code> in the question_id, are imported into the <a href="#xthe-closed-question-blocks-table">closed questions table</a> and the <a href="#xthe-sources-table">sources table</a> which you can apply the closed questions preset to.</p>
+<div class="figure">
+<img src="_assets/image-20211220161646312.png" width="650" alt="" />
+<p class="caption">image-20211220161646312</p>
+</div>
+<p>Plus, the question_code may end with the characters “rank” to mark “ranking organisation” data. [There may be a bug currently such that this data will also be imported only if they are not treated as statements, ie the code should not contain a <code>$</code>].</p>
+<p>To upload the QuIP-style spreadsheet click on the purple upload button on the right-hand-side panel.</p>
+<div class="figure">
+<img src="_assets/chrome_c4eNUSYcjH.png" alt="" />
+<p class="caption">chrome_c4eNUSYcjH</p>
+</div>
+<div id="appending-hybrid-data" class="section level3 hasAnchor">
+<h3><em>Appending</em> hybrid data<a href="ximport.html#appending-hybrid-data" class="anchor-section" aria-label="Anchor link to header"></a></h3>
+<p>Suppose you uploaded hybrid data from file F, and already did some coding, then you receive more data in file G, also in hybrid format.</p>
+<p>Find the original file F on your computer (don’ t download from the app!). Paste the data from file G below the existing data in file F, save it as file H, and upload this again. Your existing coding should not be affected; the links and factors you already created will remain.</p>
+<p>Caveat: you can’t combine roundtripping and appending hybrid data. If you have tweaked or added to your data from file F by roundtripping (downloading the data from the app then uploading again), any changes to statements, sources or questions will be lost if you later try to append data using this hybrid button. So if you need to tweak your data (statements, sources or questions), either:</p>
+<ul>
+<li>wait until you have completed uploading using the hybrid button and only then tweak with roundtripping</li>
+<li>or, manually tweak the old and new data in file H.</li>
+</ul>
+</div>
+<div id="uploading-closed-question-blocks" class="section level3 hasAnchor">
+<h3>Uploading closed question blocks<a href="ximport.html#uploading-closed-question-blocks" class="anchor-section" aria-label="Anchor link to header"></a></h3>
+<p>This kind of data is common in QuIP studies, which are normally uploaded using BSDR hybrid format. But as it only invovles adding columns to your sources table, it is possible to used closed question blocks in other kinds of study imported in other ways.</p>
+<p>If you give the app a single set of closed responses like better, worse then it can make tables like below.</p>
+<div class="figure">
+<img src="_assets/image-20211019153918044.png" width="650" alt="" />
+<p class="caption">image-20211019153918044</p>
+</div>
+<p>It will recode a fixed set of words into + positive, - negative and 0 neutral.</p>
+<p>This approach only makes sense if you have one larger set of questions with the same set of fixed reply options.</p>
+<p>You supply this data in the form of user-defined fields in the Sources table, whose names contain a *.</p>
+<p>You could still, if you want, import a whole bunch of different closed questions with different answer categories as custom fields in the Sources table. So just as you can have gender as a field, you could have “answer to closed question about how often do you go hungry (never/sometimes/often)” as a field. This means you could ask the app to only show the maps of the women, or the people who often go hungry, or the women who often go hungry. The point of the closed questions feature is to organise and provide the answers to a whole block of questions together in one place, to make analsying the data easier.</p>
+<div id="quip-recodes-for-closed-questions---live-link" class="section level4 hasAnchor">
+<h4>QuIP recodes for closed questions - live link<a href="ximport.html#quip-recodes-for-closed-questions---live-link" class="anchor-section" aria-label="Anchor link to header"></a></h4>
+<p>Using this <a href="https://www.dropbox.com/s/spiacrl67lqwvc9/quip-recodes.xlsx?dl=0">table</a> (which includes spanish) the app recodes your data into + positive, - negative and 0 neutral.</p>
+<p>For example:</p>
+<div class="figure">
+<img src="_assets/image-20211019155354881.png" alt="" />
+<p class="caption">image-20211019155354881</p>
+</div>
+<p>This data will be displayed in the Tables panel if you select “closed questions.”</p>
 
+</div>
 </div>
 </div>
 </div>

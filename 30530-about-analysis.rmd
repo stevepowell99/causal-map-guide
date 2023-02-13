@@ -4,7 +4,7 @@ Analysing a file means
 
 - **applying different filters** to it, to focus on different parts of the entire causal map in order to answer different questions
 
-- **viewing the results in different ways** by clicking on different tabs in the right hand side to view different kinds of graphical map and various [tables](https://guide.causalmap.app/all-the-tables.html). 
+- **viewing the results in different ways** by clicking on different tabs in the right hand side to view different kinds of graphical map and various [tables](#xall-tables).
 
 If you want to view / analyse a file, you will mostly:
 

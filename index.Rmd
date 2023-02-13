@@ -80,7 +80,7 @@ These are some causal mapping projects completed with Causal Map - either direct
 
 <iframe class="airtable-embed" src="https://airtable.com/embed/shrlHVXucgPfsNPnw?backgroundColor=red&viewControls=on" frameborder="0" onmousewheel="" width="100%" height="533" style="background: transparent; border: 1px solid #ccc;"></iframe>
 
-For more details on selected Casual Map projects please check out our [Recent Projects](https://www.causalmap.app/recent-projects page) page.
+For more details on selected Casual Map projects please check out our [Recent Projects](https://www.causalmap.app/recent-projects) page.
 
 ## License {.unnumbered}
 
