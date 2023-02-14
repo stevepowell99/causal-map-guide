@@ -8,7 +8,7 @@ Analysing a file means
 
 If you want to view / analyse a file, you will mostly:
 
-- apply filters using the Dashboard and view the results in the right-hand side of the app.
+- apply filters using [the Dashboard](#xdashboard) and view the results in the right-hand side of the app.
 - view many statements at a time by clicking `Many` on the multiple statement selector (above). 
 - start off by analysing the [example-file](https://app.causalmap.app/?story=example-file&filters=&tab=Interactive&subtab=&version=none&tabl=).
 

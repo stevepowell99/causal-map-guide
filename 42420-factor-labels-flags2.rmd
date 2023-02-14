@@ -16,17 +16,17 @@ In the example below, both are similar interventions, but one is clearly attribu
 
 “MSF gave us medicines which healed the children”
 
-MSF gave medicines –> children healed
+<u>MSF gave medicines</u> –> <u>children healed</u>
 
 “Someone gave us medicines which healed the children”
 
-Unknown actor gave medicines –> children healed
+<u>Unknown actor gave medicines –> children healed</u>
 
 You have a range of options to hashtag this difference in the label and enable you to filter for all project-related interventions once the data is coded.
 
 · All such interventions can be labelled with the NGO’s name
 
-· If you are doing nested coding, you can nest such factors within a higher-level factor like ‘Interventions;’
+· If you are doing nested coding, you can nest such factors within a higher-level factor like <u>Interventions;</u>
 
 · And/or you can use a specific intervention hashtag, e.g. #Intervention. (QuIP has its own hashtags, [I] for Implicit and [E] for Explicit).
 
@@ -43,11 +43,11 @@ Again, you can use any label you want as long as you are sure it is unique, it d
 
 A subtle trick is to use hanging hashtags which are additional hierarchical components. So rather than writing, say,
 
->More food #nutrition --> Improved wellbeing
+><u>More food #nutrition</u> --> <u>Improved wellbeing</u>
 
 you write
 
->More food; #nutrition --> Improved wellbeing
+><u>More food; #nutrition</u> --> <u>Improved wellbeing</u>
 
 (note the `;` ). 
 
@@ -55,5 +55,5 @@ If you do this, you can still search for your hashtag `#nutrition` as before.
 
 But  if you "zoom out" to the top level of the hierarchy, the hashtag will be neatly hidden:
 
->More food --> Improved wellbeing
+><u>More food</u> --> <u>Improved wellbeing</u>
 

@@ -17,7 +17,7 @@ Click on:
 When you first create or copy a file, Causal Map will create for you some recommended views. These are marked with a star. 
 
 - These recommended views are copies specific for the current file. You can edit them later, or hide them if you don't want them. 
-- Some recommended views might not be shown in the list if they would not be relevant to the current file -- for example if you do not use hierarchical coding, views which are only relevant to zooming are not shown. Occasionally you might see them appear later as you add features to your file, for example if you add hierarchical coding. 
+- Some recommended views might not be shown in the list if they would not be relevant to the current file -- for example if you do not use [hierarchical coding](#xsimplifying-with-hierarchical), views which are only relevant to zooming are not shown. Occasionally you might see them appear later as you add features to your file, for example if you add hierarchical coding. 
 - Occasionally you might see additional recommended views added to the list as we publish new ones.
 
 #### 🤵 Custom views - create your own 

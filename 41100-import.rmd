@@ -1,5 +1,7 @@
 # Uploading your data{#ximport}
 
+This page tells you how to get your data into the right format for uploading to Causal Map. There are different formats to choose from: pick the one which is most convenient for you.
+
 ## 🧪Text documents including Word and PDFs{#ximport2excel}
 
 If your data is in the form of several word processing documents like Word .docx or .odt, or plain text documents or even PDFs,  you can  upload all of them at once.. 
@@ -22,13 +24,13 @@ This is the kind of data you  get if you have been using Google Forms or ODK.
 
 In this format, you only need an Excel file with one tab; each row is all the data from one source. Many of the columns will probably be additional data like gender, etc.
 
-Press the blue upload button.
-
-![image-20220720115514616](_assets/image-20220720115514616.png)
+Check your data:
 
 - The app will read the first tab and will ignore other tabs in the Excel file.
 
 - Each row is one source. 
+
+Rename your columns: 
 
 - Columns beginning with $ are treated as statements. 
 
@@ -46,18 +48,7 @@ You can start coding your data even if you do not yet have all the cases/sources
 
 Causal Map has a standard format for storing data which can be uploaded and downloaded as an Excel (xlsx) file. 
 
-You can follow the instructions below, or you might find it easier to use the  [Excel template](https://drive.google.com/uc?export=download&id=126fAfkJSbUXkqHp_OkE3af2vdxhMjRy-). 
-
-
-Uploading data in Causal Map standard format is simply done. Click the upload icon, browse your computer and find the xlsx file you want to use. The app will import any tabs called "factors", "links", "statements", "sources" or "questions" and will ignore other tabs. 
-
-
-
-![1SHtnPxKUp](_assets/1SHtnPxKUp.gif){width=650}
-
-
-
-It is important that your file is in the right format to make it compatible with the app and the following section will show you how to format your file. 
+That means you can upload your data the first time using this format, and it is also the format you might later use to add more data or to add data about your sources or questions.
 
 The video below shows you how to format and upload a set of statements for coding to the Causal Map App.
 
@@ -65,6 +56,10 @@ The video below shows you how to format and upload a set of statements for codin
 knitr::include_url("https://player.vimeo.com/video/637121851")
 ```
 
+You might find it easier to start from the  [Excel template](https://drive.google.com/uc?export=download&id=126fAfkJSbUXkqHp_OkE3af2vdxhMjRy-). 
+
+
+The app will import any worksheets in your file called "statements" (required), "sources" (optional) or "questions" (optional), and also, if you need them "factors" and "links" and will ignore other worksheets. 
 
 ### Formatting a Standard Format file: The basics {#formattingyourfile}
 
@@ -74,16 +69,16 @@ knitr::include_url("https://player.vimeo.com/video/604138709")
 
 When uploading data for coding the only data you **need** to upload to the app is a table of statements as an xlsx file. Your file must have a header row with the names of the fields; the name of the column with the actual responses must be `text`. 
 
-All tab names and column names should be lower-case.
+All work names and column names should be lower-case.
 
 ![image-20211012141450834](_assets/image-20211012141450834.png){width=650}
 
 
-Additionally (optionally), you will usually have a column in the statements table called `source id` and a corresponding tab called `sources` with at least one column called `source_id` with corresponding values, and additional columns giving more information about your sources.
+Additionally (optionally), you will usually have a column in the statements table called `source_id` and a corresponding tab called `sources` with at least one column called `source_id` containing each source id, with one row for each source, and additional columns giving more information about your sources.
 
 ![image-20211012141409487](_assets/image-20211012141409487.png){width=650}
 
-Additionally (optionally), you may have a column in the statements table called `question id` . If you want, this question_id can already include the question text, e.g. "q1: tell us about your life". But usually it is more convenient to just use a code like "q1" and also include a corresponding tab in your Excel file called `questions` with at least one column called `question_id` with corresponding values, and an additional column `question_text` with the full text, as well as any other information about your questions, e.g. domain or questionnaire section. 
+Additionally (optionally), you may have a column in the statements table called `question_id` . If you want, this question_id can already include the question text, e.g. "q1: tell us about your life". But usually it is more convenient to just use a code like "q1" and also include a corresponding tab in your Excel file called `questions` with at least one column called `question_id` with corresponding values, and an additional column `question_text` with the full text, as well as any other information about your questions, e.g. domain or questionnaire section. 
 
 ![image-20211012141342985](_assets/image-20211012141342985.png){width=650}
 

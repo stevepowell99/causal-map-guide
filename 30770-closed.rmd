@@ -19,5 +19,5 @@ There are two presets with this table:
 
 These tables provide a snapshot of the overall trends of change across the domains, so they can be a helpful introduction and “easing in” to the findings - before diving deeper into the causal stories! The closed question responses can also provide interesting insights when compared to the open-ended responses, especially in cases where they might differ. 
 
-More information on how the app recodes your closed question responses can be found [here](https://guide.causalmap.app/importing-your-data-special-cases.html?q=recodes#quip-recodes-for-closed-questions---live-link).
+More information on how the app recodes your closed question responses can be found [here](https://guide.causalmap.app/ximport-other.html).
 

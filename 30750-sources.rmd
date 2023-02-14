@@ -1,4 +1,4 @@
-# The Sources Table
+# The Sources Table{#xthe-sources-table}
 
 The sources table, when there are no filters applied or when viewing the preset filter `Sources (basic)`, simply lists all of the respondents and any additional data collected about them (sex, age, location, education). As with all the tables when filters are applied, the table will only present the relevant sources/respondents. If you are searching and filtering for a specific factor, this table will update and only show sources who reported that factor.
 

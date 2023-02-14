@@ -4,20 +4,20 @@
 
   <meta charset="utf-8" />
   <meta http-equiv="X-UA-Compatible" content="IE=edge" />
-  <title>📚 What is a causal map? | Guide to Causal Mapping</title>
-  <meta name="description" content="📚 What is a causal map? | Guide to Causal Mapping" />
+  <title>The Sources Table | Guide to Causal Mapping</title>
+  <meta name="description" content="The Sources Table | Guide to Causal Mapping" />
   <meta name="generator" content="bookdown 0.26 and GitBook 2.6.7" />
 
-  <meta property="og:title" content="📚 What is a causal map? | Guide to Causal Mapping" />
+  <meta property="og:title" content="The Sources Table | Guide to Causal Mapping" />
   <meta property="og:type" content="book" />
   <meta property="og:image" content="https://causalmap.app/_assets/image-20210520221329966.png" />
-  <meta property="og:description" content="📚 What is a causal map? | Guide to Causal Mapping" />
+  <meta property="og:description" content="The Sources Table | Guide to Causal Mapping" />
   
 
   <meta name="twitter:card" content="summary" />
-  <meta name="twitter:title" content="📚 What is a causal map? | Guide to Causal Mapping" />
+  <meta name="twitter:title" content="The Sources Table | Guide to Causal Mapping" />
   
-  <meta name="twitter:description" content="📚 What is a causal map? | Guide to Causal Mapping" />
+  <meta name="twitter:description" content="The Sources Table | Guide to Causal Mapping" />
   <meta name="twitter:image" content="https://causalmap.app/_assets/image-20210520221329966.png" />
 
 <meta name="author" content="Steve Powell" />
@@ -35,8 +35,8 @@
   <meta name="apple-mobile-web-app-status-bar-style" content="black" />
   
   
-<link rel="prev" href="xlevel1.html"/>
-<link rel="next" href="xcausal-mapping.html"/>
+<link rel="prev" href="xthe-statements-table.html"/>
+<link rel="next" href="xthe-questions-table.html"/>
 <script src="libs/jquery-3.6.0/jquery-3.6.0.min.js"></script>
 <script src="https://cdn.jsdelivr.net/npm/fuse.js@6.4.6/dist/fuse.min.js"></script>
 <link href="libs/gitbook-2.6.7/css/style.css" rel="stylesheet" />
@@ -899,44 +899,32 @@ code span.wa { color: #60a0b0; font-weight: bold; font-style: italic; } /* Warni
 
   gtag('config', 'G-1EQ4YJMYRJ');
 </script>
-<div id="xcausal-maps" class="section level1 hasAnchor">
-<h1>📚 What is a causal map?<a href="#xcausal-maps" class="anchor-section" aria-label="Anchor link to header"></a></h1>
-<p>A causal map consists of boxes (which we call “factors”) joined by arrows (which we call “links”).</p>
-<p>A link from factor C to factor E means that someone (P) believes that C is some sense causally influences E. Every link represents one causal claim.</p>
+<div id="xthe-sources-table" class="section level1 hasAnchor">
+<h1>The Sources Table<a href="xthe-sources-table.html#xthe-sources-table" class="anchor-section" aria-label="Anchor link to header"></a></h1>
+<p>The sources table, when there are no filters applied or when viewing the preset filter <code>Sources (basic)</code>, simply lists all of the respondents and any additional data collected about them (sex, age, location, education). As with all the tables when filters are applied, the table will only present the relevant sources/respondents. If you are searching and filtering for a specific factor, this table will update and only show sources who reported that factor.</p>
+<p>This table can be useful to check that all the sources have been imported into the app correctly. The table also provides a summary of the respondents which can be useful for presenting respondent demographics in the report, either in the sampling section or as an appendix.</p>
 <div class="figure">
-<img src="_assets/image-20221102181334216.png" width="650" alt="" />
-<p class="caption">image-20221102181334216</p>
+<img src="_assets/image-20220922103706766.png" width="650" alt="" />
+<p class="caption">image-20220922103706766</p>
 </div>
-<p><em>Two separate single-source causal maps: Beliefs held by sources P and Q about causal influences between various factors.</em></p>
+<div id="fields-2" class="section level3 hasAnchor">
+<h3>Fields<a href="xthe-sources-table.html#fields-2" class="anchor-section" aria-label="Anchor link to header"></a></h3>
+<p>There are many fields you can use as columns or rows, such as:</p>
 <ul>
-<li>causal maps encode a belief about a <em>usually partial</em> causal <em>influence</em> of C on E, and only in special cases encode <em>total or exclusive</em> causation such that C entirely determines E or is <em>the</em> cause of E.</li>
-<li>encoding a claim (like ‘the heavy rains were one reason the harvest was worse than usual’) in causal mapping does not require us to make any judgement about the quality of the evidence or the ability of the source to correctly judge that this link was causal (although we can add this information if we want).</li>
+<li><code>source_id</code>. A code which matches the field <code>source_id</code> in the <code>statements</code> table.</li>
+<li><code>source_memo</code>. For making notes about a source as you code.</li>
+<li>Any other fields which you have imported.</li>
 </ul>
-<div class="figure">
-<img src="_assets/image-20221102181357242.png" width="650" alt="" />
-<p class="caption">image-20221102181357242</p>
-</div>
-<p><em>A combined, multi-source causal map about beliefs held by sources P and Q about causal influences between various factors</em></p>
-<p>When we have highlighted many causal claims we can present the entire, global causal map containing all the claims like this:</p>
-<div class="figure">
-<img src="_assets/Big%20map.png" width="650" alt="" />
-<p class="caption">Big map</p>
-</div>
-<p><em>A global causal map combined from many sources</em></p>
-<p>However this map is bewildering and not very useful. So to answer specific questions, we filter the map in certain ways to answer different questions, for example to simplify it, to trace specific causal paths, to identify significantly different sub-maps for different groups of sources, etc.</p>
-<div class="figure">
-<img src="_assets/TracingRobutsness.png" width="650" alt="" />
-<p class="caption">TracingRobutsness</p>
-</div>
 
+</div>
 </div>
             </section>
 
           </div>
         </div>
       </div>
-<a href="xlevel1.html" class="navigation navigation-prev " aria-label="Previous page"><i class="fa fa-angle-left"></i></a>
-<a href="xcausal-mapping.html" class="navigation navigation-next " aria-label="Next page"><i class="fa fa-angle-right"></i></a>
+<a href="xthe-statements-table.html" class="navigation navigation-prev " aria-label="Previous page"><i class="fa fa-angle-left"></i></a>
+<a href="xthe-questions-table.html" class="navigation navigation-next " aria-label="Next page"><i class="fa fa-angle-right"></i></a>
     </div>
   </div>
 <script src="libs/gitbook-2.6.7/js/app.min.js"></script>

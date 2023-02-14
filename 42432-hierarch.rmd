@@ -34,7 +34,7 @@ We can “zoom out” of a causal map containing nested factors to show a simple
 
 So then, loosely yet informatively and with certain caveats, accepting a loss of detail but affirming that the overall meaning is not distorted, this algorithm can deduce for us, from the first example above, the following causal map:
 
-New intervention ➜ Healthy behaviour
+<u>New intervention ➜ Healthy behaviour</u>
 
 Usually each higher-level factor will each be a summary of *many* *different* lower-level factors.
 
@@ -42,7 +42,7 @@ Usually each higher-level factor will each be a summary of *many* *different* lo
 
 An analyst coding text to create a causal map is confronted with the same challenge as any qualitative researcher: identifying recurring themes in such a way as to help a larger picture emerge, while retaining important detail. Expressing factor labels in a hierarchical fashion can help solve this problem. But hierarchical labelling also enables a particular strength of causal mapping: it lets us “zoom out” to view a whole causal map from a higher-level perspective, merging causally similar concepts to give a simpler map with far fewer components. Formally, the process of zooming out produces a map which logically *follows* *from*, is *implied by*, the original map. This chapter also introduces a smarter way to “zoom out” from a causal map, and explains how these features are implemented in the Causal Map app.
 
-When conducting qualitative coding of any text, there is always a tension between wanting to keep the detail (e.g. hand washing) but also to code in such a way that general themes emerge (e.g. health behaviour). One way to do this is to organise the codes into a hierarchical structure, so that “Hand washing” is nested as part of “Health behaviour”. This can be done (see e.g. Dedoose, saturateapp.com) by using labels in which the hierarchy is directly expressed, for example “Hand washing; health behaviour” – using semi-colons or some other convenient character to separate the levels of the hierarchy. 
+When conducting qualitative coding of any text, there is always a tension between wanting to keep the detail (e.g. hand washing) but also to code in such a way that general themes emerge (e.g. health behaviour). One way to do this is to organise the codes into a hierarchical structure, so that “Hand washing” is nested as part of “Health behaviour”. This can be done (see e.g. Dedoose, saturateapp.com) by using labels in which the hierarchy is directly expressed, for example <u>Hand washing; health behaviour</u> – using semi-colons or some other convenient character to separate the levels of the hierarchy. 
 
 This approach is convenient for several reasons:
 
@@ -64,7 +64,7 @@ The way factor (labels) emerge during causal mapping is just a special case of t
 
 One limitation to this way of expressing the hierarchy as part of the factor label is that you can’t make one factor belong to two different higher-level concepts. For example, you could understand a particular midwife training both as causally part of a new intervention but also perhaps as causally part of an institution’s in-service training programme or an individual’s workload, but you can’t code it as both “New intervention; midwife training” and “In-service training; midwife training” at the same time.  
 
-This limitation is because of the meaning of the semicolon: the ; in "Y; X" means that this label can be replaced as needed with just “Y” , accepting a loss of detail but affirming that the overall causal story is not essentially distorted. If a hierarchical label had more than one parent, we wouldn’t know which parent to "roll up" the factor into.
+This limitation is because of the meaning of the semicolon: the ; in <u>Y; X</u> means that this label can be replaced as needed with just <u>Y</u> , accepting a loss of detail but affirming that the overall causal story is not essentially distorted. If a hierarchical label had more than one parent, we wouldn’t know which parent to "roll up" the factor into.
 
 If you find yourself wanting to put a factor into more than one hierarchy, try using [quickfields](#xquickfields) or [hashtags](#xhashtags) instead.
 
@@ -96,29 +96,29 @@ A causal map coded using a hierarchical separator can be "zoomed out" given a sp
 
 If we know 
 
-New intervention; midwife training ➜ Healthy behaviour; hand washing
+<u>New intervention; midwife training</u> ➜ <u>Healthy behaviour; hand washing</u>
 
 then, loosely yet informatively and with certain caveats, accepting a loss of detail but affirming that the overall meaning is not distorted, we can deduce:
 
-New intervention ➜ Healthy behaviour; hand washing
+<u>New intervention</u> ➜ <u>Healthy behaviour; hand washing</u>
 
 and
 
-New intervention; midwife training ➜ Healthy behaviour
+<u>New intervention; midwife training</u> ➜ <u>Healthy behaviour</u>
 
 and even
 
-New intervention ➜ Healthy behaviour
+<u>New intervention</u> ➜ <u>Healthy behaviour</u>
 
 This actually reflects the dilemma of the analyst often referred to as *granularity*: with how much detail should I code the beginning (or the end) of this causal story? Expressing a factor as <u>Health behaviour; Hand washing; Before meals</u> shows that this is indeed to be understood as a kind of health behaviour, although of course not the whole of it. By using this approach, the analyst says: if you are just looking for the global picture, I am happy for this factor to be understood as <u>Health behaviour</u>. 
 
-When factors are nested like this within one another as part of a hierarchy, it is possible to give an overview and ‘zoom out’ of the detailed data. This helps to simplify some of the analysis, enabling the user to focus on the links between the top-level groups rather than all the details. It follows that two factors like “Y; X” and “Y; Z” are *causally similar enough to one another to merge into Y* at a more general level. 
+When factors are nested like this within one another as part of a hierarchy, it is possible to give an overview and ‘zoom out’ of the detailed data. This helps to simplify some of the analysis, enabling the user to focus on the links between the top-level groups rather than all the details. It follows that two factors like <u>Y; X</u> and <u>Y; Z</u> are *causally similar enough to one another to merge into Y* at a more general level. 
 
-Expressing a factor in a form like "Y; X" **means** it can be replaced as needed with just “Y”, accepting a loss of detail but affirming that the overall meaning is not essentially distorted. If you wouldn’t be happy to accept this replacement, don’t use the “;” to code this factor.
+Expressing a factor in a form like <u>Y; X</u> **means** it can be replaced as needed with just <u>Y</u>, accepting a loss of detail but affirming that the overall meaning is not essentially distorted. If you wouldn’t be happy to accept this replacement, don’t use the “;” to code this factor.
 
 ## Semi-quantitative formulations work best
 
-We already saw that causal mapping often works best when the factors are semi-quantitative. The hierarchical approach also works best when the higher-level factors are themselves labelled such that also they are *semi-quantitative*, *causal* factors which could be used on their own – in a way which themes or categories [see here](#formulating-labels-semi-quantitative-factors) could not. Good examples would be:
+We already saw that causal mapping often works best when the factors are semi-quantitative. The hierarchical approach also works best when the higher-level factors are themselves labelled such that also they are *semi-quantitative*, *causal* factors which could be used on their own – in a way which themes or categories [see here](#factor-labels1) could not. Good examples would be:
 
 - <u>Social problems</u>
 
@@ -132,31 +132,31 @@ We already saw that causal mapping often works best when the factors are semi-qu
 
 - <u>Psychosocial stressors; Pre-existing mental health issues</u>
 
-Here, “Social problems” and “Psychosocial stressors” are higher-level causal factors in their own right; they are not just themes or boxes to put factors into. 
+Here, <u>Social problems</u> and <u>Psychosocial stressors</u> are higher-level causal factors in their own right; they are not just themes or boxes to put factors into. 
 
 So we might have:
 
 “The problem of unemployment is a psychosocial stress for many”
 
-Social problems; Unemployment ➜ Psychosocial stressors
+<u>Social problems; Unemployment</u> ➜ <u>Psychosocial stressors</u>
 
  
 
 “When people get stressed they often turn to drugs“
 
-Psychosocial stressors ➜ Social problems; Addiction
+<u>Psychosocial stressors</u> ➜ <u>Social problems; Addiction</u>
 
  
 
 These could be combined into this story:
 
-Social problems; Unemployment ➜ Psychosocial stressors ➜ Social problems; Addiction
+<u>Social problems; Unemployment</u> ➜ <u>Psychosocial stressors</u> ➜ <u>Social problems; Addiction</u>
 
  
 
 If we zoom out of the above story, we could focus in on the higher-level factors and in this case we would get a vicious cycle:
 
-Social problems ➜ Psychosocial stressors ➜ Social problems
+<u>Social problems</u> ➜ <u>Psychosocial stressors</u> ➜ <u>Social problems</u>
 
 ## Higher-level factors are *generalisations* 
 

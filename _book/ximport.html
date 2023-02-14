@@ -28,7 +28,7 @@
 <meta name="author" content="Samuel Goddard" />
 
 
-<meta name="date" content="2023-02-13" />
+<meta name="date" content="2023-02-14" />
 
   <meta name="viewport" content="width=device-width, initial-scale=1" />
   <meta name="apple-mobile-web-app-capable" content="yes" />
@@ -267,9 +267,9 @@ code span.wa { color: #60a0b0; font-weight: bold; font-style: italic; } /* Warni
 <ul>
 <li class="chapter" data-level="" data-path="xthe-statements-table.html"><a href="xthe-statements-table.html#fields-1"><i class="fa fa-check"></i>Fields</a></li>
 </ul></li>
-<li class="chapter" data-level="" data-path="the-sources-table.html"><a href="the-sources-table.html"><i class="fa fa-check"></i>The Sources Table</a>
+<li class="chapter" data-level="" data-path="xthe-sources-table.html"><a href="xthe-sources-table.html"><i class="fa fa-check"></i>The Sources Table</a>
 <ul>
-<li class="chapter" data-level="" data-path="the-sources-table.html"><a href="the-sources-table.html#fields-2"><i class="fa fa-check"></i>Fields</a></li>
+<li class="chapter" data-level="" data-path="xthe-sources-table.html"><a href="xthe-sources-table.html#fields-2"><i class="fa fa-check"></i>Fields</a></li>
 </ul></li>
 <li class="chapter" data-level="" data-path="xthe-questions-table.html"><a href="xthe-questions-table.html"><i class="fa fa-check"></i>The Questions Table</a></li>
 <li class="chapter" data-level="" data-path="the-closed-question-blocks-table.html"><a href="the-closed-question-blocks-table.html"><i class="fa fa-check"></i>The Closed Question Blocks Table</a></li>
@@ -901,6 +901,7 @@ code span.wa { color: #60a0b0; font-weight: bold; font-style: italic; } /* Warni
 </script>
 <div id="ximport" class="section level1 hasAnchor">
 <h1>Uploading your data<a href="ximport.html#ximport" class="anchor-section" aria-label="Anchor link to header"></a></h1>
+<p>This page tells you how to get your data into the right format for uploading to Causal Map. There are different formats to choose from: pick the one which is most convenient for you.</p>
 <div id="ximport2excel" class="section level2 hasAnchor">
 <h2>🧪Text documents including Word and PDFs<a href="#ximport2excel" class="anchor-section" aria-label="Anchor link to header"></a></h2>
 <p>If your data is in the form of several word processing documents like Word .docx or .odt, or plain text documents or even PDFs, you can upload all of them at once..</p>
@@ -916,14 +917,13 @@ code span.wa { color: #60a0b0; font-weight: bold; font-style: italic; } /* Warni
 <h2>Importing a simple wide-format file<a href="ximport.html#xupload-google" class="anchor-section" aria-label="Anchor link to header"></a></h2>
 <p>This is the kind of data you get if you have been using Google Forms or ODK.</p>
 <p>In this format, you only need an Excel file with one tab; each row is all the data from one source. Many of the columns will probably be additional data like gender, etc.</p>
-<p>Press the blue upload button.</p>
-<div class="figure">
-<img src="_assets/image-20220720115514616.png" alt="" />
-<p class="caption">image-20220720115514616</p>
-</div>
+<p>Check your data:</p>
 <ul>
 <li><p>The app will read the first tab and will ignore other tabs in the Excel file.</p></li>
 <li><p>Each row is one source.</p></li>
+</ul>
+<p>Rename your columns:</p>
+<ul>
 <li><p>Columns beginning with $ are treated as statements.</p></li>
 <li><p>Columns beginning with # are treated as important additional information.</p></li>
 </ul>
@@ -937,32 +937,28 @@ code span.wa { color: #60a0b0; font-weight: bold; font-style: italic; } /* Warni
 <div id="xupload-standard-format" class="section level2 hasAnchor">
 <h2>Standard format<a href="ximport.html#xupload-standard-format" class="anchor-section" aria-label="Anchor link to header"></a></h2>
 <p>Causal Map has a standard format for storing data which can be uploaded and downloaded as an Excel (xlsx) file.</p>
-<p>You can follow the instructions below, or you might find it easier to use the <a href="https://drive.google.com/uc?export=download&amp;id=126fAfkJSbUXkqHp_OkE3af2vdxhMjRy-">Excel template</a>.</p>
-<p>Uploading data in Causal Map standard format is simply done. Click the upload icon, browse your computer and find the xlsx file you want to use. The app will import any tabs called “factors”, “links”, “statements”, “sources” or “questions” and will ignore other tabs.</p>
-<div class="figure">
-<img src="_assets/1SHtnPxKUp.gif" width="650" alt="" />
-<p class="caption">1SHtnPxKUp</p>
-</div>
-<p>It is important that your file is in the right format to make it compatible with the app and the following section will show you how to format your file.</p>
+<p>That means you can upload your data the first time using this format, and it is also the format you might later use to add more data or to add data about your sources or questions.</p>
 <p>The video below shows you how to format and upload a set of statements for coding to the Causal Map App.</p>
 <iframe src="https://player.vimeo.com/video/637121851" width="672" height="400px" data-external="1">
 </iframe>
+<p>You might find it easier to start from the <a href="https://drive.google.com/uc?export=download&amp;id=126fAfkJSbUXkqHp_OkE3af2vdxhMjRy-">Excel template</a>.</p>
+<p>The app will import any worksheets in your file called “statements” (required), “sources” (optional) or “questions” (optional), and also, if you need them “factors” and “links” and will ignore other worksheets.</p>
 <div id="formattingyourfile" class="section level3 hasAnchor">
 <h3>Formatting a Standard Format file: The basics<a href="ximport.html#formattingyourfile" class="anchor-section" aria-label="Anchor link to header"></a></h3>
 <iframe src="https://player.vimeo.com/video/604138709" width="672" height="400px" data-external="1">
 </iframe>
 <p>When uploading data for coding the only data you <strong>need</strong> to upload to the app is a table of statements as an xlsx file. Your file must have a header row with the names of the fields; the name of the column with the actual responses must be <code>text</code>.</p>
-<p>All tab names and column names should be lower-case.</p>
+<p>All work names and column names should be lower-case.</p>
 <div class="figure">
 <img src="_assets/image-20211012141450834.png" width="650" alt="" />
 <p class="caption">image-20211012141450834</p>
 </div>
-<p>Additionally (optionally), you will usually have a column in the statements table called <code>source id</code> and a corresponding tab called <code>sources</code> with at least one column called <code>source_id</code> with corresponding values, and additional columns giving more information about your sources.</p>
+<p>Additionally (optionally), you will usually have a column in the statements table called <code>source_id</code> and a corresponding tab called <code>sources</code> with at least one column called <code>source_id</code> containing each source id, with one row for each source, and additional columns giving more information about your sources.</p>
 <div class="figure">
 <img src="_assets/image-20211012141409487.png" width="650" alt="" />
 <p class="caption">image-20211012141409487</p>
 </div>
-<p>Additionally (optionally), you may have a column in the statements table called <code>question id</code> . If you want, this question_id can already include the question text, e.g. “q1: tell us about your life”. But usually it is more convenient to just use a code like “q1” and also include a corresponding tab in your Excel file called <code>questions</code> with at least one column called <code>question_id</code> with corresponding values, and an additional column <code>question_text</code> with the full text, as well as any other information about your questions, e.g. domain or questionnaire section.</p>
+<p>Additionally (optionally), you may have a column in the statements table called <code>question_id</code> . If you want, this question_id can already include the question text, e.g. “q1: tell us about your life”. But usually it is more convenient to just use a code like “q1” and also include a corresponding tab in your Excel file called <code>questions</code> with at least one column called <code>question_id</code> with corresponding values, and an additional column <code>question_text</code> with the full text, as well as any other information about your questions, e.g. domain or questionnaire section.</p>
 <div class="figure">
 <img src="_assets/image-20211012141342985.png" width="650" alt="" />
 <p class="caption">image-20211012141342985</p>
@@ -1039,7 +1035,7 @@ code span.wa { color: #60a0b0; font-weight: bold; font-style: italic; } /* Warni
 <img src="_assets/image-20211220153042098.png" width="650" alt="" />
 <p class="caption">image-20211220153042098</p>
 </div>
-<p>Closed questions, as indicated by the <code>*</code> in the question_id, are imported into the <a href="#xthe-closed-question-blocks-table">closed questions table</a> and the <a href="#xthe-sources-table">sources table</a> which you can apply the closed questions preset to.</p>
+<p>Closed questions, as indicated by the <code>*</code> in the question_id, are imported into the <a href="#xthe-closed-question-blocks-table">closed questions table</a> and the <a href="xthe-sources-table.html#xthe-sources-table">sources table</a> which you can apply the closed questions preset to.</p>
 <div class="figure">
 <img src="_assets/image-20211220161646312.png" width="650" alt="" />
 <p class="caption">image-20211220161646312</p>

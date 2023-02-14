@@ -1,6 +1,6 @@
 # The Links Table{#xthe-links-table}
 
-This table counts factors differently to the mentions table as it counts links rather than individual factor mentions. Each row represents one link and has columns for that link’s influence factor and consequence factor, as well as many other columns. This table is also linked to the [statements](#xthe-statements-table) and [sources](#xthe-sources-table) tables. Use this table to show the links between factor labels. Information like the related quote is also available in this table. 
+This table counts factors differently to [the mentions table](#xthe-mentions-table) as it counts links rather than individual factor mentions. Each row represents one link and has columns for that link’s influence factor and consequence factor, as well as many other columns. This table is also linked to the [statements](#xthe-statements-table) and [sources](#xthe-sources-table) tables. Use this table to show the links between factor labels. Information like the related quote is also available in this table. 
 
 This table has three available presets:
 
