@@ -2,49 +2,21 @@
 
 This page tells you how to get your data into the right format for uploading to Causal Map. There are different formats to choose from: pick the one which is most convenient for you.
 
-## 🧪Text documents including Word and PDFs{#ximport2excel}
+## 🧪Uploading text documents including Word and PDFs{#ximport2excel}
 
-If your data is in the form of several word processing documents like Word .docx or .odt, or plain text documents or even PDFs,  you can  upload all of them at once.. 
+If your data is in the form of several word processing documents like Word .docx or .odt, or plain text documents or even PDFs,  you don't need to bother with Excel files, you can just upload your text files directly.
 
-Preparing your files: In doc, docx and text files you can separate text into statements by inserting lines containing just '--' where you want to separate statements. Otherwise, doc and docx files will be broken into paragraphs and pdf files will be broken into pages.
+Preparing your files: If you wish, in your doc, docx and text files you can separate text into statements by inserting lines containing just '--' where you want to separate statements. Otherwise, doc and docx files will be broken into paragraphs and pdf files will be broken into pages.
 
 Uploading like this does not retain information about page numbers in PDFs. If you need to get the page numbers of each statement when importing PDFs, try [another free utility](https://causalmap.shinyapps.io/pdf2excel/)  (Tool 2) which imports PDFs only but does provide page numbers as an additional column.
 
-
-### Problems importing PDFS?
+#### Problems importing PDFS?
 
 This upload  option  may miss text in PDFs which is in boxes and columns.  As an alternative you can export a PDF to Excel (one by one) [here ](https://www.adobe.com/uk/acrobat/online/pdf-to-excel.html). The resulting file is also full of pictures etc but does seem to contain all of the text, although in many columns. 80% of the time it identifies suitably large chunks of text, but sometimes you get very small fragments. 
 
 We provide another our [free utility](https://causalmap.shinyapps.io/pdf2excel/)  (Tool 3) which batch converts any number of these Adobe Excel files into an Excel file which you can then upload to Causal Map.
 
-
-## Importing a simple wide-format file{#xupload-google} 
-
-This is the kind of data you  get if you have been using Google Forms or ODK. 
-
-In this format, you only need an Excel file with one tab; each row is all the data from one source. Many of the columns will probably be additional data like gender, etc.
-
-Check your data:
-
-- The app will read the first tab and will ignore other tabs in the Excel file.
-
-- Each row is one source. 
-
-Rename your columns: 
-
-- Columns beginning with $ are treated as statements. 
-
-- Columns beginning with # are treated as important additional information.
-
-So this means that if you want a column to be treated as a statement, i.e. you want to code the answers in Causal Map, add a `$` at the beginning of the column name. 
-
-If you want a column to be treated as important additional data, i.e. you want the information to be easily identified for crosstabulation and other analyses in Causal Map, add a `#` at the beginning of the column name. 
-
-### Adding additional cases with wide-format files
-
-You can start coding your data even if you do not yet have all the cases/sources. When you get more data, simply add them to the bottom of the original file and upload again. You don't need to do "[roundtripping](#xroundtripping)". All your sources and statements will be overwritten but your coding (links and statements) will be untouched. The questions table will also be untouched. If you want to add information about your questions, for example adding question text as well as question id, you can use [roundtripping](#xroundtripping). 
-
-## Standard format{#xupload-standard-format}
+## Uploading a standard format Excel file{#xupload-standard-format}
 
 Causal Map has a standard format for storing data which can be uploaded and downloaded as an Excel (xlsx) file. 
 
@@ -61,7 +33,7 @@ You might find it easier to start from the  [Excel template](https://drive.googl
 
 The app will import any worksheets in your file called "statements" (required), "sources" (optional) or "questions" (optional), and also, if you need them "factors" and "links" and will ignore other worksheets. 
 
-### Formatting a Standard Format file: The basics {#formattingyourfile}
+#### Formatting a Standard Format file: The basics {#formattingyourfile}
 
 ```{r,echo=F}
 knitr::include_url("https://player.vimeo.com/video/604138709")
@@ -84,7 +56,7 @@ Additionally (optionally), you may have a column in the statements table called 
 
 ### Pasting data from a Word document into Excel
 
-You can create a standard format statements table from a Microsoft Word document. However if your data is mainly in the form of Word, PDF or other text documents, you may find it easier to [upload them directly](#ximport-text).
+If you are starting from Word, PDF or other text documents, you may find it easier to [upload them directly](#ximport-text). But if you want more precise control over exactly what goes into each statement and want detailed information about your sources and questions, this section tells you how to do it using a spreadsheet.
 
 Each paragraph in your Word document will become one statement, so make sure your Word document is already structured so this will work for you. Delete any double paragraph breaks in Word (i.e. delete any empty paragraphs). If you want some short paragraphs to appear together as one longer statement, delete the paragraph breaks between them.
 
@@ -124,7 +96,35 @@ The statements are the texts which appear one by one in the left-hand panel, for
 
 The (optional) column `source_id` is special, because it gives you an easy way to provide additional information about each source (e.g. year and country of publication) rather than having to copy this information into your this main statements file.
 
-## QuIP-specific: Uploading hybrid format data{#ximport-quip}
+## Uploading a wide-format Excel file{#xupload-google} 
+
+This is the kind of data you  get if you have been using Google Forms or ODK. 
+
+In this format, you only need an Excel file with one worksheet; each row is all the data from one source. Many of the columns will probably be additional data like gender, etc.
+
+Check your data:
+
+- The app will read the first worksheet and will ignore other worksheets in the Excel file.
+
+- Each row is one source. 
+
+Rename your columns: 
+
+- Columns beginning with $ are treated as statements. 
+
+- Columns beginning with # are treated as important additional information.
+
+So this means that if you want a column to be treated as a statement, i.e. you want to code the answers in Causal Map, add a `$` at the beginning of the column name. 
+
+If you want a column to be treated as important additional data, i.e. you want the information to be easily identified for crosstabulation and other analyses in Causal Map, add a `#` at the beginning of the column name. 
+
+### Adding additional cases with wide-format files
+
+You can start coding your data even if you do not yet have all the cases/sources. When you get more data, simply add them to the bottom of the original file and upload again. You don't need to do "[roundtripping](#xroundtripping)". All your sources and statements will be overwritten but your coding (links and statements) will be untouched. The questions table will also be untouched. If you want to add information about your questions, for example adding question text as well as question id, you can use [roundtripping](#xroundtripping). 
+
+
+
+## Uploading a hybrid format Excel file{#ximport-quip}
 
 ```{r,echo=F}
 knitr::include_url("https://player.vimeo.com/video/664879474")
@@ -180,9 +180,7 @@ To upload the QuIP-style spreadsheet click on the purple upload button on the ri
 
 ![chrome_c4eNUSYcjH](_assets/chrome_c4eNUSYcjH.png)
 
-
-
-### *Appending* hybrid data
+#### *Appending* hybrid data
 
 Suppose you uploaded hybrid data from file F, and already did some coding, then you receive more data in file G, also in hybrid format.
 
@@ -193,29 +191,50 @@ Caveat: you can't combine roundtripping and appending hybrid data. If you have t
 - wait until you have completed uploading using the hybrid button and only then tweak with roundtripping
 - or, manually tweak the old and new data in file H.
 
-### Uploading closed question blocks
 
-This kind of data is common in QuIP studies, which are normally uploaded using BSDR hybrid format. But as it only invovles adding columns to your sources table, it is possible to used closed question blocks in other kinds of study imported in other ways. 
-
-If you give the app a single set of closed responses like better, worse then it can make tables like below.
-
-![image-20211019153918044](_assets/image-20211019153918044.png){width=650}
-
-It will recode a fixed set of words into + positive, - negative and 0 neutral. 
-
-This approach only makes sense if you have one larger set of questions with the same set of fixed reply options.
-
-You supply this data in the form of user-defined fields in the Sources table, whose names contain a *. 
-
-You could still, if you want, import a whole bunch of different closed questions with different answer categories as custom fields in the Sources table. So just as you can have gender as a field, you could have "answer to closed question about how often do you go hungry (never/sometimes/often)" as a field. This means you could ask the app to only show the maps of the women, or the people who often go hungry, or the women who often go hungry. The point of the closed questions feature is to organise and provide the answers to a whole block of questions together in one place, to make analsying the data easier.
 
 #### QuIP recodes for closed questions - live link
 
-Using this [table](https://www.dropbox.com/s/spiacrl67lqwvc9/quip-recodes.xlsx?dl=0) (which includes spanish) the app recodes your data into + positive, - negative and 0 neutral. 
+Using this [table](https://drive.google.com/open?id=1GBhxQhV5SKHLdb8B_iHcCqT2RvWl44tQ&authuser=hello%40causalmap.app&usp=drive_fs) (which includes spanish) the app recodes your data into + positive, - negative and 0 neutral. 
 
 For example:
 
 ![image-20211019155354881](_assets/image-20211019155354881.png)
 
 This data will be displayed in the Tables panel if you select “closed questions.”
+
+#### Uploading closed question blocks
+
+This kind of data is common in QuIP studies, which are normally uploaded using the hybrid format. But as it only involves adding columns to your sources table, it is possible to use closed question blocks in other kinds of study imported in other ways. 
+
+If you give the app a single set of closed responses (like "better", "same" and "worse") then it can make tables like the one below.
+
+![image-20211019153918044](_assets/image-20211019153918044.png){width=650}
+
+It will recode [a fixed set of words (like better, worse)](https://drive.google.com/open?id=1GBhxQhV5SKHLdb8B_iHcCqT2RvWl44tQ&authuser=hello%40causalmap.app&usp=drive_fs) into + positive, - negative and 0 neutral. 
+
+This approach only makes sense if you have one larger set of questions with the same set of fixed reply options.
+
+You supply this data in the form of user-defined fields in the Sources table, whose names contain a *. 
+
+You could still, if you want, import a whole bunch of different closed questions with different answer categories as custom fields in the Sources table. So just as you can have gender as a field, you could have "answer to closed question about how often do you go hungry (never/sometimes/often)" as a field. This means you could ask the app to only show the maps of the women, or the people who often go hungry, or the women who often go hungry. The point of the closed questions feature is to organise and provide the answers to a whole block of questions together in one place, to make analysing the data easier.
+
+## 🧪Uploading existing causal coding ("links only"){#xlinks-only}
+
+What to do if you have causal information, for example in the form of **edge lists**, from some other source (e.g. AI coding of a larger text) which you want to import? 
+
+You can import this kind of file too, using the Standard Format Excel upload button. 
+
+Your Excel xlsx file should NOT have a tab for factors. Instead it should have a single tab called `links`, containing two columns called `from_label` and `to_label` which contain the names of your factors.
+
+That's the basic setup. But maybe you also want to provide information about what statement, question or source the link is associated with. In which case, these are your options:
+
+- Optionally, your links tab can also contain other columns as usual, in particular it can contain the column `question_id`. 
+- If you include a `question_id` column, you should include an additional tab called `questions` containing at least the column `question_id`  and other columns providing information about the questions, e.g. full question text, questionnaire section etc, where relevant.   
+- Optionally, your links tab can also contain a column `statement_id`.
+- If you include a `statement_id` column, you can optionally include, as usual, an additional tab called `statements` containing at least the column `statement_id`  and a column `text` containing the text of your statements.
+  - If you optionally include a `statements` tab, you can optionally also include a `source_id` column and a corresponding tab called `sources` with a corresponding `source_id` column and more columns to provide information like gender, location, or any other information about the source of each statement.
+
+- Optionally, your links tab can also contain a column labelled  `quote`, containing the actual quote which underpins each causal claim aka link.
+- Usually, this quote will be a verbatim section of the text in a corresponding additional tab called `statements`, see above.
 

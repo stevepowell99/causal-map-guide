@@ -1,26 +1,5 @@
 # Importing your data: special cases{#ximport-other}
 
-
-
-## 🧪Importing existing causal coding ("links only"){#xlinks-only}
-
-What to do if you have causal information, for example in the form of **edge lists**, from some other source (e.g. AI coding of a larger text) which you want to import? 
-
-You can import this kind of file too, using the Standard Format Excel upload button. 
-
-Your Excel xlsx file should NOT have a tab for factors. Instead it should have a single tab called `links`, containing two columns called `from_label` and `to_label` which contain the names of your factors.
-
-That's the basic setup. But maybe you also want to provide information about what statement, question or source the link is associated with. In which case, these are your options:
-
-- Optionally, your links tab can also contain other columns as usual, in particular it can contain the column `question_id`. 
-- If you include a `question_id` column, you should include an additional tab called `questions` containing at least the column `question_id`  and other columns providing information about the questions, e.g. full question text, questionnaire section etc, where relevant.   
-- Optionally, your links tab can also contain a column `statement_id`.
-- If you include a `statement_id` column, you can optionally include, as usual, an additional tab called `statements` containing at least the column `statement_id`  and a column `text` containing the text of your statements.
-  - If you optionally include a `statements` tab, you can optionally also include a `source_id` column and a corresponding tab called `sources` with a corresponding `source_id` column and more columns to provide information like gender, location, or any other information about the source of each statement.
-
-- Optionally, your links tab can also contain a column labelled  `quote`, containing the actual quote which underpins each causal claim aka link.
-- Usually, this quote will be a verbatim section of the text in a corresponding additional tab called `statements`, see above.
-
 ## Importing from other software
 
 We are aware of the initiative to make qualitative coding software interoperable, [https://www.qdasoftware.org/products-project-exchange/](https://www.qdasoftware.org/products-project-exchange/). Causal Map has quite a different model and at the moment we don’t provide this, but would do if there is a lot of interest.
