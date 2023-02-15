@@ -17,7 +17,7 @@ In the first part of this Guide we have dealt only with undifferentiated links w
 
 ## Combining opposites
 
-Combining opposites is a simple and powerful way of dealing with "negative" factors such as `poor health` which are in some sense the opposite of existing "positive" factors such as `good health`. 
+Combining opposites is a simple and powerful way of dealing with "negative" factors such as <u>poor health</u> which are in some sense the opposite of existing "positive" factors such as<u>good health</u>. 
 
 ```{r,echo=F}
 knitr::include_url("https://player.vimeo.com/video/636997200")
@@ -35,7 +35,7 @@ This barefoot style on its own is unsatisfactory. We haven't told the app that b
 
 The first step forwards is to follow this convention:
 
->To signal that two factors are *opposites* we formalise the idea we already instinctively used in the above example, where we used the word "not" for one of each pair. Formally, we will code them in the form "~Y" and "Y".  The `~` may appear at the start of a factor label. This already ensures that when we search for "Y" we will also find "~Y". 
+>To signal that two factors are *opposites* we formalise the idea we already instinctively used in the above example, where we used the word "not" for one of each pair. Formally, we will code them in the form <u>~Y</u> and <u>Y</u>.  The `~` may appear at the start of a factor label. This already ensures that when we search for <u>Y</u> we will also find <u>~Y</u>. 
 >
 >In the [factors-editor panel](#xfactor-editor), these two factors will be listed next to each other - the alphabetical listing will ignore the `~`. 
 
@@ -51,7 +51,7 @@ When you press "combine opposites",
 
 ​	![image-20210115221340684](_assets/image-20210115221340684.png)            
 
-the app combine any pairs of factors which are opposites. It looks at all the factors which begin with a `~` and takes off the `~` where there was one - a process which we call "flipping" the factor. But it only does this if there is already its opposite coded in the file as currently filtered, otherwise there wouldn't be any point i.e. `~running` will remain as such is you haven't coded `running`.
+the app combine any pairs of factors which are opposites. It looks at all the factors which begin with a `~` and takes off the `~` where there was one - a process which we call "flipping" the factor. But it only does this if there is already its opposite coded in the file as currently filtered, otherwise there wouldn't be any point i.e. <u>~running</u> will remain as such is you haven't coded <u>running</u>.
 
 
 ![](_assets/121008.png)
@@ -62,9 +62,9 @@ So, a link has two polarities: a *from* polarity and a *to* polarity. From a qua
 
 This lower link from fit to happy has the same "plus" strength as the one above it but it does not represent the same information. In fact, **no information is lost when you press the "combine opposites" button; you can still always read off the original map from it.** 
 
-But there is more: the *border colour* can reflect the overall polarity of the factor: if there were many mentions of `~Fit` and only a few mentions of `Fit`, the border will be nearly red; if there were equal numbers the border will be white, and the more the positive mentions there were, the greener the border will be. 
+But there is more: the *border colour* can reflect the overall polarity of the factor: if there were many mentions of <u>~Fit</u> and only a few mentions of <u>Fit</u>, the border will be nearly red; if there were equal numbers the border will be white, and the more the positive mentions there were, the greener the border will be. 
 
-If a factor has a red border, that means that at least mostly, its *opposite* was mentioned. So in this example, happy has a grey border because it was mentioned once and its opposite was mentioned once. `Fit` has a slightly red border because it has one incoming and one outgoing plusses, and one incoming and two outgoing minuses. 
+If a factor has a red border, that means that at least mostly, its *opposite* was mentioned. So in this example, happy has a grey border because it was mentioned once and its opposite was mentioned once. <u>Fit</u> has a slightly red border because it has one incoming and one outgoing plusses, and one incoming and two outgoing minuses. 
 
 However this reflects information which is actually already visible in the diagram. A second possibility is to use the same green-red scale to reflect the proportion of factors contributing to a factor which have been flipped: this information can not otherwise be deduced from the map. It becomes particularly relevant when coding opposites within a hierarchy, [see below](#xopposites-coding). However this colour scheme might be misinterpreted, as it is only affected by the number and polarity of factors which have been collapsed and not by the number of links.
 
@@ -110,19 +110,19 @@ By default in print view, links in the same bundle, i.e. with the same from and 
 
 Sometimes we need to use the `~` sign within the components of a hierarchy.
 
-- ~Healthy habits; ~eating vegetables
+- <u>~Healthy habits; ~eating vegetables</u>
 
 is the opposite of 
 
-- Healthy habits; eating vegetables
+- <u>Healthy habits; eating vegetables</u>
 
 Not eating vegetables, which is an example of unhealthy behaviour, is the opposite of eating vegetables, an example of healthy behaviour.
 
-- ~Healthy habits; smoking
+- <u>~Healthy habits; smoking</u>
 
 is the opposite of 
 
-- Healthy habits; ~smoking
+- <u>Healthy habits; ~smoking</u>
 
 Smoking, which is an example of unhealthy behaviour, is the opposite of not smoking, an example of healthy behaviour.
 

@@ -2,6 +2,14 @@
 
 This page tells you how to get your data into the right format for uploading to Causal Map. There are different formats to choose from: pick the one which is most convenient for you.
 
+Currently, you can work with 5 different types of formats in the Causal Map App, they are:
+
+1. [Text documents](#ximport2excel): you can upload multiple text files, doc, docx, or pdf files.
+2. [Standard format Excel](#xupload-standard-format): An Excel file with one worksheet called `statements` with one row per statement and optionally other worksheets for `sources` etc. 
+3. [Wide format Excel](#xupload-google): An Excel file with one worksheet containing row for each source, one column for each question. e.g. data from Google Forms. 
+4. [Hybrid format Excel](#ximport-quip): An Excel file with one worksheet containing one row for each answer and includes the statements as one kind of answer but also includes rows for additional data like gender.
+5. [Links-only Excel](#xlinks-only): An Excel file with just one worksheet called `links` with just the columns `from_label` and `to_label`. When you want to analyse causal links from elsewhere.
+
 ## 🧪Uploading text documents including Word and PDFs{#ximport2excel}
 
 If your data is in the form of several word processing documents like Word .docx or .odt, or plain text documents or even PDFs,  you don't need to bother with Excel files, you can just upload your text files directly.
@@ -28,7 +36,7 @@ The video below shows you how to format and upload a set of statements for codin
 knitr::include_url("https://player.vimeo.com/video/637121851")
 ```
 
-You might find it easier to start from the  [Excel template](https://drive.google.com/uc?export=download&id=126fAfkJSbUXkqHp_OkE3af2vdxhMjRy-). 
+You might find it easier to start from the  [Excel template](https://docs.google.com/spreadsheets/d/126fAfkJSbUXkqHp_OkE3af2vdxhMjRy-/edit?usp=sharing&ouid=106533500876964660468&rtpof=true&sd=true). 
 
 
 The app will import any worksheets in your file called "statements" (required), "sources" (optional) or "questions" (optional), and also, if you need them "factors" and "links" and will ignore other worksheets. 
@@ -100,7 +108,7 @@ The (optional) column `source_id` is special, because it gives you an easy way t
 
 This is the kind of data you  get if you have been using Google Forms or ODK. 
 
-In this format, you only need an Excel file with one worksheet; each row is all the data from one source. Many of the columns will probably be additional data like gender, etc.
+In this format, you only need an Excel file with one worksheet; each row is all the data from one source. Many of the columns will probably be additional data like gender, etc. [Here](https://docs.google.com/spreadsheets/d/1ExhXZ6lovsJ4VWZ9wioXPEsuPYeZITEU/edit?usp=share_link&ouid=106533500876964660468&rtpof=true&sd=true) is an example file
 
 Check your data:
 
@@ -133,7 +141,7 @@ knitr::include_url("https://player.vimeo.com/video/664879474")
 
 This section is specifically about importing from a QuIP-style spreadsheet. 
 
-[Here](https://docs.google.com/spreadsheets/d/1Er6m9XpkP4WcszaiLbmv_xFsc7V1d8H5?rtpof=true&authuser=hello%40causalmap.app&usp=drive_fs) is an example file.
+[Here](https://docs.google.com/spreadsheets/d/1Er6m9XpkP4WcszaiLbmv_xFsc7V1d8H5/edit?usp=sharing&ouid=106533500876964660468&rtpof=true&sd=true ) is an example file.
 
 This format has many rows, one for each answer, and includes the statements as one kind of answer; you can import statements and additional data from the same fieldwork file. The main differences to a normal import are:
 
@@ -225,7 +233,9 @@ What to do if you have causal information, for example in the form of **edge lis
 
 You can import this kind of file too, using the Standard Format Excel upload button. 
 
-Your Excel xlsx file should NOT have a tab for factors. Instead it should have a single tab called `links`, containing two columns called `from_label` and `to_label` which contain the names of your factors.
+Your Excel xlsx file should NOT have a tab for factors. Instead it should have a single tab called `links`, containing two columns called `from_label` and `to_label` which contain the names of your factors. 
+
+[Here](https://docs.google.com/spreadsheets/d/1zyDGuS72Eg-mIbnA673McdIDCW8ivfD5/edit?usp=sharing&ouid=106533500876964660468&rtpof=true&sd=true) is an example file.
 
 That's the basic setup. But maybe you also want to provide information about what statement, question or source the link is associated with. In which case, these are your options:
 

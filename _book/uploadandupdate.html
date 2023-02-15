@@ -28,7 +28,7 @@
 <meta name="author" content="Samuel Goddard" />
 
 
-<meta name="date" content="2023-02-14" />
+<meta name="date" content="2023-02-15" />
 
   <meta name="viewport" content="width=device-width, initial-scale=1" />
   <meta name="apple-mobile-web-app-capable" content="yes" />
@@ -312,25 +312,18 @@ code span.wa { color: #60a0b0; font-weight: bold; font-style: italic; } /* Warni
 </ul></li>
 <li class="chapter" data-level="" data-path="ximport.html"><a href="ximport.html"><i class="fa fa-check"></i>Uploading your data</a>
 <ul>
-<li class="chapter" data-level="" data-path="ximport.html"><a href="ximport.html#ximport2excel"><i class="fa fa-check"></i>🧪Text documents including Word and PDFs</a>
+<li class="chapter" data-level="" data-path="ximport.html"><a href="ximport.html#ximport2excel"><i class="fa fa-check"></i>🧪Uploading text documents including Word and PDFs</a></li>
+<li class="chapter" data-level="" data-path="ximport.html"><a href="ximport.html#xupload-standard-format"><i class="fa fa-check"></i>Uploading a standard format Excel file</a>
 <ul>
-<li class="chapter" data-level="" data-path="ximport.html"><a href="ximport.html#problems-importing-pdfs"><i class="fa fa-check"></i>Problems importing PDFS?</a></li>
-</ul></li>
-<li class="chapter" data-level="" data-path="ximport.html"><a href="ximport.html#xupload-google"><i class="fa fa-check"></i>Importing a simple wide-format file</a>
-<ul>
-<li class="chapter" data-level="" data-path="ximport.html"><a href="ximport.html#adding-additional-cases-with-wide-format-files"><i class="fa fa-check"></i>Adding additional cases with wide-format files</a></li>
-</ul></li>
-<li class="chapter" data-level="" data-path="ximport.html"><a href="ximport.html#xupload-standard-format"><i class="fa fa-check"></i>Standard format</a>
-<ul>
-<li class="chapter" data-level="" data-path="ximport.html"><a href="ximport.html#formattingyourfile"><i class="fa fa-check"></i>Formatting a Standard Format file: The basics</a></li>
 <li class="chapter" data-level="" data-path="ximport.html"><a href="ximport.html#pasting-data-from-a-word-document-into-excel"><i class="fa fa-check"></i>Pasting data from a Word document into Excel</a></li>
 <li class="chapter" data-level="" data-path="ximport.html"><a href="ximport.html#making-a-basic-statements-table-by-hand"><i class="fa fa-check"></i>Making a basic statements table by hand</a></li>
 </ul></li>
-<li class="chapter" data-level="" data-path="ximport.html"><a href="ximport.html#ximport-quip"><i class="fa fa-check"></i>QuIP-specific: Uploading hybrid format data</a>
+<li class="chapter" data-level="" data-path="ximport.html"><a href="ximport.html#xupload-google"><i class="fa fa-check"></i>Uploading a wide-format Excel file</a>
 <ul>
-<li class="chapter" data-level="" data-path="ximport.html"><a href="ximport.html#appending-hybrid-data"><i class="fa fa-check"></i><em>Appending</em> hybrid data</a></li>
-<li class="chapter" data-level="" data-path="ximport.html"><a href="ximport.html#uploading-closed-question-blocks"><i class="fa fa-check"></i>Uploading closed question blocks</a></li>
+<li class="chapter" data-level="" data-path="ximport.html"><a href="ximport.html#adding-additional-cases-with-wide-format-files"><i class="fa fa-check"></i>Adding additional cases with wide-format files</a></li>
 </ul></li>
+<li class="chapter" data-level="" data-path="ximport.html"><a href="ximport.html#ximport-quip"><i class="fa fa-check"></i>Uploading a hybrid format Excel file</a></li>
+<li class="chapter" data-level="" data-path="ximport.html"><a href="ximport.html#xlinks-only"><i class="fa fa-check"></i>🧪Uploading existing causal coding (“links only”)</a></li>
 </ul></li>
 <li class="chapter" data-level="" data-path="import-additional-data.html"><a href="import-additional-data.html"><i class="fa fa-check"></i>Uploading additional data</a>
 <ul>
@@ -346,7 +339,6 @@ code span.wa { color: #60a0b0; font-weight: bold; font-style: italic; } /* Warni
 </ul></li>
 <li class="chapter" data-level="" data-path="ximport-other.html"><a href="ximport-other.html"><i class="fa fa-check"></i>Importing your data: special cases</a>
 <ul>
-<li class="chapter" data-level="" data-path="ximport-other.html"><a href="ximport-other.html#xlinks-only"><i class="fa fa-check"></i>🧪Importing existing causal coding (“links only”)</a></li>
 <li class="chapter" data-level="" data-path="ximport-other.html"><a href="ximport-other.html#importing-from-other-software"><i class="fa fa-check"></i>Importing from other software</a>
 <ul>
 <li class="chapter" data-level="" data-path="ximport-other.html"><a href="ximport-other.html#exporting-for-import-into-kumu.io"><i class="fa fa-check"></i>Exporting for import into kumu.io</a></li>
@@ -906,7 +898,15 @@ code span.wa { color: #60a0b0; font-weight: bold; font-style: italic; } /* Warni
 <p class="caption">image-20230128223913739</p>
 </div>
 <p>How to manage your data, whether it is downloading, modifying or appending? These bulletpoints will direct you to the relevant sections later in this Guide.</p>
-<p>(Coming soon)</p>
+<p><a href="ximport.html#ximport">This</a> page tells you how to get your data into the right format for uploading to Causal Map.</p>
+<p>Currently, you can work with 5 different types of formats in the Causal Map App, they are:</p>
+<ol style="list-style-type: decimal">
+<li><a href="ximport.html#ximport2excel">Text documents</a>: you can upload Upload multiple text files, doc, docx, or pdf files.</li>
+<li><a href="ximport.html#xupload-standard-format">Standard format Excel</a>: An Excel file with one worksheet called <code>statements</code> with one row per statement and optionally other worksheets for <code>sources</code> etc.</li>
+<li><a href="ximport.html#xupload-google">Wide format Excel</a>: An Excel file with one worksheet containing row for each source, one column for each question. e.g. data from Google Forms.</li>
+<li><a href="ximport.html#ximport-quip">Hybrid format Excel</a>: An Excel file with one worksheet containing one row for each answer and includes the statements as one kind of answer but also includes rows for additional data like gender.</li>
+<li><a href="ximport.html#xlinks-only">Links-only Excel</a>: An Excel file with just one worksheet called <code>links</code> with just the columns <code>from_label</code> and <code>to_label</code>. When you want to analyse causal links from elsewhere.</li>
+</ol>
 
 </div>
             </section>

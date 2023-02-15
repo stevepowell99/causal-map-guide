@@ -28,7 +28,7 @@
 <meta name="author" content="Samuel Goddard" />
 
 
-<meta name="date" content="2023-02-14" />
+<meta name="date" content="2023-02-15" />
 
   <meta name="viewport" content="width=device-width, initial-scale=1" />
   <meta name="apple-mobile-web-app-capable" content="yes" />
@@ -312,25 +312,18 @@ code span.wa { color: #60a0b0; font-weight: bold; font-style: italic; } /* Warni
 </ul></li>
 <li class="chapter" data-level="" data-path="ximport.html"><a href="ximport.html"><i class="fa fa-check"></i>Uploading your data</a>
 <ul>
-<li class="chapter" data-level="" data-path="ximport.html"><a href="ximport.html#ximport2excel"><i class="fa fa-check"></i>🧪Text documents including Word and PDFs</a>
+<li class="chapter" data-level="" data-path="ximport.html"><a href="ximport.html#ximport2excel"><i class="fa fa-check"></i>🧪Uploading text documents including Word and PDFs</a></li>
+<li class="chapter" data-level="" data-path="ximport.html"><a href="ximport.html#xupload-standard-format"><i class="fa fa-check"></i>Uploading a standard format Excel file</a>
 <ul>
-<li class="chapter" data-level="" data-path="ximport.html"><a href="ximport.html#problems-importing-pdfs"><i class="fa fa-check"></i>Problems importing PDFS?</a></li>
-</ul></li>
-<li class="chapter" data-level="" data-path="ximport.html"><a href="ximport.html#xupload-google"><i class="fa fa-check"></i>Importing a simple wide-format file</a>
-<ul>
-<li class="chapter" data-level="" data-path="ximport.html"><a href="ximport.html#adding-additional-cases-with-wide-format-files"><i class="fa fa-check"></i>Adding additional cases with wide-format files</a></li>
-</ul></li>
-<li class="chapter" data-level="" data-path="ximport.html"><a href="ximport.html#xupload-standard-format"><i class="fa fa-check"></i>Standard format</a>
-<ul>
-<li class="chapter" data-level="" data-path="ximport.html"><a href="ximport.html#formattingyourfile"><i class="fa fa-check"></i>Formatting a Standard Format file: The basics</a></li>
 <li class="chapter" data-level="" data-path="ximport.html"><a href="ximport.html#pasting-data-from-a-word-document-into-excel"><i class="fa fa-check"></i>Pasting data from a Word document into Excel</a></li>
 <li class="chapter" data-level="" data-path="ximport.html"><a href="ximport.html#making-a-basic-statements-table-by-hand"><i class="fa fa-check"></i>Making a basic statements table by hand</a></li>
 </ul></li>
-<li class="chapter" data-level="" data-path="ximport.html"><a href="ximport.html#ximport-quip"><i class="fa fa-check"></i>QuIP-specific: Uploading hybrid format data</a>
+<li class="chapter" data-level="" data-path="ximport.html"><a href="ximport.html#xupload-google"><i class="fa fa-check"></i>Uploading a wide-format Excel file</a>
 <ul>
-<li class="chapter" data-level="" data-path="ximport.html"><a href="ximport.html#appending-hybrid-data"><i class="fa fa-check"></i><em>Appending</em> hybrid data</a></li>
-<li class="chapter" data-level="" data-path="ximport.html"><a href="ximport.html#uploading-closed-question-blocks"><i class="fa fa-check"></i>Uploading closed question blocks</a></li>
+<li class="chapter" data-level="" data-path="ximport.html"><a href="ximport.html#adding-additional-cases-with-wide-format-files"><i class="fa fa-check"></i>Adding additional cases with wide-format files</a></li>
 </ul></li>
+<li class="chapter" data-level="" data-path="ximport.html"><a href="ximport.html#ximport-quip"><i class="fa fa-check"></i>Uploading a hybrid format Excel file</a></li>
+<li class="chapter" data-level="" data-path="ximport.html"><a href="ximport.html#xlinks-only"><i class="fa fa-check"></i>🧪Uploading existing causal coding (“links only”)</a></li>
 </ul></li>
 <li class="chapter" data-level="" data-path="import-additional-data.html"><a href="import-additional-data.html"><i class="fa fa-check"></i>Uploading additional data</a>
 <ul>
@@ -346,7 +339,6 @@ code span.wa { color: #60a0b0; font-weight: bold; font-style: italic; } /* Warni
 </ul></li>
 <li class="chapter" data-level="" data-path="ximport-other.html"><a href="ximport-other.html"><i class="fa fa-check"></i>Importing your data: special cases</a>
 <ul>
-<li class="chapter" data-level="" data-path="ximport-other.html"><a href="ximport-other.html#xlinks-only"><i class="fa fa-check"></i>🧪Importing existing causal coding (“links only”)</a></li>
 <li class="chapter" data-level="" data-path="ximport-other.html"><a href="ximport-other.html#importing-from-other-software"><i class="fa fa-check"></i>Importing from other software</a>
 <ul>
 <li class="chapter" data-level="" data-path="ximport-other.html"><a href="ximport-other.html#exporting-for-import-into-kumu.io"><i class="fa fa-check"></i>Exporting for import into kumu.io</a></li>
@@ -949,20 +941,20 @@ code span.wa { color: #60a0b0; font-weight: bold; font-style: italic; } /* Warni
 <p>Suppose you want to create a new factor <u>Health behaviour; wearing a mask</u> and you know there is an existing higher-level factor <u>Health behaviour</u> but there is not yet any factor <u>Health behaviour; wearing a mask</u>.</p>
 <ul>
 <li>You can select <u>Health behaviour</u> from the list and then just add <u>; wearing a mask</u> with a leading semi-colon. These two fragments will be combined into the desired factor label. This is quicker and ensures you don’t end up with different spellings of the higher-level factors.</li>
-<li>This second component can itself have a semi-colon, so you can do this: <code>health behaviour</code> <code>; hand washing; before meals</code> .</li>
+<li>This second component can itself have a semi-colon, so you can do this: <u>health behaviour</u> <u>; hand washing; before meals</u>.</li>
 <li>Also you can do this multiple times:
-<code>health behaviour</code> <code>; washing hands</code> <code>; washing pots</code> .
+<u>health behaviour</u> <u>; washing hands</u> <u>; washing pots</u> .
 This can be useful when you have to code a list of things which are all examples of some higher-level idea.
 This example will produce:
-<code>health behaviour; washing hands</code>
+<u>health behaviour; washing hands</u>
 and
-<code>health behaviour; washing pots</code> .</li>
+<u>health behaviour; washing pots</u> .</li>
 </ul>
 </div>
 </div>
 <div id="additional-functionality-when-searching-for-and-filtering-factors" class="section level2 hasAnchor">
 <h2>Additional functionality when searching for and filtering factors<a href="xhierarchical-coding.html#additional-functionality-when-searching-for-and-filtering-factors" class="anchor-section" aria-label="Anchor link to header"></a></h2>
-<p>The same principle applies in the Search and Filter Factors box: you can see factors you have already used but also implied higher-level factors (like “Health behaviour”) and other factor components, beginning with a semi-colon (<code>;</code>).</p>
+<p>The same principle applies in the Search and Filter Factors box: you can see factors you have already used but also implied higher-level factors (like <u>Health behaviour</u>) and other factor components, beginning with a semi-colon (<code>;</code>).</p>
 </div>
 <div id="how-can-i-view-just-the-factors-where-i-have-applied-hierarchical-coding" class="section level2 hasAnchor">
 <h2>How can I view just the factors where I have applied hierarchical coding?<a href="xhierarchical-coding.html#how-can-i-view-just-the-factors-where-i-have-applied-hierarchical-coding" class="anchor-section" aria-label="Anchor link to header"></a></h2>

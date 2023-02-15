@@ -22,7 +22,7 @@ Link hashtags are available as a special kind of memo when coding a link: you ca
 
 As usual in Causal Map, you can apply one or more hashtags, and you can either select existing hashtags or create new ones on the fly.
 
-Later, you can [filter the map](https://guide.causalmap.app/analysis.html#filtering-the-map-by-link-hashtag-memo) to show only links containing or beginning or ending with specific hashtags (or parts of hashtags), and also for links which do *not* contain specific hashtags or parts of hashtags.
+Later, you can [filter the map](#advanced-editor) to show only links containing or beginning or ending with specific hashtags (or parts of hashtags), and also for links which do *not* contain specific hashtags or parts of hashtags.
 
 Conceptually, there are two kinds:
 

@@ -28,7 +28,7 @@
 <meta name="author" content="Samuel Goddard" />
 
 
-<meta name="date" content="2023-02-14" />
+<meta name="date" content="2023-02-15" />
 
   <meta name="viewport" content="width=device-width, initial-scale=1" />
   <meta name="apple-mobile-web-app-capable" content="yes" />
@@ -312,25 +312,18 @@ code span.wa { color: #60a0b0; font-weight: bold; font-style: italic; } /* Warni
 </ul></li>
 <li class="chapter" data-level="" data-path="ximport.html"><a href="ximport.html"><i class="fa fa-check"></i>Uploading your data</a>
 <ul>
-<li class="chapter" data-level="" data-path="ximport.html"><a href="ximport.html#ximport2excel"><i class="fa fa-check"></i>🧪Text documents including Word and PDFs</a>
+<li class="chapter" data-level="" data-path="ximport.html"><a href="ximport.html#ximport2excel"><i class="fa fa-check"></i>🧪Uploading text documents including Word and PDFs</a></li>
+<li class="chapter" data-level="" data-path="ximport.html"><a href="ximport.html#xupload-standard-format"><i class="fa fa-check"></i>Uploading a standard format Excel file</a>
 <ul>
-<li class="chapter" data-level="" data-path="ximport.html"><a href="ximport.html#problems-importing-pdfs"><i class="fa fa-check"></i>Problems importing PDFS?</a></li>
-</ul></li>
-<li class="chapter" data-level="" data-path="ximport.html"><a href="ximport.html#xupload-google"><i class="fa fa-check"></i>Importing a simple wide-format file</a>
-<ul>
-<li class="chapter" data-level="" data-path="ximport.html"><a href="ximport.html#adding-additional-cases-with-wide-format-files"><i class="fa fa-check"></i>Adding additional cases with wide-format files</a></li>
-</ul></li>
-<li class="chapter" data-level="" data-path="ximport.html"><a href="ximport.html#xupload-standard-format"><i class="fa fa-check"></i>Standard format</a>
-<ul>
-<li class="chapter" data-level="" data-path="ximport.html"><a href="ximport.html#formattingyourfile"><i class="fa fa-check"></i>Formatting a Standard Format file: The basics</a></li>
 <li class="chapter" data-level="" data-path="ximport.html"><a href="ximport.html#pasting-data-from-a-word-document-into-excel"><i class="fa fa-check"></i>Pasting data from a Word document into Excel</a></li>
 <li class="chapter" data-level="" data-path="ximport.html"><a href="ximport.html#making-a-basic-statements-table-by-hand"><i class="fa fa-check"></i>Making a basic statements table by hand</a></li>
 </ul></li>
-<li class="chapter" data-level="" data-path="ximport.html"><a href="ximport.html#ximport-quip"><i class="fa fa-check"></i>QuIP-specific: Uploading hybrid format data</a>
+<li class="chapter" data-level="" data-path="ximport.html"><a href="ximport.html#xupload-google"><i class="fa fa-check"></i>Uploading a wide-format Excel file</a>
 <ul>
-<li class="chapter" data-level="" data-path="ximport.html"><a href="ximport.html#appending-hybrid-data"><i class="fa fa-check"></i><em>Appending</em> hybrid data</a></li>
-<li class="chapter" data-level="" data-path="ximport.html"><a href="ximport.html#uploading-closed-question-blocks"><i class="fa fa-check"></i>Uploading closed question blocks</a></li>
+<li class="chapter" data-level="" data-path="ximport.html"><a href="ximport.html#adding-additional-cases-with-wide-format-files"><i class="fa fa-check"></i>Adding additional cases with wide-format files</a></li>
 </ul></li>
+<li class="chapter" data-level="" data-path="ximport.html"><a href="ximport.html#ximport-quip"><i class="fa fa-check"></i>Uploading a hybrid format Excel file</a></li>
+<li class="chapter" data-level="" data-path="ximport.html"><a href="ximport.html#xlinks-only"><i class="fa fa-check"></i>🧪Uploading existing causal coding (“links only”)</a></li>
 </ul></li>
 <li class="chapter" data-level="" data-path="import-additional-data.html"><a href="import-additional-data.html"><i class="fa fa-check"></i>Uploading additional data</a>
 <ul>
@@ -346,7 +339,6 @@ code span.wa { color: #60a0b0; font-weight: bold; font-style: italic; } /* Warni
 </ul></li>
 <li class="chapter" data-level="" data-path="ximport-other.html"><a href="ximport-other.html"><i class="fa fa-check"></i>Importing your data: special cases</a>
 <ul>
-<li class="chapter" data-level="" data-path="ximport-other.html"><a href="ximport-other.html#xlinks-only"><i class="fa fa-check"></i>🧪Importing existing causal coding (“links only”)</a></li>
 <li class="chapter" data-level="" data-path="ximport-other.html"><a href="ximport-other.html#importing-from-other-software"><i class="fa fa-check"></i>Importing from other software</a>
 <ul>
 <li class="chapter" data-level="" data-path="ximport-other.html"><a href="ximport-other.html#exporting-for-import-into-kumu.io"><i class="fa fa-check"></i>Exporting for import into kumu.io</a></li>
@@ -903,7 +895,7 @@ code span.wa { color: #60a0b0; font-weight: bold; font-style: italic; } /* Warni
 <h1>Creating links (more tips)<a href="creating-links-more-tips.html#creating-links-more-tips" class="anchor-section" aria-label="Anchor link to header"></a></h1>
 <div id="how-the-factor-dropdowns-work" class="section level2 hasAnchor">
 <h2>How the factor dropdowns work<a href="creating-links-more-tips.html#how-the-factor-dropdowns-work" class="anchor-section" aria-label="Anchor link to header"></a></h2>
-<p>If you are using hierarchical coding, top-level components will appear in the factor dropdown even if you have not used them explicitly so far. For example, if you have used the factors <code>health; mental</code> and <code>health; physical</code>, the factor <code>health</code> will appear even if you never used it explicitly. You can then easily create new nested factors such as <code>health; spiritual</code>by selecting <code>health</code> and then typing <code>; spiritual</code> with a leading “;”. The app will automatically join these for you into the factor <code>health; spiritual</code>.</p>
+<p>If you are using hierarchical coding, top-level components will appear in the factor dropdown even if you have not used them explicitly so far. For example, if you have used the factors <u>health; mental</u> and <u>health; physical</u>, the factor <u>health</u> will appear even if you never used it explicitly. You can then easily create new nested factors such as <u>health; spiritual<u> by selecting <u>health</u> and then typing <u>; spiritual</u> with a leading “;”. The app will automatically join these for you into the factor <u>health; spiritual</u>.</p>
 <ul>
 <li>once you have selected an influence factor, the order of the choices available for the consequence factor will be silently updated, presenting at the top of the list the most frequently mentioned consequences of the influence factor you have chosen.</li>
 </ul>

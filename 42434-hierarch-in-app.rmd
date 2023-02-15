@@ -63,18 +63,18 @@ Once you have created at least one hierarchical factor, i.e. one with a “;” 
 Suppose you want to create a new factor <u>Health behaviour; wearing a mask</u>  and you know there is an existing higher-level factor <u>Health behaviour</u> but there is not yet any factor <u>Health behaviour; wearing a mask</u>.
 
   - You can select <u>Health behaviour</u> from the list and then just add <u>; wearing a mask</u> with a leading semi-colon. These two fragments will be combined into the desired factor label. This is quicker and ensures you don’t end up with different spellings of the higher-level factors. 
-  - This second component can itself have a semi-colon, so you can do this: `health behaviour`  `; hand washing; before meals` . 
+  - This second component can itself have a semi-colon, so you can do this: <u>health behaviour</u>  <u>; hand washing; before meals</u>. 
   - Also you can do this multiple times: 
-    `health behaviour`  `; washing hands`  `; washing pots` . 
+    <u>health behaviour</u>  <u>; washing hands</u>  <u>; washing pots</u> . 
     This can be useful when you have to code a list of things which are all examples of some higher-level idea.
     This example will produce:
-    `health behaviour; washing hands` 
+    <u>health behaviour; washing hands</u> 
     and 
-    `health behaviour; washing pots` . 
+    <u>health behaviour; washing pots</u> . 
 
 ## Additional functionality when searching for and filtering factors
 
-The same principle applies in the Search and Filter Factors box: you can see factors you have already used but also implied higher-level factors (like “Health behaviour”) and other factor components, beginning with a semi-colon (`;`). 
+The same principle applies in the Search and Filter Factors box: you can see factors you have already used but also implied higher-level factors (like <u>Health behaviour</u>) and other factor components, beginning with a semi-colon (`;`). 
 
 ## How can I view just the factors where I have applied hierarchical coding?
 

@@ -4,5 +4,13 @@
 
 How to manage your data, whether it is downloading, modifying or appending? These bulletpoints will direct you to the relevant sections later in this Guide.
 
-(Coming soon)
+[This](#ximport) page tells you how to get your data into the right format for uploading to Causal Map.
+
+Currently, you can work with 5 different types of formats in the Causal Map App, they are:
+
+1. [Text documents](#ximport2excel): you can upload Upload multiple text files, doc, docx, or pdf files.
+2. [Standard format Excel](#xupload-standard-format): An Excel file with one worksheet called `statements` with one row per statement and optionally other worksheets for `sources` etc. 
+3. [Wide format Excel](#xupload-google): An Excel file with one worksheet containing row for each source, one column for each question. e.g. data from Google Forms. 
+4. [Hybrid format Excel](#ximport-quip): An Excel file with one worksheet containing one row for each answer and includes the statements as one kind of answer but also includes rows for additional data like gender.
+5. [Links-only Excel](#xlinks-only): An Excel file with just one worksheet called `links` with just the columns `from_label` and `to_label`. When you want to analyse causal links from elsewhere.
 

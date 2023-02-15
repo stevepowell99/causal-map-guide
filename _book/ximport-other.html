@@ -28,7 +28,7 @@
 <meta name="author" content="Samuel Goddard" />
 
 
-<meta name="date" content="2023-02-14" />
+<meta name="date" content="2023-02-15" />
 
   <meta name="viewport" content="width=device-width, initial-scale=1" />
   <meta name="apple-mobile-web-app-capable" content="yes" />
@@ -312,25 +312,18 @@ code span.wa { color: #60a0b0; font-weight: bold; font-style: italic; } /* Warni
 </ul></li>
 <li class="chapter" data-level="" data-path="ximport.html"><a href="ximport.html"><i class="fa fa-check"></i>Uploading your data</a>
 <ul>
-<li class="chapter" data-level="" data-path="ximport.html"><a href="ximport.html#ximport2excel"><i class="fa fa-check"></i>🧪Text documents including Word and PDFs</a>
+<li class="chapter" data-level="" data-path="ximport.html"><a href="ximport.html#ximport2excel"><i class="fa fa-check"></i>🧪Uploading text documents including Word and PDFs</a></li>
+<li class="chapter" data-level="" data-path="ximport.html"><a href="ximport.html#xupload-standard-format"><i class="fa fa-check"></i>Uploading a standard format Excel file</a>
 <ul>
-<li class="chapter" data-level="" data-path="ximport.html"><a href="ximport.html#problems-importing-pdfs"><i class="fa fa-check"></i>Problems importing PDFS?</a></li>
-</ul></li>
-<li class="chapter" data-level="" data-path="ximport.html"><a href="ximport.html#xupload-google"><i class="fa fa-check"></i>Importing a simple wide-format file</a>
-<ul>
-<li class="chapter" data-level="" data-path="ximport.html"><a href="ximport.html#adding-additional-cases-with-wide-format-files"><i class="fa fa-check"></i>Adding additional cases with wide-format files</a></li>
-</ul></li>
-<li class="chapter" data-level="" data-path="ximport.html"><a href="ximport.html#xupload-standard-format"><i class="fa fa-check"></i>Standard format</a>
-<ul>
-<li class="chapter" data-level="" data-path="ximport.html"><a href="ximport.html#formattingyourfile"><i class="fa fa-check"></i>Formatting a Standard Format file: The basics</a></li>
 <li class="chapter" data-level="" data-path="ximport.html"><a href="ximport.html#pasting-data-from-a-word-document-into-excel"><i class="fa fa-check"></i>Pasting data from a Word document into Excel</a></li>
 <li class="chapter" data-level="" data-path="ximport.html"><a href="ximport.html#making-a-basic-statements-table-by-hand"><i class="fa fa-check"></i>Making a basic statements table by hand</a></li>
 </ul></li>
-<li class="chapter" data-level="" data-path="ximport.html"><a href="ximport.html#ximport-quip"><i class="fa fa-check"></i>QuIP-specific: Uploading hybrid format data</a>
+<li class="chapter" data-level="" data-path="ximport.html"><a href="ximport.html#xupload-google"><i class="fa fa-check"></i>Uploading a wide-format Excel file</a>
 <ul>
-<li class="chapter" data-level="" data-path="ximport.html"><a href="ximport.html#appending-hybrid-data"><i class="fa fa-check"></i><em>Appending</em> hybrid data</a></li>
-<li class="chapter" data-level="" data-path="ximport.html"><a href="ximport.html#uploading-closed-question-blocks"><i class="fa fa-check"></i>Uploading closed question blocks</a></li>
+<li class="chapter" data-level="" data-path="ximport.html"><a href="ximport.html#adding-additional-cases-with-wide-format-files"><i class="fa fa-check"></i>Adding additional cases with wide-format files</a></li>
 </ul></li>
+<li class="chapter" data-level="" data-path="ximport.html"><a href="ximport.html#ximport-quip"><i class="fa fa-check"></i>Uploading a hybrid format Excel file</a></li>
+<li class="chapter" data-level="" data-path="ximport.html"><a href="ximport.html#xlinks-only"><i class="fa fa-check"></i>🧪Uploading existing causal coding (“links only”)</a></li>
 </ul></li>
 <li class="chapter" data-level="" data-path="import-additional-data.html"><a href="import-additional-data.html"><i class="fa fa-check"></i>Uploading additional data</a>
 <ul>
@@ -346,7 +339,6 @@ code span.wa { color: #60a0b0; font-weight: bold; font-style: italic; } /* Warni
 </ul></li>
 <li class="chapter" data-level="" data-path="ximport-other.html"><a href="ximport-other.html"><i class="fa fa-check"></i>Importing your data: special cases</a>
 <ul>
-<li class="chapter" data-level="" data-path="ximport-other.html"><a href="ximport-other.html#xlinks-only"><i class="fa fa-check"></i>🧪Importing existing causal coding (“links only”)</a></li>
 <li class="chapter" data-level="" data-path="ximport-other.html"><a href="ximport-other.html#importing-from-other-software"><i class="fa fa-check"></i>Importing from other software</a>
 <ul>
 <li class="chapter" data-level="" data-path="ximport-other.html"><a href="ximport-other.html#exporting-for-import-into-kumu.io"><i class="fa fa-check"></i>Exporting for import into kumu.io</a></li>
@@ -901,25 +893,6 @@ code span.wa { color: #60a0b0; font-weight: bold; font-style: italic; } /* Warni
 </script>
 <div id="ximport-other" class="section level1 hasAnchor">
 <h1>Importing your data: special cases<a href="ximport-other.html#ximport-other" class="anchor-section" aria-label="Anchor link to header"></a></h1>
-<div id="xlinks-only" class="section level2 hasAnchor">
-<h2>🧪Importing existing causal coding (“links only”)<a href="#xlinks-only" class="anchor-section" aria-label="Anchor link to header"></a></h2>
-<p>What to do if you have causal information, for example in the form of <strong>edge lists</strong>, from some other source (e.g. AI coding of a larger text) which you want to import?</p>
-<p>You can import this kind of file too, using the Standard Format Excel upload button.</p>
-<p>Your Excel xlsx file should NOT have a tab for factors. Instead it should have a single tab called <code>links</code>, containing two columns called <code>from_label</code> and <code>to_label</code> which contain the names of your factors.</p>
-<p>That’s the basic setup. But maybe you also want to provide information about what statement, question or source the link is associated with. In which case, these are your options:</p>
-<ul>
-<li>Optionally, your links tab can also contain other columns as usual, in particular it can contain the column <code>question_id</code>.</li>
-<li>If you include a <code>question_id</code> column, you should include an additional tab called <code>questions</code> containing at least the column <code>question_id</code> and other columns providing information about the questions, e.g. full question text, questionnaire section etc, where relevant.<br />
-</li>
-<li>Optionally, your links tab can also contain a column <code>statement_id</code>.</li>
-<li>If you include a <code>statement_id</code> column, you can optionally include, as usual, an additional tab called <code>statements</code> containing at least the column <code>statement_id</code> and a column <code>text</code> containing the text of your statements.
-<ul>
-<li>If you optionally include a <code>statements</code> tab, you can optionally also include a <code>source_id</code> column and a corresponding tab called <code>sources</code> with a corresponding <code>source_id</code> column and more columns to provide information like gender, location, or any other information about the source of each statement.</li>
-</ul></li>
-<li>Optionally, your links tab can also contain a column labelled <code>quote</code>, containing the actual quote which underpins each causal claim aka link.</li>
-<li>Usually, this quote will be a verbatim section of the text in a corresponding additional tab called <code>statements</code>, see above.</li>
-</ul>
-</div>
 <div id="importing-from-other-software" class="section level2 hasAnchor">
 <h2>Importing from other software<a href="ximport-other.html#importing-from-other-software" class="anchor-section" aria-label="Anchor link to header"></a></h2>
 <p>We are aware of the initiative to make qualitative coding software interoperable, <a href="https://www.qdasoftware.org/products-project-exchange/">https://www.qdasoftware.org/products-project-exchange/</a>. Causal Map has quite a different model and at the moment we don’t provide this, but would do if there is a lot of interest.</p>
