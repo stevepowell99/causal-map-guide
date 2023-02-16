@@ -28,7 +28,7 @@
 <meta name="author" content="Samuel Goddard" />
 
 
-<meta name="date" content="2023-02-15" />
+<meta name="date" content="2023-02-16" />
 
   <meta name="viewport" content="width=device-width, initial-scale=1" />
   <meta name="apple-mobile-web-app-capable" content="yes" />
@@ -905,7 +905,24 @@ code span.wa { color: #60a0b0; font-weight: bold; font-style: italic; } /* Warni
 <div id="ximport2excel" class="section level2 hasAnchor">
 <h2>🧪Uploading text documents including Word and PDFs<a href="#ximport2excel" class="anchor-section" aria-label="Anchor link to header"></a></h2>
 <p>If your data is in the form of several word processing documents like Word .docx or .odt, or plain text documents or even PDFs, you don’t need to bother with Excel files, you can just upload your text files directly.</p>
-<p>Preparing your files: If you wish, in your doc, docx and text files you can separate text into statements by inserting lines containing just ‘–’ where you want to separate statements. Otherwise, doc and docx files will be broken into paragraphs and pdf files will be broken into pages.</p>
+<p>Preparing your files: If you wish, in your doc, docx and text files you can separate text into statements by inserting lines containing just <code>--</code> (that is two hyphen characters together) where you want to separate statements, like this.</p>
+<div class="figure">
+<img src="_assets/image-20230216082039612.png" alt="" />
+<p class="caption">image-20230216082039612</p>
+</div>
+<p>Otherwise, doc and docx files will be broken into paragraphs and pdf files will be broken into pages.</p>
+<p>You can also use the same trick to add question_id and respondent_id to your upload, like this:</p>
+<div class="figure">
+<img src="_assets/image-20230216085616986.png" alt="" />
+<p class="caption">image-20230216085616986</p>
+</div>
+<p>That means you can add, at the top of your statement after the <code>--</code>, exactly one or other of these:</p>
+<ul>
+<li><code>question_id:</code> followed by the ID of the question (a single string of characters with no spaces) <strong>and/or</strong></li>
+<li>exactly the text <code>respondent_id:</code> followed by the ID of the respondent (a single string of characters with no spaces)</li>
+</ul>
+<p>You don’t need to do this for every statement, only where the question_id or respondent_id <em>changes</em>. So add it for every new question and/or every new respondent.</p>
+<p>Wait, you say, what’s a respondent? Well we already have <code>source_id</code> which is the name of the document. Usually you will have one document for one respondent, so you won’t need respondent_id. You will usually only want to use <code>respondent_id</code> when your respondents change within one document, for example in a focus group transcript.</p>
 <p>Uploading like this does not retain information about page numbers in PDFs. If you need to get the page numbers of each statement when importing PDFs, try <a href="https://causalmap.shinyapps.io/pdf2excel/">another free utility</a> (Tool 2) which imports PDFs only but does provide page numbers as an additional column.</p>
 <div id="problems-importing-pdfs" class="section level4 hasAnchor">
 <h4>Problems importing PDFS?<a href="ximport.html#problems-importing-pdfs" class="anchor-section" aria-label="Anchor link to header"></a></h4>

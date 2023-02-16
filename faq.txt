@@ -135,7 +135,7 @@ Unfortunately when a map has a lot of links link labels may appear slightly remo
 
 
 ///How do I import my QuIP project into Causal Map?
-You must create an excel file with four columns. The column headers must be in this order; text/answers, source_id, question_code and question_text. Then upload this to a blank file using the purple upload button for hybrid files. For more information see this <a href="https://guide.causalmap.app/importing-your-data-special-cases.html#ximport-hybrid"?></a>
+Follow the instructions for [hybrid files](#ximport-hybrid). You must create an excel file with one worksheet and four columns. The column headers must be in this order; text, source_id, question_id and question_text. Then upload this to a blank file. 
 
 ## Downloads
 
