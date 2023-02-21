@@ -8,7 +8,7 @@ During coding, clicking on the `info` toggle opens additional statement info. [^
 
 ![info panel](_assets/sm559T6lUE.gif)
 
-## The memos panel
+## The memos panel{#xmemos-panel}
 
 ![image-20230128223629065](_assets/image-20230128223629065.png){width=650}
 

@@ -26,7 +26,7 @@ You can also use the `locked` switch to lock the file. This means that no-one ca
 
 It is also possible to create larger groups of users. Ask us for help with this: hello@causalmap.app. 
 
-### File memo
+### File memo{#xfi}
 
 You can put information about your file in the `file memo` box, and it will be shown below the interactive map to tell other users what this file is about. You can use markdown to format the text, e.g. start a line with # to make level-1 heading. You can even include images using markdown.
 
