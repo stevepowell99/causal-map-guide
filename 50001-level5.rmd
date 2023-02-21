@@ -1,12 +1,12 @@
 #  Level 5 overview{#xlevel5}
 
-To whet your appetite for some advanced analysis, [here](https://causalmap.app/gallery) are some of the variety of maps you can create with Causal Map.
+To whet your appetite for some advanced analysis, [here](#xdashboard-a) are some of the variety of maps you can create with Causal Map.
 
 
 
 In the pages in this section you will learn how to do advanced analysis in Causal Map: 
 
-- using the filter buttons 
+- [using the filter buttons](#xapplyingfilters) 
 - using the advanced editor
 - and lots more.
 

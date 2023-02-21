@@ -16,9 +16,9 @@ Filters simplify your graph to help you answer specific questions. You will ofte
   - **Exclusion filters**. These filters simply exclude links and/or factors from the map. So instead of seeing the entire unfiltered causal map, which can be quite bewildering, you see only part of it. For example:
     - show me only information given by women
     - show me only information from the first statement
-    - show me only paths leading from "My intervention" to "My important outcomes"
+    - show me only paths leading from <u>My intervention</u> to <u>My important outcomes</u>
     - show me only the most frequently mentioned factors.
-  - **Simplification filters**. If you want to combine two similar factors, you will be using a simplification filter. These filters actually involve rerouting links, e.g. if you want to combine the factor "Ebola" into "Infectious diseases" the app will need to remove the factor "Ebola" and reroute all its links so they connect with "Infectious diseases" instead.
+  - **Simplification filters**. If you want to combine two similar factors, you will be using a simplification filter. These filters actually involve rerouting links, e.g. if you want to combine the factor <u>Ebola</u> into <u>Infectious diseases</u> the app will need to remove the factor <u>Ebola</u> and reroute all its links so they connect with <u>Infectious diseases</u> instead.
 - **Conditional formatting** filters. You can format the links and factors in your map to reflect the data, e.g. you can make factors bigger if they were mentioned more often.
 - **Simple formatting** filters. These are simply used to apply overall formatting, e.g. give all the factors a grey border. 
 

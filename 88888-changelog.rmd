@@ -43,7 +43,7 @@ Read more [here](#xremoving-unwanted-links).
 
 ### [Importing a simple, wide-format file](#upload-summary) 
 
-There are many ways to import data into Causal Map. We have just introduced perhaps the simplest way to upload your data: wide format. This is the kind of data you might often get if you have been using Google Forms. 
+There are many ways to upload data into Causal Map. We have just introduced perhaps the simplest way to upload your data: wide format. This is the kind of data you might often get if you have been using Google Forms. 
 
 In this format, you only need an Excel file with one tab; each row is all the data from one source. So, many of the columns will probably be additional data like gender, etc.
 

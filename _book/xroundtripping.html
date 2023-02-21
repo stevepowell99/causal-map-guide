@@ -28,15 +28,15 @@
 <meta name="author" content="Samuel Goddard" />
 
 
-<meta name="date" content="2023-02-16" />
+<meta name="date" content="2023-02-21" />
 
   <meta name="viewport" content="width=device-width, initial-scale=1" />
   <meta name="apple-mobile-web-app-capable" content="yes" />
   <meta name="apple-mobile-web-app-status-bar-style" content="black" />
   
   
-<link rel="prev" href="import-additional-data.html"/>
-<link rel="next" href="ximport-other.html"/>
+<link rel="prev" href="ximport-other.html"/>
+<link rel="next" href="xmerging-files.html"/>
 <script src="libs/jquery-3.6.0/jquery-3.6.0.min.js"></script>
 <script src="https://cdn.jsdelivr.net/npm/fuse.js@6.4.6/dist/fuse.min.js"></script>
 <link href="libs/gitbook-2.6.7/css/style.css" rel="stylesheet" />
@@ -315,8 +315,9 @@ code span.wa { color: #60a0b0; font-weight: bold; font-style: italic; } /* Warni
 <li class="chapter" data-level="" data-path="ximport.html"><a href="ximport.html#ximport2excel"><i class="fa fa-check"></i>🧪Uploading text documents including Word and PDFs</a></li>
 <li class="chapter" data-level="" data-path="ximport.html"><a href="ximport.html#xupload-standard-format"><i class="fa fa-check"></i>Uploading a standard format Excel file</a>
 <ul>
+<li class="chapter" data-level="" data-path="ximport.html"><a href="ximport.html#formattingyourfile"><i class="fa fa-check"></i>Formatting a Standard Format file</a></li>
 <li class="chapter" data-level="" data-path="ximport.html"><a href="ximport.html#pasting-data-from-a-word-document-into-excel"><i class="fa fa-check"></i>Pasting data from a Word document into Excel</a></li>
-<li class="chapter" data-level="" data-path="ximport.html"><a href="ximport.html#making-a-basic-statements-table-by-hand"><i class="fa fa-check"></i>Making a basic statements table by hand</a></li>
+<li class="chapter" data-level="" data-path="ximport.html"><a href="ximport.html#providing-additional-data-like-gender"><i class="fa fa-check"></i>Providing additional data like gender</a></li>
 </ul></li>
 <li class="chapter" data-level="" data-path="ximport.html"><a href="ximport.html#xupload-google"><i class="fa fa-check"></i>Uploading a wide-format Excel file</a>
 <ul>
@@ -325,10 +326,14 @@ code span.wa { color: #60a0b0; font-weight: bold; font-style: italic; } /* Warni
 <li class="chapter" data-level="" data-path="ximport.html"><a href="ximport.html#ximport-quip"><i class="fa fa-check"></i>Uploading a hybrid format Excel file</a></li>
 <li class="chapter" data-level="" data-path="ximport.html"><a href="ximport.html#xlinks-only"><i class="fa fa-check"></i>🧪Uploading existing causal coding (“links only”)</a></li>
 </ul></li>
-<li class="chapter" data-level="" data-path="import-additional-data.html"><a href="import-additional-data.html"><i class="fa fa-check"></i>Uploading additional data</a>
+<li class="chapter" data-level="" data-path="import-additional-data.html"><a href="import-additional-data.html"><i class="fa fa-check"></i>Uploading additional data like age, gender</a></li>
+<li class="chapter" data-level="" data-path="ximport-other.html"><a href="ximport-other.html"><i class="fa fa-check"></i>Uploading your data: special cases</a>
 <ul>
-<li class="chapter" data-level="" data-path="import-additional-data.html"><a href="import-additional-data.html#providing-additional-data-as-additional-fields-in-the-statements-table."><i class="fa fa-check"></i>Providing additional data as additional fields in the statements table.</a></li>
-<li class="chapter" data-level="" data-path="import-additional-data.html"><a href="import-additional-data.html#uploading-using-separate-source-and-question-tables"><i class="fa fa-check"></i>Uploading using separate source and question tables</a></li>
+<li class="chapter" data-level="" data-path="ximport-other.html"><a href="ximport-other.html#uploading-from-other-software"><i class="fa fa-check"></i>Uploading from other software</a>
+<ul>
+<li class="chapter" data-level="" data-path="ximport-other.html"><a href="ximport-other.html#exporting-for-upload-into-kumu.io"><i class="fa fa-check"></i>Exporting for upload into kumu.io</a></li>
+<li class="chapter" data-level="" data-path="ximport-other.html"><a href="ximport-other.html#exporting-for-upload-into-nodexl"><i class="fa fa-check"></i>Exporting for upload into NodeXL</a></li>
+</ul></li>
 </ul></li>
 <li class="chapter" data-level="" data-path="xroundtripping.html"><a href="xroundtripping.html"><i class="fa fa-check"></i>Appending and fixing data (“roundtripping”)</a>
 <ul>
@@ -336,14 +341,6 @@ code span.wa { color: #60a0b0; font-weight: bold; font-style: italic; } /* Warni
 <li class="chapter" data-level="" data-path="xroundtripping.html"><a href="xroundtripping.html#downloading-a-file"><i class="fa fa-check"></i>Downloading a file</a></li>
 <li class="chapter" data-level="" data-path="xroundtripping.html"><a href="xroundtripping.html#uses-for-roundtripping"><i class="fa fa-check"></i>Uses for roundtripping</a></li>
 <li class="chapter" data-level="" data-path="xroundtripping.html"><a href="xroundtripping.html#what-if-you-have-merged-cells-in-your-excel-file"><i class="fa fa-check"></i>What if you have merged cells in your Excel file?</a></li>
-</ul></li>
-<li class="chapter" data-level="" data-path="ximport-other.html"><a href="ximport-other.html"><i class="fa fa-check"></i>Importing your data: special cases</a>
-<ul>
-<li class="chapter" data-level="" data-path="ximport-other.html"><a href="ximport-other.html#importing-from-other-software"><i class="fa fa-check"></i>Importing from other software</a>
-<ul>
-<li class="chapter" data-level="" data-path="ximport-other.html"><a href="ximport-other.html#exporting-for-import-into-kumu.io"><i class="fa fa-check"></i>Exporting for import into kumu.io</a></li>
-<li class="chapter" data-level="" data-path="ximport-other.html"><a href="ximport-other.html#exporting-for-import-into-nodexl"><i class="fa fa-check"></i>Exporting for import into NodeXL</a></li>
-</ul></li>
 </ul></li>
 <li class="chapter" data-level="" data-path="xmerging-files.html"><a href="xmerging-files.html"><i class="fa fa-check"></i>Merging files</a>
 <ul>
@@ -898,14 +895,14 @@ code span.wa { color: #60a0b0; font-weight: bold; font-style: italic; } /* Warni
 <h3>General principles<a href="xroundtripping.html#import-general-principles" class="anchor-section" aria-label="Anchor link to header"></a></h3>
 <p>The 5 core data tables in any Causal Map file are these: <code>factors</code>, <code>links</code>, <code>statements</code>, <code>sources</code>, <code>questions</code>.</p>
 <ul>
-<li>The downloaded file has these 5 main tabs (as well as tabs to show all the data for the current view when you downloaded the file including filtered fields.)</li>
+<li>The downloaded file has these 5 main worksheets (as well as worksheets to show all the data for the current view when you downloaded the file including filtered fields.)</li>
 <li>All 5 standard tables can also have arbitrary additional columns/fields which users can use e.g. to filter, analyse their data.</li>
 </ul>
 <p>You can upload your data back into a new or existing Causal Map file.</p>
 <ul>
-<li>The app will read any tabs with any of the (lowercase) names of the core tables: <code>factors</code>, <code>links</code>, <code>statements</code>, <code>sources</code>, <code>questions</code> and will ignore other tabs.</li>
-<li>If any of these five tabs in your Excel file are <em>empty</em>, the app will <strong>delete all the data</strong> in the corresponding tables.</li>
-<li>If any of the five tabs are completely <strong>missing</strong> (e.g. you deleted them), when you upload, the app will just keep the old data in the target file.</li>
+<li>The app will read any worksheet with any of the (lowercase) names of the core tables: <code>factors</code>, <code>links</code>, <code>statements</code>, <code>sources</code>, <code>questions</code> and will ignore other worksheets.</li>
+<li>If any of these five worksheets in your Excel file are <em>empty</em>, the app will <strong>delete all the data</strong> in the corresponding tables.</li>
+<li>If any of the five worksheets are completely <strong>missing</strong> (e.g. you deleted them), when you upload, the app will just keep the old data in the target file.</li>
 <li>If you want to append data, just download the old file, add the rows you want in any of the tables, and upload again. (Adding additional <em>links</em> is a special case, see <a href="">xx</a>. )</li>
 </ul>
 </div>
@@ -973,8 +970,8 @@ code span.wa { color: #60a0b0; font-weight: bold; font-style: italic; } /* Warni
           </div>
         </div>
       </div>
-<a href="import-additional-data.html" class="navigation navigation-prev " aria-label="Previous page"><i class="fa fa-angle-left"></i></a>
-<a href="ximport-other.html" class="navigation navigation-next " aria-label="Next page"><i class="fa fa-angle-right"></i></a>
+<a href="ximport-other.html" class="navigation navigation-prev " aria-label="Previous page"><i class="fa fa-angle-left"></i></a>
+<a href="xmerging-files.html" class="navigation navigation-next " aria-label="Next page"><i class="fa fa-angle-right"></i></a>
     </div>
   </div>
 <script src="libs/gitbook-2.6.7/js/app.min.js"></script>

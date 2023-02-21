@@ -8,7 +8,7 @@ How to manage your data, whether it is downloading, modifying or appending? Thes
 
 Currently, you can work with 5 different types of formats in the Causal Map App, they are:
 
-1. [Text documents](#ximport2excel): you can upload Upload multiple text files, doc, docx, or pdf files.
+1. [Text documents](#ximport2excel): you can upload multiple text files, doc, docx, or pdf files.
 2. [Standard format Excel](#xupload-standard-format): An Excel file with one worksheet called `statements` with one row per statement and optionally other worksheets for `sources` etc. 
 3. [Wide format Excel](#xupload-google): An Excel file with one worksheet containing row for each source, one column for each question. e.g. data from Google Forms. 
 4. [Hybrid format Excel](#ximport-quip): An Excel file with one worksheet containing one row for each answer and includes the statements as one kind of answer but also includes rows for additional data like gender.

@@ -6,14 +6,14 @@ Rather than providing a complicated interface for manipulating and adding data, 
 
 The 5 core data tables in any Causal Map file are these: `factors`, `links`, `statements`, `sources`, `questions`.
 
-- The downloaded file has these 5 main tabs (as well as tabs to show all the data for the current view when you downloaded the file including filtered fields.)
+- The downloaded file has these 5 main worksheets (as well as worksheets to show all the data for the current view when you downloaded the file including filtered fields.)
 - All 5 standard tables can also have arbitrary additional columns/fields which users can use e.g. to filter, analyse their data.
 
 You can upload your data back into a new or existing Causal Map file. 
 
-- The app will read any tabs with any of the (lowercase) names of the core tables:  `factors`, `links`, `statements`, `sources`, `questions` and will ignore other tabs.
-- If any of these five tabs in your Excel file are *empty*, the app will **delete all the data** in the corresponding tables. 
-- If any of the five tabs are completely **missing** (e.g. you deleted them), when you upload, the app will just keep the old data in the target file. 
+- The app will read any worksheet with any of the (lowercase) names of the core tables:  `factors`, `links`, `statements`, `sources`, `questions` and will ignore other worksheets.
+- If any of these five worksheets in your Excel file are *empty*, the app will **delete all the data** in the corresponding tables. 
+- If any of the five worksheets are completely **missing** (e.g. you deleted them), when you upload, the app will just keep the old data in the target file. 
 - If you want to append data, just download the old file, add the rows you want in any of the tables, and upload again. (Adding additional *links* is a special case, see [xx](). )
 
 ### Downloading a file

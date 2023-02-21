@@ -5,16 +5,16 @@ This page tells you how to get your data into the right format for uploading to 
 Currently, you can work with 5 different types of formats in the Causal Map App, they are:
 
 1. [Text documents](#ximport2excel): you can upload multiple text files, doc, docx, or pdf files.
-2. [Standard format Excel](#xupload-standard-format): An Excel file with one worksheet called `statements` with one row per statement and optionally other worksheets for `sources` etc. 
-3. [Wide format Excel](#xupload-google): An Excel file with one worksheet containing row for each source, one column for each question. e.g. data from Google Forms. 
-4. [Hybrid format Excel](#ximport-quip): An Excel file with one worksheet containing one row for each answer and includes the statements as one kind of answer but also includes rows for additional data like gender.
-5. [Links-only Excel](#xlinks-only): An Excel file with just one worksheet called `links` with just the columns `from_label` and `to_label`. When you want to analyse causal links from elsewhere.
+2. [Standard format Excel](#xupload-standard-format): an Excel file with one worksheet called `statements` with one row per statement and optionally other worksheets for `sources` etc. 
+3. [Wide format Excel](#xupload-google): an Excel file with one worksheet containing row for each source, one column for each question. e.g. data from Google Forms. 
+4. [Hybrid format Excel](#ximport-quip): an Excel file with one worksheet containing one row for each answer and includes the statements as one kind of answer but also includes rows for additional data like gender.
+5. [Links-only Excel](#xlinks-only): an Excel file with just one worksheet called `links` with just the columns `from_label` and `to_label`. When you want to analyse causal links from elsewhere.
 
 ## 🧪Uploading text documents including Word and PDFs{#ximport2excel}
 
 If your data is in the form of several word processing documents like Word .docx or .odt, or plain text documents or even PDFs,  you don't need to bother with Excel files, you can just upload your text files directly.
 
-Preparing your files: If you wish, in your doc, docx and text files you can separate text into statements by inserting lines containing just `--` (that is two hyphen characters together) where you want to separate statements, like this. 
+Preparing your files: If you wish, in your doc, docx and text files, you can separate text into statements by inserting lines containing just `--` (that is two hyphen characters together) where you want to separate statements, like this. 
 
 ![image-20230216082039612](_assets/image-20230216082039612.png)
 
@@ -35,11 +35,11 @@ Wait, you say, what's a respondent? Well we already have `source_id` which is th
 
 
 
-Uploading like this does not retain information about page numbers in PDFs. If you need to get the page numbers of each statement when importing PDFs, try [another free utility](https://causalmap.shinyapps.io/pdf2excel/)  (Tool 2) which imports PDFs only but does provide page numbers as an additional column.
+Uploading like this does not retain information about page numbers in PDFs. If you need to get the page numbers of each statement when uploading PDFs, try [another free utility](https://causalmap.shinyapps.io/pdf2excel/)  (Tool 2) which uploads PDFs only but does provide page numbers as an additional column.
 
 
 
-#### Problems importing PDFS?
+#### Problems uploading PDFS?
 
 This upload  option  may miss text in PDFs which is in boxes and columns.  As an alternative you can export a PDF to Excel (one by one) [here ](https://www.adobe.com/uk/acrobat/online/pdf-to-excel.html). The resulting file is also full of pictures etc but does seem to contain all of the text, although in many columns. 80% of the time it identifies suitably large chunks of text, but sometimes you get very small fragments. 
 
@@ -60,28 +60,21 @@ knitr::include_url("https://player.vimeo.com/video/637121851")
 You might find it easier to start from the  [Excel template](https://docs.google.com/spreadsheets/d/126fAfkJSbUXkqHp_OkE3af2vdxhMjRy-/edit?usp=sharing&ouid=106533500876964660468&rtpof=true&sd=true). 
 
 
-The app will import any worksheets in your file called "statements" (required), "sources" (optional) or "questions" (optional), and also, if you need them "factors" and "links" and will ignore other worksheets. 
+The app will upload any worksheets in your file called "statements" (required), "sources" (optional) or "questions" (optional), and also, if you need them "factors" and "links"; the app will ignore other worksheets. 
 
-#### Formatting a Standard Format file: The basics {#formattingyourfile}
+### Formatting a Standard Format file {#formattingyourfile}
 
 ```{r,echo=F}
 knitr::include_url("https://player.vimeo.com/video/604138709")
 ```
 
-When uploading data for coding the only data you **need** to upload to the app is a table of statements as an xlsx file. Your file must have a header row with the names of the fields; the name of the column with the actual responses must be `text`. 
+When uploading data for coding the only data you **need** to upload to the app is an xlsx file with a worksheet called `statements`. Your worksheet must have a header row with the names of the columns; the only required column, which contains the actual responses for coding, must be called `text`. 
 
-All work names and column names should be lower-case.
+Each cell in the `text` column contains one "statement" - a chunk of text usually one or two paragraphs long. The optional other cells in the same row give you more information about that
+
+All worksheet names and column names should be lower-case.
 
 ![image-20211012141450834](_assets/image-20211012141450834.png){width=650}
-
-
-Additionally (optionally), you will usually have a column in the statements table called `source_id` and a corresponding tab called `sources` with at least one column called `source_id` containing each source id, with one row for each source, and additional columns giving more information about your sources.
-
-![image-20211012141409487](_assets/image-20211012141409487.png){width=650}
-
-Additionally (optionally), you may have a column in the statements table called `question_id` . If you want, this question_id can already include the question text, e.g. "q1: tell us about your life". But usually it is more convenient to just use a code like "q1" and also include a corresponding tab in your Excel file called `questions` with at least one column called `question_id` with corresponding values, and an additional column `question_text` with the full text, as well as any other information about your questions, e.g. domain or questionnaire section. 
-
-![image-20211012141342985](_assets/image-20211012141342985.png){width=650}
 
 ### Pasting data from a Word document into Excel
 
@@ -101,29 +94,39 @@ The statements are the texts which appear one by one, for you to read and code. 
 
 ![](_assets/image-20211018160023515.png){width=650}
 
-If you want to import interviews which are several pages each, you should break each interview into several statements. Ideally a statement consists of between one and five paragraphs – enough to fit on the left-hand side panel when it is displayed there. Usually your text breaks up naturally into sections, for example the interviews might be responses to a number of questions, so your statements might consist of one or a few paragraphs for each question.
+If you want to upload interviews which are several pages each, you should break each interview into several statements. Ideally a statement consists of between one and five paragraphs – enough to fit on the left-hand side panel when it is displayed there. Usually your text breaks up naturally into sections, for example the interviews might be responses to a number of questions, so your statements might consist of one or a few paragraphs for each question.
 
-We strongly recommend that you don’t try to import statements which are longer than 500 words, as it is harder to code very long statements.
+We strongly recommend that you don’t try to upload statements which are longer than 500 words, as it is harder to code very long statements.
 
 Your statements file must have at least one column with the text of the statements and the header for this column must be “text.” Other columns will be treated as additional data.
 
-### Making a basic statements table by hand
+### Providing additional data like gender
 
-If you want to import longer documents which are several pages each, you should break each document into many chunks or "statements". Ideally a statement consists of between one and five paragraphs – enough to fit on the left-hand side of the Code & View tab when it is displayed there. 
+#### Providing additional data as additional columns in the statements table.
 
-Make a fresh spreadsheet file in Excel (or LibreOffice Calc or similar) 
+If you want, you can provide additional data like gender **as additional columns in your statements table** when you upload your data. You might want to do that if your data is already structured in this way. However, this means that you have to repeat a lot of data, as you will need to provide, for example, the gender and age etc of each respondent for every single statement they made. It is **usually better to upload additional data about your sources (and questions) using separate tables, as in the next section**.
 
-- Type the word “text” as column header in cell A1.
-- Select cell A2
-- Paste your text below in the A column, with between 1 sentence and 9 paragraphs in each cell. Note that if you want several paragraphs together in one cell, be careful when pasting.
-- Check the statements are the way you want them. You can ignore any formatting, pictures etc which might also have been pasted in because these will disappear in the next step.
-- Just the column "text" is enough, but optionally use the other columns for other metadata you might need, like this:
+Just remember that if you do provide additional columns like gender in the statements table, the app understands only text and numerical fields so it will treat dates and currency as ordinary numbers.  
 
-![image-20210930112731572](_assets/image-20210930112731572.png)
+#### Uploading information about sources using a separate source table
 
-The statements are the texts which appear one by one in the left-hand panel, for you to read and code. Each statement is one row in your file.
+Often it isn’t convenient to provide all the data in one table. 
 
-The (optional) column `source_id` is special, because it gives you an easy way to provide additional information about each source (e.g. year and country of publication) rather than having to copy this information into your this main statements file.
+So in your statements table, additionally (optionally), as well as your `text` column you will usually have a column in the statements table called `source_id` and a corresponding tab called `sources` with at least one column called `source_id` containing each source id, with one row for each source, and additional columns giving more information about your sources.
+
+![image-20211012141409487](_assets/image-20211012141409487.png){width=650}
+
+The app then merges the new information from the sources table so it is also available in [the statements](#xthe-statements-table) table and elsewhere.
+
+![image-20211019115631991](_assets/image-20211019115631991-1676972414995-4.png)
+
+#### Uploading information about questions using a separate questions table
+
+Additionally (optionally), you may have a column in the statements table called `question_id` . If you want, this question_id can already include the question text, e.g. "q1: tell us about your life". But usually it is more convenient to just use a code like "q1" and also include a corresponding tab in your Excel file called `questions` with at least one column called `question_id` with corresponding values, and an additional column `question_text` with the full text, as well as any other information about your questions, e.g. domain or questionnaire section. 
+
+![image-20211012141342985](_assets/image-20211012141342985.png){width=650}
+
+
 
 ## Uploading a wide-format Excel file{#xupload-google} 
 
@@ -160,13 +163,13 @@ knitr::include_url("https://player.vimeo.com/video/664879474")
 
 ```
 
-This section is specifically about importing from a QuIP-style spreadsheet. 
+This section is specifically about uploading from a QuIP-style spreadsheet. 
 
 [Here](https://docs.google.com/spreadsheets/d/1Er6m9XpkP4WcszaiLbmv_xFsc7V1d8H5/edit?usp=sharing&ouid=106533500876964660468&rtpof=true&sd=true ) is an example file.
 
-This format has many rows, one for each answer, and includes the statements as one kind of answer; you can import statements and additional data from the same fieldwork file. The main differences to a normal import are:
+This format has many rows, one for each answer, and includes the statements as one kind of answer; you can upload statements and additional data from the same fieldwork file. The main differences to a normal upload are:
 
-- Rows whose question code does not include a “$” will be imported only as additional data, not as statements.
+- Rows whose question code does not include a “$” will be uploaded only as additional data, not as statements.
 - A new question ID will be constructed from the question code together with the question text.
 
 Your xslx file must have just four columns, with column headers in this order:
@@ -199,11 +202,11 @@ All important additional data, as indicated by the `#` in the question_id, can b
 
  ![image-20211220153042098](_assets/image-20211220153042098.png){width=650}
 
-Closed questions, as indicated by the `*` in the question_id, are imported into the [closed questions table](#xthe-closed-question-blocks-table) and the [sources table](#xthe-sources-table) which you can apply the closed questions preset to.
+Closed questions, as indicated by the `*` in the question_id, are uploaded into the [closed questions table](#xthe-closed-question-blocks-table) and the [sources table](#xthe-sources-table) which you can apply the closed questions preset to.
 
 ![image-20211220161646312](_assets/image-20211220161646312.png){width=650}
 
-Plus, the question_code may end with the characters "rank" to mark "ranking organisation" data. [There may be a bug currently such that this data will also be imported only if they are not treated as statements, ie the code should not contain a `$`].
+Plus, the question_code may end with the characters "rank" to mark "ranking organisation" data. [There may be a bug currently such that this data will also be uploaded only if they are not treated as statements, ie the code should not contain a `$`].
 
 To upload the QuIP-style spreadsheet click on the purple upload button on the right-hand-side panel.
 

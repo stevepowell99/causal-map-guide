@@ -37,7 +37,7 @@ Set your map or table up the way you want it then put an (optional) title and pr
 
 Complete views replace the existing view and all the filters, included for example analysis filters which change the map itself, for example show only the most frequent links, or zoom out to the top level of a hierarchy. If you are looking at the Advanced Editor, you will see that the entire contents of the editor are replaced.
 
-"Add-on" views are are added after any other existing filters and do not replace them. So you can use them for example to add a particular kind of formatting, like making all the links pink, or to add one instruction, like "remove all links mentioned only once".
+"Add-on" views are added after any other existing filters and do not replace them. So you can use them for example to add a particular kind of formatting, like making all the links pink, or to add one instruction, like "remove all links mentioned only once".
 
 ![image-20220808114607154](_assets/image-20220808114607154.png){width=650}
 

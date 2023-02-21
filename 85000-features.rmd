@@ -33,11 +33,11 @@
 
 - Infinite versioning means you can restore any change made to a file from any timepoint. This isn't just backups, it is every single change
 
-- It is easier to import and manage your data
+- It is easier to upload and manage your data
 
-- You can import a standard-format Excel file into CM2, meaning you can download a file, edit it, and upload it again (this is called "[round-tripping](#xroundtripping)").  You can also include any additional fields or columns you want and they will be imported and available for searching, conditional formatting etc
+- You can upload a standard-format Excel file into CM2, meaning you can download a file, edit it, and upload it again (this is called "[round-tripping](#xroundtripping)").  You can also include any additional fields or columns you want and they will be uploaded and available for searching, conditional formatting etc
 
-- Build a map by importing any combination of tables or just some of them - factors, links, sources, questions and statements, in any order, at any time
+- Build a map by uploading any combination of tables or just some of them - factors, links, sources, questions and statements, in any order, at any time
 
 - All outputs transparently recreatable from the [filters](#advanced-editor)
 

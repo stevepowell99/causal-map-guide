@@ -1,15 +1,17 @@
-# Importing your data: special cases{#ximport-other}
+# Uploading your data: special cases{#ximport-other}
 
-## Importing from other software
+## Uploading from other software
 
 We are aware of the initiative to make qualitative coding software interoperable, [https://www.qdasoftware.org/products-project-exchange/](https://www.qdasoftware.org/products-project-exchange/). Causal Map has quite a different model and at the moment we don’t provide this, but would do if there is a lot of interest.
 
 You can always export all your data at any time using the Download button in the [top menu](#xtop-menu).
 
-### Exporting for import into kumu.io
+If you have existing causal coding in the form of an "edge-list" you can upload it [like this](#xlinks-only).
+
+### Exporting for upload into kumu.io
 
 tbc
 
-### Exporting for import into NodeXL
+### Exporting for upload into NodeXL
 
 tbc

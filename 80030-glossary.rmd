@@ -14,7 +14,7 @@
 | **Field** | Additional data associated with a statement such as respondent ID number, respondent age or question number. |
 | **hashtags** aka themes          | A recurring subject found within the factor labels i.e. farming or health. Often we use symbols like # to make sure that the hashtags are uniquely searchable. |
 | **Hierarchical coding** | Nested factors (see below) put factor labels in a hierarchy from more general to specific. [See more here.](#simplifying) |
-| **Hybrid format** | (Mostly used in QuIP/BSDR coding.) When importing data into Causal Map, a data table in hybrid format has some rows which are statements and some which are metadata. |
+| **Hybrid format** | (Mostly used in QuIP/BSDR coding.) When uploading data into Causal Map, a data table in hybrid format has some rows which are statements and some which are metadata. |
 | **Influence factor** | A causal factor at the beginning of the link, that affects another factor. |
 | **Mapfile**, **File** | When working in Causal Map, all your original data (the statements, source and question data) as well as the coding you have done (factors and links) are stored together in one file which we call a **mapfile**, or just **file**. |
 | **Memos**               | You can make short notes or memos on each statement, as well as about each causal link, each factor, each source, each question and the project globally. |

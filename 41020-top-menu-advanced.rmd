@@ -94,7 +94,7 @@ By clicking on the icon of two speech bubbles, a panel containing chat about the
 
 
 
-> Why did I make this version of that file? Is it different from version xzy? Did we already import those new statements into this version??
+> Why did I make this version of that file? Is it different from version xzy? Did we already upload those new statements into this version??
 
 This panel can help with these kinds of problems. You and your colleagues -- anyone else with access to the current file -- can type notes and updates about the file. These updates will be listed here sequentially. 
 

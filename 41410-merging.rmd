@@ -33,7 +33,7 @@ You want to merge files "foxtrot", "golf "and "hotel" into one. What you are goi
    scale links value=count:link_id
    color links value=unique: map_id lo=#ffaaaa mid=#aaffaa hi=#aaaaff`
 
-You can verify the number of imported links like this:
+You can verify the number of uploaded links like this:
 
 ![image-20220126195813048](_assets/image-20220126195813048.png)
 
@@ -41,7 +41,7 @@ You can verify the number of imported links like this:
 
 If you wish, you can [roundtrip](#xroundtripping) the file to add a column called, say, `original map` in the links table next to the column `map_id` which contains names rather than numbers to make it easier to remember what is what. In any case you can use the `map_id` (or `original_map`) fields to filter and/or format the map however you like.
 
-Alternatively you could first download the constituent files to Excel (roundtripping) and provide a column (with the same name, e.g. "original_file") in at least the statements tabs in all the constituent files, before merging. You can also do that for the links tab. You can do it for sources, questions and factors too, but the identifiers would get coalesced if there were duplicates (which there might be by design) with the first map winning. 
+Alternatively you could first download the constituent files to Excel (roundtripping) and provide a column (with the same name, e.g. "original_file") in at least the statements worksheets in all the constituent files, before merging. You can also do that for the links tab. You can do it for sources, questions and factors too, but the identifiers would get coalesced if there were duplicates (which there might be by design) with the first map winning. 
 
 ## Alternative method
 

@@ -38,13 +38,13 @@ These are the standard fields. You can add other custom fields too if you wish, 
 
 - `source_id`. A code which matches the field `source_id` in the `statements` table.
 - `source_memo`.  For making notes about a source as you code.
-- Any other fields which you have imported.
+- Any other fields which you have uploaded.
 
 ### Questions
 
 - `question_id`. A code which matches the field `question_id` in the `statements` table.
 - `question_memo`.  For making notes about a question as you code.
-- Any other fields which you have imported.
+- Any other fields which you have uploaded.
 
 ### Special case: Closed question blocks
 

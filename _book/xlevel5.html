@@ -28,7 +28,7 @@
 <meta name="author" content="Samuel Goddard" />
 
 
-<meta name="date" content="2023-02-16" />
+<meta name="date" content="2023-02-21" />
 
   <meta name="viewport" content="width=device-width, initial-scale=1" />
   <meta name="apple-mobile-web-app-capable" content="yes" />
@@ -315,8 +315,9 @@ code span.wa { color: #60a0b0; font-weight: bold; font-style: italic; } /* Warni
 <li class="chapter" data-level="" data-path="ximport.html"><a href="ximport.html#ximport2excel"><i class="fa fa-check"></i>🧪Uploading text documents including Word and PDFs</a></li>
 <li class="chapter" data-level="" data-path="ximport.html"><a href="ximport.html#xupload-standard-format"><i class="fa fa-check"></i>Uploading a standard format Excel file</a>
 <ul>
+<li class="chapter" data-level="" data-path="ximport.html"><a href="ximport.html#formattingyourfile"><i class="fa fa-check"></i>Formatting a Standard Format file</a></li>
 <li class="chapter" data-level="" data-path="ximport.html"><a href="ximport.html#pasting-data-from-a-word-document-into-excel"><i class="fa fa-check"></i>Pasting data from a Word document into Excel</a></li>
-<li class="chapter" data-level="" data-path="ximport.html"><a href="ximport.html#making-a-basic-statements-table-by-hand"><i class="fa fa-check"></i>Making a basic statements table by hand</a></li>
+<li class="chapter" data-level="" data-path="ximport.html"><a href="ximport.html#providing-additional-data-like-gender"><i class="fa fa-check"></i>Providing additional data like gender</a></li>
 </ul></li>
 <li class="chapter" data-level="" data-path="ximport.html"><a href="ximport.html#xupload-google"><i class="fa fa-check"></i>Uploading a wide-format Excel file</a>
 <ul>
@@ -325,10 +326,14 @@ code span.wa { color: #60a0b0; font-weight: bold; font-style: italic; } /* Warni
 <li class="chapter" data-level="" data-path="ximport.html"><a href="ximport.html#ximport-quip"><i class="fa fa-check"></i>Uploading a hybrid format Excel file</a></li>
 <li class="chapter" data-level="" data-path="ximport.html"><a href="ximport.html#xlinks-only"><i class="fa fa-check"></i>🧪Uploading existing causal coding (“links only”)</a></li>
 </ul></li>
-<li class="chapter" data-level="" data-path="import-additional-data.html"><a href="import-additional-data.html"><i class="fa fa-check"></i>Uploading additional data</a>
+<li class="chapter" data-level="" data-path="import-additional-data.html"><a href="import-additional-data.html"><i class="fa fa-check"></i>Uploading additional data like age, gender</a></li>
+<li class="chapter" data-level="" data-path="ximport-other.html"><a href="ximport-other.html"><i class="fa fa-check"></i>Uploading your data: special cases</a>
 <ul>
-<li class="chapter" data-level="" data-path="import-additional-data.html"><a href="import-additional-data.html#providing-additional-data-as-additional-fields-in-the-statements-table."><i class="fa fa-check"></i>Providing additional data as additional fields in the statements table.</a></li>
-<li class="chapter" data-level="" data-path="import-additional-data.html"><a href="import-additional-data.html#uploading-using-separate-source-and-question-tables"><i class="fa fa-check"></i>Uploading using separate source and question tables</a></li>
+<li class="chapter" data-level="" data-path="ximport-other.html"><a href="ximport-other.html#uploading-from-other-software"><i class="fa fa-check"></i>Uploading from other software</a>
+<ul>
+<li class="chapter" data-level="" data-path="ximport-other.html"><a href="ximport-other.html#exporting-for-upload-into-kumu.io"><i class="fa fa-check"></i>Exporting for upload into kumu.io</a></li>
+<li class="chapter" data-level="" data-path="ximport-other.html"><a href="ximport-other.html#exporting-for-upload-into-nodexl"><i class="fa fa-check"></i>Exporting for upload into NodeXL</a></li>
+</ul></li>
 </ul></li>
 <li class="chapter" data-level="" data-path="xroundtripping.html"><a href="xroundtripping.html"><i class="fa fa-check"></i>Appending and fixing data (“roundtripping”)</a>
 <ul>
@@ -336,14 +341,6 @@ code span.wa { color: #60a0b0; font-weight: bold; font-style: italic; } /* Warni
 <li class="chapter" data-level="" data-path="xroundtripping.html"><a href="xroundtripping.html#downloading-a-file"><i class="fa fa-check"></i>Downloading a file</a></li>
 <li class="chapter" data-level="" data-path="xroundtripping.html"><a href="xroundtripping.html#uses-for-roundtripping"><i class="fa fa-check"></i>Uses for roundtripping</a></li>
 <li class="chapter" data-level="" data-path="xroundtripping.html"><a href="xroundtripping.html#what-if-you-have-merged-cells-in-your-excel-file"><i class="fa fa-check"></i>What if you have merged cells in your Excel file?</a></li>
-</ul></li>
-<li class="chapter" data-level="" data-path="ximport-other.html"><a href="ximport-other.html"><i class="fa fa-check"></i>Importing your data: special cases</a>
-<ul>
-<li class="chapter" data-level="" data-path="ximport-other.html"><a href="ximport-other.html#importing-from-other-software"><i class="fa fa-check"></i>Importing from other software</a>
-<ul>
-<li class="chapter" data-level="" data-path="ximport-other.html"><a href="ximport-other.html#exporting-for-import-into-kumu.io"><i class="fa fa-check"></i>Exporting for import into kumu.io</a></li>
-<li class="chapter" data-level="" data-path="ximport-other.html"><a href="ximport-other.html#exporting-for-import-into-nodexl"><i class="fa fa-check"></i>Exporting for import into NodeXL</a></li>
-</ul></li>
 </ul></li>
 <li class="chapter" data-level="" data-path="xmerging-files.html"><a href="xmerging-files.html"><i class="fa fa-check"></i>Merging files</a>
 <ul>
@@ -893,10 +890,10 @@ code span.wa { color: #60a0b0; font-weight: bold; font-style: italic; } /* Warni
 </script>
 <div id="xlevel5" class="section level1 hasAnchor">
 <h1>Level 5 overview<a href="xlevel5.html#xlevel5" class="anchor-section" aria-label="Anchor link to header"></a></h1>
-<p>To whet your appetite for some advanced analysis, <a href="https://causalmap.app/gallery">here</a> are some of the variety of maps you can create with Causal Map.</p>
+<p>To whet your appetite for some advanced analysis, <a href="xdashboard-a.html#xdashboard-a">here</a> are some of the variety of maps you can create with Causal Map.</p>
 <p>In the pages in this section you will learn how to do advanced analysis in Causal Map:</p>
 <ul>
-<li>using the filter buttons</li>
+<li><a href="filters-overview.html#xapplyingfilters">using the filter buttons</a></li>
 <li>using the advanced editor</li>
 <li>and lots more.</li>
 </ul>

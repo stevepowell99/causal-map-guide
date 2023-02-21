@@ -2,7 +2,7 @@
 
 ![image-20230128222927014](_assets/image-20230128222927014.png){width=650}
 
-Is your data all imported correctly? Does it all make sense? Try the Data Manager tab.
+Is your data all uploaded correctly? Does it all make sense? Try the Data Manager tab.
 
 ![image-20230127183738241](_assets/image-20230127183738241.png)
 

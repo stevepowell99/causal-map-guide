@@ -28,7 +28,7 @@
 <meta name="author" content="Samuel Goddard" />
 
 
-<meta name="date" content="2023-02-16" />
+<meta name="date" content="2023-02-21" />
 
   <meta name="viewport" content="width=device-width, initial-scale=1" />
   <meta name="apple-mobile-web-app-capable" content="yes" />
@@ -315,8 +315,9 @@ code span.wa { color: #60a0b0; font-weight: bold; font-style: italic; } /* Warni
 <li class="chapter" data-level="" data-path="ximport.html"><a href="ximport.html#ximport2excel"><i class="fa fa-check"></i>🧪Uploading text documents including Word and PDFs</a></li>
 <li class="chapter" data-level="" data-path="ximport.html"><a href="ximport.html#xupload-standard-format"><i class="fa fa-check"></i>Uploading a standard format Excel file</a>
 <ul>
+<li class="chapter" data-level="" data-path="ximport.html"><a href="ximport.html#formattingyourfile"><i class="fa fa-check"></i>Formatting a Standard Format file</a></li>
 <li class="chapter" data-level="" data-path="ximport.html"><a href="ximport.html#pasting-data-from-a-word-document-into-excel"><i class="fa fa-check"></i>Pasting data from a Word document into Excel</a></li>
-<li class="chapter" data-level="" data-path="ximport.html"><a href="ximport.html#making-a-basic-statements-table-by-hand"><i class="fa fa-check"></i>Making a basic statements table by hand</a></li>
+<li class="chapter" data-level="" data-path="ximport.html"><a href="ximport.html#providing-additional-data-like-gender"><i class="fa fa-check"></i>Providing additional data like gender</a></li>
 </ul></li>
 <li class="chapter" data-level="" data-path="ximport.html"><a href="ximport.html#xupload-google"><i class="fa fa-check"></i>Uploading a wide-format Excel file</a>
 <ul>
@@ -325,10 +326,14 @@ code span.wa { color: #60a0b0; font-weight: bold; font-style: italic; } /* Warni
 <li class="chapter" data-level="" data-path="ximport.html"><a href="ximport.html#ximport-quip"><i class="fa fa-check"></i>Uploading a hybrid format Excel file</a></li>
 <li class="chapter" data-level="" data-path="ximport.html"><a href="ximport.html#xlinks-only"><i class="fa fa-check"></i>🧪Uploading existing causal coding (“links only”)</a></li>
 </ul></li>
-<li class="chapter" data-level="" data-path="import-additional-data.html"><a href="import-additional-data.html"><i class="fa fa-check"></i>Uploading additional data</a>
+<li class="chapter" data-level="" data-path="import-additional-data.html"><a href="import-additional-data.html"><i class="fa fa-check"></i>Uploading additional data like age, gender</a></li>
+<li class="chapter" data-level="" data-path="ximport-other.html"><a href="ximport-other.html"><i class="fa fa-check"></i>Uploading your data: special cases</a>
 <ul>
-<li class="chapter" data-level="" data-path="import-additional-data.html"><a href="import-additional-data.html#providing-additional-data-as-additional-fields-in-the-statements-table."><i class="fa fa-check"></i>Providing additional data as additional fields in the statements table.</a></li>
-<li class="chapter" data-level="" data-path="import-additional-data.html"><a href="import-additional-data.html#uploading-using-separate-source-and-question-tables"><i class="fa fa-check"></i>Uploading using separate source and question tables</a></li>
+<li class="chapter" data-level="" data-path="ximport-other.html"><a href="ximport-other.html#uploading-from-other-software"><i class="fa fa-check"></i>Uploading from other software</a>
+<ul>
+<li class="chapter" data-level="" data-path="ximport-other.html"><a href="ximport-other.html#exporting-for-upload-into-kumu.io"><i class="fa fa-check"></i>Exporting for upload into kumu.io</a></li>
+<li class="chapter" data-level="" data-path="ximport-other.html"><a href="ximport-other.html#exporting-for-upload-into-nodexl"><i class="fa fa-check"></i>Exporting for upload into NodeXL</a></li>
+</ul></li>
 </ul></li>
 <li class="chapter" data-level="" data-path="xroundtripping.html"><a href="xroundtripping.html"><i class="fa fa-check"></i>Appending and fixing data (“roundtripping”)</a>
 <ul>
@@ -336,14 +341,6 @@ code span.wa { color: #60a0b0; font-weight: bold; font-style: italic; } /* Warni
 <li class="chapter" data-level="" data-path="xroundtripping.html"><a href="xroundtripping.html#downloading-a-file"><i class="fa fa-check"></i>Downloading a file</a></li>
 <li class="chapter" data-level="" data-path="xroundtripping.html"><a href="xroundtripping.html#uses-for-roundtripping"><i class="fa fa-check"></i>Uses for roundtripping</a></li>
 <li class="chapter" data-level="" data-path="xroundtripping.html"><a href="xroundtripping.html#what-if-you-have-merged-cells-in-your-excel-file"><i class="fa fa-check"></i>What if you have merged cells in your Excel file?</a></li>
-</ul></li>
-<li class="chapter" data-level="" data-path="ximport-other.html"><a href="ximport-other.html"><i class="fa fa-check"></i>Importing your data: special cases</a>
-<ul>
-<li class="chapter" data-level="" data-path="ximport-other.html"><a href="ximport-other.html#importing-from-other-software"><i class="fa fa-check"></i>Importing from other software</a>
-<ul>
-<li class="chapter" data-level="" data-path="ximport-other.html"><a href="ximport-other.html#exporting-for-import-into-kumu.io"><i class="fa fa-check"></i>Exporting for import into kumu.io</a></li>
-<li class="chapter" data-level="" data-path="ximport-other.html"><a href="ximport-other.html#exporting-for-import-into-nodexl"><i class="fa fa-check"></i>Exporting for import into NodeXL</a></li>
-</ul></li>
 </ul></li>
 <li class="chapter" data-level="" data-path="xmerging-files.html"><a href="xmerging-files.html"><i class="fa fa-check"></i>Merging files</a>
 <ul>
@@ -897,15 +894,15 @@ code span.wa { color: #60a0b0; font-weight: bold; font-style: italic; } /* Warni
 <p>Currently, you can work with 5 different types of formats in the Causal Map App, they are:</p>
 <ol style="list-style-type: decimal">
 <li><a href="ximport.html#ximport2excel">Text documents</a>: you can upload multiple text files, doc, docx, or pdf files.</li>
-<li><a href="ximport.html#xupload-standard-format">Standard format Excel</a>: An Excel file with one worksheet called <code>statements</code> with one row per statement and optionally other worksheets for <code>sources</code> etc.</li>
-<li><a href="ximport.html#xupload-google">Wide format Excel</a>: An Excel file with one worksheet containing row for each source, one column for each question. e.g. data from Google Forms.</li>
-<li><a href="ximport.html#ximport-quip">Hybrid format Excel</a>: An Excel file with one worksheet containing one row for each answer and includes the statements as one kind of answer but also includes rows for additional data like gender.</li>
-<li><a href="ximport.html#xlinks-only">Links-only Excel</a>: An Excel file with just one worksheet called <code>links</code> with just the columns <code>from_label</code> and <code>to_label</code>. When you want to analyse causal links from elsewhere.</li>
+<li><a href="ximport.html#xupload-standard-format">Standard format Excel</a>: an Excel file with one worksheet called <code>statements</code> with one row per statement and optionally other worksheets for <code>sources</code> etc.</li>
+<li><a href="ximport.html#xupload-google">Wide format Excel</a>: an Excel file with one worksheet containing row for each source, one column for each question. e.g. data from Google Forms.</li>
+<li><a href="ximport.html#ximport-quip">Hybrid format Excel</a>: an Excel file with one worksheet containing one row for each answer and includes the statements as one kind of answer but also includes rows for additional data like gender.</li>
+<li><a href="ximport.html#xlinks-only">Links-only Excel</a>: an Excel file with just one worksheet called <code>links</code> with just the columns <code>from_label</code> and <code>to_label</code>. When you want to analyse causal links from elsewhere.</li>
 </ol>
 <div id="ximport2excel" class="section level2 hasAnchor">
 <h2>🧪Uploading text documents including Word and PDFs<a href="#ximport2excel" class="anchor-section" aria-label="Anchor link to header"></a></h2>
 <p>If your data is in the form of several word processing documents like Word .docx or .odt, or plain text documents or even PDFs, you don’t need to bother with Excel files, you can just upload your text files directly.</p>
-<p>Preparing your files: If you wish, in your doc, docx and text files you can separate text into statements by inserting lines containing just <code>--</code> (that is two hyphen characters together) where you want to separate statements, like this.</p>
+<p>Preparing your files: If you wish, in your doc, docx and text files, you can separate text into statements by inserting lines containing just <code>--</code> (that is two hyphen characters together) where you want to separate statements, like this.</p>
 <div class="figure">
 <img src="_assets/image-20230216082039612.png" alt="" />
 <p class="caption">image-20230216082039612</p>
@@ -923,9 +920,9 @@ code span.wa { color: #60a0b0; font-weight: bold; font-style: italic; } /* Warni
 </ul>
 <p>You don’t need to do this for every statement, only where the question_id or respondent_id <em>changes</em>. So add it for every new question and/or every new respondent.</p>
 <p>Wait, you say, what’s a respondent? Well we already have <code>source_id</code> which is the name of the document. Usually you will have one document for one respondent, so you won’t need respondent_id. You will usually only want to use <code>respondent_id</code> when your respondents change within one document, for example in a focus group transcript.</p>
-<p>Uploading like this does not retain information about page numbers in PDFs. If you need to get the page numbers of each statement when importing PDFs, try <a href="https://causalmap.shinyapps.io/pdf2excel/">another free utility</a> (Tool 2) which imports PDFs only but does provide page numbers as an additional column.</p>
-<div id="problems-importing-pdfs" class="section level4 hasAnchor">
-<h4>Problems importing PDFS?<a href="ximport.html#problems-importing-pdfs" class="anchor-section" aria-label="Anchor link to header"></a></h4>
+<p>Uploading like this does not retain information about page numbers in PDFs. If you need to get the page numbers of each statement when uploading PDFs, try <a href="https://causalmap.shinyapps.io/pdf2excel/">another free utility</a> (Tool 2) which uploads PDFs only but does provide page numbers as an additional column.</p>
+<div id="problems-uploading-pdfs" class="section level4 hasAnchor">
+<h4>Problems uploading PDFS?<a href="ximport.html#problems-uploading-pdfs" class="anchor-section" aria-label="Anchor link to header"></a></h4>
 <p>This upload option may miss text in PDFs which is in boxes and columns. As an alternative you can export a PDF to Excel (one by one) <a href="https://www.adobe.com/uk/acrobat/online/pdf-to-excel.html">here</a>. The resulting file is also full of pictures etc but does seem to contain all of the text, although in many columns. 80% of the time it identifies suitably large chunks of text, but sometimes you get very small fragments.</p>
 <p>We provide another our <a href="https://causalmap.shinyapps.io/pdf2excel/">free utility</a> (Tool 3) which batch converts any number of these Adobe Excel files into an Excel file which you can then upload to Causal Map.</p>
 </div>
@@ -938,26 +935,17 @@ code span.wa { color: #60a0b0; font-weight: bold; font-style: italic; } /* Warni
 <iframe src="https://player.vimeo.com/video/637121851" width="672" height="400px" data-external="1">
 </iframe>
 <p>You might find it easier to start from the <a href="https://docs.google.com/spreadsheets/d/126fAfkJSbUXkqHp_OkE3af2vdxhMjRy-/edit?usp=sharing&amp;ouid=106533500876964660468&amp;rtpof=true&amp;sd=true">Excel template</a>.</p>
-<p>The app will import any worksheets in your file called “statements” (required), “sources” (optional) or “questions” (optional), and also, if you need them “factors” and “links” and will ignore other worksheets.</p>
-<div id="formattingyourfile" class="section level4 hasAnchor">
-<h4>Formatting a Standard Format file: The basics<a href="ximport.html#formattingyourfile" class="anchor-section" aria-label="Anchor link to header"></a></h4>
+<p>The app will upload any worksheets in your file called “statements” (required), “sources” (optional) or “questions” (optional), and also, if you need them “factors” and “links”; the app will ignore other worksheets.</p>
+<div id="formattingyourfile" class="section level3 hasAnchor">
+<h3>Formatting a Standard Format file<a href="ximport.html#formattingyourfile" class="anchor-section" aria-label="Anchor link to header"></a></h3>
 <iframe src="https://player.vimeo.com/video/604138709" width="672" height="400px" data-external="1">
 </iframe>
-<p>When uploading data for coding the only data you <strong>need</strong> to upload to the app is a table of statements as an xlsx file. Your file must have a header row with the names of the fields; the name of the column with the actual responses must be <code>text</code>.</p>
-<p>All work names and column names should be lower-case.</p>
+<p>When uploading data for coding the only data you <strong>need</strong> to upload to the app is an xlsx file with a worksheet called <code>statements</code>. Your worksheet must have a header row with the names of the columns; the only required column, which contains the actual responses for coding, must be called <code>text</code>.</p>
+<p>Each cell in the <code>text</code> column contains one “statement” - a chunk of text usually one or two paragraphs long. The optional other cells in the same row give you more information about that</p>
+<p>All worksheet names and column names should be lower-case.</p>
 <div class="figure">
 <img src="_assets/image-20211012141450834.png" width="650" alt="" />
 <p class="caption">image-20211012141450834</p>
-</div>
-<p>Additionally (optionally), you will usually have a column in the statements table called <code>source_id</code> and a corresponding tab called <code>sources</code> with at least one column called <code>source_id</code> containing each source id, with one row for each source, and additional columns giving more information about your sources.</p>
-<div class="figure">
-<img src="_assets/image-20211012141409487.png" width="650" alt="" />
-<p class="caption">image-20211012141409487</p>
-</div>
-<p>Additionally (optionally), you may have a column in the statements table called <code>question_id</code> . If you want, this question_id can already include the question text, e.g. “q1: tell us about your life”. But usually it is more convenient to just use a code like “q1” and also include a corresponding tab in your Excel file called <code>questions</code> with at least one column called <code>question_id</code> with corresponding values, and an additional column <code>question_text</code> with the full text, as well as any other information about your questions, e.g. domain or questionnaire section.</p>
-<div class="figure">
-<img src="_assets/image-20211012141342985.png" width="650" alt="" />
-<p class="caption">image-20211012141342985</p>
 </div>
 </div>
 <div id="pasting-data-from-a-word-document-into-excel" class="section level3 hasAnchor">
@@ -974,27 +962,39 @@ code span.wa { color: #60a0b0; font-weight: bold; font-style: italic; } /* Warni
 </ul>
 <p>The statements are the texts which appear one by one, for you to read and code. Each statement is one row in your file.</p>
 <p><img src="_assets/image-20211018160023515.png" width="650" /></p>
-<p>If you want to import interviews which are several pages each, you should break each interview into several statements. Ideally a statement consists of between one and five paragraphs – enough to fit on the left-hand side panel when it is displayed there. Usually your text breaks up naturally into sections, for example the interviews might be responses to a number of questions, so your statements might consist of one or a few paragraphs for each question.</p>
-<p>We strongly recommend that you don’t try to import statements which are longer than 500 words, as it is harder to code very long statements.</p>
+<p>If you want to upload interviews which are several pages each, you should break each interview into several statements. Ideally a statement consists of between one and five paragraphs – enough to fit on the left-hand side panel when it is displayed there. Usually your text breaks up naturally into sections, for example the interviews might be responses to a number of questions, so your statements might consist of one or a few paragraphs for each question.</p>
+<p>We strongly recommend that you don’t try to upload statements which are longer than 500 words, as it is harder to code very long statements.</p>
 <p>Your statements file must have at least one column with the text of the statements and the header for this column must be “text.” Other columns will be treated as additional data.</p>
 </div>
-<div id="making-a-basic-statements-table-by-hand" class="section level3 hasAnchor">
-<h3>Making a basic statements table by hand<a href="ximport.html#making-a-basic-statements-table-by-hand" class="anchor-section" aria-label="Anchor link to header"></a></h3>
-<p>If you want to import longer documents which are several pages each, you should break each document into many chunks or “statements”. Ideally a statement consists of between one and five paragraphs – enough to fit on the left-hand side of the Code &amp; View tab when it is displayed there.</p>
-<p>Make a fresh spreadsheet file in Excel (or LibreOffice Calc or similar)</p>
-<ul>
-<li>Type the word “text” as column header in cell A1.</li>
-<li>Select cell A2</li>
-<li>Paste your text below in the A column, with between 1 sentence and 9 paragraphs in each cell. Note that if you want several paragraphs together in one cell, be careful when pasting.</li>
-<li>Check the statements are the way you want them. You can ignore any formatting, pictures etc which might also have been pasted in because these will disappear in the next step.</li>
-<li>Just the column “text” is enough, but optionally use the other columns for other metadata you might need, like this:</li>
-</ul>
-<div class="figure">
-<img src="_assets/image-20210930112731572.png" alt="" />
-<p class="caption">image-20210930112731572</p>
+<div id="providing-additional-data-like-gender" class="section level3 hasAnchor">
+<h3>Providing additional data like gender<a href="ximport.html#providing-additional-data-like-gender" class="anchor-section" aria-label="Anchor link to header"></a></h3>
+<div id="providing-additional-data-as-additional-columns-in-the-statements-table." class="section level4 hasAnchor">
+<h4>Providing additional data as additional columns in the statements table.<a href="ximport.html#providing-additional-data-as-additional-columns-in-the-statements-table." class="anchor-section" aria-label="Anchor link to header"></a></h4>
+<p>If you want, you can provide additional data like gender <strong>as additional columns in your statements table</strong> when you upload your data. You might want to do that if your data is already structured in this way. However, this means that you have to repeat a lot of data, as you will need to provide, for example, the gender and age etc of each respondent for every single statement they made. It is <strong>usually better to upload additional data about your sources (and questions) using separate tables, as in the next section</strong>.</p>
+<p>Just remember that if you do provide additional columns like gender in the statements table, the app understands only text and numerical fields so it will treat dates and currency as ordinary numbers.</p>
 </div>
-<p>The statements are the texts which appear one by one in the left-hand panel, for you to read and code. Each statement is one row in your file.</p>
-<p>The (optional) column <code>source_id</code> is special, because it gives you an easy way to provide additional information about each source (e.g. year and country of publication) rather than having to copy this information into your this main statements file.</p>
+<div id="uploading-information-about-sources-using-a-separate-source-table" class="section level4 hasAnchor">
+<h4>Uploading information about sources using a separate source table<a href="ximport.html#uploading-information-about-sources-using-a-separate-source-table" class="anchor-section" aria-label="Anchor link to header"></a></h4>
+<p>Often it isn’t convenient to provide all the data in one table.</p>
+<p>So in your statements table, additionally (optionally), as well as your <code>text</code> column you will usually have a column in the statements table called <code>source_id</code> and a corresponding tab called <code>sources</code> with at least one column called <code>source_id</code> containing each source id, with one row for each source, and additional columns giving more information about your sources.</p>
+<div class="figure">
+<img src="_assets/image-20211012141409487.png" width="650" alt="" />
+<p class="caption">image-20211012141409487</p>
+</div>
+<p>The app then merges the new information from the sources table so it is also available in <a href="xthe-statements-table.html#xthe-statements-table">the statements</a> table and elsewhere.</p>
+<div class="figure">
+<img src="_assets/image-20211019115631991-1676972414995-4.png" alt="" />
+<p class="caption">image-20211019115631991</p>
+</div>
+</div>
+<div id="uploading-information-about-questions-using-a-separate-questions-table" class="section level4 hasAnchor">
+<h4>Uploading information about questions using a separate questions table<a href="ximport.html#uploading-information-about-questions-using-a-separate-questions-table" class="anchor-section" aria-label="Anchor link to header"></a></h4>
+<p>Additionally (optionally), you may have a column in the statements table called <code>question_id</code> . If you want, this question_id can already include the question text, e.g. “q1: tell us about your life”. But usually it is more convenient to just use a code like “q1” and also include a corresponding tab in your Excel file called <code>questions</code> with at least one column called <code>question_id</code> with corresponding values, and an additional column <code>question_text</code> with the full text, as well as any other information about your questions, e.g. domain or questionnaire section.</p>
+<div class="figure">
+<img src="_assets/image-20211012141342985.png" width="650" alt="" />
+<p class="caption">image-20211012141342985</p>
+</div>
+</div>
 </div>
 </div>
 <div id="xupload-google" class="section level2 hasAnchor">
@@ -1022,11 +1022,11 @@ code span.wa { color: #60a0b0; font-weight: bold; font-style: italic; } /* Warni
 <h2>Uploading a hybrid format Excel file<a href="ximport.html#ximport-quip" class="anchor-section" aria-label="Anchor link to header"></a></h2>
 <iframe src="https://player.vimeo.com/video/664879474" width="672" height="400px" data-external="1">
 </iframe>
-<p>This section is specifically about importing from a QuIP-style spreadsheet.</p>
+<p>This section is specifically about uploading from a QuIP-style spreadsheet.</p>
 <p><a href="https://docs.google.com/spreadsheets/d/1Er6m9XpkP4WcszaiLbmv_xFsc7V1d8H5/edit?usp=sharing&amp;ouid=106533500876964660468&amp;rtpof=true&amp;sd=true">Here</a> is an example file.</p>
-<p>This format has many rows, one for each answer, and includes the statements as one kind of answer; you can import statements and additional data from the same fieldwork file. The main differences to a normal import are:</p>
+<p>This format has many rows, one for each answer, and includes the statements as one kind of answer; you can upload statements and additional data from the same fieldwork file. The main differences to a normal upload are:</p>
 <ul>
-<li>Rows whose question code does not include a “$” will be imported only as additional data, not as statements.</li>
+<li>Rows whose question code does not include a “$” will be uploaded only as additional data, not as statements.</li>
 <li>A new question ID will be constructed from the question code together with the question text.</li>
 </ul>
 <p>Your xslx file must have just four columns, with column headers in this order:</p>
@@ -1052,12 +1052,12 @@ code span.wa { color: #60a0b0; font-weight: bold; font-style: italic; } /* Warni
 <img src="_assets/image-20211220153042098.png" width="650" alt="" />
 <p class="caption">image-20211220153042098</p>
 </div>
-<p>Closed questions, as indicated by the <code>*</code> in the question_id, are imported into the <a href="#xthe-closed-question-blocks-table">closed questions table</a> and the <a href="xthe-sources-table.html#xthe-sources-table">sources table</a> which you can apply the closed questions preset to.</p>
+<p>Closed questions, as indicated by the <code>*</code> in the question_id, are uploaded into the <a href="#xthe-closed-question-blocks-table">closed questions table</a> and the <a href="xthe-sources-table.html#xthe-sources-table">sources table</a> which you can apply the closed questions preset to.</p>
 <div class="figure">
 <img src="_assets/image-20211220161646312.png" width="650" alt="" />
 <p class="caption">image-20211220161646312</p>
 </div>
-<p>Plus, the question_code may end with the characters “rank” to mark “ranking organisation” data. [There may be a bug currently such that this data will also be imported only if they are not treated as statements, ie the code should not contain a <code>$</code>].</p>
+<p>Plus, the question_code may end with the characters “rank” to mark “ranking organisation” data. [There may be a bug currently such that this data will also be uploaded only if they are not treated as statements, ie the code should not contain a <code>$</code>].</p>
 <p>To upload the QuIP-style spreadsheet click on the purple upload button on the right-hand-side panel.</p>
 <div class="figure">
 <img src="_assets/chrome_c4eNUSYcjH.png" alt="" />
