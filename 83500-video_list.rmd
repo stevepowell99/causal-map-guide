@@ -6,6 +6,10 @@ knitr::include_url("https://player.vimeo.com/video/689223728")
 ```
 
 ```{r,echo=F}
+knitr::include_url("https://www.youtube.com/embed/S2acbJJ9t7E")
+```
+
+```{r,echo=F}
 knitr::include_url("https://www.youtube.com/embed/6DBzadDMXew")
 ```
 

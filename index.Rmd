@@ -61,7 +61,12 @@ Features marked 🧪are experimental and are implemented on the [test server](ht
 
 ## Videos
 
-Check out our growing library of [short, focussed training videos](#xvideo-list), none longer than four minutes!
+```{r,echo=F}
+knitr::include_url("https://www.youtube.com/embed/S2acbJJ9t7E")
+```
+
+Also check out our growing library of [short, focussed training videos](#xvideo-list), none longer than four minutes!
+
 
 ## Support chat
 
