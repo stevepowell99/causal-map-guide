@@ -30,8 +30,8 @@ Please see our T&Cs at https://causalmap.app/terms-and-conditions-for-the-causal
 If you have created any files which you want to delete, you can delete them using the green file sharing / file management button at the top left of the app.
 If you have a recurring subscription, you can cancel it from the Account tab in the app.
 
-///How do I import and export maps from Causal Map 2?
-You can download your map from Causal Map 2 as an Excel file, tweak it and then upload it Causal Map 2.
+///How do I import and export maps from Causal Map?
+You can download your map from Causal Map as an Excel file, tweak it and then upload it Causal Map.
 
 ///I have done something wrong, how do I know which version of my mapfile to restore?
 The Versions dropdown shows you the filesize, so you can see where the file got larger or smaller. Also, have a look in the Updates tab. You can't actually restore the file from here but you can maybe guess which one you want by looking at the number of factors, the last coded statement etc.

@@ -163,7 +163,7 @@ knitr::include_url("https://player.vimeo.com/video/664879474")
 
 ```
 
-This section is specifically about uploading from a QuIP-style spreadsheet. 
+This section is specifically about uploading from a hybrid-style spreadsheet. This format is sometimes used with QuIP studies.
 
 [Here](https://docs.google.com/spreadsheets/d/1Er6m9XpkP4WcszaiLbmv_xFsc7V1d8H5/edit?usp=sharing&ouid=106533500876964660468&rtpof=true&sd=true ) is an example file.
 
@@ -208,20 +208,18 @@ Closed questions, as indicated by the `*` in the question_id, are uploaded into 
 
 Plus, the question_code may end with the characters "rank" to mark "ranking organisation" data. [There may be a bug currently such that this data will also be uploaded only if they are not treated as statements, ie the code should not contain a `$`].
 
-To upload the QuIP-style spreadsheet click on the purple upload button on the right-hand-side panel.
-
-![chrome_c4eNUSYcjH](_assets/chrome_c4eNUSYcjH.png)
+To upload the hybrid-style spreadsheet click on the upload button on the right-hand-side panel and use the 'hybrid' option.
 
 #### *Appending* hybrid data
 
-Suppose you uploaded hybrid data from file F, and already did some coding, then you receive more data in file G, also in hybrid format.
+Suppose you uploaded hybrid data from Excel spreadsheet F, and already did some coding, then you receive more data in spreadsheet G, also in hybrid format.
 
-Find the original file F on your computer (don' t download from the app!). Paste the data from file G below the existing data in file F, save it as file H, and upload this again. Your existing coding should not be affected; the links and factors you already created will remain.
+Find the original spreadsheet F on your computer (don' t download from the app!). Paste the data from spreadsheet G below the existing data in spreadsheet F, save it as spreadsheet H, and upload this again. Your existing coding should not be affected; the links and factors you already created will remain.
 
 Caveat: you can't combine roundtripping and appending hybrid data. If you have tweaked or added to your data from file F by roundtripping (downloading the data from the app then uploading again), any changes to statements, sources or questions will be lost if you later try to append data using this hybrid button. So if you need to tweak your data (statements, sources or questions), either:
 
 - wait until you have completed uploading using the hybrid button and only then tweak with roundtripping
-- or, manually tweak the old and new data in file H.
+- or, manually tweak the old and new data in spreadsheet H.
 
 
 

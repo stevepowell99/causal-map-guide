@@ -6,7 +6,7 @@ The factors table presents the factors applied during coding. There are columns 
 - `in_degree` (how many links come in to this factor?)
 - `out_degree` (how many links come out of this factor?)
 
-This table is an overview which can help us to understand which factors are reported most frequently, and to view and understand metadata like memos. As usual, this table responds to any filters you have applied on the left-hand side and can be additionally sorted and filtered.
+This table is an overview which can help us to understand which factors are reported most frequently, and to view and understand metadata like [memos](#xmemos). As usual, this table responds to any filters you have applied on the left-hand side and can be additionally sorted and filtered.
 
 The factors table has two presets:
 

@@ -10,7 +10,7 @@ The Factor Editor is a great way to:
 Use the Split checkbox to edit only the factors you can see in the map as currently filtered, and leave untouched any other instances of the same factors in the rest of the map. 
 
 Use the sidebar to: 
-  - see and edit your factor memos 
+  - see and edit your factor [memos](#xmemos) 
   - see and edit every link to and from each factor
 
 
@@ -103,7 +103,7 @@ The factor editor also has a sidebar, which shows more details for the factor cu
   - focus on the factor
   - delete the factor)
 
-- The memo, if there is one (click on it to edit or add a memo)
+- The [memo](#xmemos), if there is one (click on it to edit or add a memo)
 
 - Lists of influence and consequence factors, with source and statement ids
   - When hovering over the influence or consequence factors, see the whole original text from the corresponding statement

@@ -10,7 +10,7 @@ Zoom your browser out so everything fits on your screen. Try pressing Ctrl 0 or 
 
 Don't forget you can get more space while coding by pressing the little resize arrow at the top between left and right panels.
 
-Don't forget you can see additional information about each statement, and make memos on the statement or the source by clicking the info toggle. ![image-20211220153222953](_assets/image-20211220153222953.png)
+Don't forget you can see additional information about each statement, and make [memos](#xmemos) on the statement or the source by clicking the info toggle. ![image-20211220153222953](_assets/image-20211220153222953.png)
 
 Normally you'll want to keep the Filters panel closed because it takes space.
 

@@ -21,7 +21,7 @@ You can:
 - Hover over factors to display basic information about them and delete them from the entire map.
 - Hover over links to see the associated quote and other information.
 - Click on links to edit or delete them.
-- Click on factors to focus on them, trace paths from/to them, edit their memo, or delete them.
+- Click on factors to focus on them, trace paths from/to them, edit their [memo](#xmemos), or delete them.
 
 
 ![image-20211001175928850](_assets/focus.gif){width=650}

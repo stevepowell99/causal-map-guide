@@ -12,7 +12,7 @@ Click on the link you want to change in the [interactive view](#xinteractive-vie
 
 **Editing factors in the interactive tab**
 
-To edit your factor labels in the [interactive view](#xinteractive-view), just click on the factor and then ‘edit factor’ to open the edit panel. Using this panel you can change the text of the individual factor or add a memo.
+To edit your factor labels in the [interactive view](#xinteractive-view), just click on the factor and then ‘edit factor’ to open the edit panel. Using this panel you can change the text of the individual factor or add a [memo](#xmemos).
 
 ![image-20220809103154241](_assets/image-20220809103154241.png){width=650}
 

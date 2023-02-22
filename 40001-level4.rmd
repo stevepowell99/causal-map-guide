@@ -2,7 +2,7 @@
 
 In the pages in this section you will learn how to do advanced coding in Causal Map: 
 
-- using memos 
+- using [memos](#xmemos) 
 - speeding up your work
 - using the Factor Editor
 - and lots more.

@@ -1,6 +1,8 @@
 # Memos in Causal Map{#xmemos}
 
-Using memos is an important part of qualitative data analysis.
+Using memos is an important part of qualitative data analysis as qualitative coding usually involves making notes and memos; you can do this in Causal Map too.
+
+In qualitative research, memos are used as short notes about the researchers' thoughts, reflections and ideas during data collection, coding and analysis. So you can use the memos in Causal Map as internal comments to help your research.
 
 In Causal Map, you can create, view and edit memos for just about everything:
 

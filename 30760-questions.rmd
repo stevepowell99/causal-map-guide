@@ -1,6 +1,6 @@
 # The Questions Table{#xthe-questions-table}
 
-This table displays the text, ID, memo and map id for every question included in the questionnaire. 
+This table displays the text, ID, [memo](#xmemos) and map id for every question included in the questionnaire. 
 
 This table has one preset:
 

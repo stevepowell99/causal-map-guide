@@ -218,7 +218,7 @@ The Gallery contains the history of all the filters you used in the current sess
 
 The [Factor Editor Sidebar](xfactor-editor-sidebar) has added functionality
 
-- view and edit factor memos
+- view and edit factor [memos](#xmemos)
 - when hovering over influence or consequence factors, see entire statement text, and click to edit the links
 
 [Print view for tables](xprint-view-tables): If you want printable quotes for your report, there is now a table preset for that. Or go manually to the links table, click the 🖨️ button to display Print View, and choose the columns you want. They will be shown in the Print View in the same order. Then just copy and paste using the "Copy" button.
