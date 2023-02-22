@@ -99,4 +99,12 @@ readLines("Guide-to-causal-mapping.Rmd") %>%
   c("# Video list{#xvideo-list}\n\nThese videos are all included at different points in the Guide. If you love videos, here they are again in one place. Feel free to binge. Tip: if you play a video, you can press 'Picture in picture' and then switch to the app, and you can follow (and even resize) the video.",.) %>% 
   writeLines("83500-video_list.rmd")
 
+
+readLines("faq.txt") %>%
+  str_replace_all("(///.*)","\\1</summary>\n") %>% 
+  str_replace_all("///","</details>\n<details><summary>") %>% 
+  c("</details>") %>% 
+  paste0(collapse="\n") %>% 
+  paste0("# FAQs\n\n## Logging in\n\n<!--DO NOT TRY TO EDIT THIS TEXT, EDIT FAQ.TXT INSTEAD-->",.) %>%
+  writeLines("80021-faq.rmd")
 ```
