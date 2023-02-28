@@ -28,7 +28,7 @@
 <meta name="author" content="Samuel Goddard" />
 
 
-<meta name="date" content="2023-02-22" />
+<meta name="date" content="2023-02-28" />
 
   <meta name="viewport" content="width=device-width, initial-scale=1" />
   <meta name="apple-mobile-web-app-capable" content="yes" />
@@ -272,7 +272,7 @@ code span.wa { color: #60a0b0; font-weight: bold; font-style: italic; } /* Warni
 <li class="chapter" data-level="" data-path="xthe-sources-table.html"><a href="xthe-sources-table.html#fields-2"><i class="fa fa-check"></i>Fields</a></li>
 </ul></li>
 <li class="chapter" data-level="" data-path="xthe-questions-table.html"><a href="xthe-questions-table.html"><i class="fa fa-check"></i>The Questions Table</a></li>
-<li class="chapter" data-level="" data-path="the-closed-question-blocks-table.html"><a href="the-closed-question-blocks-table.html"><i class="fa fa-check"></i>The Closed Question Blocks Table</a></li>
+<li class="chapter" data-level="" data-path="xclosed-table.html"><a href="xclosed-table.html"><i class="fa fa-check"></i>The Closed Question Blocks Table</a></li>
 <li class="chapter" data-level="" data-path="xmetrics.html"><a href="xmetrics.html"><i class="fa fa-check"></i>The Metrics Table</a>
 <ul>
 <li class="chapter" data-level="" data-path="xmetrics.html"><a href="xmetrics.html#summary"><i class="fa fa-check"></i>Summary</a></li>
@@ -324,10 +324,18 @@ code span.wa { color: #60a0b0; font-weight: bold; font-style: italic; } /* Warni
 <ul>
 <li class="chapter" data-level="" data-path="ximport.html"><a href="ximport.html#adding-additional-cases-with-wide-format-files"><i class="fa fa-check"></i>Adding additional cases with wide-format files</a></li>
 </ul></li>
-<li class="chapter" data-level="" data-path="ximport.html"><a href="ximport.html#ximport-quip"><i class="fa fa-check"></i>Uploading a hybrid format Excel file</a></li>
+<li class="chapter" data-level="" data-path="ximport.html"><a href="ximport.html#ximport-quip"><i class="fa fa-check"></i>Uploading a hybrid format Excel file</a>
+<ul>
+<li class="chapter" data-level="" data-path="ximport.html"><a href="ximport.html#hybrid-closed"><i class="fa fa-check"></i>Uploading closed questions in hybrid format</a></li>
+<li class="chapter" data-level="" data-path="ximport.html"><a href="ximport.html#appending-hybrid-data"><i class="fa fa-check"></i><em>Appending</em> hybrid data</a></li>
+<li class="chapter" data-level="" data-path="ximport.html"><a href="ximport.html#quip-recodes-for-closed-questions---live-link"><i class="fa fa-check"></i>QuIP recodes for closed questions - live link</a></li>
+</ul></li>
 <li class="chapter" data-level="" data-path="ximport.html"><a href="ximport.html#xlinks-only"><i class="fa fa-check"></i>🧪Uploading existing causal coding (“links only”)</a></li>
 </ul></li>
-<li class="chapter" data-level="" data-path="import-additional-data.html"><a href="import-additional-data.html"><i class="fa fa-check"></i>Uploading additional data like age, gender</a></li>
+<li class="chapter" data-level="" data-path="import-additional-data.html"><a href="import-additional-data.html"><i class="fa fa-check"></i>Uploading additional data like age, gender</a>
+<ul>
+<li class="chapter" data-level="" data-path="import-additional-data.html"><a href="import-additional-data.html#uploading-closed-question-blocks"><i class="fa fa-check"></i>Uploading closed question blocks</a></li>
+</ul></li>
 <li class="chapter" data-level="" data-path="ximport-other.html"><a href="ximport-other.html"><i class="fa fa-check"></i>Uploading your data: special cases</a>
 <ul>
 <li class="chapter" data-level="" data-path="ximport-other.html"><a href="ximport-other.html#uploading-from-other-software"><i class="fa fa-check"></i>Uploading from other software</a>
@@ -922,6 +930,7 @@ code span.wa { color: #60a0b0; font-weight: bold; font-style: italic; } /* Warni
 <p>You don’t need to do this for every statement, only where the question_id or respondent_id <em>changes</em>. So add it for every new question and/or every new respondent.</p>
 <p>Wait, you say, what’s a respondent? Well we already have <code>source_id</code> which is the name of the document. Usually you will have one document for one respondent, so you won’t need respondent_id. You will usually only want to use <code>respondent_id</code> when your respondents change within one document, for example in a focus group transcript.</p>
 <p>Uploading like this does not retain information about page numbers in PDFs. If you need to get the page numbers of each statement when uploading PDFs, try <a href="https://causalmap.shinyapps.io/pdf2excel/">another free utility</a> (Tool 2) which uploads PDFs only but does provide page numbers as an additional column.</p>
+<p>This way of uploading your data is only intended for uploading statements for coding. Characters like <code>$</code> and <code>#</code> which are used in <a href="https://guide.causalmap.app/ximport.html#ximport-quip">hybrid import</a> have no special meaning here.</p>
 <div id="problems-uploading-pdfs" class="section level4 hasAnchor">
 <h4>Problems uploading PDFS?<a href="ximport.html#problems-uploading-pdfs" class="anchor-section" aria-label="Anchor link to header"></a></h4>
 <p>This upload option may miss text in PDFs which is in boxes and columns. As an alternative you can export a PDF to Excel (one by one) <a href="https://www.adobe.com/uk/acrobat/online/pdf-to-excel.html">here</a>. The resulting file is also full of pictures etc but does seem to contain all of the text, although in many columns. 80% of the time it identifies suitably large chunks of text, but sometimes you get very small fragments.</p>
@@ -1050,18 +1059,21 @@ code span.wa { color: #60a0b0; font-weight: bold; font-style: italic; } /* Warni
 <p>Will be treated as a statement and as closed question (part of a block) and as important additional data. <img src="_assets/image-20211220160457936.png" width="650" alt="image-20211220160457936" /></p>
 <p>All important additional data, as indicated by the <code>#</code> in the question_id, can be found under the <a href="#xadditional-information">info toggle</a> in your left-hand side panel.</p>
 <div class="figure">
-<img src="_assets/image-20211220153042098.png" width="650" alt="" />
+<img src="_assets/image-20211220153042098.png" alt="" />
 <p class="caption">image-20211220153042098</p>
 </div>
-<p>Closed questions, as indicated by the <code>*</code> in the question_id, are uploaded into the <a href="#xthe-closed-question-blocks-table">closed questions table</a> and the <a href="xthe-sources-table.html#xthe-sources-table">sources table</a> which you can apply the closed questions preset to.</p>
+<div id="hybrid-closed" class="section level3 hasAnchor">
+<h3>Uploading closed questions in hybrid format<a href="ximport.html#hybrid-closed" class="anchor-section" aria-label="Anchor link to header"></a></h3>
+<p>Closed questions, as indicated by the <code>*</code> in the question_id, are treated like any other additional data for sources as shown in the picture above. Once imported, they will appear in the special <a href="xclosed-table.html#xclosed-table">closed questions table</a> (which is really just a special view of the sources table) as well as in the the <a href="xthe-sources-table.html#xthe-sources-table">sources table</a> itself.</p>
 <div class="figure">
 <img src="_assets/image-20211220161646312.png" width="650" alt="" />
 <p class="caption">image-20211220161646312</p>
 </div>
 <p>Plus, the question_code may end with the characters “rank” to mark “ranking organisation” data. [There may be a bug currently such that this data will also be uploaded only if they are not treated as statements, ie the code should not contain a <code>$</code>].</p>
 <p>To upload the hybrid-style spreadsheet click on the upload button on the right-hand-side panel and use the ‘hybrid’ option.</p>
-<div id="appending-hybrid-data" class="section level4 hasAnchor">
-<h4><em>Appending</em> hybrid data<a href="ximport.html#appending-hybrid-data" class="anchor-section" aria-label="Anchor link to header"></a></h4>
+</div>
+<div id="appending-hybrid-data" class="section level3 hasAnchor">
+<h3><em>Appending</em> hybrid data<a href="ximport.html#appending-hybrid-data" class="anchor-section" aria-label="Anchor link to header"></a></h3>
 <p>Suppose you uploaded hybrid data from Excel spreadsheet F, and already did some coding, then you receive more data in spreadsheet G, also in hybrid format.</p>
 <p>Find the original spreadsheet F on your computer (don’ t download from the app!). Paste the data from spreadsheet G below the existing data in spreadsheet F, save it as spreadsheet H, and upload this again. Your existing coding should not be affected; the links and factors you already created will remain.</p>
 <p>Caveat: you can’t combine roundtripping and appending hybrid data. If you have tweaked or added to your data from file F by roundtripping (downloading the data from the app then uploading again), any changes to statements, sources or questions will be lost if you later try to append data using this hybrid button. So if you need to tweak your data (statements, sources or questions), either:</p>
@@ -1070,8 +1082,8 @@ code span.wa { color: #60a0b0; font-weight: bold; font-style: italic; } /* Warni
 <li>or, manually tweak the old and new data in spreadsheet H.</li>
 </ul>
 </div>
-<div id="quip-recodes-for-closed-questions---live-link" class="section level4 hasAnchor">
-<h4>QuIP recodes for closed questions - live link<a href="ximport.html#quip-recodes-for-closed-questions---live-link" class="anchor-section" aria-label="Anchor link to header"></a></h4>
+<div id="quip-recodes-for-closed-questions---live-link" class="section level3 hasAnchor">
+<h3>QuIP recodes for closed questions - live link<a href="ximport.html#quip-recodes-for-closed-questions---live-link" class="anchor-section" aria-label="Anchor link to header"></a></h3>
 <p>Using this <a href="https://drive.google.com/open?id=1GBhxQhV5SKHLdb8B_iHcCqT2RvWl44tQ&amp;authuser=hello%40causalmap.app&amp;usp=drive_fs">table</a> (which includes spanish) the app recodes your data into + positive, - negative and 0 neutral.</p>
 <p>For example:</p>
 <div class="figure">
@@ -1079,19 +1091,6 @@ code span.wa { color: #60a0b0; font-weight: bold; font-style: italic; } /* Warni
 <p class="caption">image-20211019155354881</p>
 </div>
 <p>This data will be displayed in the Tables panel if you select “closed questions.”</p>
-</div>
-<div id="uploading-closed-question-blocks" class="section level4 hasAnchor">
-<h4>Uploading closed question blocks<a href="ximport.html#uploading-closed-question-blocks" class="anchor-section" aria-label="Anchor link to header"></a></h4>
-<p>This kind of data is common in QuIP studies, which are normally uploaded using the hybrid format. But as it only involves adding columns to your sources table, it is possible to use closed question blocks in other kinds of study imported in other ways.</p>
-<p>If you give the app a single set of closed responses (like “better”, “same” and “worse”) then it can make tables like the one below.</p>
-<div class="figure">
-<img src="_assets/image-20211019153918044.png" width="650" alt="" />
-<p class="caption">image-20211019153918044</p>
-</div>
-<p>It will recode <a href="https://drive.google.com/open?id=1GBhxQhV5SKHLdb8B_iHcCqT2RvWl44tQ&amp;authuser=hello%40causalmap.app&amp;usp=drive_fs">a fixed set of words (like better, worse)</a> into + positive, - negative and 0 neutral.</p>
-<p>This approach only makes sense if you have one larger set of questions with the same set of fixed reply options.</p>
-<p>You supply this data in the form of user-defined fields in the Sources table, whose names contain a *.</p>
-<p>You could still, if you want, import a whole bunch of different closed questions with different answer categories as custom fields in the Sources table. So just as you can have gender as a field, you could have “answer to closed question about how often do you go hungry (never/sometimes/often)” as a field. This means you could ask the app to only show the maps of the women, or the people who often go hungry, or the women who often go hungry. The point of the closed questions feature is to organise and provide the answers to a whole block of questions together in one place, to make analysing the data easier.</p>
 </div>
 </div>
 <div id="xlinks-only" class="section level2 hasAnchor">

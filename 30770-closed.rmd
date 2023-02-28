@@ -1,4 +1,4 @@
-# The Closed Question Blocks Table
+# The Closed Question Blocks Table{#xclosed-table}
 
 The closed question table provides a summary of the responses to the **closed questions** asked at the end of each QuIP questionnaire domain. The following symbols are used in the tables to represent the direction of change indicated by the response to the closed question:
 

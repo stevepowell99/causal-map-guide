@@ -28,7 +28,7 @@
 <meta name="author" content="Samuel Goddard" />
 
 
-<meta name="date" content="2023-02-22" />
+<meta name="date" content="2023-02-28" />
 
   <meta name="viewport" content="width=device-width, initial-scale=1" />
   <meta name="apple-mobile-web-app-capable" content="yes" />
@@ -272,7 +272,7 @@ code span.wa { color: #60a0b0; font-weight: bold; font-style: italic; } /* Warni
 <li class="chapter" data-level="" data-path="xthe-sources-table.html"><a href="xthe-sources-table.html#fields-2"><i class="fa fa-check"></i>Fields</a></li>
 </ul></li>
 <li class="chapter" data-level="" data-path="xthe-questions-table.html"><a href="xthe-questions-table.html"><i class="fa fa-check"></i>The Questions Table</a></li>
-<li class="chapter" data-level="" data-path="the-closed-question-blocks-table.html"><a href="the-closed-question-blocks-table.html"><i class="fa fa-check"></i>The Closed Question Blocks Table</a></li>
+<li class="chapter" data-level="" data-path="xclosed-table.html"><a href="xclosed-table.html"><i class="fa fa-check"></i>The Closed Question Blocks Table</a></li>
 <li class="chapter" data-level="" data-path="xmetrics.html"><a href="xmetrics.html"><i class="fa fa-check"></i>The Metrics Table</a>
 <ul>
 <li class="chapter" data-level="" data-path="xmetrics.html"><a href="xmetrics.html#summary"><i class="fa fa-check"></i>Summary</a></li>
@@ -324,10 +324,18 @@ code span.wa { color: #60a0b0; font-weight: bold; font-style: italic; } /* Warni
 <ul>
 <li class="chapter" data-level="" data-path="ximport.html"><a href="ximport.html#adding-additional-cases-with-wide-format-files"><i class="fa fa-check"></i>Adding additional cases with wide-format files</a></li>
 </ul></li>
-<li class="chapter" data-level="" data-path="ximport.html"><a href="ximport.html#ximport-quip"><i class="fa fa-check"></i>Uploading a hybrid format Excel file</a></li>
+<li class="chapter" data-level="" data-path="ximport.html"><a href="ximport.html#ximport-quip"><i class="fa fa-check"></i>Uploading a hybrid format Excel file</a>
+<ul>
+<li class="chapter" data-level="" data-path="ximport.html"><a href="ximport.html#hybrid-closed"><i class="fa fa-check"></i>Uploading closed questions in hybrid format</a></li>
+<li class="chapter" data-level="" data-path="ximport.html"><a href="ximport.html#appending-hybrid-data"><i class="fa fa-check"></i><em>Appending</em> hybrid data</a></li>
+<li class="chapter" data-level="" data-path="ximport.html"><a href="ximport.html#quip-recodes-for-closed-questions---live-link"><i class="fa fa-check"></i>QuIP recodes for closed questions - live link</a></li>
+</ul></li>
 <li class="chapter" data-level="" data-path="ximport.html"><a href="ximport.html#xlinks-only"><i class="fa fa-check"></i>🧪Uploading existing causal coding (“links only”)</a></li>
 </ul></li>
-<li class="chapter" data-level="" data-path="import-additional-data.html"><a href="import-additional-data.html"><i class="fa fa-check"></i>Uploading additional data like age, gender</a></li>
+<li class="chapter" data-level="" data-path="import-additional-data.html"><a href="import-additional-data.html"><i class="fa fa-check"></i>Uploading additional data like age, gender</a>
+<ul>
+<li class="chapter" data-level="" data-path="import-additional-data.html"><a href="import-additional-data.html#uploading-closed-question-blocks"><i class="fa fa-check"></i>Uploading closed question blocks</a></li>
+</ul></li>
 <li class="chapter" data-level="" data-path="ximport-other.html"><a href="ximport-other.html"><i class="fa fa-check"></i>Uploading your data: special cases</a>
 <ul>
 <li class="chapter" data-level="" data-path="ximport-other.html"><a href="ximport-other.html#uploading-from-other-software"><i class="fa fa-check"></i>Uploading from other software</a>
@@ -901,7 +909,25 @@ code span.wa { color: #60a0b0; font-weight: bold; font-style: italic; } /* Warni
 <li><p>When you upload <a href="ximport.html#ximport2excel">Text files</a>, the only additional data you can only provide is the ID of question and/or respondent. You will probably want to later add more information about these respondents using round-tripping.</p></li>
 </ul>
 <p>Whatever format you use to upload your data, you can always continue to add data including additional data like age, gender etc using <a href="xroundtripping.html#xroundtripping">roundtripping</a>. However, remember that any data you upload will <a href="xroundtripping.html#import-general-principles">overwrite the existing data</a> – so if you only want to update your sources data, make sure you delete any other worksheet in the file you upload to leave only the <code>sources</code> worksheet.</p>
+<div id="uploading-closed-question-blocks" class="section level2 hasAnchor">
+<h2>Uploading closed question blocks<a href="import-additional-data.html#uploading-closed-question-blocks" class="anchor-section" aria-label="Anchor link to header"></a></h2>
+<p>This kind of data is common in QuIP studies, which are normally uploaded using the hybrid format. <a href="ximport.html#hybrid-closed">Here</a> are instructions for uploading closed question data in hybrid format.</p>
+<p>In Causal Map, closed question data is just another kind of additional data about your sources. So it is possible to use closed question blocks when you import your data in other ways.</p>
+<p>As the answer to a closed question like “how often do you go hungry (never/sometimes/often)” is just another field, this means you could ask the app to only show the maps of the women, or the people who often go hungry, or the women who often go hungry.</p>
+<p>The point of the closed questions feature, which looks for columns in your sources table whose names contain a <code>*</code>, is first to recode <a href="https://drive.google.com/open?id=1GBhxQhV5SKHLdb8B_iHcCqT2RvWl44tQ&amp;authuser=hello%40causalmap.app&amp;usp=drive_fs">a fixed set of words (like better, worse)</a> into + positive, - negative and 0 neutral, and second to organise and provide the answers to a whole block of questions together in one place, to <a href="xclosed-table.html#xclosed-table">make analysing the data easier</a>.</p>
+<p>This picture shows how a single set of closed responses (like “better”, “same” and “worse”) are displayed in tables like the one below.</p>
+<div class="figure">
+<img src="_assets/image-20211019153918044.png" width="650" alt="" />
+<p class="caption">image-20211019153918044</p>
+</div>
+<p>This approach only makes sense if you have one larger set of questions with the same set of fixed reply options.</p>
+<p>To upload closed question blocks:</p>
+<p><strong>Hybrid format:</strong> follow <a href="ximport.html#hybrid-closed">these</a> instructions.</p>
+<p><strong>Wide format </strong>: simply make sure that the relevant column names contain a <code>*</code>.</p>
+<p><strong>Text format:</strong> use <a href="xroundtripping.html#xroundtripping">round-tripping</a>: simply download your file as Excel, add columns to your Sources table whose names contain a *, and upload again.</p>
+<p><strong>Standard format:</strong> You supply this data simply by adding additional columns to your Sources table whose names contain a *. You can supply this data when you initially upload your data or later, by <a href="xroundtripping.html#xroundtripping">round-tripping</a>.</p>
 
+</div>
 </div>
             </section>
 
