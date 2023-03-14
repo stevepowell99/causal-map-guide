@@ -150,6 +150,8 @@ So this means that if you want a column to be treated as a statement, i.e. you w
 
 If you want a column to be treated as important additional data, i.e. you want the information to be easily identified for crosstabulation and other analyses in Causal Map, add a `#` at the beginning of the column name. 
 
+Note that some survey software like Google Forms may restructure the answers from some kinds of questions into multiple columns. So a question like `Age range` may end up as several columns like Age range_Babies (1-18 months)	Age range_Toddlers (18 months - 3 years)	Age range_Early childhood (3-5 years)	Age range_Middle childhood (5-11 years)	Age range_Adolescence (12 - 18 years)	Age range_Young adults (18+ years) -- etc. You might want to preprocess these kinds of column groups into single columns before importing.
+
 ### Adding additional cases with wide-format files
 
 You can start coding your data even if you do not yet have all the cases/sources. When you get more data, simply add them to the bottom of the original file and upload again. You don't need to do "[roundtripping](#xroundtripping)". All your sources and statements will be overwritten but your coding (links and statements) will be untouched. The questions table will also be untouched. If you want to add information about your questions, for example adding question text as well as question id, you can use [roundtripping](#xroundtripping). 

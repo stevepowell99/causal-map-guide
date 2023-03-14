@@ -28,7 +28,7 @@
 <meta name="author" content="Samuel Goddard" />
 
 
-<meta name="date" content="2023-02-28" />
+<meta name="date" content="2023-03-14" />
 
   <meta name="viewport" content="width=device-width, initial-scale=1" />
   <meta name="apple-mobile-web-app-capable" content="yes" />
@@ -1023,6 +1023,7 @@ code span.wa { color: #60a0b0; font-weight: bold; font-style: italic; } /* Warni
 </ul>
 <p>So this means that if you want a column to be treated as a statement, i.e. you want to code the answers in Causal Map, add a <code>$</code> at the beginning of the column name.</p>
 <p>If you want a column to be treated as important additional data, i.e. you want the information to be easily identified for crosstabulation and other analyses in Causal Map, add a <code>#</code> at the beginning of the column name.</p>
+<p>Note that some survey software like Google Forms may restructure the answers from some kinds of questions into multiple columns. So a question like <code>Age range</code> may end up as several columns like Age range_Babies (1-18 months) Age range_Toddlers (18 months - 3 years) Age range_Early childhood (3-5 years) Age range_Middle childhood (5-11 years) Age range_Adolescence (12 - 18 years) Age range_Young adults (18+ years) – etc. You might want to preprocess these kinds of column groups into single columns before importing.</p>
 <div id="adding-additional-cases-with-wide-format-files" class="section level3 hasAnchor">
 <h3>Adding additional cases with wide-format files<a href="ximport.html#adding-additional-cases-with-wide-format-files" class="anchor-section" aria-label="Anchor link to header"></a></h3>
 <p>You can start coding your data even if you do not yet have all the cases/sources. When you get more data, simply add them to the bottom of the original file and upload again. You don’t need to do “<a href="xroundtripping.html#xroundtripping">roundtripping</a>”. All your sources and statements will be overwritten but your coding (links and statements) will be untouched. The questions table will also be untouched. If you want to add information about your questions, for example adding question text as well as question id, you can use <a href="xroundtripping.html#xroundtripping">roundtripping</a>.</p>

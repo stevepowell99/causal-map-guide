@@ -12,10 +12,10 @@ knitr::include_url("https://player.vimeo.com/video/604099226")
 
 - With your mouse, highlight a piece of text within the statement which makes a causal claim.
 
-- Watch how that passage is copied for you into the “Quote” window below. (Usually you don't need to think about his window: you can edit the text if you really need to but it has to remain an exact quote of one part of the text or you will get a warning.) 
+- Watch how that passage is copied for you into the “Quote” window below. (Usually, you don't need to think about this window: you can edit the text if you really need to but it has to remain an exact quote of one part of the text or you will get a warning.) 
 - Start to type the name of the influence factors at the **start** of the link(s) which you are going to make, in the first drop-down menu.
-- If there is an existing factor which matches what you want, you can select select it.
-- Otherwise you will create a new factor with the contents of what you have typed; finish what you have typed with a comma or a tab character if you want to continue to select or create another factor.
+- If there is an existing factor which matches what you want, you can select it.
+- Otherwise, you will create a new factor with the contents of what you have typed; finish what you have typed with a comma or a tab character if you want to continue to select or create another factor.
 - If you want to create more than one link, you can select or create additional factors in the same box (as shown in the video below).
 - When you have finished, press Enter.
 - Repeat the process in the other box to specify the factors at the **end** of the link (or ends of the links).
