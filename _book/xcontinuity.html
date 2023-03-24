@@ -4,20 +4,20 @@
 
   <meta charset="utf-8" />
   <meta http-equiv="X-UA-Compatible" content="IE=edge" />
-  <title>Continuity and tracing threads | Guide to Causal Mapping</title>
-  <meta name="description" content="Continuity and tracing threads | Guide to Causal Mapping" />
+  <title>Continuity | Guide to Causal Mapping</title>
+  <meta name="description" content="Continuity | Guide to Causal Mapping" />
   <meta name="generator" content="bookdown 0.26 and GitBook 2.6.7" />
 
-  <meta property="og:title" content="Continuity and tracing threads | Guide to Causal Mapping" />
+  <meta property="og:title" content="Continuity | Guide to Causal Mapping" />
   <meta property="og:type" content="book" />
   <meta property="og:image" content="https://causalmap.app/_assets/image-20210520221329966.png" />
-  <meta property="og:description" content="Continuity and tracing threads | Guide to Causal Mapping" />
+  <meta property="og:description" content="Continuity | Guide to Causal Mapping" />
   
 
   <meta name="twitter:card" content="summary" />
-  <meta name="twitter:title" content="Continuity and tracing threads | Guide to Causal Mapping" />
+  <meta name="twitter:title" content="Continuity | Guide to Causal Mapping" />
   
-  <meta name="twitter:description" content="Continuity and tracing threads | Guide to Causal Mapping" />
+  <meta name="twitter:description" content="Continuity | Guide to Causal Mapping" />
   <meta name="twitter:image" content="https://causalmap.app/_assets/image-20210520221329966.png" />
 
 <meta name="author" content="Steve Powell" />
@@ -28,14 +28,14 @@
 <meta name="author" content="Samuel Goddard" />
 
 
-<meta name="date" content="2023-03-14" />
+<meta name="date" content="2023-03-24" />
 
   <meta name="viewport" content="width=device-width, initial-scale=1" />
   <meta name="apple-mobile-web-app-capable" content="yes" />
   <meta name="apple-mobile-web-app-status-bar-style" content="black" />
   
   
-<link rel="prev" href="xtracing-paths.html"/>
+<link rel="prev" href="xtracing-threads.html"/>
 <link rel="next" href="xconditional-formats.html"/>
 <script src="libs/jquery-3.6.0/jquery-3.6.0.min.js"></script>
 <script src="https://cdn.jsdelivr.net/npm/fuse.js@6.4.6/dist/fuse.min.js"></script>
@@ -531,14 +531,18 @@ code span.wa { color: #60a0b0; font-weight: bold; font-style: italic; } /* Warni
 <li class="chapter" data-level="" data-path="xtracing-paths.html"><a href="xtracing-paths.html#xremoving-unwanted-links"><i class="fa fa-check"></i>Removing unwanted links</a></li>
 </ul></li>
 </ul></li>
-<li class="chapter" data-level="" data-path="xcontinuity.html"><a href="xcontinuity.html"><i class="fa fa-check"></i>Continuity and tracing threads</a>
+<li class="chapter" data-level="" data-path="xtracing-threads.html"><a href="xtracing-threads.html"><i class="fa fa-check"></i>Tracing threads</a>
 <ul>
-<li class="chapter" data-level="" data-path="xcontinuity.html"><a href="xcontinuity.html#summary-8"><i class="fa fa-check"></i>Summary</a></li>
-<li class="chapter" data-level="" data-path="xcontinuity.html"><a href="xcontinuity.html#xtracing-threads"><i class="fa fa-check"></i>Tracing threads (aka tracing continuity)</a></li>
+<li class="chapter" data-level="" data-path="xtracing-threads.html"><a href="xtracing-threads.html#summary-8"><i class="fa fa-check"></i>Summary</a></li>
+<li class="chapter" data-level="" data-path="xtracing-threads.html"><a href="xtracing-threads.html#tracing-threads"><i class="fa fa-check"></i>Tracing threads</a></li>
+</ul></li>
+<li class="chapter" data-level="" data-path="xcontinuity.html"><a href="xcontinuity.html"><i class="fa fa-check"></i>Continuity</a>
+<ul>
+<li class="chapter" data-level="" data-path="xcontinuity.html"><a href="xcontinuity.html#summary-9"><i class="fa fa-check"></i>Summary</a></li>
 <li class="chapter" data-level="" data-path="xcontinuity.html"><a href="xcontinuity.html#advanced-diagnostic-filter-mark-links-for-continuity-print-view-only"><i class="fa fa-check"></i>Advanced diagnostic filter: Mark links for continuity (Print View only)</a></li>
 <li class="chapter" data-level="" data-path="xcontinuity.html"><a href="xcontinuity.html#advanced-diagnostic-filter-show-continuity"><i class="fa fa-check"></i>Advanced diagnostic filter: Show continuity</a>
 <ul>
-<li class="chapter" data-level="" data-path="xcontinuity.html"><a href="xcontinuity.html#summary-9"><i class="fa fa-check"></i>Summary</a></li>
+<li class="chapter" data-level="" data-path="xcontinuity.html"><a href="xcontinuity.html#summary-10"><i class="fa fa-check"></i>Summary</a></li>
 <li class="chapter" data-level="" data-path="xcontinuity.html"><a href="xcontinuity.html#showing-continuity-with-arrowtypes"><i class="fa fa-check"></i>Showing continuity with arrowtypes</a></li>
 <li class="chapter" data-level="" data-path="xcontinuity.html"><a href="xcontinuity.html#showing-continuity-with-colours"><i class="fa fa-check"></i>Showing continuity with colours</a></li>
 <li class="chapter" data-level="" data-path="xcontinuity.html"><a href="xcontinuity.html#more-about-these-metrics"><i class="fa fa-check"></i>More about these metrics</a></li>
@@ -606,7 +610,7 @@ code span.wa { color: #60a0b0; font-weight: bold; font-style: italic; } /* Warni
 <li class="chapter" data-level="" data-path="causal-mapping-definitions.html"><a href="causal-mapping-definitions.html"><i class="fa fa-check"></i>📚 Causal Mapping: Definitions</a>
 <ul>
 <li class="chapter" data-level="" data-path="causal-mapping-definitions.html"><a href="causal-mapping-definitions.html#what-is-a-causal-map-what-is-causal-mapping"><i class="fa fa-check"></i>What is a causal map? What is causal mapping?</a></li>
-<li class="chapter" data-level="" data-path="causal-mapping-definitions.html"><a href="causal-mapping-definitions.html#summary-10"><i class="fa fa-check"></i>Summary</a></li>
+<li class="chapter" data-level="" data-path="causal-mapping-definitions.html"><a href="causal-mapping-definitions.html#summary-11"><i class="fa fa-check"></i>Summary</a></li>
 </ul></li>
 <li class="chapter" data-level="" data-path="mapping.html"><a href="mapping.html"><i class="fa fa-check"></i>📚 Causal mapping for evaluators</a>
 <ul>
@@ -735,6 +739,7 @@ code span.wa { color: #60a0b0; font-weight: bold; font-style: italic; } /* Warni
 <li class="chapter" data-level="" data-path="faqs.html"><a href="faqs.html#known-bugs"><i class="fa fa-check"></i>Known Bugs</a></li>
 <li class="chapter" data-level="" data-path="faqs.html"><a href="faqs.html#quip-questions"><i class="fa fa-check"></i>QuIP questions</a></li>
 <li class="chapter" data-level="" data-path="faqs.html"><a href="faqs.html#downloads"><i class="fa fa-check"></i>Downloads</a></li>
+<li class="chapter" data-level="" data-path="faqs.html"><a href="faqs.html#what-to-do-when-youve-finished-coding."><i class="fa fa-check"></i>What to do when you’ve finished coding.</a></li>
 </ul></li>
 <li class="chapter" data-level="" data-path="glossary.html"><a href="glossary.html"><i class="fa fa-check"></i>📚 Glossary</a>
 <ul>
@@ -898,53 +903,15 @@ code span.wa { color: #60a0b0; font-weight: bold; font-style: italic; } /* Warni
   gtag('config', 'G-1EQ4YJMYRJ');
 </script>
 <div id="xcontinuity" class="section level1 hasAnchor">
-<h1>Continuity and tracing threads<a href="xcontinuity.html#xcontinuity" class="anchor-section" aria-label="Anchor link to header"></a></h1>
+<h1>Continuity<a href="xcontinuity.html#xcontinuity" class="anchor-section" aria-label="Anchor link to header"></a></h1>
 <div class="figure">
 <img src="_assets/image-20230128235100885.png" alt="" />
 <p class="caption">image-20230128235100885</p>
 </div>
-<div id="summary-8" class="section level2 hasAnchor">
-<h2>Summary<a href="xcontinuity.html#summary-8" class="anchor-section" aria-label="Anchor link to header"></a></h2>
-<p>When you use the <a href="xtracing-paths.html#xtracing-paths">trace threads filter</a> to follow paths of influence across your map, the <a href="xtransitivity-trap.html#xtransitivity-trap">transitivity trap</a> can make it a challenge to interpret your maps. Some people (or somebody) said that improved hygiene led to reduction in mosquito environments, and some people said reduction in mosquito environments led to improved health, but <em>was this the same or different people</em>?</p>
-<p><img src="_assets/image-20211215081735743.png" alt="image-20211215081735743" /><!-- these need to stay full width or you cannot read them--></p>
-</div>
-<div id="xtracing-threads" class="section level2 hasAnchor">
-<h2>Tracing threads (aka tracing continuity)<a href="xcontinuity.html#xtracing-threads" class="anchor-section" aria-label="Anchor link to header"></a></h2>
-<p>If your map makes it look like Cash Transfer causally influenced Increased Wellbeing further downstream of it, you surely want to know if there are at least some sources who each mentioned the whole of one of the possible paths.</p>
-<p>We call this “tracing threads”. A thread is a chain of individual “original links” inside the bundles, whereas a path is just a chain of bundles, regardless of which sources mentioned each link.</p>
-<div class="figure">
-<img src="_assets/image-20221017081846053.png" alt="" />
-<p class="caption">image-20221017081846053</p>
-</div>
-<p>Tracing threads is an option within the <a href="xtracing-paths.html#xtracing-paths">tracing paths</a> dialog. Click to trace threads up or down. Normally you will want to trace by source_id, but sometimes you might want to set, for example, village_id.</p>
-<p>“Ah so there are plenty of paths from X to Y, but are there any threads? yes look, here is MXFG-1 who has a thread all the way down”.</p>
-<p>We can ask “how many threads make it all the way down to Improved Wellbeing”? The threads are named by the source ids, so we can say “Let’s look at downstream thread MXFG-1”.</p>
-<p>When we are tracing threads, we can trace source threads, or village threads, or whatever. But usually we will trace in terms of sources, so if we do not specify which field defines the context, we assume we mean sources.</p>
-<p>So a thread is a continuous chain of links with the same ID along a path. Within a bundle of links, each thread is one individual link associated with one ID (or sometimes, more than one link, if the ID mentioned that bundle more than once).</p>
-<p>This creates the following calculated fields:</p>
-<ul>
-<li>Links fields
-<ul>
-<li>has_threads threads</li>
-</ul></li>
-<li>Factor field
-<ul>
-<li>threads_surviving</li>
-<li>threads</li>
-</ul></li>
-</ul>
-<p>You can for example label the links like this <code>label links value=unique: threads</code>.</p>
-<p>(For compatibility purposes, the deprecated fields <code>has_downstream_threads</code>, <code>has_downstream_threads_surviving</code> etc. are also available.)</p>
-<p>You can for example colour the factors like this <code>color factors field=threads_surviving</code>. So if you set a filter to <em>trace threads downstream</em> from Cash Transfer C, imagine factor C is coloured completely red, and imagine a factor F immediately downstream of it being coloured with an intensity of red according to the number of sources which mentioned the link from C to F. In fact every factor downstream of C will be coloured with a shade of red in the same way. The central question of whether any source mentioned a whole path from C to, say, “Increased wellbeing” can be answered simply by seeing whether there is any red in the colour of “Increased wellbeing” or whether it is completely white.</p>
-<p>… So you can just look at C and watch its influence (in terms of source continuity) seeping downstream and spreading out along all source-complete paths.</p>
-<p>It’s like ink starting from C and flowing downstream as long as there is source continuity.</p>
-<p>Tracing threads upstream asks about causes of effects rather than effects of causes: “Increased wellbeing” is completely red, and the redness of “Cash Transfer C” depends on the number of sources which mention a complete path from C to Increased wellbeing.</p>
-<p>Tracing paths anchors the filter to one or more factors, and if you use thread tracing to format an aspect of the map (e.g. to colour the links) then this formatting is only related to this specific set of origin and/or target factors and will change if you trace from and/or to different factors.</p>
-<div class="figure">
-<img src="_assets/image-20220301095046531.png" alt="" />
-<p class="caption">image-20220301095046531</p>
-</div>
-<p>In this example, the width of the links reflects the number of sources mentioning it, but the colour of the links (and factors) reflects how many sources have a continuous story starting from “Living in a refugee settlement” all the way up to that point. This difference is also shown in the pair of numbers on the links: the first number is the source thread count, the second is the source count. So the top-right link was mentioned by one source, but the 0 shows that no single source mentioned a story all the way from “Living in a refugee settlement” which also includes this link.</p>
+<div id="summary-9" class="section level2 hasAnchor">
+<h2>Summary<a href="xcontinuity.html#summary-9" class="anchor-section" aria-label="Anchor link to header"></a></h2>
+<p>When you use the <a href="xtracing-paths.html#xtracing-paths">trace paths filter</a> to follow paths of influence across your map, the <a href="xtransitivity-trap.html#xtransitivity-trap">transitivity trap</a> can make it a challenge to interpret your maps. The solution is to <a href="xtracing-threads.html#xtracing-threads">trace not just paths but the threads within them</a>.</p>
+<p>Here are some additional advanced filters for diagnosing continuity.</p>
 </div>
 <div id="advanced-diagnostic-filter-mark-links-for-continuity-print-view-only" class="section level2 hasAnchor">
 <h2>Advanced diagnostic filter: Mark links for continuity (Print View only)<a href="xcontinuity.html#advanced-diagnostic-filter-mark-links-for-continuity-print-view-only" class="anchor-section" aria-label="Anchor link to header"></a></h2>
@@ -971,8 +938,8 @@ code span.wa { color: #60a0b0; font-weight: bold; font-style: italic; } /* Warni
 <div id="advanced-diagnostic-filter-show-continuity" class="section level2 hasAnchor">
 <h2>Advanced diagnostic filter: Show continuity<a href="xcontinuity.html#advanced-diagnostic-filter-show-continuity" class="anchor-section" aria-label="Anchor link to header"></a></h2>
 <p>Read on only if you are interested in advanced diagnostics!</p>
-<div id="summary-9" class="section level3 hasAnchor">
-<h3>Summary<a href="xcontinuity.html#summary-9" class="anchor-section" aria-label="Anchor link to header"></a></h3>
+<div id="summary-10" class="section level3 hasAnchor">
+<h3>Summary<a href="xcontinuity.html#summary-10" class="anchor-section" aria-label="Anchor link to header"></a></h3>
 <div class="figure">
 <img src="_assets/image-20211222121147473.png" width="650" alt="" />
 <p class="caption"><a href="http://theorymaker.info/?permalink=transitivity" class="uri">http://theorymaker.info/?permalink=transitivity</a></p>
@@ -1154,7 +1121,7 @@ code span.wa { color: #60a0b0; font-weight: bold; font-style: italic; } /* Warni
           </div>
         </div>
       </div>
-<a href="xtracing-paths.html" class="navigation navigation-prev " aria-label="Previous page"><i class="fa fa-angle-left"></i></a>
+<a href="xtracing-threads.html" class="navigation navigation-prev " aria-label="Previous page"><i class="fa fa-angle-left"></i></a>
 <a href="xconditional-formats.html" class="navigation navigation-next " aria-label="Next page"><i class="fa fa-angle-right"></i></a>
     </div>
   </div>

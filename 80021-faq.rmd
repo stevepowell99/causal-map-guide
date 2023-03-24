@@ -187,4 +187,21 @@ Follow the instructions for [hybrid files](https://guide.causalmap.app/ximport.h
 <details><summary>Where can I find example files to use as templates?</summary>
 
 They can be found and downloaded [here](https://drive.google.com/drive/folders/1wvifDQ0BXmAjSudTRUv9i_4JURpphD4v).
+
+## What to do when you've finished coding.
+
+</details>
+<details><summary>Is there a more cost-effective option to use during the analysis phase of the causal mapping?</summary>
+
+If you don't want to do any coding or editing, your data stays with us for at least a year (probably longer) so that you can view and analyse it even with a free subscription. "Editing" means changing or adding factors or links. The analysis is free, even if you create and share new views.
+
+</details>
+<details><summary>If I wanted to put my membership on pause, can I come back and access the coded data and existing maps at any point?</summary>
+
+Yes! You can view, analyse and download your data with a free subscription. If you want to do any coding or editing at all, you'll need a [paid subscription](https://causalmap.app/subscriptions), which depends on the number of files you want to be able to code. You'd only need to pay one of these subscriptions for the months when you want to edit something. 
+
+</details>
+<details><summary>What is the best way to store my coded data?</summary>
+
+We store your data for at least a year and you can access them with a free subscription. If you want to store your coded data and maps for longer than a year, you can download them in Excel format from the app. 
 </details>

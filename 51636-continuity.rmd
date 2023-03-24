@@ -1,0 +1,184 @@
+# Continuity{#xcontinuity}
+
+![image-20230128235100885](_assets/image-20230128235100885.png)
+
+## Summary
+
+When you use the [trace paths filter](#xtracing-paths) to follow paths of influence across your map, the [transitivity trap](#xtransitivity-trap) can make it a challenge to interpret your maps. The solution is to [trace not just paths but the threads within them](#xtracing-threads).
+
+Here are some additional advanced filters for diagnosing continuity.
+
+## Advanced diagnostic filter: Mark links for continuity (Print View only)
+
+*Showing* continuity aka "showing threads" is concerned with adjacent sets of links (or factors). It cannot be used to definitively answer questions about continuity down a longer path (actually, sometimes it does tell us something: if there is zero continuity on a section of a path with no splits, we know there is zero continuity down the longer path; but more generally, if there is some continuity down all the sections of a path, it does not mean that there is continuity down the whole of it).
+
+
+
+Add the filter `mark links` (there is no button for it, you have to type it) provides the following diagnostics:
+
+![image-20211215081328481](_assets/image-20211215081328481.png)<!-- these need to stay full width or you cannot read them-->
+
+The incoming (bundles of) links to every factor (actually to every factor with outgoing links) are labelled a, b, etc, including when links are bundled e.g. by gender. Then the outgoing links are marked with say `a` if at least one of the sources who mentioned the outgoing link also mentioned link `a`. 
+
+So we can see that none of the people who said that improved hygiene led to reduction in mosquito environments also said that reduction in mosquito environments led to improved health: there is no label at all on the arrow going out of reduction in mosquito environments. There is no source continuity. 
+
+Note that the labels get re-used for each factor, so the `a`s and `b`s here are related:
+
+![image-20211215083702603](_assets/image-20211215083702603.png){width=650}
+
+but the `a`s here are not:
+
+![image-20211215083737009](_assets/image-20211215083737009.png){width=650}
+
+This also works with all the other fields, e.g. you can type `mark links field=statement_id` in order to test statement continuity, which is a stricter test of continuity. source_id is default so you don't need to type it specially.
+
+Yes, it is a bit difficult to communicate this in a report. But it is important for interpretation. Of course a chain without source continuity isn't an invalid chain per se, it's just something to be aware of. 
+
+We will probably also add a simpler metric for outgoing links which does not distinguish between the incoming links, something like "Percentage of sources who mentioned a link leaving factor F who mentioned any of the links entering F". This metric could be used to colour or scale the links, or perhaps be printed on the tail of the links.
+
+
+
+**That's all you'll need for most purposes. Read on for some advanced diagnostics.**
+
+## Advanced diagnostic filter: Show continuity
+
+Read on only if you are interested in advanced diagnostics!
+
+### Summary
+
+![http://theorymaker.info/?permalink=transitivity](_assets/image-20211222121147473.png){width=650}
+
+Above, the links are labelled with the sources. 
+
+The ▭ open half-box at the end of the first link tells us that at least half but not all of these stories stop here: less than half the sources mentioned any link *out of* K. 
+
+The ◼ filled box at the start of the second link tells us that all of these stories are continuations: all these sources mentioned some link *into* K.
+
+The  ▂ filled half-box at the end of the second link tells us that at least half but not all of these stories continue: Bob mentioned some link out of L, but Carla did not. 
+
+The  ▢ open box on the link from L to N tells us that this story is not a continuation: Donna did not mention any link *into* L. 
+
+There is no UI for this filter yet. You can just type
+
+`show continuity`
+
+in the advanced editor. 
+
+----
+
+The four kinds of boxes are (possibly aggregated) indicators of continuity, with respect to sources, between stages in a path.
+
+If you want to look at say statement continuity rather than source continuity (the default), type
+
+`show continuity field=statement_id`
+
+If you want to see numbers (see examples below) rather than symbols (see examples further below; symbols are the default) then type:
+
+`show continuity type=label`
+
+![image-20211216162518175](_assets/image-20211216162518175.png){width=650}
+
+Here, the 0.9 says that 90% of the sources mentioning the link to ~performed well also mention the link *from* ~performed well. The 1 says that 100% of the sources mentioning the link *from* ~performed well also mention the link *to* ~performed well. And the zeros below say that there is no source continuity at all. 
+
+What this doesn't tell you is, when there are more than one incoming link, which of them have sources which continue to the outgoing link (that is what the bs and cs are for in `mark_links`). It's just an aggregate.
+
+But what happens with filters which actually transform the map: zoom, bundle factors and combine opposites? Zoom can create its own version of the transitivity trap, if we [have](https://causalmap.shinyapps.io/CM2test/?s=415):
+
+> eating lemons --> health; no scurvy
+
+and
+
+> health; fitness --> fast runner
+
+![image-20211216190724734](_assets/image-20211216190724734.png){width=650}
+
+we should be very careful when concluding (when zooming)
+
+> eating lemons --> health --> fast runner
+
+... and indeed, [showing continuity](https://causalmap.shinyapps.io/CM2test/?s=416) highlights this error: 
+
+
+
+![image-20211216190609563](_assets/image-20211216190609563.png){width=650}
+
+### Showing continuity with arrowtypes
+
+Printing actual numbers (from 0 to 1) on the arrows can be very confusing. So the default is to use symbols. 
+
+- white box: 0
+- half white box: <= 0.5
+- half full box: > .5
+- full box: 1
+
+![image-20211220172600085](_assets/image-20211220172600085.png){width=650}
+
+![image-20211220171759409](_assets/image-20211220171759409.png){width=650}
+
+![image-20211216195218720](_assets/image-20211216195218720.png){width=650}
+
+![image-20211216200541572](_assets/image-20211216200541572.png){width=650}
+
+
+
+### Showing continuity with colours
+
+https://causalmap.shinyapps.io/CM2test/?s=618
+
+Using arrowheads gives you information about both upstream and downstream flows, but it can be a bit tricky to read. Instead you can use colours to display either downstream (effects of causes) or upstream (causes of effects) continuity. 
+
+
+
+![image-20220117103703826](_assets/image-20220117103703826.png){width=650}
+
+Here we see that not so many of the people who mentioned the link from business to income mentioned the link from purchasing power to business. 
+
+Same, but upstream continuity:
+
+![image-20220117104107156](_assets/image-20220117104107156.png){width=650}
+
+https://causalmap.shinyapps.io/CM2test/?s=619
+
+These values are set to 1 at the edges of the map where the metric has no meaning.
+
+Note this is not the same as the non-causal question "how many of the people who mentioned factor C also mentioned factor E".
+
+![.http://theorymaker.info/?permalink=transitivity](_assets/image-20211222121147473.png){width=650}
+
+### More about these metrics
+
+
+
+| Local Continuity | factors (simple)                                             | Factors (ego network)                                        |
+| ---------------- | ------------------------------------------------------------ | ------------------------------------------------------------ |
+|                  | overlap between sources who mentioned links to this factor and sources who mentioned links from this factor | overlap between sources who mentioned links to the causes of this factor and sources who mentioned links from the effects of this factor |
+|                  |                                                              |                                                              |
+
+And, with links:
+
+| Local Continuity | Links                                                        |
+| ---------------- | ------------------------------------------------------------ |
+| Upstream         | overlap between sources who mentioned this link and sources who mentioned links to the cause of this link |
+| Downstream       | overlap between sources who mentioned this link and sources who mentioned links from the effects of this link |
+
+
+Each of these metrics can be expressed as a confusion matrix and can be cashed out as different ratios. We can therefore also interpret these metrics in terms of causal necessity and sufficiency. For example, above we can say that K is **causally sufficient** (with respect to sources) for M because all the sources who mention causes of M (along paths from K to M) also mention effects of K (along paths from K to M).
+
+We need to say "with respect to sources" because all these ideas are generalisable to other fields such as, for example, village or question domain.
+
+Because these metrics (confusion matrices) are defined in terms of source_id (or some other context-relevant link variable) they partly counter the problem with previous versions of these metrics in that they provide a denominator (number of sources) even if this has to be used with some care: as usual, the fact that source S does not mention link L does not mean they wouldn't assent to it, it may just not have appeared in the stochastic interview process. 
+
+
+Many different metrics are possible. These (all?) also have corresponding non-causal counterparts as in QCA, for example:
+
+| Local continuity (non-causal) | Factors (ego network)                                        |
+| ----------------------------- | ------------------------------------------------------------ |
+|                               | overlap between sources who mentioned the causes of this factor and sources who mentioned the effects of this factor |
+|                               |                                                              |
+
+
+
+These QCA-type metrics (confusion matrices) are inferior to their causal counterparts because they lose the information about what causes what and only use information about co-occurrence.
+
+
+
