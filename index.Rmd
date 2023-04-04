@@ -52,6 +52,7 @@ Each is followed by a simple [quiz](https://causalmap.shinyapps.io/quizzes/).
 
 - [The rest of the app](#xupdates-tab) 
 - [Technical reference](#xlevel7)
+- [Frequently Asked Question](https://guide.causalmap.app/faqs.html)
 
 If you are in a hurry (and who isn't?), just read Level 1: Getting Started.
 

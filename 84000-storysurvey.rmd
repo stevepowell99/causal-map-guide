@@ -1,56 +1,59 @@
-# Using StorySurvey: for survey editor
+# Using StorySurvey
 
 This documentation is work in progress.
 
-You have to log in with one of the accounts which is hardcoded as admin. 
 
-The SQL table `ss2embeddings` has columns for survey ("project"), original phrase ("old") and then hundreds of columns containing the embeddings for each original phrase.
 
-The embedding for each new phrase is added to the table `ss2embeddings` when the respondent enters it.
+## Frequent questions
 
-This table can be (re-)constructed with the function generate_embeddings() (there is a button in the Cluster panel). This should not be necessary as embeddings are added as above.
+**How to use StorySurvey in a different language?**
 
-The SQL table `ss2recodes` has xxxxxxx columns for survey ("project"), original phrase ("old") and then hundreds of columns containing the embeddings for each original phrase.
+Just add the [two-letter code for a specific language](https://causalmap.shinyapps.io/StorySurvey3/?survey=local-problems) to the end of the URL like this:
 
-## Explorer
-
-Here you can click to explore the factor structure
-
-## Map
-
-A view of the complete map with all links with frequency of 2 or above
-
-## Project recodes
-
-All the current recodes on the current project, including factors which have been hidden.
-
-## Project settings
-
-TBC
-
-## Project answers
-
-TBC
-
-## Project questions
-
-If you change the text of the questions and there are already answers recorded, these answers will become detached from the original questions.
-
-Each question can also have a short version which is used instead of the long question in the maps.
-
-## Project recodes ace: The recodes advanced editor
-
-The tab you need is `Project recodes ace` which is the first tab.
-
-### Basic idea
-
-The idea is that you recode daughters like Y into mothers like X by adding X; in front of Y.
-
-This is very similar to the idea from Causal Map that `increased income; cash from sale of pig` is an example of `increased income`, but with StorySurvey the more detailed part of the label is already created by the respondent, and the analyst's job (or the NLP's job) is only to classify `cash from sale of pig` as an example of `increased income`.
-
-Also, in Causal Map, the different lower-level labels should be meaningfully different variations of a central idea, whereas in StorySurvey that is only half the job, the other half is simply about merging different formulations of exactly the same idea.
-
-Unlike in Causal Map, in StorySurvey the purpose of the recodes is not mainly to be able to sometimes display outputs with all the different variations. In StorySurvey, the daughters in a recode set are more like the different quotes in Causal Map -- they serve to give colour to, and illustrate, each individual factor.  
+https://causalmap.shinyapps.io/StorySurvey3/?survey=local-problems&lang=fr
 
 
 
+**Is StorySurvey publicly released?**
+
+Yes! At the moment we are using it with a small number of partners, but you are welcome to create your own interviews.
+
+
+
+**How are respondents invited?**
+
+At the moment, you as survey editor invite respondents to participate simply via a web link. You can send that link to anyone you like.
+
+
+
+**Are surveys private?**
+
+A survey can be made private so that no-one else can find the survey except if they know the link. 
+
+
+
+**Can someone fill in a survey twice?**
+
+Normally, respondents are prevented from filling in a survey twice via a cookie, but if they were clever enough they could get round that and fill in a survey more than once. 
+
+However, we can also enable "token mode" so that you can send an individualised (anonymous or not) link to each respondent, so that only they can respond and so that each respondent can only finish the survey once.
+
+ 
+
+**What if a respondent loses the internet connection?**
+
+StorySurvey remembers respondents' sessions, so that if they don't get round to completing the survey or if a connection breaks, they can resume later as long as they use the same device.
+
+ 
+
+**How to log in to edit the survey?**
+
+StorySurvey does not require respondents to log in in any way. 
+
+If we at Causal Map are deploying the StorySurvey for you, that is all you need to worry about. However if you want, you can log in with a Google account or email to view and edit the surveys to which you have access.
+
+
+
+**Where is the data stored?**
+
+StorySurvey (questions and answers and other settings) are securely stored in a private MySQL database at Amazon EC2. Like most web apps, StorySurvey uses SSL to encrypt data in transit.

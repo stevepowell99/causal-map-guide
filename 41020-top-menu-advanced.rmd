@@ -2,7 +2,7 @@
 
 This section is all about how to manage using the top menu to help you deal with the currently loaded file. Hover over the icons to see what they do.
 
-![](_assets/image-20211025111815970.png){width=650}
+![Screenshot 2023-03-31 at 12.00.57](_assets/Screenshot 2023-03-31 at 12.00.57.png)
 
 There is also a dedicated [File Manager](#file-manager) to manage all your files.
 
@@ -10,9 +10,9 @@ There is also a dedicated [File Manager](#file-manager) to manage all your files
 
 Click the green icon to manage your file.
 
-![uBfaYOvRRH](_assets/uBfaYOvRRH.gif){width=650}
+![press manage](_assets/press manage.gif)
 
-![image-20230103192339456](_assets/image-20230103192339456.png){width=650}
+![Screenshot 2023-03-31 at 12.05.43](_assets/Screenshot 2023-03-31 at 12.05.43.png){width=650}
 
 ### Sharing and locking files
 
