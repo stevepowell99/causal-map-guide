@@ -56,7 +56,7 @@ Each is followed by a simple [quiz](https://causalmap.shinyapps.io/quizzes/).
 
 If you are in a hurry (and who isn't?), just read Level 1: Getting Started.
 
-Features marked 🧪are experimental and are implemented on the [test server](https://causalmap.shinyapps.io/CM2test) only.
+Features marked 🧪are experimental and are implemented on the [test servers](https://causalmap.shinyapps.io/CM2test) [only](https://causalmap.shinyapps.io/tokyo).
 
 
 
@@ -66,7 +66,7 @@ Features marked 🧪are experimental and are implemented on the [test server](ht
 knitr::include_url("https://www.youtube.com/embed/S2acbJJ9t7E")
 ```
 
-Also check out our growing library of [short, focussed training videos](#xvideo-list), none longer than four minutes!
+Check out our growing library of [short, focussed training videos](#xvideo-list), none longer than four minutes!
 
 
 ## Support chat
@@ -79,6 +79,10 @@ Also check out our growing library of [short, focussed training videos](#xvideo-
 ## Quizzes
 
 Test your knowledge of causal mapping and Causal Map with our structured series of [quizzes](https://causalmap.shinyapps.io/quizzes/).
+
+### Mailing list
+
+Sign up [here](https://forms.wix.com/f/6990334085528813568) for updates about Causal Map.
 
 ## Selected projects to date
 

@@ -4,7 +4,7 @@
 
 ![image-20220725094435395](_assets/image-20220725094435395.png)
 
-The Dashboard appears on the right as the app loads. You can also reach the dashboard by pressing the 🏅 icon on the right, or with the key combination Alt+q. 
+The Dashboard appears on the right as the app loads. You can also reach the dashboard by pressing the 🏅 icon on the right, or with the key combination Alt+q (Windows/Linux) or option+q (Mac). 
 
 The Dashboard lists views of the current file saved by you or other users. 
 

@@ -6,11 +6,37 @@ This documentation is work in progress.
 
 ## Frequent questions
 
+**How to import StorySurvey data into Causal Map?**
+
+
+
+Open or create a Causal Map file into which you want to import the data, and then click the Upload button:![image-20230419165916015](_assets/image-20230419165916015.png)
+
+Enter the name of the StorySurvey file. Tip: if you name the Causal Map file the same as your StorySurvey file, the name is auto-filled. and you only have to click Import.
+
+![image-20230419165743417](_assets/image-20230419165743417.png)
+
+You can do this any time while your StorySurvey is still live to get the latest data. The links, factors and statements (and sources) in your StorySurvey are replaced with the new data - you should notice no difference for existing data but you will see that new statements, sources, factors and links are added. Any other contents of your Causal Map file, in particular its revision history, view and recodes, are preserved.
+
+
+
+
+
 **How to use StorySurvey in a different language?**
 
-Just add the [two-letter code for a specific language](https://causalmap.shinyapps.io/StorySurvey3/?survey=local-problems) to the end of the URL like this:
+Just add the [three-letter code for a specific language](https://en.wikipedia.org/wiki/List_of_ISO_639-1_codes) to the end of the URL like this:
 
-https://causalmap.shinyapps.io/StorySurvey3/?survey=local-problems&lang=fr
+https://causalmap.shinyapps.io/StorySurvey3/?survey=local-problems&lang=deu
+
+You can also set the language of the survey itself.
+
+|      | URL language | survey language | interface | survey text |      |
+| ---- | ------------ | --------------- | --------- | ----------- | ---- |
+|      | unset        | unset           | English   | English     |      |
+|      | lang A       | unset           | lang A    | lang A      |      |
+|      | unset        | lang A          | lang A    | lang A      |      |
+|      | lang A       | lang B          | lang A    | lang A      |      |
+|      |              |                 |           |             |      |
 
 
 
