@@ -28,7 +28,7 @@
 <meta name="author" content="Samuel Goddard" />
 
 
-<meta name="date" content="2023-04-26" />
+<meta name="date" content="2023-04-27" />
 
   <meta name="viewport" content="width=device-width, initial-scale=1" />
   <meta name="apple-mobile-web-app-capable" content="yes" />
@@ -610,6 +610,7 @@ code span.wa { color: #60a0b0; font-weight: bold; font-style: italic; } /* Warni
 <li class="chapter" data-level="" data-path="xmanage_your_subscription.html"><a href="xmanage_your_subscription.html"><i class="fa fa-check"></i>Managing your subscription</a></li>
 <li class="chapter" data-level="" data-path="auto-coding.html"><a href="auto-coding.html"><i class="fa fa-check"></i>Auto-coding using AI</a>
 <ul>
+<li class="chapter" data-level="" data-path="auto-coding.html"><a href="auto-coding.html#languages"><i class="fa fa-check"></i>Languages</a></li>
 <li class="chapter" data-level="" data-path="auto-coding.html"><a href="auto-coding.html#it-isnt-cheap"><i class="fa fa-check"></i>It isn’t cheap</a></li>
 <li class="chapter" data-level="" data-path="auto-coding.html"><a href="auto-coding.html#the-coding-prompt"><i class="fa fa-check"></i>The coding prompt</a></li>
 <li class="chapter" data-level="" data-path="auto-coding.html"><a href="auto-coding.html#identifying-links"><i class="fa fa-check"></i>Identifying links</a></li>
@@ -617,6 +618,7 @@ code span.wa { color: #60a0b0; font-weight: bold; font-style: italic; } /* Warni
 <ul>
 <li class="chapter" data-level="" data-path="auto-coding.html"><a href="auto-coding.html#colon-style"><i class="fa fa-check"></i>Colon style</a></li>
 <li class="chapter" data-level="" data-path="auto-coding.html"><a href="auto-coding.html#slash-style"><i class="fa fa-check"></i>Slash style</a></li>
+<li class="chapter" data-level="" data-path="auto-coding.html"><a href="auto-coding.html#limitations"><i class="fa fa-check"></i>Limitations</a></li>
 </ul></li>
 <li class="chapter" data-level="" data-path="auto-coding.html"><a href="auto-coding.html#the-prompt-library"><i class="fa fa-check"></i>The prompt library</a></li>
 <li class="chapter" data-level="" data-path="auto-coding.html"><a href="auto-coding.html#auto-coding-clicking-go"><i class="fa fa-check"></i>Auto coding: Clicking “Go”</a>
@@ -633,6 +635,7 @@ code span.wa { color: #60a0b0; font-weight: bold; font-style: italic; } /* Warni
 <li class="chapter" data-level="" data-path="auto-coding.html"><a href="auto-coding.html#clustering-1-providing-clustering-suggestions-for-the-prompt"><i class="fa fa-check"></i>Clustering 1) Providing clustering suggestions for the prompt</a></li>
 <li class="chapter" data-level="" data-path="auto-coding.html"><a href="auto-coding.html#clustering-2-using-the-cluster-factors-filter"><i class="fa fa-check"></i>Clustering 2) Using the <em>Cluster factors</em> filter</a></li>
 </ul></li>
+<li class="chapter" data-level="" data-path="auto-coding.html"><a href="auto-coding.html#importing-from-storysurvey"><i class="fa fa-check"></i>Importing from StorySurvey</a></li>
 </ul></li>
 <li class="part"><span><b>📚Spotlights</b></span></li>
 <li class="chapter" data-level="" data-path="xlevel6.html"><a href="xlevel6.html"><i class="fa fa-check"></i>Spotlight</a></li>
@@ -823,10 +826,7 @@ code span.wa { color: #60a0b0; font-weight: bold; font-style: italic; } /* Warni
 <li class="chapter" data-level="" data-path="causal-map-functions.html"><a href="causal-map-functions.html"><i class="fa fa-check"></i>Causal Map functions</a></li>
 <li class="chapter" data-level="" data-path="xvideo-list.html"><a href="xvideo-list.html"><i class="fa fa-check"></i>Video list</a></li>
 <li class="chapter" data-level="" data-path="xexcel.html"><a href="xexcel.html"><i class="fa fa-check"></i>Causal mapping with Excel</a></li>
-<li class="chapter" data-level="" data-path="using-storysurvey.html"><a href="using-storysurvey.html"><i class="fa fa-check"></i>Using StorySurvey</a>
-<ul>
-<li class="chapter" data-level="" data-path="using-storysurvey.html"><a href="using-storysurvey.html#frequent-questions"><i class="fa fa-check"></i>Frequent questions</a></li>
-</ul></li>
+<li class="chapter" data-level="" data-path="ss-to-cm.html"><a href="ss-to-cm.html"><i class="fa fa-check"></i>Using StorySurvey</a></li>
 <li class="chapter" data-level="" data-path="x.html"><a href="x.html"><i class="fa fa-check"></i>Features of Causal Map</a>
 <ul>
 <li class="chapter" data-level="" data-path="x.html"><a href="x.html#main-features-of-causal-map"><i class="fa fa-check"></i>Main features of Causal Map</a></li>
@@ -928,6 +928,10 @@ code span.wa { color: #60a0b0; font-weight: bold; font-style: italic; } /* Warni
 <p>Live on Tokyo. It’s visible only to people who are hard coded as admins at the moment.</p>
 <p>Auto coding is a new tab. The UI is not terribly sophisticated at the moment, but I’m not going to spend too long working on it. Until we’re sure how we think this should all work.</p>
 <p>You can do already some production level coding using it with a relatively small amount of human tweaking.</p>
+<div id="languages" class="section level2 hasAnchor">
+<h2>Languages<a href="auto-coding.html#languages" class="anchor-section" aria-label="Anchor link to header"></a></h2>
+<p>As far as we know, you can provide prompts in English to process un-translated non-English texts and it should work fine. It would probably be better to have the prompts in the same language a</p>
+</div>
 <div id="it-isnt-cheap" class="section level2 hasAnchor">
 <h2>It isn’t cheap<a href="auto-coding.html#it-isnt-cheap" class="anchor-section" aria-label="Anchor link to header"></a></h2>
 <p>The big caveat is it’s not cheap because when using GPT-4. There is a switch for this.</p>
@@ -959,6 +963,11 @@ code span.wa { color: #60a0b0; font-weight: bold; font-style: italic; } /* Warni
 <h3>Slash style<a href="auto-coding.html#slash-style" class="anchor-section" aria-label="Anchor link to header"></a></h3>
 <p>We ask the AI to give us the whole quote at the end of the line, separated by four slashes.</p>
 <p>In this style it is easier to specify how to work with longer chains rather than individual links. And it is required when you send several statements in one batch.</p>
+</div>
+<div id="limitations" class="section level3 hasAnchor">
+<h3>Limitations<a href="auto-coding.html#limitations" class="anchor-section" aria-label="Anchor link to header"></a></h3>
+<p>Prompts can only be used to add information to factor labels, not link fields like the “hashtags” field.</p>
+<p>Other information like quickfields e.g. <code>increased yields time:2013</code> and other factor tags are part of the factor label and so in principle can be added to the prompt. But we haven’t tried that.</p>
 </div>
 </div>
 <div id="the-prompt-library" class="section level2 hasAnchor">
@@ -1056,6 +1065,11 @@ code span.wa { color: #60a0b0; font-weight: bold; font-style: italic; } /* Warni
 <h3>Clustering 2) Using the <em>Cluster factors</em> filter<a href="auto-coding.html#clustering-2-using-the-cluster-factors-filter" class="anchor-section" aria-label="Anchor link to header"></a></h3>
 <p>Here we’re not recoding an existing file.</p>
 <p>Clustering is another filter which keeps the coding as it was and then simply clusters the factors just like, say, <code>zoom factors</code> does without changing the underlying coding.</p>
+</div>
+</div>
+<div id="importing-from-storysurvey" class="section level2 hasAnchor">
+<h2>Importing from StorySurvey<a href="auto-coding.html#importing-from-storysurvey" class="anchor-section" aria-label="Anchor link to header"></a></h2>
+<p>See <a href="ss-to-cm.html#ss-to-cm">this page</a>.</p>
 <!--
 
 So you can play with this if you want to but when you press this button. It then sends all of the factor labels in the file in this case there are only nine statements to the AI again, not asking it now to do any coding but simply to look at the factor labels and put them.
@@ -1164,7 +1178,6 @@ But using 3.5 costs one thirtieth: the whole of example-file costs 10 cents.
 
 -->
 
-</div>
 </div>
 </div>
 

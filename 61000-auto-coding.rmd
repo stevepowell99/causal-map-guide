@@ -8,6 +8,10 @@ Auto coding is a new tab. The UI is not terribly sophisticated at the moment, bu
 
 You can do already some production level coding using it with a relatively small amount of human tweaking.
 
+## Languages
+
+As far as we know, you can provide prompts in English to process un-translated non-English texts and it should work fine. It would probably be better to have the prompts in the same language a
+
 ## It isn't cheap
 
 The big caveat is it's not cheap because when using GPT-4. There is a switch for this. 
@@ -44,15 +48,17 @@ We ask the AI to name the from_quote and the to_quote after the from_label and t
 
 The app then calculates the entire quote using fuzzy matching.
 
-
-
 ### Slash style
 
 We ask the AI to give us the whole quote at the end of the line, separated by four slashes.
 
 In this style it is easier to specify how to work with longer chains rather than individual links. And it is required when you send several statements in one batch.
 
+### Limitations
 
+Prompts can only be used to add information to factor labels, not link fields like the "hashtags" field. 
+
+Other information like quickfields e.g. `increased yields time:2013` and other factor tags are part of the factor label and so in principle can be added to the prompt. But we haven't tried that.
 
 ## The prompt library
 
@@ -194,6 +200,12 @@ More explicitly your prompt can say"prefer factor labels like these: Covid-19, e
 Here we're not recoding an existing file. 
 
 Clustering is another filter which keeps the coding as it was and then simply clusters the factors just like, say, `zoom factors` does without changing the underlying coding. 
+
+## Importing from StorySurvey
+
+See [this page](#ss-to-cm).
+
+
 
 <!--
 

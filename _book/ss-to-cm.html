@@ -4,20 +4,20 @@
 
   <meta charset="utf-8" />
   <meta http-equiv="X-UA-Compatible" content="IE=edge" />
-  <title>📚 Plain coding | Guide to Causal Mapping</title>
-  <meta name="description" content="📚 Plain coding | Guide to Causal Mapping" />
+  <title>Using StorySurvey | Guide to Causal Mapping</title>
+  <meta name="description" content="Using StorySurvey | Guide to Causal Mapping" />
   <meta name="generator" content="bookdown 0.26 and GitBook 2.6.7" />
 
-  <meta property="og:title" content="📚 Plain coding | Guide to Causal Mapping" />
+  <meta property="og:title" content="Using StorySurvey | Guide to Causal Mapping" />
   <meta property="og:type" content="book" />
   <meta property="og:image" content="https://causalmap.app/_assets/image-20210520221329966.png" />
-  <meta property="og:description" content="📚 Plain coding | Guide to Causal Mapping" />
+  <meta property="og:description" content="Using StorySurvey | Guide to Causal Mapping" />
   
 
   <meta name="twitter:card" content="summary" />
-  <meta name="twitter:title" content="📚 Plain coding | Guide to Causal Mapping" />
+  <meta name="twitter:title" content="Using StorySurvey | Guide to Causal Mapping" />
   
-  <meta name="twitter:description" content="📚 Plain coding | Guide to Causal Mapping" />
+  <meta name="twitter:description" content="Using StorySurvey | Guide to Causal Mapping" />
   <meta name="twitter:image" content="https://causalmap.app/_assets/image-20210520221329966.png" />
 
 <meta name="author" content="Steve Powell" />
@@ -35,8 +35,8 @@
   <meta name="apple-mobile-web-app-status-bar-style" content="black" />
   
   
-<link rel="prev" href="xquickfields.html"/>
-<link rel="next" href="xgamification.html"/>
+<link rel="prev" href="xexcel.html"/>
+<link rel="next" href="x.html"/>
 <script src="libs/jquery-3.6.0/jquery-3.6.0.min.js"></script>
 <script src="https://cdn.jsdelivr.net/npm/fuse.js@6.4.6/dist/fuse.min.js"></script>
 <link href="libs/gitbook-2.6.7/css/style.css" rel="stylesheet" />
@@ -922,59 +922,18 @@ code span.wa { color: #60a0b0; font-weight: bold; font-style: italic; } /* Warni
 
   gtag('config', 'G-1EQ4YJMYRJ');
 </script>
-<div id="xplain_coding" class="section level1 hasAnchor">
-<h1>📚 Plain coding<a href="#xplain_coding" class="anchor-section" aria-label="Anchor link to header"></a></h1>
-<div id="summary-5" class="section level2 hasAnchor">
-<h2>Summary<a href="xplain_coding.html#summary-5" class="anchor-section" aria-label="Anchor link to header"></a></h2>
-<p>Causal mapping doesn’t usually deal with the kind of non-causal themes which are the focus of ordinary QDA (like in NVivo!). However sometimes it can be really useful to be able to simply note the presence of something without any causal connection.</p>
-<p>We call this “plain coding”. You can use it for:</p>
-<ol style="list-style-type: decimal">
-<li>Noting the presence of something which is not mentioned as part of a causal link in the statement you are coding but does appear <em>elsewhere</em> as a causal factor as part of a causal link.</li>
-<li>…Or noting the presence of something which is “nothing but” a theme and never appears in causal coding.</li>
-</ol>
-<p>Causal Map makes this possible in a simple way: we define a “plain coding” as simply a link from a factor to itself with has the hashtag <code>#plain_coding</code>.</p>
-<p>Factors involved in plain codings (whether some of the time or all of the time) can of course still be involved in hierarchies and opposites coding just like any other factor.</p>
-<p>So by default, plain codings will still appear in maps, as self-loops from the factor to itself, although it is possible to exclude such links by using this filter:</p>
-<p><code>find links field=hashtags value=#plain_coding operator=notcontains</code></p>
-<p>There is a shortcut button to apply this filter in the addons section in the dashboard.</p>
-<div class="figure">
-<img src="_assets/image-20220809115120423.png" alt="" />
-<p class="caption">image-20220809115120423</p>
-</div>
-<p>It would also be possible to format this kind of link in a special way, e.g. by not showing any arrowheads.</p>
-<p>Doing plain coding like this has the big advantage that factors coded with plain codings will still appear in the tables in the ordinary way, so for example the plain coding to (and from) the factor <u>increased income</u> will still count towards its source and citation counts.</p>
-<p>It also means that you can easily delete a plain coding from a map by clicking on the link.</p>
-<p>The hashtag <code>#plain_coding</code> distinguishes plain codings from actual causal links where a factor indeed influences itself, for example if someone says that increased income led to even more increased income – in this case the hashtag is not used. This hashtag can also be used together with other hashtags for the same link in the usual way.</p>
-</div>
-<div id="what-the-app-does" class="section level2 hasAnchor">
-<h2>What the app does<a href="xplain_coding.html#what-the-app-does" class="anchor-section" aria-label="Anchor link to header"></a></h2>
-<p>This implementation of plain coding is unsophisticated and does not involve the underlying Causal Map Functions package at all.</p>
-<p>There is just a little button for plain coding. <img src="_assets/image-20220210155741353.png" alt="image-20220210155741353" /></p>
-<ul>
-<li>If you press it, it will toggle the hashtag <code>#plain_coding</code> (you could also edit the hashtag manually but why bother).</li>
-<li>When a coding you are going to make, or one which you are editing, has this special hashtag, the consequence factor selector is greyed out and always has the same contents as the influence factor.</li>
-<li>When doing plain coding, if you put more than one factor in the first factor dropdown, each factor will just get one link to itself (rather than links being created between all the factors).</li>
-</ul>
-<div class="figure">
-<img src="_assets/chrome_JYHrvSSH8p.gif" width="650" alt="" />
-<p class="caption">chrome_JYHrvSSH8p</p>
-</div>
-</div>
-<div id="future" class="section level2 hasAnchor">
-<h2>Future<a href="xplain_coding.html#future" class="anchor-section" aria-label="Anchor link to header"></a></h2>
-<p>Potentially it is possible then to use Causal Map to code some text entirely with plain codes.</p>
-<p>At the moment, you would have to still have to press the “plain coding” button every time you create a coding, but this could be also made into a default setting.</p>
-<p>Should we introduce more functionality around the analysis and reporting of plain codings? Let us know at <a href="mailto:hello@causalmap.ap" class="email">hello@causalmap.ap</a></p>
+<div id="ss-to-cm" class="section level1 hasAnchor">
+<h1>Using StorySurvey<a href="ss-to-cm.html#ss-to-cm" class="anchor-section" aria-label="Anchor link to header"></a></h1>
+<p>StorySurvey is under rapid development, please view the latest documentation <a href="https://causalmap.notion.site/Current-StorySurvey3-documentation-e45071aa95f043de9c5686e37df8bdd2">here</a>.</p>
 
-</div>
 </div>
             </section>
 
           </div>
         </div>
       </div>
-<a href="xquickfields.html" class="navigation navigation-prev " aria-label="Previous page"><i class="fa fa-angle-left"></i></a>
-<a href="xgamification.html" class="navigation navigation-next " aria-label="Next page"><i class="fa fa-angle-right"></i></a>
+<a href="xexcel.html" class="navigation navigation-prev " aria-label="Previous page"><i class="fa fa-angle-left"></i></a>
+<a href="x.html" class="navigation navigation-next " aria-label="Next page"><i class="fa fa-angle-right"></i></a>
     </div>
   </div>
 <script src="libs/gitbook-2.6.7/js/app.min.js"></script>
