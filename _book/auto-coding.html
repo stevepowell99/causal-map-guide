@@ -28,7 +28,7 @@
 <meta name="author" content="Samuel Goddard" />
 
 
-<meta name="date" content="2023-04-27" />
+<meta name="date" content="2023-05-15" />
 
   <meta name="viewport" content="width=device-width, initial-scale=1" />
   <meta name="apple-mobile-web-app-capable" content="yes" />
@@ -504,6 +504,7 @@ code span.wa { color: #60a0b0; font-weight: bold; font-style: italic; } /* Warni
 <li class="chapter" data-level="" data-path="what-is-the-logic-behind-the-causal-map-filters.html"><a href="what-is-the-logic-behind-the-causal-map-filters.html#the-order-of-the-filters-with-calculated-fields"><i class="fa fa-check"></i>The order of the filters with calculated fields</a></li>
 <li class="chapter" data-level="" data-path="what-is-the-logic-behind-the-causal-map-filters.html"><a href="what-is-the-logic-behind-the-causal-map-filters.html#xautocorrect"><i class="fa fa-check"></i>Autocorrect</a></li>
 <li class="chapter" data-level="" data-path="what-is-the-logic-behind-the-causal-map-filters.html"><a href="what-is-the-logic-behind-the-causal-map-filters.html#where-do-these-islands-come-from-in-my-map"><i class="fa fa-check"></i>Where do these islands come from in my map?</a></li>
+<li class="chapter" data-level="" data-path="what-is-the-logic-behind-the-causal-map-filters.html"><a href="what-is-the-logic-behind-the-causal-map-filters.html#when-do-factor-metrics-like-frequencies-get-calculated"><i class="fa fa-check"></i>🧪When do factor metrics like frequencies get calculated?</a></li>
 </ul></li>
 <li class="chapter" data-level="" data-path="filters-tips.html"><a href="filters-tips.html"><i class="fa fa-check"></i>Filters: tips</a>
 <ul>
@@ -614,12 +615,14 @@ code span.wa { color: #60a0b0; font-weight: bold; font-style: italic; } /* Warni
 <li class="chapter" data-level="" data-path="auto-coding.html"><a href="auto-coding.html#it-isnt-cheap"><i class="fa fa-check"></i>It isn’t cheap</a></li>
 <li class="chapter" data-level="" data-path="auto-coding.html"><a href="auto-coding.html#the-coding-prompt"><i class="fa fa-check"></i>The coding prompt</a></li>
 <li class="chapter" data-level="" data-path="auto-coding.html"><a href="auto-coding.html#identifying-links"><i class="fa fa-check"></i>Identifying links</a></li>
+<li class="chapter" data-level="" data-path="auto-coding.html"><a href="auto-coding.html#choosing-between-single-links-ab-and-bc-or-chains-abc"><i class="fa fa-check"></i>Choosing between single <strong>links</strong> (A&gt;&gt;B and B&gt;&gt;C) or <strong>chains</strong> (A&gt;&gt;B&gt;&gt;C):</a></li>
 <li class="chapter" data-level="" data-path="auto-coding.html"><a href="auto-coding.html#ensuring-quotes-are-provided"><i class="fa fa-check"></i>Ensuring quotes are provided</a>
 <ul>
 <li class="chapter" data-level="" data-path="auto-coding.html"><a href="auto-coding.html#colon-style"><i class="fa fa-check"></i>Colon style</a></li>
 <li class="chapter" data-level="" data-path="auto-coding.html"><a href="auto-coding.html#slash-style"><i class="fa fa-check"></i>Slash style</a></li>
 <li class="chapter" data-level="" data-path="auto-coding.html"><a href="auto-coding.html#limitations"><i class="fa fa-check"></i>Limitations</a></li>
 </ul></li>
+<li class="chapter" data-level="" data-path="auto-coding.html"><a href="auto-coding.html#consistency-across-factor-labels"><i class="fa fa-check"></i>Consistency across factor labels</a></li>
 <li class="chapter" data-level="" data-path="auto-coding.html"><a href="auto-coding.html#the-prompt-library"><i class="fa fa-check"></i>The prompt library</a></li>
 <li class="chapter" data-level="" data-path="auto-coding.html"><a href="auto-coding.html#auto-coding-clicking-go"><i class="fa fa-check"></i>Auto coding: Clicking “Go”</a>
 <ul>
@@ -928,26 +931,47 @@ code span.wa { color: #60a0b0; font-weight: bold; font-style: italic; } /* Warni
 <p>Live on Tokyo. It’s visible only to people who are hard coded as admins at the moment.</p>
 <p>Auto coding is a new tab. The UI is not terribly sophisticated at the moment, but I’m not going to spend too long working on it. Until we’re sure how we think this should all work.</p>
 <p>You can do already some production level coding using it with a relatively small amount of human tweaking.</p>
+<p>If you’re new to the AI world, it’s worth taking a look at this <a href="https://causalmap.notion.site/General-tips-for-prompts-1-cbb0fe688a734dbd9cdac0eed2614413">link</a>, where you’ll find general tips for writing prompts.</p>
 <div id="languages" class="section level2 hasAnchor">
 <h2>Languages<a href="auto-coding.html#languages" class="anchor-section" aria-label="Anchor link to header"></a></h2>
-<p>As far as we know, you can provide prompts in English to process un-translated non-English texts and it should work fine. It would probably be better to have the prompts in the same language a</p>
+<p>When using statements in a language other than English, ask the AI to translate them. Otherwise, if you don’t put any instructions for translating the statements, the AI highlights the statement but doesn’t show the factor labels and links in the map.</p>
+<p>You can use a prompt like: <em>‘If the text is in a language other than English, be sure to translate it to English when creating the factor labels’</em>.</p>
+<p><img src="_assets/language-cm-autocoding.png" />{width:650}</p>
 </div>
 <div id="it-isnt-cheap" class="section level2 hasAnchor">
 <h2>It isn’t cheap<a href="auto-coding.html#it-isnt-cheap" class="anchor-section" aria-label="Anchor link to header"></a></h2>
 <p>The big caveat is it’s not cheap because when using GPT-4. There is a switch for this.</p>
 <p>If using GPT-4, work on small files to start with.</p>
-<p>If the batch is very large, the app switches to 32K model which is even more expensive per character.</p>
+<p>If the batch is very large, the app switches to a 32K model which is even more expensive per character.</p>
 </div>
 <div id="the-coding-prompt" class="section level2 hasAnchor">
 <h2>The coding prompt<a href="auto-coding.html#the-coding-prompt" class="anchor-section" aria-label="Anchor link to header"></a></h2>
-<p>The default prompt is a sort of generic prompt, which gives instructions to chat GPT API to to recode the file in the very generic way.</p>
+<p>The default prompt is a sort of generic prompt, which gives instructions to chat GPT API to recode the file in a very generic way.</p>
 <p>Even this generic way works quite nicely.</p>
 </div>
 <div id="identifying-links" class="section level2 hasAnchor">
 <h2>Identifying links<a href="auto-coding.html#identifying-links" class="anchor-section" aria-label="Anchor link to header"></a></h2>
 <p>You can provide any prompt you want and this will be applied to currently visible statements. BUT in order to actually identify links (which is the whole point), the output needs to include at least some lines including the “<code>&gt;&gt;</code>” symbol, which we call the “double-arrow”.</p>
 <p>Each line of the form X &gt;&gt; Y will be converted to a link from X to Y.</p>
-<p>Each line of the form X &gt;&gt; Y &gt;&gt; Z will be converted to two links from X to Y and from Y to Z, and so on.</p>
+<p>Each line of the form X &gt;&gt; Y &gt;&gt; Z will be converted to two links from X to Y and from Y to Z, and so on. And we call this kind of display ‘chains’</p>
+</div>
+<div id="choosing-between-single-links-ab-and-bc-or-chains-abc" class="section level2 hasAnchor">
+<h2>Choosing between single <strong>links</strong> (A&gt;&gt;B and B&gt;&gt;C) or <strong>chains</strong> (A&gt;&gt;B&gt;&gt;C):<a href="auto-coding.html#choosing-between-single-links-ab-and-bc-or-chains-abc" class="anchor-section" aria-label="Anchor link to header"></a></h2>
+<p>GPT 3.5 doesn’t do a very good job with chains, so make sure when using GPT 3.5 to ask for single links.</p>
+<ul>
+<li><strong>Single Links:</strong> If you’re looking for <strong><em>more details</em></strong>, the single links are the way to go: the AI can find more details and factors when looking at each link individually</li>
+</ul>
+<p><img src="_assets/single-links-cm-autocoding.png" />{width:650}</p>
+<ul>
+<li><p><strong>Chains</strong>: But if you want to look at the bigger picture, <em>chains</em> do a good job. Sometimes the bot can ignore one or another causal link, so make sure you always check your map after coding.</p>
+<p><img src="_assets/chains-cm-autocoding.png" />{width:650}</p>
+<p>Limitations about chains:</p>
+<ol style="list-style-type: decimal">
+<li>Conjunctions are hard to deal with when you have chains</li>
+<li>If using examples, make sure when putting the quote in the example, DO NOT use the “, because the AI gets confused.</li>
+<li>It can get harder to give more complicated examples with chains</li>
+</ol></li>
+</ul>
 </div>
 <div id="ensuring-quotes-are-provided" class="section level2 hasAnchor">
 <h2>Ensuring quotes are provided<a href="auto-coding.html#ensuring-quotes-are-provided" class="anchor-section" aria-label="Anchor link to header"></a></h2>
@@ -962,7 +986,7 @@ code span.wa { color: #60a0b0; font-weight: bold; font-style: italic; } /* Warni
 <div id="slash-style" class="section level3 hasAnchor">
 <h3>Slash style<a href="auto-coding.html#slash-style" class="anchor-section" aria-label="Anchor link to header"></a></h3>
 <p>We ask the AI to give us the whole quote at the end of the line, separated by four slashes.</p>
-<p>In this style it is easier to specify how to work with longer chains rather than individual links. And it is required when you send several statements in one batch.</p>
+<p>In this style, it is easier to specify how to work with longer chains rather than individual links. And it is required when you send several statements in one batch.</p>
 </div>
 <div id="limitations" class="section level3 hasAnchor">
 <h3>Limitations<a href="auto-coding.html#limitations" class="anchor-section" aria-label="Anchor link to header"></a></h3>
@@ -970,13 +994,30 @@ code span.wa { color: #60a0b0; font-weight: bold; font-style: italic; } /* Warni
 <p>Other information like quickfields e.g. <code>increased yields time:2013</code> and other factor tags are part of the factor label and so in principle can be added to the prompt. But we haven’t tried that.</p>
 </div>
 </div>
+<div id="consistency-across-factor-labels" class="section level2 hasAnchor">
+<h2>Consistency across factor labels<a href="auto-coding.html#consistency-across-factor-labels" class="anchor-section" aria-label="Anchor link to header"></a></h2>
+<p>To improve the consistency of factor labels, several approaches can be considered:</p>
+<ol style="list-style-type: decimal">
+<li><strong>Preferred Factor Labels</strong>: give the AI a list of preferred factor labels, along with examples to clarify their usage.</li>
+<li><strong>NER:</strong> you can do a kind of Named Entity Recognition - at the level of entities (eg people, places, organisations), giving it a vocabulary - words and phrases to recognise, not necessarily factor labels.</li>
+<li>Social Science Type: suggest to the AI to use a common “social sciences” vocabulary like:</li>
+</ol>
+<ul>
+<li>presence of resources</li>
+<li>lack of resources</li>
+<li>more/better income</li>
+<li>more/better motivation</li>
+<li>more/better support from peers</li>
+<li>… also use ~ for contrary factors</li>
+</ul>
+</div>
 <div id="the-prompt-library" class="section level2 hasAnchor">
 <h2>The prompt library<a href="auto-coding.html#the-prompt-library" class="anchor-section" aria-label="Anchor link to header"></a></h2>
 <p>There are other prompts in this prompt library.</p>
 <ul>
 <li><p>Basic prompt.</p></li>
-<li><p>Social science prompt. Similar, but it’s also got the idea of a high level concept and a mid level concept. And it also suggests using kind of more better, less worse kind of coding in terms of resources. You can imagine like resources, motivation, success.</p>
-<p>Resilience, those kinds of things have been kind of quite high level concepts, which you want the the AI to recode into.</p></li>
+<li><p>Social science prompt. Similar, but it’s also got the idea of a high-level concept and a mid-level concept. And it also suggests using kind of more better, less worse kind of coding in terms of resources. You can imagine like resources, motivation, success.</p>
+<p>Resilience, those kinds of things have been kind of quite high-level concepts, which you want the AI to recode into.</p></li>
 </ul>
 <p>And if you then click on an example prompt, the actual prompt itself is inserted in the coding prompt box.</p>
 <p>If also when you mouse over them, as I said, you can click on them to see exactly what’s going to happen.</p>
@@ -1019,10 +1060,10 @@ code span.wa { color: #60a0b0; font-weight: bold; font-style: italic; } /* Warni
 <div id="inspecting-and-improving-coding" class="section level2 hasAnchor">
 <h2>Inspecting and improving coding<a href="auto-coding.html#inspecting-and-improving-coding" class="anchor-section" aria-label="Anchor link to header"></a></h2>
 <p><img src="_assets/image-20230426115603363.png" alt="image-20230426115603363" /> This panel can be useful to check the progress of your coding. Green is good!</p>
-<p>First, you want to check that your initial prompt is doing the low level, the grunt level stuff:</p>
+<p>First, you want to check that your initial prompt is doing the low-level, the grunt-level stuff:</p>
 <ul>
-<li>is it actually finding the right sections of the text</li>
-<li>is it providing suitable factor labels for each claim.</li>
+<li>is it actually finding the right sections of the text?</li>
+<li>is it providing suitable factor labels for each claim?</li>
 </ul>
 <div id="tagging-statements-as-examples" class="section level3 hasAnchor">
 <h3>Tagging statements as examples<a href="auto-coding.html#tagging-statements-as-examples" class="anchor-section" aria-label="Anchor link to header"></a></h3>
@@ -1030,11 +1071,12 @@ code span.wa { color: #60a0b0; font-weight: bold; font-style: italic; } /* Warni
 <p>I toggle the info toggle and in the statement memo box I put the word !EXAMPLE. And that’s kind of a bit crude, but it’s nice because it uses the existing functionality of the statement memo.</p>
 <p>And if you add that to one or more statements, I don’t suggest doing it too many, then it will treat those particular statements that you’ve marked in that way as a kind of template for how to do coding.</p>
 <p>Then press the button to add an additional piece to the prompt, which tells it to do exactly what you did in this particular statement.</p>
+<p><strong>If you do this, make sure your examples are consistent with the rest of the prompt; for example, they use any factor labels which you s.</strong></p>
 </div>
 </div>
 <div id="clustering" class="section level2 hasAnchor">
 <h2>Clustering<a href="auto-coding.html#clustering" class="anchor-section" aria-label="Anchor link to header"></a></h2>
-<p>Especially when we submit statements separately (but in parallel) to be coded, which is the default, we’ll find that, for example, we might have things like a label, covid and another label pandemic, for example, and obviously they’re talking about the same thing.</p>
+<p>Especially when we submit statements separately (but in parallel) to be coded, which is the default, we’ll find that, for example, we might have things like a label, covid and another label pandemic, for example, and obviously, they’re talking about the same thing.</p>
 <p>So we want to tell it: Now, please look at some of these most important things and kind of cluster them together.</p>
 <p>And the question is then, how do we do this clustering?</p>
 <p>We have two ways. Both can be used iteratively.</p>
@@ -1174,7 +1216,17 @@ So a file of 32K, which is around 25 k words, around 100 pages, would cost aroun
 
 Coding ten statements from that file costs on average one cent.
 
-But using 3.5 costs one thirtieth: the whole of example-file costs 10 cents.
+But using 3.5 costs one thirtieth: the whole of the example-file costs 10 cents.
+
+
+
+what about StorySurvey? 
+
+the prompt is the main load. suppose an average of 20 user responses, that's say 300 tokens * 20 = 6000 for a response. * 100 responses = 600K. 
+
+1K is .001 ? per K 
+
+so a generous 100-response survey costs 60 cents. 
 
 -->
 

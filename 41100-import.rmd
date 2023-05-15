@@ -37,7 +37,13 @@ Uploading like this does not retain information about page numbers in PDFs. If y
 
 This way of uploading your data is only intended for uploading statements for coding. Characters like `$` and `#` which are used in [hybrid import](https://guide.causalmap.app/ximport.html#ximport-quip) have no special meaning here.
 
+#### Ignoring sections of text
 
+If you want to ignore sections of text, i.e. not import them at all, use this special code at the start of the section. 
+
+`-- question_id: !IGNORE`
+
+Everything between this and the next section (which you have marked with -- etc) or the end of the document will be ignored.
 
 #### Problems uploading PDFS?
 

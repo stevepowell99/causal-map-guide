@@ -66,6 +66,25 @@ Features marked 🧪are experimental and are implemented on the [test servers](h
 knitr::include_url("https://www.youtube.com/embed/S2acbJJ9t7E")
 ```
 
+Links by section:  
+
+Section 1 - Getting Started 
+
+- (5.10) [Quizzes](https://causalmap.shinyapps.io/quizzes/#section-xlevel1) 
+
+Section 2 - Basic Coding
+
+- (6.01) [Changing permissions](https://guide.causalmap.app/xtop-menu-advanced.html#xpermissions) 
+- (12.27) [Quizzes on coding in the app and causal claims](https://causalmap.shinyapps.io/quizzes/#section-factors) 
+- (12.58) [Factor editor](https://guide.causalmap.app/xfactor-editor.html) 
+
+Section 3 - Basic analysis         
+
+- (20.36) [Filters](https://guide.causalmap.app/filters-overview.html) 
+- (23.58) [Individual tables](https://guide.causalmap.app/xtables-basic.html) 
+- (25.59) [Using the pivot table function](https://guide.causalmap.app/xtables-advanced.html#creating-your-table) 
+- (27.26) [Analysis quizzes](https://causalmap.shinyapps.io/quizzes/#section-xlevel)
+
 Check out our growing library of [short, focussed training videos](#xvideo-list), none longer than four minutes!
 
 

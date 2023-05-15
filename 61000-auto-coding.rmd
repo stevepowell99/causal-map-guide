@@ -8,9 +8,15 @@ Auto coding is a new tab. The UI is not terribly sophisticated at the moment, bu
 
 You can do already some production level coding using it with a relatively small amount of human tweaking.
 
+If you're new to the AI  world, it's worth taking a look at this [link](https://causalmap.notion.site/General-tips-for-prompts-1-cbb0fe688a734dbd9cdac0eed2614413), where you'll find general tips for writing prompts. 
+
 ## Languages
 
-As far as we know, you can provide prompts in English to process un-translated non-English texts and it should work fine. It would probably be better to have the prompts in the same language a
+When using statements in a language other than English, ask the AI to translate them. Otherwise, if you don’t put any instructions for translating the statements, the AI highlights the statement but doesn’t show the factor labels and links in the map.
+
+You can use a prompt like: *'If the text is in a language other than English, be sure to translate it to English when creating the factor labels'*.
+
+![](_assets/language-cm-autocoding.png){width:650} 
 
 ## It isn't cheap
 
@@ -18,21 +24,39 @@ The big caveat is it's not cheap because when using GPT-4. There is a switch for
 
 If using GPT-4, work on small files to start with. 
 
-If the batch is very large, the app switches to 32K model which is even more expensive per character.
+If the batch is very large, the app switches to a 32K model which is even more expensive per character.
 
 ## The coding prompt
 
-The default prompt is a sort of generic prompt, which gives instructions to chat GPT API to to recode the file in the very generic way.
+The default prompt is a sort of generic prompt, which gives instructions to chat GPT API to recode the file in a very generic way.
 
 Even this generic way works quite nicely. 
 
-## Identifying links
+## Identifying links 
 
 You can provide any prompt you want and this will be applied to currently visible statements. BUT in order to actually identify links (which is the whole point), the output needs to include at least some lines including the "`>>`" symbol, which we call the "double-arrow".
 
 Each line of the form X >> Y will be converted to a link from X to Y. 
 
-Each line of the form X >> Y >> Z will be converted to two links from X to Y and from Y to Z, and so on.
+Each line of the form X >> Y >> Z will be converted to two links from X to Y and from Y to Z, and so on. And we call this kind of display 'chains'
+
+## Choosing between single **links** (A>>B and B>>C) or **chains** (A>>B>>C):
+
+GPT 3.5 doesn’t do a very good job with chains, so make sure when using GPT 3.5 to ask for single links.
+
+- **Single Links:** If you’re looking for ***more details***, the single links are the way to go: the AI can find more details and factors when looking at each link individually
+
+![](_assets/single-links-cm-autocoding.png){width:650}
+
+- **Chains**: But if you want to look at the bigger picture, *chains* do a good job. Sometimes the bot can ignore one or another causal link, so make sure you always check your map after coding. 
+
+  ![](_assets/chains-cm-autocoding.png){width:650} 
+
+  Limitations about chains:
+
+  1. Conjunctions are hard to deal with when you have chains
+  2. If using examples, make sure when putting the quote in the example, DO NOT use the “, because the AI gets confused.
+  3. It can get harder to give more complicated examples with chains
 
 ## Ensuring quotes are provided
 
@@ -52,7 +76,7 @@ The app then calculates the entire quote using fuzzy matching.
 
 We ask the AI to give us the whole quote at the end of the line, separated by four slashes.
 
-In this style it is easier to specify how to work with longer chains rather than individual links. And it is required when you send several statements in one batch.
+In this style, it is easier to specify how to work with longer chains rather than individual links. And it is required when you send several statements in one batch.
 
 ### Limitations
 
@@ -60,14 +84,29 @@ Prompts can only be used to add information to factor labels, not link fields li
 
 Other information like quickfields e.g. `increased yields time:2013` and other factor tags are part of the factor label and so in principle can be added to the prompt. But we haven't tried that.
 
+## Consistency across factor labels
+
+To improve the consistency of factor labels, several approaches can be considered:
+
+1. **Preferred Factor Labels**: give the AI a list of preferred factor labels, along with examples to clarify their usage.
+2. **NER:**  you can do a kind of Named Entity Recognition - at the level of entities (eg people, places, organisations), giving it a vocabulary - words and phrases to recognise, not necessarily factor labels.
+3. Social Science Type:  suggest to the AI to use a common “social sciences” vocabulary like:
+
+- presence of resources
+- lack of resources
+- more/better income
+- more/better motivation
+- more/better support from peers
+- … also use ~ for contrary factors
+
 ## The prompt library
 
 There are other prompts in this prompt library.
 
 - Basic prompt. 
-- Social science prompt. Similar, but it's also got the idea of a high level concept and a mid level concept. And it also suggests using kind of more better, less worse kind of coding in terms of resources. You can imagine like resources, motivation, success.
+- Social science prompt. Similar, but it's also got the idea of a high-level concept and a mid-level concept. And it also suggests using kind of more better, less worse kind of coding in terms of resources. You can imagine like resources, motivation, success.
 
-  Resilience, those kinds of things have been kind of quite high level concepts, which you want the the AI to recode into.
+  Resilience, those kinds of things have been kind of quite high-level concepts, which you want the AI to recode into.
 
   
 
@@ -136,10 +175,10 @@ A paradox: generally it's better to provide larger chunks of text at once so the
 
 ![image-20230426115603363](_assets/image-20230426115603363.png) This panel can be useful to check the progress of your coding. Green is good!
 
-First, you want to check that your initial prompt is doing the low level, the grunt level stuff:
+First, you want to check that your initial prompt is doing the low-level, the grunt-level stuff:
 
-- is it actually finding the right sections of the text 
-- is it providing suitable factor labels for each claim.
+- is it actually finding the right sections of the text? 
+- is it providing suitable factor labels for each claim?
 
 ### Tagging statements as examples
 
@@ -151,13 +190,13 @@ And if you add that to one or more statements, I don't suggest doing it too many
 
 Then press the button to add an additional piece to the prompt, which tells it to do exactly what you did in this particular statement.
 
-
+**If you do this, make sure your examples are consistent with the rest of the prompt; for example, they use any factor labels which you s.**
 
 
 
 ## Clustering
 
-Especially when we submit statements separately (but in parallel) to be coded, which is the default, we'll find that, for example, we might have things like a label, covid and another label pandemic, for example, and obviously they're talking about the same thing.
+Especially when we submit statements separately (but in parallel) to be coded, which is the default, we'll find that, for example, we might have things like a label, covid and another label pandemic, for example, and obviously, they're talking about the same thing.
 
 So we want to tell it: Now, please look at some of these most important things and kind of cluster them together.
 
@@ -311,6 +350,16 @@ So a file of 32K, which is around 25 k words, around 100 pages, would cost aroun
 
 Coding ten statements from that file costs on average one cent.
 
-But using 3.5 costs one thirtieth: the whole of example-file costs 10 cents.
+But using 3.5 costs one thirtieth: the whole of the example-file costs 10 cents.
+
+
+
+what about StorySurvey? 
+
+the prompt is the main load. suppose an average of 20 user responses, that's say 300 tokens * 20 = 6000 for a response. * 100 responses = 600K. 
+
+1K is .001 ? per K 
+
+so a generous 100-response survey costs 60 cents. 
 
 -->
