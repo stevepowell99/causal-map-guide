@@ -1,0 +1,10 @@
+# Level 4 overview{#xlevel4}
+
+In the pages in this section you will learn how to do advanced coding in Causal Map: 
+
+- using [memos](#xmemos) 
+- speeding up your work
+- using the Factor Editor
+- and lots more.
+
+When you've read the pages, try the [quiz](https://causalmap.shinyapps.io/quizzes/#section-xlevel4) to see if you have understood enough or need to review some things! 

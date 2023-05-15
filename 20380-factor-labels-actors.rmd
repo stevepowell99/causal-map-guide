@@ -1,0 +1,15 @@
+# 📚 Factor labels: actor-focused{#xfactor-labels-actors}
+
+
+
+Often you will find that it is easier and clearer if you formulate your labels to highlight who does what. 
+
+So instead of this:
+
+<u>advocacy on renewables</u>
+
+try this:
+
+<u>NGOs conduct advocacy campaign on renewables</u>.  
+
+In particular, avoid using passive formulations like "Advocacy is carried out" or "Awareness is raised".

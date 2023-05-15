@@ -1,0 +1,31 @@
+# Creating links (more tips)
+
+## How the factor dropdowns work
+
+If you are using hierarchical coding, top-level components will appear in the factor dropdown even if you have not used them explicitly so far. For example, if you have used the factors <u>health; mental</u> and <u>health; physical</u>, the factor <u>health</u> will appear even if you never used it explicitly. You can then easily create new nested factors such as <u>health; spiritual<u> by selecting <u>health</u> and then typing <u>; spiritual</u> with a leading ";". The app will automatically join these for you into the factor <u>health; spiritual</u>. 
+
+- once you have selected an influence factor, the order of the choices available for the consequence factor will be silently updated, presenting at the top of the list the most frequently mentioned consequences of the influence factor you have chosen.
+
+## Creating more than one link at a time
+
+This video shows how to create more than one causal link at a time.
+
+```{r,echo=F}
+knitr::include_url("https://player.vimeo.com/video/588851236")
+```
+
+
+
+##  Chaining Links{#xchaining-links}
+
+```{r,echo=F}
+knitr::include_url("https://player.vimeo.com/video/588881701")
+```
+
+Chaining links is easily done and useful when you have statement where one consequence leads to another, which leads to a third, and so on. To use this function simply click the chain icon below the consequence factor box and the app will automatically fill the influence box with the consequence from your previous link.
+
+![md0XWSnpLr](_assets/md0XWSnpLr.gif){width=650}
+
+
+
+ 

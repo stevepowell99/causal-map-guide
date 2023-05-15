@@ -1,0 +1,14 @@
+#  Level 5 overview{#xlevel5}
+
+To whet your appetite for some advanced analysis, [here](#xdashboard-a) are some of the variety of maps you can create with Causal Map.
+
+
+
+In the pages in this section you will learn how to do advanced analysis in Causal Map: 
+
+- [using the filter buttons](#xapplyingfilters) 
+- using the advanced editor
+- and lots more.
+
+When you've read the pages, try the [quiz](https://causalmap.shinyapps.io/quizzes/#section-xlevel5) to see if you have understood enough or need to review some things! 
+

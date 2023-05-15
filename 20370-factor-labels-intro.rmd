@@ -1,0 +1,22 @@
+# 📚 Factor labels: introduction{#xfactor-labels-0}
+
+![image-20230128224058421](_assets/image-20230128224058421.png){width=650}
+
+Many people like to start coding simply by choosing whatever factor labels occur to them, as far as possible using text directly taken from the statements they are coding. That's one good way to start.
+
+```{r,echo=F}
+knitr::include_url("https://player.vimeo.com/video/580212681")
+```
+
+In the following pages we will give you some more tips on making your factor labels work for you.
+
+::: {.rmdcaution}
+
+Remember that in general, factor names are case sensitive. So the app will not treat 'funding' and 'Funding' as the same.
+
+You can use emojis 😍 and other special characters in your factor labels.
+
+Also, semi-colons ‘;’ you can use them if you want, but note that the app will then treat this factor label as [hierarchical](#xhierarchical-coding).
+
+:::
+

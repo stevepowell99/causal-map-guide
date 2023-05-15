@@ -1,0 +1,7 @@
+# 📚 Factor labels: desirable?!{#factor-labels2}
+
+See also [here](#factor-labels1).
+
+If possible, especially when conducting evaluations or research for policy purposes, try to formulate these semi-quantitative factors so that for each one, *more* of it can be broadly thought of as *more desirable*, e.g. Health, Wellbeing; and failing that, as something *undesirable*, e.g. Psychosocial Stress, Mortality. Including factors which primarily code something undesirable as well as factors which primarily code something desirable, is often very natural, but you might sometimes have to think more carefully when making reports and summaries.
+
+Again, it is least useful, but also perfectly acceptable and sometimes necessary, to fall back to using factor labels which are ambiguous as to their desirability, e.g. Moved house*,* if there is a lack of information or in the case of factors which simply are neutral.

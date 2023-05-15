@@ -1,0 +1,36 @@
+# Memos in Causal Map{#xmemos}
+
+Using memos is an important part of qualitative data analysis as qualitative coding usually involves making notes and memos; you can do this in Causal Map too.
+
+In qualitative research, memos are used as short notes about the researchers' thoughts, reflections and ideas during data collection, coding and analysis. So you can use the memos in Causal Map as internal comments to help your research.
+
+In Causal Map, you can create, view and edit memos for just about everything:
+
+- The [whole file](#xfile-memo)
+- Statements
+- Sources
+- Questions
+- Factors
+- Links
+
+Memos for the **whole file** can be viewed and edited from the [file sharing dialog](#xfile-memo)
+
+Memos for **statements, sources and links** can be viewed and edited from the [memos panel](#xmemos-panel).
+
+Memos for **factors and links as well as statements, sources and links** can be viewed from the [corresponding tables](#xtables-basic), and edited using the pink pencil icon at the right of each row:
+
+![image-20230221115440042](_assets/image-20230221115440042.png)
+
+Memos for **factors and links** can be viewed and edited from the [interactive map](#xinteractive-view).
+
+Memos for **links** can be viewed and edited while you are coding or editing a link.
+
+You can use information and/or hashtags in any kind of memo to filter your tables, like this:
+
+![image-20230221115248454](_assets/image-20230221115248454.png)
+
+
+
+You can use information and/or hashtags in any kind of memo to filter your maps, like this:
+
+![image-20230221115610860](_assets/image-20230221115610860.png)

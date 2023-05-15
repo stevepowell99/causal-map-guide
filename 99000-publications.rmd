@@ -19,6 +19,7 @@ Powell, S. (2019). Supplement to Theories of Change: Making Value Explicit. _Jou
 
 ## Presentations
 
+* [European Evaluation Society 2022 - Causal Mapping for evaluators](https://drive.google.com/file/d/1nmSjMvGJYQTsm6-0hVZPfLbki1KEkJcB/view?usp=sharing)
 * [European Evaluation Society 2018 - presentation on Value in Theories of Change](https://drive.google.com/file/d/1FdiOs85iZCqZU6MdU3Lb5kgDOxq36G3b/view?usp=sharing)
 * [UK Evaluation Society 2018 - presentation on Judea Pearl and Theories of Change](https://drive.google.com/file/d/1A2gIYmechpCot2QQc0TRWGlFg9r4jsz4/view?usp=sharing)
 * [American Evaluation Association 2017 - A graphical language for evaluation](http://comm.eval.org/viewdocument/theorymaker-a-graphical-language)
@@ -27,8 +28,6 @@ Powell, S. (2019). Supplement to Theories of Change: Making Value Explicit. _Jou
 
 * [When an interview beats an RCT (with cartoon!)](http://www.pogol.net/public/article-evidence.html)
 * [Scandal or yawn? Simpson’s Paradox hits the IFRC](http://www.pogol.net/_ideas/posts/2019-01-14-scandal-or-yawn-simpsons-paradox-hits-the-ifrc/)
-* [Value for Money](http://pogol.net/public/article-equity.html) Steve’s first take on the VfM approach by Julian King and OPM, from a Theorymaker perspective.
-* [Evaluation Paradoxes – blog post at AEA365](https://aea365.org/blog/theories-of-eval-tig-week-evaluation-paradoxes-by-steve-powell/)
 * [Various posts on LinkedIn](https://www.linkedin.com/in/stevepowell99/detail/recent-activity/posts/)
 
 ## ResearchGate

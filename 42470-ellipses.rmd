@@ -1,0 +1,23 @@
+# Ellipses{#xellipses}
+
+### Coding your statements in context: referring to evidence from elsewhere
+
+When coding data from an interview it is very important to see the whole interview as your source, and not fall into the trap of only coding the statement in front you, out of context. If your statements are split into separate questions (as is often the case with QuIP), it can be misleading to code just one statement in isolation, without taking account of what the respondent says earlier or later in the interview. For this reason we recommend that all analysts read the whole interview before starting to code, and start to formulate causal stories which fit across the whole interview. In some cases, you may prefer to have the whole interview as one statement, and to code it all in one place. This is absolutely possible, and just depends how the data is uploaded (whatever information is on one row in the .csv file is considered a statement). If, however, the interview is too long, or you would still prefer to code question by question, you need may want to refer to information provided in another statement when coding a link. This is not necessary but can be useful when sharing the file with a commissioner who may look at quotes associated with links, and not understand the rationale for coding without further context. The same applies for different parts of a paragraphs within one statement; you may want to highlight two separate parts of a longer statement.
+
+If the quote is not exactly verbatim in the statement, the app won’t let you save anything. (If this happens, just cancel the quote (press the X) and start again.) The app is really picky about this to ensure your quotes are accurate. However, this rule does not apply for anything between square brackets, a useful feature for this case. If the evidence for a link is mentioned in two different parts of a single statement, like this:
+
+*Yes, we got the help from OrgX. Sed ut perspiciatis unde omnis iste natus error sit voluptatem accusantium doloremque laudantium, totam rem aperiam, eaque ipsa quae ab illo inventore veritatis et quasi architecto beatae vitae dicta sunt explicabo. And because of that help, now I have a job. qui dolorem ipsum quia dolor sit amet, consectetur, adipisci velit. Ut enim ad minima veniam.*
+
+You can use square brackets to remove the text you don’t want. Highlight the whole piece of text you want to code, and then edit the quote in the quote window, replacing what you don’t need with […]
+
+*Yes, we got the help from OrgX. […] And because of that help, now I have a job.*
+
+Be careful not to introduce any new text or even spaces.
+
+You can also use the same technique to add your own comment or quote from a statement elsewhere in the interview:
+
+*[this is my note] Neque porro quisquam est, qui dolorem ipsum quia dolor sit amet, consectetur, adipisci velit, sed quia non numquam eius modi tempora incidunt.*
+
+Ellipses are also helpful to refer to another statement as part of your evidence:
+
+*[reference to statement 36: The whole village received help from Org X] Thanks to that help we received, we are now growing our own produce.*

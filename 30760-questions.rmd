@@ -1,0 +1,11 @@
+# The Questions Table{#xthe-questions-table}
+
+This table displays the text, ID, [memo](#xmemos) and map id for every question included in the questionnaire. 
+
+This table has one preset:
+
+- `All questions (basic)` which displays id and text as shown below
+
+![image-20220922105503304](_assets/image-20220922105503304.png){width=650}
+
+You may wish to include this table as an appendix in your report or as a reference point for looking up particular questions.

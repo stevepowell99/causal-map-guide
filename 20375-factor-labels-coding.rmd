@@ -1,0 +1,11 @@
+# 📚 Factor labels: actual facts?{#facts}
+
+Causal mapping is very flexible and accommodates different philosophies or ways of coding. However, it's good to be aware of this flexibility and perhaps avoid *mixing* philosophies.
+
+For example, you can code in these two different ways, but it's probably better not to mix them:
+
+- To show only causal influences between factors, without recording what did or does happen.  Seen in this way, this map simply says that health trainings have the power to improve health outcomes, without any information about what actually happened or is happening.
+
+![image-20210115221010548](_assets/image-20210115221010548.png)
+
+- Or you can decide that you will only create this kind of link when someone claims that this actually happened: Not only that the first thing is something which has the causal power to influence the second thing but also that in some sense both things actually happened.

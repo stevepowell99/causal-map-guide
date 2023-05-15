@@ -1,3 +1,6 @@
+@import url('https://fonts.googleapis.com/css?family=Muli:400,400i,700&display=swap');
+@import url('https://fonts.googleapis.com/css?family=Ubuntu:300');
+
 /*Dark blue:
 C94 M87 Y45 K59
 R31 G31 B54
@@ -57,11 +60,13 @@ pre code {
   float:right;
 }
 
-.focus{
+.focus,.rmdcaution{
   border: 1px solid #6dc4c8;
   border-radius: 5px;
   margin-bottom: 10px;
   padding: 15px;
+  background-color:#eee;
+
 }
 
 .show_mark_p{
@@ -98,4 +103,48 @@ details summary{
 }
 summary{
 margin-bottom:10px;
+}
+
+/* for gitbook toc only*/
+
+.part{border-bottom:4px solid #eee;padding:4px;}
+.part{background-color: #eee;}
+.part span{color: black;opacity:.9 !important;}
+.chapter.active{background-color:#00ffaf55;}
+
+.book{
+  color:#1f1f36;
+}
+.summary{
+  color:#1f1f3655;
+}
+.summary>li:first-child {
+  background-color: #eee;
+  font-size: 1.5em;
+  padding-top:15px;
+  padding-bottom:15px;
+
+}
+.navigation i{
+  background-color:#eee;
+  border:8px solid white;
+}
+p.author,p.date{display:none;}
+h1.title{font-size:small !important;margin-top:10px !important;float:left;}
+
+.book.font-size-2 .book-body .page-inner section {
+    font-size: 2rem;
+}
+.book-summary {
+  font-size: .9em;
+  line-height: .7em;
+  font-family: 'Muli', sans-serif !important;
+ }
+
+.book.font-family-1,.book-summary {
+  font-family: 'Muli', sans-serif !important;
+ }
+a[aria-label="Search"]{
+  background-color:#eee !important;
+  color:#00ffaf !important;
 }

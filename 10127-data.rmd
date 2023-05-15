@@ -1,0 +1,12 @@
+# You want to code your own data?
+
+The workflow is usually like this:
+
+1. GATHER THE DATA
+   - Identify or collect a set of several reports or a set of several interviews from one or more sources.
+   - Add metadata to this data, e.g. date, name of source, perhaps gender, location, etc. 
+   - Organise this narrative data into an [Excel](#ximport) template in the form of paragraph-length chunks called `statements`
+2. CODE:
+   1. UPLOAD: Create a new empty file and upload the narrative data.
+   2. HIGHLIGHT: View your data statement by statement, and highlight any causal claims within it, telling the app what is the cause ("influence") and what is the effect ("consequence") for each claim. We call this process "coding".
+3. ANALYSE: When you've coded a lot of causal claims, you can analyse them to make different kinds of maps and answer different research questions.

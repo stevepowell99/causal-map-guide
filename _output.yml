@@ -1,3 +1,30 @@
+bookdown::gitbook:
+  includes:
+    in_header: header.html
+    before_body: google_body_tag.html
+  anchor_sections: true
+  css: style.css
+  number_sections: no
+  config:
+    search:
+      engine: fuse #lunr # or fuse https://opensourcelibs.com/lib/lunr-module
+      # options to control/tune search engine behavior (for
+      # fuse.js, refer to https://fusejs.io/api/options.html)
+      options:
+        isCaseSensitive: false
+        threshold: 0.1
+        distance: 0
+    toc_depth: 3
+    toc:
+      collapse: section
+      before: |
+        <li><a href="./">Guide to Causal Mapping</a></li>
+      after: |
+        <li><a href="https://causalmap.app" target="blank">Causal Map</a></li>
+    download: null
+    sharing: null
+    fontsettings:
+      theme: white
 bookdown::bs4_book:
   config:
     toc_depth: 1
@@ -10,26 +37,10 @@ bookdown::bs4_book:
   repo:
     base: https://github.com/stevepowell99/causal-map-guide
     branch: master
-bookdown::gitbook:
-  includes:
-    in_header: header.html
-    before_body: google_body_tag.html
-  anchor_sections: true
-  css: style.css
-  number_sections: no
-  config:
-    search: yes
-    toc_depth: 3
-    toc:
-      collapse: section
-      before: |
-        <li><a href="./">Guide to Causal Mapping</a></li>
-      after: |
-        <li><a href="https://causalmap.app" target="blank">Causal Map</a></li>
-    download: ["pdf"]
 bookdown::pdf_book:
   includes:
     in_header: preamble.tex
+    before_body: google_body_tag.html
   latex_engine: xelatex
   citation_package: natbib
   papersize: a5

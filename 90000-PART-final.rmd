@@ -1,2 +1,2 @@
-# (PART) 📚💻 Final section {-}
+# (PART\*) 📚Final section {-}
 

@@ -1,0 +1,40 @@
+# 📚 Factor labels: consolidating {#xfactor-labels-consolidating}
+
+
+
+![image-20230128224208382](_assets/image-20230128224208382.png)
+
+## Consolidating and editing factor labels
+
+After you have created more than about 50 factors you will probably feel the need to start consolidating and renaming them and perhaps merging some.
+
+If you look at the [Mentions table](#xthe-mentions-table) in the app, you will probably find a lot of *pairs* of factors each of which is used only once, as half of this particular pair, and don’t appear linked into longer stories. We almost certainly will want to consolidate some of these factors by in some way merging them with others which have similar meaning.
+
+Suppose you have 100 factors which are just mentioned once or twice. It’s a lot of work to do all that coding, a lot of work for almost nothing, because those very infrequent factors (we call them “tiddlers”) are unlikely to appear much in any reporting you do. With hierarchical coding, even infrequent factors can contribute to the bigger picture.
+
+Before we even think about consolidating factors, do remember the golden rule that, **when coding a new link, always look at your existing factors and try selecting one of those before creating a new one.** Even if you think an existing factor isn’t quite a perfect fit, you can use it and adjust the factor name later. Ideally you will always be able to think of labels for your factors which are at least general enough to cover a few different cases.
+
+It can be helpful to reformulate factor labels so that some common themes come *first*:
+
+- <u>communication difficulties - intercultural</u>
+- <u>communication difficulties - lack of internet</u>
+
+This is useful when the factors are listed alphabetically and can be a stepping-stone to formulating factors hierarchically.
+
+Even when doing inductive coding, some people formulate factors with a theory in mind, with some higher-level factors like <u>communication difficulties</u> or <u>resilient outcomes</u>. However we have found that it is often most interesting when you let the theory emerge rather than by starting with a preconceived template in this way. Look at your factors periodically as you code and see if there are any obvious groups.
+
+Also, our recommended way of having your cake and eating it - keeping the detail but seeing the general trends too – is [hierarchical coding](#xsimplifying-with-hierarchical).
+
+### Merging multiple factors into one
+
+In some cases you will simply decide, in the face of too many factors, to merge <u>Engagement with communities</u> and <u>NGO engagement</u> into one, e.g. <u>Engagement</u>.
+
+If you have two factors like this which are very similar but not quite the same, you can sometimes keep some detail by using a composite label which explicitly mentions both i.e.<u>Engagement with communities/NGOs</u>.
+
+
+
+### QuIP specific: back-chaining
+
+In QuIP projects, most of the interview material comes in response to questions about changes in the reference period, usually the last three years. QuIP questioning continues back up the causal chain, asking what was the reason for that? … and the reason for that? That means that most influence factors will also be expressed as changes or differences (a change in F is explained by a change in E which is explained by a change in D….), whereas some are not (e.g. “unemployment”). Some analysts will try to avoid coding this kind of claim (can something which has been around a long time explain a change in the last three years?) but you may decide that this distinction does not matter too much. If something really does describe a *change* (e.g. “became unemployed”) then it should be coded.
+
+Most QuIP testimony begins with questions about whether things have got better or worse, so most causal factors, going back up the causal chain, are likely to be [semi-quantitative](#factor-labels1) too.

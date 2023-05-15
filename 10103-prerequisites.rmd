@@ -1,0 +1,25 @@
+#  Prerequisites for using the app
+
+The app is tested on Chrome and Firefox on Mac and Windows, and Safari on Mac, and the new Edge on Windows, and it should work fine on Chrome, Chromium and Firefox on Linux. 
+
+::: {.rmdnote}
+
+You need a screen with a large resolution, preferably HD or better. It won’t work well on tablet or phone. 
+
+:::
+
+You will probably want to zoom out to about 90% (in Chrome, press Ctrl – once or twice) to make sure everything fits on the screen. You may also like to view the app "full screen" – how to do this depends on your browser and operating system; on Chrome on Windows, press F11.
+
+::: {.rmdnote}
+
+As Causal Map is a web application, you will also need a reasonably reliable internet connection.
+
+:::
+
+
+## Signing up
+
+To use the app, create an account [here](https://causalmap.shinyapps.io/CausalMap2/). It's quickest to just log in with a Google account, or you can use your email address.
+
+It's free to log in and explore the app. 
+

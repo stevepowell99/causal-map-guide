@@ -1,0 +1,7 @@
+# Filter reference
+
+
+A full guide to the filters can be found here: [github](https://stevepowell99.github.io/CausalMapFunctions/articles/examples.html).
+
+
+

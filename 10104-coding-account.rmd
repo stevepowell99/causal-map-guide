@@ -1,0 +1,21 @@
+# Accounts
+
+To use the app, you'll need an account. What account you need depends on what you want to do. 
+
+|                    | Free account                          | Paid subscription account                                    |
+| ------------------ | ------------------------------------- | ------------------------------------------------------------ |
+| View and analyse   | Unlimited                             | Unlimited                                                    |
+| Code your own data | You can code up to 50 links for free. | Find the [subscription option](https://causalmap.app/subscriptions/) which is right for you. |
+|                    |                                       |                                                              |
+
+**Free accounts**
+
+You create an account just by logging in. You can create a new file and do some coding and analysis. 
+
+**Paid subscriptions**
+
+You log in as usual, but to code more than 50 links you need to have a [subscription](https://causalmap.app/subscriptions/).
+
+To cancel, renew or manage your subscription see this [section](#xmanage_your_subscription).
+
+If you have a paid subscription, make sure you used the email you use to login is the same as the one for which you have a subscription. 

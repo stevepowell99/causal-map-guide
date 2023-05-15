@@ -1,0 +1,55 @@
+#  Interactive View{#xinteractive-view}
+
+The first tab on the right shows an interactive version of the map in which the elements can be moved around and also the upstream and downstream factors are highlighted when the user moves their mouse over them.
+
+The Interactive View is designed to let you interact with and explore your map.
+
+The video below gives a brief overview of both the interactive and print view tab.
+
+```{r,echo=F}
+
+knitr::include_url("https://player.vimeo.com/video/674383670")
+
+```
+
+You can:
+
+- Drag the factors around.
+- Copy a map as an image by right-clicking on it.
+- Save a PNG image by pressing the button at bottom right.
+- Hover over factors to highlight the connected links and factors.
+- Hover over factors to display basic information about them and delete them from the entire map.
+- Hover over links to see the associated quote and other information.
+- Click on links to edit or delete them.
+- Click on factors to focus on them, trace paths from/to them, edit their [memo](#xmemos), or delete them.
+
+
+![image-20211001175928850](_assets/focus.gif){width=650}
+
+- As usual, if you want to return to the previous view after focussing on a particular factor, press the Restore Previous Filter button: 
+  - ![image-20230128113249777](_assets/image-20230128113249777.png)
+
+- Click on factors to edit the label or memo
+
+
+
+![image-20211001175928850](_assets/edit.gif){width=650}
+
+In both Interactive and [Print view](#print-view), if the factor labels have not been wrapped to any specific width, they are automatically wrapped to 22 characters.
+
+When you have a lot of factors in your map, the selector in the top-right corner of the map can help locate them.
+
+![image-20211001175928850](_assets/nodeselect.gif){width=650}
+
+When you are viewing a single statement, the colour of the links corresponds to the colour of the highlighted sections of text.
+
+![image-20211116082854960](_assets/image-20211116082854960.png)
+
+
+
+### Tracing paths
+
+You can even use the same dialog to [trace paths](#xtracing-paths) to or from a particular factor directly from the interactive map
+
+![](_assets/BhOlErDmwB.gif)
+

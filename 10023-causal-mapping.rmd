@@ -1,0 +1,45 @@
+# 📚 What is causal mapping?{#xcausal-mapping}
+
+This is  a shorter version of  [this post](https://www.causalmap.app/causal-mapping).
+
+#### Induct
+
+Causal mapping aims to directly understand and collate the causal claims which people make in narrative (and other) data rather than trying deduce causal connections using statistics or other methods. It starts with what people actually say in real-world contexts and does not rely on heavily pre-structured question formats. Urgent, unexpected, and unwelcome information is treated at face value.
+
+The analyst does not need to have any preconceived conceptual framework; types of causal claims are identified in the data inductively and iteratively. This is a partly creative process, however the decisions made by the analyst are transparent as the underlying text is always available.
+
+At least some of the boundaries of causal mapping research are set by the respondents, not the researchers; what are we going to talk about? What are we not going to talk about?
+
+#### Discover
+
+Causal maps work on two levels. 
+
+- On one level, they are presentations of individual and shared cognitive structures, the maps “in people’s heads” which we need to know about if we want to understand, predict and influence behaviour. 
+- On the other level, if we trust our sources we can use this information to tell us something about how things work in the real world. 
+
+#### Present
+
+The results of ordinary qualitative research on texts is usually just more text. Causal maps, on the other hand, are not additional presentations of additional analyses but are **the main product of qualitative causal mapping.** They are relatively intuitive and easy to understand (and they look good in presentations 👨‍🏫).
+
+#### Query
+
+By applying filters and other algorithms, a causal map can be queried in different ways to answer different questions, for example to simplify it, to trace specific causal paths, to identify significantly different sub-maps for different groups of sources, etc. 
+
+#### Quote
+
+The original quote on which each causal link is based is stored within the link itself. That means that at every stage of causal mapping, it is possible to directly to return to the original story, in the original context.
+
+
+
+## Causation - no longer a taboo
+
+Gone are the days when we could think of data or information as primarily about numbers. Many of us who are involved in understanding the social world and evaluating interventions within it spend much of our day understanding, presenting, manipulating and caring about *causal structures* (and even *models of other people’s* causal structures).
+
+## CEDIL Video on Impact evaluation: causal maps, mechanisms and the elusive quest for useful middle range theory
+
+With Nancy Cartwright, Gary Goertz, James Copestake and Steve Powell
+
+```{r,echo=F}
+knitr::include_url("https://www.youtube.com/embed/6DBzadDMXew")
+```
+

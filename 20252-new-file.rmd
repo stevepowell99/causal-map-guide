@@ -1,0 +1,10 @@
+# Creating a new file
+
+You can create your own file by [copying the example file](#xown-copy) or by creating a new file. These files will then be added to the dropdown list in the top left-hand side.
+
+If you want to [upload your own data into a new file](#ximport), first press the New File button and give your file a name.
+
+![image-20220723134329170](_assets/image-20220723134329170.png)
+
+Then you can upload causal mapping data (consisting of at least a set of narrative statements to be coded, e.g. the text of interviews or reports) in the form of an [Excel file](#ximport) (.xls or .xlsx). 
+

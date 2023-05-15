@@ -1,13 +1,13 @@
-///There seems to be a problem with my current file and every time I refresh the page the app kicks me out again!
-Most likely there is a problem with your current file. Refresh the page, and click the button here as soon as it reloads.
-![image-20211117201957585](_assets/image-20211117201957585.png)
-Wait a little to return to the main screen. Then try to load your file. If you still can't load it, use the blue feedback button on the far right to report the issue to our support team.
+/// Can't log in, getting an error about "failed to execute 'setitem' on 'storage'"
+Immediately after you get the error, open the Chrome console by pressing ctrl shift J in Chrome,
+then at the blinking cursor, paste this:
 
+localStorage.clear();
 
+and refresh.
 
+If that doesn't work, please contact support at support@causalmap.app
 
-///I can't log in!
-If you have the app open in more than one browser tab, close all those tabs and load the app again. If you still can't load it, contact our support team.
 
 
 ## Setting Up
@@ -18,13 +18,12 @@ Please see our T&Cs at https://causalmap.app/terms-and-conditions-for-the-causal
 
 
 
-///I've signed up but haven't received a validation code?
-Firstly, the best thing to do is double check you have entered your email correctly - if your email is correct, then try sending the code again. Make sure to also check your junk/spam email folder. If none of these things work email us at hello@causalmap.
+///How do I delete my account?
+If you have created any files which you want to delete, you can delete them using the green file sharing / file management button at the top left of the app.
+If you have a recurring subscription, you can cancel it from the Account tab in the app.
 
-
-///How do I import and export maps from Causal Map 2?
-You can download your map from Causal Map 2 as an Excel file, tweak it and then upload it Causal Map 2.
-
+///How do I import and export maps from Causal Map?
+You can download your map from Causal Map as an Excel file, tweak it and then upload it Causal Map.
 
 ///I have done something wrong, how do I know which version of my mapfile to restore?
 The Versions dropdown shows you the filesize, so you can see where the file got larger or smaller. Also, have a look in the Updates tab. You can't actually restore the file from here but you can maybe guess which one you want by looking at the number of factors, the last coded statement etc.
@@ -35,9 +34,8 @@ The Versions dropdown shows you the filesize, so you can see where the file got 
 ///I made changes to file access with the Files panel to allow my colleague to see my file, but she still can't see it.
 Tell her to refresh her browser and your changes should appear.
 
-
 ///Can I upload data with special characters like emojis, or characters from non-English languages?
-Yes, the app will import them.
+Yes, the app will upload them.
 
 ##  Uploading and tweaking data
 
@@ -64,13 +62,8 @@ If you are looking at statement 99, looking also at factor editor, and click a q
 
 
 
-///When should I use a factor flag, and when should I use a link flag aka hashtag?
-Use factor flags, including quickfields, to add extra information about the causal factors, especially information which cuts across any existing factor hierarchy you are using, for example themes like `environment`. Use link flags aka hashtags specifically if  it relates to the claim rather than the factors e.g. respondent is suspicious / uncertain /  answering a different question / respondent doesn’t like this connection, etc.
-
-
-
-///Can I edit more than one link at a time?
-No, currently you can only edit one link at a time.
+///When should I use a factor hashtag, and when should I use a link hashtag?
+Use factor hashtags, including quickfields, to add extra information about the causal factors, especially information which cuts across any existing factor hierarchy you are using, for example themes like `environment`. Use link hashtags specifically if  it relates to the claim rather than the factors e.g. respondent is suspicious / uncertain /  answering a different question / respondent doesn’t like this connection, etc.
 
 
 ///Can I autofill influence factor label if its the same as the last consequence factor?
@@ -117,18 +110,33 @@ You use `unique` and `literal` when you don't want to do any counting, you want 
 ///When I highlight text which overlaps with a previously highlighted section no new highlight appears.
 Unfortunately there is no easy fix for this bug but it is just cosmetic. You can check you have highlighted the right section by checking the text box below the factor label boxes contains the text you want to highlight. Once you have saved the link the highlight will appear on the statement.
 
+///Depending on the size of the screen, when I go to press one of the tabs like the one with the question icon, the icon then changes position to go to the next level - which I then can't reach. Or the tabs flicker and slide around.
+Yes that's annoying. Just zoom out your browser e.g. by pressing ctrl -
 
 ///I'm getting an "Ajax error" when viewing tables.
 Have a look to see if the URL of the app has a lot of parts like this: [https://causalmap.shinyapps.io/CM2test/_w_741fed8d/_w_q4eeed8d/_w_346fed8d/](https://causalmap.shinyapps.io/CM2test/_w_741fed8d/_w_q4eeed8d/_w_346fed8d/). If it does, just visit the bare URL: (https://causalmap.shinyapps.io/CausalMap2 or https://causalmap.shinyapps.io/CM2test) and start again from there.
 
+///My link label is appearing slightly away from the link
+Unfortunately when a map has a lot of links link labels may appear slightly removed from the link. Currently there is no way to change this with formatting, only by simplfiying your map.
+
 
 ## QuIP questions
 
-
-///How do I import my QuIP project into Causal Map?
-You must create an excel file with four columns. The column headers must be in this order; text/answers, source_id, question_code and question_text. Then upload this to a blank file using the purple upload button for hybrid files. For more information see this <a href="https://guide.causalmap.app/importing-your-data-special-cases.html#ximport-hybrid"?></a>
+///How do I upload my QuIP project into Causal Map?
+Follow the instructions for [hybrid files](https://guide.causalmap.app/ximport.html#ximport-quip). You must create an excel file with one worksheet and four columns. The column headers must be in this order; text, source_id, question_id and question_text. Then upload this to an empty file.
 
 ## Downloads
 
 ///Where can I find example files to use as templates?
 They can be found and downloaded [here](https://drive.google.com/drive/folders/1wvifDQ0BXmAjSudTRUv9i_4JURpphD4v).
+
+## What to do when you've finished coding.
+
+///Is there a more cost-effective option to use during the analysis phase of the causal mapping?
+If you don't want to do any coding or editing, your data stays with us for at least a year (probably longer) so that you can view and analyse it even with a free subscription. "Editing" means changing or adding factors or links. The analysis is free, even if you create and share new views.
+
+///If I wanted to put my membership on pause, can I come back and access the coded data and existing maps at any point?
+Yes! You can view, analyse and download your data with a free subscription. If you want to do any coding or editing at all, you'll need a [paid subscription](https://causalmap.app/subscriptions), which depends on the number of files you want to be able to code. You'd only need to pay one of these subscriptions for the months when you want to edit something. 
+
+///What is the best way to store my coded data?
+We store your data for at least a year and you can access them with a free subscription. If you want to store your coded data and maps for longer than a year, you can download them in Excel format from the app. 

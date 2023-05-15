@@ -5,11 +5,11 @@ author:
   - Fiona Remnant^[Causal Map Ltd., fiona@causalmap.app]
   - James Copestake^[Bath University., hssjgc@bath.ac.uk]
   - Hannah Mishan^[Causal Map Ltd., hannah@causalmap.app]
-  - Rebekah Arvard^[Bath SDR., rebekah@bathsdr.org]
+  - Rebekah Avard^[Bath SDR., rebekah@bathsdr.org]
   - Samuel Goddard^[Causal Map Ltd., SamuelGoddard@outlook.com]
 date: "`r Sys.Date()`"
 site: bookdown::bookdown_site
-output: bookdown::bs4_book
+output: bookdown::gitbook
 documentclass: book
 url: https://causalmap.app
 cover-image: "_assets/image-20210520221329966.png"
@@ -24,30 +24,84 @@ library(tidyverse)
 
 # Overview
 
-```{r,echo=F}
+## What is Causal Map?
 
+[Causal Map](https://causalmap.app/) is a web app for analysing and visualising causal claims within narrative data from interviews or reports. 
+
+```{r,echo=F}
 knitr::include_url("https://player.vimeo.com/video/689223728")
 ```
 
-This Guide is for you if:
 
-- you want to find out more about causal mapping as an approach (look for the "book" symbol 📚)
-- you want to find out more about the [Causal Map app](https://causalmap.app/) (look for the "computer" symbol 💻)
-- you are on, or have completed, the [QuIP](https://bathsdr.org/about-the-quip/) Lead Evaluator training.
 
-------
 
-If you are in a hurry (and who isn't?), just read the first part, Getting Started.
 
-Features marked 🧪are experimental and are implemented on the [test server](https://causalmap.shinyapps.io/CM2test) only.
+If you are particularly interested in the *theory* of causal mapping, rather than how to use the app, look for the "book" symbol 📚 in this Guide.
+
+This Guide is divided into these Training Levels:
+
+1. [Getting Started](#xlevel1)
+2. [Basic Coding](#xlevel2)
+3. [Basic Analysis](#xlevel3)
+4. [Advanced Coding](#xlevel4)
+5. [Advanced Analysis](#xlevel5)
+
+Each is followed by a simple [quiz](https://causalmap.shinyapps.io/quizzes/). 
+
+... and there are also sections on:
+
+- [The rest of the app](#xupdates-tab) 
+- [Technical reference](#xlevel7)
+- [Frequently Asked Question](https://guide.causalmap.app/faqs.html)
+
+If you are in a hurry (and who isn't?), just read Level 1: Getting Started.
+
+Features marked 🧪are experimental and are implemented on the [test servers](https://causalmap.shinyapps.io/CM2test) [only](https://causalmap.shinyapps.io/tokyo).
+
+
 
 ## Videos
 
-Check out our growing library of [short, focussed training videos](https://guide.causalmap.app/xvideo-list.html), none longer than four minutes!
+```{r,echo=F}
+knitr::include_url("https://www.youtube.com/embed/S2acbJJ9t7E")
+```
+
+Links by section:  
+
+Section 1 - Getting Started 
+
+- (5.10) [Quizzes](https://causalmap.shinyapps.io/quizzes/#section-xlevel1) 
+
+Section 2 - Basic Coding
+
+- (6.01) [Changing permissions](https://guide.causalmap.app/xtop-menu-advanced.html#xpermissions) 
+- (12.27) [Quizzes on coding in the app and causal claims](https://causalmap.shinyapps.io/quizzes/#section-factors) 
+- (12.58) [Factor editor](https://guide.causalmap.app/xfactor-editor.html) 
+
+Section 3 - Basic analysis         
+
+- (20.36) [Filters](https://guide.causalmap.app/filters-overview.html) 
+- (23.58) [Individual tables](https://guide.causalmap.app/xtables-basic.html) 
+- (25.59) [Using the pivot table function](https://guide.causalmap.app/xtables-advanced.html#creating-your-table) 
+- (27.26) [Analysis quizzes](https://causalmap.shinyapps.io/quizzes/#section-xlevel)
+
+Check out our growing library of [short, focussed training videos](#xvideo-list), none longer than four minutes!
+
+
+## Support chat
+
+- [WhatsApp group for Causal Map](https://chat.whatsapp.com/KwWn0lfpHuR0qJKtkuGZUA)
+
+- [Whatspp group for StorySurvey](https://chat.whatsapp.com/CdlkCKV8bP7ATYc4nioL0T) 
+
 
 ## Quizzes
 
 Test your knowledge of causal mapping and Causal Map with our structured series of [quizzes](https://causalmap.shinyapps.io/quizzes/).
+
+### Mailing list
+
+Sign up [here](https://forms.wix.com/f/6990334085528813568) for updates about Causal Map.
 
 ## Selected projects to date
 
@@ -55,7 +109,7 @@ These are some causal mapping projects completed with Causal Map - either direct
 
 <iframe class="airtable-embed" src="https://airtable.com/embed/shrlHVXucgPfsNPnw?backgroundColor=red&viewControls=on" frameborder="0" onmousewheel="" width="100%" height="533" style="background: transparent; border: 1px solid #ccc;"></iframe>
 
-For more details on selected Casual Map projects please check out the [Showcases section](#xshowcases) of this guide.
+For more details on selected Casual Map projects please check out our [Recent Projects](https://www.causalmap.app/recent-projects) page.
 
 ## License {.unnumbered}
 
@@ -65,12 +119,21 @@ This guide is licensed to you under [Creative Commons Attribution-NonCommercial-
 
 
 ```{r,echo=F}
-if(T) readLines("Guide-to-causal-mapping.Rmd") %>% 
-  str_match(".*vimeo\\.com.*") %>% 
+
+readLines("Guide-to-causal-mapping.Rmd") %>% 
+  str_match(".*vimeo\\.com.*|.*youtube\\.com.*") %>% 
   keep(~!is.na(.)) %>% 
   unique %>% 
   paste0("```{r,echo=F}\n",.,"\n```\n") %>% 
-  c("# Video list{#xvideo-list}\n\nThese videos are all included at different points in the Guide. If you love videos, here they are again in one place. Feel free to binge.",.) %>% 
-  writeLines("00195-video_list.rmd")
+  c("# Video list{#xvideo-list}\n\nThese videos are all included at different points in the Guide. If you love videos, here they are again in one place. Feel free to binge. Tip: if you play a video, you can press 'Picture in picture' and then switch to the app, and you can follow (and even resize) the video.",.) %>% 
+  writeLines("83500-video_list.rmd")
 
+
+readLines("faq.txt") %>%
+  str_replace_all("(///.*)","\\1</summary>\n") %>% 
+  str_replace_all("///","</details>\n<details><summary>") %>% 
+  c("</details>") %>% 
+  paste0(collapse="\n") %>% 
+  paste0("# FAQs\n\n## Logging in\n\n<!--DO NOT TRY TO EDIT THIS TEXT, EDIT FAQ.TXT INSTEAD-->",.) %>%
+  writeLines("80021-faq.rmd")
 ```

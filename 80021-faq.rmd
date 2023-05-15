@@ -1,0 +1,207 @@
+# FAQs
+
+## Logging in
+
+<!--DO NOT TRY TO EDIT THIS TEXT, EDIT FAQ.TXT INSTEAD--></details>
+<details><summary> Can't log in, getting an error about "failed to execute 'setitem' on 'storage'"</summary>
+
+Immediately after you get the error, open the Chrome console by pressing ctrl shift J in Chrome,
+then at the blinking cursor, paste this:
+
+localStorage.clear();
+
+and refresh.
+
+If that doesn't work, please contact support at support@causalmap.app
+
+
+
+## Setting Up
+
+
+</details>
+<details><summary>Is there a security audit for Causal Map?</summary>
+
+Please see our T&Cs at https://causalmap.app/terms-and-conditions-for-the-causal-map-app/
+
+
+
+</details>
+<details><summary>How do I delete my account?</summary>
+
+If you have created any files which you want to delete, you can delete them using the green file sharing / file management button at the top left of the app.
+If you have a recurring subscription, you can cancel it from the Account tab in the app.
+
+</details>
+<details><summary>How do I import and export maps from Causal Map?</summary>
+
+You can download your map from Causal Map as an Excel file, tweak it and then upload it Causal Map.
+
+</details>
+<details><summary>I have done something wrong, how do I know which version of my mapfile to restore?</summary>
+
+The Versions dropdown shows you the filesize, so you can see where the file got larger or smaller. Also, have a look in the Updates tab. You can't actually restore the file from here but you can maybe guess which one you want by looking at the number of factors, the last coded statement etc.
+![image-20211119105900995](_assets/image-20211119105900995.png)
+
+
+
+</details>
+<details><summary>I made changes to file access with the Files panel to allow my colleague to see my file, but she still can't see it.</summary>
+
+Tell her to refresh her browser and your changes should appear.
+
+</details>
+<details><summary>Can I upload data with special characters like emojis, or characters from non-English languages?</summary>
+
+Yes, the app will upload them.
+
+##  Uploading and tweaking data
+
+
+</details>
+<details><summary>When I upload new or updated data into the app, does it matter what the Excel / spreadsheet file is called?</summary>
+
+No. The only thing that matters is what file you are uploading *into* at Causal Map: the currently active file.
+
+##  Coding
+
+
+</details>
+<details><summary>When I highlight a single word or very short phrase, why is the same word highlighted but in a different part of the statement?</summary>
+
+If you highlight a very short piece of text which happens to appear (exactly the same) more than once in the statement, it is always the first occurrence of this piece of text which is actually highlighted.
+
+</details>
+<details><summary>I have some factors with no links at all, how can I get rid of them?</summary>
+
+Sometimes you might want to keep these factors because they are part of a fixed codebook. But it you don't want them, go to the Data tab and click the link to delete them.
+
+</details>
+<details><summary>I have over 500 factors and when I try to type a new factor label, the app gets slow.</summary>
+
+Causal Map is not really designed for maps with more than about 500 different factors. The app will work, but yes it will get gradually slower.
+
+
+
+</details>
+<details><summary>The quote doesn't match up with the statement number?</summary>
+
+If you are looking at statement 99, looking also at factor editor, and click a quote to edit that link, which is actually say link 66 from statement 11, then the text from statement 11 will load up and link 66 will load up but the statement navigator above still says 99. That isn't wrong, it is just confusing! The filter you originally set to look at statement 99 hasn't changed.
+
+
+
+</details>
+<details><summary>When should I use a factor hashtag, and when should I use a link hashtag?</summary>
+
+Use factor hashtags, including quickfields, to add extra information about the causal factors, especially information which cuts across any existing factor hierarchy you are using, for example themes like `environment`. Use link hashtags specifically if  it relates to the claim rather than the factors e.g. respondent is suspicious / uncertain /  answering a different question / respondent doesn’t like this connection, etc.
+
+
+</details>
+<details><summary>Can I autofill influence factor label if its the same as the last consequence factor?</summary>
+
+Yes, that is called chaining links! You can chain links by clicking the chain icon, after you have saved your previous link. If you would like more guidance check out this <a href="https://causalmap.app/courses/causal-map-basics/lessons/how-to-code-a-link/">video</a>.
+
+</details>
+<details><summary>I'm all zoomed out, how do I get a normal zoom level in my browser?</summary>
+
+If you have Windows press ctrl and 0. If you have a Mac press option, command and 0.
+
+
+</details>
+<details><summary>Can I create more than one link at a time?</summary>
+
+Yes. You can create multiple links at a time just by putting more than one factor in either or both boxes. If you want more information check out this <a href="https://causalmap.app/courses/causal-map-basics/lessons/how-to-code-a-link/">short video</a>.
+
+
+</details>
+<details><summary>How do I link two existing chains?</summary>
+
+To link a chain a --> b --> c to a chain d --> e, highlight the part of the statement which provides the evidence and then code a link from c to d using the dropdowns as usual.
+
+
+</details>
+<details><summary>If a respondent makes the same causal claim twice, should I code it twice?</summary>
+
+If they are just repeating the same point, don't bother. But if they are bringing different evidence for the same link, code it twice.
+
+</details>
+<details><summary>Should I put spaces after `;` in hierarchical coding? What about after `~` when coding opposites?</summary>
+
+The convention is this: blah; blah
+
+blah; ~blah
+
+etc, i.e. we put a space after the `;` but no space after the `~`
+
+
+
+</details>
+<details><summary>Can I trace paths from one factor to "everything"?</summary>
+
+Yes! Just leave the `target` box empty.
+
+
+
+
+</details>
+<details><summary>What do the functions `unique` and `literal` mean when conditionally formatting links?</summary>
+
+You use `unique` and `literal` when you don't want to do any counting, you want to print or otherwise use the actual values. So if you have a bundle with sources a, a, b and c, and you want to print them as labels, then unique: source_id will print a; b; c whereas litera: source_id will print literally a; a; b; c
+
+
+
+## Known Bugs
+
+
+</details>
+<details><summary>When I highlight text which overlaps with a previously highlighted section no new highlight appears.</summary>
+
+Unfortunately there is no easy fix for this bug but it is just cosmetic. You can check you have highlighted the right section by checking the text box below the factor label boxes contains the text you want to highlight. Once you have saved the link the highlight will appear on the statement.
+
+</details>
+<details><summary>Depending on the size of the screen, when I go to press one of the tabs like the one with the question icon, the icon then changes position to go to the next level - which I then can't reach. Or the tabs flicker and slide around.</summary>
+
+Yes that's annoying. Just zoom out your browser e.g. by pressing ctrl -
+
+</details>
+<details><summary>I'm getting an "Ajax error" when viewing tables.</summary>
+
+Have a look to see if the URL of the app has a lot of parts like this: [https://causalmap.shinyapps.io/CM2test/_w_741fed8d/_w_q4eeed8d/_w_346fed8d/](https://causalmap.shinyapps.io/CM2test/_w_741fed8d/_w_q4eeed8d/_w_346fed8d/). If it does, just visit the bare URL: (https://causalmap.shinyapps.io/CausalMap2 or https://causalmap.shinyapps.io/CM2test) and start again from there.
+
+</details>
+<details><summary>My link label is appearing slightly away from the link</summary>
+
+Unfortunately when a map has a lot of links link labels may appear slightly removed from the link. Currently there is no way to change this with formatting, only by simplfiying your map.
+
+
+## QuIP questions
+
+</details>
+<details><summary>How do I upload my QuIP project into Causal Map?</summary>
+
+Follow the instructions for [hybrid files](https://guide.causalmap.app/ximport.html#ximport-quip). You must create an excel file with one worksheet and four columns. The column headers must be in this order; text, source_id, question_id and question_text. Then upload this to an empty file.
+
+## Downloads
+
+</details>
+<details><summary>Where can I find example files to use as templates?</summary>
+
+They can be found and downloaded [here](https://drive.google.com/drive/folders/1wvifDQ0BXmAjSudTRUv9i_4JURpphD4v).
+
+## What to do when you've finished coding.
+
+</details>
+<details><summary>Is there a more cost-effective option to use during the analysis phase of the causal mapping?</summary>
+
+If you don't want to do any coding or editing, your data stays with us for at least a year (probably longer) so that you can view and analyse it even with a free subscription. "Editing" means changing or adding factors or links. The analysis is free, even if you create and share new views.
+
+</details>
+<details><summary>If I wanted to put my membership on pause, can I come back and access the coded data and existing maps at any point?</summary>
+
+Yes! You can view, analyse and download your data with a free subscription. If you want to do any coding or editing at all, you'll need a [paid subscription](https://causalmap.app/subscriptions), which depends on the number of files you want to be able to code. You'd only need to pay one of these subscriptions for the months when you want to edit something. 
+
+</details>
+<details><summary>What is the best way to store my coded data?</summary>
+
+We store your data for at least a year and you can access them with a free subscription. If you want to store your coded data and maps for longer than a year, you can download them in Excel format from the app. 
+</details>

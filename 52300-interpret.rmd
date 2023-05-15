@@ -1,0 +1,19 @@
+# 📚 Interpreting your results{#xinterpret}
+
+Like with any other kind of data analysis, in causal mapping you have to be careful to interpret your results correctly. 
+
+One thing to think about is, have you coded only explicit causal claims or have you also coded, for example:
+
+- hypothetical links
+- dreams / hopes / fears / wishes for the future
+- statements that there is NO causal connection between two things, e.g. a quack cure and an illness
+
+Usually we will code this kind of link using dedicated [hashtags](https://guide.causalmap.app/xcoding-panel.html#xhashtags). You will probably want to exclude links like this from your normal analysis, and treat them separately. 
+
+There are quite a few other potential pitfalls! One of them is the [transitivity trap](https://guide.causalmap.app/xtransitivity-trap.html), so have a read of that section of the Guide. 
+
+
+
+You can practice your interpretation skills in [this quiz section](https://causalmap.shinyapps.io/quizzes/#section-causal-mapping-interpretation) and the ones after it.
+
+[To be completed]

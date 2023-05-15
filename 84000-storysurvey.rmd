@@ -1,0 +1,5 @@
+# Using StorySurvey{#ss-to-cm}
+
+StorySurvey is under rapid development, please view the latest documentation [here](https://causalmap.notion.site/Current-StorySurvey3-documentation-e45071aa95f043de9c5686e37df8bdd2).
+
+
