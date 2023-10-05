@@ -1,0 +1,7 @@
+{
+  "overrideViewsFromOtherPlugins": false,
+  "extensions": [
+    "rmd",
+    "txt"
+  ]
+}

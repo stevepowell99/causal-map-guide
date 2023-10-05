@@ -16,7 +16,7 @@ When using statements in a language other than English, ask the AI to translate 
 
 You can use a prompt like: *'If the text is in a language other than English, be sure to translate it to English when creating the factor labels'*.
 
-![](_assets/language-cm-autocoding.png){width:650} 
+![language-cm-autocoding](_assets/language-cm-autocoding.png){width:650}  
 
 ## It isn't cheap
 
@@ -40,19 +40,19 @@ Each line of the form X >> Y will be converted to a link from X to Y.
 
 Each line of the form X >> Y >> Z will be converted to two links from X to Y and from Y to Z, and so on. And we call this kind of display 'chains'
 
-## Choosing between single **links** (A>>B and B>>C) or **chains** (A>>B>>C):
+### Choosing between single **links** (A>>B and B>>C) or **chains** (A>>B>>C):
 
 GPT 3.5 doesn’t do a very good job with chains, so make sure when using GPT 3.5 to ask for single links.
 
 - **Single Links:** If you’re looking for ***more details***, the single links are the way to go: the AI can find more details and factors when looking at each link individually
 
-![](_assets/single-links-cm-autocoding.png){width:650}
+![single-links-cm-autocoding](_assets/single-links-cm-autocoding.png){width:650}
 
-- **Chains**: But if you want to look at the bigger picture, *chains* do a good job. Sometimes the bot can ignore one or another causal link, so make sure you always check your map after coding. 
+- **Chains**: If you want to look at the **bigger picture**, chains do a good job. Sometimes the bot can ignore one or another causal link, so make sure you always check your map after coding. 
 
-  ![](_assets/chains-cm-autocoding.png){width:650} 
+  ![chains-cm-autocoding](_assets/chains-cm-autocoding.png){width:650} 
 
-  Limitations about chains:
+  <u>Limitations about chains</u>:
 
   1. Conjunctions are hard to deal with when you have chains
   2. If using examples, make sure when putting the quote in the example, DO NOT use the “, because the AI gets confused.
@@ -354,7 +354,7 @@ But using 3.5 costs one thirtieth: the whole of the example-file costs 10 cents.
 
 
 
-what about StorySurvey? 
+What about StorySurvey? 
 
 the prompt is the main load. suppose an average of 20 user responses, that's say 300 tokens * 20 = 6000 for a response. * 100 responses = 600K. 
 

@@ -15,7 +15,7 @@
 - [Trace paths](#xtrace-paths) from one set of factors to another
 - Use the interactive viewer to edit your map
 - View and export print-quality maps
-- View all quotes for a specific view, and get a smart summary
+- View all quotes for a specific view
 - Create detailed [tables](#core-tables): Factors; Sample; Questions; Closed questions
 - [Download/export](#xroundtripping) your data in different formats
 - Share files with others for viewing or editing
