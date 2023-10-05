@@ -31,7 +31,15 @@ That means you can add, at the top of your statement after the `--`, exactly one
 
 You don't need to do this for every statement, only where the question_id or respondent_id *changes*. So add it for every new question and/or every new respondent.
 
+
+
 Wait, you say, what's a respondent? Well we already have `source_id` which is the name of the document. Usually you will have one document for one respondent, so you won't need respondent_id. You will usually only want to use `respondent_id` when your respondents change within one document, for example in a focus group transcript. 
+
+Alternatively, if you want to mark different sources within one or more documents, you can put lines like this within your document.
+
+`--source_id: my source id`
+
+
 
 Uploading like this does not retain information about page numbers in PDFs. If you need to get the page numbers of each statement when uploading PDFs, try [another free utility](https://causalmap.shinyapps.io/pdf2excel/)  (Tool 2) which uploads PDFs only but does provide page numbers as an additional column.
 

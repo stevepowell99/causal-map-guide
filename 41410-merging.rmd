@@ -2,7 +2,11 @@
 
 ![image-20230129092348843](_assets/image-20230129092348843.png)
 
-You want to merge files "foxtrot", "golf "and "hotel" into one. What you are going to do is create a blank file and then use the merge mapfile command to merge in the file foxtrot, and save the map as currently filtered (i.e. including all the contents of foxtrot which arrive via the filter), and then repeat for the others.
+You want to merge files "foxtrot", "golf "and "hotel" into one.  For example these might be two files containing interviews from different areas plus some focus group discussions (FGDs).
+
+**Prerequisites**: You'll have to think about the question IDs. So for example if you have a question ID of C1 in the interviews and also a question with the same label C1 in the FGDs, this has to mean that it's really the same question with the same meaning and the same question text (which often is not the case). If they are really different questions, you need to distinguish them, e.g. by adding "_F" at the end of all the question IDs in the questions tab in the spreadsheets but also correspondingly in the statements tab in the spreadsheets. Otherwise the app has no way of knowing the difference, and it will be difficult for example to filter for all the answers to question C1. 
+
+**Steps**: What you are going to do is create a blank file and then use the merge mapfile command to merge in the file foxtrot, and save the map as currently filtered (i.e. including all the contents of foxtrot which arrive via the filter), and then repeat for the others.
 
 1. Create a new file under a new name e.g. "my-merged-file"
 

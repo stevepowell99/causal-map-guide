@@ -24,10 +24,6 @@ Filters simplify your graph to help you answer specific questions. You will ofte
 
 
 
-
-
-
-
 These filters apply powerful filters which change the structure of the unfiltered map. Each filter can be applied more than once and they can (to some extent) be moved up and down.
 
 For example suppose you want to show only links from statements in which the word "women" appears in the `text` of the statement. So to apply a `find statements` filter, you click the button with that name. A dialog will appear, once you have filled in the panel, and you click `Apply filter`.
@@ -173,6 +169,48 @@ Bundling factors allows us to combine multiple factors into one box. This can be
 Combining opposites formats factors so that opposites are displayed in one factor label. Negatives are identified by '~' and must have exactly the same phrasing as their counterpart. In Print view the links are automatically colour coded - red for the negative relationship and green for the positive, so you can clearly see the causal relations.
 
 ![Combined opposites](_assets/Combined opposites.png){width=650}
+
+## 🧪 Mutate factors or links: calculate new factor or link fields
+
+This advanced filter is only available using the Advanced editor, but it is really useful.
+
+This line 
+
+`mutate factors new=big exp=frequency>2`
+
+will create a new field in the factors table which is TRUE if the frequency of each factor is greater than 2. You can then use this new field to format your map, e.g.
+
+`mutate factors new=big exp=frequency>2`
+`color factors big`
+
+You can read the first line as "create a new field called 'big' which is true if the frequency of the factor is greater than 2".
+
+Or this line will pick out the people older than 60.
+
+`mutate factors new=older exp=age>60`
+`color factors big`
+
+The syntax for the "exp" aka "expression" part of the line is almost anything you can use for the [mutate() function of the dplyr package]().
+
+## 🧪 Pick factors or links
+
+This advanced filter is only available using the Advanced editor, but it is really useful.
+
+`find_factors` and `find_links` can be awkward to use when you want to select factors or links which fit a logical criterion like one which you created with `mutate_factors`  or `mutate_links`, see above.
+
+This line 
+
+`mutate factors new=big exp=frequency>2`
+
+will create a new field in the factors table which is TRUE if the frequency of each factor is greater than 2. You can then use this new field to filter your map, e.g.
+
+`mutate factors new=big exp=frequency>2`
+`pick factors big`
+
+
+
+
+
 
 ## Filtering group by group
 
