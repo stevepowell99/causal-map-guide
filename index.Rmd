@@ -14,7 +14,7 @@ documentclass: book
 url: https://causalmap.app
 cover-image: "_assets/image-20210520221329966.png"
 link-citations: true
-description: "Guide to Causal Mapping"
+description: "Guide to Causal Map 2"
 ---
 
 ```{r}
