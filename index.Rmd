@@ -1,5 +1,5 @@
 ---
-title: "Guide to Causal Mapping"
+title: "Guide to Causal Map 2"
 author:
   - Steve Powell^[Causal Map Ltd., steve@causalmap.app]
   - Fiona Remnant^[Causal Map Ltd., fiona@causalmap.app]
