@@ -28,7 +28,7 @@
 <meta name="author" content="Samuel Goddard" />
 
 
-<meta name="date" content="2023-05-15" />
+<meta name="date" content="2023-11-27" />
 
   <meta name="viewport" content="width=device-width, initial-scale=1" />
   <meta name="apple-mobile-web-app-capable" content="yes" />
@@ -496,6 +496,8 @@ code span.wa { color: #60a0b0; font-weight: bold; font-style: italic; } /* Warni
 <li class="chapter" data-level="" data-path="filters-overview.html"><a href="filters-overview.html#trace-paths"><i class="fa fa-check"></i>Trace paths</a></li>
 <li class="chapter" data-level="" data-path="filters-overview.html"><a href="filters-overview.html#bundlefactors"><i class="fa fa-check"></i>Bundle factors</a></li>
 <li class="chapter" data-level="" data-path="filters-overview.html"><a href="filters-overview.html#combine-opposites"><i class="fa fa-check"></i>Combine opposites</a></li>
+<li class="chapter" data-level="" data-path="filters-overview.html"><a href="filters-overview.html#mutate-factors-or-links-calculate-new-factor-or-link-fields"><i class="fa fa-check"></i>🧪 Mutate factors or links: calculate new factor or link fields</a></li>
+<li class="chapter" data-level="" data-path="filters-overview.html"><a href="filters-overview.html#pick-factors-or-links"><i class="fa fa-check"></i>🧪 Pick factors or links</a></li>
 <li class="chapter" data-level="" data-path="filters-overview.html"><a href="filters-overview.html#filtering-group-by-group"><i class="fa fa-check"></i>Filtering group by group</a></li>
 </ul></li>
 <li class="chapter" data-level="" data-path="what-is-the-logic-behind-the-causal-map-filters.html"><a href="what-is-the-logic-behind-the-causal-map-filters.html"><i class="fa fa-check"></i>What is the logic behind the Causal Map filters?</a>
@@ -614,8 +616,10 @@ code span.wa { color: #60a0b0; font-weight: bold; font-style: italic; } /* Warni
 <li class="chapter" data-level="" data-path="auto-coding.html"><a href="auto-coding.html#languages"><i class="fa fa-check"></i>Languages</a></li>
 <li class="chapter" data-level="" data-path="auto-coding.html"><a href="auto-coding.html#it-isnt-cheap"><i class="fa fa-check"></i>It isn’t cheap</a></li>
 <li class="chapter" data-level="" data-path="auto-coding.html"><a href="auto-coding.html#the-coding-prompt"><i class="fa fa-check"></i>The coding prompt</a></li>
-<li class="chapter" data-level="" data-path="auto-coding.html"><a href="auto-coding.html#identifying-links"><i class="fa fa-check"></i>Identifying links</a></li>
+<li class="chapter" data-level="" data-path="auto-coding.html"><a href="auto-coding.html#identifying-links"><i class="fa fa-check"></i>Identifying links</a>
+<ul>
 <li class="chapter" data-level="" data-path="auto-coding.html"><a href="auto-coding.html#choosing-between-single-links-ab-and-bc-or-chains-abc"><i class="fa fa-check"></i>Choosing between single <strong>links</strong> (A&gt;&gt;B and B&gt;&gt;C) or <strong>chains</strong> (A&gt;&gt;B&gt;&gt;C):</a></li>
+</ul></li>
 <li class="chapter" data-level="" data-path="auto-coding.html"><a href="auto-coding.html#ensuring-quotes-are-provided"><i class="fa fa-check"></i>Ensuring quotes are provided</a>
 <ul>
 <li class="chapter" data-level="" data-path="auto-coding.html"><a href="auto-coding.html#colon-style"><i class="fa fa-check"></i>Colon style</a></li>
@@ -927,9 +931,9 @@ code span.wa { color: #60a0b0; font-weight: bold; font-style: italic; } /* Warni
 </script>
 <div id="strength-adding-additional-information-like-strength-of-a-link-in-a-causal-map" class="section level1 hasAnchor">
 <h1>📚 Strength: Adding additional information like strength of a link in a causal map<a href="#strength-adding-additional-information-like-strength-of-a-link-in-a-causal-map" class="anchor-section" aria-label="Anchor link to header"></a></h1>
-<div class="figure">
-<img src="_assets/image-20230128222424253.png" alt="" />
-<p class="caption">image-20230128222424253</p>
+<div class="float">
+<img src="_assets/image-20230128222424253.png" alt="image-20230128222424253" />
+<div class="figcaption">image-20230128222424253</div>
 </div>
 <p>Let’s keep it simple.</p>
 <p>Causal mapping involves modelling people’s causal claims and beliefs as links or arrows between factors. In Part 1 we argued that a causal mapping approach is represented first and foremost by sets of rules which say <em>how</em> causal information is encoded by specific features of the elements of the map. In this second Part, we will present some new rules for encoding causal claims within causal maps. We will see that there is no one perfect set of features we can use for encoding all or even a satisfactorily broad selection of all possible causal claims. Even with some quite basic possible features like encoding the “strength” of a causal link, it is not hard to dream up a range of similar but different sets of rules for encoding and manipulating causal maps using this feature. To encode strength of a link, should we use numbers from 0 to 1, or maybe from -1 to +1? If several links point to a factor, should we simply add up the strengths, or use some function which keeps the value of the factor somewhere lower than 1? And so on.</p>

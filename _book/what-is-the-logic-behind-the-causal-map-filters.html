@@ -28,7 +28,7 @@
 <meta name="author" content="Samuel Goddard" />
 
 
-<meta name="date" content="2023-05-15" />
+<meta name="date" content="2023-11-27" />
 
   <meta name="viewport" content="width=device-width, initial-scale=1" />
   <meta name="apple-mobile-web-app-capable" content="yes" />
@@ -496,6 +496,8 @@ code span.wa { color: #60a0b0; font-weight: bold; font-style: italic; } /* Warni
 <li class="chapter" data-level="" data-path="filters-overview.html"><a href="filters-overview.html#trace-paths"><i class="fa fa-check"></i>Trace paths</a></li>
 <li class="chapter" data-level="" data-path="filters-overview.html"><a href="filters-overview.html#bundlefactors"><i class="fa fa-check"></i>Bundle factors</a></li>
 <li class="chapter" data-level="" data-path="filters-overview.html"><a href="filters-overview.html#combine-opposites"><i class="fa fa-check"></i>Combine opposites</a></li>
+<li class="chapter" data-level="" data-path="filters-overview.html"><a href="filters-overview.html#mutate-factors-or-links-calculate-new-factor-or-link-fields"><i class="fa fa-check"></i>🧪 Mutate factors or links: calculate new factor or link fields</a></li>
+<li class="chapter" data-level="" data-path="filters-overview.html"><a href="filters-overview.html#pick-factors-or-links"><i class="fa fa-check"></i>🧪 Pick factors or links</a></li>
 <li class="chapter" data-level="" data-path="filters-overview.html"><a href="filters-overview.html#filtering-group-by-group"><i class="fa fa-check"></i>Filtering group by group</a></li>
 </ul></li>
 <li class="chapter" data-level="" data-path="what-is-the-logic-behind-the-causal-map-filters.html"><a href="what-is-the-logic-behind-the-causal-map-filters.html"><i class="fa fa-check"></i>What is the logic behind the Causal Map filters?</a>
@@ -614,8 +616,10 @@ code span.wa { color: #60a0b0; font-weight: bold; font-style: italic; } /* Warni
 <li class="chapter" data-level="" data-path="auto-coding.html"><a href="auto-coding.html#languages"><i class="fa fa-check"></i>Languages</a></li>
 <li class="chapter" data-level="" data-path="auto-coding.html"><a href="auto-coding.html#it-isnt-cheap"><i class="fa fa-check"></i>It isn’t cheap</a></li>
 <li class="chapter" data-level="" data-path="auto-coding.html"><a href="auto-coding.html#the-coding-prompt"><i class="fa fa-check"></i>The coding prompt</a></li>
-<li class="chapter" data-level="" data-path="auto-coding.html"><a href="auto-coding.html#identifying-links"><i class="fa fa-check"></i>Identifying links</a></li>
+<li class="chapter" data-level="" data-path="auto-coding.html"><a href="auto-coding.html#identifying-links"><i class="fa fa-check"></i>Identifying links</a>
+<ul>
 <li class="chapter" data-level="" data-path="auto-coding.html"><a href="auto-coding.html#choosing-between-single-links-ab-and-bc-or-chains-abc"><i class="fa fa-check"></i>Choosing between single <strong>links</strong> (A&gt;&gt;B and B&gt;&gt;C) or <strong>chains</strong> (A&gt;&gt;B&gt;&gt;C):</a></li>
+</ul></li>
 <li class="chapter" data-level="" data-path="auto-coding.html"><a href="auto-coding.html#ensuring-quotes-are-provided"><i class="fa fa-check"></i>Ensuring quotes are provided</a>
 <ul>
 <li class="chapter" data-level="" data-path="auto-coding.html"><a href="auto-coding.html#colon-style"><i class="fa fa-check"></i>Colon style</a></li>
@@ -976,32 +980,32 @@ code span.wa { color: #60a0b0; font-weight: bold; font-style: italic; } /* Warni
 <ul>
 <li>The numbers show the number of times each factor is mentioned in the current filter. Because most of the other factors have been removed from the map, the number of incoming and outgoing links is much lower, so the frequencies go down.</li>
 </ul>
-<div class="figure">
-<img src="_assets/image-20230503181138364.png" alt="" />
-<p class="caption">image-20230503181138364</p>
+<div class="float">
+<img src="_assets/image-20230503181138364.png" alt="image-20230503181138364" />
+<div class="figcaption">image-20230503181138364</div>
 </div>
-<div class="figure">
-<img src="_assets/image-20230503181114203.png" alt="" />
-<p class="caption">image-20230503181114203</p>
+<div class="float">
+<img src="_assets/image-20230503181114203.png" alt="image-20230503181114203" />
+<div class="figcaption">image-20230503181114203</div>
 </div>
 <ul>
 <li>The numbers show the number of times each factor was originally mentioned.</li>
 </ul>
-<div class="figure">
-<img src="_assets/image-20230503181649791.png" alt="" />
-<p class="caption">image-20230503181649791</p>
+<div class="float">
+<img src="_assets/image-20230503181649791.png" alt="image-20230503181649791" />
+<div class="figcaption">image-20230503181649791</div>
 </div>
-<div class="figure">
-<img src="_assets/image-20230503181223919.png" alt="" />
-<p class="caption">image-20230503181223919</p>
+<div class="float">
+<img src="_assets/image-20230503181223919.png" alt="image-20230503181223919" />
+<div class="figcaption">image-20230503181223919</div>
 </div>
 <p>Both of these are plausible ways of thinking about factor frequencies, how often each was mentioned. We have to be careful to distinguish which we want and how to report the results.</p>
 <p>Factor and link metrics are recalculated after many filters, including <code>select factors</code>.</p>
 <p>As you can see, with the filter <code>select factors</code> it is now possible to switch off the recalculation of factor metrics by typing <code>recalculate_factors = FALSE</code>.</p>
 <p>Note this also works with source_count in some circumstances.</p>
-<div class="figure">
-<img src="_assets/image-20230503182410144.png" alt="" />
-<p class="caption">image-20230503182410144</p>
+<div class="float">
+<img src="_assets/image-20230503182410144.png" alt="image-20230503182410144" />
+<div class="figcaption">image-20230503182410144</div>
 </div>
 <p><img src="_assets/image-20230503182321354.png" alt="image-20230503182321354" /><a href="https://causalmap.shinyapps.io/tokyo/?s=14091">14091</a></p>
 <p>Here, we are bundling links by source, so you might expect the number on the left to be 11 as there are 11 links leaving the factor. But the number is 16 because we have not recalculated factor metrics; originally there were 16 sources mentioning this factor.</p>

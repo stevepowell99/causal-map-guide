@@ -28,7 +28,7 @@
 <meta name="author" content="Samuel Goddard" />
 
 
-<meta name="date" content="2023-05-15" />
+<meta name="date" content="2023-11-27" />
 
   <meta name="viewport" content="width=device-width, initial-scale=1" />
   <meta name="apple-mobile-web-app-capable" content="yes" />
@@ -496,6 +496,8 @@ code span.wa { color: #60a0b0; font-weight: bold; font-style: italic; } /* Warni
 <li class="chapter" data-level="" data-path="filters-overview.html"><a href="filters-overview.html#trace-paths"><i class="fa fa-check"></i>Trace paths</a></li>
 <li class="chapter" data-level="" data-path="filters-overview.html"><a href="filters-overview.html#bundlefactors"><i class="fa fa-check"></i>Bundle factors</a></li>
 <li class="chapter" data-level="" data-path="filters-overview.html"><a href="filters-overview.html#combine-opposites"><i class="fa fa-check"></i>Combine opposites</a></li>
+<li class="chapter" data-level="" data-path="filters-overview.html"><a href="filters-overview.html#mutate-factors-or-links-calculate-new-factor-or-link-fields"><i class="fa fa-check"></i>🧪 Mutate factors or links: calculate new factor or link fields</a></li>
+<li class="chapter" data-level="" data-path="filters-overview.html"><a href="filters-overview.html#pick-factors-or-links"><i class="fa fa-check"></i>🧪 Pick factors or links</a></li>
 <li class="chapter" data-level="" data-path="filters-overview.html"><a href="filters-overview.html#filtering-group-by-group"><i class="fa fa-check"></i>Filtering group by group</a></li>
 </ul></li>
 <li class="chapter" data-level="" data-path="what-is-the-logic-behind-the-causal-map-filters.html"><a href="what-is-the-logic-behind-the-causal-map-filters.html"><i class="fa fa-check"></i>What is the logic behind the Causal Map filters?</a>
@@ -614,8 +616,10 @@ code span.wa { color: #60a0b0; font-weight: bold; font-style: italic; } /* Warni
 <li class="chapter" data-level="" data-path="auto-coding.html"><a href="auto-coding.html#languages"><i class="fa fa-check"></i>Languages</a></li>
 <li class="chapter" data-level="" data-path="auto-coding.html"><a href="auto-coding.html#it-isnt-cheap"><i class="fa fa-check"></i>It isn’t cheap</a></li>
 <li class="chapter" data-level="" data-path="auto-coding.html"><a href="auto-coding.html#the-coding-prompt"><i class="fa fa-check"></i>The coding prompt</a></li>
-<li class="chapter" data-level="" data-path="auto-coding.html"><a href="auto-coding.html#identifying-links"><i class="fa fa-check"></i>Identifying links</a></li>
+<li class="chapter" data-level="" data-path="auto-coding.html"><a href="auto-coding.html#identifying-links"><i class="fa fa-check"></i>Identifying links</a>
+<ul>
 <li class="chapter" data-level="" data-path="auto-coding.html"><a href="auto-coding.html#choosing-between-single-links-ab-and-bc-or-chains-abc"><i class="fa fa-check"></i>Choosing between single <strong>links</strong> (A&gt;&gt;B and B&gt;&gt;C) or <strong>chains</strong> (A&gt;&gt;B&gt;&gt;C):</a></li>
+</ul></li>
 <li class="chapter" data-level="" data-path="auto-coding.html"><a href="auto-coding.html#ensuring-quotes-are-provided"><i class="fa fa-check"></i>Ensuring quotes are provided</a>
 <ul>
 <li class="chapter" data-level="" data-path="auto-coding.html"><a href="auto-coding.html#colon-style"><i class="fa fa-check"></i>Colon style</a></li>
@@ -929,9 +933,9 @@ code span.wa { color: #60a0b0; font-weight: bold; font-style: italic; } /* Warni
 <h1>📚 Coding opposites<a href="#xopposites" class="anchor-section" aria-label="Anchor link to header"></a></h1>
 <div id="summary-3" class="section level2 hasAnchor">
 <h2>Summary<a href="xopposites.html#summary-3" class="anchor-section" aria-label="Anchor link to header"></a></h2>
-<div class="figure">
-<img src="_assets/image-20211210144453107.png" width="650" alt="" />
-<p class="caption">image-20211210144453107</p>
+<div class="float">
+<img src="_assets/image-20211210144453107.png" width="650" alt="image-20211210144453107" />
+<div class="figcaption">image-20211210144453107</div>
 </div>
 <p>This map shows that 13 people say they got stressed (the first section of the link is green) and therefore did <em>not</em> perform well (second section is <em>orange</em>), another person said they also got stressed but performed well (both sections green) and 3 people said they did <em>not</em> get stressed (first section of the link is orange) and performed well. The border of the factor “performed well” is mostly orange because most people mentioned <em>not</em> performing well.</p>
 <hr />
@@ -974,9 +978,9 @@ code span.wa { color: #60a0b0; font-weight: bold; font-style: italic; } /* Warni
 <div id="two-tone-links" class="section level3 hasAnchor">
 <h3>Two-tone links<a href="xopposites.html#two-tone-links" class="anchor-section" aria-label="Anchor link to header"></a></h3>
 <p>In Print view, when combining opposites the links can be two-tone, with a different colour at each end.</p>
-<div class="figure">
-<img src="_assets/image-20211104180458325.png" width="650" alt="" />
-<p class="caption">image-20211104180458325</p>
+<div class="float">
+<img src="_assets/image-20211104180458325.png" width="650" alt="image-20211104180458325" />
+<div class="figcaption">image-20211104180458325</div>
 </div>
 <p>In Interactive view, two-tone links are not possible. The first and last cases above are the same as in Print view, but in the second and third cases the links are grey.</p>
 <p>With larger files you will often want to bundle the links between each pair of factors. When you combine opposites you will want to combine the links into so-called flipped bundles. There can be up to four flipped bundles between each pair of factors just like in the table above.</p>
@@ -984,9 +988,9 @@ code span.wa { color: #60a0b0; font-weight: bold; font-style: italic; } /* Warni
 <div id="filtering" class="section level3 hasAnchor">
 <h3>Filtering<a href="xopposites.html#filtering" class="anchor-section" aria-label="Anchor link to header"></a></h3>
 <p>When you combine opposites, the app gives you additional combined fields (in the links and factors tables) which you can use to display and filter your maps in various ways. For example, you can keep only links in which come from or to <em>positively</em> formulated factors: <code>find links field=flipped_bundle value=FALSE|FALSE operator=equals</code> in your advanced editor or:</p>
-<div class="figure">
-<img src="_assets/image-20211004181207511.png" width="650" alt="" />
-<p class="caption">image-20211004181207511</p>
+<div class="float">
+<img src="_assets/image-20211004181207511.png" width="650" alt="image-20211004181207511" />
+<div class="figcaption">image-20211004181207511</div>
 </div>
 </div>
 </div>
@@ -994,19 +998,19 @@ code span.wa { color: #60a0b0; font-weight: bold; font-style: italic; } /* Warni
 <h2>Opposites coding within a hierarchy<a href="xopposites.html#xopposites-coding" class="anchor-section" aria-label="Anchor link to header"></a></h2>
 <p>When using hierarchical coding, <code>~</code> may appear at the start of a factor label <em>and/or at the start of any component in a factor label</em>.</p>
 <p>Here is a similar story, now coded hierarchically. In this example, we only see <code>~</code> at the beginning of the factors, not yet within them.</p>
-<div class="figure">
-<img src="_assets/image-20210520204204501.png" width="650" alt="" />
-<p class="caption">image-20210520204204501</p>
+<div class="float">
+<img src="_assets/image-20210520204204501.png" width="650" alt="image-20210520204204501" />
+<div class="figcaption">image-20210520204204501</div>
 </div>
 <p>When you press “combine opposites”, the app tries to combine any pairs of factors which are opposites. It looks at all the factors which begin with a <code>~</code> and <em>flips each component</em>, taking off the <code>~</code> where there was one, and inserting one where there was not.</p>
-<div class="figure">
-<img src="_assets/image-20210520204312492.png" width="650" alt="" />
-<p class="caption">image-20210520204312492</p>
+<div class="float">
+<img src="_assets/image-20210520204312492.png" width="650" alt="image-20210520204312492" />
+<div class="figcaption">image-20210520204312492</div>
 </div>
 <p>Here is the same example, but also “zoomed out” to the top level.</p>
-<div class="figure">
-<img src="_assets/image-20210520204412557.png" width="650" alt="" />
-<p class="caption">image-20210520204412557</p>
+<div class="float">
+<img src="_assets/image-20210520204412557.png" width="650" alt="image-20210520204412557" />
+<div class="figcaption">image-20210520204412557</div>
 </div>
 <p>A quantitative social scientist might solve this problem by flipping the polarity of the negative examples, coding them as positive but using minus strengths for the connections. So smoking influences good health but with a minus strength. However this always seems somehow unsatisfactory and is complicated to do. It is particularly unsatisfactory when <em>both</em> ends of the arrow are flipped in this way so that we code the influence of being unfit on being unhappy as a green arrow from fitness to health!</p>
 <p>By default in print view, links in the same bundle, i.e. with the same from and two factors, are no longer always displayed as one, with the frequency noted as a label. If we were using the quantitative approach, some of the links in the bundle may have minus rather than plus strength, etc, and we would have to somehow form some kind of average to arrive at an overall strength score, which is not at all satisfactory. Now, the links are only counted together if they have the same <em>from</em> and <em>to</em> polarities. So there can be up to four different links from one factor to another in Print view.</p>
@@ -1031,30 +1035,30 @@ code span.wa { color: #60a0b0; font-weight: bold; font-style: italic; } /* Warni
 </ul>
 <p>Smoking, which is an example of unhealthy behaviour, is the opposite of not smoking, an example of healthy behaviour.</p>
 <p>So here we add one more causal claim to our above example, at the bottom:</p>
-<div class="figure">
-<img src="_assets/image-20210520221327950.png" width="650" alt="" />
-<p class="caption">image-20210520221327950</p>
+<div class="float">
+<img src="_assets/image-20210520221327950.png" width="650" alt="image-20210520221327950" />
+<div class="figcaption">image-20210520221327950</div>
 </div>
 <p>The healthy habit of not smoking leads to being fit.</p>
 <p>So the app correctly detects that not smoking is the opposite of smoking:</p>
-<div class="figure">
-<img src="_assets/image-20210520221457238.png" width="650" alt="" />
-<p class="caption">image-20210520221457238</p>
+<div class="float">
+<img src="_assets/image-20210520221457238.png" width="650" alt="image-20210520221457238" />
+<div class="figcaption">image-20210520221457238</div>
 </div>
 <p>The two arrows at bottom left (one all green, one all red) show that there is one example of this particular healthy habit leading to fitness, and the complementary example in which the opposite of this habit leads to the opposite of fitness.</p>
 <p>Zoomed out to the top level:</p>
-<div class="figure">
-<img src="_assets/image-20210520221754476.png" width="650" alt="" />
-<p class="caption">image-20210520221754476</p>
+<div class="float">
+<img src="_assets/image-20210520221754476.png" width="650" alt="image-20210520221754476" />
+<div class="figcaption">image-20210520221754476</div>
 </div>
 <p>The app makes it easy to code opposites; while coding, when you have loaded any factor into either of the boxes, pressing the “flip” button above will flip the factor into its opposite.</p>
-<div class="figure">
-<img src="_assets/image-20210520222023504.png" alt="" />
-<p class="caption">image-20210520222023504</p>
+<div class="float">
+<img src="_assets/image-20210520222023504.png" alt="image-20210520222023504" />
+<div class="figcaption">image-20210520222023504</div>
 </div>
-<div class="figure">
-<img src="_assets/image-20210520222347827.png" width="650" alt="" />
-<p class="caption">image-20210520222347827</p>
+<div class="float">
+<img src="_assets/image-20210520222347827.png" width="650" alt="image-20210520222347827" />
+<div class="figcaption">image-20210520222347827</div>
 </div>
 </div>
 <div id="unpacking-opposites" class="section level2 hasAnchor">

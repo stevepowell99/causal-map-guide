@@ -28,7 +28,7 @@
 <meta name="author" content="Samuel Goddard" />
 
 
-<meta name="date" content="2023-05-15" />
+<meta name="date" content="2023-11-27" />
 
   <meta name="viewport" content="width=device-width, initial-scale=1" />
   <meta name="apple-mobile-web-app-capable" content="yes" />
@@ -496,6 +496,8 @@ code span.wa { color: #60a0b0; font-weight: bold; font-style: italic; } /* Warni
 <li class="chapter" data-level="" data-path="filters-overview.html"><a href="filters-overview.html#trace-paths"><i class="fa fa-check"></i>Trace paths</a></li>
 <li class="chapter" data-level="" data-path="filters-overview.html"><a href="filters-overview.html#bundlefactors"><i class="fa fa-check"></i>Bundle factors</a></li>
 <li class="chapter" data-level="" data-path="filters-overview.html"><a href="filters-overview.html#combine-opposites"><i class="fa fa-check"></i>Combine opposites</a></li>
+<li class="chapter" data-level="" data-path="filters-overview.html"><a href="filters-overview.html#mutate-factors-or-links-calculate-new-factor-or-link-fields"><i class="fa fa-check"></i>🧪 Mutate factors or links: calculate new factor or link fields</a></li>
+<li class="chapter" data-level="" data-path="filters-overview.html"><a href="filters-overview.html#pick-factors-or-links"><i class="fa fa-check"></i>🧪 Pick factors or links</a></li>
 <li class="chapter" data-level="" data-path="filters-overview.html"><a href="filters-overview.html#filtering-group-by-group"><i class="fa fa-check"></i>Filtering group by group</a></li>
 </ul></li>
 <li class="chapter" data-level="" data-path="what-is-the-logic-behind-the-causal-map-filters.html"><a href="what-is-the-logic-behind-the-causal-map-filters.html"><i class="fa fa-check"></i>What is the logic behind the Causal Map filters?</a>
@@ -614,8 +616,10 @@ code span.wa { color: #60a0b0; font-weight: bold; font-style: italic; } /* Warni
 <li class="chapter" data-level="" data-path="auto-coding.html"><a href="auto-coding.html#languages"><i class="fa fa-check"></i>Languages</a></li>
 <li class="chapter" data-level="" data-path="auto-coding.html"><a href="auto-coding.html#it-isnt-cheap"><i class="fa fa-check"></i>It isn’t cheap</a></li>
 <li class="chapter" data-level="" data-path="auto-coding.html"><a href="auto-coding.html#the-coding-prompt"><i class="fa fa-check"></i>The coding prompt</a></li>
-<li class="chapter" data-level="" data-path="auto-coding.html"><a href="auto-coding.html#identifying-links"><i class="fa fa-check"></i>Identifying links</a></li>
+<li class="chapter" data-level="" data-path="auto-coding.html"><a href="auto-coding.html#identifying-links"><i class="fa fa-check"></i>Identifying links</a>
+<ul>
 <li class="chapter" data-level="" data-path="auto-coding.html"><a href="auto-coding.html#choosing-between-single-links-ab-and-bc-or-chains-abc"><i class="fa fa-check"></i>Choosing between single <strong>links</strong> (A&gt;&gt;B and B&gt;&gt;C) or <strong>chains</strong> (A&gt;&gt;B&gt;&gt;C):</a></li>
+</ul></li>
 <li class="chapter" data-level="" data-path="auto-coding.html"><a href="auto-coding.html#ensuring-quotes-are-provided"><i class="fa fa-check"></i>Ensuring quotes are provided</a>
 <ul>
 <li class="chapter" data-level="" data-path="auto-coding.html"><a href="auto-coding.html#colon-style"><i class="fa fa-check"></i>Colon style</a></li>
@@ -928,23 +932,23 @@ code span.wa { color: #60a0b0; font-weight: bold; font-style: italic; } /* Warni
 <div id="smart-zoom" class="section level1 hasAnchor">
 <h1>Smart zooming<a href="smart-zoom.html#smart-zoom" class="anchor-section" aria-label="Anchor link to header"></a></h1>
 <p>If you are using <a href="xsimplifying-with-hierarchical.html#xsimplifying-with-hierarchical">hierarchical aka nested coding</a>, you can use ordinary zooming to “zoom out” your map to give a simple, more general overview. But sometimes this can mean oversimplifying your map: there are lower-level factors which are so important and popular that it is unhelpful or even misleading to roll them up into a parent factor. Smart zooming solves that problem.</p>
-<div class="figure">
-<img src="_assets/image-20220722115527701.png" width="650" alt="" />
-<p class="caption">image-20220722115527701</p>
+<div class="float">
+<img src="_assets/image-20220722115527701.png" width="650" alt="image-20220722115527701" />
+<div class="figcaption">image-20220722115527701</div>
 </div>
 <p>Assuming we have a causal map which has used nested coding, as in the small but detailed map shown above, how do we take advantage of this coding to “zoom out”?</p>
 <p>Here is the same map, zoomed out to level 1 (i.e. there are no semi-colons at all).</p>
-<div class="figure">
-<img src="_assets/image-20220722114438577.png" Width="650" alt="" />
-<p class="caption">image-20220722114438577</p>
+<div class="float">
+<img src="_assets/image-20220722114438577.png" Width="650" alt="image-20220722114438577" />
+<div class="figcaption">image-20220722114438577</div>
 </div>
 <p>A weakness of hierarchical zooming is already visible in the example, we have lost a lot of the important detail. In many cases we may be happy to see all the factors “rolled up” to the top level but in the above example, there are a variety of types of health behaviour discussed and this detail has been lost. So what can we do?</p>
 <p>A smarter approach is achievable with this smart zooming, which tells the app: only “roll up” a nested factor into a higher-level factor if it has a frequency (simple frequency, or source count) lower than some cut-off value; otherwise, keep it separate.</p>
 <p>This is an improvement over zooming because it keeps the detail where necessary and removes it where it is not. It will roll up infrequent factors into their parents but only if they are infrequent; if you have a very granular factor like “health behaviour; Use better toilets” which actually has a lot of mentions, then it won’t get rolled up.</p>
 <p>The above example can be rolled up to this:</p>
-<div class="figure">
-<img src="_assets/image-20220722120253893.png" Width="650" alt="" />
-<p class="caption">image-20220722120253893</p>
+<div class="float">
+<img src="_assets/image-20220722120253893.png" Width="650" alt="image-20220722120253893" />
+<div class="figcaption">image-20220722120253893</div>
 </div>
 <p>This is an improvement because it still has a small number of factors, retaining frequently-mentioned factors but wrapping up infrequently-mentioned detail into higher-level concepts.</p>
 <p>This isn’t available using the buttons yet but you can use the Advanced Editor. The code is:</p>
@@ -956,20 +960,20 @@ code span.wa { color: #60a0b0; font-weight: bold; font-style: italic; } /* Warni
 <pre><code>color borders field=&quot;frequency_preserved&quot; hi=red lo=white</code></pre>
 <p>Here is a real-life example.</p>
 <p>A top-level map, zoomed out to level 1 (source counts are shown). As you can see this map is quite simple with no additional details.</p>
-<div class="figure">
-<img src="_assets/image-20220531124023142.png" width="550" alt="" />
-<p class="caption">image-20220531124023142</p>
+<div class="float">
+<img src="_assets/image-20220531124023142.png" width="550" alt="image-20220531124023142" />
+<div class="figcaption">image-20220531124023142</div>
 </div>
 <p>And here is the same map but preserving factors with a source count above 5. This seems like a real improvement as some really concrete and important second-level factors are preserved, including for example that the training mentioned on 6 occasions was agricultural training and that fertiliser was mentioned as a driver of change.</p>
 <p>The factors with a purple border have been ‘rolled up’ and only their top-level label is visible. The other factors have been preserved and are displayed in full, as they have a frequency count higher than 5 or because they are a level one label and so cannot be ‘rolled up’.</p>
-<div class="figure">
-<img src="_assets/image-20220531124143459.png" alt="" />
-<p class="caption">image-20220531124143459</p>
+<div class="float">
+<img src="_assets/image-20220531124143459.png" alt="image-20220531124143459" />
+<div class="figcaption">image-20220531124143459</div>
 </div>
 <p>Probably the best way to do this is to add “(other)”, or whatever else you type, on to the ends of the higher-level factor labels which have larger child factors elsewhere in the map. Larger child factors are those which are <em>not</em> rolled up because they are so frequent, like ‘New agricultural inputs; Fertiliser’ in the below map. To do this add <code>frequency_other= (other)</code> in the advanced editor on the same line as your commands to preserve factors whilst zooming. This will create a map like below:</p>
-<div class="figure">
-<img src="_assets/image-20220531130328997.png" alt="" />
-<p class="caption">image-20220531130328997</p>
+<div class="float">
+<img src="_assets/image-20220531130328997.png" alt="image-20220531130328997" />
+<div class="figcaption">image-20220531130328997</div>
 </div>
 
 </div>

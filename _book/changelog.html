@@ -28,7 +28,7 @@
 <meta name="author" content="Samuel Goddard" />
 
 
-<meta name="date" content="2023-05-15" />
+<meta name="date" content="2023-11-27" />
 
   <meta name="viewport" content="width=device-width, initial-scale=1" />
   <meta name="apple-mobile-web-app-capable" content="yes" />
@@ -496,6 +496,8 @@ code span.wa { color: #60a0b0; font-weight: bold; font-style: italic; } /* Warni
 <li class="chapter" data-level="" data-path="filters-overview.html"><a href="filters-overview.html#trace-paths"><i class="fa fa-check"></i>Trace paths</a></li>
 <li class="chapter" data-level="" data-path="filters-overview.html"><a href="filters-overview.html#bundlefactors"><i class="fa fa-check"></i>Bundle factors</a></li>
 <li class="chapter" data-level="" data-path="filters-overview.html"><a href="filters-overview.html#combine-opposites"><i class="fa fa-check"></i>Combine opposites</a></li>
+<li class="chapter" data-level="" data-path="filters-overview.html"><a href="filters-overview.html#mutate-factors-or-links-calculate-new-factor-or-link-fields"><i class="fa fa-check"></i>🧪 Mutate factors or links: calculate new factor or link fields</a></li>
+<li class="chapter" data-level="" data-path="filters-overview.html"><a href="filters-overview.html#pick-factors-or-links"><i class="fa fa-check"></i>🧪 Pick factors or links</a></li>
 <li class="chapter" data-level="" data-path="filters-overview.html"><a href="filters-overview.html#filtering-group-by-group"><i class="fa fa-check"></i>Filtering group by group</a></li>
 </ul></li>
 <li class="chapter" data-level="" data-path="what-is-the-logic-behind-the-causal-map-filters.html"><a href="what-is-the-logic-behind-the-causal-map-filters.html"><i class="fa fa-check"></i>What is the logic behind the Causal Map filters?</a>
@@ -614,8 +616,10 @@ code span.wa { color: #60a0b0; font-weight: bold; font-style: italic; } /* Warni
 <li class="chapter" data-level="" data-path="auto-coding.html"><a href="auto-coding.html#languages"><i class="fa fa-check"></i>Languages</a></li>
 <li class="chapter" data-level="" data-path="auto-coding.html"><a href="auto-coding.html#it-isnt-cheap"><i class="fa fa-check"></i>It isn’t cheap</a></li>
 <li class="chapter" data-level="" data-path="auto-coding.html"><a href="auto-coding.html#the-coding-prompt"><i class="fa fa-check"></i>The coding prompt</a></li>
-<li class="chapter" data-level="" data-path="auto-coding.html"><a href="auto-coding.html#identifying-links"><i class="fa fa-check"></i>Identifying links</a></li>
+<li class="chapter" data-level="" data-path="auto-coding.html"><a href="auto-coding.html#identifying-links"><i class="fa fa-check"></i>Identifying links</a>
+<ul>
 <li class="chapter" data-level="" data-path="auto-coding.html"><a href="auto-coding.html#choosing-between-single-links-ab-and-bc-or-chains-abc"><i class="fa fa-check"></i>Choosing between single <strong>links</strong> (A&gt;&gt;B and B&gt;&gt;C) or <strong>chains</strong> (A&gt;&gt;B&gt;&gt;C):</a></li>
+</ul></li>
 <li class="chapter" data-level="" data-path="auto-coding.html"><a href="auto-coding.html#ensuring-quotes-are-provided"><i class="fa fa-check"></i>Ensuring quotes are provided</a>
 <ul>
 <li class="chapter" data-level="" data-path="auto-coding.html"><a href="auto-coding.html#colon-style"><i class="fa fa-check"></i>Colon style</a></li>
@@ -944,20 +948,20 @@ code span.wa { color: #60a0b0; font-weight: bold; font-style: italic; } /* Warni
 <p>Suppose you have a map with links B –&gt; D, C –&gt; D and also B –&gt; C. If you run this filter:</p>
 <p><code>trace paths length=1 to=D</code></p>
 <p>the app will show you also the path from B to C, because both B and C are one link away from D, and there is a path from B to C. But that might have surprised you, as the path from B to C does not get you any closer to D.</p>
-<div class="figure">
-<img src="_assets/image-20220810124747011.png" alt="" />
-<p class="caption">image-20220810124747011</p>
+<div class="float">
+<img src="_assets/image-20220810124747011.png" alt="image-20220810124747011" />
+<div class="figcaption">image-20220810124747011</div>
 </div>
 <p>So you might prefer this filter:</p>
 <p><code>trace paths length=1 to=D remove_links=T</code> (which is equivalent to clicking this box in the dialog:)</p>
-<div class="figure">
-<img src="_assets/image-20221017080731614.png" alt="" />
-<p class="caption">image-20221017080731614</p>
+<div class="float">
+<img src="_assets/image-20221017080731614.png" alt="image-20221017080731614" />
+<div class="figcaption">image-20221017080731614</div>
 </div>
 <p>… which will remove any such links.</p>
-<div class="figure">
-<img src="_assets/image-20220810124740033.png" alt="" />
-<p class="caption">image-20220810124740033</p>
+<div class="float">
+<img src="_assets/image-20220810124740033.png" alt="image-20220810124740033" />
+<div class="figcaption">image-20220810124740033</div>
 </div>
 <p>In other words, <code>trace paths length=L from=X to=Y</code> says “show me all the factors which are on paths from X to Y no longer than L, and all the links between such factors” whereas <code>trace paths length=L from=X to=Y remove_links=F</code> says “show me all the paths from X to Y no longer than L”.</p>
 <p>Read more <a href="xtracing-paths.html#xremoving-unwanted-links">here</a>.</p>
@@ -1001,9 +1005,9 @@ code span.wa { color: #60a0b0; font-weight: bold; font-style: italic; } /* Warni
 <div id="the-dashboard" class="section level3 hasAnchor">
 <h3><a href="#dashboard">The Dashboard</a><a href="changelog.html#the-dashboard" class="anchor-section" aria-label="Anchor link to header"></a></h3>
 <p>The Dashboard replaces the Gallery, which many people found hard to use. It still packs plenty of functionality! <a href="#dashboard">Read</a> to find out more.</p>
-<div class="figure">
-<img src="_assets/image-20220623080615272.png" alt="" />
-<p class="caption">image-20220623080615272</p>
+<div class="float">
+<img src="_assets/image-20220623080615272.png" alt="image-20220623080615272" />
+<div class="figcaption">image-20220623080615272</div>
 </div>
 </div>
 <div id="reports-tab" class="section level3 hasAnchor">
@@ -1013,9 +1017,9 @@ code span.wa { color: #60a0b0; font-weight: bold; font-style: italic; } /* Warni
 <div id="document-coding-score" class="section level3 hasAnchor">
 <h3><a href="xgamification.html#xgamification">Document coding score!</a><a href="changelog.html#document-coding-score" class="anchor-section" aria-label="Anchor link to header"></a></h3>
 <p>Coding a large file can be a daunting task. At the top right of the app, you will see some feedback on your progress in coding your file.</p>
-<div class="figure">
-<img src="_assets/image-20220430193751134.png" alt="" />
-<p class="caption">image-20220430193751134</p>
+<div class="float">
+<img src="_assets/image-20220430193751134.png" alt="image-20220430193751134" />
+<div class="figcaption">image-20220430193751134</div>
 </div>
 <p>These show you:</p>
 <ul>
@@ -1071,9 +1075,9 @@ So the maps for each cluster should be maximally different from one another. Thi
 </div>
 <div id="quick-tails" class="section level3 hasAnchor">
 <h3><a href="xhierarchical-coding.html#xquick-tails">Quick tails</a><a href="changelog.html#quick-tails" class="anchor-section" aria-label="Anchor link to header"></a></h3>
-<div class="figure">
-<img src="C:\Users\steve\Dropbox\Projects\causal-map-guide_80000-changelog\image-20211005153410088.png" width="350" alt="" />
-<p class="caption">image-20211005153410088</p>
+<div class="float">
+<img src="C:\Users\steve\Dropbox\Projects\causal-map-guide_80000-changelog\image-20211005153410088.png" width="350" alt="image-20211005153410088" />
+<div class="figcaption">image-20211005153410088</div>
 </div>
 <p>Suppose you want to create a new factor “Health behaviour; wearing a mask” and you know there is an existing higher-level factor “Health behaviour”, you can select “Health behaviour” from the list and then just add “; wearing a mask” with a leading semi-colon. These two fragments will be combined into a new factor label. This is quicker and ensures you don’t end up with different spellings of the higher-level factors.</p>
 </div>
@@ -1098,9 +1102,9 @@ So the maps for each cluster should be maximally different from one another. Thi
 <p>You can use it as a dashboard from which you can check out and revisit your previous work and get ideas from others.</p>
 <p>You can also reach this dialog by pressing the 🏠 icon in the top menu, or with the key combination Alt+q.</p>
 <p>The Gallery contains the history of all the filters you used in the current session as well as filters from shortlinks saved by you or other users. Search to find the filters you need. For example, if you want to get some ideas for using the <code>combine opposites</code> filter, start to type “combine opposites” in the Search box on the left or (if you want to be more precise) in the search box above the <code>filter</code> column. This will show you examples from your own history or from when others have saved a filter in different projects. Then you can either load just that filter into your current file or go to see how that filter works in the file where it was used.</p>
-<div class="figure">
-<img src="_assets/CZcBr9xEVj.gif" alt="" />
-<p class="caption">CZcBr9xEVj</p>
+<div class="float">
+<img src="_assets/CZcBr9xEVj.gif" alt="CZcBr9xEVj" />
+<div class="figcaption">CZcBr9xEVj</div>
 </div>
 </div>
 <div id="continuity" class="section level3 hasAnchor">
@@ -1127,9 +1131,9 @@ So the maps for each cluster should be maximally different from one another. Thi
 <p><strong>Click on factors</strong> in interactive view to focus on them, trace paths from/to them, edit their memo, or delete them.</p>
 <p><img src="_assets/BhOlErDmwB.gif" /></p>
 <p>Finding factors also works when you include 0 steps upstream and 0 steps downstream:</p>
-<div class="figure">
-<img src="_assets/image-20211228120112398.png" alt="" />
-<p class="caption">image-20211228120112398</p>
+<div class="float">
+<img src="_assets/image-20211228120112398.png" alt="image-20211228120112398" />
+<div class="figcaption">image-20211228120112398</div>
 </div>
 <p>Reorder columns: You can reorder the columns just by dragging the column headers.</p>
 </div>
@@ -1159,9 +1163,9 @@ So the maps for each cluster should be maximally different from one another. Thi
 <div id="printout-for-example-printout-of-quotes-option-in-tables" class="section level3 hasAnchor">
 <h3>Printout (for example, printout of quotes) option in tables<a href="changelog.html#printout-for-example-printout-of-quotes-option-in-tables" class="anchor-section" aria-label="Anchor link to header"></a></h3>
 <p>Do you want some preformatted quotes for your report?</p>
-<div class="figure">
-<img src="_assets/oXugGeV2w2.gif" alt="" />
-<p class="caption">oXugGeV2w2</p>
+<div class="float">
+<img src="_assets/oXugGeV2w2.gif" alt="oXugGeV2w2" />
+<div class="figcaption">oXugGeV2w2</div>
 </div>
 <p>Each table can also be shown as simple text for copying and pasting.</p>
 <p>If you want quotes, go to the links table, click the 📘 button to display the printout, choose the columns you want. They will be shown in the Printout in the same order. Then just copy and paste.</p>
@@ -1178,9 +1182,9 @@ So the maps for each cluster should be maximally different from one another. Thi
 <h5>Calculating robustness by field, e.g. “by source”<a href="changelog.html#calculating-robustness-by-field-e.g.-by-source" class="anchor-section" aria-label="Anchor link to header"></a></h5>
 <p>Just because there is a lot of evidence for all the different parts of a path does not mean that any one source, or type of source, actually mentioned all those parts.</p>
 <p>For this reason, <code>trace robustness</code> also lets you ask that question.</p>
-<div class="figure">
-<img src="_assets/image-20211119164551704.png" alt="" />
-<p class="caption">image-20211119164551704</p>
+<div class="float">
+<img src="_assets/image-20211119164551704.png" alt="image-20211119164551704" />
+<div class="figcaption">image-20211119164551704</div>
 </div>
 <p>For example you can put <code>source_id</code> in the box in order to count how many sources mentioned at least one entire path from the source to the target factor(s).</p>
 <p>This is important because it’s usually more credible to ask how many people mentioned all the bits of some path than to ask how many pieces of evidence are there altogether.</p>
@@ -1191,26 +1195,26 @@ So the maps for each cluster should be maximally different from one another. Thi
 <h3>Mark links for continuity (Print View only)<a href="changelog.html#mark-links-for-continuity-print-view-only" class="anchor-section" aria-label="Anchor link to header"></a></h3>
 <p>This filter is experimental and the details will certainly change.</p>
 <p>The <a href="xtransitivity-trap.html#xtransitivity-trap">transitivity trap</a> can make it a challenge to interpret your maps. Some people (or somebody) said that improved hygiene led to reduction in mosquito environments, and some people said reduction in mosquito environments led to improved health, but <em>was this the same or different people</em>?</p>
-<div class="figure">
-<img src="_assets/image-20211215081735743.png" width="650" alt="" />
-<p class="caption">image-20211215081735743</p>
+<div class="float">
+<img src="_assets/image-20211215081735743.png" width="650" alt="image-20211215081735743" />
+<div class="figcaption">image-20211215081735743</div>
 </div>
 <p>Add the filter <code>mark links</code> (there is no button for it, you have to type it) provides the following diagnostics:</p>
-<div class="figure">
-<img src="_assets/image-20211215081328481.png" width="650" alt="" />
-<p class="caption">image-20211215081328481</p>
+<div class="float">
+<img src="_assets/image-20211215081328481.png" width="650" alt="image-20211215081328481" />
+<div class="figcaption">image-20211215081328481</div>
 </div>
 <p>The incoming (bundles of) links to every factor (actually to every factor with outgoing links) are labelled a, b, etc, including when links are bundled e.g. by gender. Then the outgoing links are marked with say <code>a</code> if at least one of the sources who mentioned the outgoing link also mentioned link <code>a</code>.</p>
 <p>So we can see that none of the people who said that improved hygiene led to reduction in mosquito environments also said that reduction in mosquito environments led to improved health: there is no label at all on the arrow going out of reduction in mosquito environments. There is no source continuity.</p>
 <p>Note that the labels get re-used for each factor, so the <code>a</code>s and <code>b</code>s here are related:</p>
-<div class="figure">
-<img src="_assets/image-20211215083702603.png" alt="" />
-<p class="caption">image-20211215083702603</p>
+<div class="float">
+<img src="_assets/image-20211215083702603.png" alt="image-20211215083702603" />
+<div class="figcaption">image-20211215083702603</div>
 </div>
 <p>but the <code>a</code>s here are not:</p>
-<div class="figure">
-<img src="_assets/image-20211215083737009.png" alt="" />
-<p class="caption">image-20211215083737009</p>
+<div class="float">
+<img src="_assets/image-20211215083737009.png" alt="image-20211215083737009" />
+<div class="figcaption">image-20211215083737009</div>
 </div>
 <p>This also works with all the other fields, e.g. you can type <code>mark links field=statement_id</code> in order to test statement continuity, which is a stricter test of continuity. source_id is default so you don’t need to type it specially.</p>
 <p>Yes, it is a bit difficult to communicate this in a report. But it is important for interpretation. Of course a chain without source continuity isn’t an invalid chain per se, it’s just something to be aware of.</p>
@@ -1220,9 +1224,9 @@ So the maps for each cluster should be maximally different from one another. Thi
 <h3>Show continuity<a href="changelog.html#show-continuity" class="anchor-section" aria-label="Anchor link to header"></a></h3>
 <div id="summary-12" class="section level5 hasAnchor">
 <h5>Summary<a href="changelog.html#summary-12" class="anchor-section" aria-label="Anchor link to header"></a></h5>
-<div class="figure">
-<img src="_assets/image-20211222121147473.png" width="650" alt="" />
-<p class="caption"><a href="http://theorymaker.info/?permalink=transitivity" class="uri">http://theorymaker.info/?permalink=transitivity</a></p>
+<div class="float">
+<img src="_assets/image-20211222121147473.png" width="650" alt="http://theorymaker.info/?permalink=transitivity" />
+<div class="figcaption"><a href="http://theorymaker.info/?permalink=transitivity" class="uri">http://theorymaker.info/?permalink=transitivity</a></div>
 </div>
 <p>Above, the links are labelled with the sources.</p>
 <p>The ▭ open half-box at the end of the first link tells us that at least half but not all of these stories stop here: less than half the sources mentioned any link <em>out of</em> K.</p>
@@ -1238,9 +1242,9 @@ So the maps for each cluster should be maximally different from one another. Thi
 <p><code>show continuity field=statement_id</code></p>
 <p>If you want to see numbers (see examples below) rather than symbols (see examples further below; symbols are the default) then type:</p>
 <p><code>show continuity type=label</code></p>
-<div class="figure">
-<img src="_assets/image-20211216162518175.png" width="650" alt="" />
-<p class="caption">image-20211216162518175</p>
+<div class="float">
+<img src="_assets/image-20211216162518175.png" width="650" alt="image-20211216162518175" />
+<div class="figcaption">image-20211216162518175</div>
 </div>
 <p>Here, the 0.9 says that 90% of the sources mentioning the link to ~performed well also mention the link <em>from</em> ~performed well. The 1 says that 100% of the sources mentioning the link <em>from</em> ~performed well also mention the link <em>to</em> ~performed well. And the zeros below say that there is no source continuity at all.</p>
 <p>What this doesn’t tell you is, when there are more than one incoming link, which of them have sources which continue to the outgoing link (that is what the bs and cs are for in <code>mark_links</code>). It’s just an aggregate.</p>
@@ -1252,18 +1256,18 @@ So the maps for each cluster should be maximally different from one another. Thi
 <blockquote>
 <p>health; fitness –&gt; fast runner</p>
 </blockquote>
-<div class="figure">
-<img src="_assets/image-20211216190724734.png" width="650" alt="" />
-<p class="caption">image-20211216190724734</p>
+<div class="float">
+<img src="_assets/image-20211216190724734.png" width="650" alt="image-20211216190724734" />
+<div class="figcaption">image-20211216190724734</div>
 </div>
 <p>we should be very careful when concluding (when zooming)</p>
 <blockquote>
 <p>eating lemons –&gt; health –&gt; fast runner</p>
 </blockquote>
 <p>… and indeed, <a href="https://causalmap.shinyapps.io/CM2test/?s=416">showing continuity</a> highlights this error:</p>
-<div class="figure">
-<img src="_assets/image-20211216190609563.png" width="650" alt="" />
-<p class="caption">image-20211216190609563</p>
+<div class="float">
+<img src="_assets/image-20211216190609563.png" width="650" alt="image-20211216190609563" />
+<div class="figcaption">image-20211216190609563</div>
 </div>
 </div>
 <div id="showing-continuity-with-arrowtypes-1" class="section level5 hasAnchor">
@@ -1275,18 +1279,18 @@ So the maps for each cluster should be maximally different from one another. Thi
 <li>half full box: &gt; .5</li>
 <li>full box: 1</li>
 </ul>
-<div class="figure">
-<img src="_assets/image-20211220172600085.png" width="650" alt="" />
-<p class="caption">image-20211220172600085</p>
+<div class="float">
+<img src="_assets/image-20211220172600085.png" width="650" alt="image-20211220172600085" />
+<div class="figcaption">image-20211220172600085</div>
 </div>
 <p><img src="_assets/image-20211220171759409.png" width="650" alt="image-20211220171759409" />{width=650}</p>
-<div class="figure">
-<img src="_assets/image-20211216195218720.png" width="650" alt="" />
-<p class="caption">image-20211216195218720</p>
+<div class="float">
+<img src="_assets/image-20211216195218720.png" width="650" alt="image-20211216195218720" />
+<div class="figcaption">image-20211216195218720</div>
 </div>
-<div class="figure">
-<img src="_assets/image-20211216200541572.png" width="650" alt="" />
-<p class="caption">image-20211216200541572</p>
+<div class="float">
+<img src="_assets/image-20211216200541572.png" width="650" alt="image-20211216200541572" />
+<div class="figcaption">image-20211216200541572</div>
 </div>
 </div>
 </div>

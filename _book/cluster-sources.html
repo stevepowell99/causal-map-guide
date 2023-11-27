@@ -28,7 +28,7 @@
 <meta name="author" content="Samuel Goddard" />
 
 
-<meta name="date" content="2023-05-15" />
+<meta name="date" content="2023-11-27" />
 
   <meta name="viewport" content="width=device-width, initial-scale=1" />
   <meta name="apple-mobile-web-app-capable" content="yes" />
@@ -496,6 +496,8 @@ code span.wa { color: #60a0b0; font-weight: bold; font-style: italic; } /* Warni
 <li class="chapter" data-level="" data-path="filters-overview.html"><a href="filters-overview.html#trace-paths"><i class="fa fa-check"></i>Trace paths</a></li>
 <li class="chapter" data-level="" data-path="filters-overview.html"><a href="filters-overview.html#bundlefactors"><i class="fa fa-check"></i>Bundle factors</a></li>
 <li class="chapter" data-level="" data-path="filters-overview.html"><a href="filters-overview.html#combine-opposites"><i class="fa fa-check"></i>Combine opposites</a></li>
+<li class="chapter" data-level="" data-path="filters-overview.html"><a href="filters-overview.html#mutate-factors-or-links-calculate-new-factor-or-link-fields"><i class="fa fa-check"></i>🧪 Mutate factors or links: calculate new factor or link fields</a></li>
+<li class="chapter" data-level="" data-path="filters-overview.html"><a href="filters-overview.html#pick-factors-or-links"><i class="fa fa-check"></i>🧪 Pick factors or links</a></li>
 <li class="chapter" data-level="" data-path="filters-overview.html"><a href="filters-overview.html#filtering-group-by-group"><i class="fa fa-check"></i>Filtering group by group</a></li>
 </ul></li>
 <li class="chapter" data-level="" data-path="what-is-the-logic-behind-the-causal-map-filters.html"><a href="what-is-the-logic-behind-the-causal-map-filters.html"><i class="fa fa-check"></i>What is the logic behind the Causal Map filters?</a>
@@ -614,8 +616,10 @@ code span.wa { color: #60a0b0; font-weight: bold; font-style: italic; } /* Warni
 <li class="chapter" data-level="" data-path="auto-coding.html"><a href="auto-coding.html#languages"><i class="fa fa-check"></i>Languages</a></li>
 <li class="chapter" data-level="" data-path="auto-coding.html"><a href="auto-coding.html#it-isnt-cheap"><i class="fa fa-check"></i>It isn’t cheap</a></li>
 <li class="chapter" data-level="" data-path="auto-coding.html"><a href="auto-coding.html#the-coding-prompt"><i class="fa fa-check"></i>The coding prompt</a></li>
-<li class="chapter" data-level="" data-path="auto-coding.html"><a href="auto-coding.html#identifying-links"><i class="fa fa-check"></i>Identifying links</a></li>
+<li class="chapter" data-level="" data-path="auto-coding.html"><a href="auto-coding.html#identifying-links"><i class="fa fa-check"></i>Identifying links</a>
+<ul>
 <li class="chapter" data-level="" data-path="auto-coding.html"><a href="auto-coding.html#choosing-between-single-links-ab-and-bc-or-chains-abc"><i class="fa fa-check"></i>Choosing between single <strong>links</strong> (A&gt;&gt;B and B&gt;&gt;C) or <strong>chains</strong> (A&gt;&gt;B&gt;&gt;C):</a></li>
+</ul></li>
 <li class="chapter" data-level="" data-path="auto-coding.html"><a href="auto-coding.html#ensuring-quotes-are-provided"><i class="fa fa-check"></i>Ensuring quotes are provided</a>
 <ul>
 <li class="chapter" data-level="" data-path="auto-coding.html"><a href="auto-coding.html#colon-style"><i class="fa fa-check"></i>Colon style</a></li>
@@ -933,14 +937,14 @@ code span.wa { color: #60a0b0; font-weight: bold; font-style: italic; } /* Warni
 <p>You can cluster the sources remaining in a map as currently filtered, at the point at which you apply the filter <code>cluster sources</code>.</p>
 <p>To use it, add a filter like this to the advanced editor:</p>
 <pre><code>cluster sources n_clusters=4</code></pre>
-<div class="figure">
-<img src="C:\Users\steve\Dropbox\Projects\causal-map-guide_09150-source_clusters\image-20220610094622754.png" alt="" />
-<p class="caption">image-20220610094622754</p>
+<div class="float">
+<img src="C:\Users\steve\Dropbox\Projects\causal-map-guide_09150-source_clusters\image-20220610094622754.png" alt="image-20220610094622754" />
+<div class="figcaption">image-20220610094622754</div>
 </div>
 <p>Here you can see the new field appearing in the Sources table.</p>
-<div class="figure">
-<img src="C:\Users\steve\Dropbox\Projects\causal-map-guide_09150-source_clusters\image-20220610080318416.png" alt="" />
-<p class="caption">image-20220610080318416</p>
+<div class="float">
+<img src="C:\Users\steve\Dropbox\Projects\causal-map-guide_09150-source_clusters\image-20220610080318416.png" alt="image-20220610080318416" />
+<div class="figcaption">image-20220610080318416</div>
 </div>
 <p>You can also ask for cluster sets with 2, 3 and 4 members all at once:</p>
 <pre><code>cluster sources n_clusters=all</code></pre>
@@ -952,9 +956,9 @@ code span.wa { color: #60a0b0; font-weight: bold; font-style: italic; } /* Warni
 <p>It is always trivially possible to find at least one cluster set which differs in one link (i.e. in one simple link bundle) – though whether these differences are significant depends on the numbers involved. It is only interesting when we find common differences between clusters across several different links simultaneously, i.e. the people in cluster A mentioned this and that and this other thing.</p>
 <p>In future we will provide output to automatically crosstabulate the clusters with other key fields like gender and district, and to automatically produce maps for each cluster, surprise maps, differences tables, etc., but you can already do this manually.</p>
 <p>Here the Sources table has been set up to list the sources according to cluster:</p>
-<div class="figure">
-<img src="C:\Users\steve\Dropbox\Projects\causal-map-guide_09150-source_clusters\image-20220610092633091.png" alt="" />
-<p class="caption">image-20220610092633091</p>
+<div class="float">
+<img src="C:\Users\steve\Dropbox\Projects\causal-map-guide_09150-source_clusters\image-20220610092633091.png" alt="image-20220610092633091" />
+<div class="figcaption">image-20220610092633091</div>
 </div>
 </div>
 <div id="the-clustering-algorithm" class="section level2 hasAnchor">
@@ -965,9 +969,9 @@ code span.wa { color: #60a0b0; font-weight: bold; font-style: italic; } /* Warni
 <h2>Bundling links by cluster<a href="cluster-sources.html#bundling-links-by-cluster" class="anchor-section" aria-label="Anchor link to header"></a></h2>
 <p>You can do anything with these new cluster fields that you can do with any original field like gender, district etc.</p>
 <p>Here’s an example in which links are bundled and labelled by cluster, and then we also apply a “<a href="comparing.html#xsurprise">surprise</a>” filter to colour bundles mentioned by unexpectedly <em>many</em> sources in bright green, and to colour bundles mentioned by surprisingly <em>few</em> sources in bright purple: <a href="causalmap.shinyapps.io/tokyo/?s=1177">causalmap.shinyapps.io/tokyo/?s=1177</a></p>
-<div class="figure">
-<img src="C:\Users\steve\Dropbox\Projects\causal-map-guide_09150-source_clusters\image-20220610081454933.png" alt="" />
-<p class="caption">image-20220610081454933</p>
+<div class="float">
+<img src="C:\Users\steve\Dropbox\Projects\causal-map-guide_09150-source_clusters\image-20220610081454933.png" alt="image-20220610081454933" />
+<div class="figcaption">image-20220610081454933</div>
 </div>
 </div>
 <div id="finding-many-solutions-at-once" class="section level2 hasAnchor">

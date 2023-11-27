@@ -28,7 +28,7 @@
 <meta name="author" content="Samuel Goddard" />
 
 
-<meta name="date" content="2023-05-15" />
+<meta name="date" content="2023-11-27" />
 
   <meta name="viewport" content="width=device-width, initial-scale=1" />
   <meta name="apple-mobile-web-app-capable" content="yes" />
@@ -496,6 +496,8 @@ code span.wa { color: #60a0b0; font-weight: bold; font-style: italic; } /* Warni
 <li class="chapter" data-level="" data-path="filters-overview.html"><a href="filters-overview.html#trace-paths"><i class="fa fa-check"></i>Trace paths</a></li>
 <li class="chapter" data-level="" data-path="filters-overview.html"><a href="filters-overview.html#bundlefactors"><i class="fa fa-check"></i>Bundle factors</a></li>
 <li class="chapter" data-level="" data-path="filters-overview.html"><a href="filters-overview.html#combine-opposites"><i class="fa fa-check"></i>Combine opposites</a></li>
+<li class="chapter" data-level="" data-path="filters-overview.html"><a href="filters-overview.html#mutate-factors-or-links-calculate-new-factor-or-link-fields"><i class="fa fa-check"></i>🧪 Mutate factors or links: calculate new factor or link fields</a></li>
+<li class="chapter" data-level="" data-path="filters-overview.html"><a href="filters-overview.html#pick-factors-or-links"><i class="fa fa-check"></i>🧪 Pick factors or links</a></li>
 <li class="chapter" data-level="" data-path="filters-overview.html"><a href="filters-overview.html#filtering-group-by-group"><i class="fa fa-check"></i>Filtering group by group</a></li>
 </ul></li>
 <li class="chapter" data-level="" data-path="what-is-the-logic-behind-the-causal-map-filters.html"><a href="what-is-the-logic-behind-the-causal-map-filters.html"><i class="fa fa-check"></i>What is the logic behind the Causal Map filters?</a>
@@ -614,8 +616,10 @@ code span.wa { color: #60a0b0; font-weight: bold; font-style: italic; } /* Warni
 <li class="chapter" data-level="" data-path="auto-coding.html"><a href="auto-coding.html#languages"><i class="fa fa-check"></i>Languages</a></li>
 <li class="chapter" data-level="" data-path="auto-coding.html"><a href="auto-coding.html#it-isnt-cheap"><i class="fa fa-check"></i>It isn’t cheap</a></li>
 <li class="chapter" data-level="" data-path="auto-coding.html"><a href="auto-coding.html#the-coding-prompt"><i class="fa fa-check"></i>The coding prompt</a></li>
-<li class="chapter" data-level="" data-path="auto-coding.html"><a href="auto-coding.html#identifying-links"><i class="fa fa-check"></i>Identifying links</a></li>
+<li class="chapter" data-level="" data-path="auto-coding.html"><a href="auto-coding.html#identifying-links"><i class="fa fa-check"></i>Identifying links</a>
+<ul>
 <li class="chapter" data-level="" data-path="auto-coding.html"><a href="auto-coding.html#choosing-between-single-links-ab-and-bc-or-chains-abc"><i class="fa fa-check"></i>Choosing between single <strong>links</strong> (A&gt;&gt;B and B&gt;&gt;C) or <strong>chains</strong> (A&gt;&gt;B&gt;&gt;C):</a></li>
+</ul></li>
 <li class="chapter" data-level="" data-path="auto-coding.html"><a href="auto-coding.html#ensuring-quotes-are-provided"><i class="fa fa-check"></i>Ensuring quotes are provided</a>
 <ul>
 <li class="chapter" data-level="" data-path="auto-coding.html"><a href="auto-coding.html#colon-style"><i class="fa fa-check"></i>Colon style</a></li>
@@ -938,14 +942,14 @@ code span.wa { color: #60a0b0; font-weight: bold; font-style: italic; } /* Warni
 <li>label links</li>
 <li>dash links</li>
 </ul>
-<div class="figure">
-<img src="_assets/image-20211015124001957.png" width="650" alt="" />
-<p class="caption">image-20211015124001957</p>
+<div class="float">
+<img src="_assets/image-20211015124001957.png" width="650" alt="image-20211015124001957" />
+<div class="figcaption">image-20211015124001957</div>
 </div>
 <p>When you click one of the buttons, you are asked how you want to colour, scale or label the links - the choices are the same.</p>
-<div class="figure">
-<img src="_assets/image-20211015123343545.png" width="650" alt="" />
-<p class="caption">image-20211015123343545</p>
+<div class="float">
+<img src="_assets/image-20211015123343545.png" width="650" alt="image-20211015123343545" />
+<div class="figcaption">image-20211015123343545</div>
 </div>
 <p>For example, to label the links you can</p>
 <ul>
@@ -955,20 +959,20 @@ code span.wa { color: #60a0b0; font-weight: bold; font-style: italic; } /* Warni
 <li>print literally every source_id, including duplicates, on each link in a bundle of links (<code>literal: source_id</code>)</li>
 <li>count the number of villages in which this link was mentioned, assuming you have a field like village_id (<code>count: village_id</code>)</li>
 </ul>
-<div class="figure">
-<img src="_assets/image-20211125133948533.png" width="650" alt="" />
-<p class="caption">image-20211125133948533</p>
+<div class="float">
+<img src="_assets/image-20211125133948533.png" width="650" alt="image-20211125133948533" />
+<div class="figcaption">image-20211125133948533</div>
 </div>
 <p>(Here is an <a href="causalmap.shinyapps.io/CausalMap2/?s=165">example</a> of labelling the links with the IDs of the sources. This can be very useful if you want to know if the same people who mentioned one link mentioned another.)</p>
 <p>You can repeat this filter more than once - for example to label bundles of links by gender and by simple frequency: uncheck <code>Clear previous labels?</code>.</p>
-<div class="figure">
-<img src="_assets/image-20211129183025439.png" width="650" alt="" />
-<p class="caption">image-20211129183025439</p>
+<div class="float">
+<img src="_assets/image-20211129183025439.png" width="650" alt="image-20211129183025439" />
+<div class="figcaption">image-20211129183025439</div>
 </div>
 <p>You can also opt to add the name of the field to the label, so you could have a label like <code>Gender: Female, source_id: x12</code>.</p>
-<div class="figure">
-<img src="_assets/image-20211129183301311.png" width="650" alt="" />
-<p class="caption">image-20211129183301311</p>
+<div class="float">
+<img src="_assets/image-20211129183301311.png" width="650" alt="image-20211129183301311" />
+<div class="figcaption">image-20211129183301311</div>
 </div>
 <p>Similarly you might want to colour your links with a continuous scale of colours according to:</p>
 <ul>
@@ -991,18 +995,18 @@ code span.wa { color: #60a0b0; font-weight: bold; font-style: italic; } /* Warni
 <div id="xinitials" class="section level4 hasAnchor">
 <h4>Initials<a href="xconditional-formats.html#xinitials" class="anchor-section" aria-label="Anchor link to header"></a></h4>
 <p>Often it is useful to shorten the labels, for example you might have bundled your links by village and want to label the bundles with the names of the villages, but the village names are very long. Or you might have bundled your links by region and want to label the bundles with a list of the unique names of the villages in that region, but this might be quite a lot of text.</p>
-<div class="figure">
-<img src="_assets/image-20220113122430886.png" alt="" />
-<p class="caption">image-20220113122430886</p>
+<div class="float">
+<img src="_assets/image-20220113122430886.png" alt="image-20220113122430886" />
+<div class="figcaption">image-20220113122430886</div>
 </div>
 <p>In this case you can use the function <code>initials</code>.</p>
-<div class="figure">
-<img src="_assets/image-20220113124829327.png" alt="" />
-<p class="caption">image-20220113124829327</p>
+<div class="float">
+<img src="_assets/image-20220113124829327.png" alt="image-20220113124829327" />
+<div class="figcaption">image-20220113124829327</div>
 </div>
-<div class="figure">
-<img src="_assets/image-20220113122358127.png" alt="" />
-<p class="caption">image-20220113122358127</p>
+<div class="float">
+<img src="_assets/image-20220113122358127.png" alt="image-20220113122358127" />
+<div class="figcaption">image-20220113122358127</div>
 </div>
 <p>This is especially useful when you do <a href="comparing.html#xsurprise">conditional formatting with surprise</a>.</p>
 </div>
@@ -1013,14 +1017,14 @@ code span.wa { color: #60a0b0; font-weight: bold; font-style: italic; } /* Warni
 <div id="xcolour-text" class="section level3 hasAnchor">
 <h3>Colour text<a href="xconditional-formats.html#xcolour-text" class="anchor-section" aria-label="Anchor link to header"></a></h3>
 <p>You can now conditionally colour the text of your factor labels. For example, this can be useful to draw attention to <a href="https://causalmap.shinyapps.io/CM2test/?s=651">factors which are opposites</a>:</p>
-<div class="figure">
-<img src="_assets/image-20220119192537202.png" alt="" />
-<p class="caption">image-20220119192537202</p>
+<div class="float">
+<img src="_assets/image-20220119192537202.png" alt="image-20220119192537202" />
+<div class="figcaption">image-20220119192537202</div>
 </div>
 <p>There is a dedicated shortcut button just for this:</p>
-<div class="figure">
-<img src="_assets/image-20220121074508472.png" alt="" />
-<p class="caption">image-20220121074508472</p>
+<div class="float">
+<img src="_assets/image-20220121074508472.png" alt="image-20220121074508472" />
+<div class="figcaption">image-20220121074508472</div>
 </div>
 </div>
 <div id="xlabel-factors" class="section level3 hasAnchor">
@@ -1028,9 +1032,9 @@ code span.wa { color: #60a0b0; font-weight: bold; font-style: italic; } /* Warni
 <p>You can label your factors, as well as your <a href="#xformattinglinks">links</a>. Labelling your factors is a useful way of adding detail and clarity to your maps. Click on the label factors buttons to open up the filter panel. The app will then ask you to choose which label(s) to add to your l factors. Options include frequency, size, and zoom level.</p>
 <p>Normally you will want to add this additional information to the existing factor label, but if you want you can check the box to <code>Clear previous labels?</code></p>
 <p>You can now also choose whether or not to include the name of the field in your factor labels.</p>
-<div class="figure">
-<img src="_assets/image-20220121072115390.png" alt="" />
-<p class="caption">image-20220121072115390</p>
+<div class="float">
+<img src="_assets/image-20220121072115390.png" alt="image-20220121072115390" />
+<div class="figcaption">image-20220121072115390</div>
 </div>
 </div>
 </div>
@@ -1069,9 +1073,9 @@ code span.wa { color: #60a0b0; font-weight: bold; font-style: italic; } /* Warni
 <h2>Calculated fields<a href="xconditional-formats.html#xcalculated-fields" class="anchor-section" aria-label="Anchor link to header"></a></h2>
 <p>The app adds some pre-calculated fields for you and adds them to the tables.</p>
 <p>You can use these in various ways to construct filters. For example you can add <code>frequency</code> to your factor labels, or filter the map to show only bundles of links consisting of only one link (<code>find links field=source_frequency value=2 operator=less</code>).</p>
-<div class="figure">
-<img src="_assets/image-20211210114813958.png" width="650" alt="" />
-<p class="caption">image-20211210114813958</p>
+<div class="float">
+<img src="_assets/image-20211210114813958.png" width="650" alt="image-20211210114813958" />
+<div class="figcaption">image-20211210114813958</div>
 </div>
 <p>Some examples of calculated fields:</p>
 <div id="links-table" class="section level3 hasAnchor">

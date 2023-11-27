@@ -28,7 +28,7 @@
 <meta name="author" content="Samuel Goddard" />
 
 
-<meta name="date" content="2023-05-15" />
+<meta name="date" content="2023-11-27" />
 
   <meta name="viewport" content="width=device-width, initial-scale=1" />
   <meta name="apple-mobile-web-app-capable" content="yes" />
@@ -496,6 +496,8 @@ code span.wa { color: #60a0b0; font-weight: bold; font-style: italic; } /* Warni
 <li class="chapter" data-level="" data-path="filters-overview.html"><a href="filters-overview.html#trace-paths"><i class="fa fa-check"></i>Trace paths</a></li>
 <li class="chapter" data-level="" data-path="filters-overview.html"><a href="filters-overview.html#bundlefactors"><i class="fa fa-check"></i>Bundle factors</a></li>
 <li class="chapter" data-level="" data-path="filters-overview.html"><a href="filters-overview.html#combine-opposites"><i class="fa fa-check"></i>Combine opposites</a></li>
+<li class="chapter" data-level="" data-path="filters-overview.html"><a href="filters-overview.html#mutate-factors-or-links-calculate-new-factor-or-link-fields"><i class="fa fa-check"></i>🧪 Mutate factors or links: calculate new factor or link fields</a></li>
+<li class="chapter" data-level="" data-path="filters-overview.html"><a href="filters-overview.html#pick-factors-or-links"><i class="fa fa-check"></i>🧪 Pick factors or links</a></li>
 <li class="chapter" data-level="" data-path="filters-overview.html"><a href="filters-overview.html#filtering-group-by-group"><i class="fa fa-check"></i>Filtering group by group</a></li>
 </ul></li>
 <li class="chapter" data-level="" data-path="what-is-the-logic-behind-the-causal-map-filters.html"><a href="what-is-the-logic-behind-the-causal-map-filters.html"><i class="fa fa-check"></i>What is the logic behind the Causal Map filters?</a>
@@ -614,8 +616,10 @@ code span.wa { color: #60a0b0; font-weight: bold; font-style: italic; } /* Warni
 <li class="chapter" data-level="" data-path="auto-coding.html"><a href="auto-coding.html#languages"><i class="fa fa-check"></i>Languages</a></li>
 <li class="chapter" data-level="" data-path="auto-coding.html"><a href="auto-coding.html#it-isnt-cheap"><i class="fa fa-check"></i>It isn’t cheap</a></li>
 <li class="chapter" data-level="" data-path="auto-coding.html"><a href="auto-coding.html#the-coding-prompt"><i class="fa fa-check"></i>The coding prompt</a></li>
-<li class="chapter" data-level="" data-path="auto-coding.html"><a href="auto-coding.html#identifying-links"><i class="fa fa-check"></i>Identifying links</a></li>
+<li class="chapter" data-level="" data-path="auto-coding.html"><a href="auto-coding.html#identifying-links"><i class="fa fa-check"></i>Identifying links</a>
+<ul>
 <li class="chapter" data-level="" data-path="auto-coding.html"><a href="auto-coding.html#choosing-between-single-links-ab-and-bc-or-chains-abc"><i class="fa fa-check"></i>Choosing between single <strong>links</strong> (A&gt;&gt;B and B&gt;&gt;C) or <strong>chains</strong> (A&gt;&gt;B&gt;&gt;C):</a></li>
+</ul></li>
 <li class="chapter" data-level="" data-path="auto-coding.html"><a href="auto-coding.html#ensuring-quotes-are-provided"><i class="fa fa-check"></i>Ensuring quotes are provided</a>
 <ul>
 <li class="chapter" data-level="" data-path="auto-coding.html"><a href="auto-coding.html#colon-style"><i class="fa fa-check"></i>Colon style</a></li>
@@ -936,7 +940,7 @@ code span.wa { color: #60a0b0; font-weight: bold; font-style: italic; } /* Warni
 <h2>Languages<a href="auto-coding.html#languages" class="anchor-section" aria-label="Anchor link to header"></a></h2>
 <p>When using statements in a language other than English, ask the AI to translate them. Otherwise, if you don’t put any instructions for translating the statements, the AI highlights the statement but doesn’t show the factor labels and links in the map.</p>
 <p>You can use a prompt like: <em>‘If the text is in a language other than English, be sure to translate it to English when creating the factor labels’</em>.</p>
-<p><img src="_assets/language-cm-autocoding.png" />{width:650}</p>
+<p><img src="_assets/language-cm-autocoding.png" alt="language-cm-autocoding" />{width:650}</p>
 </div>
 <div id="it-isnt-cheap" class="section level2 hasAnchor">
 <h2>It isn’t cheap<a href="auto-coding.html#it-isnt-cheap" class="anchor-section" aria-label="Anchor link to header"></a></h2>
@@ -954,24 +958,24 @@ code span.wa { color: #60a0b0; font-weight: bold; font-style: italic; } /* Warni
 <p>You can provide any prompt you want and this will be applied to currently visible statements. BUT in order to actually identify links (which is the whole point), the output needs to include at least some lines including the “<code>&gt;&gt;</code>” symbol, which we call the “double-arrow”.</p>
 <p>Each line of the form X &gt;&gt; Y will be converted to a link from X to Y.</p>
 <p>Each line of the form X &gt;&gt; Y &gt;&gt; Z will be converted to two links from X to Y and from Y to Z, and so on. And we call this kind of display ‘chains’</p>
-</div>
-<div id="choosing-between-single-links-ab-and-bc-or-chains-abc" class="section level2 hasAnchor">
-<h2>Choosing between single <strong>links</strong> (A&gt;&gt;B and B&gt;&gt;C) or <strong>chains</strong> (A&gt;&gt;B&gt;&gt;C):<a href="auto-coding.html#choosing-between-single-links-ab-and-bc-or-chains-abc" class="anchor-section" aria-label="Anchor link to header"></a></h2>
+<div id="choosing-between-single-links-ab-and-bc-or-chains-abc" class="section level3 hasAnchor">
+<h3>Choosing between single <strong>links</strong> (A&gt;&gt;B and B&gt;&gt;C) or <strong>chains</strong> (A&gt;&gt;B&gt;&gt;C):<a href="auto-coding.html#choosing-between-single-links-ab-and-bc-or-chains-abc" class="anchor-section" aria-label="Anchor link to header"></a></h3>
 <p>GPT 3.5 doesn’t do a very good job with chains, so make sure when using GPT 3.5 to ask for single links.</p>
 <ul>
 <li><strong>Single Links:</strong> If you’re looking for <strong><em>more details</em></strong>, the single links are the way to go: the AI can find more details and factors when looking at each link individually</li>
 </ul>
-<p><img src="_assets/single-links-cm-autocoding.png" />{width:650}</p>
+<p><img src="_assets/single-links-cm-autocoding.png" alt="single-links-cm-autocoding" />{width:650}</p>
 <ul>
-<li><p><strong>Chains</strong>: But if you want to look at the bigger picture, <em>chains</em> do a good job. Sometimes the bot can ignore one or another causal link, so make sure you always check your map after coding.</p>
-<p><img src="_assets/chains-cm-autocoding.png" />{width:650}</p>
-<p>Limitations about chains:</p>
+<li><p><strong>Chains</strong>: If you want to look at the <strong>bigger picture</strong>, chains do a good job. Sometimes the bot can ignore one or another causal link, so make sure you always check your map after coding.</p>
+<p><img src="_assets/chains-cm-autocoding.png" alt="chains-cm-autocoding" />{width:650}</p>
+<p><u>Limitations about chains</u>:</p>
 <ol style="list-style-type: decimal">
 <li>Conjunctions are hard to deal with when you have chains</li>
 <li>If using examples, make sure when putting the quote in the example, DO NOT use the “, because the AI gets confused.</li>
 <li>It can get harder to give more complicated examples with chains</li>
 </ol></li>
 </ul>
+</div>
 </div>
 <div id="ensuring-quotes-are-provided" class="section level2 hasAnchor">
 <h2>Ensuring quotes are provided<a href="auto-coding.html#ensuring-quotes-are-provided" class="anchor-section" aria-label="Anchor link to header"></a></h2>
@@ -1034,9 +1038,9 @@ code span.wa { color: #60a0b0; font-weight: bold; font-style: italic; } /* Warni
 <p>So if we switch to one we’ll see that just only this statement one would be also recoded or we could say, for example let’s focus on all the statements which are between one and three. So this way we should see that one, two and three will be listed in the pink bar.</p>
 <p>So this way it is easy to use the existing filters functionality to code say all the men over 40 from village X.</p>
 <p>As you will frequently want to simply look at, say, all the statements up to statement 20, this kind of filter can be useful.</p>
-<div class="figure">
-<img src="_assets/image-20230426115838804.png" alt="" />
-<p class="caption">image-20230426115838804</p>
+<div class="float">
+<img src="_assets/image-20230426115838804.png" alt="image-20230426115838804" />
+<div class="figcaption">image-20230426115838804</div>
 </div>
 <p>There is already some coding in this file. But anything we do now would overwrite the recoding for those three statements.</p>
 <p>Coding many statements is done in parallel, so coding a whole file takes longer than just a few statements but not as much as you’d expect. It does quite a lot of work in the background to make sure that all of those queries that are being sent in parallel are all kind of dealt with nicely.</p>
@@ -1220,7 +1224,7 @@ But using 3.5 costs one thirtieth: the whole of the example-file costs 10 cents.
 
 
 
-what about StorySurvey? 
+What about StorySurvey? 
 
 the prompt is the main load. suppose an average of 20 user responses, that's say 300 tokens * 20 = 6000 for a response. * 100 responses = 600K. 
 

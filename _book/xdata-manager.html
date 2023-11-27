@@ -28,7 +28,7 @@
 <meta name="author" content="Samuel Goddard" />
 
 
-<meta name="date" content="2023-05-15" />
+<meta name="date" content="2023-11-27" />
 
   <meta name="viewport" content="width=device-width, initial-scale=1" />
   <meta name="apple-mobile-web-app-capable" content="yes" />
@@ -496,6 +496,8 @@ code span.wa { color: #60a0b0; font-weight: bold; font-style: italic; } /* Warni
 <li class="chapter" data-level="" data-path="filters-overview.html"><a href="filters-overview.html#trace-paths"><i class="fa fa-check"></i>Trace paths</a></li>
 <li class="chapter" data-level="" data-path="filters-overview.html"><a href="filters-overview.html#bundlefactors"><i class="fa fa-check"></i>Bundle factors</a></li>
 <li class="chapter" data-level="" data-path="filters-overview.html"><a href="filters-overview.html#combine-opposites"><i class="fa fa-check"></i>Combine opposites</a></li>
+<li class="chapter" data-level="" data-path="filters-overview.html"><a href="filters-overview.html#mutate-factors-or-links-calculate-new-factor-or-link-fields"><i class="fa fa-check"></i>🧪 Mutate factors or links: calculate new factor or link fields</a></li>
+<li class="chapter" data-level="" data-path="filters-overview.html"><a href="filters-overview.html#pick-factors-or-links"><i class="fa fa-check"></i>🧪 Pick factors or links</a></li>
 <li class="chapter" data-level="" data-path="filters-overview.html"><a href="filters-overview.html#filtering-group-by-group"><i class="fa fa-check"></i>Filtering group by group</a></li>
 </ul></li>
 <li class="chapter" data-level="" data-path="what-is-the-logic-behind-the-causal-map-filters.html"><a href="what-is-the-logic-behind-the-causal-map-filters.html"><i class="fa fa-check"></i>What is the logic behind the Causal Map filters?</a>
@@ -614,8 +616,10 @@ code span.wa { color: #60a0b0; font-weight: bold; font-style: italic; } /* Warni
 <li class="chapter" data-level="" data-path="auto-coding.html"><a href="auto-coding.html#languages"><i class="fa fa-check"></i>Languages</a></li>
 <li class="chapter" data-level="" data-path="auto-coding.html"><a href="auto-coding.html#it-isnt-cheap"><i class="fa fa-check"></i>It isn’t cheap</a></li>
 <li class="chapter" data-level="" data-path="auto-coding.html"><a href="auto-coding.html#the-coding-prompt"><i class="fa fa-check"></i>The coding prompt</a></li>
-<li class="chapter" data-level="" data-path="auto-coding.html"><a href="auto-coding.html#identifying-links"><i class="fa fa-check"></i>Identifying links</a></li>
+<li class="chapter" data-level="" data-path="auto-coding.html"><a href="auto-coding.html#identifying-links"><i class="fa fa-check"></i>Identifying links</a>
+<ul>
 <li class="chapter" data-level="" data-path="auto-coding.html"><a href="auto-coding.html#choosing-between-single-links-ab-and-bc-or-chains-abc"><i class="fa fa-check"></i>Choosing between single <strong>links</strong> (A&gt;&gt;B and B&gt;&gt;C) or <strong>chains</strong> (A&gt;&gt;B&gt;&gt;C):</a></li>
+</ul></li>
 <li class="chapter" data-level="" data-path="auto-coding.html"><a href="auto-coding.html#ensuring-quotes-are-provided"><i class="fa fa-check"></i>Ensuring quotes are provided</a>
 <ul>
 <li class="chapter" data-level="" data-path="auto-coding.html"><a href="auto-coding.html#colon-style"><i class="fa fa-check"></i>Colon style</a></li>
@@ -927,14 +931,14 @@ code span.wa { color: #60a0b0; font-weight: bold; font-style: italic; } /* Warni
 </script>
 <div id="xdata-manager" class="section level1 hasAnchor">
 <h1>Data manager<a href="xdata-manager.html#xdata-manager" class="anchor-section" aria-label="Anchor link to header"></a></h1>
-<div class="figure">
-<img src="_assets/image-20230128222927014.png" width="650" alt="" />
-<p class="caption">image-20230128222927014</p>
+<div class="float">
+<img src="_assets/image-20230128222927014.png" width="650" alt="image-20230128222927014" />
+<div class="figcaption">image-20230128222927014</div>
 </div>
 <p>Is your data all uploaded correctly? Does it all make sense? Try the Data Manager tab.</p>
-<div class="figure">
-<img src="_assets/image-20230127183738241.png" alt="" />
-<p class="caption">image-20230127183738241</p>
+<div class="float">
+<img src="_assets/image-20230127183738241.png" alt="image-20230127183738241" />
+<div class="figcaption">image-20230127183738241</div>
 </div>
 <p>It is good to check this page to ensure your data is in the correct place, especially after you have <a href="ximport.html#ximport">uploaded your data</a>.</p>
 <div id="sources-in-statements-table-not-in-sources-table" class="section level3 hasAnchor">
@@ -944,9 +948,9 @@ code span.wa { color: #60a0b0; font-weight: bold; font-style: italic; } /* Warni
 <div id="links-which-seem-to-have-quotes-which-are-not-actually-contained-in-the-corresponding-statements" class="section level3 hasAnchor">
 <h3>Links which seem to have quotes which are not actually contained in the corresponding statements:<a href="xdata-manager.html#links-which-seem-to-have-quotes-which-are-not-actually-contained-in-the-corresponding-statements" class="anchor-section" aria-label="Anchor link to header"></a></h3>
 <p>Quotes associated with each link should always be verbatim sections of the original statements. Sometimes they can lose this association, for example if you accidentally edited a quote to make it different from the original statement. You should check these link IDs. <strong>Fix this by clicking on the link ids</strong>, or by searching for the corresponding IDs like this, and then edit the link by clicking the pink “<code>...</code>” at the end of the row:</p>
-<div class="figure">
-<img src="_assets/image-20230127185517732.png" alt="" />
-<p class="caption">image-20230127185517732</p>
+<div class="float">
+<img src="_assets/image-20230127185517732.png" alt="image-20230127185517732" />
+<div class="figcaption">image-20230127185517732</div>
 </div>
 </div>
 <div id="missing-sources-in-statements-table" class="section level3 hasAnchor">

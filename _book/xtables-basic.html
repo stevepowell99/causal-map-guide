@@ -28,7 +28,7 @@
 <meta name="author" content="Samuel Goddard" />
 
 
-<meta name="date" content="2023-05-15" />
+<meta name="date" content="2023-11-27" />
 
   <meta name="viewport" content="width=device-width, initial-scale=1" />
   <meta name="apple-mobile-web-app-capable" content="yes" />
@@ -496,6 +496,8 @@ code span.wa { color: #60a0b0; font-weight: bold; font-style: italic; } /* Warni
 <li class="chapter" data-level="" data-path="filters-overview.html"><a href="filters-overview.html#trace-paths"><i class="fa fa-check"></i>Trace paths</a></li>
 <li class="chapter" data-level="" data-path="filters-overview.html"><a href="filters-overview.html#bundlefactors"><i class="fa fa-check"></i>Bundle factors</a></li>
 <li class="chapter" data-level="" data-path="filters-overview.html"><a href="filters-overview.html#combine-opposites"><i class="fa fa-check"></i>Combine opposites</a></li>
+<li class="chapter" data-level="" data-path="filters-overview.html"><a href="filters-overview.html#mutate-factors-or-links-calculate-new-factor-or-link-fields"><i class="fa fa-check"></i>🧪 Mutate factors or links: calculate new factor or link fields</a></li>
+<li class="chapter" data-level="" data-path="filters-overview.html"><a href="filters-overview.html#pick-factors-or-links"><i class="fa fa-check"></i>🧪 Pick factors or links</a></li>
 <li class="chapter" data-level="" data-path="filters-overview.html"><a href="filters-overview.html#filtering-group-by-group"><i class="fa fa-check"></i>Filtering group by group</a></li>
 </ul></li>
 <li class="chapter" data-level="" data-path="what-is-the-logic-behind-the-causal-map-filters.html"><a href="what-is-the-logic-behind-the-causal-map-filters.html"><i class="fa fa-check"></i>What is the logic behind the Causal Map filters?</a>
@@ -614,8 +616,10 @@ code span.wa { color: #60a0b0; font-weight: bold; font-style: italic; } /* Warni
 <li class="chapter" data-level="" data-path="auto-coding.html"><a href="auto-coding.html#languages"><i class="fa fa-check"></i>Languages</a></li>
 <li class="chapter" data-level="" data-path="auto-coding.html"><a href="auto-coding.html#it-isnt-cheap"><i class="fa fa-check"></i>It isn’t cheap</a></li>
 <li class="chapter" data-level="" data-path="auto-coding.html"><a href="auto-coding.html#the-coding-prompt"><i class="fa fa-check"></i>The coding prompt</a></li>
-<li class="chapter" data-level="" data-path="auto-coding.html"><a href="auto-coding.html#identifying-links"><i class="fa fa-check"></i>Identifying links</a></li>
+<li class="chapter" data-level="" data-path="auto-coding.html"><a href="auto-coding.html#identifying-links"><i class="fa fa-check"></i>Identifying links</a>
+<ul>
 <li class="chapter" data-level="" data-path="auto-coding.html"><a href="auto-coding.html#choosing-between-single-links-ab-and-bc-or-chains-abc"><i class="fa fa-check"></i>Choosing between single <strong>links</strong> (A&gt;&gt;B and B&gt;&gt;C) or <strong>chains</strong> (A&gt;&gt;B&gt;&gt;C):</a></li>
+</ul></li>
 <li class="chapter" data-level="" data-path="auto-coding.html"><a href="auto-coding.html#ensuring-quotes-are-provided"><i class="fa fa-check"></i>Ensuring quotes are provided</a>
 <ul>
 <li class="chapter" data-level="" data-path="auto-coding.html"><a href="auto-coding.html#colon-style"><i class="fa fa-check"></i>Colon style</a></li>
@@ -927,18 +931,18 @@ code span.wa { color: #60a0b0; font-weight: bold; font-style: italic; } /* Warni
 </script>
 <div id="xtables-basic" class="section level1 hasAnchor">
 <h1>Tables<a href="xtables-basic.html#xtables-basic" class="anchor-section" aria-label="Anchor link to header"></a></h1>
-<div class="figure">
-<img src="_assets/image-20230128222830465.png" width="650" alt="" />
-<p class="caption">image-20230128222830465</p>
+<div class="float">
+<img src="_assets/image-20230128222830465.png" width="650" alt="image-20230128222830465" />
+<div class="figcaption">image-20230128222830465</div>
 </div>
 <div id="tables_common" class="section level2 hasAnchor">
 <h2>Features common to all the tables<a href="xtables-basic.html#tables_common" class="anchor-section" aria-label="Anchor link to header"></a></h2>
 <div id="main-controls" class="section level3 hasAnchor">
 <h3>Main controls<a href="xtables-basic.html#main-controls" class="anchor-section" aria-label="Anchor link to header"></a></h3>
 <p>Each table has a set of controls, which are the same across nearly all the tables.</p>
-<div class="figure">
-<img src="_assets/image-20220913134022864.png" alt="" />
-<p class="caption">image-20220913134022864</p>
+<div class="float">
+<img src="_assets/image-20220913134022864.png" alt="image-20220913134022864" />
+<div class="figcaption">image-20220913134022864</div>
 </div>
 <p>When the table is set to “Filtered”, the tables respond to any filters you have applied in the left-hand panel of the app, just as the interactive maps do. The table shows data corresponding to the map as it is currently displayed.</p>
 <p>If you want to see all the data in one table for the unfiltered map, switch this toggle to Unfiltered.</p>
@@ -946,17 +950,17 @@ code span.wa { color: #60a0b0; font-weight: bold; font-style: italic; } /* Warni
 <div id="search" class="section level3 hasAnchor">
 <h3>Search<a href="xtables-basic.html#search" class="anchor-section" aria-label="Anchor link to header"></a></h3>
 <p>You can search / filter the whole table by clicking on the equals sign at the top of a column. To search numerical volumes you can type in the value you are searching for or you can use <code>&gt;</code> and <code>&lt;</code> to search for values less than or greater than a set number.</p>
-<div class="figure">
-<img src="_assets/chrome_tlYyv8TfPp.gif" width="650" alt="" />
-<p class="caption">chrome_tlYyv8TfPp</p>
+<div class="float">
+<img src="_assets/chrome_tlYyv8TfPp.gif" width="650" alt="chrome_tlYyv8TfPp" />
+<div class="figcaption">chrome_tlYyv8TfPp</div>
 </div>
 </div>
 <div id="sorting" class="section level3 hasAnchor">
 <h3>Sorting<a href="xtables-basic.html#sorting" class="anchor-section" aria-label="Anchor link to header"></a></h3>
 <p>You can sort the whole table by any column by clicking on the appropriate header:</p>
-<div class="figure">
-<img src="_assets/image-20220913152846255.png" alt="" />
-<p class="caption">image-20220913152846255</p>
+<div class="float">
+<img src="_assets/image-20220913152846255.png" alt="image-20220913152846255" />
+<div class="figcaption">image-20220913152846255</div>
 </div>
 
 </div>

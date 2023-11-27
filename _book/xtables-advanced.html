@@ -28,7 +28,7 @@
 <meta name="author" content="Samuel Goddard" />
 
 
-<meta name="date" content="2023-05-15" />
+<meta name="date" content="2023-11-27" />
 
   <meta name="viewport" content="width=device-width, initial-scale=1" />
   <meta name="apple-mobile-web-app-capable" content="yes" />
@@ -496,6 +496,8 @@ code span.wa { color: #60a0b0; font-weight: bold; font-style: italic; } /* Warni
 <li class="chapter" data-level="" data-path="filters-overview.html"><a href="filters-overview.html#trace-paths"><i class="fa fa-check"></i>Trace paths</a></li>
 <li class="chapter" data-level="" data-path="filters-overview.html"><a href="filters-overview.html#bundlefactors"><i class="fa fa-check"></i>Bundle factors</a></li>
 <li class="chapter" data-level="" data-path="filters-overview.html"><a href="filters-overview.html#combine-opposites"><i class="fa fa-check"></i>Combine opposites</a></li>
+<li class="chapter" data-level="" data-path="filters-overview.html"><a href="filters-overview.html#mutate-factors-or-links-calculate-new-factor-or-link-fields"><i class="fa fa-check"></i>🧪 Mutate factors or links: calculate new factor or link fields</a></li>
+<li class="chapter" data-level="" data-path="filters-overview.html"><a href="filters-overview.html#pick-factors-or-links"><i class="fa fa-check"></i>🧪 Pick factors or links</a></li>
 <li class="chapter" data-level="" data-path="filters-overview.html"><a href="filters-overview.html#filtering-group-by-group"><i class="fa fa-check"></i>Filtering group by group</a></li>
 </ul></li>
 <li class="chapter" data-level="" data-path="what-is-the-logic-behind-the-causal-map-filters.html"><a href="what-is-the-logic-behind-the-causal-map-filters.html"><i class="fa fa-check"></i>What is the logic behind the Causal Map filters?</a>
@@ -614,8 +616,10 @@ code span.wa { color: #60a0b0; font-weight: bold; font-style: italic; } /* Warni
 <li class="chapter" data-level="" data-path="auto-coding.html"><a href="auto-coding.html#languages"><i class="fa fa-check"></i>Languages</a></li>
 <li class="chapter" data-level="" data-path="auto-coding.html"><a href="auto-coding.html#it-isnt-cheap"><i class="fa fa-check"></i>It isn’t cheap</a></li>
 <li class="chapter" data-level="" data-path="auto-coding.html"><a href="auto-coding.html#the-coding-prompt"><i class="fa fa-check"></i>The coding prompt</a></li>
-<li class="chapter" data-level="" data-path="auto-coding.html"><a href="auto-coding.html#identifying-links"><i class="fa fa-check"></i>Identifying links</a></li>
+<li class="chapter" data-level="" data-path="auto-coding.html"><a href="auto-coding.html#identifying-links"><i class="fa fa-check"></i>Identifying links</a>
+<ul>
 <li class="chapter" data-level="" data-path="auto-coding.html"><a href="auto-coding.html#choosing-between-single-links-ab-and-bc-or-chains-abc"><i class="fa fa-check"></i>Choosing between single <strong>links</strong> (A&gt;&gt;B and B&gt;&gt;C) or <strong>chains</strong> (A&gt;&gt;B&gt;&gt;C):</a></li>
+</ul></li>
 <li class="chapter" data-level="" data-path="auto-coding.html"><a href="auto-coding.html#ensuring-quotes-are-provided"><i class="fa fa-check"></i>Ensuring quotes are provided</a>
 <ul>
 <li class="chapter" data-level="" data-path="auto-coding.html"><a href="auto-coding.html#colon-style"><i class="fa fa-check"></i>Colon style</a></li>
@@ -933,40 +937,40 @@ code span.wa { color: #60a0b0; font-weight: bold; font-style: italic; } /* Warni
 <ol style="list-style-type: decimal">
 <li><p><strong>A normal table</strong>. You simply select the first column you want in the “rows” box and then add any others you need in the “columns” box.</p></li>
 <li><p><strong>Compressed rows</strong>. This happens when you select a field for your rows which is “shorter” than the actual number of rows in the table. For example <a href="https://causalmap.shinyapps.io/tokyo/?s=5043">5043</a> , in the factors table you can select level_1_label. Because there are fewer of these than there are factors, the table will be “compressed” and we can choose how we want the multiple results for each row to be displayed – here we have chosen to display all the labels, but we could also have displayed just the number of values.</p>
-<div class="figure">
-<img src="_assets/image-20220830172706445.png" alt="" />
-<p class="caption">image-20220830172706445</p>
+<div class="float">
+<img src="_assets/image-20220830172706445.png" alt="image-20220830172706445" />
+<div class="figcaption">image-20220830172706445</div>
 </div></li>
 </ol>
 <p>Here, we compress the sources table just by the answer to their question on purchasing power <a href="https://causalmap.shinyapps.io/tokyo/?s=5044">5044</a>, and display several other columns.</p>
-<div class="figure">
-<img src="_assets/image-20220830173110732.png" alt="" />
-<p class="caption">image-20220830173110732</p>
+<div class="float">
+<img src="_assets/image-20220830173110732.png" alt="image-20220830173110732" />
+<div class="figcaption">image-20220830173110732</div>
 </div>
 <p>This is the same thing, but showing just the counts in each cell: <a href="https://causalmap.shinyapps.io/tokyo/?s=5045">5045</a>.</p>
-<div class="figure">
-<img src="_assets/image-20220830173313874.png" alt="" />
-<p class="caption">image-20220830173313874</p>
+<div class="float">
+<img src="_assets/image-20220830173313874.png" alt="image-20220830173313874" />
+<div class="figcaption">image-20220830173313874</div>
 </div>
 <ol start="3" style="list-style-type: decimal">
 <li><strong>Pivot tables</strong>. It is possible to construct pivot tables by selecting a column to pivot by: <a href="https://causalmap.shinyapps.io/tokyo/?s=5046">5046</a>. Again, you can fill the cells with all the values of a field you select, like source_id, or all the unique values, or the counts.</li>
 </ol>
-<div class="figure">
-<img src="_assets/image-20220830173540123.png" alt="" />
-<p class="caption">image-20220830173540123</p>
+<div class="float">
+<img src="_assets/image-20220830173540123.png" alt="image-20220830173540123" />
+<div class="figcaption">image-20220830173540123</div>
 </div>
 <p>Pivot tables give us lots of new possibilities, like this display of closed questions: <a href="https://causalmap.shinyapps.io/tokyo/?s=5047">5047</a>.</p>
-<div class="figure">
-<img src="_assets/image-20220830174235089.png" alt="" />
-<p class="caption">image-20220830174235089</p>
+<div class="float">
+<img src="_assets/image-20220830174235089.png" alt="image-20220830174235089" />
+<div class="figcaption">image-20220830174235089</div>
 </div>
 </div>
 <div id="xprint-view-tables" class="section level2 hasAnchor">
 <h2>Print view<a href="xtables-advanced.html#xprint-view-tables" class="anchor-section" aria-label="Anchor link to header"></a></h2>
 <p>Do you want some preformatted quotes for your report?</p>
-<div class="figure">
-<img src="_assets/chrome_lTHlwBtWAR.gif" width="650" alt="" />
-<p class="caption">chrome_lTHlwBtWAR</p>
+<div class="float">
+<img src="_assets/chrome_lTHlwBtWAR.gif" width="650" alt="chrome_lTHlwBtWAR" />
+<div class="figcaption">chrome_lTHlwBtWAR</div>
 </div>
 <p>Each table can also be shown as simple text for copying and pasting.</p>
 <p>If you want printable quotes for your report, there is a table preset for that. Or go manually to the links table, click the 🖨️ button to display Print View, and choose the columns you want. They will be shown in the Print View in the same order. Then just copy and paste using the “Copy” button.</p>
@@ -974,16 +978,16 @@ code span.wa { color: #60a0b0; font-weight: bold; font-style: italic; } /* Warni
 <div id="xformatting-your-table" class="section level2 hasAnchor">
 <h2>Formatting your table<a href="xtables-advanced.html#xformatting-your-table" class="anchor-section" aria-label="Anchor link to header"></a></h2>
 <p>Below all tables you will see the below buttons which allow you to format the table as you wish. The columns in table with numerical values can be presented as a heatmap. The higher the number, the darker the colour of the cell will be.</p>
-<div class="figure">
-<img src="_assets/Bottom%20of%20table%20screenshot.jpg" width="650" alt="" />
-<p class="caption">Bottom of table screenshot</p>
+<div class="float">
+<img src="_assets/Bottom%20of%20table%20screenshot.jpg" width="650" alt="Bottom of table screenshot" />
+<div class="figcaption">Bottom of table screenshot</div>
 </div>
 </div>
 <div id="xsaving-your-table" class="section level2 hasAnchor">
 <h2>Saving your table<a href="xtables-advanced.html#xsaving-your-table" class="anchor-section" aria-label="Anchor link to header"></a></h2>
-<div class="figure">
-<img src="_assets/image-20220913134300373.png" alt="" />
-<p class="caption">image-20220913134300373</p>
+<div class="float">
+<img src="_assets/image-20220913134300373.png" alt="image-20220913134300373" />
+<div class="figcaption">image-20220913134300373</div>
 </div>
 <p>You can copy the data from the tables into your clipboard by clicking <code>Copy</code> , and then you can then paste the data in Word or Excel to create your own tables, graphs, or visualisations.</p>
 <p>You can save your table as <code>CSV</code> or <code>Excel</code>. These buttons will export all the data in the current table.</p>

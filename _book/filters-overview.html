@@ -28,7 +28,7 @@
 <meta name="author" content="Samuel Goddard" />
 
 
-<meta name="date" content="2023-05-15" />
+<meta name="date" content="2023-11-27" />
 
   <meta name="viewport" content="width=device-width, initial-scale=1" />
   <meta name="apple-mobile-web-app-capable" content="yes" />
@@ -496,6 +496,8 @@ code span.wa { color: #60a0b0; font-weight: bold; font-style: italic; } /* Warni
 <li class="chapter" data-level="" data-path="filters-overview.html"><a href="filters-overview.html#trace-paths"><i class="fa fa-check"></i>Trace paths</a></li>
 <li class="chapter" data-level="" data-path="filters-overview.html"><a href="filters-overview.html#bundlefactors"><i class="fa fa-check"></i>Bundle factors</a></li>
 <li class="chapter" data-level="" data-path="filters-overview.html"><a href="filters-overview.html#combine-opposites"><i class="fa fa-check"></i>Combine opposites</a></li>
+<li class="chapter" data-level="" data-path="filters-overview.html"><a href="filters-overview.html#mutate-factors-or-links-calculate-new-factor-or-link-fields"><i class="fa fa-check"></i>🧪 Mutate factors or links: calculate new factor or link fields</a></li>
+<li class="chapter" data-level="" data-path="filters-overview.html"><a href="filters-overview.html#pick-factors-or-links"><i class="fa fa-check"></i>🧪 Pick factors or links</a></li>
 <li class="chapter" data-level="" data-path="filters-overview.html"><a href="filters-overview.html#filtering-group-by-group"><i class="fa fa-check"></i>Filtering group by group</a></li>
 </ul></li>
 <li class="chapter" data-level="" data-path="what-is-the-logic-behind-the-causal-map-filters.html"><a href="what-is-the-logic-behind-the-causal-map-filters.html"><i class="fa fa-check"></i>What is the logic behind the Causal Map filters?</a>
@@ -614,8 +616,10 @@ code span.wa { color: #60a0b0; font-weight: bold; font-style: italic; } /* Warni
 <li class="chapter" data-level="" data-path="auto-coding.html"><a href="auto-coding.html#languages"><i class="fa fa-check"></i>Languages</a></li>
 <li class="chapter" data-level="" data-path="auto-coding.html"><a href="auto-coding.html#it-isnt-cheap"><i class="fa fa-check"></i>It isn’t cheap</a></li>
 <li class="chapter" data-level="" data-path="auto-coding.html"><a href="auto-coding.html#the-coding-prompt"><i class="fa fa-check"></i>The coding prompt</a></li>
-<li class="chapter" data-level="" data-path="auto-coding.html"><a href="auto-coding.html#identifying-links"><i class="fa fa-check"></i>Identifying links</a></li>
+<li class="chapter" data-level="" data-path="auto-coding.html"><a href="auto-coding.html#identifying-links"><i class="fa fa-check"></i>Identifying links</a>
+<ul>
 <li class="chapter" data-level="" data-path="auto-coding.html"><a href="auto-coding.html#choosing-between-single-links-ab-and-bc-or-chains-abc"><i class="fa fa-check"></i>Choosing between single <strong>links</strong> (A&gt;&gt;B and B&gt;&gt;C) or <strong>chains</strong> (A&gt;&gt;B&gt;&gt;C):</a></li>
+</ul></li>
 <li class="chapter" data-level="" data-path="auto-coding.html"><a href="auto-coding.html#ensuring-quotes-are-provided"><i class="fa fa-check"></i>Ensuring quotes are provided</a>
 <ul>
 <li class="chapter" data-level="" data-path="auto-coding.html"><a href="auto-coding.html#colon-style"><i class="fa fa-check"></i>Colon style</a></li>
@@ -949,14 +953,14 @@ code span.wa { color: #60a0b0; font-weight: bold; font-style: italic; } /* Warni
 </ul>
 <p>These filters apply powerful filters which change the structure of the unfiltered map. Each filter can be applied more than once and they can (to some extent) be moved up and down.</p>
 <p>For example suppose you want to show only links from statements in which the word “women” appears in the <code>text</code> of the statement. So to apply a <code>find statements</code> filter, you click the button with that name. A dialog will appear, once you have filled in the panel, and you click <code>Apply filter</code>.</p>
-<div class="figure">
-<img src="_assets/image-20210929183023486.png" width="650" alt="" />
-<p class="caption">image-20210929183023486</p>
+<div class="float">
+<img src="_assets/image-20210929183023486.png" width="650" alt="image-20210929183023486" />
+<div class="figcaption">image-20210929183023486</div>
 </div>
 <p>A new button with an explanation appears in the active bar. The corresponding button below it gets a green tick to show it is in use, but you can click it again to apply another, different statements filter, for example to find links from all statements in which “women” appears and which were mentioned by <em>men</em>:</p>
-<div class="figure">
-<img src="_assets/image-20210929183317105.png" width="650" alt="" />
-<p class="caption">image-20210929183317105</p>
+<div class="float">
+<img src="_assets/image-20210929183317105.png" width="650" alt="image-20210929183317105" />
+<div class="figcaption">image-20210929183317105</div>
 </div>
 <p>In this case, you are searching not the <code>text</code> of the statement but the <code>sex</code> of the source who made this statement.</p>
 </div>
@@ -965,9 +969,9 @@ code span.wa { color: #60a0b0; font-weight: bold; font-style: italic; } /* Warni
 <div id="searching-and-filtering-factors" class="section level3 hasAnchor">
 <h3>Searching and filtering factors<a href="filters-overview.html#searching-and-filtering-factors" class="anchor-section" aria-label="Anchor link to header"></a></h3>
 <p>To find factors which <code>contain</code> the word <code>Food</code> in their <code>label</code>, click <code>find factors</code> and type to select factors which you want to find.</p>
-<div class="figure">
-<img src="_assets/image-20220809121243579.png" width="650" alt="" />
-<p class="caption">image-20220809121243579</p>
+<div class="float">
+<img src="_assets/image-20220809121243579.png" width="650" alt="image-20220809121243579" />
+<div class="figcaption">image-20220809121243579</div>
 </div>
 <ul>
 <li>Select one or more pre-existing factors. Press <code>enter</code> to accept</li>
@@ -982,15 +986,15 @@ code span.wa { color: #60a0b0; font-weight: bold; font-style: italic; } /* Warni
 <p><strong>Searching for text ‘Flooding’</strong></p>
 <p>One step upstream – one step downstream:<img src="_assets/example-file-2022-08-09%20(5).svg" width="650" alt="example-file-2022-08-09 (5)" /></p>
 <p>One step upstream – zero steps downstream:</p>
-<div class="figure">
-<img src="_assets/image-20220809122516625.png" width="650" alt="" />
-<p class="caption">image-20220809122516625</p>
+<div class="float">
+<img src="_assets/image-20220809122516625.png" width="650" alt="image-20220809122516625" />
+<div class="figcaption">image-20220809122516625</div>
 </div>
 <p>This analysis function is particularly useful for searching for important factors such as intervention activities or intended programme outcomes and can be used in conjunction with <a href="link-memos-and-hashtags.html#xhashtags">hashtags</a>.</p>
 <p>This also works when you include 0 steps upstream and 0 steps downstream:</p>
-<div class="figure">
-<img src="_assets/image-20220809122350919.png" width="650" alt="" />
-<p class="caption">image-20220809122350919</p>
+<div class="float">
+<img src="_assets/image-20220809122350919.png" width="650" alt="image-20220809122350919" />
+<div class="figcaption">image-20220809122350919</div>
 </div>
 </div>
 </div>
@@ -1010,9 +1014,9 @@ code span.wa { color: #60a0b0; font-weight: bold; font-style: italic; } /* Warni
 <div id="find-links" class="section level3 hasAnchor">
 <h3>Find links<a href="filters-overview.html#find-links" class="anchor-section" aria-label="Anchor link to header"></a></h3>
 <p>There are a lot of useful filters specifically for links. For example, rather than using <code>select_links</code> to select the most frequent simple bundles of links, you can be more specific by choosing only simple bundles containing more than a certain number of original links. The field you need is called <code>simple_frequency</code>, i.e. the number of links in each simple bundle. So if there are only 74 links in the bundle of links between factor X and factor Y, this bundle will not show up if you use the following filter:</p>
-<div class="figure">
-<img src="_assets/image-20211119190916671.png" alt="" />
-<p class="caption">image-20211119190916671</p>
+<div class="float">
+<img src="_assets/image-20211119190916671.png" alt="image-20211119190916671" />
+<div class="figcaption">image-20211119190916671</div>
 </div>
 <div id="find-hashtags" class="section level4 hasAnchor">
 <h4>Find hashtags<a href="filters-overview.html#find-hashtags" class="anchor-section" aria-label="Anchor link to header"></a></h4>
@@ -1034,29 +1038,29 @@ code span.wa { color: #60a0b0; font-weight: bold; font-style: italic; } /* Warni
 <div id="remove-brackets" class="section level2 hasAnchor">
 <h2>Remove brackets<a href="filters-overview.html#remove-brackets" class="anchor-section" aria-label="Anchor link to header"></a></h2>
 <p>This filter hides any tags or other words written between different kinds of brackets. So instead of this:</p>
-<div class="figure">
-<img src="_assets/image-20211007095656078.png" width="650" alt="" />
-<p class="caption">image-20211007095656078</p>
+<div class="float">
+<img src="_assets/image-20211007095656078.png" width="650" alt="image-20211007095656078" />
+<div class="figcaption">image-20211007095656078</div>
 </div>
 <p>you see this:</p>
-<div class="figure">
-<img src="_assets/image-20211007100224853.png" width="650" alt="" />
-<p class="caption">image-20211007100224853</p>
+<div class="float">
+<img src="_assets/image-20211007100224853.png" width="650" alt="image-20211007100224853" />
+<div class="figcaption">image-20211007100224853</div>
 </div>
 </div>
 <div id="excluding-factors-links-statements-sources-and-questions-with-notcontains-and-notequals" class="section level2 hasAnchor">
 <h2>Excluding factors, links, statements, sources and questions with <code>notcontains</code> and <code>notequals</code><a href="filters-overview.html#excluding-factors-links-statements-sources-and-questions-with-notcontains-and-notequals" class="anchor-section" aria-label="Anchor link to header"></a></h2>
-<div class="figure">
-<img src="_assets/image-20220809124232167.png" width="650" alt="" />
-<p class="caption">image-20220809124232167</p>
+<div class="float">
+<img src="_assets/image-20220809124232167.png" width="650" alt="image-20220809124232167" />
+<div class="figcaption">image-20220809124232167</div>
 </div>
-<div class="figure">
-<img src="_assets/lPyHGbTm3k.png" width="650" alt="" />
-<p class="caption">lPyHGbTm3k</p>
+<div class="float">
+<img src="_assets/lPyHGbTm3k.png" width="650" alt="lPyHGbTm3k" />
+<div class="figcaption">lPyHGbTm3k</div>
 </div>
-<div class="figure">
-<img src="_assets/image-20220809124734954.png" width="650" alt="" />
-<p class="caption">image-20220809124734954</p>
+<div class="float">
+<img src="_assets/image-20220809124734954.png" width="650" alt="image-20220809124734954" />
+<div class="figcaption">image-20220809124734954</div>
 </div>
 <p>Note how, logically enough, following a search for factors which do not contain a certain phrase, all the remaining factors have by default a coloured background.</p>
 <p>You can exclude statements, sources etc in the same way. Or you could filter for all links which do not contain the hashtag <code>doubtful</code> with this filter:</p>
@@ -1064,43 +1068,67 @@ code span.wa { color: #60a0b0; font-weight: bold; font-style: italic; } /* Warni
 </div>
 <div id="trace-paths" class="section level2 hasAnchor">
 <h2>Trace paths<a href="filters-overview.html#trace-paths" class="anchor-section" aria-label="Anchor link to header"></a></h2>
-<div class="figure">
-<img src="_assets/image-20221017093545711.png" alt="" />
-<p class="caption">image-20221017093545711</p>
+<div class="float">
+<img src="_assets/image-20221017093545711.png" alt="image-20221017093545711" />
+<div class="figcaption">image-20221017093545711</div>
 </div>
-<div class="figure">
-<img src="_assets/image-20220809125945262.png" width="650" alt="" />
-<p class="caption">image-20220809125945262</p>
+<div class="float">
+<img src="_assets/image-20220809125945262.png" width="650" alt="image-20220809125945262" />
+<div class="figcaption">image-20220809125945262</div>
 </div>
 <p>4427</p>
-<div class="figure">
-<img src="_assets/image-20220809125958876.png" width="650" alt="" />
-<p class="caption">image-20220809125958876</p>
+<div class="float">
+<img src="_assets/image-20220809125958876.png" width="650" alt="image-20220809125958876" />
+<div class="figcaption">image-20220809125958876</div>
 </div>
 <p>This analysis function is a powerful tool which enables you to view full causal pathways and to interrogate the relationships between specific causal factors.</p>
 </div>
 <div id="bundlefactors" class="section level2 hasAnchor">
 <h2>Bundle factors<a href="filters-overview.html#bundlefactors" class="anchor-section" aria-label="Anchor link to header"></a></h2>
 <p>Bundling factors allows us to combine multiple factors into one box. This can be useful if we want to see the influences or consequences of factors with similar attributes. To use this function you just type in the search box what you want the factor label to contain and the app will bundle all the labels containing that text into one. Remember to use the exact spelling and case that is in the factor labels you want to combine. The below screenshot shows all factors including the words ‘improved health’ bundled into one factor label.</p>
-<div class="figure">
-<img src="_assets/example-file-2022-08-09.svg" width="650" alt="" />
-<p class="caption">example-file-2022-08-09</p>
+<div class="float">
+<img src="_assets/example-file-2022-08-09.svg" width="650" alt="example-file-2022-08-09" />
+<div class="figcaption">example-file-2022-08-09</div>
 </div>
 </div>
 <div id="combine-opposites" class="section level2 hasAnchor">
 <h2>Combine opposites<a href="filters-overview.html#combine-opposites" class="anchor-section" aria-label="Anchor link to header"></a></h2>
 <p>Combining opposites formats factors so that opposites are displayed in one factor label. Negatives are identified by ‘~’ and must have exactly the same phrasing as their counterpart. In Print view the links are automatically colour coded - red for the negative relationship and green for the positive, so you can clearly see the causal relations.</p>
-<div class="figure">
-<img src="_assets/Combined%20opposites.png" width="650" alt="" />
-<p class="caption">Combined opposites</p>
+<div class="float">
+<img src="_assets/Combined%20opposites.png" width="650" alt="Combined opposites" />
+<div class="figcaption">Combined opposites</div>
 </div>
+</div>
+<div id="mutate-factors-or-links-calculate-new-factor-or-link-fields" class="section level2 hasAnchor">
+<h2>🧪 Mutate factors or links: calculate new factor or link fields<a href="#mutate-factors-or-links-calculate-new-factor-or-link-fields" class="anchor-section" aria-label="Anchor link to header"></a></h2>
+<p>This advanced filter is only available using the Advanced editor, but it is really useful.</p>
+<p>This line</p>
+<p><code>mutate factors new=big exp=frequency&gt;2</code></p>
+<p>will create a new field in the factors table which is TRUE if the frequency of each factor is greater than 2. You can then use this new field to format your map, e.g.</p>
+<p><code>mutate factors new=big exp=frequency&gt;2</code>
+<code>color factors big</code></p>
+<p>You can read the first line as “create a new field called ‘big’ which is true if the frequency of the factor is greater than 2”.</p>
+<p>Or this line will pick out the people older than 60.</p>
+<p><code>mutate factors new=older exp=age&gt;60</code>
+<code>color factors big</code></p>
+<p>The syntax for the “exp” aka “expression” part of the line is almost anything you can use for the <a href="">mutate() function of the dplyr package</a>.</p>
+</div>
+<div id="pick-factors-or-links" class="section level2 hasAnchor">
+<h2>🧪 Pick factors or links<a href="#pick-factors-or-links" class="anchor-section" aria-label="Anchor link to header"></a></h2>
+<p>This advanced filter is only available using the Advanced editor, but it is really useful.</p>
+<p><code>find_factors</code> and <code>find_links</code> can be awkward to use when you want to select factors or links which fit a logical criterion like one which you created with <code>mutate_factors</code> or <code>mutate_links</code>, see above.</p>
+<p>This line</p>
+<p><code>mutate factors new=big exp=frequency&gt;2</code></p>
+<p>will create a new field in the factors table which is TRUE if the frequency of each factor is greater than 2. You can then use this new field to filter your map, e.g.</p>
+<p><code>mutate factors new=big exp=frequency&gt;2</code>
+<code>pick factors big</code></p>
 </div>
 <div id="filtering-group-by-group" class="section level2 hasAnchor">
 <h2>Filtering group by group<a href="filters-overview.html#filtering-group-by-group" class="anchor-section" aria-label="Anchor link to header"></a></h2>
 <p>When you use an <code>equals</code> filter you are usually filtering for a particular group, for example all men or all statements from a particular district. In this case, “next” and “previous” buttons appear after the full-text description of the filter, as in the figure below. You can use these buttons to click from men to women, or to click through the districts. As in the example, you can use more than one such filter simultaneously.</p>
-<div class="figure">
-<img src="_assets/image-20211017211332397.png" alt="" />
-<p class="caption">image-20211017211332397</p>
+<div class="float">
+<img src="_assets/image-20211017211332397.png" alt="image-20211017211332397" />
+<div class="figcaption">image-20211017211332397</div>
 </div>
 <p>These “next” and “previous” buttons appear when using equals filters with links, factors or statements (except when filtering statements by statement_id, as in this special case the next and previous buttons are already visible in the statement navigation panel below).</p>
 

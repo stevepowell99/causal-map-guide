@@ -28,7 +28,7 @@
 <meta name="author" content="Samuel Goddard" />
 
 
-<meta name="date" content="2023-05-15" />
+<meta name="date" content="2023-11-27" />
 
   <meta name="viewport" content="width=device-width, initial-scale=1" />
   <meta name="apple-mobile-web-app-capable" content="yes" />
@@ -496,6 +496,8 @@ code span.wa { color: #60a0b0; font-weight: bold; font-style: italic; } /* Warni
 <li class="chapter" data-level="" data-path="filters-overview.html"><a href="filters-overview.html#trace-paths"><i class="fa fa-check"></i>Trace paths</a></li>
 <li class="chapter" data-level="" data-path="filters-overview.html"><a href="filters-overview.html#bundlefactors"><i class="fa fa-check"></i>Bundle factors</a></li>
 <li class="chapter" data-level="" data-path="filters-overview.html"><a href="filters-overview.html#combine-opposites"><i class="fa fa-check"></i>Combine opposites</a></li>
+<li class="chapter" data-level="" data-path="filters-overview.html"><a href="filters-overview.html#mutate-factors-or-links-calculate-new-factor-or-link-fields"><i class="fa fa-check"></i>🧪 Mutate factors or links: calculate new factor or link fields</a></li>
+<li class="chapter" data-level="" data-path="filters-overview.html"><a href="filters-overview.html#pick-factors-or-links"><i class="fa fa-check"></i>🧪 Pick factors or links</a></li>
 <li class="chapter" data-level="" data-path="filters-overview.html"><a href="filters-overview.html#filtering-group-by-group"><i class="fa fa-check"></i>Filtering group by group</a></li>
 </ul></li>
 <li class="chapter" data-level="" data-path="what-is-the-logic-behind-the-causal-map-filters.html"><a href="what-is-the-logic-behind-the-causal-map-filters.html"><i class="fa fa-check"></i>What is the logic behind the Causal Map filters?</a>
@@ -614,8 +616,10 @@ code span.wa { color: #60a0b0; font-weight: bold; font-style: italic; } /* Warni
 <li class="chapter" data-level="" data-path="auto-coding.html"><a href="auto-coding.html#languages"><i class="fa fa-check"></i>Languages</a></li>
 <li class="chapter" data-level="" data-path="auto-coding.html"><a href="auto-coding.html#it-isnt-cheap"><i class="fa fa-check"></i>It isn’t cheap</a></li>
 <li class="chapter" data-level="" data-path="auto-coding.html"><a href="auto-coding.html#the-coding-prompt"><i class="fa fa-check"></i>The coding prompt</a></li>
-<li class="chapter" data-level="" data-path="auto-coding.html"><a href="auto-coding.html#identifying-links"><i class="fa fa-check"></i>Identifying links</a></li>
+<li class="chapter" data-level="" data-path="auto-coding.html"><a href="auto-coding.html#identifying-links"><i class="fa fa-check"></i>Identifying links</a>
+<ul>
 <li class="chapter" data-level="" data-path="auto-coding.html"><a href="auto-coding.html#choosing-between-single-links-ab-and-bc-or-chains-abc"><i class="fa fa-check"></i>Choosing between single <strong>links</strong> (A&gt;&gt;B and B&gt;&gt;C) or <strong>chains</strong> (A&gt;&gt;B&gt;&gt;C):</a></li>
+</ul></li>
 <li class="chapter" data-level="" data-path="auto-coding.html"><a href="auto-coding.html#ensuring-quotes-are-provided"><i class="fa fa-check"></i>Ensuring quotes are provided</a>
 <ul>
 <li class="chapter" data-level="" data-path="auto-coding.html"><a href="auto-coding.html#colon-style"><i class="fa fa-check"></i>Colon style</a></li>
@@ -940,15 +944,15 @@ code span.wa { color: #60a0b0; font-weight: bold; font-style: italic; } /* Warni
 <h2>🧪Uploading text documents including Word and PDFs<a href="#ximport2excel" class="anchor-section" aria-label="Anchor link to header"></a></h2>
 <p>If your data is in the form of several word processing documents like Word .docx or .odt, or plain text documents or even PDFs, you don’t need to bother with Excel files, you can just upload your text files directly.</p>
 <p>Preparing your files: If you wish, in your doc, docx and text files, you can separate text into statements by inserting lines containing just <code>--</code> (that is two hyphen characters together) where you want to separate statements, like this.</p>
-<div class="figure">
-<img src="_assets/image-20230216082039612.png" alt="" />
-<p class="caption">image-20230216082039612</p>
+<div class="float">
+<img src="_assets/image-20230216082039612.png" alt="image-20230216082039612" />
+<div class="figcaption">image-20230216082039612</div>
 </div>
 <p>Otherwise, doc and docx files will be broken into paragraphs and pdf files will be broken into pages.</p>
 <p>You can also use the same trick to add question_id and respondent_id to your upload, like this:</p>
-<div class="figure">
-<img src="_assets/image-20230216085616986.png" alt="" />
-<p class="caption">image-20230216085616986</p>
+<div class="float">
+<img src="_assets/image-20230216085616986.png" alt="image-20230216085616986" />
+<div class="figcaption">image-20230216085616986</div>
 </div>
 <p>That means you can add, at the top of your statement after the <code>--</code>, exactly one or other of these:</p>
 <ul>
@@ -957,6 +961,8 @@ code span.wa { color: #60a0b0; font-weight: bold; font-style: italic; } /* Warni
 </ul>
 <p>You don’t need to do this for every statement, only where the question_id or respondent_id <em>changes</em>. So add it for every new question and/or every new respondent.</p>
 <p>Wait, you say, what’s a respondent? Well we already have <code>source_id</code> which is the name of the document. Usually you will have one document for one respondent, so you won’t need respondent_id. You will usually only want to use <code>respondent_id</code> when your respondents change within one document, for example in a focus group transcript.</p>
+<p>Alternatively, if you want to mark different sources within one or more documents, you can put lines like this within your document.</p>
+<p><code>--source_id: my source id</code></p>
 <p>Uploading like this does not retain information about page numbers in PDFs. If you need to get the page numbers of each statement when uploading PDFs, try <a href="https://causalmap.shinyapps.io/pdf2excel/">another free utility</a> (Tool 2) which uploads PDFs only but does provide page numbers as an additional column.</p>
 <p>This way of uploading your data is only intended for uploading statements for coding. Characters like <code>$</code> and <code>#</code> which are used in <a href="https://guide.causalmap.app/ximport.html#ximport-quip">hybrid import</a> have no special meaning here.</p>
 <div id="ignoring-sections-of-text" class="section level4 hasAnchor">
@@ -987,9 +993,9 @@ code span.wa { color: #60a0b0; font-weight: bold; font-style: italic; } /* Warni
 <p>When uploading data for coding the only data you <strong>need</strong> to upload to the app is an xlsx file with a worksheet called <code>statements</code>. Your worksheet must have a header row with the names of the columns; the only required column, which contains the actual responses for coding, must be called <code>text</code>.</p>
 <p>Each cell in the <code>text</code> column contains one “statement” - a chunk of text usually one or two paragraphs long. The optional other cells in the same row give you more information about that</p>
 <p>All worksheet names and column names should be lower-case.</p>
-<div class="figure">
-<img src="_assets/image-20211012141450834.png" width="650" alt="" />
-<p class="caption">image-20211012141450834</p>
+<div class="float">
+<img src="_assets/image-20211012141450834.png" width="650" alt="image-20211012141450834" />
+<div class="figcaption">image-20211012141450834</div>
 </div>
 </div>
 <div id="pasting-data-from-a-word-document-into-excel" class="section level3 hasAnchor">
@@ -1021,22 +1027,22 @@ code span.wa { color: #60a0b0; font-weight: bold; font-style: italic; } /* Warni
 <h4>Uploading information about sources using a separate source table<a href="ximport.html#uploading-information-about-sources-using-a-separate-source-table" class="anchor-section" aria-label="Anchor link to header"></a></h4>
 <p>Often it isn’t convenient to provide all the data in one table.</p>
 <p>So in your statements table, additionally (optionally), as well as your <code>text</code> column you will usually have a column in the statements table called <code>source_id</code> and a corresponding tab called <code>sources</code> with at least one column called <code>source_id</code> containing each source id, with one row for each source, and additional columns giving more information about your sources.</p>
-<div class="figure">
-<img src="_assets/image-20211012141409487.png" width="650" alt="" />
-<p class="caption">image-20211012141409487</p>
+<div class="float">
+<img src="_assets/image-20211012141409487.png" width="650" alt="image-20211012141409487" />
+<div class="figcaption">image-20211012141409487</div>
 </div>
 <p>The app then merges the new information from the sources table so it is also available in <a href="xthe-statements-table.html#xthe-statements-table">the statements</a> table and elsewhere.</p>
-<div class="figure">
-<img src="_assets/image-20211019115631991-1676972414995-4.png" alt="" />
-<p class="caption">image-20211019115631991</p>
+<div class="float">
+<img src="_assets/image-20211019115631991-1676972414995-4.png" alt="image-20211019115631991" />
+<div class="figcaption">image-20211019115631991</div>
 </div>
 </div>
 <div id="uploading-information-about-questions-using-a-separate-questions-table" class="section level4 hasAnchor">
 <h4>Uploading information about questions using a separate questions table<a href="ximport.html#uploading-information-about-questions-using-a-separate-questions-table" class="anchor-section" aria-label="Anchor link to header"></a></h4>
 <p>Additionally (optionally), you may have a column in the statements table called <code>question_id</code> . If you want, this question_id can already include the question text, e.g. “q1: tell us about your life”. But usually it is more convenient to just use a code like “q1” and also include a corresponding tab in your Excel file called <code>questions</code> with at least one column called <code>question_id</code> with corresponding values, and an additional column <code>question_text</code> with the full text, as well as any other information about your questions, e.g. domain or questionnaire section.</p>
-<div class="figure">
-<img src="_assets/image-20211012141342985.png" width="650" alt="" />
-<p class="caption">image-20211012141342985</p>
+<div class="float">
+<img src="_assets/image-20211012141342985.png" width="650" alt="image-20211012141342985" />
+<div class="figcaption">image-20211012141342985</div>
 </div>
 </div>
 </div>
@@ -1093,16 +1099,16 @@ code span.wa { color: #60a0b0; font-weight: bold; font-style: italic; } /* Warni
 <p><code>#$* Do you have a house?</code></p>
 <p>Will be treated as a statement and as closed question (part of a block) and as important additional data. <img src="_assets/image-20211220160457936.png" width="650" alt="image-20211220160457936" /></p>
 <p>All important additional data, as indicated by the <code>#</code> in the question_id, can be found under the <a href="#xadditional-information">info toggle</a> in your left-hand side panel.</p>
-<div class="figure">
-<img src="_assets/image-20211220153042098.png" alt="" />
-<p class="caption">image-20211220153042098</p>
+<div class="float">
+<img src="_assets/image-20211220153042098.png" alt="image-20211220153042098" />
+<div class="figcaption">image-20211220153042098</div>
 </div>
 <div id="hybrid-closed" class="section level3 hasAnchor">
 <h3>Uploading closed questions in hybrid format<a href="ximport.html#hybrid-closed" class="anchor-section" aria-label="Anchor link to header"></a></h3>
 <p>Closed questions, as indicated by the <code>*</code> in the question_id, are treated like any other additional data for sources as shown in the picture above. Once imported, they will appear in the special <a href="xclosed-table.html#xclosed-table">closed questions table</a> (which is really just a special view of the sources table) as well as in the the <a href="xthe-sources-table.html#xthe-sources-table">sources table</a> itself.</p>
-<div class="figure">
-<img src="_assets/image-20211220161646312.png" width="650" alt="" />
-<p class="caption">image-20211220161646312</p>
+<div class="float">
+<img src="_assets/image-20211220161646312.png" width="650" alt="image-20211220161646312" />
+<div class="figcaption">image-20211220161646312</div>
 </div>
 <p>Plus, the question_code may end with the characters “rank” to mark “ranking organisation” data. [There may be a bug currently such that this data will also be uploaded only if they are not treated as statements, ie the code should not contain a <code>$</code>].</p>
 <p>To upload the hybrid-style spreadsheet click on the upload button on the right-hand-side panel and use the ‘hybrid’ option.</p>
@@ -1121,9 +1127,9 @@ code span.wa { color: #60a0b0; font-weight: bold; font-style: italic; } /* Warni
 <h3>QuIP recodes for closed questions - live link<a href="ximport.html#quip-recodes-for-closed-questions---live-link" class="anchor-section" aria-label="Anchor link to header"></a></h3>
 <p>Using this <a href="https://drive.google.com/open?id=1GBhxQhV5SKHLdb8B_iHcCqT2RvWl44tQ&amp;authuser=hello%40causalmap.app&amp;usp=drive_fs">table</a> (which includes spanish) the app recodes your data into + positive, - negative and 0 neutral.</p>
 <p>For example:</p>
-<div class="figure">
-<img src="_assets/image-20211019155354881.png" alt="" />
-<p class="caption">image-20211019155354881</p>
+<div class="float">
+<img src="_assets/image-20211019155354881.png" alt="image-20211019155354881" />
+<div class="figcaption">image-20211019155354881</div>
 </div>
 <p>This data will be displayed in the Tables panel if you select “closed questions.”</p>
 </div>

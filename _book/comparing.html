@@ -28,7 +28,7 @@
 <meta name="author" content="Samuel Goddard" />
 
 
-<meta name="date" content="2023-05-15" />
+<meta name="date" content="2023-11-27" />
 
   <meta name="viewport" content="width=device-width, initial-scale=1" />
   <meta name="apple-mobile-web-app-capable" content="yes" />
@@ -496,6 +496,8 @@ code span.wa { color: #60a0b0; font-weight: bold; font-style: italic; } /* Warni
 <li class="chapter" data-level="" data-path="filters-overview.html"><a href="filters-overview.html#trace-paths"><i class="fa fa-check"></i>Trace paths</a></li>
 <li class="chapter" data-level="" data-path="filters-overview.html"><a href="filters-overview.html#bundlefactors"><i class="fa fa-check"></i>Bundle factors</a></li>
 <li class="chapter" data-level="" data-path="filters-overview.html"><a href="filters-overview.html#combine-opposites"><i class="fa fa-check"></i>Combine opposites</a></li>
+<li class="chapter" data-level="" data-path="filters-overview.html"><a href="filters-overview.html#mutate-factors-or-links-calculate-new-factor-or-link-fields"><i class="fa fa-check"></i>🧪 Mutate factors or links: calculate new factor or link fields</a></li>
+<li class="chapter" data-level="" data-path="filters-overview.html"><a href="filters-overview.html#pick-factors-or-links"><i class="fa fa-check"></i>🧪 Pick factors or links</a></li>
 <li class="chapter" data-level="" data-path="filters-overview.html"><a href="filters-overview.html#filtering-group-by-group"><i class="fa fa-check"></i>Filtering group by group</a></li>
 </ul></li>
 <li class="chapter" data-level="" data-path="what-is-the-logic-behind-the-causal-map-filters.html"><a href="what-is-the-logic-behind-the-causal-map-filters.html"><i class="fa fa-check"></i>What is the logic behind the Causal Map filters?</a>
@@ -614,8 +616,10 @@ code span.wa { color: #60a0b0; font-weight: bold; font-style: italic; } /* Warni
 <li class="chapter" data-level="" data-path="auto-coding.html"><a href="auto-coding.html#languages"><i class="fa fa-check"></i>Languages</a></li>
 <li class="chapter" data-level="" data-path="auto-coding.html"><a href="auto-coding.html#it-isnt-cheap"><i class="fa fa-check"></i>It isn’t cheap</a></li>
 <li class="chapter" data-level="" data-path="auto-coding.html"><a href="auto-coding.html#the-coding-prompt"><i class="fa fa-check"></i>The coding prompt</a></li>
-<li class="chapter" data-level="" data-path="auto-coding.html"><a href="auto-coding.html#identifying-links"><i class="fa fa-check"></i>Identifying links</a></li>
+<li class="chapter" data-level="" data-path="auto-coding.html"><a href="auto-coding.html#identifying-links"><i class="fa fa-check"></i>Identifying links</a>
+<ul>
 <li class="chapter" data-level="" data-path="auto-coding.html"><a href="auto-coding.html#choosing-between-single-links-ab-and-bc-or-chains-abc"><i class="fa fa-check"></i>Choosing between single <strong>links</strong> (A&gt;&gt;B and B&gt;&gt;C) or <strong>chains</strong> (A&gt;&gt;B&gt;&gt;C):</a></li>
+</ul></li>
 <li class="chapter" data-level="" data-path="auto-coding.html"><a href="auto-coding.html#ensuring-quotes-are-provided"><i class="fa fa-check"></i>Ensuring quotes are provided</a>
 <ul>
 <li class="chapter" data-level="" data-path="auto-coding.html"><a href="auto-coding.html#colon-style"><i class="fa fa-check"></i>Colon style</a></li>
@@ -932,19 +936,19 @@ code span.wa { color: #60a0b0; font-weight: bold; font-style: italic; } /* Warni
 <p>We code a causal map on the basis of text data. That text data can be usefully broken up into statements, usually of a length between a paragraph and a page. Each statement usually has “<strong>additional data</strong>” associated with it, for example the ID or gender of the respondent, the text of a question to which this statement is an answer, the page and name of the document from which this statement comes, etc. When we code a causal claim within a statement, we can associate the resulting link with the additional data. That means that for every link, we should know the additional data, e.g. the gender of the respondent, etc.</p>
 <p>We call the set of statements corresponding to a particular value of a particular additional data field a “<strong>group</strong>”. This definition of “group” is quite broad and does not have to refer only to respondents, e.g. the group for “question 3” is the subset of all the data relevant to that question.</p>
 <p>It is easy to filter a causal map by this additional data. This idea goes back at least to (Ford &amp; Hegarty, 1984). For example, here is one map filtered to show all and only the links mentioned by with female respondents. We call these the <strong>per-value maps</strong>, e.g. the map consisting of all links mentioned by women. However, often the maps for different groups are quite similar as a large proportion of links are shared. When there are many links as in this example, the resulting filtered maps can be uninformative.</p>
-<div class="figure">
-<img src="_assets/image-20210115220243930.png" alt="" />
-<p class="caption">image-20210115220243930</p>
+<div class="float">
+<img src="_assets/image-20210115220243930.png" alt="image-20210115220243930" />
+<div class="figcaption">image-20210115220243930</div>
 </div>
 <p>There may still be a bewildering hairball of links. We can apply techniques like <a href="https://causalmapdocumentation.blot.im/simplifying-causal-maps-with-hierarchical-coding">hierarchical coding</a> to “zoom out” of the map, or simply show only the most frequent factors. This map shows the top five factors for women:</p>
-<div class="figure">
-<img src="_assets/women.png" alt="" />
-<p class="caption">Causal Map</p>
+<div class="float">
+<img src="_assets/women.png" alt="Causal Map" />
+<div class="figcaption">Causal Map</div>
 </div>
 <p>And this map shows only the top five factors for men (there were far fewer men in this project).</p>
-<div class="figure">
-<img src="_assets/men.png" alt="" />
-<p class="caption">Causal Map</p>
+<div class="float">
+<img src="_assets/men.png" alt="Causal Map" />
+<div class="figcaption">Causal Map</div>
 </div>
 <p>This is disappointing. The maps are almost identical, though the frequencies are different. We might have a feeling that the men’s answers do indeed differ from the women’s, but how can we be sure? Does this pair of maps prove that there are no interesting differences?</p>
 <p>These are important problems:</p>
@@ -965,14 +969,14 @@ code span.wa { color: #60a0b0; font-weight: bold; font-style: italic; } /* Warni
 <p>It is also possible, especially with smaller maps, that there are no links which are distinctive for a particular additional data field like gender. This suggests that there are no very interesting differences between the groups. It is also possible that there is a distinctive map for one group, e.g. women but not for men, or vice versa.</p>
 <p>To continue the example, we can follow the algorithm and produce the distinctive maps for men and women. These maps even without any further filtering are interesting and readable in their own right, but as there are around 40 factors in each map, here we show the maps filtered further for only the most frequent factors.</p>
 <p>Distinctive map for women, showing the top seven factors.</p>
-<div class="figure">
-<img src="_assets/image-20210115220338421.png" alt="" />
-<p class="caption">image-20210115220338421</p>
+<div class="float">
+<img src="_assets/image-20210115220338421.png" alt="image-20210115220338421" />
+<div class="figcaption">image-20210115220338421</div>
 </div>
 <p>Distinctive map for men, showing the top seven factors, also filtering out a few links with just one mention:</p>
-<div class="figure">
-<img src="_assets/image-20210115220351694.png" alt="" />
-<p class="caption">image-20210115220351694</p>
+<div class="float">
+<img src="_assets/image-20210115220351694.png" alt="image-20210115220351694" />
+<div class="figcaption">image-20210115220351694</div>
 </div>
 <p>Here, some of the paths in the map for men, from VSL to Increased savings and thence to Increased assets, would be certainly worth following up, as well as the paths to and from “Increased purchasing power” in the map for women.</p>
 <p>As usual, we should treat the maps just as a gateway into the data, an invitation to read and understand the quotes in more detail and in context.</p>
@@ -984,9 +988,9 @@ code span.wa { color: #60a0b0; font-weight: bold; font-style: italic; } /* Warni
 </div>
 <div id="percent" class="section level2 hasAnchor">
 <h2>Percentages<a href="comparing.html#percent" class="anchor-section" aria-label="Anchor link to header"></a></h2>
-<div class="figure">
-<img src="_assets/image-20211018181718019.png" alt="" />
-<p class="caption">image-20211018181718019</p>
+<div class="float">
+<img src="_assets/image-20211018181718019.png" alt="image-20211018181718019" />
+<div class="figcaption">image-20211018181718019</div>
 </div>
 <p>It’s very useful to bundle many links between every pair of factors into different bundles, one for each gender, say, or one for each village. Then you can compare how many times this particular connection was mentioned by each group (if you count link_id) or how many sources in each group mentioned the connection (if you count source_id). You can print this number as the label for each link, or you can scale or colour the link according to it.</p>
 <p>However, if the base number of sources in each group is different – for example, if there are many more women than men – these numbers can be hard to deal with. In this situation, we recommend using percentages of the baseline for each group rather than absolute counts.</p>
@@ -1011,9 +1015,9 @@ color links value=unique: Sex</code></pre>
 <div id="xsurprise" class="section level2 hasAnchor">
 <h2>Surprise<a href="comparing.html#xsurprise" class="anchor-section" aria-label="Anchor link to header"></a></h2>
 <p>The most interesting filter uses a function which we call <code>surprise</code>. Here is an example: <a href="https://causalmap.shinyapps.io/CausalMap2?s=2302">2302</a>.</p>
-<div class="figure">
-<img src="_assets/image-20220801223501618.png" alt="" />
-<p class="caption">image-20220801223501618</p>
+<div class="float">
+<img src="_assets/image-20220801223501618.png" alt="image-20220801223501618" />
+<div class="figcaption">image-20220801223501618</div>
 </div>
 <p>We have bundled the links by name of District (1, 2, 3 or 4) and scaled the links by source count (count of the number of sources mentioning each link): but we have coloured the links by <code>surprise</code>. The bright green from poor weather conditions to poor farm production means that this route was particularly often mentioned in district 3 <em>even taking into account the number of times people in district 3 mentioned anything (in the whole filtered map)</em>. And the bright purple link for district 1 means the opposite. Whereas for district 4, there are quite a lot of mentions but the pale colour shows us that this is not particularly surprising. Basically, using <code>surprise</code> means you can ignore the pale links and just look at the brightly coloured ones.</p>
 <p>We recommend adding the initial of the group and the percentage to the link labels.</p>

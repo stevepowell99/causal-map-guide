@@ -28,7 +28,7 @@
 <meta name="author" content="Samuel Goddard" />
 
 
-<meta name="date" content="2023-05-15" />
+<meta name="date" content="2023-11-27" />
 
   <meta name="viewport" content="width=device-width, initial-scale=1" />
   <meta name="apple-mobile-web-app-capable" content="yes" />
@@ -496,6 +496,8 @@ code span.wa { color: #60a0b0; font-weight: bold; font-style: italic; } /* Warni
 <li class="chapter" data-level="" data-path="filters-overview.html"><a href="filters-overview.html#trace-paths"><i class="fa fa-check"></i>Trace paths</a></li>
 <li class="chapter" data-level="" data-path="filters-overview.html"><a href="filters-overview.html#bundlefactors"><i class="fa fa-check"></i>Bundle factors</a></li>
 <li class="chapter" data-level="" data-path="filters-overview.html"><a href="filters-overview.html#combine-opposites"><i class="fa fa-check"></i>Combine opposites</a></li>
+<li class="chapter" data-level="" data-path="filters-overview.html"><a href="filters-overview.html#mutate-factors-or-links-calculate-new-factor-or-link-fields"><i class="fa fa-check"></i>🧪 Mutate factors or links: calculate new factor or link fields</a></li>
+<li class="chapter" data-level="" data-path="filters-overview.html"><a href="filters-overview.html#pick-factors-or-links"><i class="fa fa-check"></i>🧪 Pick factors or links</a></li>
 <li class="chapter" data-level="" data-path="filters-overview.html"><a href="filters-overview.html#filtering-group-by-group"><i class="fa fa-check"></i>Filtering group by group</a></li>
 </ul></li>
 <li class="chapter" data-level="" data-path="what-is-the-logic-behind-the-causal-map-filters.html"><a href="what-is-the-logic-behind-the-causal-map-filters.html"><i class="fa fa-check"></i>What is the logic behind the Causal Map filters?</a>
@@ -614,8 +616,10 @@ code span.wa { color: #60a0b0; font-weight: bold; font-style: italic; } /* Warni
 <li class="chapter" data-level="" data-path="auto-coding.html"><a href="auto-coding.html#languages"><i class="fa fa-check"></i>Languages</a></li>
 <li class="chapter" data-level="" data-path="auto-coding.html"><a href="auto-coding.html#it-isnt-cheap"><i class="fa fa-check"></i>It isn’t cheap</a></li>
 <li class="chapter" data-level="" data-path="auto-coding.html"><a href="auto-coding.html#the-coding-prompt"><i class="fa fa-check"></i>The coding prompt</a></li>
-<li class="chapter" data-level="" data-path="auto-coding.html"><a href="auto-coding.html#identifying-links"><i class="fa fa-check"></i>Identifying links</a></li>
+<li class="chapter" data-level="" data-path="auto-coding.html"><a href="auto-coding.html#identifying-links"><i class="fa fa-check"></i>Identifying links</a>
+<ul>
 <li class="chapter" data-level="" data-path="auto-coding.html"><a href="auto-coding.html#choosing-between-single-links-ab-and-bc-or-chains-abc"><i class="fa fa-check"></i>Choosing between single <strong>links</strong> (A&gt;&gt;B and B&gt;&gt;C) or <strong>chains</strong> (A&gt;&gt;B&gt;&gt;C):</a></li>
+</ul></li>
 <li class="chapter" data-level="" data-path="auto-coding.html"><a href="auto-coding.html#ensuring-quotes-are-provided"><i class="fa fa-check"></i>Ensuring quotes are provided</a>
 <ul>
 <li class="chapter" data-level="" data-path="auto-coding.html"><a href="auto-coding.html#colon-style"><i class="fa fa-check"></i>Colon style</a></li>
@@ -938,9 +942,9 @@ code span.wa { color: #60a0b0; font-weight: bold; font-style: italic; } /* Warni
 <div id="setting-specific-colours-for-links-factors-and-factor-borders" class="section level2 hasAnchor">
 <h2>Setting specific colours for links, factors and factor borders<a href="xsimple-formats.html#setting-specific-colours-for-links-factors-and-factor-borders" class="anchor-section" aria-label="Anchor link to header"></a></h2>
 <p>If you want specific factors to have specific colours, for example “Impact on wellbeing” should always be pink, you can do this by roundtripping:</p>
-<div class="figure">
-<img src="_assets/image-20220426200816492.png" alt="" />
-<p class="caption">image-20220426200816492</p>
+<div class="float">
+<img src="_assets/image-20220426200816492.png" alt="image-20220426200816492" />
+<div class="figcaption">image-20220426200816492</div>
 </div>
 <ul>
 <li>Create the columns <code>color.background</code> and/or <code>color.border</code> in the <code>factors</code> tab, and type any <a href="https://www.w3schools.com/tags/ref_colornames.asp">colour names</a> you want (red, blue, pink, green etc) in this column in the row corresponding to the factors you want coloured. You can also use hexadecimal colours like <code>#eeff55</code>.</li>
@@ -956,9 +960,9 @@ code span.wa { color: #60a0b0; font-weight: bold; font-style: italic; } /* Warni
 <h2>Cluster factors<a href="xsimple-formats.html#xcluster-factors" class="anchor-section" aria-label="Anchor link to header"></a></h2>
 <p>Sometimes you might want to visually show how factors in the map are similar to one another, without bundling them into one. By clustering similar factor labels, you can highlight similarities and/or differences in the way certain factors interact with other factors in the map without losing any of the details of your factor labels. For example, the screenshot below shows factors containing ‘Flood’ and ‘Damage’ clustered together, highlighting the link between flooding and damage.<img src="https://lh4.googleusercontent.com/TzfYzls-sesVhZ_a4MjGTmjsnwYuAlrcK_byWq1oIJoU6UIsCwW_fNOA_6pHNvnHHTh3uPpxC3MN1S5qhYz55R_IeJEmfiCbPli6mcM7hghY_tSnS7mWxk_Nw4QDgg" alt="img" /></p>
 <p>Click on the cluster factors button to open the filter panel. Simply type in the word/phrase that the factors you want to be clustered contain. Once you click apply filter, all factors containing your chosen text will be positioned close to one another and surrounded by a grey box in the print view of the map. <img src="https://lh5.googleusercontent.com/3dw2jADin2hUaI9GVCXLmHQijteQttv64EU0bY2hhjBlNomd22q4KMQzHCbPi_eHSaRJnKyZ4_zOa0POgnL7mv4o9WaOoMxVelxVg0asyBUV9XlFRVXTE-9XNnQWng" alt="img" /></p>
-<div class="figure">
-<img src="_assets/chrome_gLbx3qswR1.png" width="650" alt="" />
-<p class="caption">chrome_gLbx3qswR1</p>
+<div class="float">
+<img src="_assets/chrome_gLbx3qswR1.png" width="650" alt="chrome_gLbx3qswR1" />
+<div class="figcaption">chrome_gLbx3qswR1</div>
 </div>
 </div>
 <div id="set-print-format" class="section level2 hasAnchor">
@@ -971,9 +975,9 @@ code span.wa { color: #60a0b0; font-weight: bold; font-style: italic; } /* Warni
 <p>The screenshot below shows the circo print layout with 1 step up and 1 step down from Farm production.<img src="https://lh5.googleusercontent.com/v2o1MhKbKXJjx85cDve0p0Rl6tbHQR-xvsAUhz6e8M95CD8IXQwsK0C-yzfrCHyM5u6_FQA-goHdTKnk-KuDBNBQCQaEu-ALjlARENLOg8eD6igucdMJLCotCe8xXg" alt="img" /></p>
 <p><strong>How do I use this filter?</strong></p>
 <p>Click on the set print format button to open up the filter panel. There are various options for map layouts which you can try out. There is also a horizontal separation slider which you can adjust to select how far apart your factor labels are, if the number is higher your links will appear longer and your factor labels will be further apart. This is another filter where it would be helpful to keep the panel open so that you can see how your selections are affecting your map.</p>
-<div class="figure">
-<img src="https://lh3.googleusercontent.com/ct0w5WwrBVDTBGauAwH44-v4_zL-QWs9w5axEEB0tmqHnhLDvtq0iTPC-NrHpFyjJ-wjA5eW01cvZl_aKONFZUrehSNq_zFLPbsLiHDtRuKqoWTmgSrPG__amGijbQ" alt="" />
-<p class="caption">img</p>
+<div class="float">
+<img src="https://lh3.googleusercontent.com/ct0w5WwrBVDTBGauAwH44-v4_zL-QWs9w5axEEB0tmqHnhLDvtq0iTPC-NrHpFyjJ-wjA5eW01cvZl_aKONFZUrehSNq_zFLPbsLiHDtRuKqoWTmgSrPG__amGijbQ" alt="img" />
+<div class="figcaption">img</div>
 </div>
 
 </div>

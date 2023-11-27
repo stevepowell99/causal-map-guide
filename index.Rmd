@@ -24,6 +24,15 @@ library(tidyverse)
 
 # Overview
 
+This is the guide to Causal Map 2. 
+
+::: {.rmdcaution}
+
+The guide to the new Causal Map 3 is [here](https://causal-map-3-guide.bullet.site/differences-to-causal-map-2/).
+
+:::
+
+
 ## What is Causal Map?
 
 [Causal Map](https://causalmap.app/) is a web app for analysing and visualising causal claims within narrative data from interviews or reports. 
